@@ -1,7 +1,7 @@
-Cluster 0: disease gene cell protein drug genetic model method human analysis
-Cluster 1: informatics core biomedical support resource system training information health program
-Cluster 2: abstract available mobility science biomedical center modeling range phenotyping mobilize
-Cluster 3: brain disorder asd cognitive child behavioral speech functional connectivity neural
-Cluster 4: cancer breast tumor image imaging prostate lung risk detection biopsy
-Cluster 5: risk care health intervention screening hiv outcome model treatment crc
-Cluster 6: ad dementia cognitive disease brain mci imaging amyloid biomarkers alzheimers
+Cluster 0: gene disease protein genetic drug cell variant data aim human
+Cluster 1: image data research imaging clinical dr patient method training disease
+Cluster 2: hiv abstract suicide available malaria risk behavior care research infection
+Cluster 3: ad dementia cognitive disease brain amyloid imaging mci biomarkers tau
+Cluster 4: cancer breast tumor screening crc patient risk prostate lung detection
+Cluster 5: patient care health risk data clinical treatment intervention study outcome
+Cluster 6: brain asd child disorder cognitive behavioral autism functional connectivity neural

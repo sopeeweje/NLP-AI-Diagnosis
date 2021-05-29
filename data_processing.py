@@ -16,7 +16,13 @@ import matplotlib.pyplot as plt
 from collections import Counter
 import statistics
 import pickle
+import numpy as np
 
+from sklearn.datasets import fetch_openml
+from sklearn.decomposition import PCA
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def get_terms():
     ai_terms = [
@@ -76,9 +82,12 @@ def text_process(text):
     nopunc = [word for word in nopunc if word not in stopwords.words('english')]
     return [stemmer.lemmatize(word) for word in nopunc]
 
-def find_K(K, X_transformed, tfidfconvert, sosd):
-    K = range(1,K+1)
-    Sum_of_squared_distances = sosd
+def find_K(K):
+    X_transformed = pickle.load(open("transformed.pkl","rb"))
+    tfidfconvert = pickle.load(open("convert.pkl","rb"))
+    
+    K = range(11,K+1)
+    Sum_of_squared_distances = []
     for k in K:
         print(k)
         km = KMeans(n_clusters=k)
@@ -94,7 +103,8 @@ def find_K(K, X_transformed, tfidfconvert, sosd):
                 centroid_file.write(" %s" % terms[ind])
             centroid_file.write("\n")
         centroid_file.close()
-        
+    
+    plt.figure(3)
     plt.plot(K, Sum_of_squared_distances, 'bx-')
     plt.xlabel('k')
     plt.ylabel('Sum_of_squared_distances')
@@ -118,7 +128,7 @@ def process_data(data_file, funding_file):
         ids = []
         print(len(raw_data))
         for i in range(1,len(raw_data)):
-            if (raw_data[i][7] in ids) or (raw_data[i][11][0] == 'Z'):
+            if (raw_data[i][6] in ids) or (raw_data[i][11][0] == 'Z'):
                 continue
             else:
                 ids.append(raw_data[i][6])
@@ -135,6 +145,7 @@ def process_data(data_file, funding_file):
                 "organization": raw_data[i][31],
                 "year": raw_data[i][42],
                 "cost": mk_int(raw_data[i][43]) + mk_int(raw_data[i][44]),
+                "funding": funding,
                 })
     
     test_data = []
@@ -148,10 +159,9 @@ def process_data(data_file, funding_file):
     # Get TFIDF data
     X_train = [key["abstract"] for key in data]
     test = [key["abstract"] for key in test_data]
-    tfidfconvert = TfidfVectorizer(analyzer=text_process, max_df=0.5).fit(X_train)
+    tfidfconvert = TfidfVectorizer(analyzer=text_process, max_df=0.95).fit(X_train)
     
     # Transform
-    tfidfconvert = TfidfVectorizer(analyzer=text_process, max_df=0.5).fit(X_train)
     X_transformed = tfidfconvert.transform(X_train)
     test_transformed = tfidfconvert.transform(test)
     
@@ -163,11 +173,14 @@ def process_data(data_file, funding_file):
         
     with open("transformed_test.pkl", 'wb') as handle:
         pickle.dump(test_transformed, handle)
+        
+    with open("convert.pkl", 'wb') as handle:
+        pickle.dump(tfidfconvert, handle)
     
     print(len(data))
-    return data, X_transformed, test_data
+    return data, X_transformed, test_data, tfidfconvert
 
-def get_clusters(k, data_file, X_transformed_file):
+def get_clusters(k, data_file, X_transformed_file, years):
     # Load data as dictionary
     data = pickle.load(open(data_file,"rb"))
     
@@ -180,6 +193,7 @@ def get_clusters(k, data_file, X_transformed_file):
     print(clusters)
     
     # Output data
+    cluster_all = []
     costs = []
     yoy = []
     size = []
@@ -189,10 +203,10 @@ def get_clusters(k, data_file, X_transformed_file):
         
         # indices of cluster k
         cluster = [idx for idx, element in enumerate(clusters) if element == i]
-        print(cluster)
         
         # get points
         cluster_data = [data[ind] for ind in cluster]
+        cluster_all.append(cluster_data)
         
         # calculate average cost and std
         try:
@@ -216,40 +230,28 @@ def get_clusters(k, data_file, X_transformed_file):
         
         size.append(len(cluster))
         
-    return costs, yoy, size
+    return costs, yoy, size, cluster_all
         
         
 
 file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/raw data.csv'
 funding_file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/institution-funding.csv'
+#data, X_transformed, test_data, tfidfconvert = process_data(file, funding_file)
+#Sum_of_squared_distances = find_K(20)
 years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
-data, X_transformed, test_data = process_data(file, funding_file)
-# X_train = [key["abstract"] for key in data]
-# costs = [key["cost"] for key in data]
-# terms = [key["terms"] for key in data]
+costs, cost_trend, size, clusters = get_clusters(20, "data.pkl", "transformed.pkl", years)
 
-# try:
-#     tfidfconvert = pickle.load(open("data.pkl","rb"))
-#     X_transformed = tfidfconvert.transform(X_train)
-#     sosd = pickle.load(open("sum_K_distance.pkl","rb"))
-#     Sum_of_squared_distances = find_K(100, X_transformed, sosd)
-# except:
-#     tfidfconvert = TfidfVectorizer(analyzer=text_process, max_df=0.5).fit(X_train)
-#     X_transformed = tfidfconvert.transform(X_train)
-#     Sum_of_squared_distances = find_K(100, X_transformed, tfidfconvert, [])
-#     with open("sosd.pkl", 'wb') as handle:
-#         pickle.dump(Sum_of_squared_distances, handle)
-
-# costs, cost_trend, size = get_clusters(10, "data.pkl", "transformed.pkl")
-# plt.xlabel("Year")
-# plt.ylabel("Funding")
-# plt.title("Funding by cluster")
-# for i in range(len(cost_trend)):
-#     plt.plot(years, cost_trend[i], label=str(i))
-# plt.legend()
-# plt.show()
-# print("Number of features = {}".format(str(len(tfidfconvert.get_feature_names()))))
-
+results = []
+i = 0
+for cluster in clusters:
+    for item in cluster:
+        label = i
+        results.append([item["id"], item["title"], label])
+    i+=1
+    
+with open('results.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(results)
 # k = 10
 # km = KMeans(n_clusters=k)
 # km = km.fit(X_transformed)
@@ -267,11 +269,4 @@ data, X_transformed, test_data = process_data(file, funding_file)
     
 
 
-# results = []
-# for item in data:
-#     input_data = tfidfconvert.transform([item["abstract"]])
-#     results.append([item["id"], item["title"], km.predict(input_data)[0]])
-    
-# with open('clusters/clusters_{}.csv'.format(k), 'w', newline='') as csvfile:
-#     writer = csv.writer(csvfile)
-#     writer.writerows(results)
+
