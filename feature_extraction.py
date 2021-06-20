@@ -97,7 +97,7 @@ def process_data(data_file, funding_file):
         ids = []
         print(len(raw_data))
         for i in range(1,len(raw_data)):
-            if (raw_data[i][6] in ids) or (raw_data[i][11][0] == 'Z'):
+            if (raw_data[i][6] in ids) or (raw_data[i][11][0] in ['Z','T']):
                 continue
             else:
                 ids.append(raw_data[i][6])
@@ -112,8 +112,9 @@ def process_data(data_file, funding_file):
                 "terms": raw_data[i][2].split(";"),
                 "administration": raw_data[i][5],
                 "organization": raw_data[i][31],
+                "mechanism": raw_data[i][11],
                 "year": raw_data[i][42],
-                "cost": mk_int(raw_data[i][43]) + mk_int(raw_data[i][44]),
+                "cost": mk_int(raw_data[i][49]),
                 "funding": funding,
                 })
     
@@ -135,7 +136,7 @@ def process_data(data_file, funding_file):
     print(len(data))
     return data, test_data
 
-def feature_extraction(data):
+def feature_extraction(data, num_features, max_df):
     """
 
     Parameters
@@ -151,7 +152,8 @@ def feature_extraction(data):
         text - tfidf for all text data
     """
     input_text = [item["text"] for item in data]
-    vectorizer = TfidfVectorizer(analyzer=text_process, max_df=0.95, min_df=0.001, max_features=200).fit(input_text)
+    #vectorizer = TfidfVectorizer(analyzer=text_process, max_df=0.95, min_df=0.001, max_features=num_features).fit(input_text)
+    vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text) #, token_pattern=u'(?ui)\\b\\w*[a-z]+\\w*\\b'
     processed_text = vectorizer.transform(input_text)
     
     with open("processed-data.pkl", 'wb') as handle:
@@ -160,12 +162,42 @@ def feature_extraction(data):
     with open("vectorizer.pkl", 'wb') as handle:
         pickle.dump(vectorizer, handle)
     
-    print(vectorizer.get_feature_names()[1000:1050])
-    print(len(vectorizer.get_feature_names()))
-    
 if __name__ == "__main__":
-    file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/raw data.csv'
+    file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/raw_data.csv'
     funding_file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/institution-funding.csv'
     years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
     data, test_data = process_data(file, funding_file)
-    feature_extraction(data)
+    feature_extraction(data, 1000, 0.5)
+    
+    # By Funder
+    funders = np.unique(np.array([item["administration"] for item in data]))
+    output = [["Funder", "Number of awards", "Value of awards"]]
+    for funder in funders:
+        count = len([item for item in data if item["administration"] == funder])
+        amount = sum([item["cost"] for item in data if item["administration"] == funder])
+        output.append([funder, count, amount])
+    with open('by_funder.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output)
+        
+    # By Year
+    years = np.unique(np.array([item["year"] for item in data]))
+    output = [["Year", "Number of awards", "Value of awards"]]
+    for year in years:
+        count = len([item for item in data if item["year"] == year])
+        amount = sum([item["cost"] for item in data if item["year"] == year])
+        output.append([year, count, amount])
+    with open('by_year.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output)
+        
+    # By Mechanism
+    mechanisms = np.unique(np.array([item["mechanism"] for item in data]))
+    output = [["Mechanism", "Number of awards", "Value of awards"]]
+    for mech in mechanisms:
+        count = len([item for item in data if item["mechanism"] == mech])
+        amount = sum([item["cost"] for item in data if item["mechanism"] == mech])
+        output.append([mech, count, amount])
+    with open('by_mechanism.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output)
