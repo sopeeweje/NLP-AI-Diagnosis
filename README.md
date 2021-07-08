@@ -6,6 +6,7 @@
   <li>Go to the <a target="_blank" href="https://reporter.nih.gov/advanced-search">NIH RePORTER search tool</a> and complete your query of interest. Download the returned awards as a csv (including all columns, max 15,000 per download) to the project directory, and remove the initial lines of the csv that describe the query so you are left with the data table. Title the file "raw_data.csv".</li>
   <li>Export the papers associated with your RePORTER query as a csv. Download the file to the project directory and title the file "papers.csv".</li>
   <li>Go to the <a target="_blank" href="https://icite.od.nih.gov/analysis">NIH iCite search tool</a>. Copy the PMIDs from papers.csv (max 10,000 at a time) to query iCite. Go to the "Citations" tab of the return and select "Export (this module)". Save the file in the project directory as "citations.csv".</li>
+  <li>Export the 2020 NIH funding by institution data from <a target="_blank" href="https://report.nih.gov/award/index.cfm">NIH RePORT</a>. This data is not incorporated in the analysis but can be incorporated if desired.</li>
 </ol>
 
 <h3>Determine TF-IDF parameters</h3>
