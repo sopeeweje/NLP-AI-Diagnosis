@@ -12,6 +12,7 @@
 <h3>Determine TF-IDF parameters</h3>
 
 <h3>Analysis</h3>
+<p>Install pipenv if not already installed: </code>pip install pipenv</code></p>
 <p>Perform the analysis by running the run.sh shell script in command line/terminal: <code>sh run.sh</code>.</p>
 <p>This performs the following:</p>
 <ul>
