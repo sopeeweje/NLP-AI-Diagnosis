@@ -384,6 +384,8 @@ if __name__ == "__main__":
     
     # Create folder to save results
     now = datetime.now()
+    if not os.path.exists("results"):
+        os.makedirs("results")
     save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
     os.mkdir(save_folder)
     
