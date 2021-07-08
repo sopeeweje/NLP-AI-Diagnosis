@@ -19,6 +19,28 @@
   <li><code>pipenv run python find_centroids.py --max_df ### --max_features ### --k ###</code> - initializes centroids with LDA. max_df = <a target="_blank" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">maximum document frequency</a>, max_features = <a target="_blank" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">maximum n-gram features</a>, k = number of clusters</li>
   <li><code>pipenv run python analyze_clusters.py --k ### --trials ### </code> - creates the clusters with K-Means Clustering and analyzes funding and citation data. k = number of clusters, trials = number of clustering trials to run</li>
 </ul>
-<p>Parameters can be edited in run.sh to meet what was empirically determined to be optimal.</p>
+<p>Parameters can be edited in run.sh to meet what was empirically determined to be optimal or left as naive defaults.</p>
 
 <h3>Results</h3>
+<p>Results from each run are returned in the "results" directory:</p>
+<ul>
+  <li>actual_vs_projected.png - linear regression comparing projected 2021 funding by cluster to actual 2021 funding. Quality of this analysis assumes that funding for your dataset has followed an exponential trend year-to-year</li>
+  <li>centroid.txt - text file with centroid words listed for each cluster</li>
+  <li>clusters - csv files containing awards assigned to each cluster (2000-2020)</li>
+  <li>clusters_test - csv files containing awards assigned to each cluster (2021)</li>
+  <li>final_data.csv - summary table</li>
+  <li>funding_by_year.png - funding for each cluster plotted by year with exponential fit and 95% CI bounds</li>
+  <li>umap.png - UMAP visualization of clusters</li>
+  <li>model_clustering.pkl - pickle containing dictionary with the following keys:
+    <ul>
+      <li>"yr_avg_cost" - average award funding by cluster</li>
+      <li>"yr_total_cost" - total award funding by cluster</li>
+      <li>"size" - cluster size</li>
+      <li>"data_by_cluster" - nested lists of dictionaries representing individual awards assigned to each cluster</li>
+      <li>"centroids" - list of lists of centroids by cluster (first 10 elements)</li>
+      <li>"model" - MiniBatchKMeans model</li>
+      <li>"complete_centroids" - list of lists of centroids by cluster (all elements)</li>
+      <li>"labels" - ordered list of cluster labels by award (same order as data loaded by from data.pkl)</li>
+    </ul>
+  </li>
+</ul>
