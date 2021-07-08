@@ -33,6 +33,8 @@
   <li>final_data.csv - summary table</li>
   <li>funding_by_year.png - funding for each cluster plotted by year with exponential fit and 95% CI bounds</li>
   <li>umap.png -  <a target="_blank" href="https://arxiv.org/abs/1802.03426">UMAP</a> visualization of clusters</li>
+  <li>lda_centroids.pkl - initial centroids from LDA</li>
+  <li>topic chart.png - topic chart from LDA</li>
   <li>model_clustering.pkl - pickle containing dictionary with the following keys:
     <ul>
       <li>"yr_avg_cost" - average award funding by cluster</li>
