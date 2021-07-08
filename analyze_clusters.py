@@ -17,6 +17,7 @@ from statsmodels.stats.outliers_influence import summary_table
 from statsmodels.sandbox.regression.predstd import wls_prediction_std
 import statsmodels.api as sm
 import argparse
+import shutil
 
 def rainbow_color_stops(n=10, end=1, shade=0.9):
     return [ hls_to_rgb(end * i/(n-1)*shade, 0.5*shade, 1*shade) for i in range(n) ]
@@ -388,6 +389,10 @@ if __name__ == "__main__":
         os.makedirs("results")
     save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
     os.mkdir(save_folder)
+    
+    # Move LDA centroids and topic chart to results folder
+    shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
+    shutil.move("topic_chart.png", "{}/topic chart.png".format(save_folder)) 
     
     # Get best clustering
     data = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
