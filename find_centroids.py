@@ -3,6 +3,7 @@ from sklearn.decomposition import LatentDirichletAllocation
 import matplotlib.pyplot as plt 
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import seaborn as sns
+import argparse
 
 def find_centroids(data, test, max_df, max_features, k, plot=False, score=False):
     # Load documents
@@ -23,21 +24,29 @@ def find_centroids(data, test, max_df, max_features, k, plot=False, score=False)
     lda.fit(tfidf_processed)
     tfidf_feature_names = tfidf_vectorizer.get_feature_names()
     if plot:
-        plot_top_words(lda, tfidf_feature_names, n_top_words, 'Topics in LDA model')
+        plot_top_words(lda, tfidf_feature_names, n_top_words, 'Topics in LDA model', k)
     
     with open("lda_centroids.pkl", 'wb') as handle:
         pickle.dump(lda.components_, handle)
     
-    perplexity = 0
-    if score:
-        test_input = [item["text"] for item in test]
-        test = tfidf_vectorizer.transform(test_input)
-        perplexity = lda.perplexity(test)
+    # perplexity = 0
+    # if score:
+    #     test_input = [item["text"] for item in test]
+    #     test = tfidf_vectorizer.transform(test_input)
+    #     perplexity = lda.perplexity(test)
     
-    return lda.components_, perplexity
+    return lda.components_ #, perplexity
 
-def plot_top_words(model, feature_names, n_top_words, title):
-    fig, axes = plt.subplots(5, 6, sharex=True) #, figsize=(30, 15)
+def plot_top_words(model, feature_names, n_top_words, title, k):
+    factors = []
+    for i in range(1, k+1):
+        if k / i == i:
+            factors.extend([i,i])
+        elif k % i == 0:
+            factors.append(i)
+    dim1, dim2 = factors[int(len(factors)/2)], factors[int(len(factors)/2-1)]
+    
+    fig, axes = plt.subplots(dim1, dim2, sharex=True)
     axes = axes.flatten()
     for topic_idx, topic in enumerate(model.components_):
         top_features_ind = topic.argsort()[:-n_top_words - 1:-1]
@@ -46,37 +55,46 @@ def plot_top_words(model, feature_names, n_top_words, title):
 
         ax = axes[topic_idx]
         ax.barh(top_features, weights, height=0.7)
-        ax.set_title(f'Topic {topic_idx +1}')#,fontdict={'fontsize': 30})
+        ax.set_title(f'Topic {topic_idx +1}')
         ax.invert_yaxis()
-        ax.tick_params(axis='both', which='major')#, labelsize=20)
+        ax.tick_params(axis='both', which='major')
         for i in 'top right left'.split():
             ax.spines[i].set_visible(False)
-        fig.suptitle(title)#, fontsize=40)
+        fig.suptitle(title)
 
     plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
-    plt.show()
     plt.savefig('topic chart.png')
     
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--max_df',
+        type=float,
+        required=True,
+        help='maximum document frequency',
+        default=0.5,
+        )
+    parser.add_argument(
+        '--max_features',
+        type=int,
+        required=True,
+        help='maximum number of features',
+        default=1000,
+        )
+    parser.add_argument(
+        '--k',
+        type=int,
+        required=True,
+        help='number of clusters',
+        default=30,
+        )
+    FLAGS, unparsed = parser.parse_known_args()
+    
     data = pickle.load(open("data.pkl","rb"))
     test = pickle.load(open("test-data.pkl","rb"))
-    max_df = 0.5
-    max_features = 1000
-    scores = []
-    ks = range(30,31)
-    for k in ks:
-        print(k)
-        centroids, score = find_centroids(data, test, max_df, max_features, k, plot=True)
-        scores.append(score)
-    plt.figure()
-    ax = sns.lineplot(list(ks), scores)
-    ax.set(xlabel='Number of Clusters', ylabel='Perplexity score')
-    
-    #tf_vectorizer = CountVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=max_features).fit(input_text) # frequency only #, min_df=0.001
-    #tf_processed = tfidf_vectorizer.transform(input_text)
-    
-    # Fit data with LDA TF
-    # lda = LatentDirichletAllocation(num_topics)
-    # lda.fit(tf_processed)
-    # tf_feature_names = tf_vectorizer.get_feature_names()
-    # plot_top_words(lda, tf_feature_names, n_top_words, 'Topics in LDA model')
+    max_df = FLAGS.max_df
+    max_features = FLAGS.max_features
+    k = FLAGS.k
+    print("Finding {} initial centroids...".format(str(k)))
+    centroids = find_centroids(data, test, max_df, max_features, k, plot=True)
+    print("Centroids located, see plot for topic descriptions.")

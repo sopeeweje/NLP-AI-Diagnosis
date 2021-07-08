@@ -71,18 +71,6 @@ def text_process(text):
     return [stemmer.lemmatize(word) for word in nopunc]
 
 def process_data(data_file, funding_file):
-    try:
-        # Load data as dictionary
-        data = pickle.load(open("data.pkl","rb"))
-    
-        # Transformed data
-        test_data = pickle.load(open("test-data.pkl","rb"))
-        print("loaded from pickle")
-        
-        return data, test_data
-    except:
-        pass
-    
     funding_data = {}
     with open(funding_file, newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
@@ -95,7 +83,7 @@ def process_data(data_file, funding_file):
     with open(data_file, newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
         ids = []
-        print(len(raw_data))
+        print("Raw data N: {}".format(str(len(raw_data))))
         for i in range(1,len(raw_data)):
             if (raw_data[i][6] in ids) or (raw_data[i][11][0] in ['Z','T']):
                 continue
@@ -109,6 +97,7 @@ def process_data(data_file, funding_file):
                 "text": title + " " + abstract + " " + relevance,
                 "title": title,
                 "id": raw_data[i][6],
+                "project_number": raw_data[i][9][1:].split("-")[0],
                 "terms": raw_data[i][2].split(";"),
                 "administration": raw_data[i][5],
                 "organization": raw_data[i][31],
@@ -118,22 +107,26 @@ def process_data(data_file, funding_file):
                 "funding": funding,
                 })
     
-    test_data = []
+    new_data = []
     for item in data:
-        if item["cost"] == 0:
-            data.remove(item)
-        elif item["year"] == "2021":
-            data.remove(item)
+        if item["cost"] != 0:
+            new_data.append(item)
+    
+    data = []
+    test_data = []
+    for item in new_data:
+        if item["year"] != "2021":
+            data.append(item)
+        else:
             test_data.append(item)
 
-    
     with open("data.pkl", 'wb') as handle:
         pickle.dump(data, handle)
         
     with open("test-data.pkl", 'wb') as handle:
         pickle.dump(test_data, handle)
     
-    print(len(data))
+    print("Processed data N: {}".format(str(len(data))))
     return data, test_data
 
 def feature_extraction(data, num_features, max_df):
@@ -152,7 +145,7 @@ def feature_extraction(data, num_features, max_df):
         text - tfidf for all text data
     """
     input_text = [item["text"] for item in data]
-    #vectorizer = TfidfVectorizer(analyzer=text_process, max_df=0.95, min_df=0.001, max_features=num_features).fit(input_text)
+    print("Vectorizing...")
     vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text) #, token_pattern=u'(?ui)\\b\\w*[a-z]+\\w*\\b'
     processed_text = vectorizer.transform(input_text)
     
@@ -161,13 +154,14 @@ def feature_extraction(data, num_features, max_df):
         
     with open("vectorizer.pkl", 'wb') as handle:
         pickle.dump(vectorizer, handle)
+    print("Data vectorized.")
     
 if __name__ == "__main__":
     file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/raw_data.csv'
     funding_file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/institution-funding.csv'
-    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
     data, test_data = process_data(file, funding_file)
     feature_extraction(data, 1000, 0.5)
+    data = data + test_data
     
     # By Funder
     funders = np.unique(np.array([item["administration"] for item in data]))
