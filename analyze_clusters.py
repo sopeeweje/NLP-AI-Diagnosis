@@ -392,7 +392,7 @@ if __name__ == "__main__":
     
     # Move LDA centroids and topic chart to results folder
     shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
-    shutil.move("topic_chart.png", "{}/topic chart.png".format(save_folder)) 
+    shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder)) 
     
     # Get best clustering
     data = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
