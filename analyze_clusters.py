@@ -85,7 +85,6 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     
     # Get centroids 
     # Identify the top terms for each cluster, using the TF-IDF terms with the highest values in the centroid
-    # Adapted From: https://scikit-learn.org/stable/auto_examples/text/plot_document_clustering.html
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
     terms = vectorizer.get_feature_names()
