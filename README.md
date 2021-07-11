@@ -9,13 +9,15 @@
   <li>Export the 2020 NIH funding by institution data from <a target="_blank" href="https://report.nih.gov/award/index.cfm">NIH RePORT</a>. This data is not incorporated in the analysis but can be incorporated if desired.</li>
 </ol>
 
+<h3>Environment</h3>
+<p>Install pipenv if not already installed: <code>pip install pipenv</code>. Pipenv is used to create a python virtual environment that includes the libraries necessary to conduct the analysis.</p>
+
 <h3>Determine parameters</h3>
 <p>Determine an appropriate number of <a target="_blank" href="https://monkeylearn.com/blog/what-is-tf-idf/">TF-IDF</a> features by running the feature identification script: <code>sh find_num_features.sh</code>.</p>
 <p>Once the size of the feature set is determined, find an appropriate number of clusters to divide the dataset: <code>sh find_k.sh</code>.</p>
 <p>Optimal parameter values can be selected by applying the "elbow method" to the resultant graphs.</p>
 
 <h3>Analysis</h3>
-<p>Install pipenv if not already installed: <code>pip install pipenv</code></p>
 <p>Perform the analysis by running the run.sh shell script from the project directory: <code>sh run.sh</code>.</p>
 <p>This performs the following:</p>
 <ul>
