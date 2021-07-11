@@ -40,6 +40,7 @@
   <li>umap.png -  <a target="_blank" href="https://arxiv.org/abs/1802.03426">UMAP</a> visualization of clusters</li>
   <li>lda_centroids.pkl - initial centroids from LDA</li>
   <li>topic chart.png - topic chart from LDA</li>
+  <li>supp_info.docx - Microsoft word document with tables contain 5 representative awards from each cluster, selected by maximum <a target="_blank" href="https://scikit-learn.org/stable/modules/generated/sklearn.metrics.silhouette_score.html">silhouette score</a>.</li>
   <li>model_clustering.pkl - pickle containing dictionary with the following keys:
     <ul>
       <li>"yr_avg_cost" - average award funding by cluster</li>
