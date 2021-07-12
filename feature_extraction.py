@@ -10,6 +10,7 @@ from collections import Counter
 import statistics
 import pickle
 import numpy as np
+import argparse
 
 
 def get_terms():
@@ -103,13 +104,13 @@ def process_data(data_file, funding_file):
                 "organization": raw_data[i][31],
                 "mechanism": raw_data[i][11],
                 "year": raw_data[i][42],
-                "cost": mk_int(raw_data[i][49]),
-                "funding": funding,
+                "funding": mk_int(raw_data[i][49]),
+                #"funding": funding, # by institution
                 })
     
     new_data = []
     for item in data:
-        if item["cost"] != 0:
+        if item["funding"] != 0:
             new_data.append(item)
     
     data = []
@@ -157,10 +158,27 @@ def feature_extraction(data, num_features, max_df):
     print("Data vectorized.")
     
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--max_features',
+        type=int,
+        required=True,
+        help='number of features',
+        default=2000,
+        )
+    parser.add_argument(
+        '--max_df',
+        type=float,
+        required=True,
+        help='maximum document frequency',
+        default=0.5,
+        )
+    FLAGS, unparsed = parser.parse_known_args()
+    
     file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/raw_data.csv'
     funding_file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/institution-funding.csv'
     data, test_data = process_data(file, funding_file)
-    feature_extraction(data, 1000, 0.5)
+    feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
     data = data + test_data
     
     # By Funder
@@ -168,7 +186,7 @@ if __name__ == "__main__":
     output = [["Funder", "Number of awards", "Value of awards"]]
     for funder in funders:
         count = len([item for item in data if item["administration"] == funder])
-        amount = sum([item["cost"] for item in data if item["administration"] == funder])
+        amount = sum([item["funding"] for item in data if item["administration"] == funder])
         output.append([funder, count, amount])
     with open('by_funder.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
@@ -179,7 +197,7 @@ if __name__ == "__main__":
     output = [["Year", "Number of awards", "Value of awards"]]
     for year in years:
         count = len([item for item in data if item["year"] == year])
-        amount = sum([item["cost"] for item in data if item["year"] == year])
+        amount = sum([item["funding"] for item in data if item["year"] == year])
         output.append([year, count, amount])
     with open('by_year.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
@@ -190,7 +208,7 @@ if __name__ == "__main__":
     output = [["Mechanism", "Number of awards", "Value of awards"]]
     for mech in mechanisms:
         count = len([item for item in data if item["mechanism"] == mech])
-        amount = sum([item["cost"] for item in data if item["mechanism"] == mech])
+        amount = sum([item["funding"] for item in data if item["mechanism"] == mech])
         output.append([mech, count, amount])
     with open('by_mechanism.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
