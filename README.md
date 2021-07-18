@@ -1,4 +1,4 @@
-# NLP-AI-Diagnosis
+# NLP-AI-Medicine
 <p>A natural language processing approach to determining frontiers in AI-based disease characterization using NIH award data</p>
 <h3>Data collection</h3>
 <p>Begin by collecting data to analyze as follows:</p>
