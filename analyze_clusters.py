@@ -47,7 +47,7 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
         "yr_avg_cost": List of lists. Average funding by year for each cluster.
         "yr_total_cost": List of lists. Total funding by year for each cluster.
         "size": List. Size of each cluster.
-        "data_by_cluster": List of lists of dictionaries. Points in each cluster
+        "data_by_cluster": List of lists of dictionaries. Points in each cluster: [ [{Cluster1pt1}, {Cluster1pt2},...], [{Cluster2pt1}, {Cluster2pt2},...], ...]
         "centroids": 10 x K array of cluster centroids,
         "score": List. Silhouette score by cluster
         "model": MiniBatchKMeans model
@@ -60,7 +60,7 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     # Transformed data
     X_transformed = pickle.load(open(processed_file,"rb"))
     
-    # Perform k means # KMeans(n_clusters=selected_k)#
+    # Perform mini batch k means
     km = MiniBatchKMeans(n_clusters=selected_k, init=centers, n_init=10, init_size=3000, batch_size=3000, verbose=0, max_no_improvement=None)
     # km = KMeans(n_clusters=selected_k, init=centers, n_init=10)
     clusters = km.fit_predict(X_transformed)
@@ -130,14 +130,14 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     score = metrics.silhouette_score(X_transformed, km.labels_)
     
     output = {
-        "yr_avg_cost": costs,
-        "yr_total_cost": yoy,
-        "size": size,
+        "yr_avg_cost": costs, # Average award size by year by cluster
+        "yr_total_cost": yoy, # Total award size by year by cluster
+        "size": size, # Number of awards in each cluster
         "data_by_cluster": cluster_all,
         "centroids": centroids,
-        "score": score,
-        "model": km,
-        "labels": clusters
+        "score": score, # Silhouette score for 
+        "model": km, # K-means model
+        "labels": clusters # Ordered list of cluster number labels for each award 
         }
     return output
 
@@ -375,21 +375,24 @@ def get_citations(clusters):
         cluster = list(set(cluster)) # Remove duplicates
         clusters_by_project.append(cluster)
     
-    # Get number of citations by paper
+    # Get number of citations, apt, and publication year by paper
     output = {}
     with open("citations.csv", newline='') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]), 
            output[raw_data[i][0]] = {"citations": int(raw_data[i][23]), "apt": float(raw_data[i][17])}
     
-    # Get project number by paper
+    # Get project number and year by paper
     with open("papers.csv", newline='') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)):
            if raw_data[i][13] in output.keys():
                output[raw_data[i][13]]["project"] = raw_data[i][0]
+               output[raw_data[i][13]]["year"] = raw_data[i][2]
     
     # Calculate total number of citations, total number of papers, average RCR, average APT for each cluster
+    # Issue 1 - need to add and return a metric representing the cummulative number of years that the papers associated with a cluster have been available.
+    # Some of the papers say they will be available in 2022 (meaning they just haven't been released by Pubmed yet) and should get availability = 0
     total_citations = []
     total_papers = []
     apts = []
@@ -425,7 +428,7 @@ def get_citations(clusters):
         upper.append(apts_interval[1])
         # rcrs.append(sum(cluster_apt)/len(cluster_apt))
 
-    return total_citations, total_papers, apts_95, apts, lower, upper, listed_apts # , rcrs
+    return total_citations, total_papers, apts_95, apts, lower, upper, listed_apts
 
 def get_rep_clusters(result):
     path, dirs, files = next(os.walk('{}/clusters'.format(result)))
@@ -712,94 +715,94 @@ def graph_projections():
     manager.resize(*manager.window.maxsize())
     
 
-# if __name__ == "__main__":
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument(
-#         '--k',
-#         type=int,
-#         required=True,
-#         help='number of clusters',
-#         default=30,
-#         )
-#     parser.add_argument(
-#         '--trials',
-#         type=int,
-#         required=True,
-#         help='number of trials',
-#         default=50,
-#         )
-#     FLAGS, unparsed = parser.parse_known_args()
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--k',
+        type=int,
+        required=True,
+        help='number of clusters',
+        default=30,
+        )
+    parser.add_argument(
+        '--trials',
+        type=int,
+        required=True,
+        help='number of trials',
+        default=50,
+        )
+    FLAGS, unparsed = parser.parse_known_args()
     
     
-#     years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
-#     selected_k = FLAGS.k
-#     num_trials = FLAGS.trials
-#     centers = pickle.load(open("lda_centroids.pkl","rb"))
+    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+    selected_k = FLAGS.k
+    num_trials = FLAGS.trials
+    centers = pickle.load(open("lda_centroids.pkl","rb"))
     
-#     # Create folder to save results
-#     now = datetime.now()
-#     if not os.path.exists("results"):
-#         os.makedirs("results")
-#     save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
-#     os.mkdir(save_folder)
+    # Create folder to save results
+    now = datetime.now()
+    if not os.path.exists("results"):
+        os.makedirs("results")
+    save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
+    os.mkdir(save_folder)
     
-#     # Move LDA centroids and topic chart to results folder
-#     shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
-#     shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder)) 
+    # Move LDA centroids and topic chart to results folder
+    shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
+    shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder)) 
     
-#     # Get best clustering
-#     data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
-#     with open("{}/model_clustering.pkl".format(save_folder), 'wb') as handle:
-#         pickle.dump(data, handle)
+    # Get best clustering
+    data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
+    with open("{}/model_clustering.pkl".format(save_folder), 'wb') as handle:
+        pickle.dump(data, handle)
     
-#     # Final cluster files
-#     num = 0
-#     os.mkdir(save_folder+"/clusters")
-#     for cluster in data["data_by_cluster"]:
-#         keys = cluster[0].keys()
-#         with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
-#             dict_writer = csv.DictWriter(output_file, keys)
-#             dict_writer.writeheader()
-#             dict_writer.writerows(cluster)
-#         num+=1
+    # Final cluster files
+    num = 0
+    os.mkdir(save_folder+"/clusters")
+    for cluster in data["data_by_cluster"]:
+        keys = cluster[0].keys()
+        with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
+            dict_writer = csv.DictWriter(output_file, keys)
+            dict_writer.writeheader()
+            dict_writer.writerows(cluster)
+        num+=1
     
-#     # Silhouette score by cluster
-#     print("")
-#     print("------Silhouette scores------")
-#     X_transformed = pickle.load(open("processed-data.pkl","rb"))
-#     scores = metrics.silhouette_samples(X_transformed, data["labels"])
-#     tabulated = []
-#     pairs = [(scores[i],data["labels"][i]) for i in range(len(scores))]
-#     for i in range(selected_k):
-#         avg_score = np.mean([j[0] for j in pairs if j[1] == i])
-#         print("Cluster {}: {}".format(str(i), str(avg_score)))
-#         tabulated.append(avg_score)
-#     print("----------------------------")
-#     print("")
+    # Silhouette score by cluster
+    print("")
+    print("------Silhouette scores------")
+    X_transformed = pickle.load(open("processed-data.pkl","rb"))
+    scores = metrics.silhouette_samples(X_transformed, data["labels"])
+    tabulated = []
+    pairs = [(scores[i],data["labels"][i]) for i in range(len(scores))]
+    for i in range(selected_k):
+        avg_score = np.mean([j[0] for j in pairs if j[1] == i])
+        print("Cluster {}: {}".format(str(i), str(avg_score)))
+        tabulated.append(avg_score)
+    print("----------------------------")
+    print("")
     
-#     # Final centroids
-#     order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
-#     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
-#     terms = vectorizer.get_feature_names()
-#     centroids = []
-#     centroid_file = open("{}/centroid".format(save_folder), "w")
-#     for i in range(selected_k):
-#         centroid_file.write("Cluster %d:" % i)
-#         centroid_list = []
-#         for ind in order_centroids[i, :15]:
-#             centroid_file.write(" %s," % terms[ind])
-#             centroid_list.append(terms[ind])
-#         centroids.append(centroid_list)
-#         centroid_file.write("\n")
-#     centroid_file.close()
+    # Final centroids
+    order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
+    vectorizer = pickle.load(open("vectorizer.pkl","rb"))
+    terms = vectorizer.get_feature_names()
+    centroids = []
+    centroid_file = open("{}/centroid".format(save_folder), "w")
+    for i in range(selected_k):
+        centroid_file.write("Cluster %d:" % i)
+        centroid_list = []
+        for ind in order_centroids[i, :15]:
+            centroid_file.write(" %s," % terms[ind])
+            centroid_list.append(terms[ind])
+        centroids.append(centroid_list)
+        centroid_file.write("\n")
+    centroid_file.close()
         
-#     # UMAP Visualization
-#     X_transformed = pickle.load(open("processed-data.pkl","rb"))
-#     umap_visualization(X_transformed, data["labels"], save_folder)
+    # UMAP Visualization
+    X_transformed = pickle.load(open("processed-data.pkl","rb"))
+    umap_visualization(X_transformed, data["labels"], save_folder)
     
-#     # Save model
-#     with open("model.pkl", 'wb') as handle:
-#         pickle.dump(data["model"], handle)
+    # Save model
+    with open("model.pkl", 'wb') as handle:
+        pickle.dump(data["model"], handle)
     
     # Projected funding by year
     # # Actual vs. projected awards
@@ -830,220 +833,37 @@ def graph_projections():
     
     selected_k = 60
     years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
-    x = np.arange(selected_k)
     
-    # Perform linear regression
-    y = actuals
-    x = projections
-    X = sm.add_constant(x)
+    # Save 2021 clusters
+    num = 0
+    os.mkdir("{}/clusters_test".format(save_folder))
+    for cluster in clusters_test:
+        try:
+            keys = cluster[0].keys()
+        except:
+            num+=1
+            continue
+        with open('{}/clusters_test/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
+            dict_writer = csv.DictWriter(output_file, keys)
+            dict_writer.writeheader()
+            dict_writer.writerows(cluster)
+        num+=1
     
-    re = sm.OLS(y, X).fit()
-    print("2021 projected vs. actual R2: {:.3f}".format(re.rsquared))
+    # Citations and papers
+    citations, papers, apt_pct, apt, lower, upper, listed_apts = get_citations(data["data_by_cluster"])
     
-    prstd, iv_l, iv_u = wls_prediction_std(re)
-
-    st, reg_data, ss2 = summary_table(re, alpha=0.05)
+    # Total funding
+    total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
     
-    predicted = reg_data[:, 2]
-    predict_mean_se  = reg_data[:, 3]
-    predict_mean_ci_low, predict_mean_ci_upp = reg_data[:, 4:6].T
-    predict_ci_low, predict_ci_upp = reg_data[:, 6:8].T
+    # Get representative clusters for supp info
+    get_rep_clusters(save_folder)
     
+    # All data
+    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
+    for i in range(selected_k):
+        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
+    with open('{}/final_data.csv'.format(save_folder), 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output)
     
-    
-    colors = cm.get_cmap('Spectral', 12)
-    mapping = [
-        10,
-        50,
-        19,
-        20,
-        27,
-        7,
-        16,
-        28,
-        29,
-        21,
-        17,
-        52,
-        22,
-        42,
-        11,
-        8,
-        30,
-        46,
-        23,
-        57,
-        24,
-        4,
-        31,
-        53,
-        12,
-        5,
-        32,
-        43,
-        33,
-        34,
-        35,
-        58,
-        18,
-        54,
-        25,
-        51,
-        44,
-        36,
-        55,
-        1,
-        37,
-        59,
-        26,
-        60,
-        38,
-        39,
-        9,
-        40,
-        47,
-        13,
-        48,
-        2,
-        14,
-        6,
-        45,
-        15,
-        56,
-        41,
-        49,
-        3,
-        ]
-    labels=[
-        "Diet/Exercise",
-        "Electronic health record",
-        "Experimental techniques",
-        "Genetics",
-        "Imaging methods",
-        "Nondescript",
-        "Neurology",
-        "Psychiatry",
-        "Oncology",
-        "Other",
-        "Patient populations",
-        "Training and Education"
-        ]
-    points = [
-        [(-2.7e6, -0.5e7), colors(0), "Diet/Exercise"], #Obesity
-        [(-0.5e7, 5e7), colors(0), "Diet/Exercise"], #Physical activity
-        [(-5e6,1e7), colors(0), "Diet/Exercise"], #Microbiome
-        [(-1e7,1e7), colors(1), "Electronic health record"], #Clinical decision support
-        [(-1e7,-8e6), colors(1), "Electronic health record"], #NLP
-        [(-1e7,6e6), colors(1), "Electronic health record"], #EMR phenotyping
-        [(1e7,6e7), colors(2), "Experimental techniques"], #Single cell analysis
-        [(0,-2e7), colors(2), "Experimental techniques"], #Protein structure analysis
-        [(0,-5e7), colors(2), "Experimental techniques"], #Mass spec
-        [(-1e7,5e6), colors(3), "Genetics"], #Dev genomics
-        [(-0.5e7,6.5e7), colors(3), "Genetics"], #Epigenetics
-        [(-5.4e6,-3e7),  colors(3), "Genetics"], #Regulatory gen
-        [(0,-1e7),  colors(3), "Genetics"], #GWAS
-        [(0,-1e7),  colors(3), "Genetics"], #Clinical genomics
-        [(-2e7,4e7),  colors(3), "Genetics"], #RNA sequencing
-        [(0.9e7,-8e7),  colors(4), "Imaging methods"], #PET
-        [(-1.1e7,-6e7),  colors(4), "Imaging methods"], #CAD
-        [(0,-2e7),  colors(4), "Imaging methods"], #MRI
-        [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
-        [(-1.5e7,9e7),  colors(5), "Nondescript"], #Nondescript
-        [(-2.5e7,2e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.2e7,-8e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.5e7,6e7),  colors(5), "Nondescript"], #Abstract unavailable
-        [(0,0.5e7),  colors(5), "Nondescript"], #Nondescript
-        [(-1e7,-7e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.5e7,8e7),  colors(10), "Psychiatry"], #Pain management
-        [(0.5e7,-7e7),  colors(6), "Neurology"], #Dementia
-        [(0.2e7,-0.5e7),  colors(6), "Neurology"], #Single-neuron analysis
-        [(-0.45e7,1e7),  colors(6), "Neurology"], #Speech disorders
-        [(-0.6e7,0.5e7),  colors(4), "Imaging methods"], #Functional MRI
-        [(-0.2e7,-10e7),  colors(6), "Neurology"], #Neurocog
-        [(0,0.5e7),  colors(6), "Neurology"], #Stroke
-        [(-2e7,-4e7),  colors(6), "Neurology"], #Sleep
-        [(0.4e7,-3.8e7),  colors(6), "Neurology"], #Neural circuits
-        [(0.2e7,-1.8e7),  colors(6), "Neurology"], #Language development
-        [(-1.2e7,7e7),  colors(6), "Neurology"], #Vision
-        [(-2.5e7,10e7),  colors(6), "Neurology"], #Motor disorders
-        [(0.1e7,-1e7),  colors(6), "Neurology"], #Autism
-        [(-2e7,-1.2e7),  colors(6), "Neurology"], #Neuroscience
-        [(-1.2e7,5e7),  colors(6), "Neurology"], #PD
-        [(-2e7,-2.8e7),  colors(7), "Oncology"], #Cancer genomics
-        [(0,-1e7),  colors(7), "Oncology"], #Lung cancer
-        [(2e7,0.2e7),  colors(7), "Oncology"], #Breast cancer
-        [(-0.1e7,-4e7),  colors(7), "Oncology"], #Cancer imaging
-        [(-0.1e7,2e7),  colors(8), "Other"], #HIV
-        [(-1.6e7,0.8e7),  colors(8), "Other"], #Environmental health
-        [(-1.3e7,-2e7),  colors(8), "Other"], #Asthma
-        [(1e7,2e7),  colors(8), "Other"], #Drug efficacy
-        [(-3e7,-2.5e7),  colors(9), "Patient populations"], #Pediatrics
-        [(2e7,-1.6e7),  colors(9), "Patient populations"], #Older adults
-        [(1e7,7e7),  colors(10), "Psychiatry"], #Suicidality
-        [(3e7,-2.1e7),  colors(10), "Psychiatry"], #AUD
-        [(-2.4e7,-7e7),  colors(10), "Psychiatry"], #Cigarette smoking
-        [(0.5e7,4e7),  colors(10), "Psychiatry"], #Mental health
-        [(-2e7,-0.75e7),  colors(10), "Psychiatry"], #Emotion
-        [(-2.4e7,0.9e7),  colors(11), "Training and Education"], #Research career programs
-        [(-2e7,5e7),  colors(11), "Training and Education"], #Bibliometric analysis
-        [(3e7, -1e7),  colors(11), "Training and Education"], #Big data education
-        [(-0.5e7,-1e7),  colors(11), "Training and Education"], #Science education
-    ]
-    fig, ax = plt.subplots()
-    ax.grid(b=None)
-    for i in range(12):
-        js = [k for k in range(len(clusters)) if points[k][2]==labels[i]]
-        ax.scatter([projections[j] for j in js], [actuals[j] for j in js], color=colors(i), label=labels[i]) #points[i][1]
-    ax.set_xlim(-0.2e8, 1.6e8)
-    ax.set_ylim(-10e7, 14e7)
-    ax.legend(loc="lower right")
-    ann = []
-    locations = [(projections[i], actuals[i]) for i in range(len(clusters))]
-    for i in range(60):
-        ann.append(ax.annotate(descriptions[mapping[i]-1], xy=locations[mapping[i]-1], xytext=tuple(map(sum,zip(locations[mapping[i]-1],points[i][0]))), fontsize=8, arrowprops=dict(arrowstyle="-", color='k', lw=0.5)))
-    # https://adjusttext.readthedocs.io/en/latest/_modules/adjustText.html#adjust_text
-    # adjust_text(ann, projection, cluster_cost_2021, ax=ax, expand_text=(1.05,3), force_text=(0.25, 0.5), only_move={'points':'y', 'text':'y', 'objects':'y'}, arrowprops=dict(arrowstyle="-", color='k', lw=0.5))
-    ax.plot([projections[np.argmin(projections)],projections[np.argmax(projections)]], [predicted[np.argmin(projections)],predicted[np.argmax(projections)]], color="#808080")
-    ax.plot(sort(x), sort(predict_mean_ci_low), color='#808080', linestyle="--", lw=2)
-    ax.plot(sort(x), sort(predict_mean_ci_upp), color='#808080', linestyle="--", lw=2)
-    ax.set_ylabel('Actual 2021 award to date ($10 millions)')
-    ax.set_xlabel('Projected 2021 award ($100 millions)')
-    manager = plt.get_current_fig_manager()
-    manager.resize(*manager.window.maxsize())
-    
-#     plt.savefig('{}/actual_vs_projected.png'.format(save_folder))
-    
-#     # Save 2021 clusters
-#     num = 0
-#     os.mkdir("{}/clusters_test".format(save_folder))
-#     for cluster in clusters_test:
-#         try:
-#             keys = cluster[0].keys()
-#         except:
-#             num+=1
-#             continue
-#         with open('{}/clusters_test/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
-#             dict_writer = csv.DictWriter(output_file, keys)
-#             dict_writer.writeheader()
-#             dict_writer.writerows(cluster)
-#         num+=1
-    
-#     # Citations and papers
-#     citations, papers, apt_pct, apt, lower, upper, listed_apts = get_citations(data["data_by_cluster"])
-    
-#     # Total funding
-#     total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
-    
-#     # Get representative clusters for supp info
-#     get_rep_clusters(save_folder)
-    
-#     # All data
-#     output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
-#     for i in range(selected_k):
-#         output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
-#     with open('{}/final_data.csv'.format(save_folder), 'w', newline='') as csvfile:
-#         writer = csv.writer(csvfile)
-#         writer.writerows(output)
-    
-#     print("Complete.")
+    print("Complete.")
