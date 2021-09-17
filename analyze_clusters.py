@@ -391,8 +391,6 @@ def get_citations(clusters):
                output[raw_data[i][13]]["year"] = raw_data[i][2]
     
     # Calculate total number of citations, total number of papers, average RCR, average APT for each cluster
-    # Issue 1 - need to add and return a metric representing the cummulative number of years that the papers associated with a cluster have been available.
-    # Some of the papers say they will be available in 2022 (meaning they just haven't been released by Pubmed yet) and should get availability = 0
     total_citations = []
     total_papers = []
     apts = []
