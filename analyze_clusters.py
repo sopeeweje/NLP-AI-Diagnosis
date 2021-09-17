@@ -365,7 +365,13 @@ def get_citations(clusters):
     -------
     total_citations : list of total citations by cluster
     total_papers : list of total papers by cluster
-
+    apts: average APT
+    lower: lower bound of 95% CI of average APT
+    upper: upper bound of 95% CI of average APT
+    
+    ***apt_95 : number of papers with APT > 0.95. Needs to be taken out (might break things elsewhere in the process)***
+    ***availability: to be added as described****
+    
     """
     
     # Get clusters by project number
@@ -395,7 +401,6 @@ def get_citations(clusters):
     total_papers = []
     apts = []
     apts_95 = []
-    listed_apts = []
     lower = []
     upper = []
     # rcrs = []
@@ -418,7 +423,6 @@ def get_citations(clusters):
         total_papers.append(num_papers)
         apts_95.append(sum([1 for i in cluster_apt if i==0.95])/len(cluster_apt))
         apts.append(np.mean(cluster_apt))
-        listed_apts.append(cluster_apt)
         
         #create 95% confidence interval for population mean weight
         apts_interval = scist.norm.interval(alpha=0.95, loc=np.mean(cluster_apt), scale=scist.sem(cluster_apt))
@@ -426,7 +430,7 @@ def get_citations(clusters):
         upper.append(apts_interval[1])
         # rcrs.append(sum(cluster_apt)/len(cluster_apt))
 
-    return total_citations, total_papers, apts_95, apts, lower, upper, listed_apts
+    return total_citations, total_papers, apts_95, apts, lower, upper
 
 def get_rep_clusters(result):
     path, dirs, files = next(os.walk('{}/clusters'.format(result)))
