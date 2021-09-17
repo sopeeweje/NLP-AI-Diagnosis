@@ -1,5 +1,7 @@
 import pickle
 from sklearn.decomposition import LatentDirichletAllocation
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt 
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import seaborn as sns
@@ -63,6 +65,8 @@ def plot_top_words(model, feature_names, n_top_words, title, k):
         fig.suptitle(title)
 
     plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
+    manager = plt.get_current_fig_manager()
+    manager.resize(*manager.window.maxsize())
     plt.savefig('topic_chart.png')
     
 if __name__ == "__main__":

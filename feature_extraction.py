@@ -5,52 +5,14 @@ from nltk.stem import WordNetLemmatizer
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from collections import Counter
 import statistics
 import pickle
 import numpy as np
 import argparse
-
-
-def get_terms():
-    ai_terms = [
-        "Artificial Intelligence",
-        "Machine Learning",
-        "Deep Learning",
-        "Natural Language Processing",
-        "Random Forest",
-        "Logistic Regression",
-        "LSTM",
-        "RNN",
-        "CNN",
-        "Federated Learning",
-        "Decision Tree",
-        "Support Vector Machine",
-        "Bayesian Learning",
-        "Gradient Boosting",
-        "Computational Intelligence",
-        "Naive Bayes",
-        "Computer Vision",]
-    
-    purpose_terms = [
-        "Diagnosis",
-        "Early Detection",
-        "Decision Support",
-        "Screening"
-        ]
-    
-    search_string = ""
-    term_lists = [ai_terms, purpose_terms]
-    for term_list in term_lists:
-        for term in term_list:
-            if term == term_list[0]:
-                search_string += '("' + term + '" or '
-            elif term == term_list[-1]:
-                search_string += ('"' + term + '") and ')
-            else:
-                search_string += ('"' + term + '" or ')
-    print(search_string)
 
 def mk_int(s):
     s = s.strip()
@@ -156,7 +118,28 @@ def feature_extraction(data, num_features, max_df):
     with open("vectorizer.pkl", 'wb') as handle:
         pickle.dump(vectorizer, handle)
     print("Data vectorized.")
+
+def get_features():
+    """
+    Parameters
+    ----------
+    None
+
+    Returns
+    -------
+    A text file with a list of TF-IDF feature names
+    """
+    # Vectorizer to convert raw documents to TF-IDF features
+    vector = pickle.load(open("vectorizer.pkl","rb"))
     
+    # Get feature names and save to text file
+    centroid_file = open("features", "w")
+    for i in vector.get_feature_names():
+        centroid_file.write(i)
+        centroid_file.write("\n")
+    centroid_file.close()
+    print(len(vector.get_feature_names()))
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -213,3 +196,4 @@ if __name__ == "__main__":
     with open('by_mechanism.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
+        

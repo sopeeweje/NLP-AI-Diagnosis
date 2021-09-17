@@ -1,37 +1,40 @@
 Funder,Number of awards,Value of awards
-AHRQ,84,20015210
-ATSDR,3,1200000
-FDA,1,199999
-FIC,10,1111681
-NCATS,52,45528321
-NCBDDD,5,2194730
-NCCDPHP,4,1078006
-NCCIH,12,5015281
-NCEZID,9,845310
-NCHHSTP,7,1174056
-NCI,1185,472034832
-NCIPC,4,1089527
-NCRR,13,4030329
-NEI,185,67418243
-NHGRI,156,109943631
-NHLBI,477,267564900
-NIA,484,333549650
-NIAAA,138,43189311
-NIAID,283,143085490
-NIAMS,95,29252179
-NIBIB,339,124566545
-NICHD,194,81214705
-NIDA,171,81378237
-NIDCD,129,62255329
-NIDCR,56,15726481
-NIDDK,174,78093886
-NIEHS,121,41046980
-NIGMS,376,133310115
-NIMH,655,297165076
-NIMHD,24,7314608
-NINDS,310,129705510
-NINR,89,27640495
-NIOSH,4,883467
-NLM,257,81665140
-OD,22,16202648
-PHPPO,3,1343128
+National Cancer Institute (NCI),1787,"$820,672,609"
+National Institute on Mental Health (NIMH),1620,"$803,990,525"
+National Institute on Aging (NIA),885,"$590,737,609"
+National Institute of General Medical Sciences (NIGMS),1578,"$583,050,707"
+"National Heart, Lung, and Blood Institute (NHLBI)",1029,"$543,507,175"
+National institute on Neurological Disorders and Stroke (NINDS),953,"$477,810,011"
+National Human Genome Research Institute (NHGRI),631,"$384,869,043"
+National Institute of Allergy and Infectious Diseases (NIAID),583,"$326,953,772"
+National Institute of Biomedical Imaging and Bioengineering (NIBIB),738,"$303,798,407"
+National Library of Medicine (NLM),868,"$278,966,234"
+National Institute on Drug Abuse (NIDA),553,"$243,759,445"
+National Institute of Child Health and Human Development (NICHD),586,"$224,815,893"
+National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK),474,"$207,234,262"
+National Eye Institute (NEI),502,"$175,256,603"
+National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS),195,"$153,148,623"
+National Institute on Deafness and Other Communication Disorders (NIDCD),380,"$150,051,841"
+National Institute of Environmental Health Sciences (NIEHS),301,"$123,034,654"
+National Center for Advancing Translational Sciences (NCATS),126,"$100,317,658"
+National Institute on Alcohol Abuse and Alcoholism (NIAAA),267,"$91,539,427"
+"Office of the Director, NIH (OD)",86,"$63,368,032"
+Agency for Healthcare Research and Quality (AHRQ),160,"$61,437,417"
+National Institute of Dental and Craniofacial Research (NIDCR),140,"$47,937,394"
+National Center for Research Resources (NCRR),70,"$42,779,109"
+National Institute of Nursing Research (NINR),117,"$41,180,840"
+National Center for Complementary and Integrative Health (NCCIH),56,"$33,049,530"
+National Institute on Minority Health and Health Disparities (NIMHD),65,"$24,108,805"
+Center for Global Health (CGH),10,"$7,560,355"
+Food and Drug Administration (FDA),29,"$7,508,884"
+National Center for Emerging and Zoonotic Infectious Diseases (NCEZID),19,"$7,466,590"
+National Institute of Occupational Safety and Health (NIOSH),16,"$3,697,463"
+"Office of the Director, Centers for Disease Control and Prevention (ODCDC)",2,"$3,159,933"
+Public Health practice Program Office (PHPPO),6,"$3,012,198"
+National Center for Chronic Disease Prevention and Health Promotion (NCCDPHP),8,"$2,721,230"
+National Center on Birth Defects and Developmental Disabilities (NCBDDD),5,"$2,194,730"
+Fogarty International Center (FIC),13,"$1,481,504"
+Agency for Toxic Substances and DIsease Registry (ATSDR),2,"$1,000,000"
+National Center for Injury Prevention and Control (NCIPC),3,"$999,057"
+Central Institute for the Deaf (CID),3,"$676,000"
+National Center for Immunization and Respiratory Diseases (NCIRD),1,"$371,721"

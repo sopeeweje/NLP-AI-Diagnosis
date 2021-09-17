@@ -1,8 +1,13 @@
 import csv
 from sklearn.cluster import KMeans, MiniBatchKMeans, MeanShift, AffinityPropagation, SpectralClustering
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
+from matplotlib.colors import LinearSegmentedColormap
 import pickle
 import numpy as np
+import pandas as pd
+import seaborn as sns
 from feature_extraction import text_process
 import sklearn.metrics as metrics
 from yellowbrick.cluster import InterclusterDistance
@@ -15,26 +20,41 @@ from datetime import datetime
 import os
 from statsmodels.stats.outliers_influence import summary_table
 from statsmodels.sandbox.regression.predstd import wls_prediction_std
+from statsmodels.stats.multicomp import pairwise_tukeyhsd
 import statsmodels.api as sm
 import argparse
 import shutil
 import scipy.stats as scist
 from docx import Document
-
-def rainbow_color_stops(n=10, end=1, shade=0.9):
-    return [ hls_to_rgb(end * i/(n-1)*shade, 0.5*shade, 1*shade) for i in range(n) ]
-
-def get_features():
-    vector = pickle.load(open("vectorizer.pkl","rb"))
-    centroid_file = open("/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/features", "w")
-    for i in vector.get_feature_names():
-        centroid_file.write(i)
-        centroid_file.write("\n")
-    centroid_file.close()
-    print(len(vector.get_feature_names()))
+import math
 
 def get_clusters(selected_k, data_file, processed_file, centers, years, save_folder="", save=True):
-    # Load data as dictionary
+    """
+    
+    Parameters
+    ----------
+    selected_k : selected number of clusters
+    data_file : pickle with raw data as list of dictionaries
+    processed_file : pickle with transformed data as array
+    centers : array. initial centroids from LDA. Can be initialized as 'k-means++'
+    years : list of strings. years for intracluster analysis
+    save_folder : string. directory to save result, the default is "".
+    save : boolean
+
+    Returns
+    -------
+    output : dictionary. Keys:
+        "yr_avg_cost": List of lists. Average funding by year for each cluster.
+        "yr_total_cost": List of lists. Total funding by year for each cluster.
+        "size": List. Size of each cluster.
+        "data_by_cluster": List of lists of dictionaries. Points in each cluster
+        "centroids": 10 x K array of cluster centroids,
+        "score": List. Silhouette score by cluster
+        "model": MiniBatchKMeans model
+        "labels": Cluster labels of data points (ordered)
+
+    """
+    # Load data as list of dictionaries
     data = pickle.load(open(data_file,"rb"))
     
     # Transformed data
@@ -64,8 +84,6 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
             cluster_data[i]["score"] = cluster_scores[i]
         cluster_all.append(cluster_data)
         
-        # get scores
-        
         # calculate average cost and std
         try:
             average_cost = sum([item["funding"] for item in cluster_data])/len(cluster_data)
@@ -94,19 +112,21 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     centroids = []
     for i in range(selected_k):
         centroid_list = []
-        for ind in order_centroids[i, :10]:
+        for ind in order_centroids[i, :15]:
             centroid_list.append(terms[ind])
         centroids.append(centroid_list)
     
+    # Save centroids
     if save:
-        centroid_file = open("/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/{}/centroid".format(save_folder), "w")
+        centroid_file = open("{}/centroid".format(save_folder), "w")
         for i in range(selected_k):
             centroid_file.write("Cluster %d:" % i)
-            for ind in order_centroids[i, :10]:
+            for ind in order_centroids[i, :15]:
                 centroid_file.write(" %s" % terms[ind])
             centroid_file.write("\n")
         centroid_file.close()
     
+    # get scores
     score = metrics.silhouette_score(X_transformed, km.labels_)
     
     output = {
@@ -117,7 +137,6 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
         "centroids": centroids,
         "score": score,
         "model": km,
-        "complete_centroids": order_centroids,
         "labels": clusters
         }
     return output
@@ -143,7 +162,13 @@ def umap_visualization(X_transformed, cluster_labels, save_folder=""):
     plt.title('UMAP Projection of Awards, TF-IDF', fontsize=14)
     plt.xlabel("UMAP 1")
     plt.ylabel("UMAP 2")
+    
+    manager = plt.get_current_fig_manager()
+    manager.resize(*manager.window.maxsize())
     plt.savefig('{}/umap.png'.format(save_folder))
+
+def rainbow_color_stops(n=10, end=1, shade=0.9):
+    return [ hls_to_rgb(end * i/(n-1)*shade, 0.5*shade, 1*shade) for i in range(n) ]
 
 def graph_funding_projections(data, save_folder=""):
     # Create grid that highlights each projection with 95% CI
@@ -203,7 +228,12 @@ def graph_funding_projections(data, save_folder=""):
         axs[m[i],n[i]].set_xlim(0,21.00001)
         axs[m[i],n[i]].grid(False)
     
-    plt.savefig('{}/funding_by_year.png'.format(save_folder))
+    manager = plt.get_current_fig_manager()
+    manager.resize(*manager.window.maxsize())
+    if save_folder != "":
+        plt.savefig('{}/funding_by_year.png'.format(save_folder))
+    else:
+        plt.savefig('funding_by_year.png')
     
     # 5. Return 2021 projections and growth rate
     return projection, growth, bounds
@@ -227,13 +257,23 @@ def viz_centroids(data):
     visualizer.fit(X_transformed)     # Fit the data to the visualizer
     visualizer.show()        # Finalize and render the figure
 
+def top_bottom_clusters():
+    labels = []
+    values = []
+    with open(funding_file, newline='') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)):
+            org = raw_data[i][0]
+            funding = int(raw_data[i][5])
+            funding_data[org] = funding
+
 def predict_clusters(test_data, selected_k):
     test_data = pickle.load(open(test_data,"rb"))
     model = pickle.load(open("model.pkl","rb"))
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
     input_text = [item["text"] for item in test_data]
     test_transformed = vectorizer.transform(input_text)
-    
+    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
     labels = model.predict(test_transformed)
     
     # Output data
@@ -354,6 +394,7 @@ def get_citations(clusters):
     total_papers = []
     apts = []
     apts_95 = []
+    listed_apts = []
     lower = []
     upper = []
     # rcrs = []
@@ -376,6 +417,7 @@ def get_citations(clusters):
         total_papers.append(num_papers)
         apts_95.append(sum([1 for i in cluster_apt if i==0.95])/len(cluster_apt))
         apts.append(np.mean(cluster_apt))
+        listed_apts.append(cluster_apt)
         
         #create 95% confidence interval for population mean weight
         apts_interval = scist.norm.interval(alpha=0.95, loc=np.mean(cluster_apt), scale=scist.sem(cluster_apt))
@@ -383,7 +425,7 @@ def get_citations(clusters):
         upper.append(apts_interval[1])
         # rcrs.append(sum(cluster_apt)/len(cluster_apt))
 
-    return total_citations, total_papers, apts_95, apts, lower, upper # , rcrs
+    return total_citations, total_papers, apts_95, apts, lower, upper, listed_apts # , rcrs
 
 def get_rep_clusters(result):
     path, dirs, files = next(os.walk('{}/clusters'.format(result)))
@@ -428,7 +470,7 @@ def get_rep_clusters(result):
         unique_awards_list = list(unique_awards_sorted.items())[0:5]
         
         p = document.add_paragraph()
-        p.add_run('Cluster {}'.format(str(i))).bold = True
+        p.add_run('Cluster {}:'.format(str(i))).bold = True
         table = document.add_table(rows=6, cols=5)
         hdr_cells = table.rows[0].cells
         hdr_cells[0].text = 'Title'
@@ -446,106 +488,353 @@ def get_rep_clusters(result):
     
     document.save('{}/supp_info.docx'.format(result))
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument(
-        '--k',
-        type=int,
-        required=True,
-        help='number of clusters',
-        default=30,
-        )
-    parser.add_argument(
-        '--trials',
-        type=int,
-        required=True,
-        help='number of trials',
-        default=50,
-        )
-    FLAGS, unparsed = parser.parse_known_args()
+def cluster_anova():
+    # Result labels
+    result = pickle.load(open("results/07-18-2021--132946/model_clustering.pkl","rb"))
+    labels = result["labels"]
+    clusters = result["data_by_cluster"]
+    funding = [sum(item["funding"] for item in clusters[i]) for i in range(len(clusters))]
+    total_citations, total_papers, apts_95, apts, lower, upper, listed_apts = get_citations(clusters)
     
-    
-    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
-    selected_k = FLAGS.k
-    num_trials = FLAGS.trials
-    centers = pickle.load(open("lda_centroids.pkl","rb"))
-    
-    # Create folder to save results
-    now = datetime.now()
-    if not os.path.exists("results"):
-        os.makedirs("results")
-    save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
-    os.mkdir(save_folder)
-    
-    # Move LDA centroids and topic chart to results folder
-    shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
-    shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder)) 
-    
-    # Get best clustering
-    data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
-    with open("{}/model_clustering.pkl".format(save_folder), 'wb') as handle:
-        pickle.dump(data, handle)
-    
-    # Final cluster files
-    num = 0
-    os.mkdir(save_folder+"/clusters")
-    for cluster in data["data_by_cluster"]:
-        keys = cluster[0].keys()
-        with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
-            dict_writer = csv.DictWriter(output_file, keys)
-            dict_writer.writeheader()
-            dict_writer.writerows(cluster)
-        num+=1
-    
-    # Silhouette score by cluster
-    print("")
-    print("------Silhouette scores------")
-    X_transformed = pickle.load(open("processed-data.pkl","rb"))
-    scores = metrics.silhouette_samples(X_transformed, data["labels"])
-    tabulated = []
-    pairs = [(scores[i],data["labels"][i]) for i in range(len(scores))]
-    for i in range(selected_k):
-        avg_score = np.mean([j[0] for j in pairs if j[1] == i])
-        print("Cluster {}: {}".format(str(i), str(avg_score)))
-        tabulated.append(avg_score)
-    print("----------------------------")
-    print("")
-    
-    # Final centroids
-    order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
-    vectorizer = pickle.load(open("vectorizer.pkl","rb"))
-    terms = vectorizer.get_feature_names()
-    centroids = []
-    centroid_file = open("/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/{}/centroid".format(save_folder), "w")
-    for i in range(selected_k):
-        centroid_file.write("Cluster %d:" % i)
-        centroid_list = []
-        for ind in order_centroids[i, :10]:
-            centroid_file.write(" %s," % terms[ind])
-            centroid_list.append(terms[ind])
-        centroids.append(centroid_list)
-        centroid_file.write("\n")
-    centroid_file.close()
+    all_apts = []
+    labels = []
+    for i in range(len(listed_apts)):
+        all_apts.extend(listed_apts[i])
+        labels.extend([i for j in range(len(listed_apts[i]))])
         
-    # UMAP Visualization
-    X_transformed = pickle.load(open("processed-data.pkl","rb"))
-    umap_visualization(X_transformed, data["labels"], save_folder)
+    # Load data frame
+    df = pd.DataFrame({'score': all_apts,
+                   'group': labels}) 
     
-    # Save model
-    with open("model.pkl", 'wb') as handle:
-        pickle.dump(data["model"], handle)
+    # perform Tukey's test
+    tukey = pairwise_tukeyhsd(endog=df['score'],
+                              groups=df['group'],
+                              alpha=0.05)
+    df = pd.DataFrame(data=tukey._results_table.data[1:], columns=tukey._results_table.data[0])
+    for index in range(len(df)):
+        group1 = df["group1"][index]
+        group2 = df["group2"][index]
+        p = df[df["group1"]==group1][df["group2"]==group2]["p-adj"][index]
+        if p > 0.05:
+            p = 5
+        elif 0.01 < p <= 0.05:
+            p = 4
+        elif 0.005 < p <= 0.01:
+            p = 3
+        elif 0.001 < p <= 0.005:
+            p = 2
+        elif p <= 0.001:
+            p = 1
+        if np.mean(listed_apts[group2]) > np.mean(listed_apts[group1]):
+            p = -p
+        df.at[index,'p-adj']=p
+
+    df.to_csv('anova_award.csv', index=False, header=True)
+    piv = pd.pivot_table(df, values="p-adj",index=["group2"], columns=["group1"])
+    plt.figure()
+    myColors = ((1.0, 1.0, 1.0),
+                #(255/256, 215/256, 205/256),
+                (255/256, 175/256, 158/256),
+                (254/256, 134/256, 112/256),
+                (243/256, 88/256, 68/256),
+                (228/256, 13/256, 25/256),
+                (43/256, 12/256, 240/256),
+                (117/256, 72/256, 245/256),
+                (160/256, 118/256, 249/256),
+                (196/256, 163/256, 252/256),
+                #(227/256, 208/256, 254/256),
+                (1.0, 1.0, 1.0))
+    cmap = LinearSegmentedColormap.from_list('Custom', myColors, len(myColors))
+    xlabels = []
+    ylabels = []
+    with open('figures and tables/tick_labels.csv', newline='') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(0,len(raw_data)-1):
+            xlabels.append(raw_data[i][0])
+            ylabels.append(raw_data[i+1][0])
+    sns.set(font_scale=0.6)
+    ax = sns.heatmap(piv, vmin=-5, vmax=5, xticklabels=True, yticklabels=True, cmap=cmap, cbar=True, square=True,) #'format': '%.0f%%', 
+    ax.set_xlabel("Cluster 1")
+    ax.set_ylabel("Cluster 2")
+    ax.set_xticklabels(xlabels)
+    ax.set_yticklabels(ylabels) 
+    colorbar = ax.collections[0].colorbar
+    colorbar.set_ticks([-3.5, -2.5, -1.5, -0.5, 0.5, 1.5, 2.5, 3.5])
+    colorbar.set_ticklabels(['Cluster 2 > 1, p < 0.05',
+                             'Cluster 2 > 1, p < 0.01',
+                             'Cluster 2 > 1, p < 0.005',
+                             'Cluster 2 > 1, p < 0.001', 
+                             'Cluster 1 > 2, p < 0.001',
+                             'Cluster 1 > 2, p < 0.005',
+                             'Cluster 1 > 2, p < 0.01',
+                             'Cluster 1 > 2, p < 0.05',])
+    # ax.collections[0].colorbar.set_ticklabels(['10', '30'])
+    for text in ax.texts:
+        if abs(float(text.get_text())) > 0.05:
+            text.set_text("")
+    ax.figure.tight_layout()
+    plt.savefig('avg_award_ANOVA.png')
+
+def plot_translation_metrics():
+    apt = []
+    cpof = []
+    with open('figures and tables/citation_metrics.csv', newline='') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)):
+            apt.append([raw_data[i][0], raw_data[i][1], float(raw_data[i][2]), float(raw_data[i][3]), float(raw_data[i][4])])
+            cpof.append([raw_data[i][0], raw_data[i][1], float(raw_data[i][5])])
+    apt.sort(key=lambda x: x[2])
+    ci95_apt = [[abs(i[2]-i[3]), abs(i[2]-i[4])] for i in apt]
+    ci95_apt = list(map(list, zip(*ci95_apt)))
+    cpof.sort(key=lambda x: x[2])
+    categories = np.unique([i[1] for i in apt])
+    #color_selection = rainbow_color_stops(len(categories))
+    color_selection = [
+        (246/256, 20/256, 58/256),
+        (249/256, 64/256, 77/256),
+        (252/256, 91/256, 96/256),
+        (55/256, 20/256, 246/256),
+        (95/256, 96/256, 255/256),
+        (140/256, 149/256, 253/256),
+        (253/256, 114/256, 116/256),
+        (253/256, 134/256, 135/256),
+        (251/256, 154/256, 154/256),
+        (248/256, 173/256, 172/256),
+        (244/256, 191/256, 191/256),
+        (191/256, 198/256, 244/256),
+        ]
+    clinical = [0,1,2,6,7,8,9,10]
+    technical = [3,4,5,11]
+    plt.rcdefaults()
+    
+    # APT
+    fig, ax = plt.subplots()
+    ax.barh(np.arange(len(apt)), [i[2] for i in apt], xerr=ci95_apt, color=[color_selection[np.where(categories==j)[0][0]] for j in [i[1] for i in apt]])
+    ax.set_yticks(np.arange(len(apt)))
+    ax.set_yticklabels([i[0] for i in apt])
+    handles = [plt.Rectangle((0,0),1,1, color=color_selection[i]) for i in clinical]
+    legend1 = ax.legend(handles, [categories[i] for i in clinical], loc='best', bbox_to_anchor=(-0.45, 1))
+    legend1.set_title(title="Clinical focus", prop={"weight": "bold"})
+    handles = [plt.Rectangle((0,0),1,1, color=color_selection[i]) for i in technical]
+    legend2 = ax.legend(handles, [categories[i] for i in technical], loc='best', bbox_to_anchor=(-0.45, 0.7), title="Technical focus")
+    legend2.set_title(title="Technical focus", prop={"weight": "bold"})
+    ax.set_xlabel("Average Approximate Potential to Translate (APT) score", weight="bold")
+    ax.set_ylabel("Application", weight="bold")
+    ax.add_artist(legend1)
+    ax.add_artist(legend2)
+    plt.tight_layout()
+    
+    # CPOF
+    fig, ax = plt.subplots()
+    ax.barh(np.arange(len(cpof)), [i[2] for i in cpof], color=[color_selection[np.where(categories==j)[0][0]] for j in [i[1] for i in cpof]])
+    ax.set_yticks(np.arange(len(cpof)))
+    ax.set_yticklabels([i[0] for i in cpof])
+    ax.set_xlabel("Citations per $1 million funding (CPOF)", weight="bold")
+    ax.set_ylabel("Application", weight="bold")
+    plt.tight_layout()
+            
+def graph_projections():
+    # 1. Determine dimensions for plot
+    data = pickle.load(open("results/07-18-2021--132946/model_clustering.pkl","rb"))
+    clusters = []
+    with open('results/07-18-2021--132946/final_data.csv', newline='') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)):
+            cluster = int(raw_data[i][0])
+            description = raw_data[i][16]
+            category = raw_data[i][17]
+            clusters.append([cluster, description, category])
+        
+    k = 12
+    factors = []
+    categories = np.unique([x[2] for x in clusters])
+    categories = np.delete(categories, 6)
+    for i in range(1, k+1):
+        if k / i == i:
+            factors.extend([i,i])
+        elif k % i == 0:
+            factors.append(i)
+    dim1, dim2 = factors[int(len(factors)/2)], factors[int(len(factors)/2-1)]
+    
+    # 2. Create plot
+    fig, axs = plt.subplots(dim1, dim2, sharex='all', sharey='all')
+    
+    # 3. Create hidden frame for shared labels
+    fig.add_subplot(111, frameon=False)
+    plt.grid(b=None)
+    plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
+    plt.xlabel("Years from 2000")
+    plt.ylabel("Funding ($100 millions)")
+    
+    # 4. Plot each projection with scatter plot
+    years_int = list(range(0,21))
+    m = np.repeat(list(range(dim1)), dim2)
+    n = np.tile(list(range(dim2)), dim1)
+    maxy = 0
+    projection = []
+    growth = []
+    bounds = []
+    for j in range(k):
+        filtered = list(filter(lambda x: x[2] == categories[j], clusters))
+        if j in [0,1,2,6,7,8,9,10]:
+            color_spectrum = 'Reds'
+        else:
+            color_spectrum = 'Blues'
+        colors = cm.get_cmap(color_spectrum, len(filtered)+5)
+        cluster_labels = [x[0] for x in filtered]
+        for i in range(len(cluster_labels)):
+            popt, pcov = curve_fit(lambda t,a,b: a*np.exp(b*t),  years_int,  data["yr_total_cost"][cluster_labels[i]],  p0=(4000, 0.1))
+            std = np.sqrt(np.diagonal(pcov))
+            x = np.linspace(0,21,400)
+            upper0 = popt[0]+1.96*std[0]
+            lower0 = popt[0]-1.96*std[0]
+            upper1 = popt[1]+1.96*std[1]
+            lower1 = popt[1]-1.96*std[1]
+            
+            ypred = [popt[0]*np.exp(popt[1]*point) for point in x] #-popt[0]
+            projection.append(ypred[-1])
+            growth.append(popt[1])
+            bounds.append([lower1, upper1])
+            maxy = max([max(ypred), maxy])
+            upper = [upper0*np.exp(upper1*point) for point in x]
+            lower = [lower0*np.exp(lower1*point) for point in x]
+            #color = matplotlib.colors.rgb2hex(rgba)
+            axs[m[j],n[j]].set_title(categories[j], size=10, weight='bold', position=(0.5, 0.8))
+            axs[m[j],n[j]].plot(x, ypred, color=colors(i+5))
+            axs[m[j],n[j]].fill_between(x, upper, lower, color=colors(i+5), alpha=0.1)
+            axs[m[j],n[j]].scatter(years_int, data["yr_total_cost"][cluster_labels[i]], s=20, color=colors(i+5))
+            axs[m[j],n[j]].set_ylim(-100000,maxy+100000)
+            axs[m[j],n[j]].set_xlim(0,21.00001)
+            axs[m[j],n[j]].grid(False)
+        axs[m[j],n[j]].legend([x[1] for x in filtered], loc="center left", prop={'size': 5})
+    
+    manager = plt.get_current_fig_manager()
+    manager.resize(*manager.window.maxsize())
+    
+
+# if __name__ == "__main__":
+#     parser = argparse.ArgumentParser()
+#     parser.add_argument(
+#         '--k',
+#         type=int,
+#         required=True,
+#         help='number of clusters',
+#         default=30,
+#         )
+#     parser.add_argument(
+#         '--trials',
+#         type=int,
+#         required=True,
+#         help='number of trials',
+#         default=50,
+#         )
+#     FLAGS, unparsed = parser.parse_known_args()
+    
+    
+#     years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+#     selected_k = FLAGS.k
+#     num_trials = FLAGS.trials
+#     centers = pickle.load(open("lda_centroids.pkl","rb"))
+    
+#     # Create folder to save results
+#     now = datetime.now()
+#     if not os.path.exists("results"):
+#         os.makedirs("results")
+#     save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
+#     os.mkdir(save_folder)
+    
+#     # Move LDA centroids and topic chart to results folder
+#     shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
+#     shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder)) 
+    
+#     # Get best clustering
+#     data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
+#     with open("{}/model_clustering.pkl".format(save_folder), 'wb') as handle:
+#         pickle.dump(data, handle)
+    
+#     # Final cluster files
+#     num = 0
+#     os.mkdir(save_folder+"/clusters")
+#     for cluster in data["data_by_cluster"]:
+#         keys = cluster[0].keys()
+#         with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
+#             dict_writer = csv.DictWriter(output_file, keys)
+#             dict_writer.writeheader()
+#             dict_writer.writerows(cluster)
+#         num+=1
+    
+#     # Silhouette score by cluster
+#     print("")
+#     print("------Silhouette scores------")
+#     X_transformed = pickle.load(open("processed-data.pkl","rb"))
+#     scores = metrics.silhouette_samples(X_transformed, data["labels"])
+#     tabulated = []
+#     pairs = [(scores[i],data["labels"][i]) for i in range(len(scores))]
+#     for i in range(selected_k):
+#         avg_score = np.mean([j[0] for j in pairs if j[1] == i])
+#         print("Cluster {}: {}".format(str(i), str(avg_score)))
+#         tabulated.append(avg_score)
+#     print("----------------------------")
+#     print("")
+    
+#     # Final centroids
+#     order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
+#     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
+#     terms = vectorizer.get_feature_names()
+#     centroids = []
+#     centroid_file = open("{}/centroid".format(save_folder), "w")
+#     for i in range(selected_k):
+#         centroid_file.write("Cluster %d:" % i)
+#         centroid_list = []
+#         for ind in order_centroids[i, :15]:
+#             centroid_file.write(" %s," % terms[ind])
+#             centroid_list.append(terms[ind])
+#         centroids.append(centroid_list)
+#         centroid_file.write("\n")
+#     centroid_file.close()
+        
+#     # UMAP Visualization
+#     X_transformed = pickle.load(open("processed-data.pkl","rb"))
+#     umap_visualization(X_transformed, data["labels"], save_folder)
+    
+#     # Save model
+#     with open("model.pkl", 'wb') as handle:
+#         pickle.dump(data["model"], handle)
     
     # Projected funding by year
-    projection, growth, bounds = graph_funding_projections(data, save_folder) # 2021 prediction
+    # # Actual vs. projected awards
+    with open('results/07-18-2021--132946/final_data.csv', newline='') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        descriptions = []
+        clusters = []
+        projections = []
+        actuals = []
+        for i in range(1,len(raw_data)):
+            cluster = int(raw_data[i][0])
+            description = raw_data[i][16]
+            projection = float(raw_data[i][10])
+            actual = float(raw_data[i][11])
+            if len(description.split()) == 4:
+                split = description.split(" ")
+                description = split[0]+" "+split[1]+"\n"+split[2]+" "+split[3]
+            elif len(description.split()) == 3:
+                split = description.split(" ")
+                description = split[0]+" "+split[1]+"\n"+split[2]
+            elif len(description.split()) == 2:
+                split = description.split(" ")
+                description = split[0]+"\n"+split[1]
+            descriptions.append(description)
+            clusters.append(cluster)
+            projections.append(projection)
+            actuals.append(actual)
     
-    # 2021 total awards by predicted cluster
-    clusters_test, size_test = predict_clusters("test-data.pkl", selected_k)
+    selected_k = 60
+    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
     x = np.arange(selected_k)
-    cluster_cost_2021 = [(sum([item["funding"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
     
     # Perform linear regression
-    y = cluster_cost_2021
-    x = projection
+    y = actuals
+    x = projections
     X = sm.add_constant(x)
     
     re = sm.OLS(y, X).fit()
@@ -559,64 +848,202 @@ if __name__ == "__main__":
     predict_mean_se  = reg_data[:, 3]
     predict_mean_ci_low, predict_mean_ci_upp = reg_data[:, 4:6].T
     predict_ci_low, predict_ci_upp = reg_data[:, 6:8].T
-        
-    # Actual vs. projected awards
+    
+    
+    
+    colors = cm.get_cmap('Spectral', 12)
+    mapping = [
+        10,
+        50,
+        19,
+        20,
+        27,
+        7,
+        16,
+        28,
+        29,
+        21,
+        17,
+        52,
+        22,
+        42,
+        11,
+        8,
+        30,
+        46,
+        23,
+        57,
+        24,
+        4,
+        31,
+        53,
+        12,
+        5,
+        32,
+        43,
+        33,
+        34,
+        35,
+        58,
+        18,
+        54,
+        25,
+        51,
+        44,
+        36,
+        55,
+        1,
+        37,
+        59,
+        26,
+        60,
+        38,
+        39,
+        9,
+        40,
+        47,
+        13,
+        48,
+        2,
+        14,
+        6,
+        45,
+        15,
+        56,
+        41,
+        49,
+        3,
+        ]
+    labels=[
+        "Diet/Exercise",
+        "Electronic health record",
+        "Experimental techniques",
+        "Genetics",
+        "Imaging methods",
+        "Nondescript",
+        "Neurology",
+        "Psychiatry",
+        "Oncology",
+        "Other",
+        "Patient populations",
+        "Training and Education"
+        ]
+    points = [
+        [(-2.7e6, -0.5e7), colors(0), "Diet/Exercise"], #Obesity
+        [(-0.5e7, 5e7), colors(0), "Diet/Exercise"], #Physical activity
+        [(-5e6,1e7), colors(0), "Diet/Exercise"], #Microbiome
+        [(-1e7,1e7), colors(1), "Electronic health record"], #Clinical decision support
+        [(-1e7,-8e6), colors(1), "Electronic health record"], #NLP
+        [(-1e7,6e6), colors(1), "Electronic health record"], #EMR phenotyping
+        [(1e7,6e7), colors(2), "Experimental techniques"], #Single cell analysis
+        [(0,-2e7), colors(2), "Experimental techniques"], #Protein structure analysis
+        [(0,-5e7), colors(2), "Experimental techniques"], #Mass spec
+        [(-1e7,5e6), colors(3), "Genetics"], #Dev genomics
+        [(-0.5e7,6.5e7), colors(3), "Genetics"], #Epigenetics
+        [(-5.4e6,-3e7),  colors(3), "Genetics"], #Regulatory gen
+        [(0,-1e7),  colors(3), "Genetics"], #GWAS
+        [(0,-1e7),  colors(3), "Genetics"], #Clinical genomics
+        [(-2e7,4e7),  colors(3), "Genetics"], #RNA sequencing
+        [(0.9e7,-8e7),  colors(4), "Imaging methods"], #PET
+        [(-1.1e7,-6e7),  colors(4), "Imaging methods"], #CAD
+        [(0,-2e7),  colors(4), "Imaging methods"], #MRI
+        [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
+        [(-1.5e7,9e7),  colors(5), "Nondescript"], #Nondescript
+        [(-2.5e7,2e7),  colors(5), "Nondescript"], #Nondescript
+        [(-0.2e7,-8e7),  colors(5), "Nondescript"], #Nondescript
+        [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
+        [(-0.5e7,6e7),  colors(5), "Nondescript"], #Abstract unavailable
+        [(0,0.5e7),  colors(5), "Nondescript"], #Nondescript
+        [(-1e7,-7e7),  colors(5), "Nondescript"], #Nondescript
+        [(-0.5e7,8e7),  colors(10), "Psychiatry"], #Pain management
+        [(0.5e7,-7e7),  colors(6), "Neurology"], #Dementia
+        [(0.2e7,-0.5e7),  colors(6), "Neurology"], #Single-neuron analysis
+        [(-0.45e7,1e7),  colors(6), "Neurology"], #Speech disorders
+        [(-0.6e7,0.5e7),  colors(4), "Imaging methods"], #Functional MRI
+        [(-0.2e7,-10e7),  colors(6), "Neurology"], #Neurocog
+        [(0,0.5e7),  colors(6), "Neurology"], #Stroke
+        [(-2e7,-4e7),  colors(6), "Neurology"], #Sleep
+        [(0.4e7,-3.8e7),  colors(6), "Neurology"], #Neural circuits
+        [(0.2e7,-1.8e7),  colors(6), "Neurology"], #Language development
+        [(-1.2e7,7e7),  colors(6), "Neurology"], #Vision
+        [(-2.5e7,10e7),  colors(6), "Neurology"], #Motor disorders
+        [(0.1e7,-1e7),  colors(6), "Neurology"], #Autism
+        [(-2e7,-1.2e7),  colors(6), "Neurology"], #Neuroscience
+        [(-1.2e7,5e7),  colors(6), "Neurology"], #PD
+        [(-2e7,-2.8e7),  colors(7), "Oncology"], #Cancer genomics
+        [(0,-1e7),  colors(7), "Oncology"], #Lung cancer
+        [(2e7,0.2e7),  colors(7), "Oncology"], #Breast cancer
+        [(-0.1e7,-4e7),  colors(7), "Oncology"], #Cancer imaging
+        [(-0.1e7,2e7),  colors(8), "Other"], #HIV
+        [(-1.6e7,0.8e7),  colors(8), "Other"], #Environmental health
+        [(-1.3e7,-2e7),  colors(8), "Other"], #Asthma
+        [(1e7,2e7),  colors(8), "Other"], #Drug efficacy
+        [(-3e7,-2.5e7),  colors(9), "Patient populations"], #Pediatrics
+        [(2e7,-1.6e7),  colors(9), "Patient populations"], #Older adults
+        [(1e7,7e7),  colors(10), "Psychiatry"], #Suicidality
+        [(3e7,-2.1e7),  colors(10), "Psychiatry"], #AUD
+        [(-2.4e7,-7e7),  colors(10), "Psychiatry"], #Cigarette smoking
+        [(0.5e7,4e7),  colors(10), "Psychiatry"], #Mental health
+        [(-2e7,-0.75e7),  colors(10), "Psychiatry"], #Emotion
+        [(-2.4e7,0.9e7),  colors(11), "Training and Education"], #Research career programs
+        [(-2e7,5e7),  colors(11), "Training and Education"], #Bibliometric analysis
+        [(3e7, -1e7),  colors(11), "Training and Education"], #Big data education
+        [(-0.5e7,-1e7),  colors(11), "Training and Education"], #Science education
+    ]
     fig, ax = plt.subplots()
     ax.grid(b=None)
-    colors = cm.get_cmap('Spectral', selected_k)
-    colors = [colors(i) for i in range(selected_k)]
-    ax.scatter(projection, cluster_cost_2021, c=colors)
-    ax.plot([projection[np.argmin(projection)],projection[np.argmax(projection)]], [predicted[np.argmin(projection)],predicted[np.argmax(projection)]], color="#808080")
-    ax.plot(sort(x), sort(predict_mean_ci_low), 'r--', lw=2)
-    ax.plot(sort(x), sort(predict_mean_ci_upp), 'r--', lw=2)
-    axin1 = ax.inset_axes([0.05, 0.5, 0.4, 0.4])
-    pairs = [[projection[i], cluster_cost_2021[i], i] for i in range(len(projection))]
-    pairs = [item for item in pairs if item[1] < 1.5e7]
-    pairs = list(map(list, zip(*pairs))) 
-    x1, x2, y1, y2 = 0, 0.2e8, 0, 1.5e7
-    axin1.set_xlim(x1, x2)
-    axin1.set_ylim(y1, y2)
-    axin1.set_xticklabels('')
-    axin1.set_yticklabels('')
-    axin1.grid(b=None)
-    axin1.scatter(pairs[0], pairs[1], c=[colors[i] for i in pairs[2]])
-    ax.indicate_inset_zoom(axin1, edgecolor="black")
-    superscript = str.maketrans("2", "²")
-    ax.text(6e7, 0.1, "r2 = {:.3f}".format(re.rsquared).translate(superscript))
+    for i in range(12):
+        js = [k for k in range(len(clusters)) if points[k][2]==labels[i]]
+        ax.scatter([projections[j] for j in js], [actuals[j] for j in js], color=colors(i), label=labels[i]) #points[i][1]
+    ax.set_xlim(-0.2e8, 1.6e8)
+    ax.set_ylim(-10e7, 14e7)
+    ax.legend(loc="lower right")
+    ann = []
+    locations = [(projections[i], actuals[i]) for i in range(len(clusters))]
+    for i in range(60):
+        ann.append(ax.annotate(descriptions[mapping[i]-1], xy=locations[mapping[i]-1], xytext=tuple(map(sum,zip(locations[mapping[i]-1],points[i][0]))), fontsize=8, arrowprops=dict(arrowstyle="-", color='k', lw=0.5)))
+    # https://adjusttext.readthedocs.io/en/latest/_modules/adjustText.html#adjust_text
+    # adjust_text(ann, projection, cluster_cost_2021, ax=ax, expand_text=(1.05,3), force_text=(0.25, 0.5), only_move={'points':'y', 'text':'y', 'objects':'y'}, arrowprops=dict(arrowstyle="-", color='k', lw=0.5))
+    ax.plot([projections[np.argmin(projections)],projections[np.argmax(projections)]], [predicted[np.argmin(projections)],predicted[np.argmax(projections)]], color="#808080")
+    ax.plot(sort(x), sort(predict_mean_ci_low), color='#808080', linestyle="--", lw=2)
+    ax.plot(sort(x), sort(predict_mean_ci_upp), color='#808080', linestyle="--", lw=2)
     ax.set_ylabel('Actual 2021 award to date ($10 millions)')
     ax.set_xlabel('Projected 2021 award ($100 millions)')
-    plt.savefig('{}/actual_vs_projected.png'.format(save_folder))
+    manager = plt.get_current_fig_manager()
+    manager.resize(*manager.window.maxsize())
     
-    # Save 2021 clusters
-    num = 0
-    os.mkdir("{}/clusters_test".format(save_folder))
-    for cluster in clusters_test:
-        try:
-            keys = cluster[0].keys()
-        except:
-            num+=1
-            continue
-        with open('{}/clusters_test/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
-            dict_writer = csv.DictWriter(output_file, keys)
-            dict_writer.writeheader()
-            dict_writer.writerows(cluster)
-        num+=1
+#     plt.savefig('{}/actual_vs_projected.png'.format(save_folder))
     
-    # Citations and papers
-    citations, papers, apt_pct, apt, lower, upper = get_citations(data["data_by_cluster"])
+#     # Save 2021 clusters
+#     num = 0
+#     os.mkdir("{}/clusters_test".format(save_folder))
+#     for cluster in clusters_test:
+#         try:
+#             keys = cluster[0].keys()
+#         except:
+#             num+=1
+#             continue
+#         with open('{}/clusters_test/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
+#             dict_writer = csv.DictWriter(output_file, keys)
+#             dict_writer.writeheader()
+#             dict_writer.writerows(cluster)
+#         num+=1
     
-    # Total funding
-    total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
+#     # Citations and papers
+#     citations, papers, apt_pct, apt, lower, upper, listed_apts = get_citations(data["data_by_cluster"])
     
-    # Get representative clusters for supp info
-    get_rep_clusters(save_folder)
+#     # Total funding
+#     total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
     
-    # All data
-    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
-    for i in range(selected_k):
-        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
-    with open('{}/final_data.csv'.format(save_folder), 'w', newline='') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(output)
+#     # Get representative clusters for supp info
+#     get_rep_clusters(save_folder)
     
-    print("Complete.")
+#     # All data
+#     output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
+#     for i in range(selected_k):
+#         output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
+#     with open('{}/final_data.csv'.format(save_folder), 'w', newline='') as csvfile:
+#         writer = csv.writer(csvfile)
+#         writer.writerows(output)
+    
+#     print("Complete.")
