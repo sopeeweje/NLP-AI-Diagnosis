@@ -345,9 +345,9 @@ def get_citations(clusters):
     -------
     total_citations : list of total citations by cluster
     total_papers : list of total papers by cluster
-    apts: average APT
-    lower: lower bound of 95% CI of average APT
-    upper: upper bound of 95% CI of average APT
+    apts: average APT [0.9, ...]
+    lower: lower bound of 95% CI of average APT: "APT (lower - upper)" [0.85,...]
+    upper: upper bound of 95% CI of average APT [0.95,...] - "0.9 (0.85-0.95)"
     
     ***apt_95 : number of papers with APT > 0.95. Needs to be taken out (might break things elsewhere in the process)***
     ***availability: to be added as described****
@@ -390,7 +390,7 @@ def get_citations(clusters):
         cluster_apt = []
         num_papers = 0
         for idd in cluster:
-            papers = [output[key]["citations"] for key in output if output[key]["project"]==idd]
+            papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
             # rcr = [output[key]["rcr"] for key in output if output[key]["project"]==idd]
             apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
             
