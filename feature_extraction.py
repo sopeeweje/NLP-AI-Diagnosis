@@ -97,8 +97,7 @@ def feature_extraction(data, num_features, max_df):
 
     Parameters
     ----------
-    data : TYPE
-        DESCRIPTION.
+    data : parallels "data" from process_data
     
     Returns 
     -------

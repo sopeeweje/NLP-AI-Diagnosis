@@ -267,9 +267,8 @@ def top_bottom_clusters():
             funding = int(raw_data[i][5])
             funding_data[org] = funding
 
-def predict_clusters(test_data, selected_k):
+def predict_clusters(test_data, selected_k, model):
     test_data = pickle.load(open(test_data,"rb"))
-    model = pickle.load(open("model.pkl","rb"))
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
     input_text = [item["text"] for item in test_data]
     test_transformed = vectorizer.transform(input_text)
@@ -314,25 +313,6 @@ def predict_clusters(test_data, selected_k):
     return cluster_all, size  
 
 def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", save=True):
-    """
-
-    Parameters
-    ----------
-    selected_k : TYPE
-        DESCRIPTION.
-    num_trials : TYPE
-        DESCRIPTION.
-    centers : TYPE
-        DESCRIPTION.
-    years : TYPE
-        DESCRIPTION.
-
-    Returns
-    -------
-    chosen : TYPE
-        DESCRIPTION.
-
-    """
     scores = []
     results = {}
     print("Optimizing model...")
@@ -581,36 +561,15 @@ if __name__ == "__main__":
     # Save model
     with open("model.pkl", 'wb') as handle:
         pickle.dump(data["model"], handle)
+        
+    # Get 2021 projections, projected growth rates, and confidence bounds on growth rates by cluster
+    projection, growth, bounds = graph_funding_projections(data, save_folder) # 2021 prediction
     
-    # Projected funding by year
-    # # Actual vs. projected awards
-    with open('results/07-18-2021--132946/final_data.csv', newline='') as csvfile:
-        raw_data = list(csv.reader(csvfile))
-        descriptions = []
-        clusters = []
-        projections = []
-        actuals = []
-        for i in range(1,len(raw_data)):
-            cluster = int(raw_data[i][0])
-            description = raw_data[i][16]
-            projection = float(raw_data[i][10])
-            actual = float(raw_data[i][11])
-            if len(description.split()) == 4:
-                split = description.split(" ")
-                description = split[0]+" "+split[1]+"\n"+split[2]+" "+split[3]
-            elif len(description.split()) == 3:
-                split = description.split(" ")
-                description = split[0]+" "+split[1]+"\n"+split[2]
-            elif len(description.split()) == 2:
-                split = description.split(" ")
-                description = split[0]+"\n"+split[1]
-            descriptions.append(description)
-            clusters.append(cluster)
-            projections.append(projection)
-            actuals.append(actual)
-    
-    selected_k = 60
-    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+    # Get 2021 clusters
+    model = data["model"]
+    clusters_test, size_test = predict_clusters("test-data.pkl", selected_k, model)
+    x = np.arange(selected_k)
+    cluster_cost_2021 = [(sum([item["funding"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
     
     # Save 2021 clusters
     num = 0
@@ -628,7 +587,7 @@ if __name__ == "__main__":
         num+=1
     
     # Citations and papers
-    citations, papers, apt_pct, apt, lower, upper, listed_apts = get_citations(data["data_by_cluster"])
+    citations, papers, apt_pct, apt, lower, upper = get_citations(data["data_by_cluster"])
     
     # Total funding
     total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
