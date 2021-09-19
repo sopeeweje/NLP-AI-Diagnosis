@@ -18,7 +18,3 @@ umap-learn = "*"
 seaborn = "*"
 argparse = "*"
 pandas = "*"
-math = "*"
-
-[requires]
-python_version = "3.7"
