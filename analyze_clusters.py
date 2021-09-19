@@ -352,7 +352,7 @@ def get_citations(clusters):
     upper: upper bound of 95% CI of average APT [0.95,...] - "0.9 (0.85-0.95)"
 
     ***apt_95 : number of papers with APT > 0.95. Needs to be taken out (might break things elsewhere in the process)***
-    ***availability: to be added as described****
+    total_availability: list of total years that papers have been available by cluster
 
     """
 
@@ -376,7 +376,7 @@ def get_citations(clusters):
        for i in range(1,len(raw_data)):
            if raw_data[i][13] in output.keys():
                output[raw_data[i][13]]["project"] = raw_data[i][0]
-               output[raw_data[i][13]]["year"] = raw_data[i][2]
+               output[raw_data[i][13]]["year"] = int(raw_data[i][2])
 
     # Calculate total number of citations, total number of papers, average RCR, average APT for each cluster
     total_citations = []
@@ -385,6 +385,7 @@ def get_citations(clusters):
     apts_95 = []
     lower = []
     upper = []
+    total_availability = []
     # rcrs = []
     for cluster in clusters_by_project:
         cluster_citations = []
@@ -395,6 +396,10 @@ def get_citations(clusters):
             papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
             # rcr = [output[key]["rcr"] for key in output if output[key]["project"]==idd]
             apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
+            # years = [output[key]["year"] for key in output if output[key]["project"]==idd]
+            # avail_years = [max(0, 2021-y) for y in years]
+            avail_years = [max(0, 2021-int(output[key]["year"])) for key in output if output[key]["project"]==idd]
+            # print(len(y), avail_years)
 
             # cluster_rcr.extend(rcr)
             cluster_apt.extend(apt)
@@ -412,7 +417,9 @@ def get_citations(clusters):
         upper.append(apts_interval[1])
         # rcrs.append(sum(cluster_apt)/len(cluster_apt))
 
-    return total_citations, total_papers, apts_95, apts, lower, upper
+        total_availability.append(sum(avail_years))
+
+    return total_citations, total_papers, apts_95, apts, lower, upper, total_availability
 
 def get_rep_clusters(result):
     path, dirs, files = next(os.walk('{}/clusters'.format(result)))
@@ -589,7 +596,7 @@ if __name__ == "__main__":
         num+=1
 
     # Citations and papers
-    citations, papers, apt_pct, apt, lower, upper = get_citations(data["data_by_cluster"])
+    citations, papers, apt_pct, apt, lower, upper, availability = get_citations(data["data_by_cluster"])
 
     # Total funding
     total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
@@ -598,9 +605,9 @@ if __name__ == "__main__":
     get_rep_clusters(save_folder)
 
     # All data
-    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
+    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
     for i in range(selected_k):
-        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
+        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
     with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
