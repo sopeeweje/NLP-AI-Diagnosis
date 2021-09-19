@@ -30,7 +30,7 @@ import math
 
 def get_clusters(selected_k, data_file, processed_file, centers, years, save_folder="", save=True):
     """
-    
+
     Parameters
     ----------
     selected_k : selected number of clusters
@@ -56,41 +56,41 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     """
     # Load data as list of dictionaries
     data = pickle.load(open(data_file,"rb"))
-    
+
     # Transformed data
     X_transformed = pickle.load(open(processed_file,"rb"))
-    
+
     # Perform mini batch k means
     km = MiniBatchKMeans(n_clusters=selected_k, init=centers, n_init=10, init_size=3000, batch_size=3000, verbose=0, max_no_improvement=None)
     # km = KMeans(n_clusters=selected_k, init=centers, n_init=10)
     clusters = km.fit_predict(X_transformed)
     scores = metrics.silhouette_samples(X_transformed, clusters)
-    
+
     # Output data
     cluster_all = []
     costs = []
     yoy = []
     size = []
-    
+
     for i in range(0,selected_k):
-        
+
         # indices of cluster k
         cluster = [idx for idx, element in enumerate(clusters) if element == i]
-        
+
         # get points
         cluster_data = [data[ind] for ind in cluster]
         cluster_scores = [scores[ind] for ind in cluster]
         for i in range(len(cluster_data)):
             cluster_data[i]["score"] = cluster_scores[i]
         cluster_all.append(cluster_data)
-        
+
         # calculate average cost and std
         try:
             average_cost = sum([item["funding"] for item in cluster_data])/len(cluster_data)
         except:
             average_cost = 0
         costs.append(average_cost)
-        
+
         cost_trend = []
         for year in years:
             year_data = [data[ind]["funding"] for ind in cluster if data[ind]["year"] == year]
@@ -99,12 +99,12 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
             else:
                 year_cost = sum(year_data) # /len(year_data)
                 cost_trend.append(year_cost)
-        
+
         yoy.append(cost_trend)
-        
+
         size.append(len(cluster))
-    
-    # Get centroids 
+
+    # Get centroids
     # Identify the top terms for each cluster, using the TF-IDF terms with the highest values in the centroid
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
@@ -115,29 +115,29 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
         for ind in order_centroids[i, :15]:
             centroid_list.append(terms[ind])
         centroids.append(centroid_list)
-    
+
     # Save centroids
     if save:
-        centroid_file = open("{}/centroid".format(save_folder), "w")
+        centroid_file = open("{}/centroid".format(save_folder), "w", encoding='utf8')
         for i in range(selected_k):
             centroid_file.write("Cluster %d:" % i)
             for ind in order_centroids[i, :15]:
                 centroid_file.write(" %s" % terms[ind])
             centroid_file.write("\n")
         centroid_file.close()
-    
+
     # get scores
     score = metrics.silhouette_score(X_transformed, km.labels_)
-    
+
     output = {
         "yr_avg_cost": costs, # Average award size by year by cluster
         "yr_total_cost": yoy, # Total award size by year by cluster
         "size": size, # Number of awards in each cluster
         "data_by_cluster": cluster_all,
         "centroids": centroids,
-        "score": score, # Silhouette score for 
+        "score": score, # Silhouette score for
         "model": km, # K-means model
-        "labels": clusters # Ordered list of cluster number labels for each award 
+        "labels": clusters # Ordered list of cluster number labels for each award
         }
     return output
 
@@ -145,13 +145,13 @@ def umap_visualization(X_transformed, cluster_labels, save_folder=""):
     outlier_scores = sklearn.neighbors.LocalOutlierFactor(contamination=0.1).fit_predict(X_transformed)
     X_transformed = X_transformed[outlier_scores != -1]
     cluster_labels = cluster_labels[outlier_scores != -1]
-    
+
     n_subset = len(cluster_labels)
     selected_cells = np.random.choice(np.arange(X_transformed.shape[0]), size = n_subset, replace = False)
     mapper = umap.UMAP(metric='hellinger', random_state=42).fit(X_transformed[selected_cells,:])
-    
+
     embedding = mapper.transform(X_transformed[selected_cells,:])
-    
+
     # Plot Clusters on UMAP
     plt.figure()
     plt.grid(b=None)
@@ -162,7 +162,7 @@ def umap_visualization(X_transformed, cluster_labels, save_folder=""):
     plt.title('UMAP Projection of Awards, TF-IDF', fontsize=14)
     plt.xlabel("UMAP 1")
     plt.ylabel("UMAP 2")
-    
+
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
     plt.savefig('{}/umap.png'.format(save_folder))
@@ -173,7 +173,7 @@ def rainbow_color_stops(n=10, end=1, shade=0.9):
 def graph_funding_projections(data, save_folder=""):
     # Create grid that highlights each projection with 95% CI
     # https://stackoverflow.com/questions/39434402/how-to-get-confidence-intervals-from-curve-fit
-    
+
     # 1. Determine dimensions for plot
     k = len(data["size"])
     factors = []
@@ -183,17 +183,17 @@ def graph_funding_projections(data, save_folder=""):
         elif k % i == 0:
             factors.append(i)
     dim1, dim2 = factors[int(len(factors)/2)], factors[int(len(factors)/2-1)]
-    
+
     # 2. Create plot
     fig, axs = plt.subplots(dim1, dim2, sharex='all', sharey='all')
-    
+
     # 3. Create hidden frame for shared labels
     fig.add_subplot(111, frameon=False)
     plt.grid(b=None)
     plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
     plt.xlabel("Years from 2000")
     plt.ylabel("Funding ($100 millions)")
-    
+
     # 4. Plot each projection with scatter plot
     colors = cm.get_cmap('Spectral', k) #rainbow_color_stops(k)
     years_int = list(range(0,21))
@@ -211,7 +211,7 @@ def graph_funding_projections(data, save_folder=""):
         lower0 = popt[0]-1.96*std[0]
         upper1 = popt[1]+1.96*std[1]
         lower1 = popt[1]-1.96*std[1]
-        
+
         ypred = [popt[0]*np.exp(popt[1]*point) for point in x] #-popt[0]
         projection.append(ypred[-1])
         growth.append(popt[1])
@@ -227,20 +227,22 @@ def graph_funding_projections(data, save_folder=""):
         axs[m[i],n[i]].set_ylim(-100000,maxy+100000)
         axs[m[i],n[i]].set_xlim(0,21.00001)
         axs[m[i],n[i]].grid(False)
-    
+
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
     if save_folder != "":
         plt.savefig('{}/funding_by_year.png'.format(save_folder))
     else:
         plt.savefig('funding_by_year.png')
-    
+
     # 5. Return 2021 projections and growth rate
     return projection, growth, bounds
-    
+
 def viz_centroids(data):
+    file_root = 'C:/Users/suzie/Dropbox (Personal)/PENN MED/research/NLP-AI-Medicine/'
+
     order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
-    centroid_file = open("/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/centroid", "w")
+    centroid_file = open(file_root + '/centroid', "w", encoding='utf8')
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
     terms = vectorizer.get_feature_names()
     for i in range(len(data["size"])):
@@ -249,7 +251,7 @@ def viz_centroids(data):
             centroid_file.write(" %s" % terms[ind])
         centroid_file.write("\n")
     centroid_file.close()
-        
+
     model = data["model"]
     X_transformed = pickle.load(open("processed-data.pkl","rb"))
     plt.figure()
@@ -260,7 +262,7 @@ def viz_centroids(data):
 def top_bottom_clusters():
     labels = []
     values = []
-    with open(funding_file, newline='') as csvfile:
+    with open(funding_file, newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1,len(raw_data)):
             org = raw_data[i][0]
@@ -274,29 +276,29 @@ def predict_clusters(test_data, selected_k, model):
     test_transformed = vectorizer.transform(input_text)
     years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
     labels = model.predict(test_transformed)
-    
+
     # Output data
     cluster_all = []
     costs = []
     yoy = []
     size = []
-    
+
     for i in range(0,selected_k):
-        
+
         # indices of cluster k
         cluster = [idx for idx, element in enumerate(labels) if element == i]
-        
+
         # get points
         cluster_data = [test_data[ind] for ind in cluster]
         cluster_all.append(cluster_data)
-        
+
         # calculate average cost and std
         try:
             average_cost = sum([item["funding"] for item in cluster_data])/len(cluster_data)
         except:
             average_cost = 0
         costs.append(average_cost)
-        
+
         cost_trend = []
         for year in years:
             year_data = [test_data[ind]["funding"] for ind in cluster if test_data[ind]["year"] == year]
@@ -305,12 +307,12 @@ def predict_clusters(test_data, selected_k, model):
             else:
                 year_cost = sum(year_data) #/len(year_data)
                 cost_trend.append(year_cost)
-        
+
         yoy.append(cost_trend)
-        
+
         size.append(len(cluster))
-        
-    return cluster_all, size  
+
+    return cluster_all, size
 
 def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", save=True):
     scores = []
@@ -331,12 +333,12 @@ def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", sav
         scores.append(data["score"])
         if data["score"] >= max(scores):
             chosen = data
-    
+
     return chosen, scores
 
 def get_citations(clusters):
     """
-    
+
     Parameters
     ----------
     clusters : nested lists of dictionaries representing each award in a cluster.
@@ -348,34 +350,34 @@ def get_citations(clusters):
     apts: average APT [0.9, ...]
     lower: lower bound of 95% CI of average APT: "APT (lower - upper)" [0.85,...]
     upper: upper bound of 95% CI of average APT [0.95,...] - "0.9 (0.85-0.95)"
-    
+
     ***apt_95 : number of papers with APT > 0.95. Needs to be taken out (might break things elsewhere in the process)***
     ***availability: to be added as described****
-    
+
     """
-    
+
     # Get clusters by project number
     clusters_by_project = []
     for cluster in clusters:
         cluster = [item["project_number"] for item in cluster]
         cluster = list(set(cluster)) # Remove duplicates
         clusters_by_project.append(cluster)
-    
+
     # Get number of citations, apt, and publication year by paper
     output = {}
-    with open("citations.csv", newline='') as csvfile:
+    with open("citations.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
-       for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]), 
+       for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
            output[raw_data[i][0]] = {"citations": int(raw_data[i][23]), "apt": float(raw_data[i][17])}
-    
+
     # Get project number and year by paper
-    with open("papers.csv", newline='') as csvfile:
+    with open("papers.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)):
            if raw_data[i][13] in output.keys():
                output[raw_data[i][13]]["project"] = raw_data[i][0]
                output[raw_data[i][13]]["year"] = raw_data[i][2]
-    
+
     # Calculate total number of citations, total number of papers, average RCR, average APT for each cluster
     total_citations = []
     total_papers = []
@@ -393,17 +395,17 @@ def get_citations(clusters):
             papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
             # rcr = [output[key]["rcr"] for key in output if output[key]["project"]==idd]
             apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
-            
+
             # cluster_rcr.extend(rcr)
             cluster_apt.extend(apt)
             num_papers += len(papers)
             cluster_citations.append(sum(papers))
-            
-        total_citations.append(sum(cluster_citations))        
+
+        total_citations.append(sum(cluster_citations))
         total_papers.append(num_papers)
         apts_95.append(sum([1 for i in cluster_apt if i==0.95])/len(cluster_apt))
         apts.append(np.mean(cluster_apt))
-        
+
         #create 95% confidence interval for population mean weight
         apts_interval = scist.norm.interval(alpha=0.95, loc=np.mean(cluster_apt), scale=scist.sem(cluster_apt))
         lower.append(apts_interval[0])
@@ -416,12 +418,12 @@ def get_rep_clusters(result):
     path, dirs, files = next(os.walk('{}/clusters'.format(result)))
     file_count = len(files)
     document = Document()
-    
+
     for i in range(file_count):
         unique_awards = {}
-        
+
         # open file
-        with open('{}/clusters/cluster-{}.csv'.format(result, str(i)), newline='') as csvfile:
+        with open('{}/clusters/cluster-{}.csv'.format(result, str(i)), newline='', encoding='utf8') as csvfile:
             raw_data = list(csv.reader(csvfile))
             for j in range(1,len(raw_data)):
                 title = raw_data[j][1]
@@ -429,7 +431,7 @@ def get_rep_clusters(result):
                 mechanism = raw_data[j][7]
                 year = int(raw_data[j][8])
                 score = float(raw_data[j][10])
-                
+
                 # If this is a new title
                 if title not in unique_awards:
                     unique_awards[title] = {
@@ -438,7 +440,7 @@ def get_rep_clusters(result):
                         "year": year,
                         "score": score,
                         }
-                    
+
                 # If the title is already there
                 else:
                     current_year = unique_awards[title]["year"]
@@ -450,10 +452,10 @@ def get_rep_clusters(result):
                         "year": year,
                         "score": score,
                         }
-        
+
         unique_awards_sorted = dict(sorted(unique_awards.items(), key = lambda item: -item[1]["score"]))
         unique_awards_list = list(unique_awards_sorted.items())[0:5]
-        
+
         p = document.add_paragraph()
         p.add_run('Cluster {}:'.format(str(i))).bold = True
         table = document.add_table(rows=6, cols=5)
@@ -463,15 +465,15 @@ def get_rep_clusters(result):
         hdr_cells[2].text = 'Award Activity'
         hdr_cells[3].text = 'Year'
         hdr_cells[4].text = 'Sample Silhouette Score'
-        
+
         for i in range(len(unique_awards_list)):
             table.cell(i+1,0).text = unique_awards_list[i][0] # Title
             table.cell(i+1,1).text = unique_awards_list[i][1]['organization'] # Awardee
             table.cell(i+1,2).text = unique_awards_list[i][1]['activity'] # Award Activity
             table.cell(i+1,3).text = str(unique_awards_list[i][1]['year']) # Year
             table.cell(i+1,4).text = "{:.2g}".format(unique_awards_list[i][1]['score']) # Sample Silhouette Score
-    
-    document.save('{}/supp_info.docx'.format(result)) 
+
+    document.save('{}/supp_info.docx'.format(result))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -490,40 +492,40 @@ if __name__ == "__main__":
         default=50,
         )
     FLAGS, unparsed = parser.parse_known_args()
-    
-    
+
+
     years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
     selected_k = FLAGS.k
     num_trials = FLAGS.trials
     centers = pickle.load(open("lda_centroids.pkl","rb"))
-    
+
     # Create folder to save results
     now = datetime.now()
     if not os.path.exists("results"):
         os.makedirs("results")
     save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
     os.mkdir(save_folder)
-    
+
     # Move LDA centroids and topic chart to results folder
-    shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder)) 
-    shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder)) 
-    
+    shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder))
+    shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder))
+
     # Get best clustering
     data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
     with open("{}/model_clustering.pkl".format(save_folder), 'wb') as handle:
         pickle.dump(data, handle)
-    
+
     # Final cluster files
     num = 0
     os.mkdir(save_folder+"/clusters")
     for cluster in data["data_by_cluster"]:
         keys = cluster[0].keys()
-        with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
+        with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='', encoding='utf8')  as output_file:
             dict_writer = csv.DictWriter(output_file, keys)
             dict_writer.writeheader()
             dict_writer.writerows(cluster)
         num+=1
-    
+
     # Silhouette score by cluster
     print("")
     print("------Silhouette scores------")
@@ -537,13 +539,13 @@ if __name__ == "__main__":
         tabulated.append(avg_score)
     print("----------------------------")
     print("")
-    
+
     # Final centroids
     order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
     terms = vectorizer.get_feature_names()
     centroids = []
-    centroid_file = open("{}/centroid".format(save_folder), "w")
+    centroid_file = open("{}/centroid".format(save_folder), "w", encoding='utf8')
     for i in range(selected_k):
         centroid_file.write("Cluster %d:" % i)
         centroid_list = []
@@ -553,24 +555,24 @@ if __name__ == "__main__":
         centroids.append(centroid_list)
         centroid_file.write("\n")
     centroid_file.close()
-        
+
     # UMAP Visualization
     X_transformed = pickle.load(open("processed-data.pkl","rb"))
     umap_visualization(X_transformed, data["labels"], save_folder)
-    
+
     # Save model
     with open("model.pkl", 'wb') as handle:
         pickle.dump(data["model"], handle)
-        
+
     # Get 2021 projections, projected growth rates, and confidence bounds on growth rates by cluster
     projection, growth, bounds = graph_funding_projections(data, save_folder) # 2021 prediction
-    
+
     # Get 2021 clusters
     model = data["model"]
     clusters_test, size_test = predict_clusters("test-data.pkl", selected_k, model)
     x = np.arange(selected_k)
     cluster_cost_2021 = [(sum([item["funding"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
-    
+
     # Save 2021 clusters
     num = 0
     os.mkdir("{}/clusters_test".format(save_folder))
@@ -580,27 +582,27 @@ if __name__ == "__main__":
         except:
             num+=1
             continue
-        with open('{}/clusters_test/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='')  as output_file:
+        with open('{}/clusters_test/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='', encoding='utf8')  as output_file:
             dict_writer = csv.DictWriter(output_file, keys)
             dict_writer.writeheader()
             dict_writer.writerows(cluster)
         num+=1
-    
+
     # Citations and papers
     citations, papers, apt_pct, apt, lower, upper = get_citations(data["data_by_cluster"])
-    
+
     # Total funding
     total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
-    
+
     # Get representative clusters for supp info
     get_rep_clusters(save_folder)
-    
+
     # All data
     output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
     for i in range(selected_k):
         output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
-    with open('{}/final_data.csv'.format(save_folder), 'w', newline='') as csvfile:
+    with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-    
+
     print("Complete.")
