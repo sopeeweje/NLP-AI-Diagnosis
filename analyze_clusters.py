@@ -392,19 +392,20 @@ def get_citations(clusters):
         # cluster_rcr = []
         cluster_apt = []
         num_papers = 0
+        availability = []
+
         for idd in cluster:
             papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
             # rcr = [output[key]["rcr"] for key in output if output[key]["project"]==idd]
             apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
-            # years = [output[key]["year"] for key in output if output[key]["project"]==idd]
-            # avail_years = [max(0, 2021-y) for y in years]
-            avail_years = [max(0, 2021-int(output[key]["year"])) for key in output if output[key]["project"]==idd]
-            # print(len(y), avail_years)
+            
+            avail_years = [max(0, 2021-output[key]["year"]) for key in output if output[key]["project"]==idd]
 
             # cluster_rcr.extend(rcr)
             cluster_apt.extend(apt)
             num_papers += len(papers)
             cluster_citations.append(sum(papers))
+            availability.append(sum(avail_years))
 
         total_citations.append(sum(cluster_citations))
         total_papers.append(num_papers)
@@ -417,7 +418,7 @@ def get_citations(clusters):
         upper.append(apts_interval[1])
         # rcrs.append(sum(cluster_apt)/len(cluster_apt))
 
-        total_availability.append(sum(avail_years))
+        total_availability.append(int(sum(availability)))
 
     return total_citations, total_papers, apts_95, apts, lower, upper, total_availability
 
