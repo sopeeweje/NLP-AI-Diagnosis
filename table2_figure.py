@@ -22,7 +22,7 @@ def get_by_year_data():
         for entry in raw_data:
             years.append(int(entry[0]))
             awards.append(int(entry[1]))
-            values.append(float(entry[2])/1e9)
+            values.append(float(entry[2]))
 
     return years, awards, values
 
@@ -36,16 +36,16 @@ def plot_by_year():
     color = 'tab:blue'
     ax1.set_xlabel('Year')
     ax1.set_ylabel('Award Values (billions USD)', color=color)
-    bar = ax1.bar(years, values, color=color) #yerr=errorbar
+    bar = ax1.bar(years, [v/1e9 for v in values], color=color) #yerr=errorbar
     ax1.tick_params(axis='y', labelcolor=color)
     ax1.bar_label(bar, fmt='$%.1f', padding=1, size='x-small')
     ax2 = ax1.twinx()
 
-    # award number
+    # award size (avg) = total value/num awards
     color = 'tab:green'
     ax2.set_xlabel('Year')
-    ax2.set_ylabel('Number of Awards', color=color)
-    ax2.plot(years, awards, color=color) #yerr=errorbar
+    ax2.set_ylabel('Average Award Size (thousands USD)', color=color)
+    ax2.plot(years, [values[i]/1e3/awards[i] for i in range(len(years))], color=color) #yerr=errorbar
     ax2.tick_params(axis='y', labelcolor=color)
 
     plt.title('Total Awards by Year')
