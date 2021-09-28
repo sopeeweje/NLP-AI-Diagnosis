@@ -483,6 +483,75 @@ def get_rep_clusters(result):
 
     document.save('{}/supp_info.docx'.format(result))
 
+def analyze_by_institute():
+    """
+    Load in data from data.pkl
+    Generate table of award data listed by funding institute
+    Save to by_funder_detailed.csv
+    """
+    data = pickle.load(open("data.pkl","rb"))
+
+    # create dictionary with institute as key
+    by_institute = dict()
+    for item in data:
+        institute = item["administration"]
+        if institute in by_institute:
+            by_institute[institute].add(item['project_number'])
+        else:
+            by_institute[institute] = {item['project_number']} #set
+
+    # Get number of citations, apt, and publication year by paper
+    output = {}
+    with open("citations.csv", newline='', encoding='utf8') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
+            output[raw_data[i][0]] = {"citations": int(raw_data[i][23]), "apt": float(raw_data[i][17])}
+
+    # Get project number and year by paper
+    with open("papers.csv", newline='', encoding='utf8') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)):
+            if raw_data[i][13] in output.keys():
+                output[raw_data[i][13]]["project"] = raw_data[i][0]
+                output[raw_data[i][13]]["year"] = int(raw_data[i][2])
+
+    # iterate through institutes to get # awards, value, cpof, apt
+    output_by_funder = [["Funder", "Number of awards", "Value of awards", "CPOF (adjusted by years since pub.)", "Avg. APT (95% CI)"]]
+
+    for institute, project_set in by_institute.items():
+        citations = 0
+        apts = []
+        availability = 0
+
+        for idd in project_set: #idd==project number
+            citations += sum([output[key]["citations"] for key in output if output[key]["project"]==idd])
+            apts.extend([output[key]["apt"] for key in output if output[key]["project"]==idd])
+            availability += sum([max(0, 2021-output[key]["year"]) for key in output if output[key]["project"]==idd])
+
+        count = len([item for item in data if item["administration"] == institute]) #num of awards
+        amount = sum([item["funding"] for item in data if item["administration"] == institute]) #value of awards
+
+        # get apt 95% CI range
+        if not apts: # is empty
+            apt_range = "n/a"
+        elif len(apts) == 1: # error thrown by interval calculation if <2 elements
+            apt_range = "{:.2f}".format(apts[0])
+        else:
+            apt_avg = np.mean(apts)
+            apts_interval = scist.norm.interval(alpha=0.95, loc=apt_avg, scale=scist.sem(apts))
+            apt_range = "{:.2f} ({:.2f}-{:.2f})".format(apt_avg, apts_interval[0], apts_interval[1])
+
+        if availability == 0:
+            cpof_per_yr = "n/a"
+        else:
+            cpof_per_yr = citations/availability
+        output_by_funder.append([institute, count, amount, cpof_per_yr, apt_range])
+
+    with open('by_funder_detailed.csv', 'w+', newline='', encoding='utf8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output_by_funder)
+    return
+    
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
