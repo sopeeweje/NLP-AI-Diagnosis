@@ -12,6 +12,8 @@ from collections import Counter
 import statistics
 import pickle
 import numpy as np
+from nltk import word_tokenize          
+from nltk.stem import WordNetLemmatizer, PorterStemmer
 import argparse
 
 def mk_int(s):
@@ -92,6 +94,16 @@ def process_data(data_file, funding_file):
     print("Processed data N: {}".format(str(len(data))))
     return data, test_data
 
+class LemmaStemmerTokenizer:
+    """
+    Tokenizer that lemmatizes and stems words
+    """
+    def __init__(self):
+        self.wnl = WordNetLemmatizer()
+        self.ps = PorterStemmer()
+    def __call__(self, doc):
+        return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t.isalpha()]
+
 def feature_extraction(data, num_features, max_df):
     """
 
@@ -108,7 +120,7 @@ def feature_extraction(data, num_features, max_df):
     """
     input_text = [item["text"] for item in data]
     print("Vectorizing...")
-    vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text) #, token_pattern=u'(?ui)\\b\\w*[a-z]+\\w*\\b'
+    vectorizer = TfidfVectorizer(tokenizer=LemmaStemmerTokenizer(), stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text) #, token_pattern=u'(?ui)\\b\\w*[a-z]+\\w*\\b'
     processed_text = vectorizer.transform(input_text)
 
     with open("processed-data.pkl", 'wb') as handle:
