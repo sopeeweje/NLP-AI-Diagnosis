@@ -8,7 +8,6 @@ import pickle
 import numpy as np
 import pandas as pd
 import seaborn as sns
-from feature_extraction import text_process
 import sklearn.metrics as metrics
 from yellowbrick.cluster import InterclusterDistance
 import sklearn.neighbors
@@ -27,6 +26,20 @@ import shutil
 import scipy.stats as scist
 from docx import Document
 import math
+import nltk
+from nltk import word_tokenize          
+from nltk.stem import WordNetLemmatizer, PorterStemmer
+nltk.download('punkt')
+
+class LemmaStemmerTokenizer:
+    """
+    Tokenizer that lemmatizes and stems words
+    """
+    def __init__(self):
+        self.wnl = WordNetLemmatizer()
+        self.ps = PorterStemmer()
+    def __call__(self, doc):
+        return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t.isalpha()]
 
 def get_clusters(selected_k, data_file, processed_file, centers, years, save_folder="", save=True):
     """
@@ -470,7 +483,9 @@ def get_rep_clusters(result):
             table.cell(i+1,2).text = unique_awards_list[i][1]['activity'] # Award Activity
             table.cell(i+1,3).text = str(unique_awards_list[i][1]['year']) # Year
             table.cell(i+1,4).text = "{:.2g}".format(unique_awards_list[i][1]['score']) # Sample Silhouette Score
-    
+        
+        document.add_page_break()
+        
     document.save('{}/supp_info.docx'.format(result)) 
 
 if __name__ == "__main__":

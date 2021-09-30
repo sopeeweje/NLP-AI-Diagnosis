@@ -1,7 +1,6 @@
 import csv
 import nltk
 from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
 import string
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
@@ -14,26 +13,12 @@ import pickle
 import numpy as np
 from nltk import word_tokenize          
 from nltk.stem import WordNetLemmatizer, PorterStemmer
+nltk.download('punkt')
 import argparse
 
 def mk_int(s):
     s = s.strip()
     return int(s) if s else 0
-
-def text_process(text):
-    '''
-    Takes in a string of text, then performs the following:
-    1. Remove all punctuation
-    2. Remove all stopwords
-    3. Return the cleaned text as a list of words
-    4. Remove words
-    '''
-    stemmer = WordNetLemmatizer()
-    nopunc = [char for char in text if char not in string.punctuation]
-    nopunc = ''.join([i for i in nopunc if not i.isdigit()])
-    nopunc =  [word.lower() for word in nopunc.split()]
-    nopunc = [word for word in nopunc if word not in stopwords.words('english')]
-    return [stemmer.lemmatize(word) for word in nopunc]
 
 def process_data(data_file, funding_file):
     funding_data = {}
@@ -149,7 +134,7 @@ def get_features():
         centroid_file.write(i)
         centroid_file.write("\n")
     centroid_file.close()
-    print(len(vector.get_feature_names()))
+    # print(len(vector.get_feature_names()))
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -173,6 +158,7 @@ if __name__ == "__main__":
     funding_file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/institution-funding.csv'
     data, test_data = process_data(file, funding_file)
     feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
+    get_features()
     data = data + test_data
     
     # By Funder
