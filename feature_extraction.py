@@ -36,7 +36,8 @@ def process_data(data_file, funding_file):
         print("Raw data N: {}".format(str(len(raw_data))))
         for i in range(1,len(raw_data)):
             if (raw_data[i][6] in ids) or (raw_data[i][11][0] in ['Z','T']):
-                continue
+                ids.append(raw_data[i][6])
+                #continue
             else:
                 ids.append(raw_data[i][6])
             abstract = raw_data[i][1].replace('\n',' ')
@@ -87,6 +88,7 @@ class LemmaStemmerTokenizer:
         self.wnl = WordNetLemmatizer()
         self.ps = PorterStemmer()
     def __call__(self, doc):
+        # leaving out stemming for now
         return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t.isalpha()]
 
 def feature_extraction(data, num_features, max_df):
