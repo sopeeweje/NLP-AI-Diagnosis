@@ -6,10 +6,13 @@ import matplotlib.pyplot as plt
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 import seaborn as sns
 import argparse
+import csv
+import numpy as np
 
 def find_centroids(data, test, max_df, max_features, k, plot=False, score=False):
     # Load documents
     input_text = [item["text"] for item in data]
+    titles = [item["title"] for item in data]
     
     # Create vectorizers
     tfidf_vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=max_features).fit(input_text) # frequency - inverse frequency
@@ -30,7 +33,23 @@ def find_centroids(data, test, max_df, max_features, k, plot=False, score=False)
     
     with open("lda_centroids.pkl", 'wb') as handle:
         pickle.dump(lda.components_, handle)
-    
+        
+    all_features = []
+    for topic_idx, topic in enumerate(lda.components_):
+        top_features_ind = topic.argsort()[:-n_top_words - 1:-1]
+        top_features = [tfidf_feature_names[i] for i in top_features_ind]
+        all_features.append(top_features)
+        
+    by_doc = []
+    for i in range(len(input_text)):
+        weights = lda.transform(tfidf_processed[i])
+        max_index_col = np.argmax(weights, axis=1)[0]
+        new = [titles[i], max_index_col, np.amax(weights, axis=1), all_features[max_index_col]]
+        by_doc.append(new)
+        
+    with open('lda_weights.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(by_doc)
     # perplexity = 0
     # if score:
     #     test_input = [item["text"] for item in test]
@@ -50,9 +69,11 @@ def plot_top_words(model, feature_names, n_top_words, title, k):
     
     fig, axes = plt.subplots(dim1, dim2, sharex=True)
     axes = axes.flatten()
+    features_csv = []
     for topic_idx, topic in enumerate(model.components_):
         top_features_ind = topic.argsort()[:-n_top_words - 1:-1]
         top_features = [feature_names[i] for i in top_features_ind]
+        features_csv.append(top_features)
         weights = topic[top_features_ind]
 
         ax = axes[topic_idx]
@@ -63,7 +84,11 @@ def plot_top_words(model, feature_names, n_top_words, title, k):
         for i in 'top right left'.split():
             ax.spines[i].set_visible(False)
         fig.suptitle(title)
-
+    
+    with open('lda_features.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(features_csv)
+    
     plt.subplots_adjust(top=0.90, bottom=0.05, wspace=0.90, hspace=0.3)
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
