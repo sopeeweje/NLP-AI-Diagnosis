@@ -224,15 +224,6 @@ def graph_projections(results_directory, selected_k=60):
             category = raw_data[i][17]
             projection = float(raw_data[i][10])
             actual = float(raw_data[i][11])
-            # if len(description.split()) == 4:
-            #     split = description.split(" ")
-            #     description = split[0]+" "+split[1]+"\n"+split[2]+" "+split[3]
-            # elif len(description.split()) == 3:
-            #     split = description.split(" ")
-            #     description = split[0]+" "+split[1]+"\n"+split[2]
-            # elif len(description.split()) == 2:
-            #     split = description.split(" ")
-            #     description = split[0]+"\n"+split[1]
             descriptions.append(description)
             clusters.append([cluster, description, category])
             projections.append(projection)
