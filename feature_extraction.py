@@ -36,8 +36,8 @@ def process_data(data_file, funding_file):
         print("Raw data N: {}".format(str(len(raw_data))))
         for i in range(1,len(raw_data)):
             if (raw_data[i][6] in ids) or (raw_data[i][11][0] in ['Z','T']):
-                ids.append(raw_data[i][6])
-                #continue
+                #ids.append(raw_data[i][6])
+                continue
             else:
                 ids.append(raw_data[i][6])
             abstract = raw_data[i][1].replace('\n',' ')
