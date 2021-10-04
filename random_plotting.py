@@ -5,6 +5,17 @@ Created on Fri Sep 17 18:52:14 2021
 
 @author: Sope
 """
+import pickle
+import csv
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib import cm
+from scipy.optimize import curve_fit
+import statsmodels.api as sm
+from statsmodels.sandbox.regression.predstd import wls_prediction_std
+from statsmodels.stats.outliers_influence import summary_table
+
+
 def cluster_anova():
     # Result labels
     result = pickle.load(open("results/07-18-2021--132946/model_clustering.pkl","rb"))
@@ -178,13 +189,29 @@ def plot_translation_metrics():
             actuals.append(actual)
     
 
-def graph_projections():
+def graph_projections(results_directory, selected_k, actuals, projections, descriptions):
+    """
+    creates projections plot in results_directory
+
+    Parameters
+    ----------
+    results_directory: example is "results/07-18-2021--132946"
+    selected_k
+    actuals
+    projections
+    descriptions
+
+    Returns
+    -------
+    None
+
+    """
     # 1. Determine dimensions for plot
-    data = pickle.load(open("results/07-18-2021--132946/model_clustering.pkl","rb"))
+    data = pickle.load(open(f"{results_directory}/model_clustering.pkl", "rb"))
     clusters = []
-    with open('results/07-18-2021--132946/final_data.csv', newline='') as csvfile:
+    with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
-        for i in range(1,len(raw_data)):
+        for i in range(1, len(raw_data)):
             cluster = int(raw_data[i][0])
             description = raw_data[i][16]
             category = raw_data[i][17]
@@ -272,7 +299,7 @@ def graph_projections():
     st, reg_data, ss2 = summary_table(re, alpha=0.05)
     
     predicted = reg_data[:, 2]
-    predict_mean_se  = reg_data[:, 3]
+    predict_mean_se = reg_data[:, 3]
     predict_mean_ci_low, predict_mean_ci_upp = reg_data[:, 4:6].T
     predict_ci_low, predict_ci_upp = reg_data[:, 6:8].T
     
@@ -436,5 +463,5 @@ def graph_projections():
     ax.set_xlabel('Projected 2021 award ($100 millions)')
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
-    
-    plt.savefig('{}/actual_vs_projected.png'.format(save_folder))
+    # the below assume save_folder that was here initially is the same as results_directory
+    plt.savefig(f'{results_directory}/actual_vs_projected.png')
