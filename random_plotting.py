@@ -255,6 +255,9 @@ def graph_projections():
     
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
+    
+    ############################################
+
     x = np.arange(selected_k)
     # Perform linear regression
     y = actuals
