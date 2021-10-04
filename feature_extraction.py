@@ -22,15 +22,15 @@ def mk_int(s):
 
 def process_data(data_file, funding_file):
     funding_data = {}
-    with open(funding_file, newline='') as csvfile:
+    with open(funding_file, newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1,len(raw_data)):
             org = raw_data[i][0]
             funding = int(raw_data[i][5])
             funding_data[org] = funding
-    
+
     data = []
-    with open(data_file, newline='') as csvfile:
+    with open(data_file, newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
         ids = []
         print("Raw data N: {}".format(str(len(raw_data))))
@@ -57,12 +57,12 @@ def process_data(data_file, funding_file):
                 "funding": mk_int(raw_data[i][49]),
                 #"funding": funding, # by institution
                 })
-    
+
     new_data = []
     for item in data:
         if item["funding"] != 0:
             new_data.append(item)
-    
+
     data = []
     test_data = []
     for item in new_data:
@@ -73,10 +73,10 @@ def process_data(data_file, funding_file):
 
     with open("data.pkl", 'wb') as handle:
         pickle.dump(data, handle)
-        
+
     with open("test-data.pkl", 'wb') as handle:
         pickle.dump(test_data, handle)
-    
+
     print("Processed data N: {}".format(str(len(data))))
     return data, test_data
 
@@ -97,8 +97,8 @@ def feature_extraction(data, num_features, max_df):
     Parameters
     ----------
     data : parallels "data" from process_data
-    
-    Returns 
+
+    Returns
     -------
     features:
         funding - institution's funding in 2020
@@ -109,10 +109,10 @@ def feature_extraction(data, num_features, max_df):
     print("Vectorizing...")
     vectorizer = TfidfVectorizer(tokenizer=LemmaStemmerTokenizer(), stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text) #, token_pattern=u'(?ui)\\b\\w*[a-z]+\\w*\\b'
     processed_text = vectorizer.transform(input_text)
-    
+
     with open("processed-data.pkl", 'wb') as handle:
         pickle.dump(processed_text, handle)
-        
+
     with open("vectorizer.pkl", 'wb') as handle:
         pickle.dump(vectorizer, handle)
     print("Data vectorized.")
@@ -129,9 +129,9 @@ def get_features():
     """
     # Vectorizer to convert raw documents to TF-IDF features
     vector = pickle.load(open("vectorizer.pkl","rb"))
-    
+
     # Get feature names and save to text file
-    centroid_file = open("features", "w")
+    centroid_file = open("features", "w", encoding='utf8')
     for i in vector.get_feature_names():
         centroid_file.write(i)
         centroid_file.write("\n")
@@ -155,14 +155,15 @@ if __name__ == "__main__":
         default=0.5,
         )
     FLAGS, unparsed = parser.parse_known_args()
-    
-    file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/raw_data.csv'
-    funding_file = '/Users/Sope/Documents/GitHub/NLP-AI-Diagnosis/institution-funding.csv'
+
+    file_root = 'C:/Users/suzie/Dropbox (Personal)/PENN MED/research/NLP-AI-Medicine/'
+    file = file_root + 'raw_data.csv'
+    funding_file = file_root + 'institution-funding.csv'
     data, test_data = process_data(file, funding_file)
     feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
     get_features()
     data = data + test_data
-    
+
     # By Funder
     funders = np.unique(np.array([item["administration"] for item in data]))
     output = [["Funder", "Number of awards", "Value of awards"]]
@@ -170,10 +171,10 @@ if __name__ == "__main__":
         count = len([item for item in data if item["administration"] == funder])
         amount = sum([item["funding"] for item in data if item["administration"] == funder])
         output.append([funder, count, amount])
-    with open('by_funder.csv', 'w', newline='') as csvfile:
+    with open('by_funder.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-        
+
     # By Year
     years = np.unique(np.array([item["year"] for item in data]))
     output = [["Year", "Number of awards", "Value of awards"]]
@@ -181,10 +182,10 @@ if __name__ == "__main__":
         count = len([item for item in data if item["year"] == year])
         amount = sum([item["funding"] for item in data if item["year"] == year])
         output.append([year, count, amount])
-    with open('by_year.csv', 'w', newline='') as csvfile:
+    with open('by_year.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-        
+
     # By Mechanism
     mechanisms = np.unique(np.array([item["mechanism"] for item in data]))
     output = [["Mechanism", "Number of awards", "Value of awards"]]
@@ -192,7 +193,6 @@ if __name__ == "__main__":
         count = len([item for item in data if item["mechanism"] == mech])
         amount = sum([item["funding"] for item in data if item["mechanism"] == mech])
         output.append([mech, count, amount])
-    with open('by_mechanism.csv', 'w', newline='') as csvfile:
+    with open('by_mechanism.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-        
