@@ -689,10 +689,10 @@ if __name__ == "__main__":
     # Get representative clusters for supp info
     get_rep_clusters(save_folder)
 
-    # All data
-    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Centroids"]]
+    # All data - note blank columns for description, category
+    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Description", "Category", "Centroids"]]
     for i in range(selected_k):
-        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], citations[i]/total_cluster_funding[i]*1e3/availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], centroids[i]])
+        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], citations[i]/total_cluster_funding[i]*1e3/availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], " ", " ", centroids[i]])
     with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
