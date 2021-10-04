@@ -103,19 +103,22 @@ def cluster_anova():
     ax.figure.tight_layout()
     plt.savefig('avg_award_ANOVA.png')   
 
-def plot_translation_metrics():
+def plot_translation_metrics(results_directory):
     apt = []
     cpof = []
-    with open('figures and tables/citation_metrics.csv', newline='') as csvfile:
+    with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1,len(raw_data)):
-            apt.append([raw_data[i][0], raw_data[i][1], float(raw_data[i][2]), float(raw_data[i][3]), float(raw_data[i][4])])
-            cpof.append([raw_data[i][0], raw_data[i][1], float(raw_data[i][5])])
+            # if raw_data[i][17] == 'N/A':
+            #     continue
+            apt.append([raw_data[i][16], raw_data[i][17], float(raw_data[i][5]), float(raw_data[i][6]), float(raw_data[i][7])])
+            cpof.append([raw_data[i][16], raw_data[i][17], float(raw_data[i][9])])
     apt.sort(key=lambda x: x[2])
     ci95_apt = [[abs(i[2]-i[3]), abs(i[2]-i[4])] for i in apt]
     ci95_apt = list(map(list, zip(*ci95_apt)))
     cpof.sort(key=lambda x: x[2])
     categories = np.unique([i[1] for i in apt])
+
     #color_selection = rainbow_color_stops(len(categories))
     color_selection = [
         (246/256, 20/256, 58/256),
@@ -131,6 +134,7 @@ def plot_translation_metrics():
         (244/256, 191/256, 191/256),
         (191/256, 198/256, 244/256),
         ]
+
     clinical = [0,1,2,6,7,8,9,10]
     technical = [3,4,5,11]
     plt.rcdefaults()
@@ -151,7 +155,8 @@ def plot_translation_metrics():
     ax.add_artist(legend1)
     ax.add_artist(legend2)
     plt.tight_layout()
-    
+    plt.savefig(f'{results_directory}/apt.png')
+
     # CPOF
     fig, ax = plt.subplots()
     ax.barh(np.arange(len(cpof)), [i[2] for i in cpof], color=[color_selection[np.where(categories==j)[0][0]] for j in [i[1] for i in cpof]])
@@ -160,10 +165,11 @@ def plot_translation_metrics():
     ax.set_xlabel("Citations per $1 million funding (CPOF)", weight="bold")
     ax.set_ylabel("Application", weight="bold")
     plt.tight_layout()
+    plt.savefig(f'{results_directory}/cpof.png')
 
     # Projected funding by year
     # # Actual vs. projected awards
-    with open('results/07-18-2021--132946/final_data.csv', newline='') as csvfile:
+    with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
         descriptions = []
         clusters = []
@@ -189,17 +195,14 @@ def plot_translation_metrics():
             actuals.append(actual)
     
 
-def graph_projections(results_directory, selected_k, actuals, projections, descriptions):
+def graph_projections(results_directory, selected_k=60):
     """
     creates projections plot in results_directory
 
     Parameters
     ----------
     results_directory: example is "results/07-18-2021--132946"
-    selected_k
-    actuals
-    projections
-    descriptions
+    selected_k: defaults to 60
 
     Returns
     -------
@@ -208,15 +211,33 @@ def graph_projections(results_directory, selected_k, actuals, projections, descr
     """
     # 1. Determine dimensions for plot
     data = pickle.load(open(f"{results_directory}/model_clustering.pkl", "rb"))
+    descriptions = []
     clusters = []
+    projections = []
+    actuals = []
+
     with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1, len(raw_data)):
             cluster = int(raw_data[i][0])
             description = raw_data[i][16]
             category = raw_data[i][17]
+            projection = float(raw_data[i][10])
+            actual = float(raw_data[i][11])
+            # if len(description.split()) == 4:
+            #     split = description.split(" ")
+            #     description = split[0]+" "+split[1]+"\n"+split[2]+" "+split[3]
+            # elif len(description.split()) == 3:
+            #     split = description.split(" ")
+            #     description = split[0]+" "+split[1]+"\n"+split[2]
+            # elif len(description.split()) == 2:
+            #     split = description.split(" ")
+            #     description = split[0]+"\n"+split[1]
+            descriptions.append(description)
             clusters.append([cluster, description, category])
-        
+            projections.append(projection)
+            actuals.append(actual)
+
     k = 12
     factors = []
     categories = np.unique([x[2] for x in clusters])
@@ -239,7 +260,7 @@ def graph_projections(results_directory, selected_k, actuals, projections, descr
     plt.ylabel("Funding ($100 millions)")
     
     # 4. Plot each projection with scatter plot
-    years_int = list(range(0,21))
+    years_int = list(range(0, 21))
     m = np.repeat(list(range(dim1)), dim2)
     n = np.tile(list(range(dim2)), dim1)
     maxy = 0
@@ -282,7 +303,8 @@ def graph_projections(results_directory, selected_k, actuals, projections, descr
     
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
-    
+    plt.savefig(f'{results_directory}/projected.png')
+
     ############################################
 
     x = np.arange(selected_k)
@@ -452,16 +474,15 @@ def graph_projections(results_directory, selected_k, actuals, projections, descr
     ax.legend(loc="lower right")
     ann = []
     locations = [(projections[i], actuals[i]) for i in range(len(clusters))]
-    for i in range(60):
+    for i in range(selected_k):
         ann.append(ax.annotate(descriptions[mapping[i]-1], xy=locations[mapping[i]-1], xytext=tuple(map(sum,zip(locations[mapping[i]-1],points[i][0]))), fontsize=8, arrowprops=dict(arrowstyle="-", color='k', lw=0.5)))
     # https://adjusttext.readthedocs.io/en/latest/_modules/adjustText.html#adjust_text
     # adjust_text(ann, projection, cluster_cost_2021, ax=ax, expand_text=(1.05,3), force_text=(0.25, 0.5), only_move={'points':'y', 'text':'y', 'objects':'y'}, arrowprops=dict(arrowstyle="-", color='k', lw=0.5))
     ax.plot([projections[np.argmin(projections)],projections[np.argmax(projections)]], [predicted[np.argmin(projections)],predicted[np.argmax(projections)]], color="#808080")
-    ax.plot(sort(x), sort(predict_mean_ci_low), color='#808080', linestyle="--", lw=2)
-    ax.plot(sort(x), sort(predict_mean_ci_upp), color='#808080', linestyle="--", lw=2)
+    ax.plot(sorted(x), sorted(predict_mean_ci_low), color='#808080', linestyle="--", lw=2)
+    ax.plot(sorted(x), sorted(predict_mean_ci_upp), color='#808080', linestyle="--", lw=2)
     ax.set_ylabel('Actual 2021 award to date ($10 millions)')
     ax.set_xlabel('Projected 2021 award ($100 millions)')
     manager = plt.get_current_fig_manager()
     manager.resize(*manager.window.maxsize())
-    # the below assume save_folder that was here initially is the same as results_directory
     plt.savefig(f'{results_directory}/actual_vs_projected.png')
