@@ -84,6 +84,10 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     costs = []
     yoy = []
     size = []
+    mechanisms = []
+    for i in range(6): # initialization
+        mechanisms.append([])
+    MECH_NAMES = "R01", "U01", "R44", "U24", "R21", "U54"
 
     for i in range(0,selected_k):
 
@@ -117,6 +121,11 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
 
         size.append(len(cluster))
 
+        # get number of awards per mechanism
+        for j in range(len(mechanisms)):
+            mech = len([ind for ind in cluster if data[ind]["mechanism"] == MECH_NAMES[j]])/len(cluster_data)
+            mechanisms[j].append(mech)
+
     # Get centroids
     # Identify the top terms for each cluster, using the TF-IDF terms with the highest values in the centroid
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
@@ -142,6 +151,7 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     # get scores
     score = metrics.silhouette_score(X_transformed, km.labels_)
 
+    print("mechanisms[0:2]", mechanisms[0:2])
     output = {
         "yr_avg_cost": costs, # Average award size by year by cluster
         "yr_total_cost": yoy, # Total award size by year by cluster
@@ -150,7 +160,8 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
         "centroids": centroids,
         "score": score, # Silhouette score for
         "model": km, # K-means model
-        "labels": clusters # Ordered list of cluster number labels for each award
+        "labels": clusters, # Ordered list of cluster number labels for each award
+        "mechanisms": mechanisms # List of lists: [r01, u01, r44, u24, r21, u54]. Each internal list has number of awards per mechanism by cluster
         }
     return output
 
@@ -690,11 +701,19 @@ if __name__ == "__main__":
     get_rep_clusters(save_folder)
 
     # All data - note blank columns for description, category
-    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Description", "Category", "Centroids"]]
+    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Description", "Category", "Centroids", "%R01", "%U01", "%R44", "%U24", "%R21", "%U54"]]
     for i in range(selected_k):
-        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], citations[i]/total_cluster_funding[i]*1e3/availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], " ", " ", centroids[i]])
+        output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], citations[i]/total_cluster_funding[i]*1e3/availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], " ", " ", centroids[i], data["mechanisms"][0][i], data["mechanisms"][1][i], data["mechanisms"][2][i], data["mechanisms"][3][i], data["mechanisms"][4][i], data["mechanisms"][5][i]])
     with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
+
+    # Auto-generating Table 1 with blank areas for manual description+category
+    table1 = [["Description", "Number of grants", "Application category", "Centroids", "Total Award, 2000-2020", "Total citations", "Silhouette score"]]
+    for i in range(selected_k):
+        table1.append([' ', data["size"][i], ' ', centroids[i], total_cluster_funding[i], citations[i], tabulated[i]])
+    with open('{}/table1.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(table1)
 
     print("Complete.")

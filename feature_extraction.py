@@ -11,9 +11,10 @@ from collections import Counter
 import statistics
 import pickle
 import numpy as np
-from nltk import word_tokenize          
+from nltk import word_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer
 nltk.download('punkt')
+nltk.download('wordnet')
 import argparse
 
 def mk_int(s):
