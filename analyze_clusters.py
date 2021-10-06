@@ -154,24 +154,35 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
         }
     return output
 
-def umap_visualization(X_transformed, cluster_labels, save_folder=""):
-    outlier_scores = sklearn.neighbors.LocalOutlierFactor(contamination=0.1).fit_predict(X_transformed)
-    X_transformed = X_transformed[outlier_scores != -1]
-    cluster_labels = cluster_labels[outlier_scores != -1]
-
+def umap_visualization(X_transformed, cluster_labels, silhouette_scores, sizes, save_folder=""):
+    #outlier_scores = sklearn.neighbors.LocalOutlierFactor(contamination=0.1).fit_predict(X_transformed)
+    #X_transformed = X_transformed[outlier_scores != -1]
+    #cluster_labels = cluster_labels[outlier_scores != -1]
+    
+    product = [silhouette_scores[i]*sizes[i] for i in range(len(sizes))]
+    top_clusters = sorted(range(len(silhouette_scores)), key=lambda i: silhouette_scores[i], reverse=True)[:9]
     n_subset = len(cluster_labels)
     selected_cells = np.random.choice(np.arange(X_transformed.shape[0]), size = n_subset, replace = False)
     mapper = umap.UMAP(metric='hellinger', random_state=42).fit(X_transformed[selected_cells,:])
 
     embedding = mapper.transform(X_transformed[selected_cells,:])
 
+    # Colors
+    colors = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:olive', 'tab:cyan']
+    selected_colors = []
+    for point in selected_cells:
+        if cluster_labels[point] in top_clusters:
+            selected_colors.append(colors[top_clusters.index(cluster_labels[point])])
+        else:
+            selected_colors.append('tab:gray')
+    
     # Plot Clusters on UMAP
     plt.figure()
     plt.grid(b=None)
-    plt.scatter(embedding[:, 0], embedding[:, 1], cmap='Spectral', s=5, c=cluster_labels[selected_cells])
+    plt.scatter(embedding[:, 0], embedding[:, 1], cmap='Spectral', s=5, c=selected_colors)
     plt.gca().set_aspect('equal', 'datalim')
     num_clust = len(np.unique(cluster_labels[selected_cells]))
-    plt.colorbar(boundaries=np.arange(num_clust+1)-0.5).set_ticks(np.arange(num_clust))
+    #plt.colorbar(boundaries=np.arange(num_clust+1)-0.5).set_ticks(np.arange(num_clust))
     plt.title('UMAP Projection of Awards, TF-IDF', fontsize=14)
     plt.xlabel("UMAP 1")
     plt.ylabel("UMAP 2")
@@ -650,7 +661,7 @@ if __name__ == "__main__":
 
     # UMAP Visualization
     X_transformed = pickle.load(open("processed-data.pkl","rb"))
-    umap_visualization(X_transformed, data["labels"], save_folder)
+    umap_visualization(X_transformed, data["labels"], tabulated, data["size"], save_folder)
 
     # Save model
     with open("model.pkl", 'wb') as handle:

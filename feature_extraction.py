@@ -20,15 +20,7 @@ def mk_int(s):
     s = s.strip()
     return int(s) if s else 0
 
-def process_data(data_file, funding_file):
-    funding_data = {}
-    with open(funding_file, newline='', encoding='utf8') as csvfile:
-        raw_data = list(csv.reader(csvfile))
-        for i in range(1,len(raw_data)):
-            org = raw_data[i][0]
-            funding = int(raw_data[i][5])
-            funding_data[org] = funding
-
+def process_data(data_file):
     data = []
     with open(data_file, newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
@@ -43,7 +35,6 @@ def process_data(data_file, funding_file):
             abstract = raw_data[i][1].replace('\n',' ')
             title = raw_data[i][3]
             relevance = raw_data[i][4].replace('\n',' ')
-            funding = funding_data.get(raw_data[i][31], 0)
             data.append({
                 "text": title + " " + abstract + " " + relevance,
                 "title": title,
@@ -55,7 +46,6 @@ def process_data(data_file, funding_file):
                 "mechanism": raw_data[i][11],
                 "year": raw_data[i][42],
                 "funding": mk_int(raw_data[i][49]),
-                #"funding": funding, # by institution
                 })
 
     new_data = []
@@ -156,10 +146,8 @@ if __name__ == "__main__":
         )
     FLAGS, unparsed = parser.parse_known_args()
 
-    file_root = 'C:/Users/suzie/Dropbox (Personal)/PENN MED/research/NLP-AI-Medicine/'
-    file = file_root + 'raw_data.csv'
-    funding_file = file_root + 'institution-funding.csv'
-    data, test_data = process_data(file, funding_file)
+    file = 'raw_data.csv'
+    data, test_data = process_data(file)
     feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
     get_features()
     data = data + test_data
