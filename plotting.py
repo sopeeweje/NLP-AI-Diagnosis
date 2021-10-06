@@ -121,7 +121,7 @@ def generate_color_selection(max_color, min_color, n):
 
     num_color_indices = len(max_color)  # should be 3 for rgb
 
-    # initialize color_selection with min_color
+    # initialize color_selection with max_color
     color_selection = [max_color]
 
     # find range of rgb values between min and max colors, divide based on n
