@@ -105,7 +105,7 @@ def cluster_anova():
     plt.savefig('avg_award_ANOVA.png')   
 
 
-def generate_color_selection(min_color, max_color, n):
+def generate_color_selection(max_color, min_color, n):
     """
     Parameters
     ----------
@@ -119,22 +119,18 @@ def generate_color_selection(min_color, max_color, n):
 
     """
 
-    # if only one interval, just use max_color
-    if n == 1:
-        return [max_color]
-
-    num_color_indices = len(min_color)  # should be 3 for rgb
+    num_color_indices = len(max_color)  # should be 3 for rgb
 
     # initialize color_selection with min_color
-    color_selection = [min_color]
+    color_selection = [max_color]
 
     # find range of rgb values between min and max colors, divide based on n
-    color_intervals = [(max_color[color_index] - min_color[color_index]) / (n - 1) for
+    color_intervals = [(min_color[color_index] - max_color[color_index]) / (n - 1) for
                        color_index in range(num_color_indices)]
 
     # add to color_selection, incrementing by the color_interval
     for color_num in range(1, n):
-        next_color = tuple([(min_color[color_index] + color_num * color_intervals[color_index])
+        next_color = tuple([(max_color[color_index] + color_num * color_intervals[color_index])
                             for color_index in range(num_color_indices)])
         color_selection.append(next_color)
 
@@ -177,12 +173,12 @@ def plot_translation_metrics(results_directory):
     min_clinical_color = (244/256, 191/256, 191/256)
     max_clinical_color = (255/256, 100/256, 55/256)
     num_clinical_categories = len(clinical_categories)
-    clinical_color_selection = generate_color_selection(min_clinical_color, max_clinical_color, num_clinical_categories)
+    clinical_color_selection = generate_color_selection(max_clinical_color, min_clinical_color, num_clinical_categories)
 
     min_technical_color = (191/256, 198/256, 244/256)
     max_technical_color = (55/256, 100/256, 255/256)
     num_technical_categories = len(technical_categories)
-    technical_color_selection = generate_color_selection(min_technical_color, max_technical_color,
+    technical_color_selection = generate_color_selection(max_technical_color, min_technical_color,
                                                          num_technical_categories)
 
     color_selection = clinical_color_selection + technical_color_selection
