@@ -109,8 +109,8 @@ def generate_color_selection(max_color, min_color, n):
     """
     Parameters
     ----------
-    min_color: tuple of rgb for min color in gradient, where each value is an int divided by 256
     max_color: tuple of rgb for max color in gradient, where each value is an int divided by 256
+    min_color: tuple of rgb for min color in gradient, where each value is an int divided by 256
     n: number of rgb tuples for colors to generate
 
     Returns
