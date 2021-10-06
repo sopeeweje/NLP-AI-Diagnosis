@@ -109,10 +109,12 @@ def plot_translation_metrics(results_directory):
     with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1,len(raw_data)):
-            # if raw_data[i][17] == 'N/A':
-            #     continue
-            apt.append([raw_data[i][16], raw_data[i][17], float(raw_data[i][5]), float(raw_data[i][6]), float(raw_data[i][7])])
-            cpof.append([raw_data[i][16], raw_data[i][17], float(raw_data[i][9])])
+            description = raw_data[i][18]
+            category = raw_data[i][19]
+            if category == 'N/A':
+                continue
+            apt.append([description, category, float(raw_data[i][5]), float(raw_data[i][6]), float(raw_data[i][7])])
+            cpof.append([description, category, float(raw_data[i][9])])
     apt.sort(key=lambda x: x[2])
     ci95_apt = [[abs(i[2]-i[3]), abs(i[2]-i[4])] for i in apt]
     ci95_apt = list(map(list, zip(*ci95_apt)))
@@ -177,7 +179,7 @@ def plot_translation_metrics(results_directory):
         actuals = []
         for i in range(1,len(raw_data)):
             cluster = int(raw_data[i][0])
-            description = raw_data[i][16]
+            description = raw_data[i][18]
             projection = float(raw_data[i][10])
             actual = float(raw_data[i][11])
             if len(description.split()) == 4:
@@ -220,8 +222,8 @@ def graph_projections(results_directory, selected_k=60):
         raw_data = list(csv.reader(csvfile))
         for i in range(1, len(raw_data)):
             cluster = int(raw_data[i][0])
-            description = raw_data[i][16]
-            category = raw_data[i][17]
+            description = raw_data[i][18]
+            category = raw_data[i][19]
             projection = float(raw_data[i][10])
             actual = float(raw_data[i][11])
             descriptions.append(description)
