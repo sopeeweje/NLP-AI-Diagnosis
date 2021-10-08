@@ -270,17 +270,18 @@ def graph_projections(results_directory):
             cluster = int(raw_data[i][0])
             description = raw_data[i][18]
             category = raw_data[i][19]
+            c_t = raw_data[i][20]
             projection = float(raw_data[i][10])
             actual = float(raw_data[i][11])
             descriptions.append(description)
-            clusters.append([cluster, description, category])
+            clusters.append([cluster, description, category, c_t])
             projections.append(projection)
             actuals.append(actual)
 
-    k = 12
     factors = []
     categories = np.unique([x[2] for x in clusters])
-    categories = np.delete(categories, 6)
+    k = len(categories)
+    # categories = np.delete(categories, 6)
     for i in range(1, k+1):
         if k / i == i:
             factors.extend([i,i])
@@ -293,7 +294,7 @@ def graph_projections(results_directory):
     
     # 3. Create hidden frame for shared labels
     fig.add_subplot(111, frameon=False)
-    plt.grid(b=None)
+    # plt.grid(b=None)
     plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
     plt.xlabel("Years from 2000")
     plt.ylabel("Funding ($100 millions)")
@@ -306,9 +307,9 @@ def graph_projections(results_directory):
     projection = []
     growth = []
     bounds = []
-    for j in range(k):
+    for j in range(len(categories)):
         filtered = list(filter(lambda x: x[2] == categories[j], clusters))
-        if j in [0,1,2,6,7,8,9,10]:
+        if filtered[0][3] == "Clinical":
             color_spectrum = 'Reds'
         else:
             color_spectrum = 'Blues'
@@ -346,182 +347,182 @@ def graph_projections(results_directory):
 
     ############################################
 
-    x = np.arange(len(clusters))
-    # Perform linear regression
-    y = actuals
-    x = projections
-    X = sm.add_constant(x)
+    # x = np.arange(len(clusters))
+    # # Perform linear regression
+    # y = actuals
+    # x = projections
+    # X = sm.add_constant(x)
     
-    re = sm.OLS(y, X).fit()
-    print("2021 projected vs. actual R2: {:.3f}".format(re.rsquared))
+    # re = sm.OLS(y, X).fit()
+    # print("2021 projected vs. actual R2: {:.3f}".format(re.rsquared))
     
-    prstd, iv_l, iv_u = wls_prediction_std(re)
+    # prstd, iv_l, iv_u = wls_prediction_std(re)
 
-    st, reg_data, ss2 = summary_table(re, alpha=0.05)
+    # st, reg_data, ss2 = summary_table(re, alpha=0.05)
     
-    predicted = reg_data[:, 2]
-    predict_mean_se = reg_data[:, 3]
-    predict_mean_ci_low, predict_mean_ci_upp = reg_data[:, 4:6].T
-    predict_ci_low, predict_ci_upp = reg_data[:, 6:8].T
+    # predicted = reg_data[:, 2]
+    # predict_mean_se = reg_data[:, 3]
+    # predict_mean_ci_low, predict_mean_ci_upp = reg_data[:, 4:6].T
+    # predict_ci_low, predict_ci_upp = reg_data[:, 6:8].T
     
-    colors = cm.get_cmap('Spectral', 12)
-    mapping = [
-        10,
-        50,
-        19,
-        20,
-        27,
-        7,
-        16,
-        28,
-        29,
-        21,
-        17,
-        52,
-        22,
-        42,
-        11,
-        8,
-        30,
-        46,
-        23,
-        57,
-        24,
-        4,
-        31,
-        53,
-        12,
-        5,
-        32,
-        43,
-        33,
-        34,
-        35,
-        58,
-        18,
-        54,
-        25,
-        51,
-        44,
-        36,
-        55,
-        1,
-        37,
-        59,
-        26,
-        60,
-        38,
-        39,
-        9,
-        40,
-        47,
-        13,
-        48,
-        2,
-        14,
-        6,
-        45,
-        15,
-        56,
-        41,
-        49,
-        3,
-        ]
-    labels=[
-        "Diet/Exercise",
-        "Electronic health record",
-        "Experimental techniques",
-        "Genetics",
-        "Imaging methods",
-        "Nondescript",
-        "Neurology",
-        "Psychiatry",
-        "Oncology",
-        "Other",
-        "Patient populations",
-        "Training and Education"
-        ]
-    points = [
-        [(-2.7e6, -0.5e7), colors(0), "Diet/Exercise"], #Obesity
-        [(-0.5e7, 5e7), colors(0), "Diet/Exercise"], #Physical activity
-        [(-5e6,1e7), colors(0), "Diet/Exercise"], #Microbiome
-        [(-1e7,1e7), colors(1), "Electronic health record"], #Clinical decision support
-        [(-1e7,-8e6), colors(1), "Electronic health record"], #NLP
-        [(-1e7,6e6), colors(1), "Electronic health record"], #EMR phenotyping
-        [(1e7,6e7), colors(2), "Experimental techniques"], #Single cell analysis
-        [(0,-2e7), colors(2), "Experimental techniques"], #Protein structure analysis
-        [(0,-5e7), colors(2), "Experimental techniques"], #Mass spec
-        [(-1e7,5e6), colors(3), "Genetics"], #Dev genomics
-        [(-0.5e7,6.5e7), colors(3), "Genetics"], #Epigenetics
-        [(-5.4e6,-3e7),  colors(3), "Genetics"], #Regulatory gen
-        [(0,-1e7),  colors(3), "Genetics"], #GWAS
-        [(0,-1e7),  colors(3), "Genetics"], #Clinical genomics
-        [(-2e7,4e7),  colors(3), "Genetics"], #RNA sequencing
-        [(0.9e7,-8e7),  colors(4), "Imaging methods"], #PET
-        [(-1.1e7,-6e7),  colors(4), "Imaging methods"], #CAD
-        [(0,-2e7),  colors(4), "Imaging methods"], #MRI
-        [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
-        [(-1.5e7,9e7),  colors(5), "Nondescript"], #Nondescript
-        [(-2.5e7,2e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.2e7,-8e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.5e7,6e7),  colors(5), "Nondescript"], #Abstract unavailable
-        [(0,0.5e7),  colors(5), "Nondescript"], #Nondescript
-        [(-1e7,-7e7),  colors(5), "Nondescript"], #Nondescript
-        [(-0.5e7,8e7),  colors(10), "Psychiatry"], #Pain management
-        [(0.5e7,-7e7),  colors(6), "Neurology"], #Dementia
-        [(0.2e7,-0.5e7),  colors(6), "Neurology"], #Single-neuron analysis
-        [(-0.45e7,1e7),  colors(6), "Neurology"], #Speech disorders
-        [(-0.6e7,0.5e7),  colors(4), "Imaging methods"], #Functional MRI
-        [(-0.2e7,-10e7),  colors(6), "Neurology"], #Neurocog
-        [(0,0.5e7),  colors(6), "Neurology"], #Stroke
-        [(-2e7,-4e7),  colors(6), "Neurology"], #Sleep
-        [(0.4e7,-3.8e7),  colors(6), "Neurology"], #Neural circuits
-        [(0.2e7,-1.8e7),  colors(6), "Neurology"], #Language development
-        [(-1.2e7,7e7),  colors(6), "Neurology"], #Vision
-        [(-2.5e7,10e7),  colors(6), "Neurology"], #Motor disorders
-        [(0.1e7,-1e7),  colors(6), "Neurology"], #Autism
-        [(-2e7,-1.2e7),  colors(6), "Neurology"], #Neuroscience
-        [(-1.2e7,5e7),  colors(6), "Neurology"], #PD
-        [(-2e7,-2.8e7),  colors(7), "Oncology"], #Cancer genomics
-        [(0,-1e7),  colors(7), "Oncology"], #Lung cancer
-        [(2e7,0.2e7),  colors(7), "Oncology"], #Breast cancer
-        [(-0.1e7,-4e7),  colors(7), "Oncology"], #Cancer imaging
-        [(-0.1e7,2e7),  colors(8), "Other"], #HIV
-        [(-1.6e7,0.8e7),  colors(8), "Other"], #Environmental health
-        [(-1.3e7,-2e7),  colors(8), "Other"], #Asthma
-        [(1e7,2e7),  colors(8), "Other"], #Drug efficacy
-        [(-3e7,-2.5e7),  colors(9), "Patient populations"], #Pediatrics
-        [(2e7,-1.6e7),  colors(9), "Patient populations"], #Older adults
-        [(1e7,7e7),  colors(10), "Psychiatry"], #Suicidality
-        [(3e7,-2.1e7),  colors(10), "Psychiatry"], #AUD
-        [(-2.4e7,-7e7),  colors(10), "Psychiatry"], #Cigarette smoking
-        [(0.5e7,4e7),  colors(10), "Psychiatry"], #Mental health
-        [(-2e7,-0.75e7),  colors(10), "Psychiatry"], #Emotion
-        [(-2.4e7,0.9e7),  colors(11), "Training and Education"], #Research career programs
-        [(-2e7,5e7),  colors(11), "Training and Education"], #Bibliometric analysis
-        [(3e7, -1e7),  colors(11), "Training and Education"], #Big data education
-        [(-0.5e7,-1e7),  colors(11), "Training and Education"], #Science education
-    ]
-    fig, ax = plt.subplots()
-    ax.grid(b=None)
-    for i in range(12):
-        js = [k for k in range(len(clusters)) if points[k][2]==labels[i]]
-        ax.scatter([projections[j] for j in js], [actuals[j] for j in js], color=colors(i), label=labels[i]) #points[i][1]
-    ax.set_xlim(-0.2e8, 1.6e8)
-    ax.set_ylim(-10e7, 14e7)
-    ax.legend(loc="lower right")
-    ann = []
-    locations = [(projections[i], actuals[i]) for i in range(len(clusters))]
-    for i in range(len(clusters)):
-        ann.append(ax.annotate(descriptions[mapping[i]-1], xy=locations[mapping[i]-1], xytext=tuple(map(sum,zip(locations[mapping[i]-1],points[i][0]))), fontsize=8, arrowprops=dict(arrowstyle="-", color='k', lw=0.5)))
-    # https://adjusttext.readthedocs.io/en/latest/_modules/adjustText.html#adjust_text
-    # adjust_text(ann, projection, cluster_cost_2021, ax=ax, expand_text=(1.05,3), force_text=(0.25, 0.5), only_move={'points':'y', 'text':'y', 'objects':'y'}, arrowprops=dict(arrowstyle="-", color='k', lw=0.5))
-    ax.plot([projections[np.argmin(projections)],projections[np.argmax(projections)]], [predicted[np.argmin(projections)],predicted[np.argmax(projections)]], color="#808080")
-    ax.plot(sorted(x), sorted(predict_mean_ci_low), color='#808080', linestyle="--", lw=2)
-    ax.plot(sorted(x), sorted(predict_mean_ci_upp), color='#808080', linestyle="--", lw=2)
-    ax.set_ylabel('Actual 2021 award to date ($10 millions)')
-    ax.set_xlabel('Projected 2021 award ($100 millions)')
-    manager = plt.get_current_fig_manager()
-    manager.resize(*manager.window.maxsize())
-    plt.savefig(f'{results_directory}/actual_vs_projected.png')
+    # colors = cm.get_cmap('Spectral', 12)
+    # mapping = [
+    #     10,
+    #     50,
+    #     19,
+    #     20,
+    #     27,
+    #     7,
+    #     16,
+    #     28,
+    #     29,
+    #     21,
+    #     17,
+    #     52,
+    #     22,
+    #     42,
+    #     11,
+    #     8,
+    #     30,
+    #     46,
+    #     23,
+    #     57,
+    #     24,
+    #     4,
+    #     31,
+    #     53,
+    #     12,
+    #     5,
+    #     32,
+    #     43,
+    #     33,
+    #     34,
+    #     35,
+    #     58,
+    #     18,
+    #     54,
+    #     25,
+    #     51,
+    #     44,
+    #     36,
+    #     55,
+    #     1,
+    #     37,
+    #     59,
+    #     26,
+    #     60,
+    #     38,
+    #     39,
+    #     9,
+    #     40,
+    #     47,
+    #     13,
+    #     48,
+    #     2,
+    #     14,
+    #     6,
+    #     45,
+    #     15,
+    #     56,
+    #     41,
+    #     49,
+    #     3,
+    #     ]
+    # labels=[
+    #     "Diet/Exercise",
+    #     "Electronic health record",
+    #     "Experimental techniques",
+    #     "Genetics",
+    #     "Imaging methods",
+    #     "Nondescript",
+    #     "Neurology",
+    #     "Psychiatry",
+    #     "Oncology",
+    #     "Other",
+    #     "Patient populations",
+    #     "Training and Education"
+    #     ]
+    # points = [
+    #     [(-2.7e6, -0.5e7), colors(0), "Diet/Exercise"], #Obesity
+    #     [(-0.5e7, 5e7), colors(0), "Diet/Exercise"], #Physical activity
+    #     [(-5e6,1e7), colors(0), "Diet/Exercise"], #Microbiome
+    #     [(-1e7,1e7), colors(1), "Electronic health record"], #Clinical decision support
+    #     [(-1e7,-8e6), colors(1), "Electronic health record"], #NLP
+    #     [(-1e7,6e6), colors(1), "Electronic health record"], #EMR phenotyping
+    #     [(1e7,6e7), colors(2), "Experimental techniques"], #Single cell analysis
+    #     [(0,-2e7), colors(2), "Experimental techniques"], #Protein structure analysis
+    #     [(0,-5e7), colors(2), "Experimental techniques"], #Mass spec
+    #     [(-1e7,5e6), colors(3), "Genetics"], #Dev genomics
+    #     [(-0.5e7,6.5e7), colors(3), "Genetics"], #Epigenetics
+    #     [(-5.4e6,-3e7),  colors(3), "Genetics"], #Regulatory gen
+    #     [(0,-1e7),  colors(3), "Genetics"], #GWAS
+    #     [(0,-1e7),  colors(3), "Genetics"], #Clinical genomics
+    #     [(-2e7,4e7),  colors(3), "Genetics"], #RNA sequencing
+    #     [(0.9e7,-8e7),  colors(4), "Imaging methods"], #PET
+    #     [(-1.1e7,-6e7),  colors(4), "Imaging methods"], #CAD
+    #     [(0,-2e7),  colors(4), "Imaging methods"], #MRI
+    #     [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-1.5e7,9e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-2.5e7,2e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-0.2e7,-8e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-0.5e7,0.5e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-0.5e7,6e7),  colors(5), "Nondescript"], #Abstract unavailable
+    #     [(0,0.5e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-1e7,-7e7),  colors(5), "Nondescript"], #Nondescript
+    #     [(-0.5e7,8e7),  colors(10), "Psychiatry"], #Pain management
+    #     [(0.5e7,-7e7),  colors(6), "Neurology"], #Dementia
+    #     [(0.2e7,-0.5e7),  colors(6), "Neurology"], #Single-neuron analysis
+    #     [(-0.45e7,1e7),  colors(6), "Neurology"], #Speech disorders
+    #     [(-0.6e7,0.5e7),  colors(4), "Imaging methods"], #Functional MRI
+    #     [(-0.2e7,-10e7),  colors(6), "Neurology"], #Neurocog
+    #     [(0,0.5e7),  colors(6), "Neurology"], #Stroke
+    #     [(-2e7,-4e7),  colors(6), "Neurology"], #Sleep
+    #     [(0.4e7,-3.8e7),  colors(6), "Neurology"], #Neural circuits
+    #     [(0.2e7,-1.8e7),  colors(6), "Neurology"], #Language development
+    #     [(-1.2e7,7e7),  colors(6), "Neurology"], #Vision
+    #     [(-2.5e7,10e7),  colors(6), "Neurology"], #Motor disorders
+    #     [(0.1e7,-1e7),  colors(6), "Neurology"], #Autism
+    #     [(-2e7,-1.2e7),  colors(6), "Neurology"], #Neuroscience
+    #     [(-1.2e7,5e7),  colors(6), "Neurology"], #PD
+    #     [(-2e7,-2.8e7),  colors(7), "Oncology"], #Cancer genomics
+    #     [(0,-1e7),  colors(7), "Oncology"], #Lung cancer
+    #     [(2e7,0.2e7),  colors(7), "Oncology"], #Breast cancer
+    #     [(-0.1e7,-4e7),  colors(7), "Oncology"], #Cancer imaging
+    #     [(-0.1e7,2e7),  colors(8), "Other"], #HIV
+    #     [(-1.6e7,0.8e7),  colors(8), "Other"], #Environmental health
+    #     [(-1.3e7,-2e7),  colors(8), "Other"], #Asthma
+    #     [(1e7,2e7),  colors(8), "Other"], #Drug efficacy
+    #     [(-3e7,-2.5e7),  colors(9), "Patient populations"], #Pediatrics
+    #     [(2e7,-1.6e7),  colors(9), "Patient populations"], #Older adults
+    #     [(1e7,7e7),  colors(10), "Psychiatry"], #Suicidality
+    #     [(3e7,-2.1e7),  colors(10), "Psychiatry"], #AUD
+    #     [(-2.4e7,-7e7),  colors(10), "Psychiatry"], #Cigarette smoking
+    #     [(0.5e7,4e7),  colors(10), "Psychiatry"], #Mental health
+    #     [(-2e7,-0.75e7),  colors(10), "Psychiatry"], #Emotion
+    #     [(-2.4e7,0.9e7),  colors(11), "Training and Education"], #Research career programs
+    #     [(-2e7,5e7),  colors(11), "Training and Education"], #Bibliometric analysis
+    #     [(3e7, -1e7),  colors(11), "Training and Education"], #Big data education
+    #     [(-0.5e7,-1e7),  colors(11), "Training and Education"], #Science education
+    # ]
+    # fig, ax = plt.subplots()
+    # ax.grid(b=None)
+    # for i in range(12):
+    #     js = [k for k in range(len(clusters)) if points[k][2]==labels[i]]
+    #     ax.scatter([projections[j] for j in js], [actuals[j] for j in js], color=colors(i), label=labels[i]) #points[i][1]
+    # ax.set_xlim(-0.2e8, 1.6e8)
+    # ax.set_ylim(-10e7, 14e7)
+    # ax.legend(loc="lower right")
+    # ann = []
+    # locations = [(projections[i], actuals[i]) for i in range(len(clusters))]
+    # for i in range(len(clusters)):
+    #     ann.append(ax.annotate(descriptions[mapping[i]-1], xy=locations[mapping[i]-1], xytext=tuple(map(sum,zip(locations[mapping[i]-1],points[i][0]))), fontsize=8, arrowprops=dict(arrowstyle="-", color='k', lw=0.5)))
+    # # https://adjusttext.readthedocs.io/en/latest/_modules/adjustText.html#adjust_text
+    # # adjust_text(ann, projection, cluster_cost_2021, ax=ax, expand_text=(1.05,3), force_text=(0.25, 0.5), only_move={'points':'y', 'text':'y', 'objects':'y'}, arrowprops=dict(arrowstyle="-", color='k', lw=0.5))
+    # ax.plot([projections[np.argmin(projections)],projections[np.argmax(projections)]], [predicted[np.argmin(projections)],predicted[np.argmax(projections)]], color="#808080")
+    # ax.plot(sorted(x), sorted(predict_mean_ci_low), color='#808080', linestyle="--", lw=2)
+    # ax.plot(sorted(x), sorted(predict_mean_ci_upp), color='#808080', linestyle="--", lw=2)
+    # ax.set_ylabel('Actual 2021 award to date ($10 millions)')
+    # ax.set_xlabel('Projected 2021 award ($100 millions)')
+    # manager = plt.get_current_fig_manager()
+    # manager.resize(*manager.window.maxsize())
+    # plt.savefig(f'{results_directory}/actual_vs_projected.png')
