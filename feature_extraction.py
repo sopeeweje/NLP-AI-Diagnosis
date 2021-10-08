@@ -128,6 +128,52 @@ def get_features():
         centroid_file.write("\n")
     centroid_file.close()
     # print(len(vector.get_feature_names()))
+    
+
+# get data from csv file
+def get_by_year_data():
+    years = []
+    awards = []
+    values = []
+
+    with open('by_year.csv', newline='', encoding='utf8') as csvfile:
+        raw_data = csv.reader(csvfile)
+        next(raw_data) #skip the header
+
+        for entry in raw_data:
+            years.append(int(entry[0]))
+            awards.append(int(entry[1]))
+            values.append(float(entry[2]))
+
+    return years, awards, values
+
+# plot award number & values on same plot, 2 y-axes
+def plot_by_year():
+    years, awards, values = get_by_year_data()
+
+    fig, ax1 = plt.subplots()
+
+    # award values
+    color = 'tab:blue'
+    ax1.set_xlabel('Year')
+    ax1.set_ylabel('Award Values (billions USD)', color=color)
+    bar = ax1.bar(years, [v/1e9 for v in values], color=color) #yerr=errorbar
+    ax1.tick_params(axis='y', labelcolor=color)
+    ax1.bar_label(bar, fmt='$%.1f', padding=1, size='x-small')
+    ax2 = ax1.twinx()
+
+    # award size (avg) = total value/num awards
+    color = 'tab:green'
+    ax2.set_xlabel('Year')
+    ax2.set_ylabel('Average Award Size (thousands USD)', color=color)
+    ax2.plot(years, [values[i]/1e3/awards[i] for i in range(len(years))], color=color) #yerr=errorbar
+    ax2.tick_params(axis='y', labelcolor=color)
+
+    plt.title('Total Awards by Year')
+    plt.savefig('table2.png') 
+
+    # plt.show()
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -151,7 +197,7 @@ if __name__ == "__main__":
     data, test_data = process_data(file)
     feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
     get_features()
-    data = data + test_data
+    # data = data + test_data
 
     # By Funder
     funders = np.unique(np.array([item["administration"] for item in data]))
@@ -174,7 +220,8 @@ if __name__ == "__main__":
     with open('by_year.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-
+    plot_by_year()
+    
     # By Mechanism
     mechanisms = np.unique(np.array([item["mechanism"] for item in data]))
     output = [["Mechanism", "Number of awards", "Value of awards"]]

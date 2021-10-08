@@ -205,7 +205,7 @@ def umap_visualization(X_transformed, cluster_labels, silhouette_scores, sizes, 
 def rainbow_color_stops(n=10, end=1, shade=0.9):
     return [ hls_to_rgb(end * i/(n-1)*shade, 0.5*shade, 1*shade) for i in range(n) ]
 
-def graph_funding_projections(data, save_folder=""):
+def get_funding_projections(data):
     # Create grid that highlights each projection with 95% CI
     # https://stackoverflow.com/questions/39434402/how-to-get-confidence-intervals-from-curve-fit
 
@@ -229,12 +229,8 @@ def graph_funding_projections(data, save_folder=""):
     plt.xlabel("Years from 2000")
     plt.ylabel("Funding ($100 millions)")
 
-    # 4. Plot each projection with scatter plot
-    colors = cm.get_cmap('Spectral', k) #rainbow_color_stops(k)
+    # 4. Get projections
     years_int = list(range(0,21))
-    m = np.repeat(list(range(dim1)), dim2)
-    n = np.tile(list(range(dim2)), dim1)
-    maxy = 0
     projection = []
     growth = []
     bounds = []
@@ -242,8 +238,8 @@ def graph_funding_projections(data, save_folder=""):
         popt, pcov = curve_fit(lambda t,a,b: a*np.exp(b*t),  years_int,  data["yr_total_cost"][i],  p0=(4000, 0.1))
         std = np.sqrt(np.diagonal(pcov))
         x = np.linspace(0,21,400)
-        upper0 = popt[0]+1.96*std[0]
-        lower0 = popt[0]-1.96*std[0]
+        # upper0 = popt[0]+1.96*std[0]
+        # lower0 = popt[0]-1.96*std[0]
         upper1 = popt[1]+1.96*std[1]
         lower1 = popt[1]-1.96*std[1]
 
@@ -251,24 +247,6 @@ def graph_funding_projections(data, save_folder=""):
         projection.append(ypred[-1])
         growth.append(popt[1])
         bounds.append([lower1, upper1])
-        maxy = max([max(ypred), maxy])
-        upper = [upper0*np.exp(upper1*point) for point in x]
-        lower = [lower0*np.exp(lower1*point) for point in x]
-        #color = matplotlib.colors.rgb2hex(rgba)
-        axs[m[i],n[i]].set_title("Cluster {}".format(str(i)), size=10, weight='bold', position=(0.5, 0.7))
-        axs[m[i],n[i]].plot(x, ypred, color=colors(i))
-        axs[m[i],n[i]].fill_between(x, upper, lower, color=colors(i), alpha=0.1)
-        axs[m[i],n[i]].scatter(years_int, data["yr_total_cost"][i], s=20, color=colors(i))
-        axs[m[i],n[i]].set_ylim(-100000,maxy+100000)
-        axs[m[i],n[i]].set_xlim(0,21.00001)
-        axs[m[i],n[i]].grid(False)
-
-    manager = plt.get_current_fig_manager()
-    manager.resize(*manager.window.maxsize())
-    if save_folder != "":
-        plt.savefig('{}/funding_by_year.png'.format(save_folder))
-    else:
-        plt.savefig('funding_by_year.png')
 
     # 5. Return 2021 projections and growth rate
     return projection, growth, bounds
@@ -679,7 +657,7 @@ if __name__ == "__main__":
         pickle.dump(data["model"], handle)
 
     # Get 2021 projections, projected growth rates, and confidence bounds on growth rates by cluster
-    projection, growth, bounds = graph_funding_projections(data, save_folder) # 2021 prediction
+    projection, growth, bounds = get_funding_projections(data) # 2021 prediction
 
     # Get 2021 clusters
     model = data["model"]
