@@ -19,3 +19,6 @@ seaborn = "*"
 argparse = "*"
 pandas = "*"
 python-docx = "*"
+
+[requires]
+python_version = "3.7"

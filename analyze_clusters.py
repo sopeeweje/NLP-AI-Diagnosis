@@ -27,19 +27,9 @@ import scipy.stats as scist
 from docx import Document
 import math
 import nltk
-from nltk import word_tokenize
-from nltk.stem import WordNetLemmatizer, PorterStemmer
+from feature_extraction import LemmaStemmerTokenizer
 nltk.download('punkt')
-
-class LemmaStemmerTokenizer:
-    """
-    Tokenizer that lemmatizes and stems words
-    """
-    def __init__(self):
-        self.wnl = WordNetLemmatizer()
-        self.ps = PorterStemmer()
-    def __call__(self, doc):
-        return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t.isalpha()]
+csv.field_size_limit(sys.maxsize)
 
 def get_clusters(selected_k, data_file, processed_file, centers, years, save_folder="", save=True):
     """
@@ -75,7 +65,8 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
 
     # Perform mini batch k means
     km = MiniBatchKMeans(n_clusters=selected_k, init=centers, n_init=10, init_size=3000, batch_size=3000, verbose=0, max_no_improvement=None)
-    # km = KMeans(n_clusters=selected_k, init=centers, n_init=10)
+    # km = MiniBatchKMeans(n_clusters=selected_k, init=centers, verbose=0, max_no_improvement=None)
+    # km = KMeans(n_clusters=selected_k, init=centers)
     clusters = km.fit_predict(X_transformed)
     scores = metrics.silhouette_samples(X_transformed, clusters)
 
@@ -151,7 +142,6 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     # get scores
     score = metrics.silhouette_score(X_transformed, km.labels_)
 
-    print("mechanisms[0:2]", mechanisms[0:2])
     output = {
         "yr_avg_cost": costs, # Average award size by year by cluster
         "yr_total_cost": yoy, # Total award size by year by cluster
@@ -226,11 +216,11 @@ def get_funding_projections(data):
     fig.add_subplot(111, frameon=False)
     plt.grid(b=None)
     plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
-    plt.xlabel("Years from 2000")
+    plt.xlabel("Years from 1985")
     plt.ylabel("Funding ($100 millions)")
 
     # 4. Get projections
-    years_int = list(range(0,21))
+    years_int = list(range(0,36))
     projection = []
     growth = []
     bounds = []
@@ -247,6 +237,10 @@ def get_funding_projections(data):
         projection.append(ypred[-1])
         growth.append(popt[1])
         bounds.append([lower1, upper1])
+        
+        # projection.append(0)
+        # growth.append(0)
+        # bounds.append([0,0])
 
     # 5. Return 2021 projections and growth rate
     return projection, growth, bounds
@@ -287,7 +281,7 @@ def predict_clusters(test_data, selected_k, model):
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
     input_text = [item["text"] for item in test_data]
     test_transformed = vectorizer.transform(input_text)
-    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+    years = [str(i) for i in range(1985,2021)]
     labels = model.predict(test_transformed)
 
     # Output data
@@ -333,7 +327,7 @@ def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", sav
     print("Optimizing model...")
     for i in range(num_trials):
         # Generate clusters for a selected k
-        data = get_clusters(selected_k, "data.pkl", "processed-data.pkl", 'k-means++', years, save_folder, save=save)
+        data = get_clusters(selected_k, "data.pkl", "processed-data.pkl", centers, years, save_folder, save=save)
         j = 0
         for thing in data["data_by_cluster"]:
             for item in thing:
@@ -381,7 +375,7 @@ def get_citations(clusters):
     with open("citations.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
-           output[raw_data[i][0]] = {"citations": int(raw_data[i][23]), "apt": float(raw_data[i][17])}
+           output[raw_data[i][0]] = {"citations": int(raw_data[i][13]), "apt": float(raw_data[i][11])}
 
     # Get project number and year by paper
     with open("papers.csv", newline='', encoding='utf8') as csvfile:
@@ -498,75 +492,6 @@ def get_rep_clusters(result):
 
     document.save('{}/supp_info.docx'.format(result))
 
-def analyze_by_institute():
-    """
-    Load in data from data.pkl
-    Generate table of award data listed by funding institute
-    Save to by_funder_detailed.csv
-    """
-    data = pickle.load(open("data.pkl","rb"))
-
-    # create dictionary with institute as key
-    by_institute = dict()
-    for item in data:
-        institute = item["administration"]
-        if institute in by_institute:
-            by_institute[institute].add(item['project_number'])
-        else:
-            by_institute[institute] = {item['project_number']} #set
-
-    # Get number of citations, apt, and publication year by paper
-    output = {}
-    with open("citations.csv", newline='', encoding='utf8') as csvfile:
-        raw_data = list(csv.reader(csvfile))
-        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
-            output[raw_data[i][0]] = {"citations": int(raw_data[i][23]), "apt": float(raw_data[i][17])}
-
-    # Get project number and year by paper
-    with open("papers.csv", newline='', encoding='utf8') as csvfile:
-        raw_data = list(csv.reader(csvfile))
-        for i in range(1,len(raw_data)):
-            if raw_data[i][13] in output.keys():
-                output[raw_data[i][13]]["project"] = raw_data[i][0]
-                output[raw_data[i][13]]["year"] = int(raw_data[i][2])
-
-    # iterate through institutes to get # awards, value, cpof, apt
-    output_by_funder = [["Funder", "Number of awards", "Value of awards", "CPOF (adjusted by years since pub.)", "Avg. APT (95% CI)"]]
-
-    for institute, project_set in by_institute.items():
-        citations = 0
-        apts = []
-        availability = 0
-
-        for idd in project_set: #idd==project number
-            citations += sum([output[key]["citations"] for key in output if output[key]["project"]==idd])
-            apts.extend([output[key]["apt"] for key in output if output[key]["project"]==idd])
-            availability += sum([max(0, 2021-output[key]["year"]) for key in output if output[key]["project"]==idd])
-
-        count = len([item for item in data if item["administration"] == institute]) #num of awards
-        amount = sum([item["funding"] for item in data if item["administration"] == institute]) #value of awards
-
-        # get apt 95% CI range
-        if not apts: # is empty
-            apt_range = "n/a"
-        elif len(apts) == 1: # error thrown by interval calculation if <2 elements
-            apt_range = "{:.2f}".format(apts[0])
-        else:
-            apt_avg = np.mean(apts)
-            apts_interval = scist.norm.interval(alpha=0.95, loc=apt_avg, scale=scist.sem(apts))
-            apt_range = "{:.2f} ({:.2f}-{:.2f})".format(apt_avg, apts_interval[0], apts_interval[1])
-
-        if availability == 0:
-            cpof_per_yr = "n/a"
-        else:
-            cpof_per_yr = citations/availability
-        output_by_funder.append([institute, count, amount, cpof_per_yr, apt_range])
-
-    with open('by_funder_detailed.csv', 'w+', newline='', encoding='utf8') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(output_by_funder)
-    return
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -586,7 +511,7 @@ if __name__ == "__main__":
     FLAGS, unparsed = parser.parse_known_args()
 
 
-    years = ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020"]
+    years = [str(i) for i in range(1985,2021)]
     selected_k = FLAGS.k
     num_trials = FLAGS.trials
     centers = pickle.load(open("lda_centroids.pkl","rb"))
@@ -693,8 +618,9 @@ if __name__ == "__main__":
     output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Description", "Category", "Clinical/Technical", "Centroids", "%R01", "%U01", "%R44", "%U24", "%R21", "%U54"]]
     for i in range(selected_k):
         output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], citations[i]/total_cluster_funding[i]*1e3/availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], " ", " ", " ", centroids[i], data["mechanisms"][0][i], data["mechanisms"][1][i], data["mechanisms"][2][i], data["mechanisms"][3][i], data["mechanisms"][4][i], data["mechanisms"][5][i]])
-    output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Description", "Category", "Centroids", "%R01", "%U01", "%R44", "%U24", "%R21", "%U54"]]
-
+    with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output)
     # Auto-generating Table 1 with blank areas for manual description+category
     table1 = [["Description", "Number of grants", "Application category", "Centroids", "Total Award, 2000-2020", "Total citations", "Silhouette score"]]
     for i in range(selected_k):

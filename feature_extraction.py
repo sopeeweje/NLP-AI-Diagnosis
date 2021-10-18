@@ -18,10 +18,34 @@ nltk.download('wordnet')
 import argparse
 
 def mk_int(s):
+    """
+    Parameters
+    ----------
+    s : string
+
+    Returns
+    -------
+    int
+        string to int conversion.
+    """
     s = s.strip()
     return int(s) if s else 0
 
 def process_data(data_file):
+    """
+    
+
+    Parameters
+    ----------
+    data_file : path to csv
+        Raw data file
+
+    Returns
+    -------
+    data : list of dictionaries representing awards until 2020
+    test_data : list of dictionaries representing awards in 2021
+
+    """
     data = []
     with open(data_file, newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
@@ -30,6 +54,10 @@ def process_data(data_file):
         for i in range(1,len(raw_data)):
             if (raw_data[i][6] in ids) or (raw_data[i][11][0] in ['Z','T']):
                 #ids.append(raw_data[i][6])
+                continue
+            elif "No abstract available" in raw_data[i][1]:
+                continue
+            elif len(raw_data[i][49]) <= 1:
                 continue
             else:
                 ids.append(raw_data[i][6])
@@ -80,7 +108,7 @@ class LemmaStemmerTokenizer:
         self.ps = PorterStemmer()
     def __call__(self, doc):
         # leaving out stemming for now
-        return [self.wnl.lemmatize(t) for t in word_tokenize(doc) if t.isalpha()]
+        return [self.wnl.lemmatize(t).lower() for t in word_tokenize(doc) if (t.isalpha() and len(t) > 1)]
 
 def feature_extraction(data, num_features, max_df):
     """
@@ -98,7 +126,8 @@ def feature_extraction(data, num_features, max_df):
     """
     input_text = [item["text"] for item in data]
     print("Vectorizing...")
-    vectorizer = TfidfVectorizer(tokenizer=LemmaStemmerTokenizer(), stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text) #, token_pattern=u'(?ui)\\b\\w*[a-z]+\\w*\\b'
+    # (tokenizer=LemmaStemmerTokenizer(), 
+    vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text)
     processed_text = vectorizer.transform(input_text)
 
     with open("processed-data.pkl", 'wb') as handle:
@@ -127,55 +156,9 @@ def get_features():
         centroid_file.write(i)
         centroid_file.write("\n")
     centroid_file.close()
-    # print(len(vector.get_feature_names()))
-    
-
-# get data from csv file
-def get_by_year_data():
-    years = []
-    awards = []
-    values = []
-
-    with open('by_year.csv', newline='', encoding='utf8') as csvfile:
-        raw_data = csv.reader(csvfile)
-        next(raw_data) #skip the header
-
-        for entry in raw_data:
-            years.append(int(entry[0]))
-            awards.append(int(entry[1]))
-            values.append(float(entry[2]))
-
-    return years, awards, values
-
-# plot award number & values on same plot, 2 y-axes
-def plot_by_year():
-    years, awards, values = get_by_year_data()
-
-    fig, ax1 = plt.subplots()
-
-    # award values
-    color = 'tab:blue'
-    ax1.set_xlabel('Year')
-    ax1.set_ylabel('Award Values (billions USD)', color=color)
-    bar = ax1.bar(years, [v/1e9 for v in values], color=color) #yerr=errorbar
-    ax1.tick_params(axis='y', labelcolor=color)
-    ax1.bar_label(bar, fmt='$%.1f', padding=1, size='x-small')
-    ax2 = ax1.twinx()
-
-    # award size (avg) = total value/num awards
-    color = 'tab:green'
-    ax2.set_xlabel('Year')
-    ax2.set_ylabel('Average Award Size (thousands USD)', color=color)
-    ax2.plot(years, [values[i]/1e3/awards[i] for i in range(len(years))], color=color) #yerr=errorbar
-    ax2.tick_params(axis='y', labelcolor=color)
-
-    plt.title('Total Awards by Year')
-    plt.savefig('table2.png') 
-
-    # plt.show()
-
 
 if __name__ == "__main__":
+    # Arguments: maximum number of features and maximum document frequency 
     parser = argparse.ArgumentParser()
     parser.add_argument(
         '--max_features',
@@ -192,7 +175,9 @@ if __name__ == "__main__":
         default=0.5,
         )
     FLAGS, unparsed = parser.parse_known_args()
-
+    
+    
+    # Feature extraction
     file = 'raw_data.csv'
     data, test_data = process_data(file)
     feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
@@ -220,7 +205,6 @@ if __name__ == "__main__":
     with open('by_year.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-    plot_by_year()
     
     # By Mechanism
     mechanisms = np.unique(np.array([item["mechanism"] for item in data]))

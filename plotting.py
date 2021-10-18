@@ -15,332 +15,278 @@ import statsmodels.api as sm
 from statsmodels.sandbox.regression.predstd import wls_prediction_std
 from statsmodels.stats.outliers_influence import summary_table
 import warnings
+from feature_extraction import LemmaStemmerTokenizer
+import scipy.stats as scist
+import math
+import sys
+csv.field_size_limit(sys.maxsize)
 
+def create_figure_1(data):
+    """
 
-def cluster_anova():
-    # Result labels
-    result = pickle.load(open("results/07-18-2021--132946/model_clustering.pkl","rb"))
-    labels = result["labels"]
-    clusters = result["data_by_cluster"]
-    funding = [sum(item["funding"] for item in clusters[i]) for i in range(len(clusters))]
-    total_citations, total_papers, apts_95, apts, lower, upper, listed_apts = get_citations(clusters)
-    
-    all_apts = []
-    labels = []
-    for i in range(len(listed_apts)):
-        all_apts.extend(listed_apts[i])
-        labels.extend([i for j in range(len(listed_apts[i]))])
+    Parameters
+    ----------
+    data : list
+        List of dictionaries representing each award (loaded from data.pkl)
+
+    Returns
+    -------
+    None.
+
+    """
+    years = np.unique(np.array([item["year"] for item in data]))
+    awards = []
+    values = []
+    for year in years:
+        awards.append(len([item for item in data if item["year"] == year]))
+        values.append(sum([item["funding"] for item in data if item["year"] == year]))
         
-    # Load data frame
-    df = pd.DataFrame({'score': all_apts,
-                   'group': labels}) 
+    fig, ax1 = plt.subplots()
+    ax1.set_xticks(np.arange(0, len(years)+1, 5))
+    ax1.set_xticklabels([years[i] for i in np.arange(0, len(years)+1, 5)])
     
-    # perform Tukey's test
-    tukey = pairwise_tukeyhsd(endog=df['score'],
-                              groups=df['group'],
-                              alpha=0.05)
-    df = pd.DataFrame(data=tukey._results_table.data[1:], columns=tukey._results_table.data[0])
-    for index in range(len(df)):
-        group1 = df["group1"][index]
-        group2 = df["group2"][index]
-        p = df[df["group1"]==group1][df["group2"]==group2]["p-adj"][index]
-        if p > 0.05:
-            p = 5
-        elif 0.01 < p <= 0.05:
-            p = 4
-        elif 0.005 < p <= 0.01:
-            p = 3
-        elif 0.001 < p <= 0.005:
-            p = 2
-        elif p <= 0.001:
-            p = 1
-        if np.mean(listed_apts[group2]) > np.mean(listed_apts[group1]):
-            p = -p
-        df.at[index,'p-adj']=p
 
-    df.to_csv('anova_award.csv', index=False, header=True)
-    piv = pd.pivot_table(df, values="p-adj",index=["group2"], columns=["group1"])
-    plt.figure()
-    myColors = ((1.0, 1.0, 1.0),
-                #(255/256, 215/256, 205/256),
-                (255/256, 175/256, 158/256),
-                (254/256, 134/256, 112/256),
-                (243/256, 88/256, 68/256),
-                (228/256, 13/256, 25/256),
-                (43/256, 12/256, 240/256),
-                (117/256, 72/256, 245/256),
-                (160/256, 118/256, 249/256),
-                (196/256, 163/256, 252/256),
-                #(227/256, 208/256, 254/256),
-                (1.0, 1.0, 1.0))
-    cmap = LinearSegmentedColormap.from_list('Custom', myColors, len(myColors))
-    xlabels = []
-    ylabels = []
-    with open('figures and tables/tick_labels.csv', newline='') as csvfile:
+    # award values
+    color = 'tab:blue'
+    ax1.set_xlabel('Year')
+    ax1.set_ylabel('Award Values (billions USD)', color=color)
+    bar = ax1.bar(years, [v/1e9 for v in values], color=color) #yerr=errorbar
+    ax1.tick_params(axis='y', labelcolor=color)
+    ax1.bar_label(bar, fmt='$%.1f', padding=1, size='x-small')
+    ax2 = ax1.twinx()
+    ax2.set_xticks(np.arange(0, len(years)+1, 5))
+    ax2.set_xticklabels([years[i] for i in np.arange(0, len(years)+1, 5)])
+
+    # award size (avg) = total value/num awards
+    color = 'tab:green'
+    ax2.set_xlabel('Year')
+    ax2.set_ylabel('Average Award Size (thousands USD)', color=color)
+    ax2.plot(years, [values[i]/1e3/awards[i] for i in range(len(years))], color=color) #yerr=errorbar
+    ax2.tick_params(axis='y', labelcolor=color)
+
+    plt.title('Total Awards by Year')
+    plt.savefig('figure1.eps', format='eps')
+
+def create_table_1(data):
+    # Get total awards for 1985, 2020, overall
+    awards_1985 = sum([int(data[i]["year"]) <= 2000 for i in range(len(data))])
+    awards_2020 = sum([int(data[i]["year"]) > 2000 for i in range(len(data))])
+    awards_overall = len(data)
+    
+    # Get total funding for 1985, 2020, overall
+    funding_1985 = sum([data[i]["funding"] for i in range(len(data)) if int(data[i]["year"]) <= 2000])
+    funding_2020 = sum([data[i]["funding"] for i in range(len(data)) if int(data[i]["year"]) > 2000])
+    funding_overall = sum([data[i]["funding"] for i in range(len(data))])
+    
+    # Get text from 1985 and 2020
+    text_1985 = ""
+    text_2020 = ""
+    text_all = ""
+    for award in range(len(data)):
+        if int(data[award]["year"]) <= 2008:
+            text_1985 += data[award]["text"]
+        else:
+            text_2020 += data[award]["text"]
+        text_all += data[award]["text"]
+    
+    tokenizer = LemmaStemmerTokenizer()
+    text_1985 = tokenizer(text_1985)
+    text_2020 = tokenizer(text_2020)
+    text_all = tokenizer(text_all)
+    
+    # Calculate log likelihood ratios
+    vector = pickle.load(open("vectorizer.pkl","rb"))
+    features = vector.get_feature_names()
+    word_map = {}
+    for word in features:
+        print(word)
+        prob_1985 = sum([i == word for i in text_1985])
+        prob_2020 = sum([i == word for i in text_2020])
+        prob_all = sum([i == word for i in text_all])
+        try:
+            llr_1985 = 2*(math.log10(prob_1985) - math.log10(prob_all))
+        except:
+            llr_1985 = -100000
+        try:
+            llr_2020 = 2*(math.log10(prob_2020) - math.log10(prob_all))
+        except:
+            llr_2020 = -100000
+        word_map[word] = {"2020": llr_2020, "1985": llr_1985}
+    
+    # Get the most enriched features
+    enriched_1985 = sorted(word_map, key = lambda x: word_map[x]["1985"], reverse=True)[0:10]
+    enriched_2020 = sorted(word_map, key = lambda x: word_map[x]["2020"], reverse=True)[0:10]    
+    
+    # Get number of citations, apt, and publication year by paper
+    output = {}
+    with open("citations.csv", newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
-        for i in range(0,len(raw_data)-1):
-            xlabels.append(raw_data[i][0])
-            ylabels.append(raw_data[i+1][0])
-    sns.set(font_scale=0.6)
-    ax = sns.heatmap(piv, vmin=-5, vmax=5, xticklabels=True, yticklabels=True, cmap=cmap, cbar=True, square=True,) #'format': '%.0f%%', 
-    ax.set_xlabel("Cluster 1")
-    ax.set_ylabel("Cluster 2")
-    ax.set_xticklabels(xlabels)
-    ax.set_yticklabels(ylabels) 
-    colorbar = ax.collections[0].colorbar
-    colorbar.set_ticks([-3.5, -2.5, -1.5, -0.5, 0.5, 1.5, 2.5, 3.5])
-    colorbar.set_ticklabels(['Cluster 2 > 1, p < 0.05',
-                             'Cluster 2 > 1, p < 0.01',
-                             'Cluster 2 > 1, p < 0.005',
-                             'Cluster 2 > 1, p < 0.001', 
-                             'Cluster 1 > 2, p < 0.001',
-                             'Cluster 1 > 2, p < 0.005',
-                             'Cluster 1 > 2, p < 0.01',
-                             'Cluster 1 > 2, p < 0.05',])
-    # ax.collections[0].colorbar.set_ticklabels(['10', '30'])
-    for text in ax.texts:
-        if abs(float(text.get_text())) > 0.05:
-            text.set_text("")
-    ax.figure.tight_layout()
-    plt.savefig('avg_award_ANOVA.png')   
+        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
+            output[raw_data[i][0]] = {"citations": float(raw_data[i][14]) if raw_data[i][14]!='' else 0, "apt": float(raw_data[i][11])}
 
-
-def generate_color_selection(max_color, min_color, n):
-    """
-    Parameters
-    ----------
-    max_color: tuple of rgb for max color in gradient, where each value is an int divided by 256
-    min_color: tuple of rgb for min color in gradient, where each value is an int divided by 256
-    n: number of rgb tuples for colors to generate
-
-    Returns
-    -------
-    list of n rgb tuples
-
-    """
-
-    num_color_indices = len(max_color)  # should be 3 for rgb
-
-    # initialize color_selection with max_color
-    color_selection = [max_color]
-
-    # find range of rgb values between min and max colors, divide based on n
-    color_intervals = [(min_color[color_index] - max_color[color_index]) / (n - 1) for
-                       color_index in range(num_color_indices)]
-
-    # add to color_selection, incrementing by the color_interval
-    for color_num in range(1, n):
-        next_color = tuple([(max_color[color_index] + color_num * color_intervals[color_index])
-                            for color_index in range(num_color_indices)])
-        color_selection.append(next_color)
-
-    return color_selection
-
-
-def plot_translation_metrics(results_directory):
-    apt = []
-    cpof = []
-
-    # technical and clinical clusters
-    clinical_categories = []
-    technical_categories = []
-
-    with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
+    # Get project number and year by paper
+    with open("papers.csv", newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1,len(raw_data)):
-            description = raw_data[i][18]
-            category = raw_data[i][19]
-            clinical_technical = raw_data[i][20]
-            if category == 'N/A':
-                continue
-            apt.append([description, category, float(raw_data[i][5]), float(raw_data[i][6]), float(raw_data[i][7])])
-            cpof.append([description, category, float(raw_data[i][9])])
-            if clinical_technical == 'Clinical' and category not in clinical_categories:
-                clinical_categories.append(category)
-            elif clinical_technical == 'Technical' and category not in technical_categories:
-                technical_categories.append(category)
-            elif clinical_technical not in ['Clinical', 'Technical']:
-                warnings.warn(f"Cluster {raw_data[i][0]} (description: {description}, category: {category}) "
-                              f"not classified as 'Clinical' or 'Technical')")
-
-    apt.sort(key=lambda x: x[2])
-    ci95_apt = [[abs(i[2]-i[3]), abs(i[2]-i[4])] for i in apt]
-    ci95_apt = list(map(list, zip(*ci95_apt)))
-    cpof.sort(key=lambda x: x[2])
-    categories = np.array(sorted(clinical_categories) + sorted(technical_categories))
-
-    # color_selection = rainbow_color_stops(len(categories))
-    min_clinical_color = (244/256, 191/256, 191/256)
-    max_clinical_color = (255/256, 100/256, 55/256)
-    num_clinical_categories = len(clinical_categories)
-    clinical_color_selection = generate_color_selection(max_clinical_color, min_clinical_color, num_clinical_categories)
-
-    min_technical_color = (191/256, 198/256, 244/256)
-    max_technical_color = (55/256, 100/256, 255/256)
-    num_technical_categories = len(technical_categories)
-    technical_color_selection = generate_color_selection(max_technical_color, min_technical_color,
-                                                         num_technical_categories)
-
-    color_selection = clinical_color_selection + technical_color_selection
-    clinical = list(range(0, num_clinical_categories))
-    technical = list(range(num_clinical_categories, num_clinical_categories + num_technical_categories))
-    plt.rcdefaults()
+            if raw_data[i][13] in output.keys():
+                output[raw_data[i][13]]["project"] = raw_data[i][0]
+                output[raw_data[i][13]]["year"] = int(raw_data[i][2])
+               
+    # Get clusters by project number
+    projects_1985 = []
+    projects_2020 = []
+    projects_all = []
     
-    # APT
-    fig, ax = plt.subplots()
-    ax.barh(np.arange(len(apt)), [i[2] for i in apt], xerr=ci95_apt, color=[color_selection[np.where(categories==j)[0][0]] for j in [i[1] for i in apt]])
-    ax.set_yticks(np.arange(len(apt)))
-    ax.set_yticklabels([i[0] for i in apt])
-    handles = [plt.Rectangle((0,0),1,1, color=color_selection[i]) for i in clinical]
-    legend1 = ax.legend(handles, [categories[i] for i in clinical], loc='best', bbox_to_anchor=(-0.45, 1))
-    legend1.set_title(title="Clinical focus", prop={"weight": "bold"})
-    handles = [plt.Rectangle((0,0),1,1, color=color_selection[i]) for i in technical]
-    legend2 = ax.legend(handles, [categories[i] for i in technical], loc='best', bbox_to_anchor=(-0.45, 0.7), title="Technical focus")
-    legend2.set_title(title="Technical focus", prop={"weight": "bold"})
-    ax.set_xlabel("Average Approximate Potential to Translate (APT) score", weight="bold")
-    ax.set_ylabel("Application", weight="bold")
-    ax.add_artist(legend1)
-    ax.add_artist(legend2)
-    manager = plt.get_current_fig_manager()
-    manager.resize(*manager.window.maxsize())
-    plt.tight_layout()
-    plt.savefig(f'{results_directory}/apt.png')
-
-    # CPOF
-    fig, ax = plt.subplots()
-    ax.barh(np.arange(len(cpof)), [i[2] for i in cpof], color=[color_selection[np.where(categories==j)[0][0]] for j in [i[1] for i in cpof]])
-    ax.set_yticks(np.arange(len(cpof)))
-    ax.set_yticklabels([i[0] for i in cpof])
-    ax.set_xlabel("Citations per $1 million funding (CPOF)", weight="bold")
-    ax.set_ylabel("Application", weight="bold")
-    plt.tight_layout()
-    plt.savefig(f'{results_directory}/cpof.png')
-
-    # Projected funding by year
-    # # Actual vs. projected awards
-    with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
-        raw_data = list(csv.reader(csvfile))
-        descriptions = []
-        clusters = []
-        projections = []
-        actuals = []
-        for i in range(1,len(raw_data)):
-            cluster = int(raw_data[i][0])
-            description = raw_data[i][18]
-            projection = float(raw_data[i][10])
-            actual = float(raw_data[i][11])
-            if len(description.split()) == 4:
-                split = description.split(" ")
-                description = split[0]+" "+split[1]+"\n"+split[2]+" "+split[3]
-            elif len(description.split()) == 3:
-                split = description.split(" ")
-                description = split[0]+" "+split[1]+"\n"+split[2]
-            elif len(description.split()) == 2:
-                split = description.split(" ")
-                description = split[0]+"\n"+split[1]
-            descriptions.append(description)
-            clusters.append(cluster)
-            projections.append(projection)
-            actuals.append(actual)
+    for award in data:
+        if award["year"] == "1985":
+            projects_1985.append(award["project_number"])
+        elif award["year"] == "2020":
+            projects_2020.append(award["project_number"])
+        else:
+            projects_all.append(award["project_number"])
     
+    # Get citation data by year for 1985
+    citations_1985 = []
+    apt_1985 = []
+    papers_1985 = 0
+    for idd in projects_1985:
+        papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
+        apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
+        
+        apt_1985.extend(apt)
+        papers_1985 += len(papers)
+        citations_1985.extend(papers)
+            
+    apt_interval_1985 = scist.norm.interval(alpha=0.95, loc=np.mean(apt_1985), scale=scist.sem(apt_1985))
+    avg_apt_1985_str = "{} ({} - {})".format(str(np.mean(apt_1985)), str(apt_interval_1985[0]), str(apt_interval_1985[1]))
+    cit_interval_1985 = scist.norm.interval(alpha=0.95, loc=np.mean(citations_1985), scale=scist.sem(citations_1985))
+    cit_1985_str = "{} ({} - {})".format(str(np.mean(citations_1985)), str(cit_interval_1985[0]), str(cit_interval_1985[1]))
+    
+    # Get citation data by year for 2020
+    citations_2020 = []
+    apt_2020 = []
+    papers_2020 = 0
+    for idd in projects_2020:
+        papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
+        apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
+        
+        apt_2020.extend(apt)
+        papers_2020 += len(papers)
+        citations_2020.extend(papers)
+        
+    apt_interval_2020 = scist.norm.interval(alpha=0.95, loc=np.mean(apt_2020), scale=scist.sem(apt_2020))
+    avg_apt_2020_str = "{} ({} - {})".format(str(np.mean(apt_2020)), str(apt_interval_2020[0]), str(apt_interval_2020[1]))
+    cit_interval_2020 = scist.norm.interval(alpha=0.95, loc=np.mean(citations_2020), scale=scist.sem(citations_2020))
+    cit_2020_str = "{} ({} - {})".format(str(np.mean(citations_2020)), str(cit_interval_2020[0]), str(cit_interval_2020[1]))
+    
+    # Get citation data by overall
+    citations_all = []
+    apt_all = []
+    papers_all = 0
+    for idd in projects_all:
+        papers = [output[key]["citations"] for key in output if output[key]["project"]==idd] # list of all papers associated with cluster by citation count
+        apt = [output[key]["apt"] for key in output if output[key]["project"]==idd]
+        
+        apt_all.extend(apt)
+        papers_all += len(papers)
+        citations_all.extend(papers)
 
-def graph_projections(results_directory):
+    avg_apt_all = np.mean(apt_all)
+    apt_interval_all = scist.norm.interval(alpha=0.95, loc=np.mean(apt_all), scale=scist.sem(apt_all))
+    avg_apt_all_str = "{} ({} - {})".format(str(avg_apt_all), str(apt_interval_all[0]), str(apt_interval_all[1]))
+    cit_interval_all = scist.norm.interval(alpha=0.95, loc=np.mean(citations_all), scale=scist.sem(citations_all))
+    cit_all_str = "{} ({} - {})".format(str(np.mean(citations_all)), str(cit_interval_all[0]), str(cit_interval_all[1]))
+    
+    # Final data
+    data_to_csv = [['', '1985', '2020', 'Overall'],
+                   ['Number of Awards', str(awards_1985), str(awards_2020), str(awards_overall)],
+                   ['Total Funding', str(funding_1985), str(funding_2020), str(funding_overall)],
+                   ['Number of Papers', str(papers_1985), str(papers_2020), str(papers_all)],
+                   ['Average Number of Citations Per Year of Availability', cit_1985_str, cit_2020_str, cit_all_str],
+                   ['Average APT score', avg_apt_1985_str, avg_apt_2020_str, avg_apt_all_str],
+                   ['Enriched features', enriched_1985, enriched_2020, '']]
+    
+    # Write to CSV
+    with open('table1.csv', 'w', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(data_to_csv)
+
+def create_table_2(data):
     """
-    creates projections plot in results_directory
-
-    Parameters
-    ----------
-    results_directory: example is "results/07-18-2021--132946"
-
-    Returns
-    -------
-    None
-
+    Load in data from data.pkl
+    Generate table of award data listed by funding institute
+    Save to by_funder_detailed.csv
     """
-    # 1. Determine dimensions for plot
-    data = pickle.load(open(f"{results_directory}/model_clustering.pkl", "rb"))
-    descriptions = []
-    clusters = []
-    projections = []
-    actuals = []
+    # create dictionary with institute as key
+    by_institute = dict()
+    for item in data:
+        institute = item["administration"]
+        if institute in by_institute:
+            by_institute[institute].add(item['project_number'])
+        else:
+            by_institute[institute] = {item['project_number']} #set
 
-    with open(f'{results_directory}/final_data.csv', newline='') as csvfile:
+    # Abbreviations to full names
+    institute_map = {}
+    with open("nih_institutes.csv", newline='', encoding='utf8') as csvfile:
         raw_data = list(csv.reader(csvfile))
         for i in range(1, len(raw_data)):
-            cluster = int(raw_data[i][0])
-            description = raw_data[i][18]
-            category = raw_data[i][19]
-            c_t = raw_data[i][20]
-            projection = float(raw_data[i][10])
-            actual = float(raw_data[i][11])
-            descriptions.append(description)
-            clusters.append([cluster, description, category, c_t])
-            projections.append(projection)
-            actuals.append(actual)
-
-    factors = []
-    categories = np.unique([x[2] for x in clusters])
-    k = len(categories)
-    # categories = np.delete(categories, 6)
-    for i in range(1, k+1):
-        if k / i == i:
-            factors.extend([i,i])
-        elif k % i == 0:
-            factors.append(i)
-    dim1, dim2 = factors[int(len(factors)/2)], factors[int(len(factors)/2-1)]
-    
-    # 2. Create plot
-    fig, axs = plt.subplots(dim1, dim2, sharex='all', sharey='all')
-    
-    # 3. Create hidden frame for shared labels
-    fig.add_subplot(111, frameon=False)
-    # plt.grid(b=None)
-    plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
-    plt.xlabel("Years from 2000")
-    plt.ylabel("Funding ($100 millions)")
-    
-    # 4. Plot each projection with scatter plot
-    years_int = list(range(0, 21))
-    m = np.repeat(list(range(dim1)), dim2)
-    n = np.tile(list(range(dim2)), dim1)
-    maxy = 0
-    projection = []
-    growth = []
-    bounds = []
-    for j in range(len(categories)):
-        filtered = list(filter(lambda x: x[2] == categories[j], clusters))
-        if filtered[0][3] == "Clinical":
-            color_spectrum = 'Reds'
-        else:
-            color_spectrum = 'Blues'
-        colors = cm.get_cmap(color_spectrum, len(filtered)+5)
-        cluster_labels = [x[0] for x in filtered]
-        for i in range(len(cluster_labels)):
-            popt, pcov = curve_fit(lambda t,a,b: a*np.exp(b*t),  years_int,  data["yr_total_cost"][cluster_labels[i]],  p0=(4000, 0.1))
-            std = np.sqrt(np.diagonal(pcov))
-            x = np.linspace(0,21,400)
-            upper0 = popt[0]+1.96*std[0]
-            lower0 = popt[0]-1.96*std[0]
-            upper1 = popt[1]+1.96*std[1]
-            lower1 = popt[1]-1.96*std[1]
+            institute_map[raw_data[i][0]] = raw_data[i][1]
             
-            ypred = [popt[0]*np.exp(popt[1]*point) for point in x] #-popt[0]
-            projection.append(ypred[-1])
-            growth.append(popt[1])
-            bounds.append([lower1, upper1])
-            maxy = max([max(ypred), maxy])
-            upper = [upper0*np.exp(upper1*point) for point in x]
-            lower = [lower0*np.exp(lower1*point) for point in x]
-            #color = matplotlib.colors.rgb2hex(rgba)
-            axs[m[j],n[j]].set_title(categories[j], size=10, weight='bold', position=(0.5, 0.8))
-            axs[m[j],n[j]].plot(x, ypred, color=colors(i+5))
-            axs[m[j],n[j]].fill_between(x, upper, lower, color=colors(i+5), alpha=0.1)
-            axs[m[j],n[j]].scatter(years_int, data["yr_total_cost"][cluster_labels[i]], s=20, color=colors(i+5))
-            axs[m[j],n[j]].set_ylim(-100000,maxy+100000)
-            axs[m[j],n[j]].set_xlim(0,21.00001)
-            axs[m[j],n[j]].grid(False)
-        axs[m[j],n[j]].legend([x[1] for x in filtered], loc="center left", prop={'size': 5})
-    
-    manager = plt.get_current_fig_manager()
-    manager.resize(*manager.window.maxsize())
-    plt.savefig(f'{results_directory}/projected.png')
+
+    # Get number of citations, apt, and publication year by paper
+    output = {}
+    with open("citations.csv", newline='', encoding='utf8') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
+            output[raw_data[i][0]] = {"citations": int(raw_data[i][13]), "apt": float(raw_data[i][11])}
+
+    # Get project number and year by paper
+    with open("papers.csv", newline='', encoding='utf8') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1,len(raw_data)):
+            if raw_data[i][13] in output.keys():
+                output[raw_data[i][13]]["project"] = raw_data[i][0]
+                output[raw_data[i][13]]["year"] = int(raw_data[i][2])
+
+    # iterate through institutes to get # awards, value, cpof, apt
+    output_by_funder = [["Funder", "Number of awards", "Value of awards", "CPOF (adjusted by years since pub.)", "Avg. APT (95% CI)"]]
+
+    for institute, project_set in by_institute.items():
+        citations = 0
+        apts = []
+        availability = 0
+
+        for idd in project_set: #idd==project number
+            citations += sum([output[key]["citations"] for key in output if output[key]["project"]==idd])
+            apts.extend([output[key]["apt"] for key in output if output[key]["project"]==idd])
+            availability += sum([max(0, 2021-output[key]["year"]) for key in output if output[key]["project"]==idd])
+
+        count = len([item for item in data if item["administration"] == institute]) #num of awards
+        amount = sum([item["funding"] for item in data if item["administration"] == institute]) #value of awards
+
+        # get apt 95% CI range
+        if not apts: # is empty
+            apt_range = "n/a"
+        elif len(apts) == 1: # error thrown by interval calculation if <2 elements
+            apt_range = "{:.2f}".format(apts[0])
+        else:
+            apt_avg = np.mean(apts)
+            apts_interval = scist.norm.interval(alpha=0.95, loc=apt_avg, scale=scist.sem(apts))
+            apt_range = "{:.2f} ({:.2f}-{:.2f})".format(apt_avg, apts_interval[0], apts_interval[1])
+
+        if availability == 0:
+            cpof_per_yr = "n/a"
+        else:
+            cpof_per_yr = citations/availability
+            
+        output_by_funder.append([institute_map[institute], count, amount, cpof_per_yr, apt_range])
+
+    with open('by_funder_detailed.csv', 'w+', newline='', encoding='utf8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerows(output_by_funder)
+    return
+
+if __name__ == "__main__":
+    data = pickle.load(open("data.pkl", "rb"))
+    create_table_1(data)

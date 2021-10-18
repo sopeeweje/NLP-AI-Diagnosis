@@ -1,5 +1,5 @@
 from sklearn.cluster import KMeans, MiniBatchKMeans, DBSCAN, AffinityPropagation, MeanShift
-from sklearn.model_selection import RandomizedSearchCV
+from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
 import pickle
 import numpy as np
 from sklearn import metrics
@@ -16,7 +16,7 @@ import csv
 
 class KMeansTransformer(BaseEstimator, TransformerMixin):
 
-    def __init__(self, max_df=0, max_features=0, n_clusters=10, init='k-means++', n_init=1, init_size=1000, batch_size=1000):
+    def __init__(self, max_df=1, max_features=1000, n_clusters=10, init='k-means++', n_init=1, init_size=1000, batch_size=1000):
        
         # Initialize parameters
         self.n_clusters = n_clusters
@@ -55,15 +55,16 @@ class KMeansTransformer(BaseEstimator, TransformerMixin):
         return self.transform(X)
     
     def score(self, sample_size=1000):
+        # return self.model.inertia_
         self.y = self.model.labels_
-        score = metrics.silhouette_score(self.X, self.y, sample_size=1000)
+        score = metrics.silhouette_score(self.X, self.y)
         return score
 
 raw_data = pickle.load(open("data.pkl","rb"))
-param_dist = {'max_features': [500, 1000, 1500, 2000, 2500, 3000],
-              'max_df': [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1],
-              'n_clusters': [10,15,20,25,30,35,40,45,50,55,60,65,70,75,80]}
-clf = RandomizedSearchCV(KMeansTransformer(), param_dist, n_iter=10)
+param_dist = {#'max_features': [500, 1000, 1500, 2000, 2500, 3000],
+              'n_clusters': [5*i for i in list(range(1,21))]}
+
+clf = GridSearchCV(KMeansTransformer(max_df=0.99, max_features=1500), param_grid=param_dist, verbose=4)
 search = clf.fit(raw_data)
 df = pd.DataFrame(clf.cv_results_)
 df.to_csv("grid_search.csv", index=False)
