@@ -64,9 +64,7 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     X_transformed = pickle.load(open(processed_file,"rb"))
 
     # Perform mini batch k means
-    km = MiniBatchKMeans(n_clusters=selected_k, init=centers, n_init=10, init_size=3000, batch_size=3000, verbose=0, max_no_improvement=None)
-    # km = MiniBatchKMeans(n_clusters=selected_k, init=centers, verbose=0, max_no_improvement=None)
-    # km = KMeans(n_clusters=selected_k, init=centers)
+    km = MiniBatchKMeans(n_clusters=selected_k, init=centers, verbose=0, max_no_improvement=None)
     clusters = km.fit_predict(X_transformed)
     scores = metrics.silhouette_samples(X_transformed, clusters)
 
@@ -113,9 +111,13 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
         size.append(len(cluster))
 
         # get number of awards per mechanism
-        for j in range(len(mechanisms)):
-            mech = len([ind for ind in cluster if data[ind]["mechanism"] == MECH_NAMES[j]])/len(cluster_data)
-            mechanisms[j].append(mech)
+        if len(cluster_data) != 0:
+            for j in range(len(mechanisms)):
+                mech = len([ind for ind in cluster if data[ind]["mechanism"] == MECH_NAMES[j]])/len(cluster_data)
+                mechanisms[j].append(mech)
+        else:
+            for j in range(len(mechanisms)):
+                mechanisms[j].append(0)
 
     # Get centroids
     # Identify the top terms for each cluster, using the TF-IDF terms with the highest values in the centroid
@@ -266,16 +268,6 @@ def viz_centroids(data):
     visualizer.fit(X_transformed)     # Fit the data to the visualizer
     visualizer.show()        # Finalize and render the figure
 
-def top_bottom_clusters():
-    labels = []
-    values = []
-    with open(funding_file, newline='', encoding='utf8') as csvfile:
-        raw_data = list(csv.reader(csvfile))
-        for i in range(1,len(raw_data)):
-            org = raw_data[i][0]
-            funding = int(raw_data[i][5])
-            funding_data[org] = funding
-
 def predict_clusters(test_data, selected_k, model):
     test_data = pickle.load(open(test_data,"rb"))
     vectorizer = pickle.load(open("vectorizer.pkl","rb"))
@@ -327,7 +319,7 @@ def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", sav
     print("Optimizing model...")
     for i in range(num_trials):
         # Generate clusters for a selected k
-        data = get_clusters(selected_k, "data.pkl", "processed-data.pkl", centers, years, save_folder, save=save)
+        data = get_clusters(selected_k, "data.pkl", "processed-data.pkl", 'k-means++', years, save_folder, save=save)
         j = 0
         for thing in data["data_by_cluster"]:
             for item in thing:
@@ -357,9 +349,6 @@ def get_citations(clusters):
     apts: average APT [0.9, ...]
     lower: lower bound of 95% CI of average APT: "APT (lower - upper)" [0.85,...]
     upper: upper bound of 95% CI of average APT [0.95,...] - "0.9 (0.85-0.95)"
-
-    ***apt_95 : number of papers with APT > 0.95. Needs to be taken out (might break things elsewhere in the process)***
-    total_availability: list of total years that papers have been available by cluster
 
     """
 
@@ -514,7 +503,8 @@ if __name__ == "__main__":
     years = [str(i) for i in range(1985,2021)]
     selected_k = FLAGS.k
     num_trials = FLAGS.trials
-    centers = pickle.load(open("lda_centroids.pkl","rb"))
+    centers = 'k-means++' # No more custom initialization
+    # centers = pickle.load(open("lda_centroids.pkl","rb"))
 
     # Create folder to save results
     now = datetime.now()
@@ -524,8 +514,8 @@ if __name__ == "__main__":
     os.mkdir(save_folder)
 
     # Move LDA centroids and topic chart to results folder
-    shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder))
-    shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder))
+    # shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder))
+    # shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder))
 
     # Get best clustering
     data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
@@ -621,6 +611,7 @@ if __name__ == "__main__":
     with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
+    
     # Auto-generating Table 1 with blank areas for manual description+category
     table1 = [["Description", "Number of grants", "Application category", "Centroids", "Total Award, 2000-2020", "Total citations", "Silhouette score"]]
     for i in range(selected_k):
