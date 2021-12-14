@@ -126,8 +126,7 @@ def feature_extraction(data, num_features, max_df):
     """
     input_text = [item["text"] for item in data]
     print("Vectorizing...")
-    # (tokenizer=LemmaStemmerTokenizer(), 
-    vectorizer = TfidfVectorizer(stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text)
+    vectorizer = TfidfVectorizer(tokenizer=LemmaStemmerTokenizer(), stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text)
     processed_text = vectorizer.transform(input_text)
 
     with open("processed-data.pkl", 'wb') as handle:
