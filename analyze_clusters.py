@@ -1,34 +1,24 @@
 import csv
-from sklearn.cluster import KMeans, MiniBatchKMeans, MeanShift, AffinityPropagation, SpectralClustering
+from sklearn.cluster import MiniBatchKMeans
 import matplotlib
 matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
-from matplotlib.colors import LinearSegmentedColormap
 import pickle
 import numpy as np
-import pandas as pd
-import seaborn as sns
 import sklearn.metrics as metrics
 from yellowbrick.cluster import InterclusterDistance
-import sklearn.neighbors
 from scipy.optimize import curve_fit
 import umap.umap_ as umap
 from colorsys import hls_to_rgb
 from pylab import *
 from datetime import datetime
 import os
-from statsmodels.stats.outliers_influence import summary_table
-from statsmodels.sandbox.regression.predstd import wls_prediction_std
-from statsmodels.stats.multicomp import pairwise_tukeyhsd
-import statsmodels.api as sm
 import argparse
-import shutil
 import scipy.stats as scist
 from docx import Document
-import math
-import nltk
 from feature_extraction import LemmaStemmerTokenizer
-nltk.download('punkt')
+
+# Allow for larger CSV files
 csv.field_size_limit(sys.maxsize)
 
 def get_clusters(selected_k, data_file, processed_file, centers, years, save_folder="", save=True):
@@ -122,8 +112,8 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
     # Get centroids
     # Identify the top terms for each cluster, using the TF-IDF terms with the highest values in the centroid
     order_centroids = km.cluster_centers_.argsort()[:, ::-1]
-    vectorizer = pickle.load(open("vectorizer.pkl","rb"))
-    terms = vectorizer.get_feature_names()
+    vectorizer = pickle.load(open("data/vectorizer.pkl","rb"))
+    terms = vectorizer.get_feature_names_out()
     centroids = []
     for i in range(selected_k):
         centroid_list = []
@@ -133,7 +123,7 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
 
     # Save centroids
     if save:
-        centroid_file = open("{}/centroid".format(save_folder), "w", encoding='utf8')
+        centroid_file = open("{}/centroids".format(save_folder), "w", encoding='utf8')
         for i in range(selected_k):
             centroid_file.write("Cluster %d:" % i)
             for ind in order_centroids[i, :15]:
@@ -181,7 +171,7 @@ def umap_visualization(X_transformed, cluster_labels, silhouette_scores, sizes, 
     
     # Plot Clusters on UMAP
     plt.figure()
-    plt.grid(b=None)
+    plt.grid(visible=None)
     plt.scatter(embedding[:, 0], embedding[:, 1], cmap='Spectral', s=5, c=selected_colors)
     plt.gca().set_aspect('equal', 'datalim')
     num_clust = len(np.unique(cluster_labels[selected_cells]))
@@ -198,8 +188,6 @@ def rainbow_color_stops(n=10, end=1, shade=0.9):
     return [ hls_to_rgb(end * i/(n-1)*shade, 0.5*shade, 1*shade) for i in range(n) ]
 
 def get_funding_projections(data):
-    # Create grid that highlights each projection with 95% CI
-    # https://stackoverflow.com/questions/39434402/how-to-get-confidence-intervals-from-curve-fit
 
     # 1. Determine dimensions for plot
     k = len(data["size"])
@@ -216,7 +204,7 @@ def get_funding_projections(data):
 
     # 3. Create hidden frame for shared labels
     fig.add_subplot(111, frameon=False)
-    plt.grid(b=None)
+    plt.grid(visible=None)
     plt.tick_params(labelcolor='none', which='both', top=False, bottom=False, left=False, right=False)
     plt.xlabel("Years from 1985")
     plt.ylabel("Funding ($100 millions)")
@@ -248,21 +236,8 @@ def get_funding_projections(data):
     return projection, growth, bounds
 
 def viz_centroids(data):
-    file_root = 'C:/Users/suzie/Dropbox (Personal)/PENN MED/research/NLP-AI-Medicine/'
-
-    order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
-    centroid_file = open(file_root + '/centroid', "w", encoding='utf8')
-    vectorizer = pickle.load(open("vectorizer.pkl","rb"))
-    terms = vectorizer.get_feature_names()
-    for i in range(len(data["size"])):
-        centroid_file.write("Cluster %d:" % i)
-        for ind in order_centroids[i, :20]:
-            centroid_file.write(" %s" % terms[ind])
-        centroid_file.write("\n")
-    centroid_file.close()
-
     model = data["model"]
-    X_transformed = pickle.load(open("processed-data.pkl","rb"))
+    X_transformed = pickle.load(open("data/processed-data.pkl","rb"))
     plt.figure()
     visualizer = InterclusterDistance(model, random_state=0)
     visualizer.fit(X_transformed)     # Fit the data to the visualizer
@@ -270,7 +245,7 @@ def viz_centroids(data):
 
 def predict_clusters(test_data, selected_k, model):
     test_data = pickle.load(open(test_data,"rb"))
-    vectorizer = pickle.load(open("vectorizer.pkl","rb"))
+    vectorizer = pickle.load(open("data/vectorizer.pkl","rb"))
     input_text = [item["text"] for item in test_data]
     test_transformed = vectorizer.transform(input_text)
     years = [str(i) for i in range(1985,2021)]
@@ -304,7 +279,7 @@ def predict_clusters(test_data, selected_k, model):
             if len(year_data) == 0:
                 cost_trend.append(0)
             else:
-                year_cost = sum(year_data) #/len(year_data)
+                year_cost = sum(year_data)
                 cost_trend.append(year_cost)
 
         yoy.append(cost_trend)
@@ -319,7 +294,7 @@ def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", sav
     print("Optimizing model...")
     for i in range(num_trials):
         # Generate clusters for a selected k
-        data = get_clusters(selected_k, "data.pkl", "processed-data.pkl", 'k-means++', years, save_folder, save=save)
+        data = get_clusters(selected_k, "data/data.pkl", "data/processed-data.pkl", 'k-means++', years, save_folder, save=save)
         j = 0
         for thing in data["data_by_cluster"]:
             for item in thing:
@@ -361,13 +336,13 @@ def get_citations(clusters):
 
     # Get number of citations, apt, and publication year by paper
     output = {}
-    with open("citations.csv", newline='', encoding='utf8') as csvfile:
+    with open("data/citations.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
            output[raw_data[i][0]] = {"citations": int(raw_data[i][13]), "apt": float(raw_data[i][11])}
 
     # Get project number and year by paper
-    with open("papers.csv", newline='', encoding='utf8') as csvfile:
+    with open("data/papers.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)):
            if raw_data[i][13] in output.keys():
@@ -503,19 +478,12 @@ if __name__ == "__main__":
     years = [str(i) for i in range(1985,2021)]
     selected_k = FLAGS.k
     num_trials = FLAGS.trials
-    centers = 'k-means++' # No more custom initialization
-    # centers = pickle.load(open("lda_centroids.pkl","rb"))
+    centers = 'k-means++'
 
     # Create folder to save results
     now = datetime.now()
-    if not os.path.exists("results"):
-        os.makedirs("results")
     save_folder = "results/"+now.strftime("%m-%d-%Y--%H%M%S")
     os.mkdir(save_folder)
-
-    # Move LDA centroids and topic chart to results folder
-    # shutil.move("lda_centroids.pkl", "{}/lda_centroids.pkl".format(save_folder))
-    # shutil.move("topic_chart.png", "{}/topic_chart.png".format(save_folder))
 
     # Get best clustering
     data, scores = get_best_cluster(selected_k, num_trials, centers, years, save_folder)
@@ -536,7 +504,7 @@ if __name__ == "__main__":
     # Silhouette score by cluster
     print("")
     print("------Silhouette scores------")
-    X_transformed = pickle.load(open("processed-data.pkl","rb"))
+    X_transformed = pickle.load(open("data/processed-data.pkl","rb"))
     scores = metrics.silhouette_samples(X_transformed, data["labels"])
     tabulated = []
     pairs = [(scores[i],data["labels"][i]) for i in range(len(scores))]
@@ -549,10 +517,10 @@ if __name__ == "__main__":
 
     # Final centroids
     order_centroids = data["model"].cluster_centers_.argsort()[:, ::-1]
-    vectorizer = pickle.load(open("vectorizer.pkl","rb"))
-    terms = vectorizer.get_feature_names()
+    vectorizer = pickle.load(open("data/vectorizer.pkl","rb"))
+    terms = vectorizer.get_feature_names_out()
     centroids = []
-    centroid_file = open("{}/centroid".format(save_folder), "w", encoding='utf8')
+    centroid_file = open("{}/centroids".format(save_folder), "w", encoding='utf8')
     for i in range(selected_k):
         centroid_file.write("Cluster %d:" % i)
         centroid_list = []
@@ -564,19 +532,15 @@ if __name__ == "__main__":
     centroid_file.close()
 
     # UMAP Visualization
-    X_transformed = pickle.load(open("processed-data.pkl","rb"))
+    X_transformed = pickle.load(open("data/processed-data.pkl","rb"))
     umap_visualization(X_transformed, data["labels"], tabulated, data["size"], save_folder)
-
-    # Save model
-    with open("model.pkl", 'wb') as handle:
-        pickle.dump(data["model"], handle)
 
     # Get 2021 projections, projected growth rates, and confidence bounds on growth rates by cluster
     projection, growth, bounds = get_funding_projections(data) # 2021 prediction
 
     # Get 2021 clusters
     model = data["model"]
-    clusters_test, size_test = predict_clusters("test-data.pkl", selected_k, model)
+    clusters_test, size_test = predict_clusters("data/test-data.pkl", selected_k, model)
     x = np.arange(selected_k)
     cluster_cost_2021 = [(sum([item["funding"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
 
@@ -611,13 +575,5 @@ if __name__ == "__main__":
     with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
-    
-    # Auto-generating Table 1 with blank areas for manual description+category
-    table1 = [["Description", "Number of grants", "Application category", "Centroids", "Total Award, 2000-2020", "Total citations", "Silhouette score"]]
-    for i in range(selected_k):
-        table1.append([' ', data["size"][i], ' ', centroids[i], total_cluster_funding[i], citations[i], tabulated[i]])
-    with open('{}/table1.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
-        writer = csv.writer(csvfile)
-        writer.writerows(table1)
 
     print("Complete.")

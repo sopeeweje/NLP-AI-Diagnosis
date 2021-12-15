@@ -1,103 +1,79 @@
-from sklearn.cluster import KMeans, MiniBatchKMeans, DBSCAN, AffinityPropagation, MeanShift
-from sklearn.model_selection import RandomizedSearchCV, GridSearchCV
+from sklearn.cluster import MiniBatchKMeans
 import pickle
 import numpy as np
 from sklearn import metrics
 import pandas as pd
 import seaborn as sns
-from find_centroids import find_centroids
 import matplotlib.pyplot as plt
-from feature_extraction import feature_extraction, process_data
-from sklearn.base import BaseEstimator, TransformerMixin
+from feature_extraction import feature_extraction
 import argparse
-import matplotlib.cm as cm
 from pylab import *
-import csv
 
-class KMeansTransformer(BaseEstimator, TransformerMixin):
-
-    def __init__(self, max_df=1, max_features=1000, n_clusters=10, init='k-means++', n_init=1, init_size=1000, batch_size=1000):
-       
-        # Initialize parameters
-        self.n_clusters = n_clusters
-        self.init = init
-        self.n_init = n_init
-        self.init_size = init_size
-        self.batch_size = batch_size
-        
-        # Initialize model
-        self.model = MiniBatchKMeans(
-            n_clusters = n_clusters,
-            init = init,
-            n_init = n_init,
-            init_size = init_size,
-            batch_size = batch_size)
-        
-        # Custom params
-        self.max_df = max_df
-        self.max_features = max_features
-        
-    def fit(self, X):
-        feature_extraction(X, self.max_features, self.max_df)
-        processed = pickle.load(open("processed-data.pkl","rb"))
-        self.X = processed
-        
-        # Fit
-        self.model.fit(self.X)
-
-    def transform(self, X):
-        pred = self.model.predict(X)
-        return np.hstack([self.X, pred.reshape(-1, 1)])
-
-
-    def fit_transform(self, X, y=None):
-        self.fit(X)
-        return self.transform(X)
+def find_k(data, trials, k):
+    # Test different cluster sizes
+    init_vals = np.random.choice(np.arange(100), size=10, replace=False)
+    silhouette_vals = []
+    sse_vals = []
+    clusters = [5*i for i in list(range(1,int(k)//5))]
     
-    def score(self, sample_size=1000):
-        # return self.model.inertia_
-        self.y = self.model.labels_
-        score = metrics.silhouette_score(self.X, self.y)
-        return score
+    for selected_k in np.array(clusters):
+      print("Cluster: {}".format(str(selected_k)))
+      for i in np.arange(trials):
+        km = MiniBatchKMeans(n_clusters=selected_k, init='k-means++', verbose=0, max_no_improvement=None)
+        km.fit(data)
+        score = metrics.silhouette_score(data, km.labels_)
+        silhouette_vals.append(score)
+        print("Rep: {}, Score: {}".format(str(i), str(score)))
+        sse_vals.append(km.inertia_)
+    n_clusters = np.repeat(np.array(clusters), trials)
+    
+    
+    # Plot silhouette scores
+    to_plot_d = {'Init_Value': np.repeat(init_vals[0:trials], len(clusters)), 
+                 'Silhouette': silhouette_vals,
+                 'SSE': sse_vals,
+                 'Num_Clusters': n_clusters}
+    to_plot_df = pd.DataFrame(data=to_plot_d)
+    to_plot_df.to_csv("finding_k.csv", index=False)
+    
+    plt.figure()
+    ax = sns.lineplot(x="Num_Clusters", y="Silhouette", data=to_plot_df)
+    ax.set(xlabel='Number of Clusters', ylabel='Silhouette score')
+    plt.savefig('k_selection.eps', format='eps') 
+    
+    plt.figure()
+    ax = sns.lineplot(x="Num_Clusters", y="SSE", data=to_plot_df)
+    ax.set(xlabel='Number of Clusters', ylabel='Sum of Squared Errors')
+    plt.savefig('figures/k_selection_sse.eps', format='eps')
 
-raw_data = pickle.load(open("data.pkl","rb"))
-param_dist = {#'max_features': [500, 1000, 1500, 2000, 2500, 3000],
-              'n_clusters': [5*i for i in list(range(1,21))]}
-
-clf = GridSearchCV(KMeansTransformer(max_df=0.99, max_features=1500), param_grid=param_dist, verbose=4)
-search = clf.fit(raw_data)
-df = pd.DataFrame(clf.cv_results_)
-df.to_csv("grid_search.csv", index=False)
-
-
-# if __name__ == "__main__":
-#     parser = argparse.ArgumentParser()
-#     parser.add_argument(
-#         '--trials',
-#         type=int,
-#         required=True,
-#         help='numbers of trials per k',
-#         default=10,
-#         )
-#     parser.add_argument(
-#         '--max_k',
-#         type=int,
-#         required=True,
-#         help='maximum number of clusters to evaluate',
-#         default=60,
-#         )
-#     parser.add_argument(
-#         '--num_features',
-#         type=int,
-#         required=True,
-#         help='maximum number of clusters to evaluate',
-#         default=1000,
-#         )
-#     FLAGS, unparsed = parser.parse_known_args()
-#     trials = FLAGS.trials
-#     max_k = FLAGS.max_k
-#     features = FLAGS.num_features
-#     data = pickle.load(open("data.pkl","rb"))
-#     feature_extraction(data, features, 0.5)
-    # processed = pickle.load(open("processed-data.pkl","rb"))
-    # output = find_k(processed, trials, max_k)
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '--trials',
+        type=int,
+        required=True,
+        help='numbers of trials per k',
+        default=10,
+        )
+    parser.add_argument(
+        '--max_k',
+        type=int,
+        required=True,
+        help='maximum number of clusters to evaluate',
+        default=60,
+        )
+    parser.add_argument(
+        '--num_features',
+        type=int,
+        required=True,
+        help='maximum number of clusters to evaluate',
+        default=1000,
+        )
+    FLAGS, unparsed = parser.parse_known_args()
+    trials = FLAGS.trials
+    max_k = FLAGS.max_k
+    features = FLAGS.num_features
+    data = pickle.load(open("data/data.pkl","rb"))
+    feature_extraction(data, features, 0.1)
+    processed = pickle.load(open("data/processed-data.pkl","rb"))
+    output = find_k(processed, trials, max_k)

@@ -1,20 +1,11 @@
 import csv
-import nltk
-from nltk.corpus import stopwords
-import string
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import KMeans
 import matplotlib
 matplotlib.use('TkAgg')
-import matplotlib.pyplot as plt
-from collections import Counter
-import statistics
 import pickle
 import numpy as np
 from nltk import word_tokenize
 from nltk.stem import WordNetLemmatizer, PorterStemmer
-nltk.download('punkt')
-nltk.download('wordnet')
 import argparse
 
 def mk_int(s):
@@ -90,10 +81,10 @@ def process_data(data_file):
         else:
             test_data.append(item)
 
-    with open("data.pkl", 'wb') as handle:
+    with open("data/data.pkl", 'wb') as handle:
         pickle.dump(data, handle)
 
-    with open("test-data.pkl", 'wb') as handle:
+    with open("data/test-data.pkl", 'wb') as handle:
         pickle.dump(test_data, handle)
 
     print("Processed data N: {}".format(str(len(data))))
@@ -129,10 +120,10 @@ def feature_extraction(data, num_features, max_df):
     vectorizer = TfidfVectorizer(tokenizer=LemmaStemmerTokenizer(), stop_words='english', ngram_range=(1,2), max_df=max_df, max_features=num_features).fit(input_text)
     processed_text = vectorizer.transform(input_text)
 
-    with open("processed-data.pkl", 'wb') as handle:
+    with open("data/processed-data.pkl", 'wb') as handle:
         pickle.dump(processed_text, handle)
 
-    with open("vectorizer.pkl", 'wb') as handle:
+    with open("data/vectorizer.pkl", 'wb') as handle:
         pickle.dump(vectorizer, handle)
     print("Data vectorized.")
 
@@ -147,11 +138,11 @@ def get_features():
     A text file with a list of TF-IDF feature names
     """
     # Vectorizer to convert raw documents to TF-IDF features
-    vector = pickle.load(open("vectorizer.pkl","rb"))
+    vector = pickle.load(open("data/vectorizer.pkl","rb"))
 
     # Get feature names and save to text file
-    centroid_file = open("features", "w", encoding='utf8')
-    for i in vector.get_feature_names():
+    centroid_file = open("data/features", "w", encoding='utf8')
+    for i in vector.get_feature_names_out():
         centroid_file.write(i)
         centroid_file.write("\n")
     centroid_file.close()
@@ -177,20 +168,27 @@ if __name__ == "__main__":
     
     
     # Feature extraction
-    file = 'raw_data.csv'
+    file = 'data/raw_data.csv'
     data, test_data = process_data(file)
     feature_extraction(data, FLAGS.max_features, FLAGS.max_df)
     get_features()
     # data = data + test_data
 
     # By Funder
+    funder_map = {}
+    with open("data/nih_institutes.csv", newline='', encoding='utf8') as csvfile:
+        raw_data = list(csv.reader(csvfile))
+        for i in range(1, len(raw_data)):
+            funder_map[raw_data[i][0]] = raw_data[i][1]
+    
     funders = np.unique(np.array([item["administration"] for item in data]))
     output = [["Funder", "Number of awards", "Value of awards"]]
     for funder in funders:
         count = len([item for item in data if item["administration"] == funder])
         amount = sum([item["funding"] for item in data if item["administration"] == funder])
+        funder = funder_map[funder] if (funder in funder_map) else funder
         output.append([funder, count, amount])
-    with open('by_funder.csv', 'w', newline='', encoding='utf8') as csvfile:
+    with open('data/by_funder.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
 
@@ -201,7 +199,7 @@ if __name__ == "__main__":
         count = len([item for item in data if item["year"] == year])
         amount = sum([item["funding"] for item in data if item["year"] == year])
         output.append([year, count, amount])
-    with open('by_year.csv', 'w', newline='', encoding='utf8') as csvfile:
+    with open('data/by_year.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
     
@@ -212,6 +210,6 @@ if __name__ == "__main__":
         count = len([item for item in data if item["mechanism"] == mech])
         amount = sum([item["funding"] for item in data if item["mechanism"] == mech])
         output.append([mech, count, amount])
-    with open('by_mechanism.csv', 'w', newline='', encoding='utf8') as csvfile:
+    with open('data/by_mechanism.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
         writer.writerows(output)
