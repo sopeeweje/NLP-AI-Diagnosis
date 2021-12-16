@@ -1,5 +1,7 @@
 # NLP-AI-Medicine
-<p>A natural language processing approach to determining frontiers in medical AI using NIH award data</p>
+<p>A natural language processing approach to determining frontiers in medical AI using NIH award data.</p>
+
+<p>If using this code base, please cite: [citation].</p>
 
 <h2>Quick Start</h2>
 
