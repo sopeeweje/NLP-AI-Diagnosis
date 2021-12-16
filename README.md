@@ -25,24 +25,27 @@
 
 ```
 params = {
-              "criteria":
-                {
-                  "fiscal_years": [year],
-                  "advanced_text_search":
-                  {
-                        "operator": "advanced", 
-                        "search_field": "projecttitle,terms,abstracttext", 
-                        "search_text": " (\"dna\" or \"rna\" or \"gene\") and (\"machine learning\" or \"artificial intelligence\" or \"nlp\") "
-                  },
-                  "exclude_subprojects": True,
-                  "use_relevance": False,
-                  "include_active_projects": False,
-                },
-              "offset":o*500,
-              "limit":500,
-              "sort_field":"fiscal_year",
-              "sort_order":"desc",
-            }
+
+            "criteria":
+            {
+               "fiscal_years": [2021],
+               "advanced_text_search":
+               {
+                  "operator": "advanced", 
+                  "search_field": "projecttitle,terms,abstracttext", 
+                  "search_text": " (\"dna\" or \"rna\" or \"gene\") and (\"machine learning\" or \"artificial intelligence\" or \"nlp\") "
+               },
+               "exclude_subprojects": True,
+               "use_relevance": False,
+               "include_active_projects": False,
+            },
+            
+            "offset":o*500,
+            "limit":500,
+            "sort_field":"fiscal_year",
+            "sort_order":"desc",
+              
+         }
 ```
 
 <h3>Feature extraction</h3>  
