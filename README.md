@@ -25,10 +25,10 @@
 <p>Awards and publications are collected from the <a target="_blank" href="https://reporter.nih.gov/advanced-search">NIH RePORTER database</a> while citation data are collected from the <a target="_blank" href="https://icite.od.nih.gov/analysis">NIH iCite search tool</a>. The query can be executed with "and", "or", or advanced (mixed "and"/"or") logic per the <a target="_blank" href="https://api.reporter.nih.gov/">NIH RePORTER API</a>. If the query is an and/or query "search_terms.txt" should be formated as a list:</p>
 
 ```
-  term 1
-  term 2
-  term 3
-  ...
+term 1
+term 2
+term 3
+...
 ```
 
 <p> If the query is an advanced query, "search_text.txt" should be a single line formatted RePORTER query:</p>
