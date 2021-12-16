@@ -18,11 +18,32 @@
   <li><code>pipenv run python find_k.py --trials 5 --max_k 120 --num_features 500</code> - empiric search for K</li>
   <li><code>pipenv run python analyze_clusters.py --k ### --trials ### </code> - creates the clusters with K-Means Clustering and analyzes funding and citation data. k = number of clusters, trials = number of clustering trials to run</li>
 </ul>
-<p>Parameters can be edited in run.sh to meet what was empirically determined to be optimal or left as naive defaults.</p>
 
 <h2>Details</h2>
 <h3>Data collection</h3>
-<p>Awards and publications are collected from the <a target="_blank" href="https://reporter.nih.gov/advanced-search">NIH RePORTER database</a> while citation data are collected from the <a target="_blank" href="https://icite.od.nih.gov/analysis">NIH iCite search tool</a>. Enter the search terms related to your topic of interest in "search_terms.txt" with a new line for each term. The query is executed with "OR" logic and excludes subprojects (see "nih_reporter_query.py" to modify criteria per the <a target="_blank" href="https://api.reporter.nih.gov/">NIH RePORTER API</a>.
+<p>Awards and publications are collected from the <a target="_blank" href="https://reporter.nih.gov/advanced-search">NIH RePORTER database</a> while citation data are collected from the <a target="_blank" href="https://icite.od.nih.gov/analysis">NIH iCite search tool</a>. Enter the search terms related to your topic of interest in "search_terms.txt" with a new line for each term. The query is executed with "OR" logic and excludes subprojects (see "nih_reporter_query.py", line 31 to modify criteria per the <a target="_blank" href="https://api.reporter.nih.gov/">NIH RePORTER API)</a>. Example advanced search:</p>
+
+```
+params = {
+              "criteria":
+                {
+                  "fiscal_years": [year],
+                  "advanced_text_search":
+                  {
+                        "operator": "advanced", 
+                        "search_field": "projecttitle,terms,abstracttext", 
+                        "search_text": " (\"dna\" or \"rna\" or \"gene\") and (\"machine learning\" or \"artificial intelligence\" or \"nlp\") "
+                  },
+                  "exclude_subprojects": True,
+                  "use_relevance": False,
+                  "include_active_projects": False,
+                },
+              "offset":o*500,
+              "limit":500,
+              "sort_field":"fiscal_year",
+              "sort_order":"desc",
+            }
+```
 
 <h3>Feature extraction</h3>  
 
