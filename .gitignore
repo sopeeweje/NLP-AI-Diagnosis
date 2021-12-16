@@ -128,8 +128,3 @@ dmypy.json
 # Pyre type checker
 .pyre/
 .DS_Store
-
-random_code.py
-/figures and tables
-citations.csv
-papers.csv
