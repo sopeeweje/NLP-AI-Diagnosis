@@ -34,12 +34,12 @@ def find_k(data, trials, k):
                  'SSE': sse_vals,
                  'Num_Clusters': n_clusters}
     to_plot_df = pd.DataFrame(data=to_plot_d)
-    to_plot_df.to_csv("finding_k.csv", index=False)
+    to_plot_df.to_csv("data/finding_k.csv", index=False)
     
     plt.figure()
     ax = sns.lineplot(x="Num_Clusters", y="Silhouette", data=to_plot_df)
     ax.set(xlabel='Number of Clusters', ylabel='Silhouette score')
-    plt.savefig('k_selection.eps', format='eps') 
+    plt.savefig('figures/k_selection.eps', format='eps') 
     
     plt.figure()
     ax = sns.lineplot(x="Num_Clusters", y="SSE", data=to_plot_df)

@@ -247,6 +247,8 @@ def predict_clusters(test_data, selected_k, model):
     test_data = pickle.load(open(test_data,"rb"))
     vectorizer = pickle.load(open("data/vectorizer.pkl","rb"))
     input_text = [item["text"] for item in test_data]
+    if len(input_text) == 0:
+        return [0 for i in range(len(test_data))], 0
     test_transformed = vectorizer.transform(input_text)
     years = [str(i) for i in range(1985,2021)]
     labels = model.predict(test_transformed)
@@ -339,15 +341,17 @@ def get_citations(clusters):
     with open("data/citations.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)): # "rcr": float(raw_data[i][6]),
-           output[raw_data[i][0]] = {"citations": int(raw_data[i][13]), "apt": float(raw_data[i][11])}
+           output[raw_data[i][0]] = {
+               "citations": int(raw_data[i][13]), 
+               "apt": float(raw_data[i][11]),
+               "year": int(raw_data[i][1])}
 
     # Get project number and year by paper
-    with open("data/papers.csv", newline='', encoding='utf8') as csvfile:
+    with open("data/publications.csv", newline='', encoding='utf8') as csvfile:
        raw_data = list(csv.reader(csvfile))
        for i in range(1,len(raw_data)):
-           if raw_data[i][13] in output.keys():
-               output[raw_data[i][13]]["project"] = raw_data[i][0]
-               output[raw_data[i][13]]["year"] = int(raw_data[i][2])
+           if raw_data[i][1] in output.keys():
+               output[raw_data[i][1]]["project"] = raw_data[i][0]
 
     # Calculate total number of citations, total number of papers, average RCR, average APT for each cluster
     total_citations = []
@@ -396,6 +400,8 @@ def get_citations(clusters):
 def get_rep_clusters(result):
     path, dirs, files = next(os.walk('{}/clusters'.format(result)))
     file_count = len(files)
+    if file_count == 0:
+        return
     document = Document()
 
     for i in range(file_count):
@@ -494,6 +500,7 @@ if __name__ == "__main__":
     num = 0
     os.mkdir(save_folder+"/clusters")
     for cluster in data["data_by_cluster"]:
+        print(cluster)
         keys = cluster[0].keys()
         with open('{}/clusters/cluster-{}.csv'.format(save_folder,str(num)), 'w', newline='', encoding='utf8')  as output_file:
             dict_writer = csv.DictWriter(output_file, keys)
@@ -542,6 +549,7 @@ if __name__ == "__main__":
     model = data["model"]
     clusters_test, size_test = predict_clusters("data/test-data.pkl", selected_k, model)
     x = np.arange(selected_k)
+    print(clusters_test)
     cluster_cost_2021 = [(sum([item["funding"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
 
     # Save 2021 clusters
@@ -571,6 +579,30 @@ if __name__ == "__main__":
     # All data - note blank columns for description, category
     output = [["Cluster", "Size", "Total", "Citations", "APT % over 95%", "Avg. APT", "95%CI L", "95%CI U", "Papers", "Citations per $1mil funding", "Years of Availability", "Citations per thousand dollars of funding per year", "Projected 2021 Award", "Actual 2021 Award To Date", "Growth Rate", "95%CI L", "95%CI U", "Score", "Description", "Category", "Clinical/Technical", "Centroids", "%R01", "%U01", "%R44", "%U24", "%R21", "%U54"]]
     for i in range(selected_k):
+        print(i)
+        print(data["size"][i])
+        print(total_cluster_funding[i])
+        print(citations[i])
+        print(apt_pct[i])
+        print(apt[i])
+        print(lower[i])
+        print(upper[i])
+        print(papers[i])
+        print(citations[i]/total_cluster_funding[i]*1e6)
+        print(availability[i])
+        print(citations[i]/total_cluster_funding[i]*1e3/availability[i])
+        print(data["mechanisms"][0][i])
+        print(data["mechanisms"][1][i])
+        print(data["mechanisms"][2][i])
+        print(data["mechanisms"][3][i])
+        print(data["mechanisms"][4][i])
+        print(data["mechanisms"][5][i])
+        print(projection[i])
+        print(cluster_cost_2021[i])
+        print(growth[i], bounds[i][0])
+        print(bounds[i][1])
+        print(tabulated[i])
+        print(centroids[i])
         output.append([i, data["size"][i], total_cluster_funding[i], citations[i], apt_pct[i], apt[i], lower[i], upper[i], papers[i], citations[i]/total_cluster_funding[i]*1e6, availability[i], citations[i]/total_cluster_funding[i]*1e3/availability[i], projection[i], cluster_cost_2021[i], growth[i], bounds[i][0], bounds[i][1], tabulated[i], " ", " ", " ", centroids[i], data["mechanisms"][0][i], data["mechanisms"][1][i], data["mechanisms"][2][i], data["mechanisms"][3][i], data["mechanisms"][4][i], data["mechanisms"][5][i]])
     with open('{}/final_data.csv'.format(save_folder), 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)

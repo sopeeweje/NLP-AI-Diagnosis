@@ -20,7 +20,7 @@ def mk_int(s):
         string to int conversion.
     """
     s = s.strip()
-    return int(s) if s else 0
+    return int(float(s)) if s else 0
 
 def process_data(data_file):
     """
@@ -43,29 +43,28 @@ def process_data(data_file):
         ids = []
         print("Raw data N: {}".format(str(len(raw_data))))
         for i in range(1,len(raw_data)):
-            if (raw_data[i][6] in ids) or (raw_data[i][11][0] in ['Z','T']):
-                #ids.append(raw_data[i][6])
+            if (raw_data[i][0] in ids) or (raw_data[i][6][0] in ['Z','T']):
                 continue
-            elif "No abstract available" in raw_data[i][1]:
+            elif "No abstract available" in raw_data[i][24]:
                 continue
-            elif len(raw_data[i][49]) <= 1:
+            elif len(raw_data[i][35]) <= 1:
                 continue
             else:
-                ids.append(raw_data[i][6])
-            abstract = raw_data[i][1].replace('\n',' ')
-            title = raw_data[i][3]
-            relevance = raw_data[i][4].replace('\n',' ')
+                ids.append(raw_data[i][0])
+            abstract = raw_data[i][24].replace('\n',' ')
+            title = raw_data[i][25]
+            relevance = raw_data[i][26].replace('\n',' ')
             data.append({
                 "text": title + " " + abstract + " " + relevance,
                 "title": title,
-                "id": raw_data[i][6],
-                "project_number": raw_data[i][9][1:].split("-")[0],
-                "terms": raw_data[i][2].split(";"),
-                "administration": raw_data[i][5],
-                "organization": raw_data[i][31],
-                "mechanism": raw_data[i][11],
-                "year": raw_data[i][42],
-                "funding": mk_int(raw_data[i][49]),
+                "id": raw_data[i][0],
+                "project_number": raw_data[i][3][1:].split("-")[0],
+                "terms": raw_data[i][22].split(";"),
+                "administration": raw_data[i][63],
+                "organization": raw_data[i][38],
+                "mechanism": raw_data[i][6],
+                "year": raw_data[i][2],
+                "funding": mk_int(raw_data[i][35]) + mk_int(raw_data[i][36]),
                 })
 
     new_data = []
