@@ -1,0 +1,669 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding
+"Project Summary
+Wide adoption of electronic health records (EHRs) has led to huge clinical databases, which enable the rapid
+growth of healthcare analytics market. One particular challenge for analyzing EHRs data is that much detailed
+patient information is embedded in clinical documents and not directly available for downstream analysis.
+Therefore, clinical natural language processing (NLP) technologies, which can unlock information embedded in
+clinical narratives, have received great attention, with an estimated global market of $2.65 billion by 2021 . In our
+previous work, we have developed CLAMP (Clinical Language Annotation, Modeling, and Processing), a clinical
+NLP tool with demonstrated superior performance through multiple international NLP challenges and a large
+user community (over 1,500 downloads by users from over 700 organizations). Commercialization of CLAMP by
+Melax Technologies Inc. has been successful (i.e., with a dozen licensed customers now); but it also reveals its
+limitations as a desktop application in the Cloud era. Therefore, we propose to extend CLAMP to a new Cloud-
+based, Service-oriented platform (called CLAMP-CS), which will address the identified challenges by: 1)
+improving clinical NLP performance and reducing annotation cost by leveraging the state-of-the-art algorithms
+such as deep learning, active learning and transfer learning and making them accessible to less experienced
+users; 2) following new service-oriented architectures to make CLAMP-CS available via SaaS and PaaS, ready
+for Cloud-based development and deployment; and 3) improving CLAMP-CS interoperability with downstream
+applications following two widely used standard representations: HL7 FHIR (Fast Healthcare Interoperability
+Resources) and OMOP CMD (Common Data Model), to support the use cases in clinical operations and research
+respectively. With these advanced features, we believe CLAMP-CS will be a leading clinical NLP system in the
+market and it will accelerate the adoption of NLP technology for diverse healthcare applications and
+clinical/translational research. Active Learning;Address;Adopted;Adoption;Algorithms;Architecture;Attention;Belief;Clinical;Clinical Research;Closure by clamp;Cloud Computing;Communities;Custom;Data;Development;Diagnosis;Electronic Health Record;Environment;Fast Healthcare Interoperability Resources;Generations;Grant;Growth;Health Sciences;Healthcare;Hospital Administration;International;Language;Licensing;Machine Learning;Medical;Modeling;Natural Language Processing;Natural Language Processing pipeline;Operations Research;Output;Patients;Performance;Psychological Transfer;Records;Research;Services;System;Technology;Texas;Time;Translational Research;Universities;Work;active method;base;clinical application;clinical database;cloud based;commercialization;cost;data modeling;deep learning;deep learning algorithm;experience;improved;insight;interoperability;language training;learning algorithm;model building;next generation;novel;prevent;rapid growth;tool;user-friendly;web app CLAMP-CS: a Cloud-based, Service-oriented, high-performance Natural Language Processing Platform for Healthcare","Project Summary
+Wide adoption of electronic health records (EHRs) has led to huge clinical databases, which enable the rapid
+growth of healthcare analytics market. One particular challenge for analyzing EHRs data is that much detailed
+patient information is embedded in clinical documents and not directly available for downstream analysis.
+Therefore, clinical natural language processing (NLP) technologies, which can unlock information embedded in
+clinical narratives, have received great attention, with an estimated global market of $2.65 billion by 2021 . In our
+previous work, we have developed CLAMP (Clinical Language Annotation, Modeling, and Processing), a clinical
+NLP tool with demonstrated superior performance through multiple international NLP challenges and a large
+user community (over 1,500 downloads by users from over 700 organizations). Commercialization of CLAMP by
+Melax Technologies Inc. has been successful (i.e., with a dozen licensed customers now); but it also reveals its
+limitations as a desktop application in the Cloud era. Therefore, we propose to extend CLAMP to a new Cloud-
+based, Service-oriented platform (called CLAMP-CS), which will address the identified challenges by: 1)
+improving clinical NLP performance and reducing annotation cost by leveraging the state-of-the-art algorithms
+such as deep learning, active learning and transfer learning and making them accessible to less experienced
+users; 2) following new service-oriented architectures to make CLAMP-CS available via SaaS and PaaS, ready
+for Cloud-based development and deployment; and 3) improving CLAMP-CS interoperability with downstream
+applications following two widely used standard representations: HL7 FHIR (Fast Healthcare Interoperability
+Resources) and OMOP CMD (Common Data Model), to support the use cases in clinical operations and research
+respectively. With these advanced features, we believe CLAMP-CS will be a leading clinical NLP system in the
+market and it will accelerate the adoption of NLP technology for diverse healthcare applications and
+clinical/translational research.",10136739,R44TR003254,['R44TR003254'],TR,https://reporter.nih.gov/project-details/10136739,R44,2021,463975
+"Project Summary
+The proposed project details an innovative line of research that draws on advanced tools from the field of network
+science to elucidate typical and atypical language learning mechanisms in adults. Network analysis of natural
+language has revealed a number of global structural patterns emerging from relationships (used to construct
+network edges) between words (used as network nodes). Informed by the naturally-occurring network
+architecture of real-world languages, we will construct miniature artificial languages that display emergent
+properties of existing language systems and measure the extent to which these languages are learned by adults
+with typical development (TD) and those with developmental language disorder (DLD) (Aim 1). Given that DLD
+is often associated with deficits in processing and producing complex morphosyntax, we will concentrate on
+networks in which edges between words represent either their co-occurrence in a sentence or overlap in
+morphological family (e.g., eater, eating). In Aim 2, we will examine whether language learning deficits in adults
+with DLD might be recast as a hyperfocus on local-level information (i.e., “oddball” structures or individual word
+frequency) at the expense of the broader architecture of the language learning environment. To strengthen links
+between deficits in language learning and expressive language, Aim 3 calls for the network analysis of elicited
+speech samples to reveal whether individuals less sensitive to complexity in learning might also display reduced
+complexity in their language output. Of individuals diagnosed with receptive and expressive language disorder
+in childhood, the vast majority continue to struggle with language impairment in adulthood. Despite a pressing
+need for expansion of adult-oriented language interventions, characterization of the full scope of deficits in
+individuals with DLD, in addition to their language learning mechanisms beyond childhood, is an understudied
+area. 2 year old;Address;Adult;Architecture;Area;Blueberries;Child;Child Language;Childhood;Complex;Dependence;Development;Diagnosis;Eating;Employment;Environment;Exhibits;Exposure to;Family;Frequencies;Human;Impairment;Individual;Instinct;Intervention;Knowledge;Language;Language Development;Language Development Disorders;Language Disorders;Lead;Learning;Linguistics;Link;Measures;Methods;Morphology;Natural Language Processing;Output;Participant;Pathway Analysis;Pattern;Population;Prevalence;Process;Production;Property;Raspberries;Records;Research;Role;Sampling;Science;Semantics;Series;Signal Transduction;Speech;Strawberries;Structure;System;Testing;Therapeutic Intervention;Toddler;Work;aged;classical conditioning;design;early childhood;educational atmosphere;experimental study;flexibility;indexing;innovation;kindergarten;language impairment;natural language;network architecture;phrases;statistics;syntax;therapeutic development;tool;young adult The Influence of Morphosyntactic Network Complexity on Typical and Atypical Language Learning","Project Summary
+The proposed project details an innovative line of research that draws on advanced tools from the field of network
+science to elucidate typical and atypical language learning mechanisms in adults. Network analysis of natural
+language has revealed a number of global structural patterns emerging from relationships (used to construct
+network edges) between words (used as network nodes). Informed by the naturally-occurring network
+architecture of real-world languages, we will construct miniature artificial languages that display emergent
+properties of existing language systems and measure the extent to which these languages are learned by adults
+with typical development (TD) and those with developmental language disorder (DLD) (Aim 1). Given that DLD
+is often associated with deficits in processing and producing complex morphosyntax, we will concentrate on
+networks in which edges between words represent either their co-occurrence in a sentence or overlap in
+morphological family (e.g., eater, eating). In Aim 2, we will examine whether language learning deficits in adults
+with DLD might be recast as a hyperfocus on local-level information (i.e., “oddball” structures or individual word
+frequency) at the expense of the broader architecture of the language learning environment. To strengthen links
+between deficits in language learning and expressive language, Aim 3 calls for the network analysis of elicited
+speech samples to reveal whether individuals less sensitive to complexity in learning might also display reduced
+complexity in their language output. Of individuals diagnosed with receptive and expressive language disorder
+in childhood, the vast majority continue to struggle with language impairment in adulthood. Despite a pressing
+need for expansion of adult-oriented language interventions, characterization of the full scope of deficits in
+individuals with DLD, in addition to their language learning mechanisms beyond childhood, is an understudied
+area.",10218819,R21DC018948,['R21DC018948'],DC,https://reporter.nih.gov/project-details/10218819,R21,2021,240750
+"PROJECT SUMMARY
+Autism Spectrum Disorder (ASD) is a neurodevelopmental disorder associated with motor difficulties in speech
+production and fine-motor tasks. Assessments of motor impairments, however, can be subjective and miss subtle
+and specific abnormalities. Therefore, there is a need to develop objective measures for clinicians to assess and
+understand speech- and fine-motor impairments in individuals with ASD. In addition, recent research suggests
+that difficulties with speech production, fine-motor, and oculo-motor tasks may contribute to language difficulties
+in ASD. The purpose of this project is to develop objective measures of speech- and fine-motor coordination in
+children with ASD, and to characterize the relationship between motor modalities and expressive language in
+ASD using these measures. We will focus on three speech subsystems: articulatory, laryngeal, and respiratory,
+as well as handwriting and eye movement. In a pilot study we conducted at the Lurie Center for Autism, we
+utilized novel coordination features developed in our lab to highlight lower complexity of coordination, or higher
+coupling, between and within speech subsystems in highly verbal children with ASD as compared to neurotypical
+controls. The analyses also indicated lower complexity of coordination during handwriting in children with ASD,
+suggesting there may be similar underlying mechanisms across these motor systems. In the proposed project,
+we will extend upon these promising results, evaluating measures of motor coordination using low-level features
+derived from speech, handwriting, and eye movement tasks completed by children with ASD and neurotypical
+controls. We will employ acoustic-to-articulatory inversion techniques to extract more physiologically accurate
+vocal tract articulator movements and coordination. Aim 1 uses measures of coordination to characterize the
+complexity of speech- and fine-motor coordination in children with ASD. We will also determine the features
+which provide the highest discriminatory ability between children with ASD and neurotypical controls using
+machine learning models. We expect that identification of patterns of complexity and important discriminatory
+features will provide a better understanding of the dependencies across and within motor subsystems, which
+could be used for objective assessment and tracking of motor difficulties in ASD. Aim 2 characterizes the
+relationship between speech- and fine-motor skills and expressive language ability. We will evaluate correlations
+and regressions between measures of motor coordination and scores on assessments of expressive language.
+We believe that motor tasks and features which show high correlations with evaluations of language ability will
+provide further insight into how motor modalities are associated with language difficulties in ASD. In summary,
+this proposal aims to quantify and understand speech- and fine-motor coordination challenges in ASD using
+objective measures of motor coordination, and aims to characterize the relationship between speech- and fine-
+motor subsystems and expressive language in ASD. This project works towards our long-term goal of developing
+a platform to assess, understand, and track motor and communication challenges in children with ASD. Abnormal coordination;Acoustics;Affect;Algorithms;Articulators;Biological Markers;Child;Clinical;Clinical assessments;Cognitive;Communication;Complex;Coupling;Dependence;Discrimination;Enrollment;Evaluation;Eye Movements;Face;Future;Goals;Handwriting;Individual;Intervention;Language;Larynx;Link;Machine Learning;Major Depressive Disorder;Measures;Modality;Modeling;Monitor;Motor;Motor Skills;Movement;Muscle;Neurodevelopmental Disorder;Outcome Assessment;Parkinson Disease;Pattern;Physiological;Pilot Projects;Population;Production;Protocols documentation;Proxy;Research;Series;Severities;Shapes;Speech;Structure;System;Techniques;Time;Training;United States;Work;autism spectrum disorder;autistic children;behavior measurement;clinical predictors;improved;individuals with autism spectrum disorder;insight;language outcome;mild traumatic brain injury;motor impairment;nervous system disorder;novel;oculomotor;respiratory;sensorimotor system;social;visual tracking Assessment of speech- and fine-motor coordination and their link to language in children with autism spectrum disorder","PROJECT SUMMARY
+Autism Spectrum Disorder (ASD) is a neurodevelopmental disorder associated with motor difficulties in speech
+production and fine-motor tasks. Assessments of motor impairments, however, can be subjective and miss subtle
+and specific abnormalities. Therefore, there is a need to develop objective measures for clinicians to assess and
+understand speech- and fine-motor impairments in individuals with ASD. In addition, recent research suggests
+that difficulties with speech production, fine-motor, and oculo-motor tasks may contribute to language difficulties
+in ASD. The purpose of this project is to develop objective measures of speech- and fine-motor coordination in
+children with ASD, and to characterize the relationship between motor modalities and expressive language in
+ASD using these measures. We will focus on three speech subsystems: articulatory, laryngeal, and respiratory,
+as well as handwriting and eye movement. In a pilot study we conducted at the Lurie Center for Autism, we
+utilized novel coordination features developed in our lab to highlight lower complexity of coordination, or higher
+coupling, between and within speech subsystems in highly verbal children with ASD as compared to neurotypical
+controls. The analyses also indicated lower complexity of coordination during handwriting in children with ASD,
+suggesting there may be similar underlying mechanisms across these motor systems. In the proposed project,
+we will extend upon these promising results, evaluating measures of motor coordination using low-level features
+derived from speech, handwriting, and eye movement tasks completed by children with ASD and neurotypical
+controls. We will employ acoustic-to-articulatory inversion techniques to extract more physiologically accurate
+vocal tract articulator movements and coordination. Aim 1 uses measures of coordination to characterize the
+complexity of speech- and fine-motor coordination in children with ASD. We will also determine the features
+which provide the highest discriminatory ability between children with ASD and neurotypical controls using
+machine learning models. We expect that identification of patterns of complexity and important discriminatory
+features will provide a better understanding of the dependencies across and within motor subsystems, which
+could be used for objective assessment and tracking of motor difficulties in ASD. Aim 2 characterizes the
+relationship between speech- and fine-motor skills and expressive language ability. We will evaluate correlations
+and regressions between measures of motor coordination and scores on assessments of expressive language.
+We believe that motor tasks and features which show high correlations with evaluations of language ability will
+provide further insight into how motor modalities are associated with language difficulties in ASD. In summary,
+this proposal aims to quantify and understand speech- and fine-motor coordination challenges in ASD using
+objective measures of motor coordination, and aims to characterize the relationship between speech- and fine-
+motor subsystems and expressive language in ASD. This project works towards our long-term goal of developing
+a platform to assess, understand, and track motor and communication challenges in children with ASD.",10381787,F31DC019509,['F31DC019509'],DC,https://reporter.nih.gov/project-details/10381787,F31,2021,33799
+"Project Summary Abstract
+The American Academy of Pediatrics has mandated identification of autism (ASD) beginning at the
+routine 18-month visit, based on evidence that early intervention for children with autism improves
+outcomes. However, the US Preventive Task Force has not endorsed that recommendation, in part
+because of limited validity data. This study builds on a series of studies by our group aimed at
+improving early autism identification. We have developed a promising novel and efficient screener for
+primary care called Toddler Autism and Development Adaptive Screen (TADAS). The TADAS was
+developed using machine learning to automatically determine which items to collect from the parent in
+each case based on data from a community sample in a previous project. Currently used autism
+screeners have high rates of missing children who have signs of ASD or Developmental Delay (DD) and
+also problematic and costly rates of over-referral. Data from our prior studies showed that TADAS had
+nearly three times the sensitivity (.94 vs .32) and similar specificity (.87 vs .90) to the currently
+recommended and most popular screen for autism (M-CHAT-R/F) and more than twice the sensitivity
+(.94 vs .39) and similar specificity (.79 vs .85) for developmental delay of the current standard Age &
+Stages Questionnaire-3tm. The TADAS also provides greater efficiencies since a difficult-to-implement
+recommended follow-up interview is not required and there is less parent burden in overall number of
+items. This proposal is to program TADAS for online delivery then validate it against diagnostic testing
+for ASD and DD in a new community sample of children coming for their 18-month well child visit that
+better reflects the U.S. population in racial, ethnic and socioeconomic status than our original study
+population. If our initial results are further validated in this study, screening for early ASD and DD
+could be much more effective with corresponding improvements in child outcomes through earlier
+intervention. A side benefit of the project will be an efficient Computer Adaptive Testing language
+screen based on existing national language abilities data that could be used independently to both track
+language impaired toddlers who are at risk for later development of autism as well as for general
+language screening in primary care. These innovative new tools are being created within an online
+clinical support system, called CHADIS that has additional features to assist in the entire process of
+early identification, referral, and tracking. CHADIS provides individualized patient education for the
+parent; clinician use of care coordination software connecting primary care with early intervention
+services with options to share data and track outcomes; as well as options for doctors to receive
+required Board re-certification credits for participating in autism screening quality improvement
+efforts. The final product and “system of care” of value to clinicians, insurers, municipalities and states. Academy;Advisory Committees;Age;Algorithms;American;Certification;Characteristics;Child;Childhood;Chiroptera;Clinical;Collaborations;Communities;Computer software;Computers;Consent;Data;Development;Developmental Delay Disorders;Diagnosis;Diagnostic tests;Early Intervention;Early identification;Equipment and supply inventories;Gold;Grant;Insurance Carriers;Interview;Language;Language Tests;Machine Learning;Medicaid services;Municipalities;Outcome;Parents;Patient Education;Patients;Pediatrics;Performance;Phase;Physicians;Population;Preventive;Preventive service;Primary Health Care;Process;Psychometrics;Qi;Questionnaires;Recommendation;Research;Risk;S Phase;Sampling;Screening procedure;Series;Side;Socioeconomic Status;Specialty Boards;Specificity;Support System;Testing;Time;Toddler;Validation;Visit;Vocabulary;Well Child Visits;Work;autism spectrum disorder;autistic children;base;care coordination;care systems;case-based;cost;data repository;data sharing;demographics;developmental disease;early screening;evidence base;follow-up;improved;improved outcome;innovation;language impairment;learning strategy;machine learning algorithm;novel;online delivery;programs;racial and ethnic;recruit;response;screening;service intervention;study population;theories;tool Validation of the online Toddler Autism and Development Adaptive Screener (TADAS) at 18 months","Project Summary Abstract
+The American Academy of Pediatrics has mandated identification of autism (ASD) beginning at the
+routine 18-month visit, based on evidence that early intervention for children with autism improves
+outcomes. However, the US Preventive Task Force has not endorsed that recommendation, in part
+because of limited validity data. This study builds on a series of studies by our group aimed at
+improving early autism identification. We have developed a promising novel and efficient screener for
+primary care called Toddler Autism and Development Adaptive Screen (TADAS). The TADAS was
+developed using machine learning to automatically determine which items to collect from the parent in
+each case based on data from a community sample in a previous project. Currently used autism
+screeners have high rates of missing children who have signs of ASD or Developmental Delay (DD) and
+also problematic and costly rates of over-referral. Data from our prior studies showed that TADAS had
+nearly three times the sensitivity (.94 vs .32) and similar specificity (.87 vs .90) to the currently
+recommended and most popular screen for autism (M-CHAT-R/F) and more than twice the sensitivity
+(.94 vs .39) and similar specificity (.79 vs .85) for developmental delay of the current standard Age &
+Stages Questionnaire-3tm. The TADAS also provides greater efficiencies since a difficult-to-implement
+recommended follow-up interview is not required and there is less parent burden in overall number of
+items. This proposal is to program TADAS for online delivery then validate it against diagnostic testing
+for ASD and DD in a new community sample of children coming for their 18-month well child visit that
+better reflects the U.S. population in racial, ethnic and socioeconomic status than our original study
+population. If our initial results are further validated in this study, screening for early ASD and DD
+could be much more effective with corresponding improvements in child outcomes through earlier
+intervention. A side benefit of the project will be an efficient Computer Adaptive Testing language
+screen based on existing national language abilities data that could be used independently to both track
+language impaired toddlers who are at risk for later development of autism as well as for general
+language screening in primary care. These innovative new tools are being created within an online
+clinical support system, called CHADIS that has additional features to assist in the entire process of
+early identification, referral, and tracking. CHADIS provides individualized patient education for the
+parent; clinician use of care coordination software connecting primary care with early intervention
+services with options to share data and track outcomes; as well as options for doctors to receive
+required Board re-certification credits for participating in autism screening quality improvement
+efforts. The final product and “system of care” of value to clinicians, insurers, municipalities and states.",10153564,R44HD104973,['R44HD104973'],HD,https://reporter.nih.gov/project-details/10153564,R44,2021,233891
+"PROJECT SUMMARY
+Background: Depression during pregnancy and the postpartum period affects up to 15% of US mothers, imposing costs on
+mother, child, and society. Early detection can significantly reduce the incidence of depression, yet depressive symptoms
+are often missed during prenatal visits, which tend to focus on maternal and fetal physical health, leaving less time for
+maternal mental health. Even if mental health is addressed during prenatal care, women may not feel comfortable answering
+questions that are perceived to be embarrassing or invasive. Failing to detect depression is even more likely during the
+postpartum period due to infrequent physician visits once the baby has been born. Measurement in the form of daily journals,
+which can be analyzed using natural language processing, can promote early and more frequent detection of depression
+during pregnancy and the postpartum period.
+Study Aims: 1) Model which dynamic features of language used over time best predict changes in depression status in the
+pregnancy and postpartum periods, creating phenotypes of depression risk; 2) examine how the language patterns that
+predict depression differ for African-American and Caucasian women; and 3) identify the relationship between the
+characteristics of what depressed peripartum women say and their treatment-seeking behavior.
+Innovation: The proposed research is innovative in its use of high frequency natural language measurements, captured in
+daily journals using a smartphone app, combined with advances in natural language processing models, to assess the onset
+and trajectory of depression during pregnancy and the postpartum period. This is the first prospective longitudinal study
+using natural language collection for risk prediction in a clinical population and the first to: 1) characterize the critical topics
+women discuss during the peripartum period over time using open-ended journals; 2) evaluate multiple facets of language
+to gain a more comprehensive understanding of the relationship between language and depression; 3) use a longitudinal
+design approach allowing for optimal modeling of language changes associated with depression onset.
+Methodology and Expected Results: Monthly depression risk identified from the Edinburgh Postnatal Depression Scale.
+will be collected through the MyHealthyPregnancy smartphone app, a mobile health application developed through close
+collaboration between decision scientists, clinicians, statisticians, and local peripartum women. A daily journal embedded
+in the MyHealthyPregnancy app will collect natural language text from the participants for 10 months (from their first
+prenatal visit through two months postpartum). Using three distinct natural language processing algorithmic approaches,
+this study will characterize how the natural language used by peripartum women in their daily journal entries is connected
+to the onset and experience of peripartum depression, as measured through monthly-administered depression scales. Group-
+based trajectory modeling will then classify women according to the patterns in their depression scores over time.
+Potential Impact: This work lays the foundation for developing and evaluating real-time interventions that could be
+deployed at scale to women who are using language that signals high depression risk. Address;Affect;African American;Algorithms;Appointment;Behavior;Behavioral Sciences;Birth;Caring;Caucasians;Characteristics;Child;Childbirth;Clinical;Collaborations;Collection;Data;Data Collection;Depressed mood;Detection;Developmental Delay Disorders;Diagnostic;Disclosure;Early Diagnosis;Early treatment;Emotions;Environment;Event;Failure to Thrive;Feeling;Foundations;Frequencies;Healthcare Systems;Incidence;Infant;Intervention;Journals;Language;Longitudinal observational study;Longitudinal prospective study;Measurable;Measurement;Measures;Mental Depression;Mental Health;Methodology;Methods;Mobile Health Application;Modeling;Monitor;Moods;Mothers;National Institute of Mental Health;Natural Language Processing;Participant;Patients;Pattern;Perinatal;Phenotype;Physicians;Population;Postpartum Depression;Postpartum Period;Pregnancy;Pregnant Women;Premature Birth;Prenatal care;Psychometrics;Race;Reporting;Research;Risk;Risk Assessment;Scientist;Signal Transduction;Societies;Source;Stress;Technology;Text;Time;Variant;Visit;Voice;Well in self;Woman;Work;antepartum depression;base;cohort;cost;depression model;depressive symptoms;experience;fetal;health assessment;improved;innovation;longitudinal design;machine learning algorithm;member;motherhood;natural language;patient subsets;peripartum depression;physical conditioning;pregnant;racial disparity;response;risk prediction;routine screening;smartphone Application;social culture;sociodemographics;statistical and machine learning;time use;vector Identification and Prediction of Peripartum Depression from Natural Language Collected in a Mobile Health App","PROJECT SUMMARY
+Background: Depression during pregnancy and the postpartum period affects up to 15% of US mothers, imposing costs on
+mother, child, and society. Early detection can significantly reduce the incidence of depression, yet depressive symptoms
+are often missed during prenatal visits, which tend to focus on maternal and fetal physical health, leaving less time for
+maternal mental health. Even if mental health is addressed during prenatal care, women may not feel comfortable answering
+questions that are perceived to be embarrassing or invasive. Failing to detect depression is even more likely during the
+postpartum period due to infrequent physician visits once the baby has been born. Measurement in the form of daily journals,
+which can be analyzed using natural language processing, can promote early and more frequent detection of depression
+during pregnancy and the postpartum period.
+Study Aims: 1) Model which dynamic features of language used over time best predict changes in depression status in the
+pregnancy and postpartum periods, creating phenotypes of depression risk; 2) examine how the language patterns that
+predict depression differ for African-American and Caucasian women; and 3) identify the relationship between the
+characteristics of what depressed peripartum women say and their treatment-seeking behavior.
+Innovation: The proposed research is innovative in its use of high frequency natural language measurements, captured in
+daily journals using a smartphone app, combined with advances in natural language processing models, to assess the onset
+and trajectory of depression during pregnancy and the postpartum period. This is the first prospective longitudinal study
+using natural language collection for risk prediction in a clinical population and the first to: 1) characterize the critical topics
+women discuss during the peripartum period over time using open-ended journals; 2) evaluate multiple facets of language
+to gain a more comprehensive understanding of the relationship between language and depression; 3) use a longitudinal
+design approach allowing for optimal modeling of language changes associated with depression onset.
+Methodology and Expected Results: Monthly depression risk identified from the Edinburgh Postnatal Depression Scale.
+will be collected through the MyHealthyPregnancy smartphone app, a mobile health application developed through close
+collaboration between decision scientists, clinicians, statisticians, and local peripartum women. A daily journal embedded
+in the MyHealthyPregnancy app will collect natural language text from the participants for 10 months (from their first
+prenatal visit through two months postpartum). Using three distinct natural language processing algorithmic approaches,
+this study will characterize how the natural language used by peripartum women in their daily journal entries is connected
+to the onset and experience of peripartum depression, as measured through monthly-administered depression scales. Group-
+based trajectory modeling will then classify women according to the patterns in their depression scores over time.
+Potential Impact: This work lays the foundation for developing and evaluating real-time interventions that could be
+deployed at scale to women who are using language that signals high depression risk.",10111569,R21MH119450,['R21MH119450'],MH,https://reporter.nih.gov/project-details/10111569,R21,2021,194684
+"Abstract
+ Children with poor early language skills are at risk for academic, social, vocational, and health challenges
+across the lifespan (Botting & Conti-Ramsden, 2008; Conti-Ramsden, Durkin, Toseeb, Botting, & Pickles,
+2017; Norbury & Sonuga-Barke, 2017; Pace, Alper, Burchinal, Golinkoff, & Hirsh-Pasek, 2019). This at-risk
+group includes approximately 1.6 million children under five with primary developmental language disorder
+(DLD) and 300,500 children with DLD and an autism spectrum disorder (ASD+DLD; Bishop, 2010; Norbury &
+Sonuga-Barke, 2017; U.S. Census Bureau, 2017b; Xu, Strathearn, Liu, & Bao, 2018). Parent-implemented
+early language intervention is a cost-effective option to address this public health issue. However, these
+interventions yield large individual differences in outcomes and limited scalability (Roberts & Kaiser, 2011).
+Variable intervention effectiveness could result from many factors including parent-level differences in
+language skills and behavioral awareness. Despite differences in interaction quality across parents (Hirsh-
+Pasek et al., 2015), and potential heritable components of language disorder (Bishop, 2009), there has been
+little to no exploration of the role of these parent-level factors in early language interaction and intervention.
+ This project will address this critical gap in the evidence. Parents' language skills will be examined in
+relationship to the quality of parent–child language interactions (Aim1). Furthermore, this research will explore
+whether parents' behavioral awareness predicts their modifiability after brief training (Aim 2). Finally, predictors
+of early language interaction quality and modifiability will be compared in dyads with typically developing
+children, children with primary DLD, and with ASD+DLD (Aim 3). The long-term goal of this research program
+is to increase intervention effectiveness and improve child outcomes by extending the social-interactionist
+framework to scaffold parents. Differences between the DLD and ASD+DLD groups could inform disorder-
+specific intervention recommendations. Behavioral data will be collected from three groups of parent-child
+dyads—children with primary DLD (Aim 1,2,&3), children with ASD+DLD (Aim 3), and age-matched controls
+(Aim 1,2,&3). Inter- and intra-group analyses will be conducted to explore the relationships between parent-
+level factors, the quality of parent–child interaction, and parent modifiability following parent training.
+ These aims will support the long-term career development goal of improving the language, academic, and
+health outcomes of at-risk children through family-centered early language intervention research. Three
+specific areas of career development have also been identified: 1) examining individual-level factors that
+impact early language interaction and intervention outcomes, 2) applying family-centered intervention to
+specific disorder groups, and 3) analyzing multi-level and longitudinal data. The career development will take
+place at an R1 university with support from an accomplished, inter-disciplinary mentorship team. Address;Adult;Age;Area;Awareness;Behavioral;Censuses;Child;Child Language;Code;Data;Development;Disease;Early Intervention;Educational process of instructing;Effectiveness of Interventions;Environment;Family;Fibrinogen;Goals;Health;Heritability;Individual;Individual Differences;Influentials;Intervention;Intervention Studies;Language;Language Development;Language Development Disorders;Language Disorders;Longevity;Measures;Mentorship;Modeling;Outcome;Parent-Child Relations;Parents;Participant;Play;Principal Component Analysis;Problem Solving;Proliferating;Public Health;Reading;Recommendation;Research;Risk;Role;Sampling;Standardization;Structure;Testing;Training;Training Programs;Universities;autism spectrum disorder;autistic children;behavioral clinical trial;career development;constructivism;cost effective;dosage;experimental study;improved;language training;multilevel analysis;parental role;peer;programs;scaffold;skills;social;theories;therapy design;trend Parent-Level Predictors of Early Language Interaction Quality and Intervention Outcomes","Abstract
+ Children with poor early language skills are at risk for academic, social, vocational, and health challenges
+across the lifespan (Botting & Conti-Ramsden, 2008; Conti-Ramsden, Durkin, Toseeb, Botting, & Pickles,
+2017; Norbury & Sonuga-Barke, 2017; Pace, Alper, Burchinal, Golinkoff, & Hirsh-Pasek, 2019). This at-risk
+group includes approximately 1.6 million children under five with primary developmental language disorder
+(DLD) and 300,500 children with DLD and an autism spectrum disorder (ASD+DLD; Bishop, 2010; Norbury &
+Sonuga-Barke, 2017; U.S. Census Bureau, 2017b; Xu, Strathearn, Liu, & Bao, 2018). Parent-implemented
+early language intervention is a cost-effective option to address this public health issue. However, these
+interventions yield large individual differences in outcomes and limited scalability (Roberts & Kaiser, 2011).
+Variable intervention effectiveness could result from many factors including parent-level differences in
+language skills and behavioral awareness. Despite differences in interaction quality across parents (Hirsh-
+Pasek et al., 2015), and potential heritable components of language disorder (Bishop, 2009), there has been
+little to no exploration of the role of these parent-level factors in early language interaction and intervention.
+ This project will address this critical gap in the evidence. Parents' language skills will be examined in
+relationship to the quality of parent–child language interactions (Aim1). Furthermore, this research will explore
+whether parents' behavioral awareness predicts their modifiability after brief training (Aim 2). Finally, predictors
+of early language interaction quality and modifiability will be compared in dyads with typically developing
+children, children with primary DLD, and with ASD+DLD (Aim 3). The long-term goal of this research program
+is to increase intervention effectiveness and improve child outcomes by extending the social-interactionist
+framework to scaffold parents. Differences between the DLD and ASD+DLD groups could inform disorder-
+specific intervention recommendations. Behavioral data will be collected from three groups of parent-child
+dyads—children with primary DLD (Aim 1,2,&3), children with ASD+DLD (Aim 3), and age-matched controls
+(Aim 1,2,&3). Inter- and intra-group analyses will be conducted to explore the relationships between parent-
+level factors, the quality of parent–child interaction, and parent modifiability following parent training.
+ These aims will support the long-term career development goal of improving the language, academic, and
+health outcomes of at-risk children through family-centered early language intervention research. Three
+specific areas of career development have also been identified: 1) examining individual-level factors that
+impact early language interaction and intervention outcomes, 2) applying family-centered intervention to
+specific disorder groups, and 3) analyzing multi-level and longitudinal data. The career development will take
+place at an R1 university with support from an accomplished, inter-disciplinary mentorship team.",10061590,K23DC017763,['K23DC017763'],DC,https://reporter.nih.gov/project-details/10061590,K23,2021,162602
+"A critical characteristic of human language is our ability to understand multi-word sequences whose
+meaning is greater than the sum of their parts. Recent work from the PIs of this proposal (Toneva and Wehbe,
+2019; Jain and Huth, 2018) and others (Schrimpf et al., 2020a; Caucheteux & King, 2020) has shown that
+cortical representations of multi-word sequences can be modeled much more accurately than before by
+using neural network language models, a machine learning technique that has revolutionized the natural
+language processing (NLP) field (Devlin et al., 2019; Radford et al., 2019). However, under the current
+paradigm these models must first be trained on separate NLP tasks and only then used to model the brain,
+creating a guess-and-check cycle that is not guaranteed to converge on the actual computations that
+humans perform. Here we propose to break this cycle by directly training neural network models to
+estimate the functions that the brain uses to combine words. To be able to optimally predict fMRI and MEG
+responses, these models will need to capture the composition principles governing which words the brain
+attends to, and how information is combined across words. These models will help uncover specific
+computations underlying language processing in the brain, enable computational testing of neurolinguistic
+theories, and inspire or directly improve models used in NLP.
+ Accomplishing these goals, however, will require overcoming one major obstacle. Training neural net-
+work language models typically requires orders of magnitude more data than existing neuroimaging
+datasets. To address this issue, one central goal of this proposed project is to collect a very large fMRI and
+MEG dataset comprising roughly one million words of natural language stimuli. We plan to use the unique
+dataset and computational modeling framework to address three scientific aims.
+Aim 1: Create brain activity prediction benchmarks to foster interaction between neuroscience and NLP.
+Aim 2: Use data-driven models to test existing neurolinguistic theories & develop new accounts of the
+computations underlying word composition in the brain. Aim 3: Leverage information in different brain
+areas to help solve computationally defined language tasks.
+ Successful completion of the proposed work will provide mechanistic insight into language processing,
+with a computational architecture tracing information flow among brain areas and describing the tasks they
+perform. Beyond its basic cognitive neuroscience implications, we expect this work will enable better
+understanding of language impairments and help identify targeted therapies.
+RELEVANCE (See instructions):
+Through collecting, analyzing, and disseminating large-scale neuroimaging datasets collected while
+participants listen to natural, narrative speech, this proposal aims to improve our understanding of the
+normal function of the language system. Specifically, this work seeks to improve and validate
+computational models of speech language processing in the human brain. Address;Affect;Architecture;Area;Benchmarking;Brain;Computer Models;Computer software;Data;Data Analyses;Data Set;Dependence;Epilepsy;Excision;Fostering;Functional Magnetic Resonance Imaging;Goals;Health;Human;Human Characteristics;Instruction;Language;Learning;Linguistics;Machine Learning;Maps;Methods;Modeling;Names;Natural Language Processing;Neural Network Simulation;Neurosciences;Participant;Patient-Focused Outcomes;Psychological Transfer;Research;Research Personnel;Resolution;Running;Speech;Stimulus;Sum;System;Techniques;Testing;Text;Training;Work;brain surgery;cognitive neuroscience;driving force;experimental study;improved;in silico;innovation;insight;language impairment;language processing;multitask;natural language;neural network;neuroimaging;post stroke;response;targeted treatment;theories;therapy design;tumor CRCNS: Discovering Computational Principles of Language Processing in the Brain","A critical characteristic of human language is our ability to understand multi-word sequences whose
+meaning is greater than the sum of their parts. Recent work from the PIs of this proposal (Toneva and Wehbe,
+2019; Jain and Huth, 2018) and others (Schrimpf et al., 2020a; Caucheteux & King, 2020) has shown that
+cortical representations of multi-word sequences can be modeled much more accurately than before by
+using neural network language models, a machine learning technique that has revolutionized the natural
+language processing (NLP) field (Devlin et al., 2019; Radford et al., 2019). However, under the current
+paradigm these models must first be trained on separate NLP tasks and only then used to model the brain,
+creating a guess-and-check cycle that is not guaranteed to converge on the actual computations that
+humans perform. Here we propose to break this cycle by directly training neural network models to
+estimate the functions that the brain uses to combine words. To be able to optimally predict fMRI and MEG
+responses, these models will need to capture the composition principles governing which words the brain
+attends to, and how information is combined across words. These models will help uncover specific
+computations underlying language processing in the brain, enable computational testing of neurolinguistic
+theories, and inspire or directly improve models used in NLP.
+ Accomplishing these goals, however, will require overcoming one major obstacle. Training neural net-
+work language models typically requires orders of magnitude more data than existing neuroimaging
+datasets. To address this issue, one central goal of this proposed project is to collect a very large fMRI and
+MEG dataset comprising roughly one million words of natural language stimuli. We plan to use the unique
+dataset and computational modeling framework to address three scientific aims.
+Aim 1: Create brain activity prediction benchmarks to foster interaction between neuroscience and NLP.
+Aim 2: Use data-driven models to test existing neurolinguistic theories & develop new accounts of the
+computations underlying word composition in the brain. Aim 3: Leverage information in different brain
+areas to help solve computationally defined language tasks.
+ Successful completion of the proposed work will provide mechanistic insight into language processing,
+with a computational architecture tracing information flow among brain areas and describing the tasks they
+perform. Beyond its basic cognitive neuroscience implications, we expect this work will enable better
+understanding of language impairments and help identify targeted therapies.
+RELEVANCE (See instructions):
+Through collecting, analyzing, and disseminating large-scale neuroimaging datasets collected while
+participants listen to natural, narrative speech, this proposal aims to improve our understanding of the
+normal function of the language system. Specifically, this work seeks to improve and validate
+computational models of speech language processing in the human brain.",10395748,R01DC020088,['R01DC020088'],DC,https://reporter.nih.gov/project-details/10395748,R01,2021,389252
+"Project Summary
+This Administrative Supplement proposes implementation of a multimodal data pipeline to support
+machine learning of child language production in complex naturalistic environments. The Supplement
+builds on the parent R01 (DC018542) that gathers objective, longitudinal data to capture the vocal
+interactions of children with hearing loss (HL). Even with cochlear implantation, HL is a life-altering
+condition with high social costs. Inclusion of children with HL and typically hearing (TH) peers in
+preschool classrooms is a national standard, but it is not clear how early vocal interaction contributes to
+the language development of children with HL and their TH peers. The parent R01 employs
+computational models of child location and orientation to indicate when children are in social contact
+with their peers and teachers. An additional strategy for pursuing the broad goals of the R01—
+identifying interactive contexts in which children produce phonemically complex vocalizations and
+interactive speech—is machine learning. Machine learning algorithms can determine the contextual,
+individual, and interactive factors that predict children’s vocalizations and vocal interactions. However,
+the parent R01 does not propose machine learning, nor are data disseminated in a format designed to
+facilitate machine learning. To facilitate machine learning in the classroom, a rigorous diarization
+process is required to determine speaker identity, which is operationalized as the likelihood that each
+vocalization was spoken by a given child or teacher. We will integrate audio processing of each target
+child and teacher’s first-person audio recording with processing of their interactive partners’ recordings.
+The influence of partner recordings will be determined by their physical distance and orientation relative
+to the target. This will yield a weighted speaker identification score for each vocalization. For 25% of the
+sample, the algorithmic score will be compared to speaker identification provided by trained coders to
+quantify intersystem reliability. Processed datasets will include 7,160 hours of multimodal recordings of
+child and teacher movement in classrooms synchronized with continuously recorded, child- and
+teacher-specific (first-person) audio recordings. De-identified output data will characterize vocalizations
+with respect to algorithmically computed speaker identification probabilities, coder-identified speaker
+identity (25% of sample), phonemic complexity and audio characteristics (e.g., fundamental frequency),
+as well as the position and relative orientation of all individuals in the classroom, and child
+demographics (including characterizations of HL). Over the course of the supplement, output data,
+Python processing code, and metadata descriptions of the processing pipeline will be disseminated in
+dedicated distribution portals including Github, Kaggle, and the UCI repository. Recordings will be
+released to certified investigators via NIH-funded repositories such as Databrary and Homebank. Administrative Supplement;Adult;Affect;African American;African Caribbean;Age;Algorithms;Archives;Asians;Benchmarking;Cells;Characteristics;Child;Child Development;Child Language;Child Support;Cochlear implant procedure;Code;Complex;Computer Models;Computer Vision Systems;Computer software;Consent;Data;Data Collection;Data Set;Databases;Detection;Development;Dimensions;Environment;Equilibrium;Exhibits;Exposure to;Face;Feedback;Female;Fostering;Frequencies;Funding;Gardenal;Gaussian model;Goals;Hearing;Hispanics;Hour;Human;Individual;Language;Language Development;Learning;Left;Legal patent;Life;Linguistics;Link;Location;Machine Learning;Manuscripts;Measurement;Measures;Metadata;Modeling;Modernization;Movement;Nursery Schools;Output;Parents;Participant;Pattern;Persons;Play;Positioning Attribute;Postdoctoral Fellow;Predictive Factor;Privacy;Probability;Procedures;Process;Production;Publications;Pythons;Radial;Radio;Randomized;Reporting;Research;Research Personnel;Research Project Grants;Resources;Sampling;Series;Sex Distribution;Shoulder;Signal Transduction;Social Development;Source;Speech;Speech Sound;Statistical Models;Stream;System;TensorFlow;Testing;Time;TimeLine;Training;United States National Institutes of Health;Walkers;Weight;automated analysis;base;computerized data processing;contextual factors;convolutional neural network;cost;data analysis pipeline;data de-identification;data integration;data pipeline;deafness;deep learning;deep neural network;demographics;denoising;design;dyadic interaction;educational atmosphere;experience;feeding;functional outcomes;hearing impairment;improved;interactive feedback;interest;light weight;machine learning algorithm;male;markov model;meter;multi-ethnic;multimodal data;multimodality;multiple datasets;open data;open source;parent grant;peer;prediction algorithm;prototype;radio frequency;recurrent neural network;recursive neural network;repository;response;sensor;signal processing;social;socioeconomics;sound;speech processing;supervised learning;supplemental instruction;teacher;tool;undergraduate student;vocalization Harnessing multimodal data to enhance machine learning of children’s vocalizations","Project Summary
+This Administrative Supplement proposes implementation of a multimodal data pipeline to support
+machine learning of child language production in complex naturalistic environments. The Supplement
+builds on the parent R01 (DC018542) that gathers objective, longitudinal data to capture the vocal
+interactions of children with hearing loss (HL). Even with cochlear implantation, HL is a life-altering
+condition with high social costs. Inclusion of children with HL and typically hearing (TH) peers in
+preschool classrooms is a national standard, but it is not clear how early vocal interaction contributes to
+the language development of children with HL and their TH peers. The parent R01 employs
+computational models of child location and orientation to indicate when children are in social contact
+with their peers and teachers. An additional strategy for pursuing the broad goals of the R01—
+identifying interactive contexts in which children produce phonemically complex vocalizations and
+interactive speech—is machine learning. Machine learning algorithms can determine the contextual,
+individual, and interactive factors that predict children’s vocalizations and vocal interactions. However,
+the parent R01 does not propose machine learning, nor are data disseminated in a format designed to
+facilitate machine learning. To facilitate machine learning in the classroom, a rigorous diarization
+process is required to determine speaker identity, which is operationalized as the likelihood that each
+vocalization was spoken by a given child or teacher. We will integrate audio processing of each target
+child and teacher’s first-person audio recording with processing of their interactive partners’ recordings.
+The influence of partner recordings will be determined by their physical distance and orientation relative
+to the target. This will yield a weighted speaker identification score for each vocalization. For 25% of the
+sample, the algorithmic score will be compared to speaker identification provided by trained coders to
+quantify intersystem reliability. Processed datasets will include 7,160 hours of multimodal recordings of
+child and teacher movement in classrooms synchronized with continuously recorded, child- and
+teacher-specific (first-person) audio recordings. De-identified output data will characterize vocalizations
+with respect to algorithmically computed speaker identification probabilities, coder-identified speaker
+identity (25% of sample), phonemic complexity and audio characteristics (e.g., fundamental frequency),
+as well as the position and relative orientation of all individuals in the classroom, and child
+demographics (including characterizations of HL). Over the course of the supplement, output data,
+Python processing code, and metadata descriptions of the processing pipeline will be disseminated in
+dedicated distribution portals including Github, Kaggle, and the UCI repository. Recordings will be
+released to certified investigators via NIH-funded repositories such as Databrary and Homebank.",10411575,R01DC018542,['R01DC018542'],DC,https://reporter.nih.gov/project-details/10411575,R01,2021,199999
+"Abstract
+Language delay and impairments are common in autism spectrum disorders (ASDs), as are sensory (including
+auditory) anomalies. Since acquisition of spoken language relies on the integrity of the auditory system,
+language delay and impairments may be related to sound processing abnormalities that are frequently
+observed in children with ASDs (despite normal peripheral hearing). However, it is not understood if and how
+early auditory brain anomalies may developmentally contribute to impaired language development.
+ This project will examine the maturation of auditory and language systems in the brain across early
+childhood, during the critical period for language acquisition. We will employ a longitudinal design and
+multimodal neuroimaging, including high-resolution anatomical, diffusion, and functional magnetic resonance
+imaging (MRI), with added frequent and extensive behavioral and neuropsychological assessments. Our
+central hypothesis is that early disruptions to cortical sound processing precede and predict language
+impairments in ASDs and may thus be considered causal contributors – a hypothesis that has been frequently
+considered in the literature, but never tested at the neural level.
+ Our aims are to thoroughly characterize the structural integrity and functional differentiation of the
+cortical auditory and language systems (Aim 1) and their maturational trajectories (Aim 2) in toddlers with
+ASDs and age-matched typically developing peers. This will allow us to establish whether neural abnormalities
+in cortical processing of complex sounds in toddlers are predictive of language development and social
+behavior at the pre-school age (Aim 3). The rationale and translational significance of this project are that
+identification of alterations in brain development linked to language delay and impairment in the first years of
+life will allow for more targeted interventions in the auditory domain at a time when they are most effective. Age;Anatomy;Animal Model;Anisotropy;Auditory;Auditory area;Auditory system;Basic Science;Behavioral;Brain;Brain region;Child;Complex;Data;Development;Diagnosis;Diagnostic;Diffuse;Diffusion;Diffusion Magnetic Resonance Imaging;Early Intervention;Functional Magnetic Resonance Imaging;Hearing;Imaging Techniques;Impairment;Intervention;Language;Language Delays;Language Development;Length;Life;Link;Literature;Magnetic Resonance Imaging;Maps;Measures;Morphology;Neurites;Neuropsychology;Nursery Schools;Organizational Change;Pattern;Peripheral;Radial;Research;Research Priority;Resolution;Risk;Sensory;Sleep;Social Behavior;Statistical Methods;Structure;Symptoms;System;TEP1 gene;Techniques;Testing;Thalamic structure;Thick;Time;Toddler;auditory processing;autism spectrum disorder;autistic children;base;critical period;density;early childhood;gray matter;indexing;individuals with autism spectrum disorder;language impairment;longitudinal design;machine learning method;molecular modeling;multimodality;myelination;neuroimaging;novel;peer;phonology;recruit;relating to nervous system;response;sound;theories;translational impact Auditory precursors of language delay in toddlers with autism spectrum disorders","Abstract
+Language delay and impairments are common in autism spectrum disorders (ASDs), as are sensory (including
+auditory) anomalies. Since acquisition of spoken language relies on the integrity of the auditory system,
+language delay and impairments may be related to sound processing abnormalities that are frequently
+observed in children with ASDs (despite normal peripheral hearing). However, it is not understood if and how
+early auditory brain anomalies may developmentally contribute to impaired language development.
+ This project will examine the maturation of auditory and language systems in the brain across early
+childhood, during the critical period for language acquisition. We will employ a longitudinal design and
+multimodal neuroimaging, including high-resolution anatomical, diffusion, and functional magnetic resonance
+imaging (MRI), with added frequent and extensive behavioral and neuropsychological assessments. Our
+central hypothesis is that early disruptions to cortical sound processing precede and predict language
+impairments in ASDs and may thus be considered causal contributors – a hypothesis that has been frequently
+considered in the literature, but never tested at the neural level.
+ Our aims are to thoroughly characterize the structural integrity and functional differentiation of the
+cortical auditory and language systems (Aim 1) and their maturational trajectories (Aim 2) in toddlers with
+ASDs and age-matched typically developing peers. This will allow us to establish whether neural abnormalities
+in cortical processing of complex sounds in toddlers are predictive of language development and social
+behavior at the pre-school age (Aim 3). The rationale and translational significance of this project are that
+identification of alterations in brain development linked to language delay and impairment in the first years of
+life will allow for more targeted interventions in the auditory domain at a time when they are most effective.",10132296,R01DC017736,['R01DC017736'],DC,https://reporter.nih.gov/project-details/10132296,R01,2021,588497
+"Improving conversational use of spoken language is an important goal for many new interventions and
+treatments for children with neurodevelopmental disorders. However, progress in testing these treatments is
+limited by the lack of informative outcome measures to indicate whether or not an intervention or treatment is
+having the desired effect on a child's conversational use of language (i.e., discourse skills). The long-term
+goal of the proposed renewal project is to harness the benefits of NLP to impact functional spoken language
+outcomes for children with neurodevelopmental disorders. The goal of the parent R01 (R01DC012033) is to
+develop and validate new Natural Language Processing (NLP) based methods that automatically measure
+discourse-related skills, including language productivity (talkativeness), grammar and vocabulary, and
+discourse, based on raw (i.e., not coded or annotated) transcripts of natural language samples. Our objective
+in this proposal is to take the next step to evaluate the suitability of these NLP-based measures as outcomes for
+children with a range of intellectual abilities, language levels, and diagnoses. NLP algorithms require choices of
+pivotal parameter settings, such as word frequency dependent weights. While our previous results, involving
+between-group contrasts, were insensitive to these settings, our proposed project, involving psychometric
+quantities such as validity, may be sensitive to them. Building on our progress from the parent R01, we propose
+to pursue three specific aims: (1) Identify pivotal parameter settings that optimize stability of NLP discourse
+measures, and examine responsiveness to real change; (2) Evaluate consistency of NLP discourse measures,
+and identify key measurement factors that impact consistency; and (3) Evaluate validity of NLP discourse
+measures, and differences in validity as a function of diagnostic group, age, IQ, and language ability. Our
+approach will focus on optimizing stability of such measures, and assessing responsiveness to change over
+time, consistency across sampling contexts and different sample lengths, and validity of each measure. The
+contribution of the proposed project will be to systematically assess the psychometric properties of NLP
+discourse measures. The proposed research is innovative because it represents a substantial departure from
+the status quo by taking the crucial next step: the development of scalable, psychometrically sound measures of
+discourse skills that can be used to assess between-group differences as well as within-individual change over
+time. The proposed research is significant because it is expected to result in viable spoken language outcome
+measures for children with a range of neurodevelopmental disorders, making it possible to target and
+meaningfully measure improvements in clinical trials and behavioral interventions. Ultimately, the successful
+completion of this study will provide the immediate ability to scale up treatment evaluations involving
+measurement of spoken language use, allowing flexible data collection across sites and studies, and in the
+future provide new targets for to-be-developed behavioral and pharmacological interventions. Address;Age;Algorithms;Behavior;Behavior Therapy;Child;Clinical;Clinical Trials;Code;Data Collection;Development;Diagnosis;Diagnostic;Disease;Evaluation;Frequencies;Future;Goals;Individual;Influentials;Intervention;Knowledge;Language;Length;Measurement;Measures;Mediating;Methods;Mission;Modeling;Natural Language Processing;Neurodevelopmental Disorder;Outcome;Outcome Measure;Parents;Productivity;Property;Psychometrics;Public Health;Research;Research Personnel;Sampling;Site;Social Functioning;Speech;Stereotyping;Testing;Time;Transcript;Translating;United States National Institutes of Health;Vocabulary;Weight;Work;autism spectrum disorder;autistic children;base;behavioral pharmacology;common treatment;design;flexibility;improved;indexing;informant;innovation;language outcome;natural language;neurodevelopment;parent project;scale up;skills;sound;symptomatic improvement;translational impact Automated measurement of language outcomes for neurodevelopmental disorders","Improving conversational use of spoken language is an important goal for many new interventions and
+treatments for children with neurodevelopmental disorders. However, progress in testing these treatments is
+limited by the lack of informative outcome measures to indicate whether or not an intervention or treatment is
+having the desired effect on a child's conversational use of language (i.e., discourse skills). The long-term
+goal of the proposed renewal project is to harness the benefits of NLP to impact functional spoken language
+outcomes for children with neurodevelopmental disorders. The goal of the parent R01 (R01DC012033) is to
+develop and validate new Natural Language Processing (NLP) based methods that automatically measure
+discourse-related skills, including language productivity (talkativeness), grammar and vocabulary, and
+discourse, based on raw (i.e., not coded or annotated) transcripts of natural language samples. Our objective
+in this proposal is to take the next step to evaluate the suitability of these NLP-based measures as outcomes for
+children with a range of intellectual abilities, language levels, and diagnoses. NLP algorithms require choices of
+pivotal parameter settings, such as word frequency dependent weights. While our previous results, involving
+between-group contrasts, were insensitive to these settings, our proposed project, involving psychometric
+quantities such as validity, may be sensitive to them. Building on our progress from the parent R01, we propose
+to pursue three specific aims: (1) Identify pivotal parameter settings that optimize stability of NLP discourse
+measures, and examine responsiveness to real change; (2) Evaluate consistency of NLP discourse measures,
+and identify key measurement factors that impact consistency; and (3) Evaluate validity of NLP discourse
+measures, and differences in validity as a function of diagnostic group, age, IQ, and language ability. Our
+approach will focus on optimizing stability of such measures, and assessing responsiveness to change over
+time, consistency across sampling contexts and different sample lengths, and validity of each measure. The
+contribution of the proposed project will be to systematically assess the psychometric properties of NLP
+discourse measures. The proposed research is innovative because it represents a substantial departure from
+the status quo by taking the crucial next step: the development of scalable, psychometrically sound measures of
+discourse skills that can be used to assess between-group differences as well as within-individual change over
+time. The proposed research is significant because it is expected to result in viable spoken language outcome
+measures for children with a range of neurodevelopmental disorders, making it possible to target and
+meaningfully measure improvements in clinical trials and behavioral interventions. Ultimately, the successful
+completion of this study will provide the immediate ability to scale up treatment evaluations involving
+measurement of spoken language use, allowing flexible data collection across sites and studies, and in the
+future provide new targets for to-be-developed behavioral and pharmacological interventions.",10132284,R01DC012033,['R01DC012033'],DC,https://reporter.nih.gov/project-details/10132284,R01,2021,576876
+"PROJECT SUMMARY
+Asthma, the most common chronic disease among children, is one of the five most burdensome diseases in the
+US. While current care and research efforts focus on symptom control and exacerbation risk, children with asthma
+may suffer from infectious and inflammatory diseases, ie, asthma-associated infectious and inflammatory disease
+comorbidities (AIICs) (eg, pneumococcal disease, herpes zoster, appendicitis, and celiac disease). Although AIICs
+pose serious threats to children with asthma, they are largely under-recognized, as evidenced by diabetes mellitus
+being widely recognized but a less common chronic illness with a magnitude similar to that for asthma. Presently,
+the mechanisms underlying AIICs are unknown. We postulate immunosenescence might be related, as AIICs
+coincide with cardinal immunosenescence features. AIICs are not clinically defined and a suitable tool has not been
+developed to identify children with AIICs. Thus, no strategies mitigating AIICs risks and outcomes exist.
+Addressing these knowledge gaps depends upon two key questions: (1) “How can asthmatic children subgroups
+with increased AIICs risk be identified at a population level using electronic medical records?” and (2) “What
+immune parameters characterize such children?” Answering these is this proposal's primary goal. To this end, our
+current R01 study successfully developed, validated, and implemented natural language processing (NLP)-
+empowered computational phenotyping algorithms for two existing criteria for childhood asthma (Predetermined
+Asthma Criteria, PAC and Asthma Predictive Index, API). NLP-empowered algorithm application to the 1997-2007
+Olmsted County Birth Cohort (OCBC) enabled us to profile a subgroup of children with asthma at increased AIICs
+risk, disproportionately represented by children who met both NLP-PAC and NLP-API.
+Our new pilot data suggest
+asthma potentially accelerates immunosenescence leading to AIICs in a subgroup of asthmatic children.
+In this renewal proposal, we target this subgroup who meet both NLP-PAC and NLP-API. We will develop and
+apply NLP-empowered computational phenotyping algorithms for AIICs to identify such children at a population
+level, then characterize their immune parameters measuring immunosenescence. In Aim 1, we will develop new
+NLP-empowered computational phenotyping algorithms for recognized and unrecognized AIICs (NLP-AIIC) for
+children enrolled in Mayo Clinic `s 1997-2016 OCBC,
+then assess portability of NLP-AIIC at Sanford Children's
+Hospital, Sioux Falls, SD
+. In Aim 2, we will identify and characterize children with AIICs through new NLP-AIIC and
+NLP algorithms for asthma status, by utilizing clinical and immune parameters to measure immunosenescence. In
+Aim 3, we will assess changes (eg, waning adaptive immunity) over time in immune parameters measuring
+immunosenescence for 300 children in our R01 study, re-enrolling them for further characterization.
+This proposed study is indispensable to understanding why some children with asthma develop AIICs, while others
+do not. This knowledge will allow us to identify, manage, mitigate, and improve outcomes for AIICs among children. Address;Adult;Algorithms;Antigens;Appendicitis;Asthma;Autoimmune Diseases;Birth;CD3 Antigens;Caregivers;Caring;Celiac Disease;Cell Cycle;Centers for Disease Control and Prevention (U.S.);Characteristics;Child;Childhood Asthma;Chronic Disease;Clinic;Clinical;Clinical Research;Cohort Studies;Communicable Diseases;Computerized Medical Record;County;Cross-Sectional Studies;Data;Development;Diabetes Mellitus;Disease;Early identification;Enrollment;Family history of;Future;Goals;Health;Herpes zoster disease;Immune;Immunity;Impairment;Infection;Inflammatory;Knowledge;Longitudinal Studies;Measurement;Measures;Memory;Natural Immunity;Natural Language Processing;Outcome;Patient-Focused Outcomes;Patients;Pediatric Hospitals;Phenotype;Pneumococcal Infections;Pneumococcal Pneumonia;Pneumonia;Population;Population Surveillance;Records;Reproducibility;Research;Research Design;Research Personnel;Respiratory Tract Infections;Rheumatoid Arthritis;Risk;Risk Factors;Sampling;Sioux Falls;Site;Subgroup;Symptoms;T-Lymphocyte;Time;Time Management;United States;Work;adaptive immunity;asthmatic;base;cohort;comorbidity;cost;empowered;immunosenescence;improved;improved outcome;indexing;inhibitor/antagonist;meetings;phenotyping algorithm;portability;prevent;pulmonary function;respiratory;response;senescence;tool Identification and characterization of children with asthma-associated comorbidities through computational and immune phenotyping","PROJECT SUMMARY
+Asthma, the most common chronic disease among children, is one of the five most burdensome diseases in the
+US. While current care and research efforts focus on symptom control and exacerbation risk, children with asthma
+may suffer from infectious and inflammatory diseases, ie, asthma-associated infectious and inflammatory disease
+comorbidities (AIICs) (eg, pneumococcal disease, herpes zoster, appendicitis, and celiac disease). Although AIICs
+pose serious threats to children with asthma, they are largely under-recognized, as evidenced by diabetes mellitus
+being widely recognized but a less common chronic illness with a magnitude similar to that for asthma. Presently,
+the mechanisms underlying AIICs are unknown. We postulate immunosenescence might be related, as AIICs
+coincide with cardinal immunosenescence features. AIICs are not clinically defined and a suitable tool has not been
+developed to identify children with AIICs. Thus, no strategies mitigating AIICs risks and outcomes exist.
+Addressing these knowledge gaps depends upon two key questions: (1) “How can asthmatic children subgroups
+with increased AIICs risk be identified at a population level using electronic medical records?” and (2) “What
+immune parameters characterize such children?” Answering these is this proposal's primary goal. To this end, our
+current R01 study successfully developed, validated, and implemented natural language processing (NLP)-
+empowered computational phenotyping algorithms for two existing criteria for childhood asthma (Predetermined
+Asthma Criteria, PAC and Asthma Predictive Index, API). NLP-empowered algorithm application to the 1997-2007
+Olmsted County Birth Cohort (OCBC) enabled us to profile a subgroup of children with asthma at increased AIICs
+risk, disproportionately represented by children who met both NLP-PAC and NLP-API.
+Our new pilot data suggest
+asthma potentially accelerates immunosenescence leading to AIICs in a subgroup of asthmatic children.
+In this renewal proposal, we target this subgroup who meet both NLP-PAC and NLP-API. We will develop and
+apply NLP-empowered computational phenotyping algorithms for AIICs to identify such children at a population
+level, then characterize their immune parameters measuring immunosenescence. In Aim 1, we will develop new
+NLP-empowered computational phenotyping algorithms for recognized and unrecognized AIICs (NLP-AIIC) for
+children enrolled in Mayo Clinic `s 1997-2016 OCBC,
+then assess portability of NLP-AIIC at Sanford Children's
+Hospital, Sioux Falls, SD
+. In Aim 2, we will identify and characterize children with AIICs through new NLP-AIIC and
+NLP algorithms for asthma status, by utilizing clinical and immune parameters to measure immunosenescence. In
+Aim 3, we will assess changes (eg, waning adaptive immunity) over time in immune parameters measuring
+immunosenescence for 300 children in our R01 study, re-enrolling them for further characterization.
+This proposed study is indispensable to understanding why some children with asthma develop AIICs, while others
+do not. This knowledge will allow us to identify, manage, mitigate, and improve outcomes for AIICs among children.",10106650,R01HL126667,['R01HL126667'],HL,https://reporter.nih.gov/project-details/10106650,R01,2021,793451
+"PROJECT SUMMARY
+ Primary language impairment (PLI) begins early in life and affects 6-8% of children. Language intervention
+is maximally effective the earlier it is delivered. However, normative variation in language acquisition across
+toddlerhood (here, 24-36 months) contributes to a high rate of false positives, impeding accurate identification
+of PLI prior to late preschool age. The proposed study introduces a novel, theoretically- grounded,
+neurodevelopmental framework designed to generate a sensitive and specific model of toddler PLI
+risk. Innovations introduced in this developmentally-sensitive, translational approach include: (1) a
+developmental precursor model using state-of-the-art methods to characterize multiple features and growth
+patterns of toddler emergent language patterns, within a large community sample; (2) incorporating EEG/ERP
+neural biomarkers of language and transactional synchrony into PLI predictive models; and (3) considering
+emergent mental health risk. Mental health risk is captured via multi-method measures of irritability, a
+developmentally meaningful marker of risk for internalizing and externalizing problems that are common
+correlates of PLI. The proposed When to Worry about Language Study (W2W-L) will capitalize on the
+team's existed funded study of 350 infants (50% irritable and 50% non irritable) (R01MH107652, Wakschlag,
+PI) and enrich it via recruitment of a new sub-sample of 200 late talking toddlers. This will yield a large and
+diverse sample of 550 24 month olds, followed to age 54 months (when PLI can be reliably evaluated). The
+key predictor will be toddler emergent language patterns measured via language skill, language processing,
+and corollary neural biomarkers. The central outcome is primary language impairment (PLI) status at
+preschool age, assessed via clinical gold standard measures. Key risk modifiers are distal and proximal
+features of the transactional language environment, and longitudinal patterns of irritability.
+ SPECIFIC AIMS: Aim 1. Specify the contribution of language skills, processing, neural biomarkers, and
+their growth to early PLI prediction. Hypotheses: 1a. Language skills, processing, and neural biomarkers will
+each contribute incrementally to PLI prediction. 1b. Considering longitudinal patterns will enhance prediction.
+Aim 2. Identify the distal risk- and proximal protective- features of the transactional language environment that
+provide greatest explanatory power for individual differences in PLI. Hypothesis 2: Family history and poor
+parental language ability will increase PLI risk, and features of parental input, and behavioral and neural
+synchrony will decrease PLI risk. Aim 3. Examine the mutual influences of toddler irritability, proximal language
+environment, and emergent language patterns on PLI pathways. Hypothesis 3: A model specifying these
+reciprocal influences over time will sharpen PLI prediction beyond variance explained by their individual
+influences. Aim 4. Evaluate feasibility of a clinical algorithm for earlier PLI risk identification. We will use
+machine learning approaches to generate a sensitive/specific, feasible clinical model building on Aims 1-3. Accounting;Affect;Age;Agreement;Algorithms;Behavioral;Biological Markers;Brain;Characteristics;Child;Child Behavior;Classification;Clinical;Communities;Development;Distal;Early Intervention;Education;Electroencephalography;Environment;Family;Family history of;Funding;Goals;Gold;Growth;Health;Heterogeneity;Impairment;Individual;Individual Differences;Infant;Infrastructure;Intervention;Joints;Language;Language Delays;Language Development;Language Disorders;Life;Machine Learning;Measurement;Measures;Mental Health;Methods;Modeling;Neuronal Plasticity;Nursery Schools;Outcome;Parents;Pathway interactions;Pattern;Productivity;Public Health;Recording of previous events;Resources;Risk;Risk Marker;Role;Sampling;Shapes;Specific qualifier value;Standardization;Syndrome;Time;Toddler;Variant;Vocabulary;Work;base;brain behavior;cohort;design;experience;high risk;improved;individual variation;innovation;language impairment;language processing;model building;novel;predictive modeling;prevent;primary outcome;recruit;relating to nervous system;skills;social;standard measure;translational approach;visual tracking The When to Worry about Language Study (W2W-L): Joint consideration of developmental patterning and neural substrates for enhancing earlyidentification of language impairment","PROJECT SUMMARY
+ Primary language impairment (PLI) begins early in life and affects 6-8% of children. Language intervention
+is maximally effective the earlier it is delivered. However, normative variation in language acquisition across
+toddlerhood (here, 24-36 months) contributes to a high rate of false positives, impeding accurate identification
+of PLI prior to late preschool age. The proposed study introduces a novel, theoretically- grounded,
+neurodevelopmental framework designed to generate a sensitive and specific model of toddler PLI
+risk. Innovations introduced in this developmentally-sensitive, translational approach include: (1) a
+developmental precursor model using state-of-the-art methods to characterize multiple features and growth
+patterns of toddler emergent language patterns, within a large community sample; (2) incorporating EEG/ERP
+neural biomarkers of language and transactional synchrony into PLI predictive models; and (3) considering
+emergent mental health risk. Mental health risk is captured via multi-method measures of irritability, a
+developmentally meaningful marker of risk for internalizing and externalizing problems that are common
+correlates of PLI. The proposed When to Worry about Language Study (W2W-L) will capitalize on the
+team's existed funded study of 350 infants (50% irritable and 50% non irritable) (R01MH107652, Wakschlag,
+PI) and enrich it via recruitment of a new sub-sample of 200 late talking toddlers. This will yield a large and
+diverse sample of 550 24 month olds, followed to age 54 months (when PLI can be reliably evaluated). The
+key predictor will be toddler emergent language patterns measured via language skill, language processing,
+and corollary neural biomarkers. The central outcome is primary language impairment (PLI) status at
+preschool age, assessed via clinical gold standard measures. Key risk modifiers are distal and proximal
+features of the transactional language environment, and longitudinal patterns of irritability.
+ SPECIFIC AIMS: Aim 1. Specify the contribution of language skills, processing, neural biomarkers, and
+their growth to early PLI prediction. Hypotheses: 1a. Language skills, processing, and neural biomarkers will
+each contribute incrementally to PLI prediction. 1b. Considering longitudinal patterns will enhance prediction.
+Aim 2. Identify the distal risk- and proximal protective- features of the transactional language environment that
+provide greatest explanatory power for individual differences in PLI. Hypothesis 2: Family history and poor
+parental language ability will increase PLI risk, and features of parental input, and behavioral and neural
+synchrony will decrease PLI risk. Aim 3. Examine the mutual influences of toddler irritability, proximal language
+environment, and emergent language patterns on PLI pathways. Hypothesis 3: A model specifying these
+reciprocal influences over time will sharpen PLI prediction beyond variance explained by their individual
+influences. Aim 4. Evaluate feasibility of a clinical algorithm for earlier PLI risk identification. We will use
+machine learning approaches to generate a sensitive/specific, feasible clinical model building on Aims 1-3.",10105196,R01DC016273,['R01DC016273'],DC,https://reporter.nih.gov/project-details/10105196,R01,2021,653332

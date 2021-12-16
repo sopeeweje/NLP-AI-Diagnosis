@@ -1,0 +1,398 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"This grant proposal is focused on developing new mathematical and
+ statistical models to describe biological systems. Models to represent,
+ help to understand, predict future behavior, and control biological
+ systems are becoming more and more important and of widespread use in
+ different fields related to biology and health care. Complex mathematical
+ models are needed to model the complicated interactions between the
+ physiological functions of biological systems, and to model the effect of
+ interventions (e.g. therapy) on these functions. The specific aims of this
+ grant focus on three areas of research. 1. Develop and investigate
+ statistical models for biological population data. Biological data are
+ always collected from some population of different individuals, and are
+ often highly variable. This is mostly due to variability of physiological
+ functions between individuals, and to measurement error. Statistical
+ models are needed to deal with the complex structure of population data. I
+ will (I) introduce a general methodology based on the use of sophisticated
+ heteroscedastic statistical models, which does not explicitly formulate a
+ model for interindividual variability but promises to be fast, efficient
+ and unbiased; and (ii) investigate the performance of existing population
+ models using realistic simulations including model misspecification. 2.
+ Develop semi-mechanistic compartmental models. I focus on three main
+ problems: (i) the development and investigation a new general class of
+ compartmental pharmacokinetics""'pharmacodynamic (PK/PD) models, (ii) the
+ development of semi-mechanistic black-box compartmental models to deal
+ with non-linear PK systems, (iii) the development of the technology to
+ apply well established semi-mechanistic linear black-box models to the
+ purpose of PK control. 3. Develop new multivariate dynamic models. The
+ main problem addressed is how to represent a system where multiple inputs
+ (drugs) and multiple interrelated responses are measured. I propose
+ different classes of models to do so based on spline networks and
+ eventually neural networks. The proposed models can incorporate a
+ compartmental sub-structure to easily deal with kinetics. Continuous and
+ discrete time versions of the models are considered. The statistical and
+ mathematical models introduced in the grant have widespread application to
+ a variety of biological fields. However specific areas, directly linked to
+ health care issues, are selected for active research and application of
+ the proposed models. These areas correspond to experimental situations
+ where the models proposed in the grant are particularly needed (nonlinear
+ and multivariate dynamic), and represent continuations of already
+ established collaborations with leading scientists. They include: computer
+ control of ultra-short acting anaesthetic drugs administration,
+ pharmacokinetics/pharmacodynamic of short-acting anesthetics,
+ pharmacodynamic of nicotine and nicotine tolerance development, adenosine
+ kinetics and metabolism and their relationship to adenosine
+ pharmacodynamic effects, modeling of cardiovascular drugs effects on
+ pharmacy dynamic responses (heart rate, blood pressure, and breathing
+ variability) sampled at high rates.
+ adenosine; anesthetics; artificial intelligence; blood pressure; cardiovascular agents; computer simulation; drug tolerance; heart rate; model design /development; neurotransmitter metabolism; nicotine; pharmacokinetics; pulmonary respiration MODELS FOR BIOLOGICAL DATA RELEVANT TO HEALTH CARE","This grant proposal is focused on developing new mathematical and
+ statistical models to describe biological systems. Models to represent,
+ help to understand, predict future behavior, and control biological
+ systems are becoming more and more important and of widespread use in
+ different fields related to biology and health care. Complex mathematical
+ models are needed to model the complicated interactions between the
+ physiological functions of biological systems, and to model the effect of
+ interventions (e.g. therapy) on these functions. The specific aims of this
+ grant focus on three areas of research. 1. Develop and investigate
+ statistical models for biological population data. Biological data are
+ always collected from some population of different individuals, and are
+ often highly variable. This is mostly due to variability of physiological
+ functions between individuals, and to measurement error. Statistical
+ models are needed to deal with the complex structure of population data. I
+ will (I) introduce a general methodology based on the use of sophisticated
+ heteroscedastic statistical models, which does not explicitly formulate a
+ model for interindividual variability but promises to be fast, efficient
+ and unbiased; and (ii) investigate the performance of existing population
+ models using realistic simulations including model misspecification. 2.
+ Develop semi-mechanistic compartmental models. I focus on three main
+ problems: (i) the development and investigation a new general class of
+ compartmental pharmacokinetics""'pharmacodynamic (PK/PD) models, (ii) the
+ development of semi-mechanistic black-box compartmental models to deal
+ with non-linear PK systems, (iii) the development of the technology to
+ apply well established semi-mechanistic linear black-box models to the
+ purpose of PK control. 3. Develop new multivariate dynamic models. The
+ main problem addressed is how to represent a system where multiple inputs
+ (drugs) and multiple interrelated responses are measured. I propose
+ different classes of models to do so based on spline networks and
+ eventually neural networks. The proposed models can incorporate a
+ compartmental sub-structure to easily deal with kinetics. Continuous and
+ discrete time versions of the models are considered. The statistical and
+ mathematical models introduced in the grant have widespread application to
+ a variety of biological fields. However specific areas, directly linked to
+ health care issues, are selected for active research and application of
+ the proposed models. These areas correspond to experimental situations
+ where the models proposed in the grant are particularly needed (nonlinear
+ and multivariate dynamic), and represent continuations of already
+ established collaborations with leading scientists. They include: computer
+ control of ultra-short acting anaesthetic drugs administration,
+ pharmacokinetics/pharmacodynamic of short-acting anesthetics,
+ pharmacodynamic of nicotine and nicotine tolerance development, adenosine
+ kinetics and metabolism and their relationship to adenosine
+ pharmacodynamic effects, modeling of cardiovascular drugs effects on
+ pharmacy dynamic responses (heart rate, blood pressure, and breathing
+ variability) sampled at high rates.
+",2189554,R29GM051197,['R29GM051197'],GM,https://reporter.nih.gov/project-details/2189554,R29,1995,94225,0.4314778001261536
+"We will continue our development of methods for recognizing and                 
+representing functional domains in biological sequences.  This                  
+includes methods to identify regulatory sites in DNA starting                   
+from unaligned sequences, and to develop models that will allow                 
+new sites to be accurately predicted.  This will involve the                    
+adoption of better statistical models so that the most                          
+significant alignments can be more readily obtained.  We will                   
+also develop improved methods for recognizing functional motifs                 
+in RNA sequences that are composed of both sequence and                         
+structure.  These methods will be useful for identifying                        
+regulatory domains that operate post-transcriptionally, and also                
+for determining the common motifs in RNAs selected in vitro for                 
+particular activities.  And we will further enhance methods for                 
+representing conserved domains in protein families that new                     
+members of the families can be identified more reliably.  This                  
+will involve the use of neural network methods that optimize the                
+discrimination of protein family members from other sequences in                
+the database that are not members of the family.                                
+                                                                                
+We will also continue several collaborations with biologists who                
+can take advantage of our methods in their work, and develop new                
+collaborations as opportunities arise.                                          
+ DNA; RNA; artificial intelligence; biomedical automation; computer assisted sequence analysis; computer system design /evaluation; nucleic acid sequence; protein sequence DNA PATTERN IDENTIFICATION AND ANALYSIS","We will continue our development of methods for recognizing and                 
+representing functional domains in biological sequences.  This                  
+includes methods to identify regulatory sites in DNA starting                   
+from unaligned sequences, and to develop models that will allow                 
+new sites to be accurately predicted.  This will involve the                    
+adoption of better statistical models so that the most                          
+significant alignments can be more readily obtained.  We will                   
+also develop improved methods for recognizing functional motifs                 
+in RNA sequences that are composed of both sequence and                         
+structure.  These methods will be useful for identifying                        
+regulatory domains that operate post-transcriptionally, and also                
+for determining the common motifs in RNAs selected in vitro for                 
+particular activities.  And we will further enhance methods for                 
+representing conserved domains in protein families that new                     
+members of the families can be identified more reliably.  This                  
+will involve the use of neural network methods that optimize the                
+discrimination of protein family members from other sequences in                
+the database that are not members of the family.                                
+                                                                                
+We will also continue several collaborations with biologists who                
+can take advantage of our methods in their work, and develop new                
+collaborations as opportunities arise.                                          
+",2394730,R01HG000249,['R01HG000249'],HG,https://reporter.nih.gov/project-details/2394730,R01,1997,172236,0.8555640541362733
+"Stuttering is a disorder of speech with a prevalence estimated to be 1 %        
+of the world's population of school-age children. It is often a                 
+significant communicative problem for the individual, limiting educational      
+and employment opportunities and social and psychological adjustment. The       
+etiology of stuttering is unknown, and standardized, successful treatments      
+for stuttering have not been developed. A major impediment to                   
+understanding the etiology of stuttering and to the development of              
+successful therapeutic techniques is the lack of understanding of the           
+physiological bases of the disorder. Stuttering manifests itself as a           
+breakdown in speech motor processes. The complex variables known to affect      
+the occurrence of stuttering, such as emotional state or linguistic             
+complexity, must ultimately have an effect on the physiological events          
+necessary for the production of speech. Therefore, to understand                
+stuttering it is essential to understand the physiological mechanisms           
+underlying disruptions of speech motor processes in stuttering.                 
+                                                                                
+The research proposed in the present application addresses this general         
+question: What is the nature of the movement disorder associated with           
+stuttering? The specific aims are (1) to determine whether motor processes      
+show evidence of continuous, underlying disturbances in stutterers'             
+speech, (2) to assess whether failures in speech movement control in            
+stuttering are related to autonomic nervous system activity and/or to           
+metabolic respiratory control, (3) to develop new metrics for the analysis      
+of physiological signals related to speech and to apply these new metrics       
+to the assessment of stuttering, and (4) to develop pattern recognition         
+algorithms to determine if there is a consistent set of physiological           
+events associated with stuttering. The results of the proposed studies and      
+those completed in the past years of this project should help us to             
+understand the complex human behavior that is stuttering. In addition,          
+work on this project has significant implications for the study of normal       
+speech production and a variety of motor speech disorders that occur in         
+neurologically impaired individuals.                                            
+ artificial intelligence; behavioral /social science research tag; biomechanics; blood volume; electromyography; facial muscles; galvanic skin response; heart rate; human subject; jaw movement; lip; mathematical model; muscle function; neuromuscular disorder; neuromuscular function; plethysmography; psychological stressor; psychomotor function; pulmonary respiration; reading; speech; speech disorder diagnosis; stress; stuttering; sympathetic nervous system; tremor PHYSIOLOGICAL CORRELATES OF STUTTERING","Stuttering is a disorder of speech with a prevalence estimated to be 1 %        
+of the world's population of school-age children. It is often a                 
+significant communicative problem for the individual, limiting educational      
+and employment opportunities and social and psychological adjustment. The       
+etiology of stuttering is unknown, and standardized, successful treatments      
+for stuttering have not been developed. A major impediment to                   
+understanding the etiology of stuttering and to the development of              
+successful therapeutic techniques is the lack of understanding of the           
+physiological bases of the disorder. Stuttering manifests itself as a           
+breakdown in speech motor processes. The complex variables known to affect      
+the occurrence of stuttering, such as emotional state or linguistic             
+complexity, must ultimately have an effect on the physiological events          
+necessary for the production of speech. Therefore, to understand                
+stuttering it is essential to understand the physiological mechanisms           
+underlying disruptions of speech motor processes in stuttering.                 
+                                                                                
+The research proposed in the present application addresses this general         
+question: What is the nature of the movement disorder associated with           
+stuttering? The specific aims are (1) to determine whether motor processes      
+show evidence of continuous, underlying disturbances in stutterers'             
+speech, (2) to assess whether failures in speech movement control in            
+stuttering are related to autonomic nervous system activity and/or to           
+metabolic respiratory control, (3) to develop new metrics for the analysis      
+of physiological signals related to speech and to apply these new metrics       
+to the assessment of stuttering, and (4) to develop pattern recognition         
+algorithms to determine if there is a consistent set of physiological           
+events associated with stuttering. The results of the proposed studies and      
+those completed in the past years of this project should help us to             
+understand the complex human behavior that is stuttering. In addition,          
+work on this project has significant implications for the study of normal       
+speech production and a variety of motor speech disorders that occur in         
+neurologically impaired individuals.                                            
+",2443589,R01DC000559,['R01DC000559'],DC,https://reporter.nih.gov/project-details/2443589,R01,1997,189757,0.8022326176723898
+"Telemammography requires high spatial resolution, the transfer of large         
+image files and rapid lossless transmission of images.  Current                 
+teleradiology techniques fail to meet these requirements.  A novel              
+approach addressing these difficulties, involving robotic control of            
+image acquisition, optical magnification and unique transmission                
+strategies licensed from BellSouth Telecommunications, is proposed.             
+Phase I goals include prototype development, software design and                
+testing, objective characterization of the system and subjective system         
+evaluation by a board certified radiologist.  Following completion of           
+Phase I, a Phase II application will be filed.  Phase II will include           
+optimization of system configuration, extensive testing and evaluation,         
+both in-house and by consulting radiologists, culminating in clinical           
+trials at a minimum of three sites.  Following this we expect to file for       
+FDA clearance of the device.  This research should result in affordable,        
+high resolution telemammography system that will provide better                 
+service to remote locations.  With this system, even remote locations           
+could have access to expertise and rapid diagnosis, affording women             
+better care in a stressful time.  This novel approach will have                 
+application to all of teleradiology, especially those specialties requiring     
+a high spatial resolution.                                                      
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  The proposed project will result              
+in a telemammography system that allows re-acquisition of high spatial          
+resolution images by a remote radiologist via a roboticly controlled X-         
+ray viewer. This system will allow transmission of high quality                 
+mammographic images from a center to a remote physician or form a               
+remote hospital or clinic to a center for a more rapid referral and/or          
+diagnosis. This improved affordable system for the transmission of              
+radiologic images will have application to teleradiology in general.            
+ artificial intelligence; biomedical equipment development; charge coupled device camera; clinical biomedical equipment; computer program /software; computer system design /evaluation; computer system hardware; digital imaging; human data; image enhancement; mammography; phantom model; robotics; telemetry HIGH RESOLUTION ROBOTIC TELEMAMMOGRAPHY SYSTEM","Telemammography requires high spatial resolution, the transfer of large         
+image files and rapid lossless transmission of images.  Current                 
+teleradiology techniques fail to meet these requirements.  A novel              
+approach addressing these difficulties, involving robotic control of            
+image acquisition, optical magnification and unique transmission                
+strategies licensed from BellSouth Telecommunications, is proposed.             
+Phase I goals include prototype development, software design and                
+testing, objective characterization of the system and subjective system         
+evaluation by a board certified radiologist.  Following completion of           
+Phase I, a Phase II application will be filed.  Phase II will include           
+optimization of system configuration, extensive testing and evaluation,         
+both in-house and by consulting radiologists, culminating in clinical           
+trials at a minimum of three sites.  Following this we expect to file for       
+FDA clearance of the device.  This research should result in affordable,        
+high resolution telemammography system that will provide better                 
+service to remote locations.  With this system, even remote locations           
+could have access to expertise and rapid diagnosis, affording women             
+better care in a stressful time.  This novel approach will have                 
+application to all of teleradiology, especially those specialties requiring     
+a high spatial resolution.                                                      
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  The proposed project will result              
+in a telemammography system that allows re-acquisition of high spatial          
+resolution images by a remote radiologist via a roboticly controlled X-         
+ray viewer. This system will allow transmission of high quality                 
+mammographic images from a center to a remote physician or form a               
+remote hospital or clinic to a center for a more rapid referral and/or          
+diagnosis. This improved affordable system for the transmission of              
+radiologic images will have application to teleradiology in general.            
+",2422962,R43CA075766,['R43CA075766'],CA,https://reporter.nih.gov/project-details/2422962,R43,1997,93620,0.8555640541362733
+"DESCRIPTION (Adapted from applicant's abstract): The goal of this               
+project is to design and develop a lightweight portable headset device          
+capable of recording EEG in human subjects to provide feedback                  
+reflecting the onset of drowsiness during their normal daily                    
+activities.  The Drowsiness Monitoring Device (DMD) will incorporate            
+an existing hybrid amplifier design to acquire high quality ambulatory          
+EEG signals.  An optional battery powered solid state digital recorder          
+will provide ambulatory EEG recordings for off-line data reduction and          
+analysis.  In Phase I, data collection from 20 subjects will be used            
+to develop computer algorithms to reject artifact and identify EEG              
+indices of drowsiness in real time.  The amplifiers will be redesigned          
+to reduce power consumption, and include on-line calibration and                
+impedance monitoring and specifications will be outlined for digital            
+signal processing hardware.  Phase II will focus on constructing an             
+easy to use headset device including: an electrode placement                    
+mechanism, automatic diagnostic software and an auditory feedback               
+system triggered by the detection of drowsiness in the EEG in real              
+time.  The complete system will be validated on a cross section of              
+normal ambulatory subjects in their work environments.  The final               
+product is intended to prevent accidents caused by individuals whose            
+occupations require sustained periods of vigilance (e.g.  pilots, truck         
+drivers etc.) and to assist those suffering from sleep disorders.               
+ artificial intelligence; attention; biomedical equipment development; clinical biomedical equipment; computer data analysis; computer program /software; computer system design /evaluation; computer system hardware; electroencephalography; human subject; patient monitoring device; sleep; wakefulness PORTABLE SELF APPLYING DROWSINESS DETECTION DEVICE","DESCRIPTION (Adapted from applicant's abstract): The goal of this               
+project is to design and develop a lightweight portable headset device          
+capable of recording EEG in human subjects to provide feedback                  
+reflecting the onset of drowsiness during their normal daily                    
+activities.  The Drowsiness Monitoring Device (DMD) will incorporate            
+an existing hybrid amplifier design to acquire high quality ambulatory          
+EEG signals.  An optional battery powered solid state digital recorder          
+will provide ambulatory EEG recordings for off-line data reduction and          
+analysis.  In Phase I, data collection from 20 subjects will be used            
+to develop computer algorithms to reject artifact and identify EEG              
+indices of drowsiness in real time.  The amplifiers will be redesigned          
+to reduce power consumption, and include on-line calibration and                
+impedance monitoring and specifications will be outlined for digital            
+signal processing hardware.  Phase II will focus on constructing an             
+easy to use headset device including: an electrode placement                    
+mechanism, automatic diagnostic software and an auditory feedback               
+system triggered by the detection of drowsiness in the EEG in real              
+time.  The complete system will be validated on a cross section of              
+normal ambulatory subjects in their work environments.  The final               
+product is intended to prevent accidents caused by individuals whose            
+occupations require sustained periods of vigilance (e.g.  pilots, truck         
+drivers etc.) and to assist those suffering from sleep disorders.               
+",2038385,R43NS035387,['R43NS035387'],NS,https://reporter.nih.gov/project-details/2038385,R43,1997,99400,0.8022326176723898
+"DESCRIPTION (Adapted from applicant's abstract):  Visuomotor integration        
+depends on a remarkable coherence among a number of interrelated                
+subprocesses such as pattern recognition, pattern discrimination, decision      
+to move, and guidance of movement.  The brain is able to integrate these        
+elementary cognitive processes by coordinating the activities of diverse        
+neural structures in the face of continuously varying processing demands.       
+The question of how this coordination operates is central to understanding      
+the neural basis of visuomotor function.  This proposal aims to develop new     
+analytical tools to investigate the coordinated activity of distributed         
+neuronal ensembles in the cerebral cortex of humans and non-human primates      
+performing simple visuomotor tasks.  It is motivated by recent theoretical      
+developments (Bressler 1994, 1995, 1996, and 1997) predicting a general         
+cortical mechanism allowing the flexible large-scale functional coordination    
+of interacting neuronal ensembles.  Hypotheses concerning this mechanism        
+will be tested by analysis of field potential data recorded at NIMH from        
+macaque monkeys performing a visuomotor pattern recognition task.  The          
+challenge is to develop and test new analytic approaches that characterize      
+the multiple, complex interactions of large-scale distributed cortical          
+networks.  Earlier analysis of a small portion of this NIMH data set,           
+reported in Nature in 1993, revealed shifting patterns of multi-site            
+cortical synchronization during visuomotor processing, and implicated           
+synchronization in the formation of functional relations within and between     
+cortical areas.  Standard pairwise techniques were employed to measure          
+synchronization between field potential signals.  Here, novel methods of        
+time-series analysis are proposed that go beyond the simple detection of        
+network interactions.  Advances in signal processing technology will be         
+utilized to also derive multi-site interaction patterns, to analyze the         
+dependencies of functional relations on particular groups of neurons, and to    
+measure the flow of information between cortical regions.  This                 
+collaborative project will draw on the complementary strengths of Drs.          
+Bressler and Ding.  Dr. Bressler brings to the project over 15 years of         
+experience in cognitive neuroscience, with expertise in the recording and       
+analysis of neuroelectric data from humans to animals.  He will provide         
+theoretical oversight and the application of analytic tools to the field        
+potential data set.  Dr. Ding, although relatively new to cognitive             
+neuroscience, has over 10 years of experience in linear and nonlinear           
+dynamical systems analysis.  He will provide the development of new             
+analytical methods from a comprehensive dynamical systems perspective.  This    
+work is expected to (1) produce new insights into the dynamics of cortical      
+information flow in visual perception and motor performance, (2) make           
+available new digital signal processing tools for the investigation of large    
+scale neural systems underlying other cognitive functions and, (3) provide a    
+fresh perspective on the design of complex architectures for the execution      
+of cognitive tasks by artificial neural network systems.                        
+ Macaca; analytical method; body movement; cerebral cortex; cognition; computer data analysis; computer program /software; computer system design /evaluation; electrodes; evoked potentials; human subject; mathematical model; motor cortex; neural information processing; neurophysiology; visual cortex; visual perception; visual stimulus ADVANCED TECHNIQUES FOR ANALYZING CORITCAL DYNAMICS","DESCRIPTION (Adapted from applicant's abstract):  Visuomotor integration        
+depends on a remarkable coherence among a number of interrelated                
+subprocesses such as pattern recognition, pattern discrimination, decision      
+to move, and guidance of movement.  The brain is able to integrate these        
+elementary cognitive processes by coordinating the activities of diverse        
+neural structures in the face of continuously varying processing demands.       
+The question of how this coordination operates is central to understanding      
+the neural basis of visuomotor function.  This proposal aims to develop new     
+analytical tools to investigate the coordinated activity of distributed         
+neuronal ensembles in the cerebral cortex of humans and non-human primates      
+performing simple visuomotor tasks.  It is motivated by recent theoretical      
+developments (Bressler 1994, 1995, 1996, and 1997) predicting a general         
+cortical mechanism allowing the flexible large-scale functional coordination    
+of interacting neuronal ensembles.  Hypotheses concerning this mechanism        
+will be tested by analysis of field potential data recorded at NIMH from        
+macaque monkeys performing a visuomotor pattern recognition task.  The          
+challenge is to develop and test new analytic approaches that characterize      
+the multiple, complex interactions of large-scale distributed cortical          
+networks.  Earlier analysis of a small portion of this NIMH data set,           
+reported in Nature in 1993, revealed shifting patterns of multi-site            
+cortical synchronization during visuomotor processing, and implicated           
+synchronization in the formation of functional relations within and between     
+cortical areas.  Standard pairwise techniques were employed to measure          
+synchronization between field potential signals.  Here, novel methods of        
+time-series analysis are proposed that go beyond the simple detection of        
+network interactions.  Advances in signal processing technology will be         
+utilized to also derive multi-site interaction patterns, to analyze the         
+dependencies of functional relations on particular groups of neurons, and to    
+measure the flow of information between cortical regions.  This                 
+collaborative project will draw on the complementary strengths of Drs.          
+Bressler and Ding.  Dr. Bressler brings to the project over 15 years of         
+experience in cognitive neuroscience, with expertise in the recording and       
+analysis of neuroelectric data from humans to animals.  He will provide         
+theoretical oversight and the application of analytic tools to the field        
+potential data set.  Dr. Ding, although relatively new to cognitive             
+neuroscience, has over 10 years of experience in linear and nonlinear           
+dynamical systems analysis.  He will provide the development of new             
+analytical methods from a comprehensive dynamical systems perspective.  This    
+work is expected to (1) produce new insights into the dynamics of cortical      
+information flow in visual perception and motor performance, (2) make           
+available new digital signal processing tools for the investigation of large    
+scale neural systems underlying other cognitive functions and, (3) provide a    
+fresh perspective on the design of complex architectures for the execution      
+of cognitive tasks by artificial neural network systems.                        
+",2563487,R03MH058190,['R03MH058190'],MH,https://reporter.nih.gov/project-details/2563487,R03,1998,69250,0.8555640541362733
+"DESCRIPTION:  Stage matched interventions for stress management that are interactive and individualized, and are delivered proactively to entire populations can have unprecedented impacts.  Computer based expert systems linked to self-help manuals can be as effective as counselors but at much lower cost and greater accessibility.  Stress is an important cause of cancer and other chronic and acute diseases and is one of the most costly behaviors in terms of health care, job performance and disability.  Fifty million Americans do not practice effective stress management.  Existing programs are action-oriented and are designed for the 30% of populations who are prepared to take action.  Stage matched programs can meet the needs of all; the 45% in the Pre-contemplation stage and the 25% in the Contemplation stage.  Phase I of this Fast-Track research will demonstrate the feasibility of recruiting 70% of at-risk populations and the acceptability of the expert system interventions.  Phase II will complete recruitment of 1200 participants randomly assigned to treatment or control and can demonstrate efficacy of these interventions over six months.  Follow-up over 18 months can show increasing impact long after the intervention.  Effective and cost-effective stress management systems can be broadly disseminated with consistent quality and user friendly acceptability.  artificial intelligence; cancer prevention; clinical research; computer human interaction; computer system design /evaluation; education evaluation /planning; health education; human subject; interactive multimedia; publications; questionnaires; self help; statistics /biometry; stress management STRESS MANAGEMENT EXPERT SYSTEM FOR CANCER PREVENTION","DESCRIPTION:  Stage matched interventions for stress management that are interactive and individualized, and are delivered proactively to entire populations can have unprecedented impacts.  Computer based expert systems linked to self-help manuals can be as effective as counselors but at much lower cost and greater accessibility.  Stress is an important cause of cancer and other chronic and acute diseases and is one of the most costly behaviors in terms of health care, job performance and disability.  Fifty million Americans do not practice effective stress management.  Existing programs are action-oriented and are designed for the 30% of populations who are prepared to take action.  Stage matched programs can meet the needs of all; the 45% in the Pre-contemplation stage and the 25% in the Contemplation stage.  Phase I of this Fast-Track research will demonstrate the feasibility of recruiting 70% of at-risk populations and the acceptability of the expert system interventions.  Phase II will complete recruitment of 1200 participants randomly assigned to treatment or control and can demonstrate efficacy of these interventions over six months.  Follow-up over 18 months can show increasing impact long after the intervention.  Effective and cost-effective stress management systems can be broadly disseminated with consistent quality and user friendly acceptability. ",2869454,R44CA081948,['R44CA081948'],CA,https://reporter.nih.gov/project-details/2869454,R44,1999,99769,0.8555640541362733

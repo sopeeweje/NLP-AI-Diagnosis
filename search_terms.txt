@@ -1,27 +1,3 @@
 artificial intelligence
 machine learning
 deep learning
-supervised learning
-naive bayes
-decision tree
-random forest
-support vector machine
-K-nearest neighbor
-K-means
-singular value decomposition
-hidden markov model
-principal component analysis
-hierarchical clustering
-gaussian mixture
-reinforcement learning
-q-learning
-markov decision process
-knowledge representation
-ontology
-semantic network
-expert system
-artificial neural network
-convolutional neural network
-recurrent neural network
-long short-term memory
-natural language processing

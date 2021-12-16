@@ -1,0 +1,463 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+ abstracting; artificial intelligence; information retrieval; information systems; literature survey; online computer ONLINE REFERENCE WORKS (ORW) IN MEDICINE,,2320343,01LM083531,['N01LM083531'],LM,https://reporter.nih.gov/project-details/2320343,N01,1991,20622,0.04090658641764314
+"This renewal application for Project Years 4-6 proposes continuation of         
+the development of new computer algorithms for reasoning about time-            
+varying data from underlying causal models. The signals consist of two or       
+more channels of events, each event having several properties including         
+time of occurrence and event shape class. The models can be represented as      
+graphs in which the nodes are digital components, some of which give rise       
+to observable events. The arcs are physical connections associated with         
+time delays. The application domain is the electrocardiogram, in which the      
+P waves and QRS complexes represent two event channels, and optional            
+intracardiac recordings contribute additional channels. The P waves and         
+QRS complexes are the results of the all-or-nothing depolarization of the       
+atria and ventricles, respectively. These cardiac structures are connected      
+anatomically and functionally by a series of other structures, each             
+associated with a characteristic conduction time.                               
+                                                                                
+This application builds on the results of Project Years 1-2, in which an        
+analytic approach based on a variation of the hypothesize-and-test              
+paradigm was used with a hierarchy of models to track the events in the         
+cardiac rhythm on an event-by-event basis. The output of the system is one      
+or more complete causal explanations of the observed signal, expressed in       
+the standard clinical ladder diagram format and consisting of an                
+instantiated model and event-by-event annotation of causality based on the      
+model. When a signal admits of more than one explanatory model, each is         
+developed and displayed separately. The initial hypothesis, that a cardiac      
+arrhythmia monitor constructed using knowledge-based programming methods        
+can perform substantially better than current clinical arrhythmia               
+monitors, has largely been confirmed.                                           
+                                                                                
+The hypothesis to be tested in this proposal is that the programming            
+techniques being used not only can perform better qualitatively than do         
+current clinical arrhythmia monitors, but that they can do so at a level        
+of performance that is likely to become suitable for the clinical use.          
+This hypothesis will be tested in a trial comparing the program with            
+physicians at several levels of experience.                                     
+                                                                                
+This project is attractive for two reasons. First, it offers new                
+knowledge-based algorithms for model-based reasoning about time-varying         
+signals. This is an unsolved problem in the expert systems field. Second,       
+current cardiac arrhythmia monitors do not perform nearly as well as do         
+expert nurses, technicians, and physicians. The proposed project will           
+contribute to the development of an improved generation of arrhythmia           
+interpretation systems that should result in improved care of patients          
+with disorders of the heart rhythm, particularly in medically underserved       
+settings.                                                                       
+ arrhythmia; artificial intelligence; computer assisted diagnosis; computer assisted patient care; computer network; computer program /software; diagnosis design /evaluation; diagnosis quality /standard; electrocardiographic monitor; human subject KNOWLEDGE BASED INTERPRETATION OF CARDIAC ARRHYTHMIAS","This renewal application for Project Years 4-6 proposes continuation of         
+the development of new computer algorithms for reasoning about time-            
+varying data from underlying causal models. The signals consist of two or       
+more channels of events, each event having several properties including         
+time of occurrence and event shape class. The models can be represented as      
+graphs in which the nodes are digital components, some of which give rise       
+to observable events. The arcs are physical connections associated with         
+time delays. The application domain is the electrocardiogram, in which the      
+P waves and QRS complexes represent two event channels, and optional            
+intracardiac recordings contribute additional channels. The P waves and         
+QRS complexes are the results of the all-or-nothing depolarization of the       
+atria and ventricles, respectively. These cardiac structures are connected      
+anatomically and functionally by a series of other structures, each             
+associated with a characteristic conduction time.                               
+                                                                                
+This application builds on the results of Project Years 1-2, in which an        
+analytic approach based on a variation of the hypothesize-and-test              
+paradigm was used with a hierarchy of models to track the events in the         
+cardiac rhythm on an event-by-event basis. The output of the system is one      
+or more complete causal explanations of the observed signal, expressed in       
+the standard clinical ladder diagram format and consisting of an                
+instantiated model and event-by-event annotation of causality based on the      
+model. When a signal admits of more than one explanatory model, each is         
+developed and displayed separately. The initial hypothesis, that a cardiac      
+arrhythmia monitor constructed using knowledge-based programming methods        
+can perform substantially better than current clinical arrhythmia               
+monitors, has largely been confirmed.                                           
+                                                                                
+The hypothesis to be tested in this proposal is that the programming            
+techniques being used not only can perform better qualitatively than do         
+current clinical arrhythmia monitors, but that they can do so at a level        
+of performance that is likely to become suitable for the clinical use.          
+This hypothesis will be tested in a trial comparing the program with            
+physicians at several levels of experience.                                     
+                                                                                
+This project is attractive for two reasons. First, it offers new                
+knowledge-based algorithms for model-based reasoning about time-varying         
+signals. This is an unsolved problem in the expert systems field. Second,       
+current cardiac arrhythmia monitors do not perform nearly as well as do         
+expert nurses, technicians, and physicians. The proposed project will           
+contribute to the development of an improved generation of arrhythmia           
+interpretation systems that should result in improved care of patients          
+with disorders of the heart rhythm, particularly in medically underserved       
+settings.                                                                       
+",2546278,R01LM005530,['R01LM005530'],LM,https://reporter.nih.gov/project-details/2546278,R01,1997,1,0.19091157266026193
+"DESCRIPTION (Taken from application abstract):  Recent advances in              
+understanding neuronal functions have led to an expanded scientific interest    
+in defining the organization of the nervous system so the spatial correlates    
+of these functions can be identified.  This interest has been formalized as     
+the Human Brain Project, an ambitious multi disciplinary effort to map the      
+nervous system from the organismal to the macromolecular levels.  One of the    
+greatest challenges of this effort is to preserve the complex                   
+three-dimensional relationships that occur between neuronal structures.         
+This problem will require new methods for data acquisition as well as data      
+visualization.                                                                  
+                                                                                
+The project described here is an interdisciplinary effort to derive             
+three-dimensional reconstructions of synaptic architecture from stereo          
+electron micrographs acquired from multiple viewpoints.  The collaboration      
+combines advanced ultrastructural visualization techniques with massively       
+parallel computational methods and an innovative set of pattern recognition,    
+stereo correspondence and depth mapping algorithms.  Our goal is to             
+integrate structural information from numerous images into a single,            
+high-accuracy three-dimensional reconstruction of the synaptic cytoskeleton.    
+The immediate result of this collaboration will be an improved understanding    
+of the spatial relationships between synaptic macromolecules.  More             
+importantly, the project will produce a set of computational tools that can     
+be applied to stereo image data sets of various areas of the nervous system,    
+from the macroscopic to the molecular level.  Finally, our studies will         
+advance the state-of-the-art of parallel computation and interactive            
+reconstruction methods that can provide novel solutions to difficult            
+problems of neuroscience visualization.                                         
+ artificial intelligence; brain mapping; cell cell interaction; computational neuroscience; computer program /software; computer system design /evaluation; cytoskeleton; data collection; electron microscopy; image processing; imaging /visualization /scanning; macromolecule; method development; nerve endings; neurons; parallel processing; stereophotography; structural biology; synapses THREE DIMENSIONAL RECONSTRUCTION OF SYNAPSES","DESCRIPTION (Taken from application abstract):  Recent advances in              
+understanding neuronal functions have led to an expanded scientific interest    
+in defining the organization of the nervous system so the spatial correlates    
+of these functions can be identified.  This interest has been formalized as     
+the Human Brain Project, an ambitious multi disciplinary effort to map the      
+nervous system from the organismal to the macromolecular levels.  One of the    
+greatest challenges of this effort is to preserve the complex                   
+three-dimensional relationships that occur between neuronal structures.         
+This problem will require new methods for data acquisition as well as data      
+visualization.                                                                  
+                                                                                
+The project described here is an interdisciplinary effort to derive             
+three-dimensional reconstructions of synaptic architecture from stereo          
+electron micrographs acquired from multiple viewpoints.  The collaboration      
+combines advanced ultrastructural visualization techniques with massively       
+parallel computational methods and an innovative set of pattern recognition,    
+stereo correspondence and depth mapping algorithms.  Our goal is to             
+integrate structural information from numerous images into a single,            
+high-accuracy three-dimensional reconstruction of the synaptic cytoskeleton.    
+The immediate result of this collaboration will be an improved understanding    
+of the spatial relationships between synaptic macromolecules.  More             
+importantly, the project will produce a set of computational tools that can     
+be applied to stereo image data sets of various areas of the nervous system,    
+from the macroscopic to the molecular level.  Finally, our studies will         
+advance the state-of-the-art of parallel computation and interactive            
+reconstruction methods that can provide novel solutions to difficult            
+problems of neuroscience visualization.                                         
+",2771703,R01LM006326,['R01LM006326'],LM,https://reporter.nih.gov/project-details/2771703,R01,1998,143575,0.1765524819255989
+"The goal of the proposed research is the analysis of biological sequence        
+data to address the molecular mechanisms of evolution and the origin(s)         
+of all viruses and related genetic elements. Phylogenetic trees will            
+provide a framework for the mapping of cell and tissue tropism,                 
+pathogenicity and virulence, modes of transmission and geographical             
+distributions, and many other higher order characteristics of viruses.          
+The specific aims of proposed analytical studies are: i) determining            
+functionally equivalent networks and frequency of exchange among and            
+between retroid elements, and their potential cellular homologues,              
+including new studies on 300 retroviral env proteins; 2) inferring              
+functionally important regions of all proteins of paramyxo-, rhabdo- and        
+filoviruses, (with privileged access to new Ebola sequences), and Borna         
+Disease virus, (including potential BDV sequences from schizophrenic            
+patients); and 3) the analysis of the dUTPase gene, as a model system,          
+to address issues relevant to the structure, function and evolution of          
+duplicated sequences, and potential horizontal transfer among and between       
+host and viral genomes. The specific aims of the technical studies are:         
+i) evaluation of stochastic production model approaches for generation          
+of multiple alignments, detection of recombination, and calculation of          
+evolutionary distances; and 2) development and testing of new and               
+existing methods for historical reconstruction of functionally equivalent       
+networks.                                                                       
+                                                                                
+RNA viruses (e.g. HIV, or Ebola) are the major causative agents of human,       
+animal and plant viral diseases world wide. The heterogeneous nature of         
+RNA populations makes it difficult to develop effective, anti-viral             
+agents. The sequence database is now large enough to conduct comparative        
+studies on natural variants versus chemotherapeutically induced mutants         
+for several retroviral proteins. This model study will provide new              
+information on the nature of selected mutations which will be useful in         
+future anti-viral drug development.                                             
+                                                                                
+Computational analysis of primary sequence data is an area of intense           
+interest in biology, mathematics, statistics and systems science. In the        
+last few years new approaches to problem solving and classification, such       
+as machine learning, neural networks, genetic algorithms, and stochastic        
+production models or, ""intelligent systems"" as they are referred to             
+collectively, have become available. Unfortunately most biologists are          
+unaware of these developments. Application of these methods to real data        
+remains unexplored. The proposed studies will go a long way in rectifying       
+this gap in technological utilization. These studies will continue to           
+define important evolutionary' relationships and events, provide                
+biologically informative sequence relationships for bench-marking new           
+software, and contribute new information relevant to the structure and          
+function of viral proteins suggesting new directions in laboratory              
+experimentation. Strategies and techniques developed for the analysis of        
+highly divergent genomes can also be applied to the study of the wealth         
+of sequence information generated under the auspices of the Human Genome        
+Project.                                                                        
+ DNA directed DNA polymerase; DNA directed RNA polymerase; DNA topoisomerases; Mononegavirales; Paramyxovirus; RNA directed DNA polymerase; Rhabdoviridae; bacterial proteins; biochemical evolution; computer assisted sequence analysis; genetic recombination; integrase; method development; nuclease; protein sequence; ribonuclease III; virus DNA; virus RNA; virus protein COMPUTER-BASED SEQUENCE ANALYSIS AND RNA VIRUS EVOLUTION","The goal of the proposed research is the analysis of biological sequence        
+data to address the molecular mechanisms of evolution and the origin(s)         
+of all viruses and related genetic elements. Phylogenetic trees will            
+provide a framework for the mapping of cell and tissue tropism,                 
+pathogenicity and virulence, modes of transmission and geographical             
+distributions, and many other higher order characteristics of viruses.          
+The specific aims of proposed analytical studies are: i) determining            
+functionally equivalent networks and frequency of exchange among and            
+between retroid elements, and their potential cellular homologues,              
+including new studies on 300 retroviral env proteins; 2) inferring              
+functionally important regions of all proteins of paramyxo-, rhabdo- and        
+filoviruses, (with privileged access to new Ebola sequences), and Borna         
+Disease virus, (including potential BDV sequences from schizophrenic            
+patients); and 3) the analysis of the dUTPase gene, as a model system,          
+to address issues relevant to the structure, function and evolution of          
+duplicated sequences, and potential horizontal transfer among and between       
+host and viral genomes. The specific aims of the technical studies are:         
+i) evaluation of stochastic production model approaches for generation          
+of multiple alignments, detection of recombination, and calculation of          
+evolutionary distances; and 2) development and testing of new and               
+existing methods for historical reconstruction of functionally equivalent       
+networks.                                                                       
+                                                                                
+RNA viruses (e.g. HIV, or Ebola) are the major causative agents of human,       
+animal and plant viral diseases world wide. The heterogeneous nature of         
+RNA populations makes it difficult to develop effective, anti-viral             
+agents. The sequence database is now large enough to conduct comparative        
+studies on natural variants versus chemotherapeutically induced mutants         
+for several retroviral proteins. This model study will provide new              
+information on the nature of selected mutations which will be useful in         
+future anti-viral drug development.                                             
+                                                                                
+Computational analysis of primary sequence data is an area of intense           
+interest in biology, mathematics, statistics and systems science. In the        
+last few years new approaches to problem solving and classification, such       
+as machine learning, neural networks, genetic algorithms, and stochastic        
+production models or, ""intelligent systems"" as they are referred to             
+collectively, have become available. Unfortunately most biologists are          
+unaware of these developments. Application of these methods to real data        
+remains unexplored. The proposed studies will go a long way in rectifying       
+this gap in technological utilization. These studies will continue to           
+define important evolutionary' relationships and events, provide                
+biologically informative sequence relationships for bench-marking new           
+software, and contribute new information relevant to the structure and          
+function of viral proteins suggesting new directions in laboratory              
+experimentation. Strategies and techniques developed for the analysis of        
+highly divergent genomes can also be applied to the study of the wealth         
+of sequence information generated under the auspices of the Human Genome        
+Project.                                                                        
+",2671363,K04AI001277,['K04AI001277'],AI,https://reporter.nih.gov/project-details/2671363,K04,1998,63885,-0.00871001738530802
+"The research described in this proposal begins with completion and formal       
+evaluation of MIDAS ""a computer program designed to automatically               
+construct decision models from an underlying medical knowledge base"". The       
+capabilities of MIDAS will be extended to knowledge-based construction          
+of Markov decision models. A second project will develop a comprehensive        
+knowledge management scheme for the problem of pulmonary disease in AIDS.       
+This scheme will use a knowledge base structured according to knowledge         
+needed to perform a decision analysis. It will incorporate summaries of         
+relevant data, sources and quality of data and links to the original            
+sources. This knowledge management scheme will be deployed in the               
+hospital and evaluated in a group of medical residents at Robert Wood           
+Johnson University Hospital.                                                    
+ HIV infections; artificial intelligence; behavioral /social science research tag; computer assisted medical decision making; computer human interaction; health care model; human data; information system analysis; lung disorder; model design /development; opportunistic infections; physicians; pneumonia KNOWLEDGE MANAGEMENT FOR CLINICAL DECISION ANALYSIS","The research described in this proposal begins with completion and formal       
+evaluation of MIDAS ""a computer program designed to automatically               
+construct decision models from an underlying medical knowledge base"". The       
+capabilities of MIDAS will be extended to knowledge-based construction          
+of Markov decision models. A second project will develop a comprehensive        
+knowledge management scheme for the problem of pulmonary disease in AIDS.       
+This scheme will use a knowledge base structured according to knowledge         
+needed to perform a decision analysis. It will incorporate summaries of         
+relevant data, sources and quality of data and links to the original            
+sources. This knowledge management scheme will be deployed in the               
+hospital and evaluated in a group of medical residents at Robert Wood           
+Johnson University Hospital.                                                    
+",2796869,K04LM000096,['K04LM000096'],LM,https://reporter.nih.gov/project-details/2796869,K04,1998,72900,0.015461738384144155
+"DESCRIPTION:  (Adapted from the applicant's abstract) Impressive advances in    
+computer technology have opened the way to the simulation in machina of         
+complex biological systems.  In immunology, this has proven helpful as it       
+can foster both critical phases of generating and testing novel hypotheses.     
+At variance with ""conventional"" models based upon differential equations,       
+the applicant has reproduced the dynamics of the humoral response by means      
+of cellular automata, where discrete entities cooperate and develop             
+according to elementary local rules.                                            
+                                                                                
+The success of this model in tackling several ""hot"" aspects currently           
+debated among immunologists signals that the time is ripe for the               
+exploration of the complex and challenging cell-mediated immunity.              
+                                                                                
+The subject of this proposal is a computer simulation of the immune response    
+to viral infection and to foreign cells.  This requires an extensive            
+upgrading of our IMMSIM code, including the introduction of infective           
+antigens, target cells, dendritic cells, CD8 T cell receptors and class I       
+MHCs.  The body is represented by a bi-dimensional space subdivided into        
+sites where all interactions take place in discrete time steps.                 
+Interactions are probablistic occurrences between cells that take place via     
+their receptors, on the basis of complementarity between binary bit strings.    
+These interactions may lead to destruction, presentation, stimulation or        
+tolerance.  As in the living organism, a virus-specific Tc precursor will       
+become anergic by meeting a Class I-bearing infected target cell but will       
+mature to a serial killer upon binding to a DC that has attracted a Th cell,    
+whose lymphokines will act on both Tc and DC.                                   
+                                                                                
+The outcome of each event depends on a number of parameters of largely          
+unknown biological weight.  Their effects will be tested experimentally by      
+running the same response serially, varying one parameter at a time, and        
+comparing the results to ascertained immunological behaviors.  This will        
+allow us to identify the critical nodes of the virus/response progress and      
+then to use the model to challenge further fundamental aspects, such as         
+viral mutation, lymphoid cell infection, and, ultimately, the                   
+cooperative/competitive interplay between the cellular and humoral response     
+against the same invader.                                                       
+ MHC class I antigen; T cell receptor; antigen presenting cell; antigens; artificial intelligence; biological models; cell transplantation; cell type; cellular immunity; computer program /software; computer simulation; computer system design /evaluation; dendritic cells; foreign body reaction; humoral immunity MODELLING CELL MEDIATED IMMUNE RESPONSES IN THE COMPUTER","DESCRIPTION:  (Adapted from the applicant's abstract) Impressive advances in    
+computer technology have opened the way to the simulation in machina of         
+complex biological systems.  In immunology, this has proven helpful as it       
+can foster both critical phases of generating and testing novel hypotheses.     
+At variance with ""conventional"" models based upon differential equations,       
+the applicant has reproduced the dynamics of the humoral response by means      
+of cellular automata, where discrete entities cooperate and develop             
+according to elementary local rules.                                            
+                                                                                
+The success of this model in tackling several ""hot"" aspects currently           
+debated among immunologists signals that the time is ripe for the               
+exploration of the complex and challenging cell-mediated immunity.              
+                                                                                
+The subject of this proposal is a computer simulation of the immune response    
+to viral infection and to foreign cells.  This requires an extensive            
+upgrading of our IMMSIM code, including the introduction of infective           
+antigens, target cells, dendritic cells, CD8 T cell receptors and class I       
+MHCs.  The body is represented by a bi-dimensional space subdivided into        
+sites where all interactions take place in discrete time steps.                 
+Interactions are probablistic occurrences between cells that take place via     
+their receptors, on the basis of complementarity between binary bit strings.    
+These interactions may lead to destruction, presentation, stimulation or        
+tolerance.  As in the living organism, a virus-specific Tc precursor will       
+become anergic by meeting a Class I-bearing infected target cell but will       
+mature to a serial killer upon binding to a DC that has attracted a Th cell,    
+whose lymphokines will act on both Tc and DC.                                   
+                                                                                
+The outcome of each event depends on a number of parameters of largely          
+unknown biological weight.  Their effects will be tested experimentally by      
+running the same response serially, varying one parameter at a time, and        
+comparing the results to ascertained immunological behaviors.  This will        
+allow us to identify the critical nodes of the virus/response progress and      
+then to use the model to challenge further fundamental aspects, such as         
+viral mutation, lymphoid cell infection, and, ultimately, the                   
+cooperative/competitive interplay between the cellular and humoral response     
+against the same invader.                                                       
+",2453669,R01AI042262,['R01AI042262'],AI,https://reporter.nih.gov/project-details/2453669,R01,1998,197050,0.19091157266026193
+"LONG-TERM OBJECTIVES 1. Develop a computerized system, based on                 
+hierarchical neural network pattern recognition technology, for reliable        
+identification of plants.  2. Identify poisonous plants. 3. Expedite            
+discovery of new medicinal plants.  4. Create an image database directly        
+from plant material and link with existing medicinal plant databases.           
+5. Develop commercial product for pharmaceutical companies, agriculture         
+and others. SPECIFIC AIMS 1. Design hierarchical system of neural               
+networks to follow natural plant taxonomy groupings and extend our              
+identification technology to a large number of plant species.  2.               
+Improve accuracy of identification.  3. Design a prototype workstation          
+for botanical and agricultural field stations and laboratories.                 
+                                                                                
+RESEARCH DESIGN AND METHODS FOR ACHIEVING GOALS.  1. Digitize large             
+number of plant species from special collections.  2. Measure                   
+automatically venation patterns and shape.  3. Design hierarchical              
+neural networks to divide plants into natural groupings.  4. Accumulate         
+virtual herbarium  database as leaves are digitized (scanned or                 
+photographed).                                                                  
+                                                                                
+POTENTIAL FOR TECHNOLOGICAL INNOVATION This system is unique in                 
+capturing botanical recognition knowledge in a hierarchy of neural              
+networks and is the first fully-computerized system for plant                   
+identification utilizing information digitized directly from plants.            
+                                                                                
+PROPOSED COMMERCIAL APPLICATION                                                 
+1. Expedite discovery of new medicinal plants for pharmaceutical                
+industry.  2. Create valuable database directly from plants.  3.                
+Identification of poisonous plants.  4. Valuable for rapid                      
+identification of invasive weeds.                                               
+ artificial intelligence; carcinogens; classification; digital imaging; geographic site; information systems; leaf; medicinal plants; plant morphology; plant poisons; systematic biology IDENTIFICATION OF PLANTS USING NEURAL NETWORK TECHNOLOGY","LONG-TERM OBJECTIVES 1. Develop a computerized system, based on                 
+hierarchical neural network pattern recognition technology, for reliable        
+identification of plants.  2. Identify poisonous plants. 3. Expedite            
+discovery of new medicinal plants.  4. Create an image database directly        
+from plant material and link with existing medicinal plant databases.           
+5. Develop commercial product for pharmaceutical companies, agriculture         
+and others. SPECIFIC AIMS 1. Design hierarchical system of neural               
+networks to follow natural plant taxonomy groupings and extend our              
+identification technology to a large number of plant species.  2.               
+Improve accuracy of identification.  3. Design a prototype workstation          
+for botanical and agricultural field stations and laboratories.                 
+                                                                                
+RESEARCH DESIGN AND METHODS FOR ACHIEVING GOALS.  1. Digitize large             
+number of plant species from special collections.  2. Measure                   
+automatically venation patterns and shape.  3. Design hierarchical              
+neural networks to divide plants into natural groupings.  4. Accumulate         
+virtual herbarium  database as leaves are digitized (scanned or                 
+photographed).                                                                  
+                                                                                
+POTENTIAL FOR TECHNOLOGICAL INNOVATION This system is unique in                 
+capturing botanical recognition knowledge in a hierarchy of neural              
+networks and is the first fully-computerized system for plant                   
+identification utilizing information digitized directly from plants.            
+                                                                                
+PROPOSED COMMERCIAL APPLICATION                                                 
+1. Expedite discovery of new medicinal plants for pharmaceutical                
+industry.  2. Create valuable database directly from plants.  3.                
+Identification of poisonous plants.  4. Valuable for rapid                      
+identification of invasive weeds.                                               
+",6028355,R44CA067559,['R44CA067559'],CA,https://reporter.nih.gov/project-details/6028355,R44,1999,12027,0.039981755805107475
+"LightForm, Inc., proposes to develop an adjunct to routine Pap smear            
+evaluation for automatic and simultaneous detection of Human                    
+Papillomavirus (HPV) and Chlamydia Trachomatis (CT) in cervicovaginal           
+tissue. The AutoCerSpex system will enable the detection and                    
+quantification of HPV and CT by multiple fluorophore tagging. The use of        
+Fluorescence In-Situ Hybridization (FISH) probes, type-specific for HPV,        
+will emit in the red. CT elementary bodies will be stained by Differential      
+ImmunoFluorescence (DIF) and will emit in the green. An inexpensive             
+imaging spectrometer system from the space program, utilizing a                 
+proprietary Neural Network, will automatically acquire and processes            
+spatial and spectral data to locate and map areas of infection. During          
+Phase I, HPV 16/18 and CT will be detected to demonstrate feasibility.          
+During Phase II, CT and multiple HPV-types, emitting many spectral              
+features will be added to the protocol.                                         
+                                                                                
+Video images of the specimen will be simultaneously acquired for                
+morphology and clustering analysis. The Neural Network will correlate and       
+quantify spectra onto these images to provide a visual mapping of the           
+incidence of HPV and CT. AutoCerSpex is a logical symbiosis of techniques       
+known to be effective and will greatly enhance the scope of standard Pap        
+tests.                                                                          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+The rapid and accurate identification of the Human Papillomavirus and           
+Chlamydia in cervicovaginal tissue will result in earlier treatment, a          
+reduction in loss of life and reduced in-hospital and outpatient                
+procedures. Estimated savings could amount to 1 billion dollars per year.       
+In addition the spectrometer could be used in many industrial applications      
+including general life science research, semi-conductor QC, plastics,           
+fiber optics and environmental monitoring.                                      
+ Chlamydiaceae; artificial intelligence; biopsy; cell line; cervical /vaginal smear; communicable disease diagnosis; diagnosis design /evaluation; fluorescence spectrometry; fluorescent in situ hybridization; histopathology; human papillomavirus; human tissue; immunofluorescence technique; stainings AUTO SPECTRAL TOPOGRAPHY FOR CERVICAL TISSUE SCREENING","LightForm, Inc., proposes to develop an adjunct to routine Pap smear            
+evaluation for automatic and simultaneous detection of Human                    
+Papillomavirus (HPV) and Chlamydia Trachomatis (CT) in cervicovaginal           
+tissue. The AutoCerSpex system will enable the detection and                    
+quantification of HPV and CT by multiple fluorophore tagging. The use of        
+Fluorescence In-Situ Hybridization (FISH) probes, type-specific for HPV,        
+will emit in the red. CT elementary bodies will be stained by Differential      
+ImmunoFluorescence (DIF) and will emit in the green. An inexpensive             
+imaging spectrometer system from the space program, utilizing a                 
+proprietary Neural Network, will automatically acquire and processes            
+spatial and spectral data to locate and map areas of infection. During          
+Phase I, HPV 16/18 and CT will be detected to demonstrate feasibility.          
+During Phase II, CT and multiple HPV-types, emitting many spectral              
+features will be added to the protocol.                                         
+                                                                                
+Video images of the specimen will be simultaneously acquired for                
+morphology and clustering analysis. The Neural Network will correlate and       
+quantify spectra onto these images to provide a visual mapping of the           
+incidence of HPV and CT. AutoCerSpex is a logical symbiosis of techniques       
+known to be effective and will greatly enhance the scope of standard Pap        
+tests.                                                                          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+The rapid and accurate identification of the Human Papillomavirus and           
+Chlamydia in cervicovaginal tissue will result in earlier treatment, a          
+reduction in loss of life and reduced in-hospital and outpatient                
+procedures. Estimated savings could amount to 1 billion dollars per year.       
+In addition the spectrometer could be used in many industrial applications      
+including general life science research, semi-conductor QC, plastics,           
+fiber optics and environmental monitoring.                                      
+",2795907,R43CA078255,['R43CA078255'],CA,https://reporter.nih.gov/project-details/2795907,R43,1999,94888,0.1765524819255989

@@ -1,0 +1,244 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+ acute disease /disorder; artificial intelligence; cardiovascular disorder diagnosis; computer assisted diagnosis; computer system design /evaluation; diagnosis design /evaluation; human data; image processing; pulmonary circulation obstruction; respiratory disorder diagnosis; thoracic radiography ACUTE PULMONARY EMBOLISM--COMPUTER AIDED DIAGNOSIS,,2230459,R29HL052826,['R29HL052826'],HL,https://reporter.nih.gov/project-details/2230459,R29,1995,94280,0.8105291133046699
+"The Heart Failure Program project is a resource-related research program to     
+develop new reasoning methods for the application of Artifical Intelligence     
+techniques to medicine for the effort of the SUMEX-AIM community.  The          
+context and driving force for this research is the management of heart          
+failure in the intensive care setting.  We will:  1) Develop a                  
+representational methodology capable of supporting the clinically relevant      
+distinctions of patient state.  This representation will utilize the            
+clinically significant qualitative parameter values and will include causal     
+relationships, time dependencies and relations about change.  2) Build a        
+qualitative physiological model of the cardiovascular system using this         
+methodology to act as a store for evolving knowledge of patient state.  3)      
+Explore and develop strategies for determining the appropriate parameter        
+values in the model from input data, reasoning support methods and              
+heuristics for carrying out the diagnostic reasoning with the model, and        
+reasoning support methods and heuristics for carrying out the diagnostic        
+reasoning with the model, and reasoning support methods and heuristics for      
+finding possible therapies and determining their potential consequences.        
+4) Build around this core a program to assist the physician in exploring        
+his or her understanding of the implications in an individual case.  The        
+physician and program will reason together about the case with the              
+physician providing ideas and the program assuring consistent consideration     
+of the implications.  5) Generalize the techniques for use in other medical     
+domains.                                                                        
+ artificial intelligence; cardiovascular disorder chemotherapy; cardiovascular disorder diagnosis; computer assisted diagnosis; computer assisted patient care; computer human interaction; computer system design /evaluation; diagnosis design /evaluation; human subject; managed care; patient care management ARTIFICIAL INTELLIGENCE CARDIOVASCULAR REASONING","The Heart Failure Program project is a resource-related research program to     
+develop new reasoning methods for the application of Artifical Intelligence     
+techniques to medicine for the effort of the SUMEX-AIM community.  The          
+context and driving force for this research is the management of heart          
+failure in the intensive care setting.  We will:  1) Develop a                  
+representational methodology capable of supporting the clinically relevant      
+distinctions of patient state.  This representation will utilize the            
+clinically significant qualitative parameter values and will include causal     
+relationships, time dependencies and relations about change.  2) Build a        
+qualitative physiological model of the cardiovascular system using this         
+methodology to act as a store for evolving knowledge of patient state.  3)      
+Explore and develop strategies for determining the appropriate parameter        
+values in the model from input data, reasoning support methods and              
+heuristics for carrying out the diagnostic reasoning with the model, and        
+reasoning support methods and heuristics for carrying out the diagnostic        
+reasoning with the model, and reasoning support methods and heuristics for      
+finding possible therapies and determining their potential consequences.        
+4) Build around this core a program to assist the physician in exploring        
+his or her understanding of the implications in an individual case.  The        
+physician and program will reason together about the case with the              
+physician providing ideas and the program assuring consistent consideration     
+of the implications.  5) Generalize the techniques for use in other medical     
+domains.                                                                        
+",2217163,R01HL033041,['R01HL033041'],HL,https://reporter.nih.gov/project-details/2217163,R01,1996,443123,0.8105291133046699
+"The elderly population is one of the fastest growing segments of the            
+American population. Nevertheless, there is a shortage of clinicians who        
+are specifically trained to identify and treat the problems associated with     
+advancing age.  As a result, predictable deteriorations in renal function,      
+increasing drug-utilization over time and susceptibility to age-related         
+illnesses all serve to threaten the health of many elderly Americans.  The      
+Geriatric Service of MediSource is a comprehensive computerized product         
+that addresses the informational needs of clinicians who care for elderly       
+patients. The Geriatric Service specifically offers age-specific                
+recommendations for preventative care, and tools to provide audits for          
+those medication-related hazards that mist commonly affect elderly              
+patients.  The intent of the Geriatric Service is not to expand the content     
+of existing applications, but to create a fundamentally new approach to the     
+management of the elderly patient.  We believe that integrated clinical         
+information services like those offered by Multum are rapidly becoming the      
+standard of care for pharmacologic and non-pharmacologic interventions and      
+hope to improve dramatically the care rendered to elderly patients with         
+this proposed Geriatric Service.                                                
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: The Geriatric Service of MediSource has        
+the potential to become the standard of care throughout the health care         
+industry for patient-specific drug information.  The Geriatric Service can      
+be used by clinicians in ambulatory, inpatient, educational, and research       
+settings for current, concise, and patient-specific information related to      
+drug selection, dosing, and monitoring.                                         
+ aging; artificial intelligence; chemical information system; clinical research; computer assisted medical decision making; computer program /software; computer system design /evaluation; health care service evaluation; health services research tag; human data; human old age (65+); literature citation; outcomes research; patient care management GERIATRIC SERVICE","The elderly population is one of the fastest growing segments of the            
+American population. Nevertheless, there is a shortage of clinicians who        
+are specifically trained to identify and treat the problems associated with     
+advancing age.  As a result, predictable deteriorations in renal function,      
+increasing drug-utilization over time and susceptibility to age-related         
+illnesses all serve to threaten the health of many elderly Americans.  The      
+Geriatric Service of MediSource is a comprehensive computerized product         
+that addresses the informational needs of clinicians who care for elderly       
+patients. The Geriatric Service specifically offers age-specific                
+recommendations for preventative care, and tools to provide audits for          
+those medication-related hazards that mist commonly affect elderly              
+patients.  The intent of the Geriatric Service is not to expand the content     
+of existing applications, but to create a fundamentally new approach to the     
+management of the elderly patient.  We believe that integrated clinical         
+information services like those offered by Multum are rapidly becoming the      
+standard of care for pharmacologic and non-pharmacologic interventions and      
+hope to improve dramatically the care rendered to elderly patients with         
+this proposed Geriatric Service.                                                
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: The Geriatric Service of MediSource has        
+the potential to become the standard of care throughout the health care         
+industry for patient-specific drug information.  The Geriatric Service can      
+be used by clinicians in ambulatory, inpatient, educational, and research       
+settings for current, concise, and patient-specific information related to      
+drug selection, dosing, and monitoring.                                         
+",2002513,R43AG014613,['R43AG014613'],AG,https://reporter.nih.gov/project-details/2002513,R43,1997,90625,0.8105291133046699
+"DESCRIPTION (Taken from application abstract):  This proposed study will        
+replicate and extend methodology used in earlier studies and will use           
+extensive clinical data repositories, informatics tools, and expert             
+practitioners for perinatal medical knowledge building.                         
+                                                                                
+Clinical Data Repository:  Duke University's Medical Center (DUMC) TMR (The     
+Medical Record) data repository will be used for this study, and contains       
+45,922 electronic medical records for both low and high-risk pregnant women     
+(and their infants) who have received prenatal care at DUMC, and its            
+affiliated regional clinics, between 1/1/86 and 12/3l/95.  Each patient's       
+electronic data is used for clinical patient care and contains a potential      
+4000 variables per record.  This volume of data requires new approaches for     
+data analysis and medical decision support, since human information             
+processing limitations become quickly overloaded by both an individual          
+patient s data and the aggregate information collected for the perinatal        
+patient population.                                                             
+                                                                                
+lnformatics Tools:  Informatics techniques for knowledge acquisition and        
+data mining will use machine learning programs, statistical analysis, and       
+domain expert input to articulate relationships between the data and            
+perinatal patent outcomes.  The goal is to provide decision support for         
+perinatal care providers to accurately identify patients at risk and assist     
+them with modifiable preterm birth ask factors.  An expert system will use      
+data-generated and verified knowledge bases to test its predictive validity     
+when new patient cases are induced to the expert system.  Earlier studies       
+found 53-90% predictive accuracies for an expert system prototype, as           
+compared to 17-38% accuracies, reported in the literature, using current        
+manual techniques.  Mapping the expert system's knowledge base terms to         
+medical library resources will be explored for additional decision support.     
+                                                                                
+Expert Practitioner:  The perinatal expert panel will consist of the            
+Principal Investigator, a Board Certified OB-Gyn Physician, and a certified     
+Perinatal RN.  Each of the panel members has more than 20 years of perinatal    
+experience.  Participating informatics experts are known, both nationally       
+and internationally for their expertise in the field of Medical Informatics.    
+ artificial intelligence; computer system design /evaluation; human data; information systems; prenatal care INFORMATICS TOOLS & MEDICAL PERINATAL KNOWLEDGE BUILDING","DESCRIPTION (Taken from application abstract):  This proposed study will        
+replicate and extend methodology used in earlier studies and will use           
+extensive clinical data repositories, informatics tools, and expert             
+practitioners for perinatal medical knowledge building.                         
+                                                                                
+Clinical Data Repository:  Duke University's Medical Center (DUMC) TMR (The     
+Medical Record) data repository will be used for this study, and contains       
+45,922 electronic medical records for both low and high-risk pregnant women     
+(and their infants) who have received prenatal care at DUMC, and its            
+affiliated regional clinics, between 1/1/86 and 12/3l/95.  Each patient's       
+electronic data is used for clinical patient care and contains a potential      
+4000 variables per record.  This volume of data requires new approaches for     
+data analysis and medical decision support, since human information             
+processing limitations become quickly overloaded by both an individual          
+patient s data and the aggregate information collected for the perinatal        
+patient population.                                                             
+                                                                                
+lnformatics Tools:  Informatics techniques for knowledge acquisition and        
+data mining will use machine learning programs, statistical analysis, and       
+domain expert input to articulate relationships between the data and            
+perinatal patent outcomes.  The goal is to provide decision support for         
+perinatal care providers to accurately identify patients at risk and assist     
+them with modifiable preterm birth ask factors.  An expert system will use      
+data-generated and verified knowledge bases to test its predictive validity     
+when new patient cases are induced to the expert system.  Earlier studies       
+found 53-90% predictive accuracies for an expert system prototype, as           
+compared to 17-38% accuracies, reported in the literature, using current        
+manual techniques.  Mapping the expert system's knowledge base terms to         
+medical library resources will be explored for additional decision support.     
+                                                                                
+Expert Practitioner:  The perinatal expert panel will consist of the            
+Principal Investigator, a Board Certified OB-Gyn Physician, and a certified     
+Perinatal RN.  Each of the panel members has more than 20 years of perinatal    
+experience.  Participating informatics experts are known, both nationally       
+and internationally for their expertise in the field of Medical Informatics.    
+",2714219,R01LM006488,['R01LM006488'],LM,https://reporter.nih.gov/project-details/2714219,R01,1998,274266,0.7098771552599257
+"Our long-range objective is to understand the functional organization           
+and dynamical activity of the cortex.  The discovery of the columnar            
+organization of the cortex has led to the notion that the  columns  are         
+fundamental building blocks, from which larger functional units are             
+constructed.  The cortex is thus viewed as a crystal (a more or less            
+regular array of repeating, similar modules.  Our proposal will test and        
+refine this modular hypothesis.                                                 
+                                                                                
+We shall use optical imaging of the primary visual cortex of monkeys and        
+cats, and simultaneously record electrical responses from small neuronal        
+clusters and local field potentials.  We shall thus obtain a spatio-            
+temporal picture of the activity in the neural ensembles which encode           
+various stimulus parameters. The data will be analyzed with extensions          
+of Principal Component Analysis that we have developed.                         
+                                                                                
+We address three major aims: 1) To test the modularity hypothesis we            
+shall measure, in a large piece of cortical tissue, the full range of           
+functional maps ( for orientation, color, spatial frequency etc.)               
+together with the retinotopic map.  We shall measure the periodicity of,        
+and correlations among, the functional maps, to determine if they are           
+commensurate.  This will lead to a refined framework that could include         
+possibly incommensurate cortical scales and interactions among cortical         
+elements.  2) We shall investigate how the Principal Components                 
+(eigenfunctions) obtained from the optical images depend on the extent          
+of the visual stimulus, to determine how the dynamical dimension of the         
+primary visual cortex (viewed as a dynamical system) scales with size.          
+3) We shall study the concerted electrical responses of neuronal                
+clusters, to clarify the link between optical signals and neuronal              
+activity, and to deepen our understanding of the neuronal dynamics.             
+                                                                                
+Our study is aimed at an intermediate architectural level, and deals            
+with the way in which the fundamental modalities of the visual world            
+(orientation, size, color and so on) are analyzed in the primary visual         
+cortex.  Such knowledge is crucial for the construction of cortical             
+models, which are essential for any quantitative understanding of               
+critical function and dysfunction.                                              
+ Macaca fascicularis; bioimaging /biomedical imaging; brain electrical activity; brain imaging /visualization /scanning; brain mapping; cats; charge coupled device camera; computational neuroscience; image processing; mathematical model; neural information processing; optics; space perception; stereotaxic techniques; visual cortex; visual stimulus MATHEMATICAL ANALYSIS OF BRAIN FUNCTION","Our long-range objective is to understand the functional organization           
+and dynamical activity of the cortex.  The discovery of the columnar            
+organization of the cortex has led to the notion that the  columns  are         
+fundamental building blocks, from which larger functional units are             
+constructed.  The cortex is thus viewed as a crystal (a more or less            
+regular array of repeating, similar modules.  Our proposal will test and        
+refine this modular hypothesis.                                                 
+                                                                                
+We shall use optical imaging of the primary visual cortex of monkeys and        
+cats, and simultaneously record electrical responses from small neuronal        
+clusters and local field potentials.  We shall thus obtain a spatio-            
+temporal picture of the activity in the neural ensembles which encode           
+various stimulus parameters. The data will be analyzed with extensions          
+of Principal Component Analysis that we have developed.                         
+                                                                                
+We address three major aims: 1) To test the modularity hypothesis we            
+shall measure, in a large piece of cortical tissue, the full range of           
+functional maps ( for orientation, color, spatial frequency etc.)               
+together with the retinotopic map.  We shall measure the periodicity of,        
+and correlations among, the functional maps, to determine if they are           
+commensurate.  This will lead to a refined framework that could include         
+possibly incommensurate cortical scales and interactions among cortical         
+elements.  2) We shall investigate how the Principal Components                 
+(eigenfunctions) obtained from the optical images depend on the extent          
+of the visual stimulus, to determine how the dynamical dimension of the         
+primary visual cortex (viewed as a dynamical system) scales with size.          
+3) We shall study the concerted electrical responses of neuronal                
+clusters, to clarify the link between optical signals and neuronal              
+activity, and to deepen our understanding of the neuronal dynamics.             
+                                                                                
+Our study is aimed at an intermediate architectural level, and deals            
+with the way in which the fundamental modalities of the visual world            
+(orientation, size, color and so on) are analyzed in the primary visual         
+cortex.  Such knowledge is crucial for the construction of cortical             
+models, which are essential for any quantitative understanding of               
+critical function and dysfunction.                                              
+",2890529,R01MH050166,['R01MH050166'],MH,https://reporter.nih.gov/project-details/2890529,R01,1999,349750,0.7098771552599257

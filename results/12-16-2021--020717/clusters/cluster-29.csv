@@ -1,0 +1,328 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"Health care costs are rapidly outstripping society's ability to pay.            
+Practice guidelines have been proposed as a way to reduce costs while           
+improving health care quality, and many kinds of organizations (e.g.,           
+American College of Physicians, AHCPR, Mayo Clinics, etc.) are developing       
+such guidelines.  Some (Lamas 1992, Lamas 1989, Kosecoff 1987), however,        
+argue that guidelines will have little effect on practice patterns if           
+they are merely published without employing reminders or incentives of          
+some kind.  We have shown that computer reminders based on simple               
+guidelines can change patterns (McDonald 1976, McDonald 1984, Tierney           
+1986, Litzelman 1993).  However, we have not dealt with the rich practice       
+guidelines being developed by AHCPR and others because the advice of such       
+guidelines depends upon 'first order' data (collected from patients about       
+their history, physical, and current symptoms) as well as the 'second           
+order' data (from hospital services such as the pharmacy, laboratory,           
+radiology, etc.) that the Regenstrief system now contains.  In the              
+proposed work, we will rigorously measure the real effect of automated          
+guidelines on physician practice problems and patient outcome.                  
+                                                                                
+Specifically, using our current network of ordering workstations as the         
+platform, we propose to:  1) Define, test and refine detailed computer          
+executable guidelines for the management (and/or prevention) of a number        
+of medical problems including congestive heart failure, pneumonia, and          
+urinary tract infection.  2) To define, test and refine instruments for         
+capturing the historical, physical and symptom (first order) data needed        
+by these guidelines.  3)  To determine the reliability of these                 
+instruments when used by research assistants and  4) to refine and              
+perfect mechanisms for delivering reminders produced by the computer            
+executed guidelines to care providers.  5)  To assess provider agreement        
+with the guideline logic and their attitudes about the computer system.         
+6)  To build statistical models that predict adverse effects and extended       
+hospital stays based on the collected 'first order' data and incorporate        
+the model's predictions into reminders.  7)  To perform a randomized            
+controlled trial of the effect of automated guideline reminders on a            
+number of outcomes including provider compliance with the guideline             
+advise, patients health status, length of stay, problem related costs,          
+30 and 90 day re-admission rates and adverse events.                            
+                                                                                
+As American medicine attempts to halt the reckless growth of health care        
+costs, proposed solutions should be rigorously studied.  This project           
+will shed light on the practicality, costs, and benefits of both practice       
+guidelines automatically applied by a CBPR.                                     
+ anticoagulants; artificial intelligence; automated medical record system; blood transfusion; computer assisted diagnosis; computer assisted medical decision making; computer assisted patient care; congestive heart failure; data collection methodology /evaluation; disease /disorder prevention /control; health care cost /financing; health care personnel performance; health care professional practice; health care quality; health care service; health care service evaluation; hospital analysis; human subject; mathematical model; outcomes research; patient care management; pneumonia; urinary tract infection COMPUTER RECORDS, GUIDELINES, QUALITY & EFFICIENT CARE","Health care costs are rapidly outstripping society's ability to pay.            
+Practice guidelines have been proposed as a way to reduce costs while           
+improving health care quality, and many kinds of organizations (e.g.,           
+American College of Physicians, AHCPR, Mayo Clinics, etc.) are developing       
+such guidelines.  Some (Lamas 1992, Lamas 1989, Kosecoff 1987), however,        
+argue that guidelines will have little effect on practice patterns if           
+they are merely published without employing reminders or incentives of          
+some kind.  We have shown that computer reminders based on simple               
+guidelines can change patterns (McDonald 1976, McDonald 1984, Tierney           
+1986, Litzelman 1993).  However, we have not dealt with the rich practice       
+guidelines being developed by AHCPR and others because the advice of such       
+guidelines depends upon 'first order' data (collected from patients about       
+their history, physical, and current symptoms) as well as the 'second           
+order' data (from hospital services such as the pharmacy, laboratory,           
+radiology, etc.) that the Regenstrief system now contains.  In the              
+proposed work, we will rigorously measure the real effect of automated          
+guidelines on physician practice problems and patient outcome.                  
+                                                                                
+Specifically, using our current network of ordering workstations as the         
+platform, we propose to:  1) Define, test and refine detailed computer          
+executable guidelines for the management (and/or prevention) of a number        
+of medical problems including congestive heart failure, pneumonia, and          
+urinary tract infection.  2) To define, test and refine instruments for         
+capturing the historical, physical and symptom (first order) data needed        
+by these guidelines.  3)  To determine the reliability of these                 
+instruments when used by research assistants and  4) to refine and              
+perfect mechanisms for delivering reminders produced by the computer            
+executed guidelines to care providers.  5)  To assess provider agreement        
+with the guideline logic and their attitudes about the computer system.         
+6)  To build statistical models that predict adverse effects and extended       
+hospital stays based on the collected 'first order' data and incorporate        
+the model's predictions into reminders.  7)  To perform a randomized            
+controlled trial of the effect of automated guideline reminders on a            
+number of outcomes including provider compliance with the guideline             
+advise, patients health status, length of stay, problem related costs,          
+30 and 90 day re-admission rates and adverse events.                            
+                                                                                
+As American medicine attempts to halt the reckless growth of health care        
+costs, proposed solutions should be rigorously studied.  This project           
+will shed light on the practicality, costs, and benefits of both practice       
+guidelines automatically applied by a CBPR.                                     
+",2445391,R01HS007719,['R01HS007719'],HS,https://reporter.nih.gov/project-details/2445391,R01,1997,642349,0.6602868374030569
+"This project will use the techniques of epidemiology and clinical               
+decision analysis to study the management of infants with hypoplastic           
+left heart syndrome (HLHS), a congenital heart disease which if                 
+untreated is uniformly fatal. The broad objective is to determine the           
+optimal surgical approach to treatment, based on mortality and                  
+morbidity comparisons of two strategies: staged reconstructive                  
+surgeries or heart transplantation. Specific aims are to demonstrate            
+how improved surgical technique and postoperative care have lowered             
+mortality over time, compare current mortality rates between                    
+strategies, determine predictors of mortality, the limitations                  
+inherent in each strategy, the problems surviving children and their            
+caregivers face, and predictors of morbidity. The project design is a           
+review of the medical records of all patients born with HLHS between            
+1989 and 1993, admitted to one of the four participating pediatric              
+cardiac surgery centers with an intention to treat surgically.                  
+Specific preoperative and postoperative factors will be compared in             
+multivariate analysis as predictors of mortality and morbidity for              
+each strategy. The research will produce a scientific report with a             
+complete literature review and support the creation of a decision tree          
+to determine the better surgical strategy based on individual                   
+preoperative characteristics.                                                   
+ behavioral /social science research tag; cardiovascular disorder epidemiology; clinical research; congenital heart disorder; decision making; health care policy; heart revascularization; heart transplantation; human morbidity; human subject; infant human (0-1 year); infant mortality; medical records; patient care management; preoperative state; statistics /biometry HYPOPLASTIC LEFT HEART SYNDROME--SURGICAL ATERNATIVES","This project will use the techniques of epidemiology and clinical               
+decision analysis to study the management of infants with hypoplastic           
+left heart syndrome (HLHS), a congenital heart disease which if                 
+untreated is uniformly fatal. The broad objective is to determine the           
+optimal surgical approach to treatment, based on mortality and                  
+morbidity comparisons of two strategies: staged reconstructive                  
+surgeries or heart transplantation. Specific aims are to demonstrate            
+how improved surgical technique and postoperative care have lowered             
+mortality over time, compare current mortality rates between                    
+strategies, determine predictors of mortality, the limitations                  
+inherent in each strategy, the problems surviving children and their            
+caregivers face, and predictors of morbidity. The project design is a           
+review of the medical records of all patients born with HLHS between            
+1989 and 1993, admitted to one of the four participating pediatric              
+cardiac surgery centers with an intention to treat surgically.                  
+Specific preoperative and postoperative factors will be compared in             
+multivariate analysis as predictors of mortality and morbidity for              
+each strategy. The research will produce a scientific report with a             
+complete literature review and support the creation of a decision tree          
+to determine the better surgical strategy based on individual                   
+preoperative characteristics.                                                   
+",2519230,F32HL009488,['F32HL009488'],HL,https://reporter.nih.gov/project-details/2519230,F32,1997,32500,0.6602868374030569
+"Despite the capability to collect sophisticated multiparameter listmode         
+data, both rectilinear or bit-map cell sorting boundaries still are             
+usually chosen manually and in a rather arbitrary fashion. Usually the          
+experimenter performs visual clustering prior to drawing boundaries which       
+have no statistical prediction of successful classification.                    
+Visualization of complex multiparameter data is also difficult. One way         
+to deal with the visualization problem is to view the first three               
+principal components of the data and use this information to estimate the       
+number and approximate centroids for ""guided"" cluster analysis. Cluster         
+membership probabilities will then be used to make sort decisions.              
+                                                                                
+Another way to deal with the problem of placing sort boundaries on the          
+basis of arbitrary ""visual classifications"" is to apply statistical             
+methods of classifying cells, e.g. discriminant analysis with Bayes             
+decision boundaries. Discriminant functions will be calculated and Bayes        
+decision boundaries will be used to sort cells on the basis of                  
+discriminant function scores which will be calculated in real-time by           
+hardware and/or software lookup tables. A cost of misclassification will        
+also be included in the cell sorting decision.                                  
+                                                                                
+For all classifier systems developed, classifier performance will be            
+measured through ROC (""receiver operating characteristics"") analyses of         
+true-positives and false-positives. To accomplish this we will use a            
+well-defined system of data and model cell systems whereby all                  
+classifiers can be checked for correctness against ""tagged"" parameters.         
+All sorted model cells can be unequivocally identified by PCR (polymerase       
+chain reaction) or by FISH (fluorescence in-situ hybridization).                
+                                                                                
+While the main focus of the proposal is to develop real-time cell               
+classifiers useful for cell sorting, many of the techniques can also be         
+used by other researchers for off-line analysis of conventional listmode        
+flow cytometry data.  Hence many of these techniques should prove               
+important to other researchers even if they are unable to perform the           
+sophisticated cell sorting described in this proposal.                          
+                                                                                
+To demonstrate the importance of these new techniques to many problems          
+in biology and medicine we will attempt to apply these new techniques to        
+several important applications including: (1) high-resolution sorting of        
+single fetal cells from human maternal blood for prenatal diagnosis; (2)        
+molecular characterizations of oncogene, tumor suppresser, metastatic,          
+and multi-drug resistance genes in rare human metastatic breast cancer          
+cells isolated from peripheral blood and bone marrow by high-speed              
+enrichment or high-resolution cell sorting; and (3) bone marrow purging         
+of metastatic cells to allow for autologous transplantations in breast          
+cancer patients undergoing high-dose chemotherapy.                              
+ artificial intelligence; bone marrow purging; breast neoplasms; cell sorting; classification; computer system design /evaluation; confocal scanning microscopy; female; human subject; in situ hybridization; metastasis; multidrug resistance; neoplasm /cancer genetics; oncogenes; polymerase chain reaction; pregnancy circulation; statistics /biometry; tumor suppressor genes; women's health CLASSIFIERS FOR HIGH RESOLUTION CELL SORTING","Despite the capability to collect sophisticated multiparameter listmode         
+data, both rectilinear or bit-map cell sorting boundaries still are             
+usually chosen manually and in a rather arbitrary fashion. Usually the          
+experimenter performs visual clustering prior to drawing boundaries which       
+have no statistical prediction of successful classification.                    
+Visualization of complex multiparameter data is also difficult. One way         
+to deal with the visualization problem is to view the first three               
+principal components of the data and use this information to estimate the       
+number and approximate centroids for ""guided"" cluster analysis. Cluster         
+membership probabilities will then be used to make sort decisions.              
+                                                                                
+Another way to deal with the problem of placing sort boundaries on the          
+basis of arbitrary ""visual classifications"" is to apply statistical             
+methods of classifying cells, e.g. discriminant analysis with Bayes             
+decision boundaries. Discriminant functions will be calculated and Bayes        
+decision boundaries will be used to sort cells on the basis of                  
+discriminant function scores which will be calculated in real-time by           
+hardware and/or software lookup tables. A cost of misclassification will        
+also be included in the cell sorting decision.                                  
+                                                                                
+For all classifier systems developed, classifier performance will be            
+measured through ROC (""receiver operating characteristics"") analyses of         
+true-positives and false-positives. To accomplish this we will use a            
+well-defined system of data and model cell systems whereby all                  
+classifiers can be checked for correctness against ""tagged"" parameters.         
+All sorted model cells can be unequivocally identified by PCR (polymerase       
+chain reaction) or by FISH (fluorescence in-situ hybridization).                
+                                                                                
+While the main focus of the proposal is to develop real-time cell               
+classifiers useful for cell sorting, many of the techniques can also be         
+used by other researchers for off-line analysis of conventional listmode        
+flow cytometry data.  Hence many of these techniques should prove               
+important to other researchers even if they are unable to perform the           
+sophisticated cell sorting described in this proposal.                          
+                                                                                
+To demonstrate the importance of these new techniques to many problems          
+in biology and medicine we will attempt to apply these new techniques to        
+several important applications including: (1) high-resolution sorting of        
+single fetal cells from human maternal blood for prenatal diagnosis; (2)        
+molecular characterizations of oncogene, tumor suppresser, metastatic,          
+and multi-drug resistance genes in rare human metastatic breast cancer          
+cells isolated from peripheral blood and bone marrow by high-speed              
+enrichment or high-resolution cell sorting; and (3) bone marrow purging         
+of metastatic cells to allow for autologous transplantations in breast          
+cancer patients undergoing high-dose chemotherapy.                              
+",2654947,R01GM038645,['R01GM038645'],GM,https://reporter.nih.gov/project-details/2654947,R01,1998,240579,0.6602868374030569
+"We will continue our development of methods for recognizing and                 
+representing functional domains in biological sequences.  This                  
+includes methods to identify regulatory sites in DNA starting                   
+from unaligned sequences, and to develop models that will allow                 
+new sites to be accurately predicted.  This will involve the                    
+adoption of better statistical models so that the most                          
+significant alignments can be more readily obtained.  We will                   
+also develop improved methods for recognizing functional motifs                 
+in RNA sequences that are composed of both sequence and                         
+structure.  These methods will be useful for identifying                        
+regulatory domains that operate post-transcriptionally, and also                
+for determining the common motifs in RNAs selected in vitro for                 
+particular activities.  And we will further enhance methods for                 
+representing conserved domains in protein families that new                     
+members of the families can be identified more reliably.  This                  
+will involve the use of neural network methods that optimize the                
+discrimination of protein family members from other sequences in                
+the database that are not members of the family.                                
+                                                                                
+We will also continue several collaborations with biologists who                
+can take advantage of our methods in their work, and develop new                
+collaborations as opportunities arise.                                          
+ DNA; RNA; artificial intelligence; biomedical automation; computer assisted sequence analysis; computer system design /evaluation; nucleic acid sequence; protein sequence DNA PATTERN IDENTIFICATION AND ANALYSIS","We will continue our development of methods for recognizing and                 
+representing functional domains in biological sequences.  This                  
+includes methods to identify regulatory sites in DNA starting                   
+from unaligned sequences, and to develop models that will allow                 
+new sites to be accurately predicted.  This will involve the                    
+adoption of better statistical models so that the most                          
+significant alignments can be more readily obtained.  We will                   
+also develop improved methods for recognizing functional motifs                 
+in RNA sequences that are composed of both sequence and                         
+structure.  These methods will be useful for identifying                        
+regulatory domains that operate post-transcriptionally, and also                
+for determining the common motifs in RNAs selected in vitro for                 
+particular activities.  And we will further enhance methods for                 
+representing conserved domains in protein families that new                     
+members of the families can be identified more reliably.  This                  
+will involve the use of neural network methods that optimize the                
+discrimination of protein family members from other sequences in                
+the database that are not members of the family.                                
+                                                                                
+We will also continue several collaborations with biologists who                
+can take advantage of our methods in their work, and develop new                
+collaborations as opportunities arise.                                          
+",2674196,R01HG000249,['R01HG000249'],HG,https://reporter.nih.gov/project-details/2674196,R01,1998,160132,0.48935475052288485
+"The amino acid sequence of a protein uniquely determines its tertiary           
+structure. Deciphering this relationship, the protein folding problem has       
+become increasingly important to molecular biologists. DNA sequencing has       
+become routine, but structural experiments remain very difficult.               
+Computational strategies are needed to help address this problem.               
+                                                                                
+This proposal describes a strategy to identify the location of alpha-           
+helices and beta-strands throughout the sequence. A method for using off-       
+lattice simulations of a polypeptide chain to identify secondary structure      
+preferences in the ensemble average is proposed. Once secondary structure       
+is located, computational methods exist for generating plausible tertiary       
+structures. However, these combinatorial strategies give rise to a large        
+number of alternative structures which are difficult to distinguish from        
+the correct fold. Experimental and theoretical methods for clarifying the       
+distinction between correctly folded structures and their misfolded             
+counterparts will be considered.                                                
+                                                                                
+In a new direction, we propose to develop a multiple sequence analysis          
+strategy to relate sequence and structure to function. In particular, we        
+will focus on identifying the binding sites on the G-alpha family of            
+GTPases for the relevant G-protein coupled receptors, G-beta-gamma and          
+downstream effectors. We plan to continue to develop a genetic algorithm        
+for the construction of polypeptide loops subject to a series of                
+constraints. This method will be used to model the loop regions of G-           
+protein coupled receptors involved in the interaction with peptide ligands      
+and the hetero-trimeric G-protein complex.                                      
+                                                                                
+Finally, we propose to develop a new method to compare structures based on      
+the area of the minimal ""soap film"" that could join them following the          
+appropriate rotation and translation of one structure relative to another.      
+This provides a natural way to circumvent the gap penalty problem that          
+plagues current structure alignment algorithms.                                 
+ G protein; active sites; artificial intelligence; computer program /software; computer simulation; conformation; guanosinetriphosphatases; intermolecular interaction; peptides; physical model; protein engineering; protein folding; protein sequence; protein structure function; receptor coupling; thrombin; transcription factor COMPUTER ANALYSIS & PREDICTION OF PROTEIN STRUCTURE","The amino acid sequence of a protein uniquely determines its tertiary           
+structure. Deciphering this relationship, the protein folding problem has       
+become increasingly important to molecular biologists. DNA sequencing has       
+become routine, but structural experiments remain very difficult.               
+Computational strategies are needed to help address this problem.               
+                                                                                
+This proposal describes a strategy to identify the location of alpha-           
+helices and beta-strands throughout the sequence. A method for using off-       
+lattice simulations of a polypeptide chain to identify secondary structure      
+preferences in the ensemble average is proposed. Once secondary structure       
+is located, computational methods exist for generating plausible tertiary       
+structures. However, these combinatorial strategies give rise to a large        
+number of alternative structures which are difficult to distinguish from        
+the correct fold. Experimental and theoretical methods for clarifying the       
+distinction between correctly folded structures and their misfolded             
+counterparts will be considered.                                                
+                                                                                
+In a new direction, we propose to develop a multiple sequence analysis          
+strategy to relate sequence and structure to function. In particular, we        
+will focus on identifying the binding sites on the G-alpha family of            
+GTPases for the relevant G-protein coupled receptors, G-beta-gamma and          
+downstream effectors. We plan to continue to develop a genetic algorithm        
+for the construction of polypeptide loops subject to a series of                
+constraints. This method will be used to model the loop regions of G-           
+protein coupled receptors involved in the interaction with peptide ligands      
+and the hetero-trimeric G-protein complex.                                      
+                                                                                
+Finally, we propose to develop a new method to compare structures based on      
+the area of the minimal ""soap film"" that could join them following the          
+appropriate rotation and translation of one structure relative to another.      
+This provides a natural way to circumvent the gap penalty problem that          
+plagues current structure alignment algorithms.                                 
+",2838542,R01GM039900,['R01GM039900'],GM,https://reporter.nih.gov/project-details/2838542,R01,1999,298431,0.48935475052288485

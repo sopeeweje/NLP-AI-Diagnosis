@@ -1,0 +1,279 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The notion of clinical significance permeates evaluations of clinical
+ research results, plays an important role in changing physician behavior,
+ and enters implicitly into the development of rules for knowledge-based
+ computer systems. To date, however, this concept has received no formal
+ examination and is left to the intuition of the reasoning agent:. The aims
+ of this project are (1) to explore the role that clinical significance
+ plays in physicians' evaluation of clinical-research results; (2) to
+ propose formal methods that satisfy those roles; (3) to create a computer-
+ based system that would implement those methods; and (4) to validate the
+ proposed methods. As the test domain, we shall focus on the choice between
+ two therapies as evaluated in randomized clinical trials.
+ 
+ (1) We shall explore, through a survey process, three central questions
+ regarding clinical significance: physicians' perception of its relative
+ importance in evaluating study results, physicians' need for assistance in
+ its evaluation, and the variability among physicians in its assessment.
+ 
+ (2) We shall determine measures within three formal frameworks for
+ expressing the factors that the survey ascertained as important. The
+ frameworks are frequentist statistics, Bayesian statistics, and decision
+ theory.
+ 
+ The central challenge in applying these formal frameworks and their
+ measures into the clinical setting are the difficulty physicians have with
+ numerical measures, regardless of framework. To meet this challenge, we
+ propose to develop accessible methods for using the frameworks and to
+ develop computer-based tools for using the methods.
+ 
+ The strategy we propose for developing accessible methods is to establish
+ canonical models within each framework. We plan to propose a set of
+ canonical decision models implicit in conclusions of clinical studies and
+ to validate the set by a review of a random set of clinical trials gleaned
+ from the medical research literature. To use these models, physicians need
+ novel nonnumerical methods-graphical and qualitative techniques- that
+ translate the statistical results into clinically meaningful terms and
+ concepts.
+ 
+ (3) Because these novel methods will be computationally more difficult
+ than current practice, we propose to construct a set of computer-based
+ tools that will implement them. As basis for building these tools, we
+ shall use a set of novel artificial intelligence techniques.
+ 
+ (4) We propose to validate each of the following propositions: that
+ clinicians can use these advanced methods, that they prefer one framework
+ over the other, and that use of these methods reduces or explains the
+ variability established by the questionnaire process.
+ artificial intelligence; clinical trials; computer assisted medical decision making; health care model; health science research analysis /evaluation; human data; method development; physicians; questionnaires; statistics /biometry FORMALIZING THE NOTION OF CLINICAL SIGNIFICANCE","The notion of clinical significance permeates evaluations of clinical
+ research results, plays an important role in changing physician behavior,
+ and enters implicitly into the development of rules for knowledge-based
+ computer systems. To date, however, this concept has received no formal
+ examination and is left to the intuition of the reasoning agent:. The aims
+ of this project are (1) to explore the role that clinical significance
+ plays in physicians' evaluation of clinical-research results; (2) to
+ propose formal methods that satisfy those roles; (3) to create a computer-
+ based system that would implement those methods; and (4) to validate the
+ proposed methods. As the test domain, we shall focus on the choice between
+ two therapies as evaluated in randomized clinical trials.
+ 
+ (1) We shall explore, through a survey process, three central questions
+ regarding clinical significance: physicians' perception of its relative
+ importance in evaluating study results, physicians' need for assistance in
+ its evaluation, and the variability among physicians in its assessment.
+ 
+ (2) We shall determine measures within three formal frameworks for
+ expressing the factors that the survey ascertained as important. The
+ frameworks are frequentist statistics, Bayesian statistics, and decision
+ theory.
+ 
+ The central challenge in applying these formal frameworks and their
+ measures into the clinical setting are the difficulty physicians have with
+ numerical measures, regardless of framework. To meet this challenge, we
+ propose to develop accessible methods for using the frameworks and to
+ develop computer-based tools for using the methods.
+ 
+ The strategy we propose for developing accessible methods is to establish
+ canonical models within each framework. We plan to propose a set of
+ canonical decision models implicit in conclusions of clinical studies and
+ to validate the set by a review of a random set of clinical trials gleaned
+ from the medical research literature. To use these models, physicians need
+ novel nonnumerical methods-graphical and qualitative techniques- that
+ translate the statistical results into clinically meaningful terms and
+ concepts.
+ 
+ (3) Because these novel methods will be computationally more difficult
+ than current practice, we propose to construct a set of computer-based
+ tools that will implement them. As basis for building these tools, we
+ shall use a set of novel artificial intelligence techniques.
+ 
+ (4) We propose to validate each of the following propositions: that
+ clinicians can use these advanced methods, that they prefer one framework
+ over the other, and that use of these methods reduces or explains the
+ variability established by the questionnaire process.
+",2237993,R29LM005647,['R29LM005647'],LM,https://reporter.nih.gov/project-details/2237993,R29,1995,104636,1.0
+"We propose to develop automated techniques to facilitate classification         
+and pattern recognition in biomedical data sets. These techniques will          
+involve development of novel neural network architectures, as well as           
+formulation of principles governing their creation and explanation of           
+results. Specifically, as a solution to the problem of recognizing              
+infrequent categories, we will develop hierarchical and sequential              
+systems of feedforward neural networks that make use of information such        
+as (a) prior knowledge of the domain, and/or (b) natural clusters               
+defined by clustering or unsupervised learning methods to develop               
+intermediate classification goals and utilize a divide-and-conquer              
+approach to complex classification problems. Additionally, we will              
+develop generic tools for pre-processing input data by making                   
+transformations of original data, reducing dimensionality, and producing        
+training and test sets suitable for cross-validation and bootstrap. We          
+will build tools for evaluating results that measure calibration,               
+resolution, importance of variables, and comparisons between different          
+models. Furthermore, we will develop standardized interfaces for certain        
+existing classification models.We will use a component-based                    
+architecture to build our neural network and write interfaces to                
+existing classification models (e.g., regression trees, logistic                
+regression models) so that they can be interchanged in a user-friendly          
+manner. We will use our preprocessing modules to prepare data to be             
+entered in a variety of classification models. The results will be              
+evaluated in isolation, and later combined to test the hypothesis that          
+the combined system performs better in real biomedical data sets in             
+terms of calibration, resolution, and explanatory power.This research           
+will (a) quantify improvement in performance when a classification              
+problem is broken down into sub-problems in a systematic way, (b)               
+quantify the advantages of combining different types of classifiers, (c)        
+create a library of reusable neural network classification models, data         
+pre-processing, and evaluation tools that uses standardized interfaces,         
+and (d) foster dissemination of classification models and the use of            
+pre-processing and evaluation tools by making them available to other           
+researchers through the World-Wide-Web. We will test four hypotheses:           
+(I) Combinations of different modalities of classifiers perform                 
+significantly better than isolated models. (2) Hierarchical and                 
+sequential neural networks perform better than standard neural networks.        
+(3) Unsupervised models can decompose a problem for hierarchical or             
+sequential neural networks better than models that use prior knowledge.         
+(4) It is possible to build a Classification Tool Kit composed of data          
+preprocessing modules, classification models, and evaluation modules in         
+which components are independent, reusable, and interchangeable.                
+ Internet; artificial intelligence; classification; computer assisted medical decision making; computer system design /evaluation; mathematical model; model design /development COMPONENT BASED TOOLS FOR CONNECTIONIST CLASSIFICATION","We propose to develop automated techniques to facilitate classification         
+and pattern recognition in biomedical data sets. These techniques will          
+involve development of novel neural network architectures, as well as           
+formulation of principles governing their creation and explanation of           
+results. Specifically, as a solution to the problem of recognizing              
+infrequent categories, we will develop hierarchical and sequential              
+systems of feedforward neural networks that make use of information such        
+as (a) prior knowledge of the domain, and/or (b) natural clusters               
+defined by clustering or unsupervised learning methods to develop               
+intermediate classification goals and utilize a divide-and-conquer              
+approach to complex classification problems. Additionally, we will              
+develop generic tools for pre-processing input data by making                   
+transformations of original data, reducing dimensionality, and producing        
+training and test sets suitable for cross-validation and bootstrap. We          
+will build tools for evaluating results that measure calibration,               
+resolution, importance of variables, and comparisons between different          
+models. Furthermore, we will develop standardized interfaces for certain        
+existing classification models.We will use a component-based                    
+architecture to build our neural network and write interfaces to                
+existing classification models (e.g., regression trees, logistic                
+regression models) so that they can be interchanged in a user-friendly          
+manner. We will use our preprocessing modules to prepare data to be             
+entered in a variety of classification models. The results will be              
+evaluated in isolation, and later combined to test the hypothesis that          
+the combined system performs better in real biomedical data sets in             
+terms of calibration, resolution, and explanatory power.This research           
+will (a) quantify improvement in performance when a classification              
+problem is broken down into sub-problems in a systematic way, (b)               
+quantify the advantages of combining different types of classifiers, (c)        
+create a library of reusable neural network classification models, data         
+pre-processing, and evaluation tools that uses standardized interfaces,         
+and (d) foster dissemination of classification models and the use of            
+pre-processing and evaluation tools by making them available to other           
+researchers through the World-Wide-Web. We will test four hypotheses:           
+(I) Combinations of different modalities of classifiers perform                 
+significantly better than isolated models. (2) Hierarchical and                 
+sequential neural networks perform better than standard neural networks.        
+(3) Unsupervised models can decompose a problem for hierarchical or             
+sequential neural networks better than models that use prior knowledge.         
+(4) It is possible to build a Classification Tool Kit composed of data          
+preprocessing modules, classification models, and evaluation modules in         
+which components are independent, reusable, and interchangeable.                
+",2649830,R55LM006538,['R55LM006538'],LM,https://reporter.nih.gov/project-details/2649830,R55,1997,100000,1.0
+"DESCRIPTION (Taken from project abstract):  In the past two decades new         
+imaging technology has given neurologists noninvasive tools which reveal the    
+structure of the brain with a clarity that is little short of miraculous.       
+At the same time, neuroscientists, often in animal studies, have developed      
+ways to reveal hundreds of chemical and functional features of the brain        
+that are relevant to human brain function.  The problem of integrating new      
+knowledge to the benefit of human patients is exploding in both magnitude       
+and complexity.                                                                 
+                                                                                
+This project addresses that problem by developing a Brain Information           
+Management System for knowledge obtained from human and non-human primate       
+research.  The system will allow the most precise possible indexation of        
+written and pictorial information into a knowledge base that is accessible      
+through the standard terminology of the National Library of Medicine's          
+Unified Medical Language System.  Clinicians and neuroscientists anywhere in    
+the country will be able to access the system via the World Wide Web to         
+determine what is known about the involvement of any brain structure with       
+any of the characteristics described in the neuroscientific knowledge base.     
+The system will be evaluated by using it to identify neural pathways in the     
+primate brain that are likely to mediate the rewarding effects of electrical    
+stimulation of the brain.                                                       
+                                                                                
+The computerized Brain Information Management System is intended to             
+accelerate the application of basic neuroscientific knowledge in the            
+clinical discipline neurosurgery, neurology and neuropsychiatry.  The           
+research project used to test the system holds promise of better                
+understanding of drug abuse, depression and dementia.                           
+ Macaca fascicularis; artificial intelligence; brain mapping; central neural pathway /tract; computational neuroscience; electrostimulus; information display; information retrieval; information systems; neural information processing; physical model; reinforcer; stereotaxic techniques; vocabulary development for information system SPATIAL/SYMBOLIC BRAIN INFORMATION MANAGEMENT SYSTEM","DESCRIPTION (Taken from project abstract):  In the past two decades new         
+imaging technology has given neurologists noninvasive tools which reveal the    
+structure of the brain with a clarity that is little short of miraculous.       
+At the same time, neuroscientists, often in animal studies, have developed      
+ways to reveal hundreds of chemical and functional features of the brain        
+that are relevant to human brain function.  The problem of integrating new      
+knowledge to the benefit of human patients is exploding in both magnitude       
+and complexity.                                                                 
+                                                                                
+This project addresses that problem by developing a Brain Information           
+Management System for knowledge obtained from human and non-human primate       
+research.  The system will allow the most precise possible indexation of        
+written and pictorial information into a knowledge base that is accessible      
+through the standard terminology of the National Library of Medicine's          
+Unified Medical Language System.  Clinicians and neuroscientists anywhere in    
+the country will be able to access the system via the World Wide Web to         
+determine what is known about the involvement of any brain structure with       
+any of the characteristics described in the neuroscientific knowledge base.     
+The system will be evaluated by using it to identify neural pathways in the     
+primate brain that are likely to mediate the rewarding effects of electrical    
+stimulation of the brain.                                                       
+                                                                                
+The computerized Brain Information Management System is intended to             
+accelerate the application of basic neuroscientific knowledge in the            
+clinical discipline neurosurgery, neurology and neuropsychiatry.  The           
+research project used to test the system holds promise of better                
+understanding of drug abuse, depression and dementia.                           
+",2519676,R01LM006243,['R01LM006243'],LM,https://reporter.nih.gov/project-details/2519676,R01,1997,171051,1.0
+"We propose to develop accurate models of the electrical properties of the       
+human head.  The Physical Head Model will be constructed with layers of         
+conductive plastics varying in electrical resistivity.  Imbedded current        
+sources will be driven through a computer interface.  The source waveforms      
+will include representations of actual EEG data corresponding to different      
+physiological states, computed waveforms will include representations of        
+actual EEG data corresponding to different physiological states, computed       
+waveforms with known statistical variation in both time and space, and          
+waveforms generated by mathematical models of neocortical dynamic               
+function.  The Digital Head Model will simulate the physical model, and it      
+will allow exploration of a variety of source geometries and head tissue        
+conductivities.  The Digital Head Model will include anatomical                 
+registration procedures to facilitate forward modeling with neuroimaging        
+data such as from the BrainMap database.  The Head Models will provide          
+critical tests of the validity of present and future source localization        
+methods.  These Models will form a basis for interactive training programs      
+in human brain electrophysiology for both research and clinical settings.       
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  In addition to use in research                
+laboratories, the simulations will support training curricular for              
+neurology residence programs., cognitive neuroscience graduate programs,        
+and neuroscience undergraduate courses.                                         
+ artificial intelligence; biological models; brain electrical activity; computational neuroscience; digital imaging; electrical conductance; electrical property; electrodes; electroencephalography; evoked potentials; head; human data; neuroanatomy; phantom model; plastics PHYSICAL AND DIGITAL PHANTOMS OF HUMAN HEAD","We propose to develop accurate models of the electrical properties of the       
+human head.  The Physical Head Model will be constructed with layers of         
+conductive plastics varying in electrical resistivity.  Imbedded current        
+sources will be driven through a computer interface.  The source waveforms      
+will include representations of actual EEG data corresponding to different      
+physiological states, computed waveforms will include representations of        
+actual EEG data corresponding to different physiological states, computed       
+waveforms with known statistical variation in both time and space, and          
+waveforms generated by mathematical models of neocortical dynamic               
+function.  The Digital Head Model will simulate the physical model, and it      
+will allow exploration of a variety of source geometries and head tissue        
+conductivities.  The Digital Head Model will include anatomical                 
+registration procedures to facilitate forward modeling with neuroimaging        
+data such as from the BrainMap database.  The Head Models will provide          
+critical tests of the validity of present and future source localization        
+methods.  These Models will form a basis for interactive training programs      
+in human brain electrophysiology for both research and clinical settings.       
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  In addition to use in research                
+laboratories, the simulations will support training curricular for              
+neurology residence programs., cognitive neuroscience graduate programs,        
+and neuroscience undergraduate courses.                                         
+",2675309,R44MH053768,['R44MH053768'],MH,https://reporter.nih.gov/project-details/2675309,R44,1998,339507,1.0

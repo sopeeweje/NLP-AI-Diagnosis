@@ -1,0 +1,248 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"Neural networks (NN) have become established as powerful tools for complex
+pattern recognition problems. One application which appears well suited to
+NN methods is the identification of prognostic groups, to be used for
+treatment planning. For many cancer, studies of cancer cell biology have
+added many factors of potential prognostic value, but the way in which
+these interact with known factors is generally not well studied. The
+potential of NNs to model these data in a non-linear fashion has only
+begun to be explored.  NNs are not part of standard statistical packages,
+making them relatively inaccessible to many statisticians. More
+importantly, current NN methods cannot accommodate censored outcome
+variables.
+
+This proposal is for development of algorithms for censored-data NNs,
+implementation of these within a comprehensive statistical package, and
+evaluation of alternative approaches. The aim is to provide statisticians
+involved with clinical decision making with more ready access to NN
+technology, and with the means to analyze survival-type data. The value of
+NNs in this field cannot be addressed by any single investigator, but by
+providing the software that is needed, and some guidelines for its use, we
+anticipate that research in this field will be stimulated.
+ artificial intelligence; computer graphics /printing; computer system design /evaluation; human data; mathematical model; prognosis; statistics /biometry NEURAL NETWORKS FOR CLINICAL PREDICTION","Neural networks (NN) have become established as powerful tools for complex
+pattern recognition problems. One application which appears well suited to
+NN methods is the identification of prognostic groups, to be used for
+treatment planning. For many cancer, studies of cancer cell biology have
+added many factors of potential prognostic value, but the way in which
+these interact with known factors is generally not well studied. The
+potential of NNs to model these data in a non-linear fashion has only
+begun to be explored.  NNs are not part of standard statistical packages,
+making them relatively inaccessible to many statisticians. More
+importantly, current NN methods cannot accommodate censored outcome
+variables.
+
+This proposal is for development of algorithms for censored-data NNs,
+implementation of these within a comprehensive statistical package, and
+evaluation of alternative approaches. The aim is to provide statisticians
+involved with clinical decision making with more ready access to NN
+technology, and with the means to analyze survival-type data. The value of
+NNs in this field cannot be addressed by any single investigator, but by
+providing the software that is needed, and some guidelines for its use, we
+anticipate that research in this field will be stimulated.
+",2272927,R41NS033899,['R41NS033899'],NS,https://reporter.nih.gov/project-details/2272927,R41,1994,93467,0.8959354790727729
+"The goal of this research is to develop improved techniques, both fully         
+automated and computer-assisted, for classification of medical text.  The       
+technical approach is exemplar-based: robust information retrieval methods      
+find similar, previously-classified texts, and corresponding codes are          
+used to suggest likely classifications for a new text.  Phase I focused         
+upon implementing experimental software to establish baseline performance       
+with several variations of the exemplar-based approach.                         
+                                                                                
+Phase II builds upon this work to implement a complete Coder's Workstation      
+(CWS).  Based upon Phase I results and assessments of commercial                
+opportunities, Phase II will focus upon shorter texts (<12 words), which        
+are best suited for automated methods.  A ""short-similarity"" capability         
+will be added to the Phase I approach to further enhance performance with       
+shorter texts.  To evaluate and refine the CWS, Phase II will include           
+extensive ""beta testing"" of the software at the Brigham and Women's             
+Hospital and the Mayo Clinic.                                                   
+                                                                                
+The major technical innovation of this project is the development of            
+highly automated classification software that is sensitive to term              
+similarities.  The major health-related contributions are large potential       
+savings in coding expenses, reduced time demands upon physicians for            
+coding, and improved consistency in classification of free text for             
+research studies.                                                               
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  The proposed technology will have             
+important commercial application within hospitals, insurance companies,         
+and pharmaceutical companies which currently expend significant resources       
+on coding of free text (ICD9, CPT4, COSTART, etc.).  The founders of            
+Belmont Research Inc. have extensive experience in creating and marketing       
+software to support biomedical applications.                                    
+ artificial intelligence; computer program /software; computer system design /evaluation; disease /disorder classification; human data; information retrieval; medical records; vocabulary development for information system EXEMPLAR-BASED MEDICAL TEXT CLASSIFICATION","The goal of this research is to develop improved techniques, both fully         
+automated and computer-assisted, for classification of medical text.  The       
+technical approach is exemplar-based: robust information retrieval methods      
+find similar, previously-classified texts, and corresponding codes are          
+used to suggest likely classifications for a new text.  Phase I focused         
+upon implementing experimental software to establish baseline performance       
+with several variations of the exemplar-based approach.                         
+                                                                                
+Phase II builds upon this work to implement a complete Coder's Workstation      
+(CWS).  Based upon Phase I results and assessments of commercial                
+opportunities, Phase II will focus upon shorter texts (<12 words), which        
+are best suited for automated methods.  A ""short-similarity"" capability         
+will be added to the Phase I approach to further enhance performance with       
+shorter texts.  To evaluate and refine the CWS, Phase II will include           
+extensive ""beta testing"" of the software at the Brigham and Women's             
+Hospital and the Mayo Clinic.                                                   
+                                                                                
+The major technical innovation of this project is the development of            
+highly automated classification software that is sensitive to term              
+similarities.  The major health-related contributions are large potential       
+savings in coding expenses, reduced time demands upon physicians for            
+coding, and improved consistency in classification of free text for             
+research studies.                                                               
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  The proposed technology will have             
+important commercial application within hospitals, insurance companies,         
+and pharmaceutical companies which currently expend significant resources       
+on coding of free text (ICD9, CPT4, COSTART, etc.).  The founders of            
+Belmont Research Inc. have extensive experience in creating and marketing       
+software to support biomedical applications.                                    
+",2429835,R44CA065250,['R44CA065250'],CA,https://reporter.nih.gov/project-details/2429835,R44,1997,359069,0.8959354790727729
+"In Phase I of the ""Decision Support System to Identify the At-Risk              
+Fetus"" a prototype Intelligent Decision Support System (IDSS) was               
+developed to interpret electronic fetal monitoring (EFM) data. In               
+Phase II, the researchers propose to complete development and test              
+the IDSS in preparation for full clinical trials and                            
+commercialization. The research is based on the hypothesis that                 
+intrapartum EFM and the resulting FHR and UC data provide                       
+information that can assist physicians in more accurately                       
+differentiating between healthy and at-risk fetuses. The system                 
+uses morphological filters to process signals at different scales,              
+a neural network to better recognize FHR and UC patterns despite                
+EFM noise, and a fuzzy relational structure outcome inferencing. In             
+Phase I evidence was generated supporting the hypothesis when the               
+IDSS with little training on only 50 cases differentiated between               
+healthy and at-risk fetuses as well, and perhaps slightly better                
+than three board certified obstetricians with over 40 years of                  
+combined clinical experience. The proposed Phase II improvements to             
+IDSS would increase the system's sensitivity and specificity so as              
+to assist clinicians in more accurately identifying at-risk                     
+fetuses, as well as more confidently identifying healthy fetuses so             
+as to avoid unnecessary interventions.                                          
+                                                                                
+PROPOSED COMMERCIAL APPLICATIONS The successful completion of Phase             
+II should lead to a system which can be used in hospitals and                   
+clinicians' offices to better identify the at-risk fetus, thereby               
+allowing for the timely implementation of efficacious interventions             
+and a reduction in the use of invasive obstetrical interventions,               
+including cesarean deliveries, without adversely impacting                      
+outcomes. The use of this system in hospitals and private                       
+clinicians' offices will also help reduce the costs of national                 
+health care.                                                                    
+ artificial intelligence; biomedical equipment development; clinical research; computer assisted medical decision making; computer data analysis; diagnosis design /evaluation; embryo /fetus disorder; embryo /fetus monitoring; human subject; method development; obstetrics; prenatal stress DECISION SUPPORT SYSTEM TO IDENTIFY THE AT RISK FETUS","In Phase I of the ""Decision Support System to Identify the At-Risk              
+Fetus"" a prototype Intelligent Decision Support System (IDSS) was               
+developed to interpret electronic fetal monitoring (EFM) data. In               
+Phase II, the researchers propose to complete development and test              
+the IDSS in preparation for full clinical trials and                            
+commercialization. The research is based on the hypothesis that                 
+intrapartum EFM and the resulting FHR and UC data provide                       
+information that can assist physicians in more accurately                       
+differentiating between healthy and at-risk fetuses. The system                 
+uses morphological filters to process signals at different scales,              
+a neural network to better recognize FHR and UC patterns despite                
+EFM noise, and a fuzzy relational structure outcome inferencing. In             
+Phase I evidence was generated supporting the hypothesis when the               
+IDSS with little training on only 50 cases differentiated between               
+healthy and at-risk fetuses as well, and perhaps slightly better                
+than three board certified obstetricians with over 40 years of                  
+combined clinical experience. The proposed Phase II improvements to             
+IDSS would increase the system's sensitivity and specificity so as              
+to assist clinicians in more accurately identifying at-risk                     
+fetuses, as well as more confidently identifying healthy fetuses so             
+as to avoid unnecessary interventions.                                          
+                                                                                
+PROPOSED COMMERCIAL APPLICATIONS The successful completion of Phase             
+II should lead to a system which can be used in hospitals and                   
+clinicians' offices to better identify the at-risk fetus, thereby               
+allowing for the timely implementation of efficacious interventions             
+and a reduction in the use of invasive obstetrical interventions,               
+including cesarean deliveries, without adversely impacting                      
+outcomes. The use of this system in hospitals and private                       
+clinicians' offices will also help reduce the costs of national                 
+health care.                                                                    
+",2421880,R44HD031837,['R44HD031837'],HD,https://reporter.nih.gov/project-details/2421880,R44,1997,384012,0.8959354790727729
+"DESCRIPTION:(Adapted from applicant's abstract): Implementation and             
+validation of a computerized expert system sleep scoring is proposed.           
+Such a system would increase productivity of sleep laboratories, and            
+increase the quality while reducing the cost of sleep diagnostic                
+procedures. Phase I research will focus on the basic algorithms for             
+automated sleep stage scoring. The algorithms are based on Bayesian             
+decision theory and follow the steps of the human expert in the decision        
+making process when scoring sleep by the Rechtschaffen-Kales standard.          
+Likelihood estimates of the suggested and alternative decisions will be         
+used to quantify confidence in suggested scores. The system will flag           
+low confidence scores to be revised by human interaction. Initial tests         
+show that the level of agreement between machine and human is  similar          
+to that between two human scorers. Software tools will be developed to          
+test the effect of the parameters of the algorithms on stage score              
+decisions. An initial data base of training and test sets of normal and         
+apneic sleep recordings will be established and the algorithms will be          
+optimized and tested on this data. Phase II will optimize parameters and        
+validate the system on larger data sets for other diagnostic and age            
+groups, develop on-line, real-time capabilities, and extend the decision        
+model to facilitate further research in sleep medicine.                         
+ biomedical automation; biomedical equipment development; computer system design /evaluation; method development; sleep EXPERT SYSTEM FOR AUTOMATED SLEEP STAGE SCORING","DESCRIPTION:(Adapted from applicant's abstract): Implementation and             
+validation of a computerized expert system sleep scoring is proposed.           
+Such a system would increase productivity of sleep laboratories, and            
+increase the quality while reducing the cost of sleep diagnostic                
+procedures. Phase I research will focus on the basic algorithms for             
+automated sleep stage scoring. The algorithms are based on Bayesian             
+decision theory and follow the steps of the human expert in the decision        
+making process when scoring sleep by the Rechtschaffen-Kales standard.          
+Likelihood estimates of the suggested and alternative decisions will be         
+used to quantify confidence in suggested scores. The system will flag           
+low confidence scores to be revised by human interaction. Initial tests         
+show that the level of agreement between machine and human is  similar          
+to that between two human scorers. Software tools will be developed to          
+test the effect of the parameters of the algorithms on stage score              
+decisions. An initial data base of training and test sets of normal and         
+apneic sleep recordings will be established and the algorithms will be          
+optimized and tested on this data. Phase II will optimize parameters and        
+validate the system on larger data sets for other diagnostic and age            
+groups, develop on-line, real-time capabilities, and extend the decision        
+model to facilitate further research in sleep medicine.                         
+",2703049,R44NS033437,['R44NS033437'],NS,https://reporter.nih.gov/project-details/2703049,R44,1998,301080,0.842888834656164
+"DESCRIPTION:  Access to comprehensive medical information is literally          
+a matter of life and death for health professionals.  The applicants            
+propose to develop a state-of-the-art medical information system based          
+on natural language processing (NLP) which provides innovative access           
+first to the literature of complementary medicine and then to the               
+traditional medical literature.  The goal of Phase I is dual:  to               
+develop a finely tuned, immediately usable information system for               
+alternative medicine, and to determine on an experimental level what            
+linguistic elements within the medical subject domain are critical to           
+optimizing retrieval.  For this purpose, an extensive analysis of               
+medical sublanguage and the text structure of medical documents will be         
+undertaken, and the results will be applied to each module of the system        
+in order to optimize it for medical domain.  The Phase I system will be         
+used by the medical community both for access to hard-to-find                   
+information, and to begin to assess the usefulness of complementary             
+medicine techniques in treating chronic problems.  Phase II will add            
+traditional medical literature to the system to provide a fully                 
+integrated solution for rich, precise access to medical information.            
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: NOT AVAILABLE                                  
+ alternative medicine; artificial intelligence; computer system design /evaluation; information retrieval; information systems; language MEDLINK","DESCRIPTION:  Access to comprehensive medical information is literally          
+a matter of life and death for health professionals.  The applicants            
+propose to develop a state-of-the-art medical information system based          
+on natural language processing (NLP) which provides innovative access           
+first to the literature of complementary medicine and then to the               
+traditional medical literature.  The goal of Phase I is dual:  to               
+develop a finely tuned, immediately usable information system for               
+alternative medicine, and to determine on an experimental level what            
+linguistic elements within the medical subject domain are critical to           
+optimizing retrieval.  For this purpose, an extensive analysis of               
+medical sublanguage and the text structure of medical documents will be         
+undertaken, and the results will be applied to each module of the system        
+in order to optimize it for medical domain.  The Phase I system will be         
+used by the medical community both for access to hard-to-find                   
+information, and to begin to assess the usefulness of complementary             
+medicine techniques in treating chronic problems.  Phase II will add            
+traditional medical literature to the system to provide a fully                 
+integrated solution for rich, precise access to medical information.            
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: NOT AVAILABLE                                  
+",2867891,R43LM006671,['R43LM006671'],LM,https://reporter.nih.gov/project-details/2867891,R43,1998,46729,0.842888834656164

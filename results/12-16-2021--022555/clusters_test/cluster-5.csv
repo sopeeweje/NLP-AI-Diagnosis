@@ -1,0 +1,103 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding
+"PROJECT SUMMARY/ABSTRACT
+Coronary artery disease (CAD) is the most common type of heart disease, killing over 370,000 Americans annu-
+ally2. Cardiac CT is a safe, accurate, non-invasive method widely employed for diagnosis of CAD and planning
+therapeutic interventions. With the current CT technology, calcium blooming artifacts severely limit the accuracy
+of coronary stenosis assessment. Similarly, stent blooming artifacts lead to overestimation of in-stent restenosis.
+As a result, many coronary CT angiography (CCTA) scans are non-diagnostic and result in patients receiving
+costly and invasive coronary angiography (ICA) procedures.
+ Based on extensive feasibility results, the goal of this project is to use deep learning innovations to fundamen-
+tally eliminate blooming artifacts without costly redesign of the CT hardware. A consortium between GE Re-
+search, Rensselaer Polytechnic Institute and Weill Cornell Medicine will develop dedicated imaging protocols
+and machine learning methods to avoid or minimize blooming artifacts and evaluate the clinical impact of the
+proposed solutions. In Aim 1, the CT scan protocol will be optimized and paired with deep learning reconstruc-
+tion and post-processing algorithms to generate high-resolution CT images and prevent blooming artifacts. In
+Aim 2, image-domain and raw-data-domain deep learning processing algorithms will be developed to correct for
+residual blooming. After successful demonstration of the proposed methods on phantom scans and emulated
+clinical datasets, in Aim 3 the proposed CT methods will be clinically demonstrated and optimized based on 100
+patients with coronary artery disease, using intravascular ultrasound as the ground-truth reference.
+ At the end of the project, we will have demonstrated and publicly disseminated a systematic methodology to
+essentially remove blooming artifacts in cardiac CT without a costly hardware upgrade. This will be another suc-
+cess of deep learning, enabling accurate coronary stenosis assessment and eliminating many unnecessary diag-
+nostic catheterizations. Address;Algorithms;American;Angiography;Area;Attenuated;Calcium;Caliber;Cardiac;Cardiovascular Diseases;Clinical;Collaborations;Coronary;Coronary Angiography;Coronary Arteriosclerosis;Coronary Stenosis;Coronary artery;Data;Data Set;Diagnosis;Goals;Heart;Heart Diseases;High Resolution Computed Tomography;Hospitals;Image;In Vitro;Institutes;Lead;Measurement;Medicine;Metals;Methodology;Methods;Morbidity - disease rate;Morphologic artifacts;Motion;New York;Noise;Outcome;Patients;Physics;Plant Roots;Presbyterian Church;Prevention;Procedures;Protocols documentation;Recording of previous events;Research;Residual state;Resolution;Scanning;Speed;Stenosis;Stents;Techniques;Technology;Therapeutic Intervention;Training;Ultrasonography;Validation;X-Ray Computed Tomography;base;calcification;cohort;cost;deep learning;deep learning algorithm;diagnostic catheterization;image reconstruction;improved;in silico;in vivo;innovation;learning network;machine learning method;man;microCT;mortality;prevent;reconstruction;recruit;restenosis;simulation;success;temporal measurement;virtual;virtual reality simulation Cardiac CT Deblooming","PROJECT SUMMARY/ABSTRACT
+Coronary artery disease (CAD) is the most common type of heart disease, killing over 370,000 Americans annu-
+ally2. Cardiac CT is a safe, accurate, non-invasive method widely employed for diagnosis of CAD and planning
+therapeutic interventions. With the current CT technology, calcium blooming artifacts severely limit the accuracy
+of coronary stenosis assessment. Similarly, stent blooming artifacts lead to overestimation of in-stent restenosis.
+As a result, many coronary CT angiography (CCTA) scans are non-diagnostic and result in patients receiving
+costly and invasive coronary angiography (ICA) procedures.
+ Based on extensive feasibility results, the goal of this project is to use deep learning innovations to fundamen-
+tally eliminate blooming artifacts without costly redesign of the CT hardware. A consortium between GE Re-
+search, Rensselaer Polytechnic Institute and Weill Cornell Medicine will develop dedicated imaging protocols
+and machine learning methods to avoid or minimize blooming artifacts and evaluate the clinical impact of the
+proposed solutions. In Aim 1, the CT scan protocol will be optimized and paired with deep learning reconstruc-
+tion and post-processing algorithms to generate high-resolution CT images and prevent blooming artifacts. In
+Aim 2, image-domain and raw-data-domain deep learning processing algorithms will be developed to correct for
+residual blooming. After successful demonstration of the proposed methods on phantom scans and emulated
+clinical datasets, in Aim 3 the proposed CT methods will be clinically demonstrated and optimized based on 100
+patients with coronary artery disease, using intravascular ultrasound as the ground-truth reference.
+ At the end of the project, we will have demonstrated and publicly disseminated a systematic methodology to
+essentially remove blooming artifacts in cardiac CT without a costly hardware upgrade. This will be another suc-
+cess of deep learning, enabling accurate coronary stenosis assessment and eliminating many unnecessary diag-
+nostic catheterizations.",10250305,R01HL151561,['R01HL151561'],HL,https://reporter.nih.gov/project-details/10250305,R01,2021,978149
+"PROJECT SUMMARY
+Coronary artery disease remains the leading cause of death worldwide, and more than half of the individuals
+suffering myocardial infarction (heart attacks) have no premonitory symptoms. Studies of patients with
+coronary artery disease have traditionally focused only on the severity of narrowing (stenosis) of the coronary
+arteries by atherosclerotic plaques, rather than the adverse features of coronary plaques which are
+predisposed to rupture and precipitate myocardial infarction. Coronary CT Angiography (CTA) is a noninvasive
+test that allows assessment of both coronary stenosis and plaque characteristics. Currently, however, CTA is
+interpreted visually for stenosis. Quantitative measurements of CTA stenosis severity and plaque features are
+not part of current clinical routine.
+ We propose to develop novel image processing algorithms for fully automated, robust quantification of
+coronary plaque features from CTA. We also propose to automatically quantify the characteristics of adipose
+tissue around the coronary arteries (pericoronary adipose tissue, PCAT), which have been shown to
+differentiate rupture-prone, high-risk coronary plaques from stable ones. We propose to apply machine
+learning methods to efficiently combine stenosis, plaque and PCAT features, along with patient clinical data,
+into a new integrated risk score for the prediction of future adverse cardiovascular events. We will evaluate this
+risk score in the real-world, prospective, landmark SCOT-HEART trial (including all 2073 patients in the
+CTA arm of the trial), with added external validation in large multicenter patient registries, with available CTA
+scans, clinical data, and followup for cardiovascular events (fatal and non-fatal myocardial infarction and
+cardiovascular death in a grand total of 7844 patients). We propose three specific aims:
+1) To refine, expand and automate measurements of coronary plaque and lumen for the entire coronary artery
+tree, and to standardize measurement of plaque changes in serial CTA;
+2) To evaluate the prognostic value of automatically-quantified plaque features and PCAT characteristics for
+the prediction of future MACE in the prospective SCOT-HEART trial and multicenter CTA registries;
+3) To develop and evaluate with full external validation a new automated patient risk score—combining
+patient clinical data, CTA-measured quantitative plaque features and PCAT characteristics, using machine
+learning—for the prediction of future MACE events in the prospective SCOT-HEART trial and multicenter CTA
+registries.
+ The proposed work will enable automated, multi-faceted and reproducible analysis of plaque, stenosis and
+PCAT from CTA, combined with objective risk scores reflecting likelihood of adverse cardiovascular events.
+This work will provide a novel, personalized, real-world paradigm that objectively and accurately identifies
+individual patients at risk of future cardiovascular events, from routine CTA imaging. Adipose tissue;Algorithms;American;Angiography;Arterial Fatty Streak;Arteries;Artificial Intelligence;Atherosclerosis;Cardiac Death;Cardiovascular system;Cause of Death;Cessation of life;Characteristics;Clinical;Clinical Data;Clinical Trials;Clinical assessments;Complex;Consumption;Coronary;Coronary Arteriosclerosis;Coronary Stenosis;Coronary artery;Data;Deposition;Event;Future;Hospitals;Hour;Image;Imaging Techniques;Individual;Language;Longterm Follow-up;Machine Learning;Manuals;Measurement;Measures;Medical center;Myocardial Infarction;Patient risk;Patient-Focused Outcomes;Patients;Physicians;Prognosis;Registries;Reproducibility;Research;Research Personnel;Risk;Rupture;Scanning;Severities;Site;Standardization;Stenosis;Symptoms;Testing;Time;Trees;Validation;Visual;Work;acute coronary syndrome;arm;cardiovascular risk factor;clinically significant;computerized;coronary calcium scoring;coronary computed tomography angiography;coronary event;coronary plaque;density;experience;follow-up;heart imaging;high risk;image processing;improved;indexing;individual patient;machine learning method;mortality;noninvasive diagnosis;novel;patient registry;prognostic significance;prognostic value;prospective;risk prediction Integrated prediction of cardiovascular events by automated coronary plaque and pericoronary adipose tissue quantification from CT Angiography","PROJECT SUMMARY
+Coronary artery disease remains the leading cause of death worldwide, and more than half of the individuals
+suffering myocardial infarction (heart attacks) have no premonitory symptoms. Studies of patients with
+coronary artery disease have traditionally focused only on the severity of narrowing (stenosis) of the coronary
+arteries by atherosclerotic plaques, rather than the adverse features of coronary plaques which are
+predisposed to rupture and precipitate myocardial infarction. Coronary CT Angiography (CTA) is a noninvasive
+test that allows assessment of both coronary stenosis and plaque characteristics. Currently, however, CTA is
+interpreted visually for stenosis. Quantitative measurements of CTA stenosis severity and plaque features are
+not part of current clinical routine.
+ We propose to develop novel image processing algorithms for fully automated, robust quantification of
+coronary plaque features from CTA. We also propose to automatically quantify the characteristics of adipose
+tissue around the coronary arteries (pericoronary adipose tissue, PCAT), which have been shown to
+differentiate rupture-prone, high-risk coronary plaques from stable ones. We propose to apply machine
+learning methods to efficiently combine stenosis, plaque and PCAT features, along with patient clinical data,
+into a new integrated risk score for the prediction of future adverse cardiovascular events. We will evaluate this
+risk score in the real-world, prospective, landmark SCOT-HEART trial (including all 2073 patients in the
+CTA arm of the trial), with added external validation in large multicenter patient registries, with available CTA
+scans, clinical data, and followup for cardiovascular events (fatal and non-fatal myocardial infarction and
+cardiovascular death in a grand total of 7844 patients). We propose three specific aims:
+1) To refine, expand and automate measurements of coronary plaque and lumen for the entire coronary artery
+tree, and to standardize measurement of plaque changes in serial CTA;
+2) To evaluate the prognostic value of automatically-quantified plaque features and PCAT characteristics for
+the prediction of future MACE in the prospective SCOT-HEART trial and multicenter CTA registries;
+3) To develop and evaluate with full external validation a new automated patient risk score—combining
+patient clinical data, CTA-measured quantitative plaque features and PCAT characteristics, using machine
+learning—for the prediction of future MACE events in the prospective SCOT-HEART trial and multicenter CTA
+registries.
+ The proposed work will enable automated, multi-faceted and reproducible analysis of plaque, stenosis and
+PCAT from CTA, combined with objective risk scores reflecting likelihood of adverse cardiovascular events.
+This work will provide a novel, personalized, real-world paradigm that objectively and accurately identifies
+individual patients at risk of future cardiovascular events, from routine CTA imaging.",10165813,R01HL148787,['R01HL148787'],HL,https://reporter.nih.gov/project-details/10165813,R01,2021,684863

@@ -1,0 +1,334 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The long-term objective of our research group is to facilitate automatic
+ or semi-automatic classification and retrieval of natural language texts,
+ in support of reducing the cost and improving the quality of computerized
+ medical information. This proposal develops further and applies a novel
+ approach, the Linear Least Squares Fit (LLSF) mapping, to document
+ indexing and document retrieval of the MEDLINE database. LLSF mapping is
+ a statistical method developed by the PI for learning human knowledge
+ about matching queries, documents, and canonical concepts. The goal is to
+ improve the quality (recall and precision) of automatic document indexing
+ and retrieval, which cannot be achieved by surface-based matching without
+ using human knowledge or thesaurus-based matching dependent on manually
+ developed synonyms. This project applies LLSF to MEDLINE, the world's
+ largest and most frequently used on-line database, to evaluate the
+ effectiveness of this method and to explore the practical potential on
+ large scale databases. The specific aims and methods are:
+ 
+ l. To collect data needed for the training and evaluation of the LLSF
+ method. A collaboration with another research institute is planned for
+ utilizing and refining a large collection of MEDLINE retrieval data. A
+ sampling of MEDLINE searches at the Mayo Clinic will be employed for
+ obtaining additional tasks.
+ 
+ 2. To develop automatic noise reduction techniques for improving both the
+ accuracy of the LLSF mapping and the efficiency of the computation. A
+ multi-step noise reduction in the training process of LLSF will be
+ investigated, including a statistical term weighting for the removal of
+ non-informative terms, a truncated singular value decomposition (SVD) for
+ reducing the noise at the semantic structure level, and the truncation of
+ insignificant elements in the LLSF solution matrix for noise-reduction at
+ the level of term-to-concept mapping.
+ 
+ 3. To scale-up the training capacity for enabling the LLSF to accommodate
+ the large size of MEDLINE data. A split-merge approach decomposes a large
+ training sample into tractable subsets, computes an LLSF mapping function
+ for each subset, and then merges the lcal mapping functions into a global
+ one.
+ 
+ 4. To improve the computational efficiency by employing algorithms
+ optimized for sparse matrices and for noise reduction. The potential
+ solutions include the Block Lanczos truncated SVD algorithm which can
+ reduce the cubic time complexity of standard SVD (on dense matrices) to a
+ quadratic complexity, a QR decomposition which solves the LLSF without
+ SVD, a sparse matrix algorithm which has shown a speed-up in matrix
+ multiplication and cosine computation by a factor of l to 4 magnitudes,
+ and parallel computing.
+ 
+ 5. To evaluate the effectiveness of LLSF on large MEDLINE document sets
+ and compare with the performance of alternate indexing/retrieval systems.
+ computer program /software; data collection methodology /evaluation; indexing; information retrieval; information systems; semantics; statistics /biometry; vocabulary development for information system LLSF MAPPING FOR INDEXING AND RETRIEVAL OF MEDLINE","The long-term objective of our research group is to facilitate automatic
+ or semi-automatic classification and retrieval of natural language texts,
+ in support of reducing the cost and improving the quality of computerized
+ medical information. This proposal develops further and applies a novel
+ approach, the Linear Least Squares Fit (LLSF) mapping, to document
+ indexing and document retrieval of the MEDLINE database. LLSF mapping is
+ a statistical method developed by the PI for learning human knowledge
+ about matching queries, documents, and canonical concepts. The goal is to
+ improve the quality (recall and precision) of automatic document indexing
+ and retrieval, which cannot be achieved by surface-based matching without
+ using human knowledge or thesaurus-based matching dependent on manually
+ developed synonyms. This project applies LLSF to MEDLINE, the world's
+ largest and most frequently used on-line database, to evaluate the
+ effectiveness of this method and to explore the practical potential on
+ large scale databases. The specific aims and methods are:
+ 
+ l. To collect data needed for the training and evaluation of the LLSF
+ method. A collaboration with another research institute is planned for
+ utilizing and refining a large collection of MEDLINE retrieval data. A
+ sampling of MEDLINE searches at the Mayo Clinic will be employed for
+ obtaining additional tasks.
+ 
+ 2. To develop automatic noise reduction techniques for improving both the
+ accuracy of the LLSF mapping and the efficiency of the computation. A
+ multi-step noise reduction in the training process of LLSF will be
+ investigated, including a statistical term weighting for the removal of
+ non-informative terms, a truncated singular value decomposition (SVD) for
+ reducing the noise at the semantic structure level, and the truncation of
+ insignificant elements in the LLSF solution matrix for noise-reduction at
+ the level of term-to-concept mapping.
+ 
+ 3. To scale-up the training capacity for enabling the LLSF to accommodate
+ the large size of MEDLINE data. A split-merge approach decomposes a large
+ training sample into tractable subsets, computes an LLSF mapping function
+ for each subset, and then merges the lcal mapping functions into a global
+ one.
+ 
+ 4. To improve the computational efficiency by employing algorithms
+ optimized for sparse matrices and for noise reduction. The potential
+ solutions include the Block Lanczos truncated SVD algorithm which can
+ reduce the cubic time complexity of standard SVD (on dense matrices) to a
+ quadratic complexity, a QR decomposition which solves the LLSF without
+ SVD, a sparse matrix algorithm which has shown a speed-up in matrix
+ multiplication and cosine computation by a factor of l to 4 magnitudes,
+ and parallel computing.
+ 
+ 5. To evaluate the effectiveness of LLSF on large MEDLINE document sets
+ and compare with the performance of alternate indexing/retrieval systems.
+",2238093,R29LM005714,['R29LM005714'],LM,https://reporter.nih.gov/project-details/2238093,R29,1995,120129,0.7695136698461313
+"THIS IS A SHANNON AWARD PROVIDING PARTIAL SUPPORT FOR THE RESEARCH              
+PROJECTS THAT FALL SHORT OF THE ASSIGNED INSTITUTE'S FUNDING RANGE BUT          
+ARE IN THE MARGIN OF EXCELLENCE. THE SHANNON AWARD IS INTENDED TO PROVIDE       
+SUPPORT TO TEST THE FEASIBILITY OF THE APPROACH; DEVELOP FURTHER TESTS          
+AND REFINE RESEARCH TECHNIQUES; PERFORM SECONDARY ANALYSIS OR AVAILABLE         
+DATA SETS; OR CONDUCT DISCRETE PROJECTS THAT CAN DEMONSTRATE THE PI'S           
+RESEARCH CAPABILITIES OR LEND ADDITIONAL WEIGHT TO AN ALREADY MERITORIOUS       
+APPLICATION. THE ABSTRACT BELOW IS TAKEN FROM THE ORIGINAL DOCUMENT             
+SUBMITTED BY THE PRINCIPAL INVESTIGATOR.                                        
+                                                                                
+DESCRIPTION:  (adapted from the application abstract)  The advent of            
+large  picture archiving and communication systems (PACS) will likely           
+result in a  conversion of clinical radiology to become nearly completely       
+digital. Improved methods for access to a large collection of on-line           
+image data can  improve medical research and education.  Although the           
+techniques for fast text  search are well established, similar tool             
+development for rapidly searching  through years of digitally archived          
+images is still in its infancy. Development of a fast browsing technology       
+for retrieving archived images over  a network, both local and remote           
+(international) accesses is proposed.                                           
+                                                                                
+In this project, three key technologies will be merged:  smart query,           
+hierarchical archive, and photo indexing using embedded  zerotree wavelet       
+transform (EZTWT) code.  The first two technologies provides query              
+constraint  and automatic image migration management, and are supported         
+in other PACS- related projects at UCLA.  The third and newest component,       
+EZTWT, is an  encoding method designed for maximum network utility,             
+providing the receiver  highest image quality for a given transmission          
+time.  The implications for  high-performance teleradiology under               
+bandwidth limitations are significant.  Diagnostic viewing can start            
+before transmission of an image in full resolution and quality is               
+complete.  This encoding scheme will be modified to  allow variable size        
+iconic representation of the original, achieving minimum  network delay         
+and fast reconstruction, thus making browsing through a larger  selection       
+of images convenient and manageable.                                            
+                                                                                
+In addition, the modified EZTWT can achieve high efficiency for images          
+with  clearly separated anatomical and background regions.  The space           
+saving in very  high resolution radiographs, such as mammograms, can be         
+typically 7MB per  4Kx4K image (44%) without loss in anatomical                 
+information.  This coding  technique will be tested in conjunction with         
+new pattern recognition techniques to achieve efficient mammogram storage       
+and telecommunication.                                                          
+ abstracting; archives; artificial intelligence; bioimaging /biomedical imaging; computer assisted diagnosis; computer assisted instruction; computer graphics /printing; digital imaging; informatics; online computer; radiology; telemedicine FAST BROWSING OF PACS IMAGE ARCHIVE VIA NETWORK","THIS IS A SHANNON AWARD PROVIDING PARTIAL SUPPORT FOR THE RESEARCH              
+PROJECTS THAT FALL SHORT OF THE ASSIGNED INSTITUTE'S FUNDING RANGE BUT          
+ARE IN THE MARGIN OF EXCELLENCE. THE SHANNON AWARD IS INTENDED TO PROVIDE       
+SUPPORT TO TEST THE FEASIBILITY OF THE APPROACH; DEVELOP FURTHER TESTS          
+AND REFINE RESEARCH TECHNIQUES; PERFORM SECONDARY ANALYSIS OR AVAILABLE         
+DATA SETS; OR CONDUCT DISCRETE PROJECTS THAT CAN DEMONSTRATE THE PI'S           
+RESEARCH CAPABILITIES OR LEND ADDITIONAL WEIGHT TO AN ALREADY MERITORIOUS       
+APPLICATION. THE ABSTRACT BELOW IS TAKEN FROM THE ORIGINAL DOCUMENT             
+SUBMITTED BY THE PRINCIPAL INVESTIGATOR.                                        
+                                                                                
+DESCRIPTION:  (adapted from the application abstract)  The advent of            
+large  picture archiving and communication systems (PACS) will likely           
+result in a  conversion of clinical radiology to become nearly completely       
+digital. Improved methods for access to a large collection of on-line           
+image data can  improve medical research and education.  Although the           
+techniques for fast text  search are well established, similar tool             
+development for rapidly searching  through years of digitally archived          
+images is still in its infancy. Development of a fast browsing technology       
+for retrieving archived images over  a network, both local and remote           
+(international) accesses is proposed.                                           
+                                                                                
+In this project, three key technologies will be merged:  smart query,           
+hierarchical archive, and photo indexing using embedded  zerotree wavelet       
+transform (EZTWT) code.  The first two technologies provides query              
+constraint  and automatic image migration management, and are supported         
+in other PACS- related projects at UCLA.  The third and newest component,       
+EZTWT, is an  encoding method designed for maximum network utility,             
+providing the receiver  highest image quality for a given transmission          
+time.  The implications for  high-performance teleradiology under               
+bandwidth limitations are significant.  Diagnostic viewing can start            
+before transmission of an image in full resolution and quality is               
+complete.  This encoding scheme will be modified to  allow variable size        
+iconic representation of the original, achieving minimum  network delay         
+and fast reconstruction, thus making browsing through a larger  selection       
+of images convenient and manageable.                                            
+                                                                                
+In addition, the modified EZTWT can achieve high efficiency for images          
+with  clearly separated anatomical and background regions.  The space           
+saving in very  high resolution radiographs, such as mammograms, can be         
+typically 7MB per  4Kx4K image (44%) without loss in anatomical                 
+information.  This coding  technique will be tested in conjunction with         
+new pattern recognition techniques to achieve efficient mammogram storage       
+and telecommunication.                                                          
+",2329566,R55LM005712,['R55LM005712'],LM,https://reporter.nih.gov/project-details/2329566,R55,1996,100000,0.7695136698461313
+"The long term goal of this research is to formulate a more comprehensive        
+model of the development of visual and auditory word recognition. To            
+achieve this aim, we must investigate the role that different factors           
+play in the identification of words by children as well as by adults            
+(e.g., association-strength, graphemic-similarity, phonemic-similarity,         
+relatedness-proportion, stimulus-quality, and word-frequency). The              
+specific aim of this proposal is to elucidate the developmental changes         
+that occur in the processing within and between the grapheme-phoneme,           
+lexical, and semantic systems. More specifically, we propose to                 
+investigate: (l) whether spreading activation within and between the            
+lexical and semantic systems is under strategic control; (2) the nature         
+and time course of the influence of phonemic and semantic information on        
+the lexical system; and (3) the time course of processing within the            
+grapheme-phoneme system and the influence of the lexical system on its          
+output.                                                                         
+ artificial intelligence; behavioral /social science research tag; psycholinguistics; speech recognition; vision; visual perception DEVELOPMENT OF WORD RECOGNITION PROCESSES","The long term goal of this research is to formulate a more comprehensive        
+model of the development of visual and auditory word recognition. To            
+achieve this aim, we must investigate the role that different factors           
+play in the identification of words by children as well as by adults            
+(e.g., association-strength, graphemic-similarity, phonemic-similarity,         
+relatedness-proportion, stimulus-quality, and word-frequency). The              
+specific aim of this proposal is to elucidate the developmental changes         
+that occur in the processing within and between the grapheme-phoneme,           
+lexical, and semantic systems. More specifically, we propose to                 
+investigate: (l) whether spreading activation within and between the            
+lexical and semantic systems is under strategic control; (2) the nature         
+and time course of the influence of phonemic and semantic information on        
+the lexical system; and (3) the time course of processing within the            
+grapheme-phoneme system and the influence of the lexical system on its          
+output.                                                                         
+",2403049,F32HD008255,['F32HD008255'],HD,https://reporter.nih.gov/project-details/2403049,F32,1997,28600,0.7695136698461313
+"An Expert-Driven Lung Nodule Detection (E-HLND) System is proposed for          
+improving diagnostic accuracy and speed for lung cancerous pulmonary            
+radiology.  The research goal is to develop a robust, user-friendly, and        
+clinically useful system to assist radiologists in the detection and            
+analysis of lung tumor in an early and treatable stage. The detection and       
+treatment of lung nodule in the early stage of growth can results in a          
+better prognosis for survival.  The proposed E-HLND system configuration        
+include the following processing phases: (1) data acquisition of a large        
+clinical screening chest x-ray films and multiresolution pre-processing         
+to enhance object-to-background contrast, (2) quick selection of suspect        
+nodule areas, (3) features space determination and neural classification        
+of cancerous nodules as well as false positives, and (5) knowledge-based        
+registration and fusion processing to integrate follow-up, patient              
+history, radiologist's expertise, and other diagnosis reports.  This            
+proposal focuses on (l) improving system's sensitivity and specificity          
+with neural network, image registration, information fusion technologies,       
+and hardware design; and (2) validating system's performance with a             
+""simulated"" clinical trials based on a large clinical x-ray film database       
+(Chinese Yunnan Tin Corp. Bio-Marker Specimen bank -YTC database). This         
+project will explore artificial neural network and computer vision              
+technologies in diagnostic radiology and provide a basis for other cancer       
+research in diagnostic radiology.  This R&D effort is not only consistent       
+with but its success will provide good tool in the NCI launched large-          
+scale study ""Prostate, Lung, Colorectal, and Ovarian Cancer Screen (PLCO)       
+Trial"".                                                                         
+                                                                                
+PROPOSED COMMERCIAL APPLICATIONS                                                
+An expert-driven lung nodule detection system, which serves as a ""second        
+reader"" to assist pulmonary radiologists in detecting lung nodules, will        
+be of great clinical and commercial value. The system can increase              
+radiologists' sensitivity and specificity in the detection of early lung        
+cancer on screening chest radiographs. Early and accurate detection of          
+an early stage tumor will ensure patients get the best treatment                
+available. The proposed R&D work will enhance current patient care              
+system, reduce the work load of radiologists, and improve the cancer            
+diagnostic procedure in diagnostic radiology.                                   
+ artificial intelligence; cancer information system; computer system design /evaluation; diagnosis design /evaluation; diagnosis quality /standard; human data; image processing; lung neoplasms; neoplasm /cancer diagnosis; thoracic radiography EXPERT-DRIVEN HYBRID LING NODULE DETECTION SYSTEM","An Expert-Driven Lung Nodule Detection (E-HLND) System is proposed for          
+improving diagnostic accuracy and speed for lung cancerous pulmonary            
+radiology.  The research goal is to develop a robust, user-friendly, and        
+clinically useful system to assist radiologists in the detection and            
+analysis of lung tumor in an early and treatable stage. The detection and       
+treatment of lung nodule in the early stage of growth can results in a          
+better prognosis for survival.  The proposed E-HLND system configuration        
+include the following processing phases: (1) data acquisition of a large        
+clinical screening chest x-ray films and multiresolution pre-processing         
+to enhance object-to-background contrast, (2) quick selection of suspect        
+nodule areas, (3) features space determination and neural classification        
+of cancerous nodules as well as false positives, and (5) knowledge-based        
+registration and fusion processing to integrate follow-up, patient              
+history, radiologist's expertise, and other diagnosis reports.  This            
+proposal focuses on (l) improving system's sensitivity and specificity          
+with neural network, image registration, information fusion technologies,       
+and hardware design; and (2) validating system's performance with a             
+""simulated"" clinical trials based on a large clinical x-ray film database       
+(Chinese Yunnan Tin Corp. Bio-Marker Specimen bank -YTC database). This         
+project will explore artificial neural network and computer vision              
+technologies in diagnostic radiology and provide a basis for other cancer       
+research in diagnostic radiology.  This R&D effort is not only consistent       
+with but its success will provide good tool in the NCI launched large-          
+scale study ""Prostate, Lung, Colorectal, and Ovarian Cancer Screen (PLCO)       
+Trial"".                                                                         
+                                                                                
+PROPOSED COMMERCIAL APPLICATIONS                                                
+An expert-driven lung nodule detection system, which serves as a ""second        
+reader"" to assist pulmonary radiologists in detecting lung nodules, will        
+be of great clinical and commercial value. The system can increase              
+radiologists' sensitivity and specificity in the detection of early lung        
+cancer on screening chest radiographs. Early and accurate detection of          
+an early stage tumor will ensure patients get the best treatment                
+available. The proposed R&D work will enhance current patient care              
+system, reduce the work load of radiologists, and improve the cancer            
+diagnostic procedure in diagnostic radiology.                                   
+",2542475,R44CA058116,['R44CA058116'],CA,https://reporter.nih.gov/project-details/2542475,R44,1998,336204,0.6383916763020383
+"Atrial arrhythmias are extremely common and are often associated with           
+significant morbidity and mortality. The ability to develop and                 
+prescribe new treatments for atrial arrhythmias depends on the                  
+availability of better diagnostic tools that are simple, inexpensive,           
+and effective enough to support their use for screening large numbers           
+of patients.                                                                    
+                                                                                
+During Phase I, we developed signal processing algorithms that permit           
+noninvasive assessment of patients suffering from atrial fibrillation.          
+T algorithms were tested on patient data and found to assist clinicians         
+in predicting patient response to cardioversion in an attempt to                
+terminate the arrhythmia and restore sinus rhythm.                              
+                                                                                
+During Phase II, we will investigate alternate algorithms for                   
+identification and classification of atrial arrhythmias. Our goal is            
+development of a tool that will allow the clinician to rapidly identify         
+specific arrhythmias and measure the progress of individual patients            
+through different courses of therapy.                                           
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+The technology developed under this program could be used in diagnostic         
+devices like electrocardiogram monitors.                                        
+ antiarrhythmic agent; arrhythmia; artificial intelligence; atrial fibrillation; biomedical equipment development; cardiovascular disorder diagnosis; clinical biomedical equipment; clinical research; computer program /software; computer system design /evaluation; drug screening /evaluation; electrocardiography; human subject; noninvasive diagnosis; technology /technique development NONINVASIVE ASSESSMENT OF ATRIAL FIBRILLATION","Atrial arrhythmias are extremely common and are often associated with           
+significant morbidity and mortality. The ability to develop and                 
+prescribe new treatments for atrial arrhythmias depends on the                  
+availability of better diagnostic tools that are simple, inexpensive,           
+and effective enough to support their use for screening large numbers           
+of patients.                                                                    
+                                                                                
+During Phase I, we developed signal processing algorithms that permit           
+noninvasive assessment of patients suffering from atrial fibrillation.          
+T algorithms were tested on patient data and found to assist clinicians         
+in predicting patient response to cardioversion in an attempt to                
+terminate the arrhythmia and restore sinus rhythm.                              
+                                                                                
+During Phase II, we will investigate alternate algorithms for                   
+identification and classification of atrial arrhythmias. Our goal is            
+development of a tool that will allow the clinician to rapidly identify         
+specific arrhythmias and measure the progress of individual patients            
+through different courses of therapy.                                           
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+The technology developed under this program could be used in diagnostic         
+devices like electrocardiogram monitors.                                        
+",2777213,R44HL059101,['R44HL059101'],HL,https://reporter.nih.gov/project-details/2777213,R44,1999,249212,0.6383916763020383

@@ -1,0 +1,727 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The purpose of this contract is to provide research and development support
+for the Unified Medical Language System.  Specifically, the contractor will
+support (1) the definition of the functional components and algorithms
+needed: to relate the user's terms to information in the UMLS Knowledge
+Sources; to interact with the user to clarify the information needed; and
+to select and access the information sources relevant to the user's
+inquiry, and (2) the evaluation of the utility of the UMLS Knowledge
+Sources and proposed functional components in a variety of environments.
+ abstracting; artificial intelligence; evaluation /testing; information retrieval; information system analysis; information systems; language; medicine; vocabulary development for information system UNIFIED MEDICAL LANGUAGE SYSTEM RESEARCH & DEVELOPMENT","The purpose of this contract is to provide research and development support
+for the Unified Medical Language System.  Specifically, the contractor will
+support (1) the definition of the functional components and algorithms
+needed: to relate the user's terms to information in the UMLS Knowledge
+Sources; to interact with the user to clarify the information needed; and
+to select and access the information sources relevant to the user's
+inquiry, and (2) the evaluation of the utility of the UMLS Knowledge
+Sources and proposed functional components in a variety of environments.
+",2319084,01LM013538,['N01LM013538'],LM,https://reporter.nih.gov/project-details/2319084,N01,1994,68457,-0.060812892401076346
+"Our goal in this continuing Program Project is still to facilitate the
+ transfer of basic science information from the laboratory to help deal with
+ clinical problems in breast cancer, but our focus broadens from primarily
+ prognostic and mechanistic considerations in two directions.  First, we
+ will study the molecular correlates of the developmental stages in early
+ breast cancer, to provide not only greater understanding of how the full
+ malignant phenotype is acquired, but also greater clinical ability to
+ distinguish and thus to treat those benign or early malignant lesions
+ destined to cause serious trouble.  Second, at the other end of the
+ clinical course, we will be dissecting the components of growth factor
+ pathways as potential targets of new treatment strategies and testing such
+ strategies directly in preclinical model systems.
+ 
+ The projects will study:  1) the problem of how best to integrate both new
+ and existing prognostic factors into a coherent assessment of risk for
+ individual patients, comparing expanded forms of the traditional Cox
+ multivariate analysis with newer recursive partitioning and artificial
+ intelligence (neural network) approaches; 2) the occurrence of mutations
+ and variants in the functional domains of the steroid receptor genes, which
+ could result in failures to respond to hormone manipulation even though
+ receptor is present, or in failure to detect receptor, or even in an
+ oncogene-like receptor variant which would stimulate the tumor cell even in
+ the absence of hormone; 3) potential molecular markers -- activated
+ oncogenes, proliferation markers, antigens associated with metastatic
+ behavior, etc.--in well defined early and later lesions at several stages,
+ in order to see which markers might identify high risk lesions and to learn
+ more about the evolutionary pathway (or pathways) by which breast cancer
+ progresses; 4) antigens associated with proliferation as new prognostic
+  as new prognostic
+ markers; 5) TGFalpha as an autocrine mediator of estrogen action, as a
+ factor in the development of hyperplastic lesions in transgenic mice
+ expressing a TGFalpha gene (and/or an EGF-R gene) in the mammary glands,
+ and as a target for inhibiting malignant progression; 6) the insulin-like
+ growth factor (IGF) system, especially the receptors, IGFRI and IGFRII and
+ the IGF binding proteins, as targets for blocking breast cancer growth and
+ tumorigenesis.  These projects will all be supported by a tumor/data
+ network core function, flow cytometry, factor assay, and tissue culture
+ core laboratories, and an administrative core.
+ 
+ Many of the factors and markers studied in these interactive projects will
+ have important clinical significance.  Indeed, our major effort will be to
+ help oncologists integrate and appropriately utilize basic science
+ information in the 1990's in diagnostic and treatment strategies for the
+ breast cancer patient.
+ breast neoplasms; female; growth factor; hormone related neoplasm /cancer; molecular oncology MEDICAL ONCOLOGY PROGRAM PROJECT--THERAPEUTIC RESEARCH","Our goal in this continuing Program Project is still to facilitate the
+ transfer of basic science information from the laboratory to help deal with
+ clinical problems in breast cancer, but our focus broadens from primarily
+ prognostic and mechanistic considerations in two directions.  First, we
+ will study the molecular correlates of the developmental stages in early
+ breast cancer, to provide not only greater understanding of how the full
+ malignant phenotype is acquired, but also greater clinical ability to
+ distinguish and thus to treat those benign or early malignant lesions
+ destined to cause serious trouble.  Second, at the other end of the
+ clinical course, we will be dissecting the components of growth factor
+ pathways as potential targets of new treatment strategies and testing such
+ strategies directly in preclinical model systems.
+ 
+ The projects will study:  1) the problem of how best to integrate both new
+ and existing prognostic factors into a coherent assessment of risk for
+ individual patients, comparing expanded forms of the traditional Cox
+ multivariate analysis with newer recursive partitioning and artificial
+ intelligence (neural network) approaches; 2) the occurrence of mutations
+ and variants in the functional domains of the steroid receptor genes, which
+ could result in failures to respond to hormone manipulation even though
+ receptor is present, or in failure to detect receptor, or even in an
+ oncogene-like receptor variant which would stimulate the tumor cell even in
+ the absence of hormone; 3) potential molecular markers -- activated
+ oncogenes, proliferation markers, antigens associated with metastatic
+ behavior, etc.--in well defined early and later lesions at several stages,
+ in order to see which markers might identify high risk lesions and to learn
+ more about the evolutionary pathway (or pathways) by which breast cancer
+ progresses; 4) antigens associated with proliferation as new prognostic
+  as new prognostic
+ markers; 5) TGFalpha as an autocrine mediator of estrogen action, as a
+ factor in the development of hyperplastic lesions in transgenic mice
+ expressing a TGFalpha gene (and/or an EGF-R gene) in the mammary glands,
+ and as a target for inhibiting malignant progression; 6) the insulin-like
+ growth factor (IGF) system, especially the receptors, IGFRI and IGFRII and
+ the IGF binding proteins, as targets for blocking breast cancer growth and
+ tumorigenesis.  These projects will all be supported by a tumor/data
+ network core function, flow cytometry, factor assay, and tissue culture
+ core laboratories, and an administrative core.
+ 
+ Many of the factors and markers studied in these interactive projects will
+ have important clinical significance.  Indeed, our major effort will be to
+ help oncologists integrate and appropriately utilize basic science
+ information in the 1990's in diagnostic and treatment strategies for the
+ breast cancer patient.
+",2088029,P01CA030195,['P01CA030195'],CA,https://reporter.nih.gov/project-details/2088029,P01,1995,1748122,0.07832440998411073
+"A significant fraction of all courses of external-beam radiotherapy have
+ unplanned interruptions, i.e. scheduled treatments are missed. Because of
+ the kinetics of cellular damage repair and tumor repopulation, designing
+ extra or augmented treatments to compensate for the missed fractions is
+ non-trivial. Since some individualized compensation regimen must be
+ chosen, it should be rationalized using state-of-the-art radiobiology.  In
+ Phase I we wrote prototype software (RIC, the Radiotherapy Interruption
+ Compensator) which produces a range of practical options for the
+ radiotherapist to compensate for unplanned interruptions during an
+ extended radiotherapy regimen. It calculates what doses are needed to
+ produce equal tumor control (or, alternately, equal late normal-tissue
+ complications) when a proposed interruption-compensated regimen is
+ substituted for the originally planned protocol. The program is designed
+ as an ""expert system"", making available to any practicing radiotherapist
+ the expertise of leading practitioners, in a personal-computer based,
+ user-friendly package.
+ 
+ Having demonstrated feasibility, we propose, in this Phase II application,
+ to continue the research effort initiated in Phase I. The goal is to
+ produce, at the end of the Phase II period, a marketable product which is
+ a) scientifically state-of-the-art, b) designed and written with
+ appropriate quality control, c) robust to use, d) credible to practicing
+ clinicians.
+ 
+ PROPOSED COMMERCIAL APPLICATION: Potential market consists of more than
+ 2,500 Radiation Oncology facilities worldwide.  Potentially about 1-4
+ copies of the software purchased by each facility, at about $900 per copy.
+ artificial intelligence; computer assisted patient care; computer human interaction; computer system design /evaluation; mathematical model; neoplasm /cancer radiation therapy; personal computers; radiation therapy dosage; radiobiology SOFTWARE TO COMPENSATE FOR INTERRUPTIONS IN RADIOTHERAPY","A significant fraction of all courses of external-beam radiotherapy have
+ unplanned interruptions, i.e. scheduled treatments are missed. Because of
+ the kinetics of cellular damage repair and tumor repopulation, designing
+ extra or augmented treatments to compensate for the missed fractions is
+ non-trivial. Since some individualized compensation regimen must be
+ chosen, it should be rationalized using state-of-the-art radiobiology.  In
+ Phase I we wrote prototype software (RIC, the Radiotherapy Interruption
+ Compensator) which produces a range of practical options for the
+ radiotherapist to compensate for unplanned interruptions during an
+ extended radiotherapy regimen. It calculates what doses are needed to
+ produce equal tumor control (or, alternately, equal late normal-tissue
+ complications) when a proposed interruption-compensated regimen is
+ substituted for the originally planned protocol. The program is designed
+ as an ""expert system"", making available to any practicing radiotherapist
+ the expertise of leading practitioners, in a personal-computer based,
+ user-friendly package.
+ 
+ Having demonstrated feasibility, we propose, in this Phase II application,
+ to continue the research effort initiated in Phase I. The goal is to
+ produce, at the end of the Phase II period, a marketable product which is
+ a) scientifically state-of-the-art, b) designed and written with
+ appropriate quality control, c) robust to use, d) credible to practicing
+ clinicians.
+ 
+ PROPOSED COMMERCIAL APPLICATION: Potential market consists of more than
+ 2,500 Radiation Oncology facilities worldwide.  Potentially about 1-4
+ copies of the software purchased by each facility, at about $900 per copy.
+",2106039,R44CA063897,['R44CA063897'],CA,https://reporter.nih.gov/project-details/2106039,R44,1995,346512,-0.060812892401076346
+"Our overall objective is to solve the problem of how proteins fold into
+ their native conformations.  For this purpose, we are using the
+ methodology of protein chemistry and developing and applying experimental
+ and theoretical techniques to provide an understanding of the internal
+ interactions that stabilize native proteins in aqueous solution.  This
+ project is concerned with the theoretical work which involves the use of
+ empirical potentials (including the effects of hydration and entropy) in
+ various computational approaches to study the interactions in protein
+ folding.  Emphasis is currently being placed on solving the multiple-
+ minima problem arising from the existence of numerous local minima in the
+ potential energy surface of the protein, the objective being to locate the
+ global minimum on this surface.  An understanding of the interactions in
+ proteins is of potential applicability to the elucidation of the role of
+ conformation in biological processes, e.g. the undesirable association of
+ sickle-cell hemoglobin, or the induction of an oncogene product whose
+ properties involve a conformational change when only one amino acid
+ residue in the sequence is changed.
+ artificial intelligence; chemical bond; chemical hydration; chemical stability; computer program /software; computer simulation; computer system design /evaluation; conformation; diffusion; intermolecular interaction; mathematical model; method development; protein folding; protein sequence; protein structure; quantum chemistry; structural biology; thermodynamics; water solution INTERNAL BONDING IN PROTEINS","Our overall objective is to solve the problem of how proteins fold into
+ their native conformations.  For this purpose, we are using the
+ methodology of protein chemistry and developing and applying experimental
+ and theoretical techniques to provide an understanding of the internal
+ interactions that stabilize native proteins in aqueous solution.  This
+ project is concerned with the theoretical work which involves the use of
+ empirical potentials (including the effects of hydration and entropy) in
+ various computational approaches to study the interactions in protein
+ folding.  Emphasis is currently being placed on solving the multiple-
+ minima problem arising from the existence of numerous local minima in the
+ potential energy surface of the protein, the objective being to locate the
+ global minimum on this surface.  An understanding of the interactions in
+ proteins is of potential applicability to the elucidation of the role of
+ conformation in biological processes, e.g. the undesirable association of
+ sickle-cell hemoglobin, or the induction of an oncogene product whose
+ properties involve a conformational change when only one amino acid
+ residue in the sequence is changed.
+",2168973,R01GM014312,['R01GM014312'],GM,https://reporter.nih.gov/project-details/2168973,R01,1995,162206,0.07832440998411073
+"The objective of this Phase I proposal is to develop an evaluate the            
+diagnostic potential of a new endo/laparoscopic, multi-spectral                 
+imaging system for guided biopsy.  the heart of the system is a                 
+unique prism micro imaging spectrograph, called the                             
+~PARISS/HNN~, that is interacted to either a rigid or flexible                  
+fiber-optic endoscope or laparoscope.  The date is collected by a               
+CCD detector and processed by a hybrid eural net under PC                       
+control.  The system will generate spectrally resolved topographical            
+maps of superficial or internal organs and of bodily lumens.  By                
+collecting absorption, reflection and florescence spectra it will be            
+possible to identify oxygenation and metabolic states and the overall           
+component composition and condition of living tissue.  this                     
+additional information will enable improved diagnostic accuracy of              
+biopsy sampling during endosco0y, for the detection of                          
+gastrointestinal, genitourinary tract, otohinnolaryngology and                  
+respiratory system related diseases.                                            
+                                                                                
+It will help medical professionals find and sample optimum biopsy               
+locations reducing the need for multiple biopsies and return visits.            
+Eventually, it will allow diagnosis and treatment of some patients in           
+one visit.                                                                      
+ artificial intelligence; automated data processing; biomedical equipment development; biopsy; charge coupled device camera; clinical biomedical equipment; diagnosis design /evaluation; endoscopy; fiber optics; fluorescence spectrometry; histology; phantom model; reflection spectrometry; spectrometry; video recording system PRISM BASED SPECTROSCOPY FOR ENDOSCOPIC TOPOGRAPHY","The objective of this Phase I proposal is to develop an evaluate the            
+diagnostic potential of a new endo/laparoscopic, multi-spectral                 
+imaging system for guided biopsy.  the heart of the system is a                 
+unique prism micro imaging spectrograph, called the                             
+~PARISS/HNN~, that is interacted to either a rigid or flexible                  
+fiber-optic endoscope or laparoscope.  The date is collected by a               
+CCD detector and processed by a hybrid eural net under PC                       
+control.  The system will generate spectrally resolved topographical            
+maps of superficial or internal organs and of bodily lumens.  By                
+collecting absorption, reflection and florescence spectra it will be            
+possible to identify oxygenation and metabolic states and the overall           
+component composition and condition of living tissue.  this                     
+additional information will enable improved diagnostic accuracy of              
+biopsy sampling during endosco0y, for the detection of                          
+gastrointestinal, genitourinary tract, otohinnolaryngology and                  
+respiratory system related diseases.                                            
+                                                                                
+It will help medical professionals find and sample optimum biopsy               
+locations reducing the need for multiple biopsies and return visits.            
+Eventually, it will allow diagnosis and treatment of some patients in           
+one visit.                                                                      
+",2449529,R43DK053324,['R43DK053324'],DK,https://reporter.nih.gov/project-details/2449529,R43,1997,90990,0.07819126907567586
+"THIS IS A SHANNON AWARD PROVIDING PARTIAL SUPPORT FOR THE RESEARCH              
+PROJECTS THAT FALL SHORT OF THE ASSIGNED INSTITUTE'S FUNDING RANGE BUT          
+ARE IN THE MARGIN OF EXCELLENCE. THE SHANNON AWARD IS INTENDED TO PROVIDE       
+SUPPORT TO TEST THE FEASIBILITY OF THE APPROACH; DEVELOP FURTHER TESTS          
+AND REFINE RESEARCH TECHNIQUES; PERFORM SECONDARY ANALYSIS OF AVAILABLE         
+DATA SETS; OR CONDUCT DISCRETE PROJECTS THAT CAN DEMONSTRATE THE PI'S           
+RESEARCH CAPABILITIES OR LEAD ADDITIONAL WEIGHT TO AN ALREADY MERITORIOUS       
+APPLICATION. THE APPLICATION BELOW IS TAKEN FROM THE ORIGINAL DOCUMENT          
+SUBMITTED BY THE PRINCIPAL INVESTIGATOR.                                        
+                                                                                
+This proposal describes research intended to support informatics                
+requirements for the development, implementation, and evaluation of             
+clinical practice guidelines. The work is expected to result both in the        
+development of improved guidelines and, concomitantly, to produce               
+structured, computer-accessible repositories of medical knowledge that          
+can be used for decision support. A research program with the following         
+4 specific aims is proposed:                                                    
+                                                                                
+(l) To devise and extend fundamental techniques for modeling and                
+processing guideline knowledge using augmented decision tables. Methods         
+will be defined to deal with guideline knowledge complexity and                 
+uncertainty.                                                                    
+                                                                                
+(2) To refine and disseminate techniques by which knowledge can be              
+acquired for clinical guidelines and verified to assure its consistency         
+and comprehensiveness. Working with the American Academy of Pediatrics,         
+newly developed guidelines will be logically analyzed and verified prior        
+to publication.                                                                 
+                                                                                
+(3) To evaluate the effectiveness of a guideline-based, decision support        
+device to improve compliance with a national guideline for outpatient           
+management of asthma in children. A randomized, controlled trial will be        
+conducted to measure the effect of the AsthMonitor system on guideline          
+adherence, encounter documentation, patient outcomes, and costs of care.        
+                                                                                
+(4) To develop a suite of interactive computer applications that support        
+decision making and clinical workflow for the management of a broad range       
+of common pediatric problems. Knowledge gained from the clinical trial          
+will be combined with workflow analysis, sound application design               
+principles, and advanced digital technologies to create useful and usable       
+tools for guideline implementation.                                             
+                                                                                
+Individual providers will benefit from the availability of decision             
+support applications based on guidelines knowledge. From a public health        
+perspective, effective implementation of evidence-based guidelines for          
+the outpatient management of asthma and other common pediatric disorders        
+should contribute to a reduction in inappropriate practice and to               
+improved quality of care.                                                       
+ adolescence (12-20); artificial intelligence; asthma; behavioral /social science research tag; clinical research; computer assisted medical decision making; computer human interaction; decision making; health care professional practice; health care quality; health care service evaluation; human subject; middle childhood (6-11); outpatient care; patient care management; pediatrics; primary care physician KNOWLEDGE PROCESSING FOR CLINICAL PRACTICE GUIDELINES","THIS IS A SHANNON AWARD PROVIDING PARTIAL SUPPORT FOR THE RESEARCH              
+PROJECTS THAT FALL SHORT OF THE ASSIGNED INSTITUTE'S FUNDING RANGE BUT          
+ARE IN THE MARGIN OF EXCELLENCE. THE SHANNON AWARD IS INTENDED TO PROVIDE       
+SUPPORT TO TEST THE FEASIBILITY OF THE APPROACH; DEVELOP FURTHER TESTS          
+AND REFINE RESEARCH TECHNIQUES; PERFORM SECONDARY ANALYSIS OF AVAILABLE         
+DATA SETS; OR CONDUCT DISCRETE PROJECTS THAT CAN DEMONSTRATE THE PI'S           
+RESEARCH CAPABILITIES OR LEAD ADDITIONAL WEIGHT TO AN ALREADY MERITORIOUS       
+APPLICATION. THE APPLICATION BELOW IS TAKEN FROM THE ORIGINAL DOCUMENT          
+SUBMITTED BY THE PRINCIPAL INVESTIGATOR.                                        
+                                                                                
+This proposal describes research intended to support informatics                
+requirements for the development, implementation, and evaluation of             
+clinical practice guidelines. The work is expected to result both in the        
+development of improved guidelines and, concomitantly, to produce               
+structured, computer-accessible repositories of medical knowledge that          
+can be used for decision support. A research program with the following         
+4 specific aims is proposed:                                                    
+                                                                                
+(l) To devise and extend fundamental techniques for modeling and                
+processing guideline knowledge using augmented decision tables. Methods         
+will be defined to deal with guideline knowledge complexity and                 
+uncertainty.                                                                    
+                                                                                
+(2) To refine and disseminate techniques by which knowledge can be              
+acquired for clinical guidelines and verified to assure its consistency         
+and comprehensiveness. Working with the American Academy of Pediatrics,         
+newly developed guidelines will be logically analyzed and verified prior        
+to publication.                                                                 
+                                                                                
+(3) To evaluate the effectiveness of a guideline-based, decision support        
+device to improve compliance with a national guideline for outpatient           
+management of asthma in children. A randomized, controlled trial will be        
+conducted to measure the effect of the AsthMonitor system on guideline          
+adherence, encounter documentation, patient outcomes, and costs of care.        
+                                                                                
+(4) To develop a suite of interactive computer applications that support        
+decision making and clinical workflow for the management of a broad range       
+of common pediatric problems. Knowledge gained from the clinical trial          
+will be combined with workflow analysis, sound application design               
+principles, and advanced digital technologies to create useful and usable       
+tools for guideline implementation.                                             
+                                                                                
+Individual providers will benefit from the availability of decision             
+support applications based on guidelines knowledge. From a public health        
+perspective, effective implementation of evidence-based guidelines for          
+the outpatient management of asthma and other common pediatric disorders        
+should contribute to a reduction in inappropriate practice and to               
+improved quality of care.                                                       
+",2032350,R29LM005552,['R29LM005552'],LM,https://reporter.nih.gov/project-details/2032350,R29,1997,112831,0.1696602973019631
+"The goal of this project is to develop rehabilitation guidelines for            
+restoration of ambulation in patients following a stroke. Specifically          
+the aims are to identify patterns of gait deviations in both the sound          
+and paretic sides among patients with hemiplegia, form classifications          
+of motor control strategies used during walking and relate these findings       
+to the patient's potential for recovery of ambulation and response to           
+intensive rehabilitation. Three gait training strategies will be                
+compared: i) supported treadmill gait training, 2) intensified-use of the       
+paretic leg and 3) functional independence and endurance training using         
+motor learning principles. Variables that predict improvement in walking        
+ability after rehabilitation will be identified. Three clinical tests           
+(Functional Independence Measure, Fugl-meyer and Upright Motor Control)         
+will be used to identify predictor-criteria. Testing will be done within        
+one week of admission to rehabilitation and at the 6 month-post-stroke          
+anniversary. Gait analysis will be performed to define outcome measures         
+(level and community velocities) and associated gait impairment variables       
+(muscle and motion patterns). The comprehensive baseline gait evaluation        
+will be conducted within the first week the patient is able to walk six         
+meters with assistance. Follow-up testing will be conducted at discharge        
+from inpatient rehabilitation and at 6 months and i year post-stroke.           
+Function of lower gluteus maximus, gluteus medius, long head of biceps          
+femoris, semimembranosus, rectus femoris, adductor longus, vastus               
+intermedius, soleus, anterior tibialis and peroneus brevis muscles will         
+be recorded with dynamic EMG using intramuscular fine wire electrodes.          
+Motion of the trunk, pelvis, hip, thigh, knee and ankle will be recorded        
+for both the sound and paretic limbs with the Vicon Motion Analysis             
+system. Stride characteristics and foot-floor contact patterns will be          
+recorded with Stride Analyzer footswitch system. Subjects will ambulate         
+on level surfaces and over a curb both in bare feet and in shoes with           
+their customary orthoses. Patterned muscle strength will be documented          
+with the Upright Motor Control test and selective strength of both lower        
+extremities will be recorded with the LIDO isokinetic dynamometer (knee         
+and ankle) and a strain gauge tensiometer (hip). Walking endurance will         
+be measured in a fifteen minute test on an outdoor track. Clinical              
+factors and gait impairment variables that best predict level and               
+community walking velocities will be identified. Patterns of gait errors        
+and substitutions will be formulated. Patients will be classified by            
+their gait motor control strategy with a data analysis/expert system.           
+Effectiveness of the three treatment programs will be discerned by              
+comparing functional outcome measures (gait velocities) and gait                
+impairment variables (EMG and motion). Patients in the three treatment          
+groups will be subdivided based on initial motor control strategy to            
+determine if initial severity affects the response to the rehabilitation        
+strategies.                                                                     
+ electromyography; gait; hemiplegia; human subject; human therapy evaluation; longitudinal human study; muscle function; muscle strength; rehabilitation; stroke RECOVERY AND REHABILITATION OF GAIT IN STROKE PATIENTS","The goal of this project is to develop rehabilitation guidelines for            
+restoration of ambulation in patients following a stroke. Specifically          
+the aims are to identify patterns of gait deviations in both the sound          
+and paretic sides among patients with hemiplegia, form classifications          
+of motor control strategies used during walking and relate these findings       
+to the patient's potential for recovery of ambulation and response to           
+intensive rehabilitation. Three gait training strategies will be                
+compared: i) supported treadmill gait training, 2) intensified-use of the       
+paretic leg and 3) functional independence and endurance training using         
+motor learning principles. Variables that predict improvement in walking        
+ability after rehabilitation will be identified. Three clinical tests           
+(Functional Independence Measure, Fugl-meyer and Upright Motor Control)         
+will be used to identify predictor-criteria. Testing will be done within        
+one week of admission to rehabilitation and at the 6 month-post-stroke          
+anniversary. Gait analysis will be performed to define outcome measures         
+(level and community velocities) and associated gait impairment variables       
+(muscle and motion patterns). The comprehensive baseline gait evaluation        
+will be conducted within the first week the patient is able to walk six         
+meters with assistance. Follow-up testing will be conducted at discharge        
+from inpatient rehabilitation and at 6 months and i year post-stroke.           
+Function of lower gluteus maximus, gluteus medius, long head of biceps          
+femoris, semimembranosus, rectus femoris, adductor longus, vastus               
+intermedius, soleus, anterior tibialis and peroneus brevis muscles will         
+be recorded with dynamic EMG using intramuscular fine wire electrodes.          
+Motion of the trunk, pelvis, hip, thigh, knee and ankle will be recorded        
+for both the sound and paretic limbs with the Vicon Motion Analysis             
+system. Stride characteristics and foot-floor contact patterns will be          
+recorded with Stride Analyzer footswitch system. Subjects will ambulate         
+on level surfaces and over a curb both in bare feet and in shoes with           
+their customary orthoses. Patterned muscle strength will be documented          
+with the Upright Motor Control test and selective strength of both lower        
+extremities will be recorded with the LIDO isokinetic dynamometer (knee         
+and ankle) and a strain gauge tensiometer (hip). Walking endurance will         
+be measured in a fifteen minute test on an outdoor track. Clinical              
+factors and gait impairment variables that best predict level and               
+community walking velocities will be identified. Patterns of gait errors        
+and substitutions will be formulated. Patients will be classified by            
+their gait motor control strategy with a data analysis/expert system.           
+Effectiveness of the three treatment programs will be discerned by              
+comparing functional outcome measures (gait velocities) and gait                
+impairment variables (EMG and motion). Patients in the three treatment          
+groups will be subdivided based on initial motor control strategy to            
+determine if initial severity affects the response to the rehabilitation        
+strategies.                                                                     
+",2403399,R01HD031931,['R01HD031931'],HD,https://reporter.nih.gov/project-details/2403399,R01,1997,185834,-0.060812892401076346
+"A central problem for theories of memory development is how the superior        
+memory of children and adults evolves from the memory abilities of              
+infants and whether the mechanisms underlying this evolution are the            
+same or different.  The paucity of data on infant long-term memory              
+precludes a current solution.  In this application, research is proposed        
+that will narrow the large gap between what is known about long-term            
+memory in children and adults and what is known about short-term                
+recognition memory in infants.  Three questions fundamental to an               
+understanding of infant memory development will be addressed:  (1) How          
+do selective attention, perception, and differences in information              
+processing affect what is encoded and retrieved at different ages?  (2)         
+How do new experiences interact with and modify established memories,           
+and what are the temporal constraints on such interactions at different         
+ages?  and (3) What are the consequences of retrieving active and               
+inactive memories for the accessibility and organization of their               
+different components?  Answers will be achieved via an instrumental             
+learning procedure previously used to study memory from 2-6 months and          
+analogous procedures that will be developed for use at 9-12 months.  In         
+these procedures, infants learn a response that activates a distinctive         
+toy in a distinctive context; 1 day later, their memory contents are            
+probed with a retrieval cue.  Infants indicate whether or not the               
+information in the cue or context was encoded by whether or not they            
+perform the learned response.  The stable relation between effective            
+retrieval cues after 1 day and effective memory primes after 2-3 weeks          
+allows a convergent test of the results via a reminding procedure.  This        
+research will provide new information about normal memory development in        
+infancy and its relation both to memory processes of children and adults        
+and to neuropsychological research on brain mechanisms implicated in            
+memory formation.  From a health perspective, the research will provide         
+a standard for detecting early cognitive deficits (or giftedness),              
+particularly deficits that subsequently surface in tasks that require           
+the utilization (retrieval) of accumulated, experienced-based                   
+information.                                                                    
+ association learning; behavioral /social science research tag; child psychology; cognition; cues; discrimination learning; human subject; infant human (0-1 year); learning; long term memory; neural information processing; neuropsychological tests; neuropsychology; perception; psychological reinforcement; short term memory; stimulus /response; visual stimulus CONDITIONING ANALYSIS OF INFANT MEMORY","A central problem for theories of memory development is how the superior        
+memory of children and adults evolves from the memory abilities of              
+infants and whether the mechanisms underlying this evolution are the            
+same or different.  The paucity of data on infant long-term memory              
+precludes a current solution.  In this application, research is proposed        
+that will narrow the large gap between what is known about long-term            
+memory in children and adults and what is known about short-term                
+recognition memory in infants.  Three questions fundamental to an               
+understanding of infant memory development will be addressed:  (1) How          
+do selective attention, perception, and differences in information              
+processing affect what is encoded and retrieved at different ages?  (2)         
+How do new experiences interact with and modify established memories,           
+and what are the temporal constraints on such interactions at different         
+ages?  and (3) What are the consequences of retrieving active and               
+inactive memories for the accessibility and organization of their               
+different components?  Answers will be achieved via an instrumental             
+learning procedure previously used to study memory from 2-6 months and          
+analogous procedures that will be developed for use at 9-12 months.  In         
+these procedures, infants learn a response that activates a distinctive         
+toy in a distinctive context; 1 day later, their memory contents are            
+probed with a retrieval cue.  Infants indicate whether or not the               
+information in the cue or context was encoded by whether or not they            
+perform the learned response.  The stable relation between effective            
+retrieval cues after 1 day and effective memory primes after 2-3 weeks          
+allows a convergent test of the results via a reminding procedure.  This        
+research will provide new information about normal memory development in        
+infancy and its relation both to memory processes of children and adults        
+and to neuropsychological research on brain mechanisms implicated in            
+memory formation.  From a health perspective, the research will provide         
+a standard for detecting early cognitive deficits (or giftedness),              
+particularly deficits that subsequently surface in tasks that require           
+the utilization (retrieval) of accumulated, experienced-based                   
+information.                                                                    
+",2392868,R37MH032307,['R37MH032307'],MH,https://reporter.nih.gov/project-details/2392868,R37,1997,330632,0.07819126907567586
+"Mandala Sciences (MSI) CODA project has 2 main objectives: (1) develop          
+analysis tools to test hypotheses regarding effectiveness of surgical           
+procedures and patient outcomes and (2) generate proprietary decision           
+support prediction models for hip and knee replacements.  MSI hybrid            
+Neural Network/Expert System methodology uses an Entropy NN TM structure        
+which has the innovative ability to generate a rule base.  The discovered       
+rules will be used to create ""portable"" Expert System predictive modules.       
+Phase II progress is built upon successful MSI collaboration with Henry         
+Ford Health System to show NN techniques can generate and evaluate              
+prognostic models using outcomes data.  Consultation with orthopedic            
+surgeons identified 13 patient-provided variables as potential predictors       
+of hip replacement surgery failure. An NN trained on these data predicted       
+the 1-year post-surgical change in the patient's self-assessed pain and         
+physical function scores.  Comparison with standard statistical analysis        
+techniques showed superior accuracy of NN-based predictions.  Phase II          
+research will generalize the product by adopting the ASTM-E-1238 interface      
+standard for data collection from multiple sources.  NN/Expert prediction       
+models will be improved by pooling data from geographically diverse sites       
+and field trial performance to evaluate physician-rated adoption,               
+usefulness, and influence on their actual decision making.                      
+                                                                                
+Proposed commercial applications:                                               
+MSI will build a user-friendly, stand-alone outcomes database analysis          
+tool. By using new proprietary neural network techniques, the system will       
+have the predictive power of NN combined with the explanatory capabilities      
+of an expert system. This computer system will be adopted by the widest         
+possible audience because it will be far easier to use than conventional        
+statistical packages, and by virtue of being designed for compatibility         
+with the ASTM-E-1238 standard for outcomes data transmission.                   
+ artificial intelligence; computer assisted medical decision making; computer human interaction; computer program /software; computer system design /evaluation; data collection methodology /evaluation; health care model; hip prosthesis; human data; human therapy evaluation; mathematical model; model design /development; outcomes research; postoperative state; prognosis COMPUTER TOOLS FOR OUTCOMES ANALYSIS OF HIP REPLACEMENT","Mandala Sciences (MSI) CODA project has 2 main objectives: (1) develop          
+analysis tools to test hypotheses regarding effectiveness of surgical           
+procedures and patient outcomes and (2) generate proprietary decision           
+support prediction models for hip and knee replacements.  MSI hybrid            
+Neural Network/Expert System methodology uses an Entropy NN TM structure        
+which has the innovative ability to generate a rule base.  The discovered       
+rules will be used to create ""portable"" Expert System predictive modules.       
+Phase II progress is built upon successful MSI collaboration with Henry         
+Ford Health System to show NN techniques can generate and evaluate              
+prognostic models using outcomes data.  Consultation with orthopedic            
+surgeons identified 13 patient-provided variables as potential predictors       
+of hip replacement surgery failure. An NN trained on these data predicted       
+the 1-year post-surgical change in the patient's self-assessed pain and         
+physical function scores.  Comparison with standard statistical analysis        
+techniques showed superior accuracy of NN-based predictions.  Phase II          
+research will generalize the product by adopting the ASTM-E-1238 interface      
+standard for data collection from multiple sources.  NN/Expert prediction       
+models will be improved by pooling data from geographically diverse sites       
+and field trial performance to evaluate physician-rated adoption,               
+usefulness, and influence on their actual decision making.                      
+                                                                                
+Proposed commercial applications:                                               
+MSI will build a user-friendly, stand-alone outcomes database analysis          
+tool. By using new proprietary neural network techniques, the system will       
+have the predictive power of NN combined with the explanatory capabilities      
+of an expert system. This computer system will be adopted by the widest         
+possible audience because it will be far easier to use than conventional        
+statistical packages, and by virtue of being designed for compatibility         
+with the ASTM-E-1238 standard for outcomes data transmission.                   
+",2769332,R44AG012308,['R44AG012308'],AG,https://reporter.nih.gov/project-details/2769332,R44,1998,351541,0.1696602973019631
+"This grant proposal is focused on developing new mathematical and               
+statistical models to describe biological systems. Models to represent,         
+help to understand, predict future behavior, and control biological             
+systems are becoming more and more important and of widespread use in           
+different fields related to biology and health care. Complex mathematical       
+models are needed to model the complicated interactions between the             
+physiological functions of biological systems, and to model the effect of       
+interventions (e.g. therapy) on these functions. The specific aims of this      
+grant focus on three areas of research. 1. Develop and investigate              
+statistical models for biological population data. Biological data are          
+always collected from some population of different individuals, and are         
+often highly variable. This is mostly due to variability of physiological       
+functions between individuals, and to measurement error. Statistical            
+models are needed to deal with the complex structure of population data. I      
+will (I) introduce a general methodology based on the use of sophisticated      
+heteroscedastic statistical models, which does not explicitly formulate a       
+model for interindividual variability but promises to be fast, efficient        
+and unbiased; and (ii) investigate the performance of existing population       
+models using realistic simulations including model misspecification. 2.         
+Develop semi-mechanistic compartmental models. I focus on three main            
+problems: (i) the development and investigation a new general class of          
+compartmental pharmacokinetics""'pharmacodynamic (PK/PD) models, (ii) the        
+development of semi-mechanistic black-box compartmental models to deal          
+with non-linear PK systems, (iii) the development of the technology to          
+apply well established semi-mechanistic linear black-box models to the          
+purpose of PK control. 3. Develop new multivariate dynamic models. The          
+main problem addressed is how to represent a system where multiple inputs       
+(drugs) and multiple interrelated responses are measured. I propose             
+different classes of models to do so based on spline networks and               
+eventually neural networks. The proposed models can incorporate a               
+compartmental sub-structure to easily deal with kinetics. Continuous and        
+discrete time versions of the models are considered. The statistical and        
+mathematical models introduced in the grant have widespread application to      
+a variety of biological fields. However specific areas, directly linked to      
+health care issues, are selected for active research and application of         
+the proposed models. These areas correspond to experimental situations          
+where the models proposed in the grant are particularly needed (nonlinear       
+and multivariate dynamic), and represent continuations of already               
+established collaborations with leading scientists. They include: computer      
+control of ultra-short acting anaesthetic drugs administration,                 
+pharmacokinetics/pharmacodynamic of short-acting anesthetics,                   
+pharmacodynamic of nicotine and nicotine tolerance development, adenosine       
+kinetics and metabolism and their relationship to adenosine                     
+pharmacodynamic effects, modeling of cardiovascular drugs effects on            
+pharmacy dynamic responses (heart rate, blood pressure, and breathing           
+variability) sampled at high rates.                                             
+ adenosine; anesthetics; artificial intelligence; blood pressure; cardiovascular agents; computer simulation; drug tolerance; heart rate; model design /development; neurotransmitter metabolism; nicotine; pharmacokinetics; pulmonary respiration MODELS FOR BIOLOGICAL DATA RELEVANT TO HEALTH CARE","This grant proposal is focused on developing new mathematical and               
+statistical models to describe biological systems. Models to represent,         
+help to understand, predict future behavior, and control biological             
+systems are becoming more and more important and of widespread use in           
+different fields related to biology and health care. Complex mathematical       
+models are needed to model the complicated interactions between the             
+physiological functions of biological systems, and to model the effect of       
+interventions (e.g. therapy) on these functions. The specific aims of this      
+grant focus on three areas of research. 1. Develop and investigate              
+statistical models for biological population data. Biological data are          
+always collected from some population of different individuals, and are         
+often highly variable. This is mostly due to variability of physiological       
+functions between individuals, and to measurement error. Statistical            
+models are needed to deal with the complex structure of population data. I      
+will (I) introduce a general methodology based on the use of sophisticated      
+heteroscedastic statistical models, which does not explicitly formulate a       
+model for interindividual variability but promises to be fast, efficient        
+and unbiased; and (ii) investigate the performance of existing population       
+models using realistic simulations including model misspecification. 2.         
+Develop semi-mechanistic compartmental models. I focus on three main            
+problems: (i) the development and investigation a new general class of          
+compartmental pharmacokinetics""'pharmacodynamic (PK/PD) models, (ii) the        
+development of semi-mechanistic black-box compartmental models to deal          
+with non-linear PK systems, (iii) the development of the technology to          
+apply well established semi-mechanistic linear black-box models to the          
+purpose of PK control. 3. Develop new multivariate dynamic models. The          
+main problem addressed is how to represent a system where multiple inputs       
+(drugs) and multiple interrelated responses are measured. I propose             
+different classes of models to do so based on spline networks and               
+eventually neural networks. The proposed models can incorporate a               
+compartmental sub-structure to easily deal with kinetics. Continuous and        
+discrete time versions of the models are considered. The statistical and        
+mathematical models introduced in the grant have widespread application to      
+a variety of biological fields. However specific areas, directly linked to      
+health care issues, are selected for active research and application of         
+the proposed models. These areas correspond to experimental situations          
+where the models proposed in the grant are particularly needed (nonlinear       
+and multivariate dynamic), and represent continuations of already               
+established collaborations with leading scientists. They include: computer      
+control of ultra-short acting anaesthetic drugs administration,                 
+pharmacokinetics/pharmacodynamic of short-acting anesthetics,                   
+pharmacodynamic of nicotine and nicotine tolerance development, adenosine       
+kinetics and metabolism and their relationship to adenosine                     
+pharmacodynamic effects, modeling of cardiovascular drugs effects on            
+pharmacy dynamic responses (heart rate, blood pressure, and breathing           
+variability) sampled at high rates.                                             
+",2771003,R29GM051197,['R29GM051197'],GM,https://reporter.nih.gov/project-details/2771003,R29,1998,104964,0.1696602973019631
+"In the STARE (STructured Analysis of the REtina) project, we are                
+developing a computerized image-interpreting system with hierarchical           
+inferencing to measure, compare, and diagnose images of the ocular              
+fundus. The system will have sufficient depth of imaging tools to be a          
+resource for researchers or clinicians.                                         
+                                                                                
+The STARE system is designed to find objects of interest (normal                
+anatomical structures and lesions) in digitized ocular fundus images and        
+to use these objects to diagnose an image, to detect changes in                 
+sequential images, and to make clinically useful measurements that are          
+currently tedious or costly. To accomplish these difficult goals, we            
+must segment and identify the objects of interest. Identified objects           
+can be used to compare images, and the objects can be assembled to              
+describe the image. Image interpretation incorporating expert systems           
+and neural networks can provide the structure for cross-sectional               
+epidemiological studies.                                                        
+                                                                                
+There was no established paradigm to follow to construct a system for           
+image interpretation. We designed the overall structure of the process          
+and determined how each task was to be accomplished. We have broken the         
+project into steps, each of which has been accomplished. We are able to         
+find objects of importance and correctly identify and localize them on          
+a fundus coordinate system that we designed. We have created and tested         
+a neural network and an expert system (INTELLEYE) to handle the                 
+interpretation of an image and its contents.                                    
+                                                                                
+We will now improve the accuracy of each step, increase the number of           
+lesions we can identify, and integrate the image analysis steps with the        
+expert system to allow smooth progression from image to diagnosis and           
+change detection. We will validate the usefulness and accuracy of the           
+system by comparing its diagnosis and image comparison to trained               
+readers of ophthalmic images.                                                   
+                                                                                
+The goal of this project is a system with multiple imaging tools and            
+inferencing ability that can be adapted to a variety of imaging tasks.          
+The outcome will be an image-interpreting system for use in clinical and        
+research settings that will build annotated image databases, screen             
+images of the ocular fundus for health care systems, furnish decision           
+support for primary care providers, and extend the capability and               
+productivity of the ophthalmologist.                                            
+ artificial intelligence; bioimaging /biomedical imaging; computer system design /evaluation; diagnosis design /evaluation; digital imaging; eye fundus photography; human subject; image processing STRUCTURED ANALYSIS OF THE RETINA","In the STARE (STructured Analysis of the REtina) project, we are                
+developing a computerized image-interpreting system with hierarchical           
+inferencing to measure, compare, and diagnose images of the ocular              
+fundus. The system will have sufficient depth of imaging tools to be a          
+resource for researchers or clinicians.                                         
+                                                                                
+The STARE system is designed to find objects of interest (normal                
+anatomical structures and lesions) in digitized ocular fundus images and        
+to use these objects to diagnose an image, to detect changes in                 
+sequential images, and to make clinically useful measurements that are          
+currently tedious or costly. To accomplish these difficult goals, we            
+must segment and identify the objects of interest. Identified objects           
+can be used to compare images, and the objects can be assembled to              
+describe the image. Image interpretation incorporating expert systems           
+and neural networks can provide the structure for cross-sectional               
+epidemiological studies.                                                        
+                                                                                
+There was no established paradigm to follow to construct a system for           
+image interpretation. We designed the overall structure of the process          
+and determined how each task was to be accomplished. We have broken the         
+project into steps, each of which has been accomplished. We are able to         
+find objects of importance and correctly identify and localize them on          
+a fundus coordinate system that we designed. We have created and tested         
+a neural network and an expert system (INTELLEYE) to handle the                 
+interpretation of an image and its contents.                                    
+                                                                                
+We will now improve the accuracy of each step, increase the number of           
+lesions we can identify, and integrate the image analysis steps with the        
+expert system to allow smooth progression from image to diagnosis and           
+change detection. We will validate the usefulness and accuracy of the           
+system by comparing its diagnosis and image comparison to trained               
+readers of ophthalmic images.                                                   
+                                                                                
+The goal of this project is a system with multiple imaging tools and            
+inferencing ability that can be adapted to a variety of imaging tasks.          
+The outcome will be an image-interpreting system for use in clinical and        
+research settings that will build annotated image databases, screen             
+images of the ocular fundus for health care systems, furnish decision           
+support for primary care providers, and extend the capability and               
+productivity of the ophthalmologist.                                            
+",6130715,R01LM005759,['R01LM005759'],LM,https://reporter.nih.gov/project-details/6130715,R01,1999,96832,0.011574342801481553
+ X ray crystallography; artificial intelligence; chemical structure; computer system design /evaluation; crystallization; method development ARTIFICIAL INTELLIGENCE METHODS FOR CRYSTALIZATION,,6033407,R01RR014477,['R01RR014477'],RR,https://reporter.nih.gov/project-details/6033407,R01,1999,225001,-0.1017166057135893

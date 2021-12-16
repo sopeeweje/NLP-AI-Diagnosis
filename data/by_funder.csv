@@ -1,22 +1,35 @@
 Funder,Number of awards,Value of awards
-Agency for Healthcare Research and Quality (AHRQ),12,2420827
-National Cancer Institute (NCI),64,12477959
-National Center for Research Resources (NCRR),55,32098984
-National Eye Institute (NEI),17,2296334
-"National Heart, Lung, and Blood Institute (NHLBI)",70,14456773
-National Institute on Aging (NIA),3,612043
+Agency for Healthcare Research and Quality (AHRQ),108,28550214
+Food and Drug Administration (FDA),10,3911128
+Fogarty International Center (FIC),12,1686224
+National Center for Advancing Translational Sciences (NCATS),83,58058863
+National Center for Chronic Disease Prevention and Health Promotion (NCCDPHP),1,498977
+National Center for Complementary and Integrative Health (NCCIH),38,18165337
+National Center for Emerging and Zoonotic Infectious Diseases (NCEZID),2,799361
+National Cancer Institute (NCI),1513,660461997
+National Center for Injury Prevention and Control (NCIPC),2,184624
+National Center for Research Resources (NCRR),156,84094358
+National Eye Institute (NEI),294,95829625
+National Human Genome Research Institute (NHGRI),500,300105089
+"National Heart, Lung, and Blood Institute (NHLBI)",837,420174520
+National Institute on Aging (NIA),603,380622004
+National Institute on Alcohol Abuse and Alcoholism (NIAAA),203,78297326
 National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK),4,362466
-National Institute of Allergy and Infectious  Diseases (NIAID),8,693289
-National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS),6,585667
-National Institute of Child Health and Human Development (NICHD),15,1603428
-National Institute on Drug Abuse (NIDA),2,92215
-National Institute on Deafness and Other Communication Disorders (NIDCD),3,510237
-National Institute of Dental and Craniofacial Research (NIDCR),5,293955
-National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK),8,805928
-National Institute of Environmental Health Sciences (NIEHS),6,548537
-National Institute of General Medical Sciences (NIGMS),73,13524503
-National Institute on Mental Health (NIMH),21,2522320
-National institute on Neurological Disorders and Stroke (NINDS),69,11033342
-National Institute of Nursing Research (NINR),2,125480
-National Institute of Occupational Safety and Health (NIOSH),11,896713
-National Library of Medicine (NLM),75,15485399
+National Institute of Allergy and Infectious  Diseases (NIAID),439,255808279
+National Institute of Arthritis and Musculoskeletal and Skin Diseases (NIAMS),131,127908005
+National Institute of Biomedical Imaging and Bioengineering (NIBIB),511,225952916
+National Institute of Child Health and Human Development (NICHD),505,174480656
+National Institute on Drug Abuse (NIDA),422,204945935
+National Institute on Deafness and Other Communication Disorders (NIDCD),319,117727509
+National Institute of Dental and Craniofacial Research (NIDCR),110,30657668
+National Institute of Diabetes and Digestive and Kidney Diseases (NIDDK),333,157235553
+National Institute of Environmental Health Sciences (NIEHS),241,99579625
+National Institute of General Medical Sciences (NIGMS),1402,523209292
+National Institute on Mental Health (NIMH),1268,590843650
+National Institute on Minority Health and Health Disparities (NIMHD),38,14563763
+National institute on Neurological Disorders and Stroke (NINDS),814,414696030
+National Institute of Nursing Research (NINR),74,26441049
+National Institute of Occupational Safety and Health (NIOSH),30,3431934
+National Library of Medicine (NLM),829,259482827
+"Office of the Director, NIH (OD)",70,48058409
+Public Health practice Program Office (PHPPO),2,927563

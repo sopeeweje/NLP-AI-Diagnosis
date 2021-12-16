@@ -42,29 +42,32 @@ def process_data(data_file):
         raw_data = list(csv.reader(csvfile))
         ids = []
         print("Raw data N: {}".format(str(len(raw_data))))
+        c = {}
+        for j in range(len(raw_data[0])):
+            c[raw_data[0][j]] = j
         for i in range(1,len(raw_data)):
-            if (raw_data[i][0] in ids) or (raw_data[i][6][0] in ['Z','T']):
+            if (raw_data[i][c["appl_id"]] in ids) or (raw_data[i][c["activity_code"]][0] in ['Z','T']):
                 continue
-            elif "No abstract available" in raw_data[i][24]:
+            elif "No abstract available" in raw_data[i][c["abstract_text"]]:
                 continue
-            elif len(raw_data[i][35]) <= 1:
+            elif len(raw_data[i][c["direct_cost_amt"]]) <= 1:
                 continue
             else:
-                ids.append(raw_data[i][0])
-            abstract = raw_data[i][24].replace('\n',' ')
-            title = raw_data[i][25]
-            relevance = raw_data[i][26].replace('\n',' ')
+                ids.append(raw_data[i][c["appl_id"]])
+            abstract = raw_data[i][c["abstract_text"]].replace('\n',' ')
+            title = raw_data[i][c["project_title"]]
+            relevance = raw_data[i][c["phr_text"]].replace('\n',' ')
             data.append({
                 "text": title + " " + abstract + " " + relevance,
                 "title": title,
-                "id": raw_data[i][0],
-                "project_number": raw_data[i][3][1:].split("-")[0],
-                "terms": raw_data[i][22].split(";"),
-                "administration": raw_data[i][63],
-                "organization": raw_data[i][38],
-                "mechanism": raw_data[i][6],
-                "year": raw_data[i][2],
-                "funding": mk_int(raw_data[i][36]) + mk_int(raw_data[i][37]),
+                "id": raw_data[i][c["appl_id"]],
+                "project_number": raw_data[i][c["project_num"]][1:].split("-")[0],
+                "terms": raw_data[i][c["terms"]].split(";"),
+                "administration": raw_data[i][c["agency_ic_admin_abbreviation"]],
+                "organization": raw_data[i][c["organization_org_name"]],
+                "mechanism": raw_data[i][c["activity_code"]],
+                "year": raw_data[i][c["fiscal_year"]],
+                "funding": mk_int(raw_data[i][c["direct_cost_amt"]]) + mk_int(raw_data[i][c["indirect_cost_amt"]]),
                 })
 
     new_data = []

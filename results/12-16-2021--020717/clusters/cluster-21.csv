@@ -1,0 +1,434 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"Changes in soft tissue elasticity are usually related to pathological           
+processes.  Because of this, palpation is still widely used for                 
+diagnosis.  Its efficacy, however, is limited to abnormalities located          
+relatively close to the skin surface.  The goal of quantitative                 
+elasticity imaging is to develop surrogate, remote palpation, thus              
+expanding its range to include deep lying lesions.  The elastic                 
+properties of any continuous medium such as tissue can be assessed              
+through precise measurement of mechanical deformations throughout that          
+medium induced by forces applied at the surface.  Using modern medical          
+imaging devices to precisely measure internal motion, it should be              
+possible to estimate and even image elastic properties of internal              
+organs.  In competition with other imaging modalities, ultrasound has two       
+major advantages for elasticity imaging; it is inherently real-time and         
+speckle artifacts limiting the quality of conventional images provide           
+excellent markers for accurate tracking of tissue motion.  Elasticity can       
+be imaged, therefore, by measuring motion with an ultrasound speckle            
+tracking algorithm, followed by reconstruction of the elasticity                
+distribution.  Although some other imaging systems, particularly real-          
+time ultrasound, must be used to monitor tissue motion, elasticity              
+imaging represents a fundamentally new diagnostic modality.  To                 
+investigate quantitative elasticity imaging for medical diagnosis, a            
+research plan addressing the important clinical problem of renal                
+inflammation and scarring has been formulated.  Preliminary data support        
+the hypothesis that kidney elasticity changes with renal damage and             
+concomitant scarring before renal problems are detectable by traditional        
+diagnostic techniques such as laboratory measurements of renal function.        
+Therefore, quantitative elasticity imaging may be valuable in detecting         
+and quantifying scar for conditions such as kidney transplant rejection         
+where rejection is difficult to quantify from functional measurements           
+alone.  Based on the results of these studies, it is the long range goal        
+of this research program to develop a sensitive diagnostic technique            
+based on quantitative elasticity imaging permitting surrogate palpation         
+of deep lying lesions.                                                          
+ animal tissue; artificial intelligence; computer program /software; elasticity; glomerular filtration rate; guinea pigs; histopathology; hydroxyproline; kidney disorder diagnosis; laboratory rabbit; mechanical stress; nephritis; phantom model ELASTICITY IMAGING FOR EARLY RENAL PATHOLOGY DETECTION","Changes in soft tissue elasticity are usually related to pathological           
+processes.  Because of this, palpation is still widely used for                 
+diagnosis.  Its efficacy, however, is limited to abnormalities located          
+relatively close to the skin surface.  The goal of quantitative                 
+elasticity imaging is to develop surrogate, remote palpation, thus              
+expanding its range to include deep lying lesions.  The elastic                 
+properties of any continuous medium such as tissue can be assessed              
+through precise measurement of mechanical deformations throughout that          
+medium induced by forces applied at the surface.  Using modern medical          
+imaging devices to precisely measure internal motion, it should be              
+possible to estimate and even image elastic properties of internal              
+organs.  In competition with other imaging modalities, ultrasound has two       
+major advantages for elasticity imaging; it is inherently real-time and         
+speckle artifacts limiting the quality of conventional images provide           
+excellent markers for accurate tracking of tissue motion.  Elasticity can       
+be imaged, therefore, by measuring motion with an ultrasound speckle            
+tracking algorithm, followed by reconstruction of the elasticity                
+distribution.  Although some other imaging systems, particularly real-          
+time ultrasound, must be used to monitor tissue motion, elasticity              
+imaging represents a fundamentally new diagnostic modality.  To                 
+investigate quantitative elasticity imaging for medical diagnosis, a            
+research plan addressing the important clinical problem of renal                
+inflammation and scarring has been formulated.  Preliminary data support        
+the hypothesis that kidney elasticity changes with renal damage and             
+concomitant scarring before renal problems are detectable by traditional        
+diagnostic techniques such as laboratory measurements of renal function.        
+Therefore, quantitative elasticity imaging may be valuable in detecting         
+and quantifying scar for conditions such as kidney transplant rejection         
+where rejection is difficult to quantify from functional measurements           
+alone.  Based on the results of these studies, it is the long range goal        
+of this research program to develop a sensitive diagnostic technique            
+based on quantitative elasticity imaging permitting surrogate palpation         
+of deep lying lesions.                                                          
+",2016733,R01DK047324,['R01DK047324'],DK,https://reporter.nih.gov/project-details/2016733,R01,1997,209601,0.5600058439338289
+"DESCRIPTION:  (Applicant's Abstract)                                            
+                                                                                
+Substance abuse is the major health problem in the United States.  The cost     
+to society in terms of death, disease, injury and emotional distress            
+attributable to alcohol, nicotine, and other drugs is immeasurable.  The        
+goal of researchers interested in the neurobiological substrates of drug        
+abuse is to understand the powerful motivating and addictive properties of      
+drugs, and to develop better treatments for intoxication, craving, and          
+relapse.  In recent years, much progress has been made toward the first part    
+of this goal.  The neural pathways governing the reinforcing effects of         
+drugs are well known, and very recently remarkable advances have been           
+achieved in learning about effects of drugs on molecular mechanisms and gene    
+expression.  The objective of this proposal is to study in detail the basic     
+behavioral functions of the nucleus accumbens, integrating behavioral,          
+pharmacological and molecular approaches.  The nucleus accumbens, located       
+within the ventromedial striatum, is an important neural substrate for drug     
+reinforcement.  It is assumed, therefore, that since drugs appear to exert      
+their rewarding properties in this region and its associated circuits, the      
+accumbens may play a fundamental role in biological reinforcement and           
+regulation of appetitive behaviors.  Relatively little is known, however,       
+about the specific neuromolecular mechanisms that underlie the functions of     
+the accumbens.  The aims of this project are to investigate the behavioral      
+functions of the recently designated ""core"" and ""shell"" subregions of the       
+nucleus accumbens.  Specifically, we will 1) investigate the role of            
+dopaminergic and glutamatergic receptor mechanisms and their associated         
+intracellular mechanisms within the accumbens core in response-reinforcement    
+learning, and 2) we will study transmitter mechanisms and circuitry involved    
+in controlling feeding behavior located within the accumbens shell.             
+Techniques to be utilized include local microinfusions of specific compounds    
+that act of receptor and intracellular transduction mechanisms, in              
+combination with behavioral analysis, and measurement of transcription          
+factors and phosphorylating enzymes that may play a role in learning or         
+motivated behavior.  Further basic understanding of the systems and             
+substrates upon which drugs act, which could potentially result from this       
+research, could help to develop better addiction therapies.                     
+ G protein; adenylate cyclase; behavioral /social science research tag; biological signal transduction; cAMP response element binding protein; dopamine; dopamine receptor; drug abuse; enzyme activity; gamma aminobutyrate; gel mobility shift assay; genetic regulation; glutamate receptor; immunocytochemistry; laboratory rat; learning; microinjections; neural plasticity; neuropharmacology; neuroregulation; neurotransmitter metabolism; nucleus accumbens; nutrient intake activity; operant conditionings; psychopharmacology; reinforcer NEURAL MECHANISMS IN THE NUCLEUS ACCUMBENS AND BEHAVIOR","DESCRIPTION:  (Applicant's Abstract)                                            
+                                                                                
+Substance abuse is the major health problem in the United States.  The cost     
+to society in terms of death, disease, injury and emotional distress            
+attributable to alcohol, nicotine, and other drugs is immeasurable.  The        
+goal of researchers interested in the neurobiological substrates of drug        
+abuse is to understand the powerful motivating and addictive properties of      
+drugs, and to develop better treatments for intoxication, craving, and          
+relapse.  In recent years, much progress has been made toward the first part    
+of this goal.  The neural pathways governing the reinforcing effects of         
+drugs are well known, and very recently remarkable advances have been           
+achieved in learning about effects of drugs on molecular mechanisms and gene    
+expression.  The objective of this proposal is to study in detail the basic     
+behavioral functions of the nucleus accumbens, integrating behavioral,          
+pharmacological and molecular approaches.  The nucleus accumbens, located       
+within the ventromedial striatum, is an important neural substrate for drug     
+reinforcement.  It is assumed, therefore, that since drugs appear to exert      
+their rewarding properties in this region and its associated circuits, the      
+accumbens may play a fundamental role in biological reinforcement and           
+regulation of appetitive behaviors.  Relatively little is known, however,       
+about the specific neuromolecular mechanisms that underlie the functions of     
+the accumbens.  The aims of this project are to investigate the behavioral      
+functions of the recently designated ""core"" and ""shell"" subregions of the       
+nucleus accumbens.  Specifically, we will 1) investigate the role of            
+dopaminergic and glutamatergic receptor mechanisms and their associated         
+intracellular mechanisms within the accumbens core in response-reinforcement    
+learning, and 2) we will study transmitter mechanisms and circuitry involved    
+in controlling feeding behavior located within the accumbens shell.             
+Techniques to be utilized include local microinfusions of specific compounds    
+that act of receptor and intracellular transduction mechanisms, in              
+combination with behavioral analysis, and measurement of transcription          
+factors and phosphorylating enzymes that may play a role in learning or         
+motivated behavior.  Further basic understanding of the systems and             
+substrates upon which drugs act, which could potentially result from this       
+research, could help to develop better addiction therapies.                     
+",2619777,R01DA004788,['R01DA004788'],DA,https://reporter.nih.gov/project-details/2619777,R01,1998,187610,0.5600058439338289
+"DESCRIPTION (Adapted from Applicant's Abstract):  This Phase I project          
+will produce PC-base software capable of detecting first level feature          
+(FLF) of clinical utility, such as spikes, K-complexes, and artifacts           
+, from routine EEG's,long-term monitoring , and sleep studies.  The goal        
+following Phase II sill be software capable of identifying third level          
+features (TLF), corresponding to clinical diagnostic features.                  
+                                                                                
+In Phase I, a panel of clinical experts will define FLF and score               
+recordings from our available database.  The database will be split into        
+training and tests sets.  EEG time domain and frequency domain                  
+parameters from the training set will be calculated and entered into the        
+first layer of an artificial neural network (ANN).  Automatic                   
+classification of FLF in the test set will be compared to expert                
+scoring.  A successful completion of Phase I will be 90 percent correct         
+automatic.                                                                      
+                                                                                
+During Phase II, FLF will be entered into a second level ANN.  The              
+resulting second level features (SLF) will be compared with expert              
+classification of patient states, such as sleep, arousal, and seizures.         
+FLF and SLF will then be combined into TLF using syntactical analysis           
+and adaptive segmentation to match expert clinical classifications.  TLF        
+represent clinical diagnostic features, such as a focal lesion,                 
+epileptiform, or fragmented sleep.                                              
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: Not available.                                 
+ biomedical equipment development; computer program /software; electroencephalography DEFINITION AND DETECTION OF CLINICAL EEG FEATURES","DESCRIPTION (Adapted from Applicant's Abstract):  This Phase I project          
+will produce PC-base software capable of detecting first level feature          
+(FLF) of clinical utility, such as spikes, K-complexes, and artifacts           
+, from routine EEG's,long-term monitoring , and sleep studies.  The goal        
+following Phase II sill be software capable of identifying third level          
+features (TLF), corresponding to clinical diagnostic features.                  
+                                                                                
+In Phase I, a panel of clinical experts will define FLF and score               
+recordings from our available database.  The database will be split into        
+training and tests sets.  EEG time domain and frequency domain                  
+parameters from the training set will be calculated and entered into the        
+first layer of an artificial neural network (ANN).  Automatic                   
+classification of FLF in the test set will be compared to expert                
+scoring.  A successful completion of Phase I will be 90 percent correct         
+automatic.                                                                      
+                                                                                
+During Phase II, FLF will be entered into a second level ANN.  The              
+resulting second level features (SLF) will be compared with expert              
+classification of patient states, such as sleep, arousal, and seizures.         
+FLF and SLF will then be combined into TLF using syntactical analysis           
+and adaptive segmentation to match expert clinical classifications.  TLF        
+represent clinical diagnostic features, such as a focal lesion,                 
+epileptiform, or fragmented sleep.                                              
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: Not available.                                 
+",2649862,R43NS037636,['R43NS037636'],NS,https://reporter.nih.gov/project-details/2649862,R43,1998,99688,0.13201703330246253
+"Our long-range objective is to understand the functional organization           
+and dynamical activity of the cortex.  The discovery of the columnar            
+organization of the cortex has led to the notion that the  columns  are         
+fundamental building blocks, from which larger functional units are             
+constructed.  The cortex is thus viewed as a crystal (a more or less            
+regular array of repeating, similar modules.  Our proposal will test and        
+refine this modular hypothesis.                                                 
+                                                                                
+We shall use optical imaging of the primary visual cortex of monkeys and        
+cats, and simultaneously record electrical responses from small neuronal        
+clusters and local field potentials.  We shall thus obtain a spatio-            
+temporal picture of the activity in the neural ensembles which encode           
+various stimulus parameters. The data will be analyzed with extensions          
+of Principal Component Analysis that we have developed.                         
+                                                                                
+We address three major aims: 1) To test the modularity hypothesis we            
+shall measure, in a large piece of cortical tissue, the full range of           
+functional maps ( for orientation, color, spatial frequency etc.)               
+together with the retinotopic map.  We shall measure the periodicity of,        
+and correlations among, the functional maps, to determine if they are           
+commensurate.  This will lead to a refined framework that could include         
+possibly incommensurate cortical scales and interactions among cortical         
+elements.  2) We shall investigate how the Principal Components                 
+(eigenfunctions) obtained from the optical images depend on the extent          
+of the visual stimulus, to determine how the dynamical dimension of the         
+primary visual cortex (viewed as a dynamical system) scales with size.          
+3) We shall study the concerted electrical responses of neuronal                
+clusters, to clarify the link between optical signals and neuronal              
+activity, and to deepen our understanding of the neuronal dynamics.             
+                                                                                
+Our study is aimed at an intermediate architectural level, and deals            
+with the way in which the fundamental modalities of the visual world            
+(orientation, size, color and so on) are analyzed in the primary visual         
+cortex.  Such knowledge is crucial for the construction of cortical             
+models, which are essential for any quantitative understanding of               
+critical function and dysfunction.                                              
+ Macaca fascicularis; brain electrical activity; brain imaging /visualization /scanning; brain mapping; cats; charge coupled device camera; computational neuroscience; image processing; mathematical model; neural information processing; optics; space perception; stereotaxic techniques; visual cortex; visual stimulus MATHEMATICAL ANALYSIS OF BRAIN FUNCTION","Our long-range objective is to understand the functional organization           
+and dynamical activity of the cortex.  The discovery of the columnar            
+organization of the cortex has led to the notion that the  columns  are         
+fundamental building blocks, from which larger functional units are             
+constructed.  The cortex is thus viewed as a crystal (a more or less            
+regular array of repeating, similar modules.  Our proposal will test and        
+refine this modular hypothesis.                                                 
+                                                                                
+We shall use optical imaging of the primary visual cortex of monkeys and        
+cats, and simultaneously record electrical responses from small neuronal        
+clusters and local field potentials.  We shall thus obtain a spatio-            
+temporal picture of the activity in the neural ensembles which encode           
+various stimulus parameters. The data will be analyzed with extensions          
+of Principal Component Analysis that we have developed.                         
+                                                                                
+We address three major aims: 1) To test the modularity hypothesis we            
+shall measure, in a large piece of cortical tissue, the full range of           
+functional maps ( for orientation, color, spatial frequency etc.)               
+together with the retinotopic map.  We shall measure the periodicity of,        
+and correlations among, the functional maps, to determine if they are           
+commensurate.  This will lead to a refined framework that could include         
+possibly incommensurate cortical scales and interactions among cortical         
+elements.  2) We shall investigate how the Principal Components                 
+(eigenfunctions) obtained from the optical images depend on the extent          
+of the visual stimulus, to determine how the dynamical dimension of the         
+primary visual cortex (viewed as a dynamical system) scales with size.          
+3) We shall study the concerted electrical responses of neuronal                
+clusters, to clarify the link between optical signals and neuronal              
+activity, and to deepen our understanding of the neuronal dynamics.             
+                                                                                
+Our study is aimed at an intermediate architectural level, and deals            
+with the way in which the fundamental modalities of the visual world            
+(orientation, size, color and so on) are analyzed in the primary visual         
+cortex.  Such knowledge is crucial for the construction of cortical             
+models, which are essential for any quantitative understanding of               
+critical function and dysfunction.                                              
+",2688886,R01MH050166,['R01MH050166'],MH,https://reporter.nih.gov/project-details/2688886,R01,1998,330381,0.07890416735181463
+"The long-term objectives of the proposed research are to elucidate the          
+stages of speaking skill development in infants and the motor control           
+mechanisms for speech production in adults.  These research areas are           
+important for early diagnosis and proper treatment of speech disorders.         
+The proposed research consists primarily of the development, refinement,        
+and experimental testing of a comprehensive neural network modeling             
+framework for speech production based on preliminary work described in          
+Guenther (Appendices A).  Model additions will include an articulatory          
+mechanism that allows synthesis of speech wave-forms and an acoustic-like       
+coordinate frame for speech movement planning.  Proposed research also          
+includes the development of software for producing speaker-specific vocal       
+tract models based on Magnetic Resonance Imaging (MRI) scans.  These models     
+will allow synthesis of speech signals that account for the differences in      
+vocal tract sizes and shapes of different individuals, thus providing a         
+more accurate means for investigating the acoustic/articulatory                 
+relationships of individuals acting as subjects in speech production            
+experiments.  An experimental investigation utilizing these speaker-            
+specific vocal tract models is also proposed to test an hypothesis              
+generated by the modeling framework.  Some speakers use two entirely            
+different articulator configurations, called ""bunched"" and retroflex"", to       
+produce /r/ in different contexts.  The proposed model predicts that the        
+same target is specified tot he production mechanism in the two cases, but      
+that different articulator configurations arise in different contexts due       
+to two properties of the speech production mechanism: (1) movement planning     
+in an acoustic-like coordinate frame, and (2) transformation of the planned     
+acoustic trajectories into articulator movements via a direction-to-            
+direction mapping.  Speaker-specific vocal tract models corresponding to        
+two subjects will be incorporated into the proposed modeling framework,         
+which will then be used to predict which configuration each subject will        
+use to produce /r/ in each of four contexts.  The hypothesis will be tested     
+by comparing model performance with the performance of the subjects while       
+producing /r/ in the same four contests, as measured in an Electro-Magnetic     
+Midsagittal Articulometer (EMMA) study.  Finally, the proposed modeling         
+framework will be used to investigate several other issues in speech            
+production, including two modeling studies of speech motor development in       
+infants (made possible by the self-organizing nature of the proposed            
+model), and an investigation of intrinsic timing issues.                        
+    GRANT=R01DE09161                                                            
+The ability to utilize hemin and hemin containing compounds as an iron          
+source has been documented for several pathogenic bacteria, including the       
+periodontopathogen, Porphyromonas gingivalis.  We have previously               
+determined that P. gingivalis transports the entire hemin moiety into the       
+cell by an energy-dependent mechanism and that the binding and accumulation     
+of hemin are induced by growth of cultures in the presence of hemin.            
+However, the specific P. gingivalis components involved in hemin binding        
+and transport have not been identified.  Growth of P. gingivalis under          
+hemin-replete conditions has also been shown to influence the expression of     
+several virulence factors; however, the role of hemin in the regulation of      
+specific virulence genes has not been precisely defined.                        
+                                                                                
+The primary objectives of the present application are to define the             
+molecular mechanisms involved in hemin binding and transport in P.              
+gingivalis and to examine the regulation of hemin responsive genes.  Four       
+specific aims are proposed:                                                     
+                                                                                
+1.  To identify and characterize athe P. gingivalis hemin receptor(s).  P.      
+gingivalis outer membrane proteins involved in hemin binding will be            
+identified by hemin affinity chromatography.  The specificity of the            
+putative receptor(s) will be defined by examining the binding of 14[C]hemin     
+to P. gingivalis in the presence of hemin and nonahemin iron sources.           
+                                                                                
+2.  To clone P. gingivalis genes encoding proteins involved in hemin            
+binding and transport.  P. gingivalis genes encoding hemin binding proteins     
+will be cloned by screening E. coli recombinants for the ability to bind        
+hemin.  P. gingivalis genes encoding proteins involved in hemin transport       
+will be cloned by screening E. coli hemA mutants for the ability to grow        
+with hemin.  Corresponding P. gingivalis mutants will be obtained by            
+insertional inactivation of the cloned genes and characterized both in          
+vitro and in vivo.                                                              
+                                                                                
+3.  To elucidate the regulation of hemin binding and transport genes.  The      
+regulation of cloned P. gingivalis genes involved in hemin binding and          
+transport will be examined by analysis of mRNA and transcriptional fusions      
+under hemin-deplete and -replete conditions.                                    
+                                                                                
+4.  To identify P. gingivalis genes that are regulated by the ferric uptake     
+regulator (Fur).  Our preliminary results indicate that the expression of       
+hemin/iron-responsive genes in P. gingivalis may be controlled by the           
+negative ferric uptake regulator protein, Fur.  We will begin to identify       
+P. gingivalis genes that are regulated by Fur by screening a P. gingivalis      
+genomic library using the Fur titration asssay.                                 
+                                                                                
+The results obtained in these studies will allow us to identify specific        
+components of the hemin transport system in P. gingivalis and will provide      
+important information on the regulation of hemin responsive genes.              
+ artificial intelligence; auditory feedback; auditory stimulus; behavioral /social science research tag; clinical research; computer program /software; computer simulation; computer system design /evaluation; digital imaging; human subject; language development; model design /development; psychoacoustics; sound; speech; speech recognition; vocal cords; vocalization NEURAL NETWORK MODELING OF SPEECH PRODUCTION","The long-term objectives of the proposed research are to elucidate the          
+stages of speaking skill development in infants and the motor control           
+mechanisms for speech production in adults.  These research areas are           
+important for early diagnosis and proper treatment of speech disorders.         
+The proposed research consists primarily of the development, refinement,        
+and experimental testing of a comprehensive neural network modeling             
+framework for speech production based on preliminary work described in          
+Guenther (Appendices A).  Model additions will include an articulatory          
+mechanism that allows synthesis of speech wave-forms and an acoustic-like       
+coordinate frame for speech movement planning.  Proposed research also          
+includes the development of software for producing speaker-specific vocal       
+tract models based on Magnetic Resonance Imaging (MRI) scans.  These models     
+will allow synthesis of speech signals that account for the differences in      
+vocal tract sizes and shapes of different individuals, thus providing a         
+more accurate means for investigating the acoustic/articulatory                 
+relationships of individuals acting as subjects in speech production            
+experiments.  An experimental investigation utilizing these speaker-            
+specific vocal tract models is also proposed to test an hypothesis              
+generated by the modeling framework.  Some speakers use two entirely            
+different articulator configurations, called ""bunched"" and retroflex"", to       
+produce /r/ in different contexts.  The proposed model predicts that the        
+same target is specified tot he production mechanism in the two cases, but      
+that different articulator configurations arise in different contexts due       
+to two properties of the speech production mechanism: (1) movement planning     
+in an acoustic-like coordinate frame, and (2) transformation of the planned     
+acoustic trajectories into articulator movements via a direction-to-            
+direction mapping.  Speaker-specific vocal tract models corresponding to        
+two subjects will be incorporated into the proposed modeling framework,         
+which will then be used to predict which configuration each subject will        
+use to produce /r/ in each of four contexts.  The hypothesis will be tested     
+by comparing model performance with the performance of the subjects while       
+producing /r/ in the same four contests, as measured in an Electro-Magnetic     
+Midsagittal Articulometer (EMMA) study.  Finally, the proposed modeling         
+framework will be used to investigate several other issues in speech            
+production, including two modeling studies of speech motor development in       
+infants (made possible by the self-organizing nature of the proposed            
+model), and an investigation of intrinsic timing issues.                        
+    GRANT=R01DE09161                                                            
+The ability to utilize hemin and hemin containing compounds as an iron          
+source has been documented for several pathogenic bacteria, including the       
+periodontopathogen, Porphyromonas gingivalis.  We have previously               
+determined that P. gingivalis transports the entire hemin moiety into the       
+cell by an energy-dependent mechanism and that the binding and accumulation     
+of hemin are induced by growth of cultures in the presence of hemin.            
+However, the specific P. gingivalis components involved in hemin binding        
+and transport have not been identified.  Growth of P. gingivalis under          
+hemin-replete conditions has also been shown to influence the expression of     
+several virulence factors; however, the role of hemin in the regulation of      
+specific virulence genes has not been precisely defined.                        
+                                                                                
+The primary objectives of the present application are to define the             
+molecular mechanisms involved in hemin binding and transport in P.              
+gingivalis and to examine the regulation of hemin responsive genes.  Four       
+specific aims are proposed:                                                     
+                                                                                
+1.  To identify and characterize athe P. gingivalis hemin receptor(s).  P.      
+gingivalis outer membrane proteins involved in hemin binding will be            
+identified by hemin affinity chromatography.  The specificity of the            
+putative receptor(s) will be defined by examining the binding of 14[C]hemin     
+to P. gingivalis in the presence of hemin and nonahemin iron sources.           
+                                                                                
+2.  To clone P. gingivalis genes encoding proteins involved in hemin            
+binding and transport.  P. gingivalis genes encoding hemin binding proteins     
+will be cloned by screening E. coli recombinants for the ability to bind        
+hemin.  P. gingivalis genes encoding proteins involved in hemin transport       
+will be cloned by screening E. coli hemA mutants for the ability to grow        
+with hemin.  Corresponding P. gingivalis mutants will be obtained by            
+insertional inactivation of the cloned genes and characterized both in          
+vitro and in vivo.                                                              
+                                                                                
+3.  To elucidate the regulation of hemin binding and transport genes.  The      
+regulation of cloned P. gingivalis genes involved in hemin binding and          
+transport will be examined by analysis of mRNA and transcriptional fusions      
+under hemin-deplete and -replete conditions.                                    
+                                                                                
+4.  To identify P. gingivalis genes that are regulated by the ferric uptake     
+regulator (Fur).  Our preliminary results indicate that the expression of       
+hemin/iron-responsive genes in P. gingivalis may be controlled by the           
+negative ferric uptake regulator protein, Fur.  We will begin to identify       
+P. gingivalis genes that are regulated by Fur by screening a P. gingivalis      
+genomic library using the Fur titration asssay.                                 
+                                                                                
+The results obtained in these studies will allow us to identify specific        
+components of the hemin transport system in P. gingivalis and will provide      
+important information on the regulation of hemin responsive genes.              
+",2654421,R29DC002852,['R29DC002852'],DC,https://reporter.nih.gov/project-details/2654421,R29,1998,122419,0.5600058439338289

@@ -1,0 +1,245 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The genes of the human leukocyte antigen (HLA) region control a variety         
+Of functions involved in the immune response, and influence                     
+susceptibility to over 40 diseases.  Our understanding of the structure         
+and function of the HLA genes, their disease associations, and the              
+evolutionary features of this multigene family has benefitted from recent       
+advances in molecular biology, immunology, disease modelling and                
+population genetics.  Theoretical studies in the development of models to       
+determine the modes of inheritance of the HLA associated diseases have          
+led to a better understanding of the inheritance patterns in insulin            
+dependent diabetes mellitus, rheumatoid arthritis, multiple sclerosis,          
+ankylosing spondylitis, hemochromatosis, celiac disease, and others.  It        
+is now clear that many of the HLA associated diseases involve                   
+heterogeneity in their HLA components, as well as non-HLA genetic               
+components.                                                                     
+                                                                                
+The specific aims of our research are to study the genetic components in        
+the etiology of the HLA associated diseases, and population genetic             
+features of the HLA system.  A variety of methods to test modes of              
+inheritance of diseases using marker allele information, will be                
+developed.  Methods appropriate for the analysis of marker systems which        
+are not highly polymorphic, to both detect linkage and determine modes of       
+inheritance, will be investigated.  The information content of particular       
+pedigree types for LOD score analysis will be investigated.  Two methods        
+using patterns of linkage disequilibrium will be investigated to                
+determine their usefulness in mapping disease predisposing genes.  A            
+number of large collaborative data sets of HLA associated diseases will         
+be analyzed.  A framework for genetic counselling of HLA associated, and        
+other complex diseases, will be developed.  The results of our studies          
+are generally applicable to the mapping and characterization of complex         
+human genetic traits.                                                           
+ European; Hodgkin's disease; MHC class I antigen; MHC class II antigen; T cell receptor; alleles; antiserum; artificial intelligence; biochemical evolution; celiac disease; computer assisted sequence analysis; computer data analysis; disease /disorder proneness /risk; gene frequency; genetic counseling; genetic disorder diagnosis; genetic markers; genetic models; genetic polymorphism; genotype; hereditary hemochromatosis; heterozygote; histocompatibility antigens; histocompatibility gene; homozygote; human genetic material tag; human population genetics; immunogenetics; insulin dependent diabetes mellitus; linkage disequilibriums; mathematical model; molecular genetics; multiple sclerosis; nucleic acid sequence; oligonucleotides; restriction fragment length polymorphism; rheumatoid arthritis; serotyping; statistics /biometry MODELS IN POPULATION GENETICS","The genes of the human leukocyte antigen (HLA) region control a variety         
+Of functions involved in the immune response, and influence                     
+susceptibility to over 40 diseases.  Our understanding of the structure         
+and function of the HLA genes, their disease associations, and the              
+evolutionary features of this multigene family has benefitted from recent       
+advances in molecular biology, immunology, disease modelling and                
+population genetics.  Theoretical studies in the development of models to       
+determine the modes of inheritance of the HLA associated diseases have          
+led to a better understanding of the inheritance patterns in insulin            
+dependent diabetes mellitus, rheumatoid arthritis, multiple sclerosis,          
+ankylosing spondylitis, hemochromatosis, celiac disease, and others.  It        
+is now clear that many of the HLA associated diseases involve                   
+heterogeneity in their HLA components, as well as non-HLA genetic               
+components.                                                                     
+                                                                                
+The specific aims of our research are to study the genetic components in        
+the etiology of the HLA associated diseases, and population genetic             
+features of the HLA system.  A variety of methods to test modes of              
+inheritance of diseases using marker allele information, will be                
+developed.  Methods appropriate for the analysis of marker systems which        
+are not highly polymorphic, to both detect linkage and determine modes of       
+inheritance, will be investigated.  The information content of particular       
+pedigree types for LOD score analysis will be investigated.  Two methods        
+using patterns of linkage disequilibrium will be investigated to                
+determine their usefulness in mapping disease predisposing genes.  A            
+number of large collaborative data sets of HLA associated diseases will         
+be analyzed.  A framework for genetic counselling of HLA associated, and        
+other complex diseases, will be developed.  The results of our studies          
+are generally applicable to the mapping and characterization of complex         
+human genetic traits.                                                           
+",2441883,R01GM056688,['R01GM056688'],GM,https://reporter.nih.gov/project-details/2441883,R01,1997,185122,1.0
+"The amino acid sequence of a protein uniquely determines its tertiary           
+structure. Deciphering this relationship, the protein folding problem has       
+become increasingly important to molecular biologists. DNA sequencing has       
+become routine, but structural experiments remain very difficult.               
+Computational strategies are needed to help address this problem.               
+                                                                                
+This proposal describes a strategy to identify the location of alpha-           
+helices and beta-strands throughout the sequence. A method for using off-       
+lattice simulations of a polypeptide chain to identify secondary structure      
+preferences in the ensemble average is proposed. Once secondary structure       
+is located, computational methods exist for generating plausible tertiary       
+structures. However, these combinatorial strategies give rise to a large        
+number of alternative structures which are difficult to distinguish from        
+the correct fold. Experimental and theoretical methods for clarifying the       
+distinction between correctly folded structures and their misfolded             
+counterparts will be considered.                                                
+                                                                                
+In a new direction, we propose to develop a multiple sequence analysis          
+strategy to relate sequence and structure to function. In particular, we        
+will focus on identifying the binding sites on the G-alpha family of            
+GTPases for the relevant G-protein coupled receptors, G-beta-gamma and          
+downstream effectors. We plan to continue to develop a genetic algorithm        
+for the construction of polypeptide loops subject to a series of                
+constraints. This method will be used to model the loop regions of G-           
+protein coupled receptors involved in the interaction with peptide ligands      
+and the hetero-trimeric G-protein complex.                                      
+                                                                                
+Finally, we propose to develop a new method to compare structures based on      
+the area of the minimal ""soap film"" that could join them following the          
+appropriate rotation and translation of one structure relative to another.      
+This provides a natural way to circumvent the gap penalty problem that          
+plagues current structure alignment algorithms.                                 
+ G protein; active sites; artificial intelligence; computer program /software; computer simulation; conformation; guanosinetriphosphatases; intermolecular interaction; peptides; physical model; protein engineering; protein folding; protein sequence; protein structure function; receptor coupling; thrombin; transcription factor COMPUTER ANALYSIS & PREDICTION OF PROTEIN STRUCTURE","The amino acid sequence of a protein uniquely determines its tertiary           
+structure. Deciphering this relationship, the protein folding problem has       
+become increasingly important to molecular biologists. DNA sequencing has       
+become routine, but structural experiments remain very difficult.               
+Computational strategies are needed to help address this problem.               
+                                                                                
+This proposal describes a strategy to identify the location of alpha-           
+helices and beta-strands throughout the sequence. A method for using off-       
+lattice simulations of a polypeptide chain to identify secondary structure      
+preferences in the ensemble average is proposed. Once secondary structure       
+is located, computational methods exist for generating plausible tertiary       
+structures. However, these combinatorial strategies give rise to a large        
+number of alternative structures which are difficult to distinguish from        
+the correct fold. Experimental and theoretical methods for clarifying the       
+distinction between correctly folded structures and their misfolded             
+counterparts will be considered.                                                
+                                                                                
+In a new direction, we propose to develop a multiple sequence analysis          
+strategy to relate sequence and structure to function. In particular, we        
+will focus on identifying the binding sites on the G-alpha family of            
+GTPases for the relevant G-protein coupled receptors, G-beta-gamma and          
+downstream effectors. We plan to continue to develop a genetic algorithm        
+for the construction of polypeptide loops subject to a series of                
+constraints. This method will be used to model the loop regions of G-           
+protein coupled receptors involved in the interaction with peptide ligands      
+and the hetero-trimeric G-protein complex.                                      
+                                                                                
+Finally, we propose to develop a new method to compare structures based on      
+the area of the minimal ""soap film"" that could join them following the          
+appropriate rotation and translation of one structure relative to another.      
+This provides a natural way to circumvent the gap penalty problem that          
+plagues current structure alignment algorithms.                                 
+",2022214,R01GM039900,['R01GM039900'],GM,https://reporter.nih.gov/project-details/2022214,R01,1997,279111,1.0
+"DESCRIPTION (Adapted from applicant's abstract):  This K02 application          
+out-lines research and career development plans to investigate the role of      
+sleep regulation in the developmental psychobiology of affective disorders.     
+The first goal is to extend a well-established line of research based on        
+measures of EEG sleep and cortisol in child and adolescent depression by        
+investigating:  (1) abnormalities in sleep and cortisol regulation focusing     
+on the sleep-onset transition; (2) normal maturational changes in sleep and     
+cortisol regulation relevant to these abnormalities; and (3) the predictive     
+validity of sleep and cortisol abnormalities in longitudinal clinical           
+follow-up.                                                                      
+                                                                                
+The second goal is to further develop and investigate a larger developmental    
+model of sleep regulation.  The model emphasizes close links between sleep      
+regulation and neurobehavioral systems involved in the regulation of affect     
+and arousal which are modulated in regions of prefrontal cortex (PFC).          
+Matur-ational changes in PFC-subcortical circuits influencing sleep,            
+arousal, and affect are hypothesized to contribute to sleep changes             
+associated with depression, particularly near the transition from               
+wakefulness into sleep.  Based on this model, predictions are made regarding    
+sleep changes in the development of affective disorders and effects of sleep    
+deprivation of affective regulation.  The long-term goal of this work is to     
+understand mechanisms of dysregulation which may lead to more effective         
+treatment of early onset affective disorders.                                   
+                                                                                
+Career development activities to support these goals are described.  Further    
+advancing this line of investigation will require increased knowledge and       
+skills in four areas:  the development of affect regulation; the relevant       
+neurocircuitry and its development; more direct measures of the neural          
+systems of interest; and statistics.  The candidate will pursue these goals     
+through course work, focused readings, and supervised learning experiences      
+and collab-orations with scientists locally and nationally.                     
+ adolescence (12-20); arousal; clinical research; corticotropin releasing factor; cortisol; developmental neurobiology; electroencephalography; frontal lobe /cortex; human puberty; human subject; longitudinal human study; magnetic resonance imaging; major depression; middle childhood (6-11); model design /development; neuroendocrine system; psychobiology; sleep; sleep deprivation; wakefulness DEVELOPMENT PSYCHOBIOLOGY OF SLEEP AND DEPRESSION","DESCRIPTION (Adapted from applicant's abstract):  This K02 application          
+out-lines research and career development plans to investigate the role of      
+sleep regulation in the developmental psychobiology of affective disorders.     
+The first goal is to extend a well-established line of research based on        
+measures of EEG sleep and cortisol in child and adolescent depression by        
+investigating:  (1) abnormalities in sleep and cortisol regulation focusing     
+on the sleep-onset transition; (2) normal maturational changes in sleep and     
+cortisol regulation relevant to these abnormalities; and (3) the predictive     
+validity of sleep and cortisol abnormalities in longitudinal clinical           
+follow-up.                                                                      
+                                                                                
+The second goal is to further develop and investigate a larger developmental    
+model of sleep regulation.  The model emphasizes close links between sleep      
+regulation and neurobehavioral systems involved in the regulation of affect     
+and arousal which are modulated in regions of prefrontal cortex (PFC).          
+Matur-ational changes in PFC-subcortical circuits influencing sleep,            
+arousal, and affect are hypothesized to contribute to sleep changes             
+associated with depression, particularly near the transition from               
+wakefulness into sleep.  Based on this model, predictions are made regarding    
+sleep changes in the development of affective disorders and effects of sleep    
+deprivation of affective regulation.  The long-term goal of this work is to     
+understand mechanisms of dysregulation which may lead to more effective         
+treatment of early onset affective disorders.                                   
+                                                                                
+Career development activities to support these goals are described.  Further    
+advancing this line of investigation will require increased knowledge and       
+skills in four areas:  the development of affect regulation; the relevant       
+neurocircuitry and its development; more direct measures of the neural          
+systems of interest; and statistics.  The candidate will pursue these goals     
+through course work, focused readings, and supervised learning experiences      
+and collab-orations with scientists locally and nationally.                     
+",2674459,K02MH001362,['K02MH001362'],MH,https://reporter.nih.gov/project-details/2674459,K02,1998,98658,1.0
+"DESCRIPTION (Taken from application abstract):  Recent advances in              
+understanding neuronal functions have led to an expanded scientific interest    
+in defining the organization of the nervous system so the spatial correlates    
+of these functions can be identified.  This interest has been formalized as     
+the Human Brain Project, an ambitious multi disciplinary effort to map the      
+nervous system from the organismal to the macromolecular levels.  One of the    
+greatest challenges of this effort is to preserve the complex                   
+three-dimensional relationships that occur between neuronal structures.         
+This problem will require new methods for data acquisition as well as data      
+visualization.                                                                  
+                                                                                
+The project described here is an interdisciplinary effort to derive             
+three-dimensional reconstructions of synaptic architecture from stereo          
+electron micrographs acquired from multiple viewpoints.  The collaboration      
+combines advanced ultrastructural visualization techniques with massively       
+parallel computational methods and an innovative set of pattern recognition,    
+stereo correspondence and depth mapping algorithms.  Our goal is to             
+integrate structural information from numerous images into a single,            
+high-accuracy three-dimensional reconstruction of the synaptic cytoskeleton.    
+The immediate result of this collaboration will be an improved understanding    
+of the spatial relationships between synaptic macromolecules.  More             
+importantly, the project will produce a set of computational tools that can     
+be applied to stereo image data sets of various areas of the nervous system,    
+from the macroscopic to the molecular level.  Finally, our studies will         
+advance the state-of-the-art of parallel computation and interactive            
+reconstruction methods that can provide novel solutions to difficult            
+problems of neuroscience visualization.                                         
+ artificial intelligence; bioimaging /biomedical imaging; brain mapping; cell cell interaction; computational neuroscience; computer program /software; computer system design /evaluation; cytoskeleton; data collection; electron microscopy; image processing; imaging /visualization /scanning; macromolecule; method development; nerve endings; neurons; parallel processing; stereophotography; structural biology; synapses THREE DIMENSIONAL RECONSTRUCTION OF SYNAPSES","DESCRIPTION (Taken from application abstract):  Recent advances in              
+understanding neuronal functions have led to an expanded scientific interest    
+in defining the organization of the nervous system so the spatial correlates    
+of these functions can be identified.  This interest has been formalized as     
+the Human Brain Project, an ambitious multi disciplinary effort to map the      
+nervous system from the organismal to the macromolecular levels.  One of the    
+greatest challenges of this effort is to preserve the complex                   
+three-dimensional relationships that occur between neuronal structures.         
+This problem will require new methods for data acquisition as well as data      
+visualization.                                                                  
+                                                                                
+The project described here is an interdisciplinary effort to derive             
+three-dimensional reconstructions of synaptic architecture from stereo          
+electron micrographs acquired from multiple viewpoints.  The collaboration      
+combines advanced ultrastructural visualization techniques with massively       
+parallel computational methods and an innovative set of pattern recognition,    
+stereo correspondence and depth mapping algorithms.  Our goal is to             
+integrate structural information from numerous images into a single,            
+high-accuracy three-dimensional reconstruction of the synaptic cytoskeleton.    
+The immediate result of this collaboration will be an improved understanding    
+of the spatial relationships between synaptic macromolecules.  More             
+importantly, the project will produce a set of computational tools that can     
+be applied to stereo image data sets of various areas of the nervous system,    
+from the macroscopic to the molecular level.  Finally, our studies will         
+advance the state-of-the-art of parallel computation and interactive            
+reconstruction methods that can provide novel solutions to difficult            
+problems of neuroscience visualization.                                         
+",2897389,R01LM006326,['R01LM006326'],LM,https://reporter.nih.gov/project-details/2897389,R01,1999,130250,1.0

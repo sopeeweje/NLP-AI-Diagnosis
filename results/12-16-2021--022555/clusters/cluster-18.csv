@@ -1,0 +1,158 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+ DVD /CD ROM; artificial intelligence; automated medical record system; cancer information system; computer human interaction; computer system design /evaluation; information retrieval; speech viewer; vocabulary development for information system VOICE RECOGNITION INTERFACE AND KNOWLEDGE SERVER,,2303860,44CO033071,['N44CO033071'],CO,https://reporter.nih.gov/project-details/2303860,N44,1993,77318,1.0
+"A significant fraction of all courses of external-beam radiotherapy have        
+unplanned interruptions, i.e. scheduled treatments are missed. Because of       
+the kinetics of cellular damage repair and tumor repopulation, designing        
+extra or augmented treatments to compensate for the missed fractions is         
+non-trivial. Since some individualized compensation regimen must be             
+chosen, it should be rationalized using state-of-the-art radiobiology.  In      
+Phase I we wrote prototype software (RIC, the Radiotherapy Interruption         
+Compensator) which produces a range of practical options for the                
+radiotherapist to compensate for unplanned interruptions during an              
+extended radiotherapy regimen. It calculates what doses are needed to           
+produce equal tumor control (or, alternately, equal late normal-tissue          
+complications) when a proposed interruption-compensated regimen is              
+substituted for the originally planned protocol. The program is designed        
+as an ""expert system"", making available to any practicing radiotherapist        
+the expertise of leading practitioners, in a personal-computer based,           
+user-friendly package.                                                          
+                                                                                
+Having demonstrated feasibility, we propose, in this Phase II application,      
+to continue the research effort initiated in Phase I. The goal is to            
+produce, at the end of the Phase II period, a marketable product which is       
+a) scientifically state-of-the-art, b) designed and written with                
+appropriate quality control, c) robust to use, d) credible to practicing        
+clinicians.                                                                     
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: Potential market consists of more than         
+2,500 Radiation Oncology facilities worldwide.  Potentially about 1-4           
+copies of the software purchased by each facility, at about $900 per copy.      
+ artificial intelligence; computer assisted patient care; computer human interaction; computer system design /evaluation; mathematical model; neoplasm /cancer radiation therapy; personal computers; radiation therapy dosage; radiobiology SOFTWARE TO COMPENSATE FOR INTERRUPTIONS IN RADIOTHERAPY","A significant fraction of all courses of external-beam radiotherapy have        
+unplanned interruptions, i.e. scheduled treatments are missed. Because of       
+the kinetics of cellular damage repair and tumor repopulation, designing        
+extra or augmented treatments to compensate for the missed fractions is         
+non-trivial. Since some individualized compensation regimen must be             
+chosen, it should be rationalized using state-of-the-art radiobiology.  In      
+Phase I we wrote prototype software (RIC, the Radiotherapy Interruption         
+Compensator) which produces a range of practical options for the                
+radiotherapist to compensate for unplanned interruptions during an              
+extended radiotherapy regimen. It calculates what doses are needed to           
+produce equal tumor control (or, alternately, equal late normal-tissue          
+complications) when a proposed interruption-compensated regimen is              
+substituted for the originally planned protocol. The program is designed        
+as an ""expert system"", making available to any practicing radiotherapist        
+the expertise of leading practitioners, in a personal-computer based,           
+user-friendly package.                                                          
+                                                                                
+Having demonstrated feasibility, we propose, in this Phase II application,      
+to continue the research effort initiated in Phase I. The goal is to            
+produce, at the end of the Phase II period, a marketable product which is       
+a) scientifically state-of-the-art, b) designed and written with                
+appropriate quality control, c) robust to use, d) credible to practicing        
+clinicians.                                                                     
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: Potential market consists of more than         
+2,500 Radiation Oncology facilities worldwide.  Potentially about 1-4           
+copies of the software purchased by each facility, at about $900 per copy.      
+",2106040,R44CA063897,['R44CA063897'],CA,https://reporter.nih.gov/project-details/2106040,R44,1996,353754,1.0
+"This acquisition will provide technical assistance to continue the              
+development and enhancement of GRATEFUL MED as well as provide technical        
+software development support for the analysis, design, implementation,          
+integration, documentation, and maintenance of related system components.       
+These include: computer aided learning, intermachine implementation,            
+artificial intelligence, new telecommunication interfaces, e.g., FTS            
+2000, Graphical User Interfaces, network integration and                        
+interoperability, and document delivery systems.                                
+  GRATEFUL MED@ SOFTWARE DEVELOPMENT & MAINTENANCE SUPPORT","This acquisition will provide technical assistance to continue the              
+development and enhancement of GRATEFUL MED as well as provide technical        
+software development support for the analysis, design, implementation,          
+integration, documentation, and maintenance of related system components.       
+These include: computer aided learning, intermachine implementation,            
+artificial intelligence, new telecommunication interfaces, e.g., FTS            
+2000, Graphical User Interfaces, network integration and                        
+interoperability, and document delivery systems.                                
+",2394866,01LM063510,['N01LM063510'],LM,https://reporter.nih.gov/project-details/2394866,N01,1997,48659,1.0
+"We propose to extend the successful work we have achieved with                  
+statistically based indexing and retrieval systems, by incorporating            
+semantic structures which accommodate the modifying attributes of clinical      
+conCepts. Patient data is rarely limited to a single axis of meaning or         
+detail, and retrieval for application in quality improvement, decision          
+support, or epidemiologic research, demands Consistent information              
+struCture. This proposal will invoke the knowledge and tool suites of the       
+UMLS Specialist Lexicon, the SGML markup and recognition capabilities of        
+the TextMachine application, extensions to our locally developed CliniCal       
+Query Language, and layer these enhancements upon our core techniques for       
+statistically based indexing and retrieval of patient data. We commit           
+these activities to remain compliant with emerging standards for medical        
+concept representation arising from the Canon efforts and the                   
+standardization processes at ANSI-HISPP, CEN TC251 and the CPRI                 
+initiatives.                                                                    
+ artificial intelligence; automated medical record system; behavioral /social science research tag; computer assisted medical decision making; human data; indexing; information retrieval; semantics; statistics /biometry; vocabulary development for information system LATENT SEMANTIC INDEXING IN SUPPORT OF DATA RETRIEVAL","We propose to extend the successful work we have achieved with                  
+statistically based indexing and retrieval systems, by incorporating            
+semantic structures which accommodate the modifying attributes of clinical      
+conCepts. Patient data is rarely limited to a single axis of meaning or         
+detail, and retrieval for application in quality improvement, decision          
+support, or epidemiologic research, demands Consistent information              
+struCture. This proposal will invoke the knowledge and tool suites of the       
+UMLS Specialist Lexicon, the SGML markup and recognition capabilities of        
+the TextMachine application, extensions to our locally developed CliniCal       
+Query Language, and layer these enhancements upon our core techniques for       
+statistically based indexing and retrieval of patient data. We commit           
+these activities to remain compliant with emerging standards for medical        
+concept representation arising from the Canon efforts and the                   
+standardization processes at ANSI-HISPP, CEN TC251 and the CPRI                 
+initiatives.                                                                    
+",2635406,R01LM005416,['R01LM005416'],LM,https://reporter.nih.gov/project-details/2635406,R01,1998,177214,1.0
+"The transport system of the corneal endothelium maintains the cornea at         
+the low level of hydration required for transparency and good vision. If        
+this transport system does not function properly then permanent corneal         
+edema, loss of transparency, and eventual blindness may occur.                  
+                                                                                
+Our long term objective is to understand how this transport system              
+functions under normal conditions and how it changes in aged, injured, and      
+diseased corneas.                                                               
+                                                                                
+Ion channel proteins in the cell membrane are an essential component of         
+this transport system. We will study the dynamics of how these proteins         
+function as ""molecular machines"".                                               
+                                                                                
+The specific aims for this project period are:                                  
+                                                                                
+1) to perform patch clamp experiments to measure and compare the                
+properties of ion channels from freshly excised and cultured corneal            
+endothelial cells,                                                              
+                                                                                
+2) to develop and apply new mathematical methods, including powerful new        
+methods of fractals and nonlinear dynamics (chaos) to analyze this data,        
+and                                                                             
+                                                                                
+3) to determine the properties of different types of dynamical models to        
+understand the molecular mechanisms responsible for the channel                 
+properties.                                                                     
+ aging; artificial intelligence; computer data analysis; computer program /software; cornea disorder; corneal endothelium; electrophysiology; eye injury; ion transport; laboratory rabbit; mathematical model; membrane channels; membrane transport proteins; model design /development; molecular biology; molecular dynamics; tissue /cell culture; voltage /patch clamp ION CURRENT ANALYSIS IN THE CORNEA","The transport system of the corneal endothelium maintains the cornea at         
+the low level of hydration required for transparency and good vision. If        
+this transport system does not function properly then permanent corneal         
+edema, loss of transparency, and eventual blindness may occur.                  
+                                                                                
+Our long term objective is to understand how this transport system              
+functions under normal conditions and how it changes in aged, injured, and      
+diseased corneas.                                                               
+                                                                                
+Ion channel proteins in the cell membrane are an essential component of         
+this transport system. We will study the dynamics of how these proteins         
+function as ""molecular machines"".                                               
+                                                                                
+The specific aims for this project period are:                                  
+                                                                                
+1) to perform patch clamp experiments to measure and compare the                
+properties of ion channels from freshly excised and cultured corneal            
+endothelial cells,                                                              
+                                                                                
+2) to develop and apply new mathematical methods, including powerful new        
+methods of fractals and nonlinear dynamics (chaos) to analyze this data,        
+and                                                                             
+                                                                                
+3) to determine the properties of different types of dynamical models to        
+understand the molecular mechanisms responsible for the channel                 
+properties.                                                                     
+",2833074,R01EY006234,['R01EY006234'],EY,https://reporter.nih.gov/project-details/2833074,R01,1998,106670,1.0

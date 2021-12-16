@@ -1,0 +1,432 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"Visual mental imagery helps people to perform a host of tasks, including
+ remembering events, spatial reasoning, and language comprehension. The
+ images produced in the service of these activities are the result of a
+ complex information processing system. This system can be conceptualized
+ as being composed of a set of distinct ""processing subsystems,"" each of
+ which performs a specific cognitive operation (e.g., shifting the
+ orientation of an imaged object, activating stored visual memories to
+ create an image, encoding the relative location of part of the imaged
+ object). The research described here makes use of a theory of these
+ processing subsystems that draws on concepts from artificial intelligence
+ and facts about the neurological substrate of high.level vision. The
+ research will characterize the relative efficacy of eleven of these
+ subsystems in the elderly, compared to younger adults. The primary aim
+ of the research is to discover whether certain subsystems are, relative
+ to other subsystems, selectively more effective in senescence. The
+ research aims to disprove the idea that cognitive aging can be understood
+ solely in terms of ""generalized slowing,"" showing that slowing with age
+ differs for different subsystems. If so, then strategies that make use
+ of relatively effective subsystems should be more useful for elderly
+ people than strategies that rely on ineffective subsystems. The
+ experiments designed here are a step toward using contemporary theory
+ from cognitive neuroscience and techniques of task analysis from
+ cognitive science to design new tests for cognitive efficiency in the
+ senescence.
+ adolescence (12-20); age difference; attention; cognition; human old age (65+); human subject; image processing; memory; neural information processing; neurosciences; occipital lobe /cortex; performance; questionnaires; retina; space perception; vision; visual perception; visual stimulus IMAGERY PROCESSING IN OLD AGE","Visual mental imagery helps people to perform a host of tasks, including
+ remembering events, spatial reasoning, and language comprehension. The
+ images produced in the service of these activities are the result of a
+ complex information processing system. This system can be conceptualized
+ as being composed of a set of distinct ""processing subsystems,"" each of
+ which performs a specific cognitive operation (e.g., shifting the
+ orientation of an imaged object, activating stored visual memories to
+ create an image, encoding the relative location of part of the imaged
+ object). The research described here makes use of a theory of these
+ processing subsystems that draws on concepts from artificial intelligence
+ and facts about the neurological substrate of high.level vision. The
+ research will characterize the relative efficacy of eleven of these
+ subsystems in the elderly, compared to younger adults. The primary aim
+ of the research is to discover whether certain subsystems are, relative
+ to other subsystems, selectively more effective in senescence. The
+ research aims to disprove the idea that cognitive aging can be understood
+ solely in terms of ""generalized slowing,"" showing that slowing with age
+ differs for different subsystems. If so, then strategies that make use
+ of relatively effective subsystems should be more useful for elderly
+ people than strategies that rely on ineffective subsystems. The
+ experiments designed here are a step toward using contemporary theory
+ from cognitive neuroscience and techniques of task analysis from
+ cognitive science to design new tests for cognitive efficiency in the
+ senescence.
+",2054397,R01AG012675,['R01AG012675'],AG,https://reporter.nih.gov/project-details/2054397,R01,1995,155931,0.7544838423652763
+"The prediction of the three dimensional structure of a globular protein         
+from its amino acid sequence along with the mechanism by which protein          
+folding occurs are among the most important unsolved problems of                
+contemporary molecular biology.  The overall objectives of this proposal        
+are the continued development and refinement of algorithms which not only       
+can predict protein tertiary structure using only sequence information as       
+input but also may provide insights into the folding pathway.  To achieve       
+these goals, this proposal focuses on the lattice based aspects of a            
+hierarchical approach to protein folding.  High resolution lattice models       
+of proteins, comprised of an alpha-carbon plus reduced off lattice, side        
+chain description, will provide the overall folding pathways and folded         
+conformations.  The resulting folded lattice structures are estimated for       
+the alpha-carbons to have a 2-4 angstroms rms deviation from the native         
+state.  Turning to the folding pathways, the predicted molten globule           
+states and their free energy landscape will be characterized in detail.         
+The factors responsible for side chain fixation on passage from the molten      
+globule to the native state will be explored, with particular attention         
+focused on the interplay of protein sequence and side chain packing.            
+Specifically this proposal will address the following.  (1).  A new high        
+coordination lattice model of proteins will be refined, different side          
+chain realizations will be examined and the dynamic Monte Carlo algorithms      
+parallelized.  (2).  Better empirical free energy functions will be             
+developed.  These include better methods for predicting the propensities        
+for secondary structure and generalization of the hydrogen bond scheme to       
+include backbone-side chain hydrogen bonds.  To help eliminate misfolded        
+structures, additional very robust knowledge based rules, such as the           
+connections in supersecondary structural elements do not cross, will be         
+included in the interaction scheme.  Sequence specific tertiary                 
+interactions including a local burial turn, pair interactions and               
+generalized cooperative multibody side chain contact templates will be          
+self consistently derived in the presence of predicted secondary structure      
+propensities.  Then, a recently developed neural network which can              
+recognize whether 7 by 7 subfragments of sidechain contact maps are             
+protein like or not will be extended to include sequence specific               
+preferences for subsequences to adopt specific patterns.  This information      
+will be obtained from a neural network trained on both homologous and non       
+homologous subsequences that adopt these patterns.  Thus, it should be          
+general and not simply applicable to homologous sequence fragments.  (3).       
+The folding of representative motifs of globular proteins will be               
+undertaken.  Included are the helical proteins such as cytochrome c, whose      
+predicted folding pathway will be compared to experiment, myohemerythrin,       
+myoglobin and complement factor, 1c5a.  The mixed motif proteins include        
+ubiquitin, flavodoxin and PRA isomerase, and the beta-proteins include the      
+16th complement control protein of factor H, 1hcc, alpha-amylase,               
+plastocyanin and retinol binding protein.  (4).  To validate the                
+methodology, additional blind predictions of proteins whose structures are      
+unknown will be undertaken.  Likely candidates include rusticyanin and          
+erythropoietin.                                                                 
+ amylases; artificial intelligence; chemical models; computer simulation; cytochrome c; globular protein; hemerythrin; hydrogen bond; mathematics; model design /development; molecular dynamics; molecular energy level; myoglobin; plastocyanin; protein folding; retinoid binding proteins COMPUTER SIMULATION THEORY OF GLOBULAR PROTEIN DYNA","The prediction of the three dimensional structure of a globular protein         
+from its amino acid sequence along with the mechanism by which protein          
+folding occurs are among the most important unsolved problems of                
+contemporary molecular biology.  The overall objectives of this proposal        
+are the continued development and refinement of algorithms which not only       
+can predict protein tertiary structure using only sequence information as       
+input but also may provide insights into the folding pathway.  To achieve       
+these goals, this proposal focuses on the lattice based aspects of a            
+hierarchical approach to protein folding.  High resolution lattice models       
+of proteins, comprised of an alpha-carbon plus reduced off lattice, side        
+chain description, will provide the overall folding pathways and folded         
+conformations.  The resulting folded lattice structures are estimated for       
+the alpha-carbons to have a 2-4 angstroms rms deviation from the native         
+state.  Turning to the folding pathways, the predicted molten globule           
+states and their free energy landscape will be characterized in detail.         
+The factors responsible for side chain fixation on passage from the molten      
+globule to the native state will be explored, with particular attention         
+focused on the interplay of protein sequence and side chain packing.            
+Specifically this proposal will address the following.  (1).  A new high        
+coordination lattice model of proteins will be refined, different side          
+chain realizations will be examined and the dynamic Monte Carlo algorithms      
+parallelized.  (2).  Better empirical free energy functions will be             
+developed.  These include better methods for predicting the propensities        
+for secondary structure and generalization of the hydrogen bond scheme to       
+include backbone-side chain hydrogen bonds.  To help eliminate misfolded        
+structures, additional very robust knowledge based rules, such as the           
+connections in supersecondary structural elements do not cross, will be         
+included in the interaction scheme.  Sequence specific tertiary                 
+interactions including a local burial turn, pair interactions and               
+generalized cooperative multibody side chain contact templates will be          
+self consistently derived in the presence of predicted secondary structure      
+propensities.  Then, a recently developed neural network which can              
+recognize whether 7 by 7 subfragments of sidechain contact maps are             
+protein like or not will be extended to include sequence specific               
+preferences for subsequences to adopt specific patterns.  This information      
+will be obtained from a neural network trained on both homologous and non       
+homologous subsequences that adopt these patterns.  Thus, it should be          
+general and not simply applicable to homologous sequence fragments.  (3).       
+The folding of representative motifs of globular proteins will be               
+undertaken.  Included are the helical proteins such as cytochrome c, whose      
+predicted folding pathway will be compared to experiment, myohemerythrin,       
+myoglobin and complement factor, 1c5a.  The mixed motif proteins include        
+ubiquitin, flavodoxin and PRA isomerase, and the beta-proteins include the      
+16th complement control protein of factor H, 1hcc, alpha-amylase,               
+plastocyanin and retinol binding protein.  (4).  To validate the                
+methodology, additional blind predictions of proteins whose structures are      
+unknown will be undertaken.  Likely candidates include rusticyanin and          
+erythropoietin.                                                                 
+",2022122,R01GM037408,['R01GM037408'],GM,https://reporter.nih.gov/project-details/2022122,R01,1996,182701,0.7544838423652763
+"A prototype robotic instrument, ""Stericulture,"" has been developed to feed      
+and harvest cell cultures in an aseptic environment.  The instrument is         
+microprocessor controlled.  It was designed to protect the cultures from        
+contamination and the technologist from hazardous exposure, by                  
+dramatically reducing the handling of the petri dishes.  During operation       
+the repetitive exacting tasks of media dispensing and removal, and petri        
+dish manipulation are mechanically accomplished within a hood or P3             
+containment facility.  Culture dish lids are removed and replaced, media        
+is added and removed in timed sequences.  The concept can be expanded to        
+virtually any cell culture lab.  The specific aims of this application are      
+(1) Test the mechanical reliability, accuracy and durability of                 
+Stericulture and its peripheral pumping systems.  (2) Conduct beta site         
+tests at two cytogenetic laboratories and one molecular biology cell            
+culture laboratory to:  a) Evaluate existing computer programming and           
+written documentation.  b) Test the device for reliability in the feeding       
+and harvesting of cell cultures from amniocytes and biopsies                    
+(fibroblasts).  The long-term objective (Phase II) is to develop an             
+integrated liquid handling system (LHS) with Stericulture as its core.          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  Development of robotic instrument that        
+functions in an aseptic environment in a cell culture lab.                      
+ antiseptic sterilization; artificial intelligence; bioengineering /biomedical engineering; biomedical automation; biomedical equipment development; imaging /visualization /scanning; karyotype; laboratory accident /infection; robotics; tissue /cell culture ROBOTIC DEVICE FOR ASEPTIC PROCESSING OF CELL CULTURES","A prototype robotic instrument, ""Stericulture,"" has been developed to feed      
+and harvest cell cultures in an aseptic environment.  The instrument is         
+microprocessor controlled.  It was designed to protect the cultures from        
+contamination and the technologist from hazardous exposure, by                  
+dramatically reducing the handling of the petri dishes.  During operation       
+the repetitive exacting tasks of media dispensing and removal, and petri        
+dish manipulation are mechanically accomplished within a hood or P3             
+containment facility.  Culture dish lids are removed and replaced, media        
+is added and removed in timed sequences.  The concept can be expanded to        
+virtually any cell culture lab.  The specific aims of this application are      
+(1) Test the mechanical reliability, accuracy and durability of                 
+Stericulture and its peripheral pumping systems.  (2) Conduct beta site         
+tests at two cytogenetic laboratories and one molecular biology cell            
+culture laboratory to:  a) Evaluate existing computer programming and           
+written documentation.  b) Test the device for reliability in the feeding       
+and harvesting of cell cultures from amniocytes and biopsies                    
+(fibroblasts).  The long-term objective (Phase II) is to develop an             
+integrated liquid handling system (LHS) with Stericulture as its core.          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  Development of robotic instrument that        
+functions in an aseptic environment in a cell culture lab.                      
+",2004775,R44AI039895,['R44AI039895'],AI,https://reporter.nih.gov/project-details/2004775,R44,1997,203077,0.7760141667325957
+"DESCRIPTION (adapted from the Abstract):  In this research project the          
+Principal Investigator proposes to employ an alternative strategy to early      
+detection of HIV seropositivity based on the hypothesis that the sexual         
+networks of gonorrhea and HIV are similar in the United States and India.       
+If this hypothesis is true, then the yield of HIV seropositivity by ELISA       
+can be improved by approaching the HIV seropositives through patients           
+attending sexually transmitted disease (STD) clinics in India.  The overall     
+goal of the proposed work is to improve detection of HIV seropositivity and     
+to suggest locally relevant prevention strategies against AIDS.  To test the    
+hypothesis, the Investigator proposes work designed as a cross-sectional        
+study with the following specific aims:                                         
+                                                                                
+To map sexual networks of gonorrhea patients by contact tracing, Opa-typing     
+and geocoding;                                                                  
+                                                                                
+To map sexual networks of HIV-positive patients by qualitative and              
+quantitative techniques;                                                        
+                                                                                
+To study network characteristics (balance, clusterability, centrality, core     
+groups, sociograms and network overlaps) of gonorrhea and HIV networks.         
+                                                                                
+The Investigator proposes also to characterize HIV networks qualitatively       
+(using text searches, narrative method and semantic network techniques)         
+better to understand perceptions of AIDS and HIV.                               
+                                                                                
+The proposed work will be conducted in the STD clinic, Government Medical       
+College, Nagpur, India with collaboration from the Department of Infectious     
+Diseases, University of North Carolina, Chapel Hill.                            
+                                                                                
+The knowledge from this study will be used to suggest locally-relevant          
+prevention strategies against AIDS.                                             
+ Asians; HIV infections; India; clinical research; epidemiology; gonorrhea; human subject; sex partner; social support network REACHING HIV THROUGH GONORRHEA--NETWORK APPROACH","DESCRIPTION (adapted from the Abstract):  In this research project the          
+Principal Investigator proposes to employ an alternative strategy to early      
+detection of HIV seropositivity based on the hypothesis that the sexual         
+networks of gonorrhea and HIV are similar in the United States and India.       
+If this hypothesis is true, then the yield of HIV seropositivity by ELISA       
+can be improved by approaching the HIV seropositives through patients           
+attending sexually transmitted disease (STD) clinics in India.  The overall     
+goal of the proposed work is to improve detection of HIV seropositivity and     
+to suggest locally relevant prevention strategies against AIDS.  To test the    
+hypothesis, the Investigator proposes work designed as a cross-sectional        
+study with the following specific aims:                                         
+                                                                                
+To map sexual networks of gonorrhea patients by contact tracing, Opa-typing     
+and geocoding;                                                                  
+                                                                                
+To map sexual networks of HIV-positive patients by qualitative and              
+quantitative techniques;                                                        
+                                                                                
+To study network characteristics (balance, clusterability, centrality, core     
+groups, sociograms and network overlaps) of gonorrhea and HIV networks.         
+                                                                                
+The Investigator proposes also to characterize HIV networks qualitatively       
+(using text searches, narrative method and semantic network techniques)         
+better to understand perceptions of AIDS and HIV.                               
+                                                                                
+The proposed work will be conducted in the STD clinic, Government Medical       
+College, Nagpur, India with collaboration from the Department of Infectious     
+Diseases, University of North Carolina, Chapel Hill.                            
+                                                                                
+The knowledge from this study will be used to suggest locally-relevant          
+prevention strategies against AIDS.                                             
+",2647513,R03TW000969,['R03TW000969'],TW,https://reporter.nih.gov/project-details/2647513,R03,1998,25200,0.7760141667325957
+"The overall goal of this research program is to investigate the role of         
+parent behavior on the development of repetitive arm, hand, and finger          
+movements in young infants-gestures that have recently been studied as          
+an analog to infant vocal babble. Specifically, this project will               
+investigate the responsiveness of parents to these repetitive infant            
+gestures and will experimentally test the role of parental reinforcement        
+on their production over time. Taking a Dynamic Systems approach, the           
+overall hypothesis is that children are born with innate predispositions        
+to produce behaviors that appear to adults as very speech- or sign-like-        
+repetitive vocalizations and gestures, respectively. As children mature,        
+they have an expanding ""pool' of motor behaviors that may be used in            
+various contexts. In contexts where these behaviors are functional (e.g.        
+parents respond to and reinforce them), they are maintained and continue        
+to pull from the available pool. In contexts where they are not                 
+functional, they do not change and eventually drop out. The present             
+project will consist of two longitudinal small-sample studies and one           
+large-sample study of adult responsiveness to repetitive infant gestures.       
+In Study 1 of the present project, the responses of hearing parents to          
+repetitive gestures produced by their hearing infants from 6 to 12 months       
+of age will be studied and compared to those of deaf, American Sign             
+Language (ASL)-signing parents of deaf infants. These data will provide         
+information about the natural responses of parents, both hearing and            
+deaf, to repetitive babble-like gestures produced by young infants. In          
+Study 2, the ability of hearing, nonsigning adults to identify repetitive       
+infant gestures from a ""background' of ongoing infant motor activity will       
+be assessed. These data will provide new information about the potential        
+of hearing adults to recognize babble-like gestures in young infants. In        
+Study 3, the effect of parent reinforcement on repetitive infant gestures       
+will be experimentally tested by training hearing parents to provide            
+social reinforcement for nonreferential repetitive gestures produced by         
+their hearing infants between 6 and 16 months of age. These data will           
+inform our models of language learning by examining the role of parent          
+responsitivity in the development of a manual form of prelinguistic             
+babble and provide clinically relevant information about gestural parent-       
+child interaction-important to programs encouraging gestural                    
+communication between hearing parents and deaf children.                        
+ attention; behavioral /social science research tag; child (0-11); child behavior; clinical research; deafness; human subject; infant human (0-1 year); learning; paralinguistic behavior; parent offspring interaction; psychological models; psychological reinforcement; videotape /videodisc EFFECTS OF PARENT RESPONSE ON INFANT GESTURAL BABBLE","The overall goal of this research program is to investigate the role of         
+parent behavior on the development of repetitive arm, hand, and finger          
+movements in young infants-gestures that have recently been studied as          
+an analog to infant vocal babble. Specifically, this project will               
+investigate the responsiveness of parents to these repetitive infant            
+gestures and will experimentally test the role of parental reinforcement        
+on their production over time. Taking a Dynamic Systems approach, the           
+overall hypothesis is that children are born with innate predispositions        
+to produce behaviors that appear to adults as very speech- or sign-like-        
+repetitive vocalizations and gestures, respectively. As children mature,        
+they have an expanding ""pool' of motor behaviors that may be used in            
+various contexts. In contexts where these behaviors are functional (e.g.        
+parents respond to and reinforce them), they are maintained and continue        
+to pull from the available pool. In contexts where they are not                 
+functional, they do not change and eventually drop out. The present             
+project will consist of two longitudinal small-sample studies and one           
+large-sample study of adult responsiveness to repetitive infant gestures.       
+In Study 1 of the present project, the responses of hearing parents to          
+repetitive gestures produced by their hearing infants from 6 to 12 months       
+of age will be studied and compared to those of deaf, American Sign             
+Language (ASL)-signing parents of deaf infants. These data will provide         
+information about the natural responses of parents, both hearing and            
+deaf, to repetitive babble-like gestures produced by young infants. In          
+Study 2, the ability of hearing, nonsigning adults to identify repetitive       
+infant gestures from a ""background' of ongoing infant motor activity will       
+be assessed. These data will provide new information about the potential        
+of hearing adults to recognize babble-like gestures in young infants. In        
+Study 3, the effect of parent reinforcement on repetitive infant gestures       
+will be experimentally tested by training hearing parents to provide            
+social reinforcement for nonreferential repetitive gestures produced by         
+their hearing infants between 6 and 16 months of age. These data will           
+inform our models of language learning by examining the role of parent          
+responsitivity in the development of a manual form of prelinguistic             
+babble and provide clinically relevant information about gestural parent-       
+child interaction-important to programs encouraging gestural                    
+communication between hearing parents and deaf children.                        
+",2634111,R03DC003247,['R03DC003247'],DC,https://reporter.nih.gov/project-details/2634111,R03,1998,48600,0.5998405973355188
+"DESCRIPTION:  (Applicant's Abstract)                                            
+                                                                                
+The broad objective of this proposal is to establish a quantitative             
+algorithmic link between cellular and molecular events involved in reward       
+processing and the behaviors that these events influence.  In particular, we    
+will focus on the nature and use of information that midbrain dopamine          
+systems construct and distribute to neural structures throughout the brain.     
+The activity of dopamine neurons of the ventral segmental area and              
+substantia nigra has long been identified with the processing of rewarding      
+stimuli.  These neurons send axons to brain structures involved in              
+motivation and goal directed behavior.  These same dopamine systems are         
+targets for disruption by disease and by drugs of abuse like heroine and        
+cocaine.  In alert primates, experiments show that the outputs of these         
+neurons encode errors between the predictions of future rewards and actual      
+times and magnitudes of future rewards.  The prediction errors are              
+apparently encoded as changes in the instantaneous spiking rates:  values       
+above baseline mean that the current state is 'better than predicted',          
+values below mean that the current state is 'worse than predicted', and no      
+difference means that 'things are as predicted'.  We have developed a           
+computational model of the behavior of midbrain dopamine neurons using a        
+method of adaptive optimizing control called the method of temporal             
+differences.  The model is consistent with electrophysiological and             
+behavioral data in monkeys, and also provably executes the appropriate          
+computational function of determining which actions maximize long-term          
+rewards.  The long term goal of this project is to provide a computational      
+connection between the action of dopaminergic mechanisms at the molecular       
+and cellular level and the consequences of these mechanisms on behaviors        
+observed in drug addiction.  Three approaches will be used to accomplish        
+this long term goal:  (1) human behavioral experiments, (2) mathematical        
+analysis, and (3) computer simulations of virtual creatures in complex          
+environments.  These three methods will focus on the function of                
+dopaminergic systems in the primate and will be used to probe how normal        
+mechanisms for making decisions in the face of rewards can be disrupted in      
+addiction.                                                                      
+ artificial intelligence; clinical research; computer simulation; computer system design /evaluation; decision making; dopamine; drug addiction; electrophysiology; human subject; mathematical model; model design /development; neural information processing; reinforcer COMPUTATIONAL SUBSTRATES OF ADDICTION AND REWARD","DESCRIPTION:  (Applicant's Abstract)                                            
+                                                                                
+The broad objective of this proposal is to establish a quantitative             
+algorithmic link between cellular and molecular events involved in reward       
+processing and the behaviors that these events influence.  In particular, we    
+will focus on the nature and use of information that midbrain dopamine          
+systems construct and distribute to neural structures throughout the brain.     
+The activity of dopamine neurons of the ventral segmental area and              
+substantia nigra has long been identified with the processing of rewarding      
+stimuli.  These neurons send axons to brain structures involved in              
+motivation and goal directed behavior.  These same dopamine systems are         
+targets for disruption by disease and by drugs of abuse like heroine and        
+cocaine.  In alert primates, experiments show that the outputs of these         
+neurons encode errors between the predictions of future rewards and actual      
+times and magnitudes of future rewards.  The prediction errors are              
+apparently encoded as changes in the instantaneous spiking rates:  values       
+above baseline mean that the current state is 'better than predicted',          
+values below mean that the current state is 'worse than predicted', and no      
+difference means that 'things are as predicted'.  We have developed a           
+computational model of the behavior of midbrain dopamine neurons using a        
+method of adaptive optimizing control called the method of temporal             
+differences.  The model is consistent with electrophysiological and             
+behavioral data in monkeys, and also provably executes the appropriate          
+computational function of determining which actions maximize long-term          
+rewards.  The long term goal of this project is to provide a computational      
+connection between the action of dopaminergic mechanisms at the molecular       
+and cellular level and the consequences of these mechanisms on behaviors        
+observed in drug addiction.  Three approaches will be used to accomplish        
+this long term goal:  (1) human behavioral experiments, (2) mathematical        
+analysis, and (3) computer simulations of virtual creatures in complex          
+environments.  These three methods will focus on the function of                
+dopaminergic systems in the primate and will be used to probe how normal        
+mechanisms for making decisions in the face of rewards can be disrupted in      
+addiction.                                                                      
+",2898237,R01DA011723,['R01DA011723'],DA,https://reporter.nih.gov/project-details/2898237,R01,1999,154831,0.5998405973355188
+"The diagnosis of hematologic malignancies requires many qualitative             
+ancillary tests to substantiate the impressions made from hematoxylin and       
+eosin stained slides.  We propose to use artificial intelligence                
+techniques to expedite and integrate evaluation of information received         
+form histologic morphology, special chemical and enzymatic stains,              
+immunoperoxidase stains, flow cytometry, and molecular diagnostic studies.      
+The goals for this fellowship include:  1)  design and implement a              
+database of the important clinical laboratory variables relevant to the         
+diagnosis of hematologic malignancies, 2) develop an expert system based        
+on knowledge-based rules derived from the medical literature and from           
+internal clinical material, and 3) validate the system with retrospective       
+and prospective clinical data.  To accomplish these goals and to build          
+this expert system, techniques from two major disciplines in computer           
+science will be applied.  First, the relational model of database               
+management will be used to store and retrieve clinical data.  Second,           
+artificial intelligence techniques such as predicate calculus, case-based       
+reasoning, neural networks, and fuzzy logic will be used to develop this        
+expert system.                                                                  
+ artificial intelligence; blood disorder diagnosis; computer assisted diagnosis; computer assisted medical decision making; computer data analysis; data management; diagnosis design /evaluation; human data; information systems; leukemia; lymphoma; mathematical model; neoplasm /cancer diagnosis EXPERT SYSTEM IN THE DIAGNOSIS OF LYMPHOMA AND LEUKEMIA","The diagnosis of hematologic malignancies requires many qualitative             
+ancillary tests to substantiate the impressions made from hematoxylin and       
+eosin stained slides.  We propose to use artificial intelligence                
+techniques to expedite and integrate evaluation of information received         
+form histologic morphology, special chemical and enzymatic stains,              
+immunoperoxidase stains, flow cytometry, and molecular diagnostic studies.      
+The goals for this fellowship include:  1)  design and implement a              
+database of the important clinical laboratory variables relevant to the         
+diagnosis of hematologic malignancies, 2) develop an expert system based        
+on knowledge-based rules derived from the medical literature and from           
+internal clinical material, and 3) validate the system with retrospective       
+and prospective clinical data.  To accomplish these goals and to build          
+this expert system, techniques from two major disciplines in computer           
+science will be applied.  First, the relational model of database               
+management will be used to store and retrieve clinical data.  Second,           
+artificial intelligence techniques such as predicate calculus, case-based       
+reasoning, neural networks, and fuzzy logic will be used to develop this        
+expert system.                                                                  
+",2907150,F38LM000061,['F38LM000061'],LM,https://reporter.nih.gov/project-details/2907150,F38,1999,53694,0.7760141667325957

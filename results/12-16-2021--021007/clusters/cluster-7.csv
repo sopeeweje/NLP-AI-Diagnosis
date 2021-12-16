@@ -1,0 +1,825 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"New prosthetic methods are giving people with motor impairments
+ alternative communication and control channels.  A logical culmination of
+ these developments is a system that allows the brain to bypass completely
+ its normal output pathways.  Recent studies from this laboratory have
+ shown that humans, including those with motor disabilities, can learn to
+ change rapidly and accurately the amplitude of the 8-12 Hz mu rhythm in
+ the electroencephalogram (EEG) recorded over sensorimotor cortex.
+ Furthermore, they can use this control to move a cursor on a computer
+ screen.  Good single-channel control has been obtained, and initial data
+ indicate that multichannel control is also possible.  Thus, the mu
+ rhythm, which recent work shows is detectable in nearly all adults, may
+ support a multichannel brain-to-computer interface, and thereby provide a
+ powerful new communication and control option for severely disabled
+ individuals.
+ 
+ This project's goal is a reliable multichannel brain-computer interface.
+ The proposed approach is based on three well-supported hypotheses: that
+ the scalp-recorded 8-12 Hz mu rhythm comprises a number of relatively
+ independent components, that topographic analysis and frequency analysis
+ techniques can distinguish between these components, and that humans can
+ learn to control specific components and use them to operate a
+ multichannel brain-computer interface.
+ 
+ The first objective is to define by topography and frequency the separate
+ 8-12 Hz components that are present when individuals are using the
+ current interface.  The second objective is to determine which components
+ individuals are best able to control.  The third objective is to
+ incorporate these trainable components into a multichannel brain-computer
+ interface that is rapid and reliable.  These objectives will be achieved
+ by combining online studies in which subjects learn to use the interface
+ while extensive data are stored, and offline data analyses in which
+ methods for improving the interface are defined.
+ 
+ This project should produce an EEG-based brain-computer interface of
+ significant value to individuals with disabilities.  It should also lead
+ to further work exploring the practical capabilities and theoretical
+ implications of this new form of communication.
+ adult human (21+); artificial intelligence; autogenic training; brain electrical activity; brain interhemispheric activity; communication disorders; computational neuroscience; computer human interaction; computer program /software; computer system design /evaluation; disabling disease; electrodes; electroencephalography; human subject; informatics; learning; mind control; motor cortex; parallel processing; psychomotor disorders; scalp; sensorimotor system EEG-BASED BRAIN-COMPUTER INTERFACE","New prosthetic methods are giving people with motor impairments
+ alternative communication and control channels.  A logical culmination of
+ these developments is a system that allows the brain to bypass completely
+ its normal output pathways.  Recent studies from this laboratory have
+ shown that humans, including those with motor disabilities, can learn to
+ change rapidly and accurately the amplitude of the 8-12 Hz mu rhythm in
+ the electroencephalogram (EEG) recorded over sensorimotor cortex.
+ Furthermore, they can use this control to move a cursor on a computer
+ screen.  Good single-channel control has been obtained, and initial data
+ indicate that multichannel control is also possible.  Thus, the mu
+ rhythm, which recent work shows is detectable in nearly all adults, may
+ support a multichannel brain-to-computer interface, and thereby provide a
+ powerful new communication and control option for severely disabled
+ individuals.
+ 
+ This project's goal is a reliable multichannel brain-computer interface.
+ The proposed approach is based on three well-supported hypotheses: that
+ the scalp-recorded 8-12 Hz mu rhythm comprises a number of relatively
+ independent components, that topographic analysis and frequency analysis
+ techniques can distinguish between these components, and that humans can
+ learn to control specific components and use them to operate a
+ multichannel brain-computer interface.
+ 
+ The first objective is to define by topography and frequency the separate
+ 8-12 Hz components that are present when individuals are using the
+ current interface.  The second objective is to determine which components
+ individuals are best able to control.  The third objective is to
+ incorporate these trainable components into a multichannel brain-computer
+ interface that is rapid and reliable.  These objectives will be achieved
+ by combining online studies in which subjects learn to use the interface
+ while extensive data are stored, and offline data analyses in which
+ methods for improving the interface are defined.
+ 
+ This project should produce an EEG-based brain-computer interface of
+ significant value to individuals with disabilities.  It should also lead
+ to further work exploring the practical capabilities and theoretical
+ implications of this new form of communication.
+",2202489,R01HD030146,['R01HD030146'],HD,https://reporter.nih.gov/project-details/2202489,R01,1995,170965,0.3610145664545903
+"The genes of the human leukocyte antigen (HLA) region control a variety
+ Of functions involved in the immune response, and influence
+ susceptibility to over 40 diseases.  Our understanding of the structure
+ and function of the HLA genes, their disease associations, and the
+ evolutionary features of this multigene family has benefitted from recent
+ advances in molecular biology, immunology, disease modelling and
+ population genetics.  Theoretical studies in the development of models to
+ determine the modes of inheritance of the HLA associated diseases have
+ led to a better understanding of the inheritance patterns in insulin
+ dependent diabetes mellitus, rheumatoid arthritis, multiple sclerosis,
+ ankylosing spondylitis, hemochromatosis, celiac disease, and others.  It
+ is now clear that many of the HLA associated diseases involve
+ heterogeneity in their HLA components, as well as non-HLA genetic
+ components.
+ 
+ The specific aims of our research are to study the genetic components in
+ the etiology of the HLA associated diseases, and population genetic
+ features of the HLA system.  A variety of methods to test modes of
+ inheritance of diseases using marker allele information, will be
+ developed.  Methods appropriate for the analysis of marker systems which
+ are not highly polymorphic, to both detect linkage and determine modes of
+ inheritance, will be investigated.  The information content of particular
+ pedigree types for LOD score analysis will be investigated.  Two methods
+ using patterns of linkage disequilibrium will be investigated to
+ determine their usefulness in mapping disease predisposing genes.  A
+ number of large collaborative data sets of HLA associated diseases will
+ be analyzed.  A framework for genetic counselling of HLA associated, and
+ other complex diseases, will be developed.  The results of our studies
+ are generally applicable to the mapping and characterization of complex
+ human genetic traits.
+ European; Hodgkin's disease; MHC class I antigen; MHC class II antigen; T cell receptor; alleles; antiserum; artificial intelligence; biochemical evolution; celiac disease; computer assisted sequence analysis; computer data analysis; disease /disorder proneness /risk; gene frequency; genetic counseling; genetic disorder diagnosis; genetic markers; genetic models; genetic polymorphism; genotype; hereditary hemochromatosis; heterozygote; histocompatibility antigens; histocompatibility gene; homozygote; human genetic material tag; human population genetics; immunogenetics; insulin dependent diabetes mellitus; linkage mapping; mathematical model; molecular genetics; multiple sclerosis; nucleic acid sequence; oligonucleotides; restriction fragment length polymorphism; rheumatoid arthritis; serotyping; statistics /biometry MODELS IN POPULATION GENETICS","The genes of the human leukocyte antigen (HLA) region control a variety
+ Of functions involved in the immune response, and influence
+ susceptibility to over 40 diseases.  Our understanding of the structure
+ and function of the HLA genes, their disease associations, and the
+ evolutionary features of this multigene family has benefitted from recent
+ advances in molecular biology, immunology, disease modelling and
+ population genetics.  Theoretical studies in the development of models to
+ determine the modes of inheritance of the HLA associated diseases have
+ led to a better understanding of the inheritance patterns in insulin
+ dependent diabetes mellitus, rheumatoid arthritis, multiple sclerosis,
+ ankylosing spondylitis, hemochromatosis, celiac disease, and others.  It
+ is now clear that many of the HLA associated diseases involve
+ heterogeneity in their HLA components, as well as non-HLA genetic
+ components.
+ 
+ The specific aims of our research are to study the genetic components in
+ the etiology of the HLA associated diseases, and population genetic
+ features of the HLA system.  A variety of methods to test modes of
+ inheritance of diseases using marker allele information, will be
+ developed.  Methods appropriate for the analysis of marker systems which
+ are not highly polymorphic, to both detect linkage and determine modes of
+ inheritance, will be investigated.  The information content of particular
+ pedigree types for LOD score analysis will be investigated.  Two methods
+ using patterns of linkage disequilibrium will be investigated to
+ determine their usefulness in mapping disease predisposing genes.  A
+ number of large collaborative data sets of HLA associated diseases will
+ be analyzed.  A framework for genetic counselling of HLA associated, and
+ other complex diseases, will be developed.  The results of our studies
+ are generally applicable to the mapping and characterization of complex
+ human genetic traits.
+",2196932,R01HD012731,['R01HD012731'],HD,https://reporter.nih.gov/project-details/2196932,R01,1995,203332,0.2709558332494892
+"The prediction of the three dimensional structure of a globular protein
+ from its amino acid sequence along with the mechanism by which protein
+ folding occurs are among the most important unsolved problems of
+ contemporary molecular biology.  The overall objectives of this proposal
+ are the continued development and refinement of algorithms which not only
+ can predict protein tertiary structure using only sequence information as
+ input but also may provide insights into the folding pathway.  To achieve
+ these goals, this proposal focuses on the lattice based aspects of a
+ hierarchical approach to protein folding.  High resolution lattice models
+ of proteins, comprised of an alpha-carbon plus reduced off lattice, side
+ chain description, will provide the overall folding pathways and folded
+ conformations.  The resulting folded lattice structures are estimated for
+ the alpha-carbons to have a 2-4 angstroms rms deviation from the native
+ state.  Turning to the folding pathways, the predicted molten globule
+ states and their free energy landscape will be characterized in detail.
+ The factors responsible for side chain fixation on passage from the molten
+ globule to the native state will be explored, with particular attention
+ focused on the interplay of protein sequence and side chain packing.
+ Specifically this proposal will address the following.  (1).  A new high
+ coordination lattice model of proteins will be refined, different side
+ chain realizations will be examined and the dynamic Monte Carlo algorithms
+ parallelized.  (2).  Better empirical free energy functions will be
+ developed.  These include better methods for predicting the propensities
+ for secondary structure and generalization of the hydrogen bond scheme to
+ include backbone-side chain hydrogen bonds.  To help eliminate misfolded
+ structures, additional very robust knowledge based rules, such as the
+ connections in supersecondary structural elements do not cross, will be
+ included in the interaction scheme.  Sequence specific tertiary
+ interactions including a local burial turn, pair interactions and
+ generalized cooperative multibody side chain contact templates will be
+ self consistently derived in the presence of predicted secondary structure
+ propensities.  Then, a recently developed neural network which can
+ recognize whether 7 by 7 subfragments of sidechain contact maps are
+ protein like or not will be extended to include sequence specific
+ preferences for subsequences to adopt specific patterns.  This information
+ will be obtained from a neural network trained on both homologous and non
+ homologous subsequences that adopt these patterns.  Thus, it should be
+ general and not simply applicable to homologous sequence fragments.  (3).
+ The folding of representative motifs of globular proteins will be
+ undertaken.  Included are the helical proteins such as cytochrome c, whose
+ predicted folding pathway will be compared to experiment, myohemerythrin,
+ myoglobin and complement factor, 1c5a.  The mixed motif proteins include
+ ubiquitin, flavodoxin and PRA isomerase, and the beta-proteins include the
+ 16th complement control protein of factor H, 1hcc, alpha-amylase,
+ plastocyanin and retinol binding protein.  (4).  To validate the
+ methodology, additional blind predictions of proteins whose structures are
+ unknown will be undertaken.  Likely candidates include rusticyanin and
+ erythropoietin.
+ amylases; artificial intelligence; chemical models; computer simulation; cytochrome c; globular protein; hemerythrin; hydrogen bond; mathematics; model design /development; molecular dynamics; molecular energy level; myoglobin; protein folding; retinoid binding proteins COMPUTER SIMULATION THEORY OF GLOBULAR PROTEIN DYNA","The prediction of the three dimensional structure of a globular protein
+ from its amino acid sequence along with the mechanism by which protein
+ folding occurs are among the most important unsolved problems of
+ contemporary molecular biology.  The overall objectives of this proposal
+ are the continued development and refinement of algorithms which not only
+ can predict protein tertiary structure using only sequence information as
+ input but also may provide insights into the folding pathway.  To achieve
+ these goals, this proposal focuses on the lattice based aspects of a
+ hierarchical approach to protein folding.  High resolution lattice models
+ of proteins, comprised of an alpha-carbon plus reduced off lattice, side
+ chain description, will provide the overall folding pathways and folded
+ conformations.  The resulting folded lattice structures are estimated for
+ the alpha-carbons to have a 2-4 angstroms rms deviation from the native
+ state.  Turning to the folding pathways, the predicted molten globule
+ states and their free energy landscape will be characterized in detail.
+ The factors responsible for side chain fixation on passage from the molten
+ globule to the native state will be explored, with particular attention
+ focused on the interplay of protein sequence and side chain packing.
+ Specifically this proposal will address the following.  (1).  A new high
+ coordination lattice model of proteins will be refined, different side
+ chain realizations will be examined and the dynamic Monte Carlo algorithms
+ parallelized.  (2).  Better empirical free energy functions will be
+ developed.  These include better methods for predicting the propensities
+ for secondary structure and generalization of the hydrogen bond scheme to
+ include backbone-side chain hydrogen bonds.  To help eliminate misfolded
+ structures, additional very robust knowledge based rules, such as the
+ connections in supersecondary structural elements do not cross, will be
+ included in the interaction scheme.  Sequence specific tertiary
+ interactions including a local burial turn, pair interactions and
+ generalized cooperative multibody side chain contact templates will be
+ self consistently derived in the presence of predicted secondary structure
+ propensities.  Then, a recently developed neural network which can
+ recognize whether 7 by 7 subfragments of sidechain contact maps are
+ protein like or not will be extended to include sequence specific
+ preferences for subsequences to adopt specific patterns.  This information
+ will be obtained from a neural network trained on both homologous and non
+ homologous subsequences that adopt these patterns.  Thus, it should be
+ general and not simply applicable to homologous sequence fragments.  (3).
+ The folding of representative motifs of globular proteins will be
+ undertaken.  Included are the helical proteins such as cytochrome c, whose
+ predicted folding pathway will be compared to experiment, myohemerythrin,
+ myoglobin and complement factor, 1c5a.  The mixed motif proteins include
+ ubiquitin, flavodoxin and PRA isomerase, and the beta-proteins include the
+ 16th complement control protein of factor H, 1hcc, alpha-amylase,
+ plastocyanin and retinol binding protein.  (4).  To validate the
+ methodology, additional blind predictions of proteins whose structures are
+ unknown will be undertaken.  Likely candidates include rusticyanin and
+ erythropoietin.
+",2178769,R01GM037408,['R01GM037408'],GM,https://reporter.nih.gov/project-details/2178769,R01,1995,175781,0.22390204053874954
+  PROTEIN NMR SPECTRA USING ARTIFICIAL INTELLIGENCE,,2237592,F37LM000036,['F37LM000036'],LM,https://reporter.nih.gov/project-details/2237592,F37,1996,31600,0.3610145664545903
+"DESCRIPTION (Taken from application abstract):  The long term goal of the       
+work described in this proposal is to develop on-line combined spatial and      
+symbolic methods for representing, storing, retrieving and visualizing          
+anatomical information, both as a means for understanding human biological      
+structure, and as a visual gateway into the rapidly increasing array of         
+on-line text-based information sources in biomedicine.  In this proposal we     
+will address some of the fundamental problems involved in combining spatial     
+and symbolic anatomic information, and will test solutions to these problems    
+in a World Wide Web based 3-D anatomy information system for the thoracic       
+viscera.  Clinicians, researchers and students will be able to use this         
+system to retrieve specific anatomic knowledge, in the form of                  
+dynamically-generated interactive 3-D scenes and corresponding symbolic         
+information, without the need to consult hard copy atlases or to navigate       
+through irrelevant computer-based images before finding the needed              
+information.  In order to build this system we will need to address             
+fundamental problems in spatial modeling, organization of these models in a     
+knowledge based spatial database system, and access to the models via an        
+on-line user interface and spatial query processor.  The specific aims for      
+this proposal are:  1) develop a knowledge base that organizes and              
+integrates spatial and symbolic models of anatomy, 2) implement an anatomy      
+information system that combines knowledge-based spatial and symbolic           
+retrieval with dynamically generated 3-D scenes, 3) develop methods for         
+smoothly rendering and interacting with the scene in real-time, and 4)          
+evaluate the system by integrating other spatial data and by providing it to    
+anatomy medical students and radiation treatment planners.  Accomplishment      
+of these aims will lead to a useful information system for the anatomy of       
+the thoracic viscera that can be enhanced with new technology such as high      
+performance graphics and virtual reality.  Moreover, the information            
+framework and methods we establish in this project will be generalizable not    
+only to gross anatomy in different regions of the body and to different         
+anatomical databases, but also to the management of structural information      
+pertaining to cellular and molecular biology, as well as developmental and      
+neurobiology.                                                                   
+ DVD /CD ROM; anatomy; artificial intelligence; computer human interaction; computer system design /evaluation; information retrieval; information systems STRUCTURE BASED VISUAL ACCESS TO BIOMEDICAL INFORMATION","DESCRIPTION (Taken from application abstract):  The long term goal of the       
+work described in this proposal is to develop on-line combined spatial and      
+symbolic methods for representing, storing, retrieving and visualizing          
+anatomical information, both as a means for understanding human biological      
+structure, and as a visual gateway into the rapidly increasing array of         
+on-line text-based information sources in biomedicine.  In this proposal we     
+will address some of the fundamental problems involved in combining spatial     
+and symbolic anatomic information, and will test solutions to these problems    
+in a World Wide Web based 3-D anatomy information system for the thoracic       
+viscera.  Clinicians, researchers and students will be able to use this         
+system to retrieve specific anatomic knowledge, in the form of                  
+dynamically-generated interactive 3-D scenes and corresponding symbolic         
+information, without the need to consult hard copy atlases or to navigate       
+through irrelevant computer-based images before finding the needed              
+information.  In order to build this system we will need to address             
+fundamental problems in spatial modeling, organization of these models in a     
+knowledge based spatial database system, and access to the models via an        
+on-line user interface and spatial query processor.  The specific aims for      
+this proposal are:  1) develop a knowledge base that organizes and              
+integrates spatial and symbolic models of anatomy, 2) implement an anatomy      
+information system that combines knowledge-based spatial and symbolic           
+retrieval with dynamically generated 3-D scenes, 3) develop methods for         
+smoothly rendering and interacting with the scene in real-time, and 4)          
+evaluate the system by integrating other spatial data and by providing it to    
+anatomy medical students and radiation treatment planners.  Accomplishment      
+of these aims will lead to a useful information system for the anatomy of       
+the thoracic viscera that can be enhanced with new technology such as high      
+performance graphics and virtual reality.  Moreover, the information            
+framework and methods we establish in this project will be generalizable not    
+only to gross anatomy in different regions of the body and to different         
+anatomical databases, but also to the management of structural information      
+pertaining to cellular and molecular biology, as well as developmental and      
+neurobiology.                                                                   
+",2032431,R01LM006316,['R01LM006316'],LM,https://reporter.nih.gov/project-details/2032431,R01,1997,298924,0.22390204053874954
+"DESCRIPTION:  (Adapted from the applicant's abstract):  Medical and             
+biological data often come in the form of digitized signals and images, for     
+example magnetic resonance images (MRI), ion channel electrical series, and     
+human gait paths.  As data acquisition becomes easier, sequences of such        
+images or signals are collected, often along with other covariate               
+measurements, resulting in data sets where the basic unit of measurement or     
+response is a high dimensional object.  This project proposes a battery of      
+statistical techniques for modeling and understanding such data, that           
+explicitly takes into account and indeed exploits the inherent, spatial, or     
+temporal correlation, and when appropriate, relates it to covariate             
+information.  By imposing spatial smoothness in the image or signal domain,     
+pixel-wise regression, and canonical correlation models can borrow strength     
+from neighboring pixels.  This not only improves the overall efficiency of      
+these techniques, but also allows identification of important regions rather    
+than individual pixels.  The project develops appropriate versions of           
+nonparametric regressions for such series of images, as well as data            
+descriptions such as clustering, principal component, and singular value        
+decomposition models.  In many cases, wavelets will be used to achieve          
+spatial smoothness.  In the case of ion channel data, the models are used to    
+isolate particular weak high frequency components from correlated noise.        
+Much of this work will be carried out in collaboration with radiologists,       
+physiologists, and other biomedical researchers working on cancer, heart        
+disease and stroke, brain mapping, and gait analysis.                           
+ computer data analysis; diagnosis design /evaluation; digital imaging; mathematical model; statistics /biometry NEW STATISTICAL METHODS FOR MEDICAL SIGNALS AND IMAGES","DESCRIPTION:  (Adapted from the applicant's abstract):  Medical and             
+biological data often come in the form of digitized signals and images, for     
+example magnetic resonance images (MRI), ion channel electrical series, and     
+human gait paths.  As data acquisition becomes easier, sequences of such        
+images or signals are collected, often along with other covariate               
+measurements, resulting in data sets where the basic unit of measurement or     
+response is a high dimensional object.  This project proposes a battery of      
+statistical techniques for modeling and understanding such data, that           
+explicitly takes into account and indeed exploits the inherent, spatial, or     
+temporal correlation, and when appropriate, relates it to covariate             
+information.  By imposing spatial smoothness in the image or signal domain,     
+pixel-wise regression, and canonical correlation models can borrow strength     
+from neighboring pixels.  This not only improves the overall efficiency of      
+these techniques, but also allows identification of important regions rather    
+than individual pixels.  The project develops appropriate versions of           
+nonparametric regressions for such series of images, as well as data            
+descriptions such as clustering, principal component, and singular value        
+decomposition models.  In many cases, wavelets will be used to achieve          
+spatial smoothness.  In the case of ion channel data, the models are used to    
+isolate particular weak high frequency components from correlated noise.        
+Much of this work will be carried out in collaboration with radiologists,       
+physiologists, and other biomedical researchers working on cancer, heart        
+disease and stroke, brain mapping, and gait analysis.                           
+",2517753,R01CA072028,['R01CA072028'],CA,https://reporter.nih.gov/project-details/2517753,R01,1997,143855,0.4242749840650383
+ acute disease /disorder; artificial intelligence; cardiovascular disorder diagnosis; computer assisted diagnosis; computer system design /evaluation; diagnosis design /evaluation; human data; image processing; pulmonary circulation obstruction; respiratory disorder diagnosis; thoracic radiography ACUTE PULMONARY EMBOLISM--COMPUTER AIDED DIAGNOSIS,,2638556,R29HL052826,['R29HL052826'],HL,https://reporter.nih.gov/project-details/2638556,R29,1997,73937,0.4242749840650383
+"Ordered categorical variables arise frequently in cancer clinical trials        
+and other biomedical studies. The statistical procedures for analyzing          
+such data are well known and software for performing the analysis is            
+readily available. The basic idea is to condition on the margins of the         
+contingency table created by the categorical data and thereby obtain a          
+distribution free test that automatically corrects for ties. Despite the        
+popularity of this conditional approach for analyzing ordered categorical       
+data there has been very little work done on power and sample-size              
+considerations at the design phase. A biomedical investigator about to          
+launch a clinical trial for comparing two treatments with ordered               
+categorical outcomes will find it extremely difficult to determine what         
+sample size is needed. Either the investigator must assume that the data        
+are continuous, or else that the data are binary, since these are the only      
+cases for which reliable methods and software are available. Both               
+approaches are inappropriate for ordered categorical data. We propose to        
+fill the void by providing new exact and Monte Carlo methods that provide       
+accurate power and sample-size estimates for conditional tests on ordered       
+categorical data.                                                               
+ artificial intelligence; computer data analysis; computer program /software; computer system design /evaluation; data collection methodology /evaluation; data management; mathematical model; statistics /biometry SAMPLE SIZE SOFTWARE FOR ORDERED CATEGORICAL DATA","Ordered categorical variables arise frequently in cancer clinical trials        
+and other biomedical studies. The statistical procedures for analyzing          
+such data are well known and software for performing the analysis is            
+readily available. The basic idea is to condition on the margins of the         
+contingency table created by the categorical data and thereby obtain a          
+distribution free test that automatically corrects for ties. Despite the        
+popularity of this conditional approach for analyzing ordered categorical       
+data there has been very little work done on power and sample-size              
+considerations at the design phase. A biomedical investigator about to          
+launch a clinical trial for comparing two treatments with ordered               
+categorical outcomes will find it extremely difficult to determine what         
+sample size is needed. Either the investigator must assume that the data        
+are continuous, or else that the data are binary, since these are the only      
+cases for which reliable methods and software are available. Both               
+approaches are inappropriate for ordered categorical data. We propose to        
+fill the void by providing new exact and Monte Carlo methods that provide       
+accurate power and sample-size estimates for conditional tests on ordered       
+categorical data.                                                               
+",2434545,R44CA065358,['R44CA065358'],CA,https://reporter.nih.gov/project-details/2434545,R44,1997,353808,0.22390204053874954
+"Efforts to apply computer methods to assess and improve the quality of          
+care in the hospital have been stymied by limited access to clinical            
+data.  Free-text data have detailed clinical descriptions of patients           
+that would be useful in computer altering systems and computer reminder         
+systems.  However, free-text data cannot be interpreted by most clinical        
+computer systems.  In this proposal, we describe research specifically          
+aimed at making free-text data accessible to computer-based applications        
+for assessing and improving the quality of care.  In particular the             
+research plan focuses on the development of technologies that would allow       
+free-text data to be used in clinical alert systems for critical test           
+results; in reminder systems to encourage adherence to practice                 
+guidelines; and in data collection systems for severity of illness models       
+applied in the assessment of risk adjusted outcomes.  The approach              
+described in the research plan emphasizes the development of statistical        
+and probabilistic methods for interpretation of data derived from medical       
+language processing systems.  We will test the methods developed for            
+language processing and interpretation developed under this proposal in         
+3 area: 1) the identification of concepts related to severity from the          
+MedisGroups and the Computerized Severity Index models of patient               
+severity of illness; 2) the identification of chest x ray reports and           
+mammography reports with potentially malignant findings that require            
+radiological follow-up; 3) and the automatic assessment of                      
+appropriateness of coronary artery bypass grafting (CABG) surgery from          
+free-text descriptions of patients based on the application of a clinical       
+practice guideline for CABG surgery.                                            
+ abstracting; artificial intelligence; automated medical record system; computer assisted diagnosis; computer assisted medical decision making; computer human interaction; coronary bypass; health care model; health care quality; human data; information retrieval; mammography; method development; statistics /biometry; thoracic radiography; vocabulary development for information system COMPUTER INTERPRETATION OF FREE-TEXT DATA","Efforts to apply computer methods to assess and improve the quality of          
+care in the hospital have been stymied by limited access to clinical            
+data.  Free-text data have detailed clinical descriptions of patients           
+that would be useful in computer altering systems and computer reminder         
+systems.  However, free-text data cannot be interpreted by most clinical        
+computer systems.  In this proposal, we describe research specifically          
+aimed at making free-text data accessible to computer-based applications        
+for assessing and improving the quality of care.  In particular the             
+research plan focuses on the development of technologies that would allow       
+free-text data to be used in clinical alert systems for critical test           
+results; in reminder systems to encourage adherence to practice                 
+guidelines; and in data collection systems for severity of illness models       
+applied in the assessment of risk adjusted outcomes.  The approach              
+described in the research plan emphasizes the development of statistical        
+and probabilistic methods for interpretation of data derived from medical       
+language processing systems.  We will test the methods developed for            
+language processing and interpretation developed under this proposal in         
+3 area: 1) the identification of concepts related to severity from the          
+MedisGroups and the Computerized Severity Index models of patient               
+severity of illness; 2) the identification of chest x ray reports and           
+mammography reports with potentially malignant findings that require            
+radiological follow-up; 3) and the automatic assessment of                      
+appropriateness of coronary artery bypass grafting (CABG) surgery from          
+free-text descriptions of patients based on the application of a clinical       
+practice guideline for CABG surgery.                                            
+",2430870,R29LM005626,['R29LM005626'],LM,https://reporter.nih.gov/project-details/2430870,R29,1997,112700,0.3610145664545903
+"The PI is a Neurophysiologist and Pediatric Neurosurgeon who will be the        
+Associate Director of Center V (Behavioral and Neurobiology Research), with     
+special responsibility for Neurobiology programs, at the Children""s             
+Research Institute.  This RCA will permit the PI to devote nearly full time     
+to research.                                                                    
+                                                                                
+Short term goals are to test the hypothesis that neuronal ensembles have        
+nonlinear deterministic properties.  If so, they will 1) have activity that     
+can be characterized and controlled through unstable periodic orbits, 2)        
+hen noise driven will exhibit stochastic resonance, and 3) because of           
+coupling will exhibit generalized (nonlinear) synchrony and emergence.          
+Long-term goals are to achieve a better understanding of neuronal network       
+and brain behavior, and to develop novel methods of treating dynamical          
+diseases.                                                                       
+                                                                                
+The research project will involve theoretical work on the detection of          
+unstable orbits in In Vitro brain slices and human epileptic foci.  Such        
+orbit information forms a novel method of characterizing the deterministic      
+properties of complex systems despite nonstationarity, and can be used to       
+control those systems.  Nonlinear systems also optimize their response to       
+weak signals in the presence of noise - stochastic resonance.  We will          
+define the statistical mechanics of stochastic resonance through                
+simultaneous measurements of single neuron and neuronal ensemble activity.      
+Since neuronal ensembles may demonstrate nonlinear generalized synchrony,       
+we will quantify spatio-temporal generalized synchrony through dual             
+simultaneous single cell recordings as a function of separation in a            
+neuronal network.  Both unstable orbit detection and generalized synchrony      
+will be used to define the emergence of nonlinear behaviors in neuronal         
+ensembles.                                                                      
+                                                                                
+The results of this research will fundamentally alter the way that neuronal     
+dynamics can be characterized and controlled, will provide a means to deal      
+with neuronal nonstationarity, will further explain the role of noise in        
+the nervous system, and may provide a novel approach for the control of         
+pathological neuronal ensembles in dynamical diseases such as epilepsy,         
+spasticity, and tremor.                                                         
+ artificial intelligence; brain electrical activity; computational neuroscience; electric field; electroencephalography; extracellular; hippocampus; human data; intracellular; laboratory rat; microelectrodes; neural information processing; neuroanatomy; neurons; neurosurgery; noise; statistics /biometry NONLINEAR DYNAMICS OF NEURONAL ENSEMBLES","The PI is a Neurophysiologist and Pediatric Neurosurgeon who will be the        
+Associate Director of Center V (Behavioral and Neurobiology Research), with     
+special responsibility for Neurobiology programs, at the Children""s             
+Research Institute.  This RCA will permit the PI to devote nearly full time     
+to research.                                                                    
+                                                                                
+Short term goals are to test the hypothesis that neuronal ensembles have        
+nonlinear deterministic properties.  If so, they will 1) have activity that     
+can be characterized and controlled through unstable periodic orbits, 2)        
+hen noise driven will exhibit stochastic resonance, and 3) because of           
+coupling will exhibit generalized (nonlinear) synchrony and emergence.          
+Long-term goals are to achieve a better understanding of neuronal network       
+and brain behavior, and to develop novel methods of treating dynamical          
+diseases.                                                                       
+                                                                                
+The research project will involve theoretical work on the detection of          
+unstable orbits in In Vitro brain slices and human epileptic foci.  Such        
+orbit information forms a novel method of characterizing the deterministic      
+properties of complex systems despite nonstationarity, and can be used to       
+control those systems.  Nonlinear systems also optimize their response to       
+weak signals in the presence of noise - stochastic resonance.  We will          
+define the statistical mechanics of stochastic resonance through                
+simultaneous measurements of single neuron and neuronal ensemble activity.      
+Since neuronal ensembles may demonstrate nonlinear generalized synchrony,       
+we will quantify spatio-temporal generalized synchrony through dual             
+simultaneous single cell recordings as a function of separation in a            
+neuronal network.  Both unstable orbit detection and generalized synchrony      
+will be used to define the emergence of nonlinear behaviors in neuronal         
+ensembles.                                                                      
+                                                                                
+The results of this research will fundamentally alter the way that neuronal     
+dynamics can be characterized and controlled, will provide a means to deal      
+with neuronal nonstationarity, will further explain the role of noise in        
+the nervous system, and may provide a novel approach for the control of         
+pathological neuronal ensembles in dynamical diseases such as epilepsy,         
+spasticity, and tremor.                                                         
+",2674504,K02MH001493,['K02MH001493'],MH,https://reporter.nih.gov/project-details/2674504,K02,1998,99063,0.3610145664545903
+"The goal of this research is to develop improved assessment protocols           
+that afford a quantitative and analytic evaluation of speech impairment         
+in children and adults with neurological disorders.  Speech impairments         
+(dysarthrias) will be studied in persons with amyotrophic lateral               
+sclerosis, Parkinson's disease, stroke, cerebellar degeneration, cerebral       
+palsy, and developmental speech disorders.  Improved evaluation of speech       
+intelligibility is a particular focus of this work, but issues of speech        
+and voice quality also are addressed.  The methods to be used are a             
+combination of standard clinical assessments (such as rating scales),           
+intelligibility evaluations, and computer-based acoustic analyses.              
+Specifically, the methods include: perceptual ratings of speech by              
+experienced clinicians, quantitative assessment of intelligibility, a           
+multiple-parameter acoustic analysis, computer correction of speech             
+abnormalities through LPC resynthesis of the acoustic signal, and               
+derivation of vocal tract shape from acoustic parameters.  Work in all          
+these areas will be based on recordings of speech samples from a large          
+number of individuals with dysarthria.  One product of the research will        
+be a library of clinical profiles including intelligibility scores,             
+phonetic feature analyses, ratings of speech/voice quality, acoustic            
+measures, and neurological diagnosis.  Particular attention will be given       
+to the influences of subject age and sex on the characteristics of              
+dysarthria for a given neurological diagnosis.  The assessment protocols        
+will be implemented on microcomputers and designed to be incorporated in        
+clinical practice.  The research also will contribute to the development        
+of expert systems for the rating and classification of dysarthria.              
+ Parkinson's disease; amyotrophic lateral sclerosis; artificial intelligence; audiotape; behavioral /social science research tag; cerebellar disorders; cerebral palsy; child (0-11); computer data analysis; computer system design /evaluation; disease /disorder classification; dysarthria; human subject; information systems; larynx; mathematical model; nervous system disorder diagnosis; speech; speech disorder diagnosis; stroke; technology /technique; vocabulary; voice INTELLIGIBILITY ASSESSMENT IN DYSARTHRIA","The goal of this research is to develop improved assessment protocols           
+that afford a quantitative and analytic evaluation of speech impairment         
+in children and adults with neurological disorders.  Speech impairments         
+(dysarthrias) will be studied in persons with amyotrophic lateral               
+sclerosis, Parkinson's disease, stroke, cerebellar degeneration, cerebral       
+palsy, and developmental speech disorders.  Improved evaluation of speech       
+intelligibility is a particular focus of this work, but issues of speech        
+and voice quality also are addressed.  The methods to be used are a             
+combination of standard clinical assessments (such as rating scales),           
+intelligibility evaluations, and computer-based acoustic analyses.              
+Specifically, the methods include: perceptual ratings of speech by              
+experienced clinicians, quantitative assessment of intelligibility, a           
+multiple-parameter acoustic analysis, computer correction of speech             
+abnormalities through LPC resynthesis of the acoustic signal, and               
+derivation of vocal tract shape from acoustic parameters.  Work in all          
+these areas will be based on recordings of speech samples from a large          
+number of individuals with dysarthria.  One product of the research will        
+be a library of clinical profiles including intelligibility scores,             
+phonetic feature analyses, ratings of speech/voice quality, acoustic            
+measures, and neurological diagnosis.  Particular attention will be given       
+to the influences of subject age and sex on the characteristics of              
+dysarthria for a given neurological diagnosis.  The assessment protocols        
+will be implemented on microcomputers and designed to be incorporated in        
+clinical practice.  The research also will contribute to the development        
+of expert systems for the rating and classification of dysarthria.              
+",2733645,R01DC000319,['R01DC000319'],DC,https://reporter.nih.gov/project-details/2733645,R01,1998,339245,0.4242749840650383
+"There is growing recognition that, while practice guidelines can                
+predispose physicians to behavioral change, even the most respected and         
+clinically relevant guidelines often do not affect actual practice.             
+Despite the apparent reluctance of physicians to incorporate published          
+practice guidelines into their clinical routine, there are signs that           
+immediate automated reminders can have a profound influence on physician        
+behavior, and on the cost and quality of medical care. As practice              
+guidelines proliferate and become more complex, the dilemma facing those        
+who design practice guidelines is the tradeoff between the                      
+comprehensiveness of the guidelines and the likelihood they will be             
+retained and implemented by the physicians for whom they are intended.          
+This same complexity can complicate computer-based implementation of            
+guidelines. For example, the dependence of guidelines on patient                
+preferences and individual risk factors makes the rule-based approach           
+impractical for many guidelines.                                                
+                                                                                
+Intelligent decision systems (IDS) are specifically designed to implement       
+complex, flexible guidelines tailored to varying clinical circumstances.        
+These systems provide advice based on a tailored decision-analytic model.       
+But these systems assume that a physician-user will be persuaded by a           
+review of the decision model and its associated quantitative results.           
+                                                                                
+The goal of this work is to develop and test improved explanation methods       
+for quantitative decision models so that intelligent decision systems can       
+be used in a consultative mode. We have developed a program called QxQ,         
+which uses symbolic reasoning to provide qualitative text explanations for      
+the results of decision trees. This work is intended to extract the key         
+architecture- and domain-independent elements of QxQ's methodology, and to      
+reimplement and test them as part of MIDAS, an existing IDS. First, we          
+will develop a domain- and system-independent version of QxQ, called EQxQ       
+(for essential QxQ), by applying it to decision models constructed in           
+MIDAS. In collaboration with the developers of MIDAS, we will identify the      
+key independent elements necessary to generate explanations from an IDS.        
+Second, we will devise and implement additional explanation methods in          
+EQxQ to allow explanation of complex modeling constructs, such as Markov        
+models, cycle trees, and cost-effectiveness models. Third, we will test         
+the robustness of the MIDAS-EQxQ system by using it to implement a              
+decision model underlying a clinically relevant practice guideline.             
+Finally, we will establish and pilot test the routine use of the program        
+in an outpatient clinic. We will survey the physician-users to determine        
+the strengths and weaknesses of the program. Using pilot data from the          
+program's routine use, we will design a prospective clinical evaluation of      
+the system and its explanations by measuring their effect on patient            
+outcome. Our study will provide data regarding the clinical utility of          
+intelligent decision systems.                                                   
+ artificial intelligence; computer assisted medical decision making; computer program /software; computer system design /evaluation; health care model; health care service evaluation; human subject; mathematical model; questionnaires COMPUTER-BASED EXPLANATION METHODS FOR DECISION MODELS","There is growing recognition that, while practice guidelines can                
+predispose physicians to behavioral change, even the most respected and         
+clinically relevant guidelines often do not affect actual practice.             
+Despite the apparent reluctance of physicians to incorporate published          
+practice guidelines into their clinical routine, there are signs that           
+immediate automated reminders can have a profound influence on physician        
+behavior, and on the cost and quality of medical care. As practice              
+guidelines proliferate and become more complex, the dilemma facing those        
+who design practice guidelines is the tradeoff between the                      
+comprehensiveness of the guidelines and the likelihood they will be             
+retained and implemented by the physicians for whom they are intended.          
+This same complexity can complicate computer-based implementation of            
+guidelines. For example, the dependence of guidelines on patient                
+preferences and individual risk factors makes the rule-based approach           
+impractical for many guidelines.                                                
+                                                                                
+Intelligent decision systems (IDS) are specifically designed to implement       
+complex, flexible guidelines tailored to varying clinical circumstances.        
+These systems provide advice based on a tailored decision-analytic model.       
+But these systems assume that a physician-user will be persuaded by a           
+review of the decision model and its associated quantitative results.           
+                                                                                
+The goal of this work is to develop and test improved explanation methods       
+for quantitative decision models so that intelligent decision systems can       
+be used in a consultative mode. We have developed a program called QxQ,         
+which uses symbolic reasoning to provide qualitative text explanations for      
+the results of decision trees. This work is intended to extract the key         
+architecture- and domain-independent elements of QxQ's methodology, and to      
+reimplement and test them as part of MIDAS, an existing IDS. First, we          
+will develop a domain- and system-independent version of QxQ, called EQxQ       
+(for essential QxQ), by applying it to decision models constructed in           
+MIDAS. In collaboration with the developers of MIDAS, we will identify the      
+key independent elements necessary to generate explanations from an IDS.        
+Second, we will devise and implement additional explanation methods in          
+EQxQ to allow explanation of complex modeling constructs, such as Markov        
+models, cycle trees, and cost-effectiveness models. Third, we will test         
+the robustness of the MIDAS-EQxQ system by using it to implement a              
+decision model underlying a clinically relevant practice guideline.             
+Finally, we will establish and pilot test the routine use of the program        
+in an outpatient clinic. We will survey the physician-users to determine        
+the strengths and weaknesses of the program. Using pilot data from the          
+program's routine use, we will design a prospective clinical evaluation of      
+the system and its explanations by measuring their effect on patient            
+outcome. Our study will provide data regarding the clinical utility of          
+intelligent decision systems.                                                   
+",2714217,R29LM006238,['R29LM006238'],LM,https://reporter.nih.gov/project-details/2714217,R29,1998,52402,0.2663131754406353
+"The proposed mentored research award aims to develop the applicant's            
+basic research skills and to prepare her for independent                        
+investigations directed at exploring and dissecting the neural bases of         
+motor and related dysfunctions in neurological disorders and normal             
+aging using imaging techniques, psychophysical studies and brain                
+network modeling. The primary mentor for this plan is Dr. David                 
+Eidelberg, a neurologist with vast experience in the field of PET               
+imaging and movement disorders. Dr. Claude Ghez, a neuroscientist               
+who has worked in the field of motor control for over 25 years will             
+serve as co-mentor. Dr. Glyn Johnson, experienced physicist in the              
+field of magnetic resonance, will serve as consultant to instruct the           
+applicant in functional MRI. Drs. Jim Moeller and Eva Petkova will              
+further the applicant's education in advanced statistics. Dr. Vijay             
+Dhawan will be consultant for PET biophysics and quantification. Dr.            
+Ken Perrine, neuropsychologist, will also be available as consultant.           
+                                                                                
+Research plan: The goal of this study is to characterize changes in             
+neural processing underlying implicit and explicit forms of motor               
+learning in patients with Parkinson's disease and in a control normal           
+aging population. A new family of motor tasks developed in Dr. Ghez's           
+lab will be used during 150-H2O positron emission tomography. A new             
+analytical methodology based on principal component analysis will be            
+applied on measures of regional blood flow to determine how inter-              
+subject differences in motor learning are reflected in modulations of           
+brain network expression. These same methods will be used to                    
+determine the neural bases of two therapeutic inventions in                     
+Parkinson's disease, ventral pallidotomy and pallidal stimulation, and          
+to assess their effectiveness in reversing alterations in motor                 
+learning.                                                                       
+                                                                                
+Educational plan: The educational plan will focus on the following              
+objectives: 1) Completion of the research plan. 2) Learning imaging             
+techniques, including image acquisition and analysis using PET and              
+fMRI. 3) Development of testing techniques to be used in fMRI. 4)               
+Acquisition of skills in brain network analysis (including SSM) to be           
+applied to both PET and NMR imaging. 5) Furthering the applicants               
+statistical and computational skills through courses taken at Columbia          
+University School of Public Health. 6) Developing the applicant's               
+laboratory management, supervision, research communication and                  
+mentoring skills. 7) Receiving instruction in the responsible conduct           
+of research.                                                                    
+ Parkinson's disease; bioimaging /biomedical imaging; blood flow measurement; brain electronic stimulator; brain imaging /visualization /scanning; clinical research; computational neuroscience; functional magnetic resonance imaging; human subject; learning; neural information processing; positron emission tomography; psychosurgery MOTOR LEARNING IN PARKINSONS DISEASE","The proposed mentored research award aims to develop the applicant's            
+basic research skills and to prepare her for independent                        
+investigations directed at exploring and dissecting the neural bases of         
+motor and related dysfunctions in neurological disorders and normal             
+aging using imaging techniques, psychophysical studies and brain                
+network modeling. The primary mentor for this plan is Dr. David                 
+Eidelberg, a neurologist with vast experience in the field of PET               
+imaging and movement disorders. Dr. Claude Ghez, a neuroscientist               
+who has worked in the field of motor control for over 25 years will             
+serve as co-mentor. Dr. Glyn Johnson, experienced physicist in the              
+field of magnetic resonance, will serve as consultant to instruct the           
+applicant in functional MRI. Drs. Jim Moeller and Eva Petkova will              
+further the applicant's education in advanced statistics. Dr. Vijay             
+Dhawan will be consultant for PET biophysics and quantification. Dr.            
+Ken Perrine, neuropsychologist, will also be available as consultant.           
+                                                                                
+Research plan: The goal of this study is to characterize changes in             
+neural processing underlying implicit and explicit forms of motor               
+learning in patients with Parkinson's disease and in a control normal           
+aging population. A new family of motor tasks developed in Dr. Ghez's           
+lab will be used during 150-H2O positron emission tomography. A new             
+analytical methodology based on principal component analysis will be            
+applied on measures of regional blood flow to determine how inter-              
+subject differences in motor learning are reflected in modulations of           
+brain network expression. These same methods will be used to                    
+determine the neural bases of two therapeutic inventions in                     
+Parkinson's disease, ventral pallidotomy and pallidal stimulation, and          
+to assess their effectiveness in reversing alterations in motor                 
+learning.                                                                       
+                                                                                
+Educational plan: The educational plan will focus on the following              
+objectives: 1) Completion of the research plan. 2) Learning imaging             
+techniques, including image acquisition and analysis using PET and              
+fMRI. 3) Development of testing techniques to be used in fMRI. 4)               
+Acquisition of skills in brain network analysis (including SSM) to be           
+applied to both PET and NMR imaging. 5) Furthering the applicants               
+statistical and computational skills through courses taken at Columbia          
+University School of Public Health. 6) Developing the applicant's               
+laboratory management, supervision, research communication and                  
+mentoring skills. 7) Receiving instruction in the responsible conduct           
+of research.                                                                    
+",2891436,K08NS001961,['K08NS001961'],NS,https://reporter.nih.gov/project-details/2891436,K08,1999,100047,0.4242749840650383
+"DESCRIPTION (Adapted from applicant's abstract):  Visuomotor integration        
+depends on a remarkable coherence among a number of interrelated                
+subprocesses such as pattern recognition, pattern discrimination, decision      
+to move, and guidance of movement.  The brain is able to integrate these        
+elementary cognitive processes by coordinating the activities of diverse        
+neural structures in the face of continuously varying processing demands.       
+The question of how this coordination operates is central to understanding      
+the neural basis of visuomotor function.  This proposal aims to develop new     
+analytical tools to investigate the coordinated activity of distributed         
+neuronal ensembles in the cerebral cortex of humans and non-human primates      
+performing simple visuomotor tasks.  It is motivated by recent theoretical      
+developments (Bressler 1994, 1995, 1996, and 1997) predicting a general         
+cortical mechanism allowing the flexible large-scale functional coordination    
+of interacting neuronal ensembles.  Hypotheses concerning this mechanism        
+will be tested by analysis of field potential data recorded at NIMH from        
+macaque monkeys performing a visuomotor pattern recognition task.  The          
+challenge is to develop and test new analytic approaches that characterize      
+the multiple, complex interactions of large-scale distributed cortical          
+networks.  Earlier analysis of a small portion of this NIMH data set,           
+reported in Nature in 1993, revealed shifting patterns of multi-site            
+cortical synchronization during visuomotor processing, and implicated           
+synchronization in the formation of functional relations within and between     
+cortical areas.  Standard pairwise techniques were employed to measure          
+synchronization between field potential signals.  Here, novel methods of        
+time-series analysis are proposed that go beyond the simple detection of        
+network interactions.  Advances in signal processing technology will be         
+utilized to also derive multi-site interaction patterns, to analyze the         
+dependencies of functional relations on particular groups of neurons, and to    
+measure the flow of information between cortical regions.  This                 
+collaborative project will draw on the complementary strengths of Drs.          
+Bressler and Ding.  Dr. Bressler brings to the project over 15 years of         
+experience in cognitive neuroscience, with expertise in the recording and       
+analysis of neuroelectric data from humans to animals.  He will provide         
+theoretical oversight and the application of analytic tools to the field        
+potential data set.  Dr. Ding, although relatively new to cognitive             
+neuroscience, has over 10 years of experience in linear and nonlinear           
+dynamical systems analysis.  He will provide the development of new             
+analytical methods from a comprehensive dynamical systems perspective.  This    
+work is expected to (1) produce new insights into the dynamics of cortical      
+information flow in visual perception and motor performance, (2) make           
+available new digital signal processing tools for the investigation of large    
+scale neural systems underlying other cognitive functions and, (3) provide a    
+fresh perspective on the design of complex architectures for the execution      
+of cognitive tasks by artificial neural network systems.                        
+ Macaca; analytical method; body movement; cerebral cortex; cognition; computer data analysis; computer program /software; computer system design /evaluation; electrodes; evoked potentials; human subject; mathematical model; motor cortex; neural information processing; neurophysiology; visual cortex; visual perception; visual stimulus ADVANCED TECHNIQUES FOR ANALYZING CORTICAL DYNAMICS","DESCRIPTION (Adapted from applicant's abstract):  Visuomotor integration        
+depends on a remarkable coherence among a number of interrelated                
+subprocesses such as pattern recognition, pattern discrimination, decision      
+to move, and guidance of movement.  The brain is able to integrate these        
+elementary cognitive processes by coordinating the activities of diverse        
+neural structures in the face of continuously varying processing demands.       
+The question of how this coordination operates is central to understanding      
+the neural basis of visuomotor function.  This proposal aims to develop new     
+analytical tools to investigate the coordinated activity of distributed         
+neuronal ensembles in the cerebral cortex of humans and non-human primates      
+performing simple visuomotor tasks.  It is motivated by recent theoretical      
+developments (Bressler 1994, 1995, 1996, and 1997) predicting a general         
+cortical mechanism allowing the flexible large-scale functional coordination    
+of interacting neuronal ensembles.  Hypotheses concerning this mechanism        
+will be tested by analysis of field potential data recorded at NIMH from        
+macaque monkeys performing a visuomotor pattern recognition task.  The          
+challenge is to develop and test new analytic approaches that characterize      
+the multiple, complex interactions of large-scale distributed cortical          
+networks.  Earlier analysis of a small portion of this NIMH data set,           
+reported in Nature in 1993, revealed shifting patterns of multi-site            
+cortical synchronization during visuomotor processing, and implicated           
+synchronization in the formation of functional relations within and between     
+cortical areas.  Standard pairwise techniques were employed to measure          
+synchronization between field potential signals.  Here, novel methods of        
+time-series analysis are proposed that go beyond the simple detection of        
+network interactions.  Advances in signal processing technology will be         
+utilized to also derive multi-site interaction patterns, to analyze the         
+dependencies of functional relations on particular groups of neurons, and to    
+measure the flow of information between cortical regions.  This                 
+collaborative project will draw on the complementary strengths of Drs.          
+Bressler and Ding.  Dr. Bressler brings to the project over 15 years of         
+experience in cognitive neuroscience, with expertise in the recording and       
+analysis of neuroelectric data from humans to animals.  He will provide         
+theoretical oversight and the application of analytic tools to the field        
+potential data set.  Dr. Ding, although relatively new to cognitive             
+neuroscience, has over 10 years of experience in linear and nonlinear           
+dynamical systems analysis.  He will provide the development of new             
+analytical methods from a comprehensive dynamical systems perspective.  This    
+work is expected to (1) produce new insights into the dynamics of cortical      
+information flow in visual perception and motor performance, (2) make           
+available new digital signal processing tools for the investigation of large    
+scale neural systems underlying other cognitive functions and, (3) provide a    
+fresh perspective on the design of complex architectures for the execution      
+of cognitive tasks by artificial neural network systems.                        
+",2891078,R03MH058190,['R03MH058190'],MH,https://reporter.nih.gov/project-details/2891078,R03,1999,69250,0.2663131754406353

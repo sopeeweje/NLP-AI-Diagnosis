@@ -1,0 +1,316 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The overall goal of this continuing project is to develop efficient
+ algorithms which will permit the construction of realistic and
+ comprehensive mathematical models that relate normal and pathological
+ renal function to the underlying membrane transport and flow processes in
+ the renal tubules and their associated vasculature. The primary thrust of
+ our research during the next period will be:
+ 
+ 1. To use our present inner medullary models to develop fairly detailed
+ architectural models of the inner stripe of the outer medulla and then
+ integrate these new models with our present central core and vasa recta n-
+ nephron inner medullary models.
+ 
+ 2. To include additional solutes and osmolytes and investigate the role of
+ osmolyte production in the inner medulla.
+ 
+ 3. To incorporate a more detailed representation of transmural movement of
+ water and solutes that takes into account both cellular and paracellular
+ pathways and also the exchange of electrolytes and water between red blood
+ cells and plasma in the vasa recta.
+ 
+ 4. Adapt current algorithms for serial computers, - if necessary, develop
+ new ones based on our split system solvers - to fully exploit the parallel
+ and vector processing capabilities of supercomputers. This is necessary to
+ handle the size and complexity of our current and future n-nephron models.
+ 
+ 5. If necessary - for parallel and/or vector algorithms - (a) improve
+ stability and accuracy of numerical methods, (b) develop hierarchal
+ solution strategies, and (c) incorporate continuation and smoothing
+ methods.
+ 
+ 6. To make the non-linear Schur Complement type methods developed by us
+ readily available to other biomedical modelers, for use on minicomputers
+ and/or workstations. These include: (a) reduced models of the whole kidney
+ and medulla, (b) models of epithelia and isolated perfused tubules, (c)
+ tubuloglomerular feedback response models, and (d) neural network models.
+ artificial intelligence; computer simulation; kidney circulation; mathematical model; model design /development; parallel processing; renal medulla; renal tubular transport; renal tubule; supercomputer NUMERICAL SOLUTION OF RENAL TRANSPORT EQUATIONS","The overall goal of this continuing project is to develop efficient
+ algorithms which will permit the construction of realistic and
+ comprehensive mathematical models that relate normal and pathological
+ renal function to the underlying membrane transport and flow processes in
+ the renal tubules and their associated vasculature. The primary thrust of
+ our research during the next period will be:
+ 
+ 1. To use our present inner medullary models to develop fairly detailed
+ architectural models of the inner stripe of the outer medulla and then
+ integrate these new models with our present central core and vasa recta n-
+ nephron inner medullary models.
+ 
+ 2. To include additional solutes and osmolytes and investigate the role of
+ osmolyte production in the inner medulla.
+ 
+ 3. To incorporate a more detailed representation of transmural movement of
+ water and solutes that takes into account both cellular and paracellular
+ pathways and also the exchange of electrolytes and water between red blood
+ cells and plasma in the vasa recta.
+ 
+ 4. Adapt current algorithms for serial computers, - if necessary, develop
+ new ones based on our split system solvers - to fully exploit the parallel
+ and vector processing capabilities of supercomputers. This is necessary to
+ handle the size and complexity of our current and future n-nephron models.
+ 
+ 5. If necessary - for parallel and/or vector algorithms - (a) improve
+ stability and accuracy of numerical methods, (b) develop hierarchal
+ solution strategies, and (c) incorporate continuation and smoothing
+ methods.
+ 
+ 6. To make the non-linear Schur Complement type methods developed by us
+ readily available to other biomedical modelers, for use on minicomputers
+ and/or workstations. These include: (a) reduced models of the whole kidney
+ and medulla, (b) models of epithelia and isolated perfused tubules, (c)
+ tubuloglomerular feedback response models, and (d) neural network models.
+",2137100,R01DK017593,['R01DK017593'],DK,https://reporter.nih.gov/project-details/2137100,R01,1995,102598,0.4759856506366323
+"The electronic medical record (EMR) holds great allure to both the              
+medical informatics and health services research communities. In this           
+project, we propose to enhance the capability of electronic medical             
+record (EMR) systems by creating and evaluating tools to extract                
+clinical vocabularies as well as patient data from narrative text               
+reports. We will apply advanced natural language processing tools from          
+the CLARIT system to both of the above problems. We contend that fast           
+and robust automated text processing methods are the only way that the          
+problems of vocabulary construction and narrative text extraction can           
+be solved.                                                                      
+                                                                                
+We will address the clinical vocabulary problem by utilizing the                
+thesaurus extraction techniques already present in the CLARIT system.           
+Using several gigabytes of narrative text, including discharge                  
+summaries, progress notes, radiology reports, and other clinical text,          
+we plan to:                                                                     
+l. Identify empirically the terminology used in medicine.                       
+2. Compare the coverage of that terminology in several existing large           
+medical vocabularies: UMLS, SNOMED, and the Medical Entities                    
+Dictionary.                                                                     
+3. Discern the semantic characteristics of that terminology to allow            
+other structured vocabularies a richer substrate of terms as well as            
+providing us the opportunity to implement a clinical vocabulary schema          
+based on the methods of the MedSORT-II Project.                                 
+4. Evaluate how well our tools assist the vocabulary building efforts           
+of ourselves and others.                                                        
+                                                                                
+The narrative extraction problem will be approached differently than            
+in the past, building on the efforts of previous investigators who              
+have tackled this problem before but changing the perspective by                
+focusing on the development of tools specific to researchers and                
+others with a need to extract data from narrative text. This approach           
+will be applied in two domains:                                                 
+l.Consortium-based research in the use of esophogastroduodenoscopy              
+(EGD).                                                                          
+2.Practice guidelines implementation in blood product transfusion.              
+ abstracting; automated medical record system; blood transfusion; cooperative study; endoscopy; vocabulary development for information system VOCABULARY AND TEXT DATA EXTRACTION FROM THE EMR","The electronic medical record (EMR) holds great allure to both the              
+medical informatics and health services research communities. In this           
+project, we propose to enhance the capability of electronic medical             
+record (EMR) systems by creating and evaluating tools to extract                
+clinical vocabularies as well as patient data from narrative text               
+reports. We will apply advanced natural language processing tools from          
+the CLARIT system to both of the above problems. We contend that fast           
+and robust automated text processing methods are the only way that the          
+problems of vocabulary construction and narrative text extraction can           
+be solved.                                                                      
+                                                                                
+We will address the clinical vocabulary problem by utilizing the                
+thesaurus extraction techniques already present in the CLARIT system.           
+Using several gigabytes of narrative text, including discharge                  
+summaries, progress notes, radiology reports, and other clinical text,          
+we plan to:                                                                     
+l. Identify empirically the terminology used in medicine.                       
+2. Compare the coverage of that terminology in several existing large           
+medical vocabularies: UMLS, SNOMED, and the Medical Entities                    
+Dictionary.                                                                     
+3. Discern the semantic characteristics of that terminology to allow            
+other structured vocabularies a richer substrate of terms as well as            
+providing us the opportunity to implement a clinical vocabulary schema          
+based on the methods of the MedSORT-II Project.                                 
+4. Evaluate how well our tools assist the vocabulary building efforts           
+of ourselves and others.                                                        
+                                                                                
+The narrative extraction problem will be approached differently than            
+in the past, building on the efforts of previous investigators who              
+have tackled this problem before but changing the perspective by                
+focusing on the development of tools specific to researchers and                
+others with a need to extract data from narrative text. This approach           
+will be applied in two domains:                                                 
+l.Consortium-based research in the use of esophogastroduodenoscopy              
+(EGD).                                                                          
+2.Practice guidelines implementation in blood product transfusion.              
+",2332614,U01LM005879,['U01LM005879'],LM,https://reporter.nih.gov/project-details/2332614,U01,1997,294900,0.8713139264681508
+"The research described in this proposal begins with completion and formal       
+evaluation of MIDAS ""a computer program designed to automatically               
+construct decision models from an underlying medical knowledge base"". The       
+capabilities of MIDAS will be extended to knowledge-based construction          
+of Markov decision models. A second project will develop a comprehensive        
+knowledge management scheme for the problem of pulmonary disease in AIDS.       
+This scheme will use a knowledge base structured according to knowledge         
+needed to perform a decision analysis. It will incorporate summaries of         
+relevant data, sources and quality of data and links to the original            
+sources. This knowledge management scheme will be deployed in the               
+hospital and evaluated in a group of medical residents at Robert Wood           
+Johnson University Hospital.                                                    
+ HIV infections; artificial intelligence; behavioral /social science research tag; computer assisted medical decision making; computer human interaction; health care model; human data; information system analysis; lung disorder; model design /development; opportunistic infections; physicians; pneumonia KNOWLEDGE MANAGEMENT FOR CLINICAL DECISION ANALYSIS","The research described in this proposal begins with completion and formal       
+evaluation of MIDAS ""a computer program designed to automatically               
+construct decision models from an underlying medical knowledge base"". The       
+capabilities of MIDAS will be extended to knowledge-based construction          
+of Markov decision models. A second project will develop a comprehensive        
+knowledge management scheme for the problem of pulmonary disease in AIDS.       
+This scheme will use a knowledge base structured according to knowledge         
+needed to perform a decision analysis. It will incorporate summaries of         
+relevant data, sources and quality of data and links to the original            
+sources. This knowledge management scheme will be deployed in the               
+hospital and evaluated in a group of medical residents at Robert Wood           
+Johnson University Hospital.                                                    
+",2546277,K04LM000096,['K04LM000096'],LM,https://reporter.nih.gov/project-details/2546277,K04,1997,72630,0.8713139264681508
+"LONG-TERM OBJECTIVES 1. Develop a computerized system, based on                 
+hierarchical neural network pattern recognition technology, for reliable        
+identification of plants.  2. Identify poisonous plants. 3. Expedite            
+discovery of new medicinal plants.  4. Create an image database directly        
+from plant material and link with existing medicinal plant databases.           
+5. Develop commercial product for pharmaceutical companies, agriculture         
+and others. SPECIFIC AIMS 1. Design hierarchical system of neural               
+networks to follow natural plant taxonomy groupings and extend our              
+identification technology to a large number of plant species.  2.               
+Improve accuracy of identification.  3. Design a prototype workstation          
+for botanical and agricultural field stations and laboratories.                 
+                                                                                
+RESEARCH DESIGN AND METHODS FOR ACHIEVING GOALS.  1. Digitize large             
+number of plant species from special collections.  2. Measure                   
+automatically venation patterns and shape.  3. Design hierarchical              
+neural networks to divide plants into natural groupings.  4. Accumulate         
+virtual herbarium  database as leaves are digitized (scanned or                 
+photographed).                                                                  
+                                                                                
+POTENTIAL FOR TECHNOLOGICAL INNOVATION This system is unique in                 
+capturing botanical recognition knowledge in a hierarchy of neural              
+networks and is the first fully-computerized system for plant                   
+identification utilizing information digitized directly from plants.            
+                                                                                
+PROPOSED COMMERCIAL APPLICATION                                                 
+1. Expedite discovery of new medicinal plants for pharmaceutical                
+industry.  2. Create valuable database directly from plants.  3.                
+Identification of poisonous plants.  4. Valuable for rapid                      
+identification of invasive weeds.                                               
+ artificial intelligence; carcinogens; classification; digital imaging; geographic site; information systems; leaf; medicinal plants; plant morphology; plant poisons; systematic biology IDENTIFICATION OF PLANTS USING NEURAL NETWORK TECHNOLOGY","LONG-TERM OBJECTIVES 1. Develop a computerized system, based on                 
+hierarchical neural network pattern recognition technology, for reliable        
+identification of plants.  2. Identify poisonous plants. 3. Expedite            
+discovery of new medicinal plants.  4. Create an image database directly        
+from plant material and link with existing medicinal plant databases.           
+5. Develop commercial product for pharmaceutical companies, agriculture         
+and others. SPECIFIC AIMS 1. Design hierarchical system of neural               
+networks to follow natural plant taxonomy groupings and extend our              
+identification technology to a large number of plant species.  2.               
+Improve accuracy of identification.  3. Design a prototype workstation          
+for botanical and agricultural field stations and laboratories.                 
+                                                                                
+RESEARCH DESIGN AND METHODS FOR ACHIEVING GOALS.  1. Digitize large             
+number of plant species from special collections.  2. Measure                   
+automatically venation patterns and shape.  3. Design hierarchical              
+neural networks to divide plants into natural groupings.  4. Accumulate         
+virtual herbarium  database as leaves are digitized (scanned or                 
+photographed).                                                                  
+                                                                                
+POTENTIAL FOR TECHNOLOGICAL INNOVATION This system is unique in                 
+capturing botanical recognition knowledge in a hierarchy of neural              
+networks and is the first fully-computerized system for plant                   
+identification utilizing information digitized directly from plants.            
+                                                                                
+PROPOSED COMMERCIAL APPLICATION                                                 
+1. Expedite discovery of new medicinal plants for pharmaceutical                
+industry.  2. Create valuable database directly from plants.  3.                
+Identification of poisonous plants.  4. Valuable for rapid                      
+identification of invasive weeds.                                               
+",2644669,R44CA067559,['R44CA067559'],CA,https://reporter.nih.gov/project-details/2644669,R44,1998,353293,0.8713139264681508
+"DESCRIPTION: (Applicant's abstract) The feasibility of a Drowsiness             
+Monitoring Device (DMD) to detect EEG indices of drowsiness in real-            
+time, was demonstrated during Phase I with an analytical model correctly        
+classifying 97.1 percent of sleep episodes and 94.3 percent of awake            
+epochs in 20 sleep-deprived subjects. The model employs discriminant            
+function analysis (DFA) to characterize and classify one-sec epochs,            
+validated against a combination of visual scoring by polysomnographers          
+and/or a behavioral measure. Algorithms to detect artifacts in real-time        
+(EMG, 60-Hz and gross body/eye movements) were developed. This                  
+classification accuracy represents a significant advancement over               
+previously reported models and confirms the feasibility of                      
+distinguishing EEG characteristics of sleep and waking on a second-by-          
+second basis. Phase II will implement a three-level DFA classification          
+system to further refine the model, adding sub-class states for                 
+vigilance and drowsiness/sleep to improve system accuracy. The multi-           
+dimensional time-series DFA analyses will correlate EEG parameters with         
+behavioral measures of driving performance to provide quantitative              
+predictions of performance decrements associate with sleep onset.               
+The model will be validated using a population with demographics                
+consistent with the target market for the DMD (e.g., truck drivers)             
+during Phase II. In addition, the system will be evaluated with the             
+introduction of commonly used legal drugs (caffeine, nicotine, and cold         
+medications) to determine the robustness of the model.                          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+The DMD provides three levels of user safety. When sleep onset is               
+approaching, the DMD will initiate a verbal warning alarm that must be          
+turned off by the user. Alternatively, the DMD can provide verbal               
+feedback to ensure the user maintains high levels of alertness during           
+activities that require sustained vigilance. The user can also select           
+the option for the DMD to recommend the optimal time to take a short            
+nap, monitor the length of the nap and awaken the user at the                   
+appropriate time.                                                               
+                                                                                
+Currently, more that 10% of the U.S. workforce or an estimated 20               
+million people are engaged in night sift work. The transportation               
+industry, including airline, railroad, marine and highway transportation        
+companies, is the nation's third largest employer of shift workers. Long        
+haul truck drivers, in particular, are vulnerable to sleepiness because         
+they drive through the night, in most cases unaccompanied, and generally        
+sleep less than 6 hours per day at irregular intervals. In addition, an         
+estimated 6 million Americans suffer from chronic sleep disorders which         
+make them vulnerable to fatigue in the workplace.                               
+ artificial intelligence; attention; biomedical equipment development; clinical biomedical equipment; computer data analysis; computer program /software; computer system design /evaluation; computer system hardware; electroencephalography; human subject; patient monitoring device; polysomnography; portable biomedical equipment; sleep; wakefulness PORTABLE DROWSINESS MONITORING DEVICE","DESCRIPTION: (Applicant's abstract) The feasibility of a Drowsiness             
+Monitoring Device (DMD) to detect EEG indices of drowsiness in real-            
+time, was demonstrated during Phase I with an analytical model correctly        
+classifying 97.1 percent of sleep episodes and 94.3 percent of awake            
+epochs in 20 sleep-deprived subjects. The model employs discriminant            
+function analysis (DFA) to characterize and classify one-sec epochs,            
+validated against a combination of visual scoring by polysomnographers          
+and/or a behavioral measure. Algorithms to detect artifacts in real-time        
+(EMG, 60-Hz and gross body/eye movements) were developed. This                  
+classification accuracy represents a significant advancement over               
+previously reported models and confirms the feasibility of                      
+distinguishing EEG characteristics of sleep and waking on a second-by-          
+second basis. Phase II will implement a three-level DFA classification          
+system to further refine the model, adding sub-class states for                 
+vigilance and drowsiness/sleep to improve system accuracy. The multi-           
+dimensional time-series DFA analyses will correlate EEG parameters with         
+behavioral measures of driving performance to provide quantitative              
+predictions of performance decrements associate with sleep onset.               
+The model will be validated using a population with demographics                
+consistent with the target market for the DMD (e.g., truck drivers)             
+during Phase II. In addition, the system will be evaluated with the             
+introduction of commonly used legal drugs (caffeine, nicotine, and cold         
+medications) to determine the robustness of the model.                          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+The DMD provides three levels of user safety. When sleep onset is               
+approaching, the DMD will initiate a verbal warning alarm that must be          
+turned off by the user. Alternatively, the DMD can provide verbal               
+feedback to ensure the user maintains high levels of alertness during           
+activities that require sustained vigilance. The user can also select           
+the option for the DMD to recommend the optimal time to take a short            
+nap, monitor the length of the nap and awaken the user at the                   
+appropriate time.                                                               
+                                                                                
+Currently, more that 10% of the U.S. workforce or an estimated 20               
+million people are engaged in night sift work. The transportation               
+industry, including airline, railroad, marine and highway transportation        
+companies, is the nation's third largest employer of shift workers. Long        
+haul truck drivers, in particular, are vulnerable to sleepiness because         
+they drive through the night, in most cases unaccompanied, and generally        
+sleep less than 6 hours per day at irregular intervals. In addition, an         
+estimated 6 million Americans suffer from chronic sleep disorders which         
+make them vulnerable to fatigue in the workplace.                               
+",2794305,R44NS035387,['R44NS035387'],NS,https://reporter.nih.gov/project-details/2794305,R44,1999,342050,0.8713139264681508

@@ -1,0 +1,121 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding
+"Project Summary
+We and others have shown that altered hemodynamics and shear stress can lead to congenital heart defects
+(CHDs), but still there is limited information on how these forces affect molecular signaling. Studying the impact
+of abnormal hemodynamics and shear stress becomes even more urgent when we consider that perturbed blood
+flow may be a contributing factor to a large percentage of CHDs regardless of whether the initial trigger is
+environmental or genetic. Although our group and others have recently developed extremely useful optical
+imaging tools (e.g., optical coherence tomography – OCT) to assess hemodynamics and shear stress, and
+connected these measurements to CHDs, it has been difficult to link shear stress with the affected molecular
+pathways. Our group and others have performed qPCR experiments on control and shear-stress perturbed
+hearts to see how abnormal hemodynamics alters gene expression. However, this approach requires the entire
+embryonic heart for one measurement, missing all spatial and cell-type information, particularly at the
+endocardial layer. In order to successfully assess how shear stress affects molecular signaling throughout the
+looping heart, we need to improve upon our OCT methods, develop 3D methods for assessing embryonic heart
+gene expression, and create an advanced image processing pipeline to analyze data and relate regional shear
+stress to gene expression.
+ This renewal proposal will continue our work developing tools that can lead to a more sophisticated
+understanding of how cardiac function (e.g., hemodynamics and electrical impulse conduction) affects heart
+development, enabling potential therapies to avoid or mitigate CHDs. In this proposal, we will focus on developing
+tools to understand how oscillatory shear stress (quantified as oscillatory shear index - OSI) influences gene
+expression and leads to CHDs. In our preliminary studies, we increased regurgitant blood flow (causing
+increased OSI) to show that alterations to OSI leads to smaller cardiac cushions (valve precursors) and
+ultimately, to CHDs. Increased regurgitant blood flow and smaller cushions is present in our two disease models
+(fetal alcohol spectrum disorders – FASD; velo-cardio-facial syndrome/Digeorge) and our FASD prevention
+compounds partially normalize blood flow, cardiac cushion size, and greatly reduce morbidity and CHDs.
+ Our specific aims include 1) advance our OCT system and shear stress analysis, 2) develop fluorescence in
+situ hybridization (FISH) protocols to measure gene expression in 3D, 3) develop an image processing pipeline
+to relate gene expression to shear stress, and 4) determine the impact of shear stress on gene expression. Upon
+completion, we will have significantly more information on how shear stress affects molecular expression. With
+this knowledge, we will be better equipped to determine which molecular pathways are most influenced by altered
+hemodynamics, to develop earlier detection methods and potentially develop strategies to prevent CHDs more
+effectively. 3-Dimensional;Affect;Algorithms;Area;Betaine;Biological Process;Blood flow;Cardiac;Cardiovascular Diseases;Cell Shape;Cells;Cohort Studies;Computer software;Congenital Heart Defects;Data;Development;DiGeorge Syndrome;Diffusion;Disease;Disease model;Early Diagnosis;Embryo;Embryonic Heart;Fetal Alcohol Exposure;Fetal Alcohol Spectrum Disorder;Fluorescent in Situ Hybridization;Funding;Gene Expression;Gene Expression Profile;Genetic;Glutathione;Heart;Histology;Image;Imaging Device;Immunohistochemistry;In Situ;Knowledge;Lead;Link;Malignant Neoplasms;Maps;Measurement;Measures;Mechanical Stress;Methods;Modeling;Molecular;Morbidity - disease rate;Morphology;Optical Coherence Tomography;Optics;Pathway interactions;Pattern;Play;Positioning Attribute;Prevention;Protocols documentation;Quail;RNA;Reporting;Role;Sequencing By Hybridizations;Shprintzen syndrome;Signal Transduction;Specificity;Structure;System;Testing;Tissues;Tube;Work;addiction;cardiogenesis;cell type;deep learning;detection method;experience;experimental study;heart function;hemodynamics;image processing;improved;in situ sequencing;indexing;nervous system disorder;novel;optical imaging;prevent;shear stress;statistics;tool;virtual Optical Tools to Assess the Role of Cardiac Function in the Development of Congenital Heart Defects","Project Summary
+We and others have shown that altered hemodynamics and shear stress can lead to congenital heart defects
+(CHDs), but still there is limited information on how these forces affect molecular signaling. Studying the impact
+of abnormal hemodynamics and shear stress becomes even more urgent when we consider that perturbed blood
+flow may be a contributing factor to a large percentage of CHDs regardless of whether the initial trigger is
+environmental or genetic. Although our group and others have recently developed extremely useful optical
+imaging tools (e.g., optical coherence tomography – OCT) to assess hemodynamics and shear stress, and
+connected these measurements to CHDs, it has been difficult to link shear stress with the affected molecular
+pathways. Our group and others have performed qPCR experiments on control and shear-stress perturbed
+hearts to see how abnormal hemodynamics alters gene expression. However, this approach requires the entire
+embryonic heart for one measurement, missing all spatial and cell-type information, particularly at the
+endocardial layer. In order to successfully assess how shear stress affects molecular signaling throughout the
+looping heart, we need to improve upon our OCT methods, develop 3D methods for assessing embryonic heart
+gene expression, and create an advanced image processing pipeline to analyze data and relate regional shear
+stress to gene expression.
+ This renewal proposal will continue our work developing tools that can lead to a more sophisticated
+understanding of how cardiac function (e.g., hemodynamics and electrical impulse conduction) affects heart
+development, enabling potential therapies to avoid or mitigate CHDs. In this proposal, we will focus on developing
+tools to understand how oscillatory shear stress (quantified as oscillatory shear index - OSI) influences gene
+expression and leads to CHDs. In our preliminary studies, we increased regurgitant blood flow (causing
+increased OSI) to show that alterations to OSI leads to smaller cardiac cushions (valve precursors) and
+ultimately, to CHDs. Increased regurgitant blood flow and smaller cushions is present in our two disease models
+(fetal alcohol spectrum disorders – FASD; velo-cardio-facial syndrome/Digeorge) and our FASD prevention
+compounds partially normalize blood flow, cardiac cushion size, and greatly reduce morbidity and CHDs.
+ Our specific aims include 1) advance our OCT system and shear stress analysis, 2) develop fluorescence in
+situ hybridization (FISH) protocols to measure gene expression in 3D, 3) develop an image processing pipeline
+to relate gene expression to shear stress, and 4) determine the impact of shear stress on gene expression. Upon
+completion, we will have significantly more information on how shear stress affects molecular expression. With
+this knowledge, we will be better equipped to determine which molecular pathways are most influenced by altered
+hemodynamics, to develop earlier detection methods and potentially develop strategies to prevent CHDs more
+effectively.",10211096,R01HL126747,['R01HL126747'],HL,https://reporter.nih.gov/project-details/10211096,R01,2021,767418
+"Shear Stress and Light-Field to Elucidate the Initiation of Cardiac Outflow Tract
+Biomechanical forces modulate cardiac morphogenesis, and mutations in mechano-sensitive signaling
+pathways result in congenital heart defects. During the previous funding cycle, our team custom-built a Light-
+Sheet Fluorescence Microscopy (LSFM) with sub-voxel resolution to enhance axial resolution needed to
+provide a large field-of-view. This laser optical system allowed for imaging pulsatile vs. oscillatory shear stress-
+mediated Notch signaling to initiate endocardial trabeculation. We demonstrated that spatial (/x) and
+temporal (/t) variations in shear stress modulates Notch-EphrinB2-Neureguilin-1 signaling in the
+endocardium to activate erb-B2 receptor tyrosine kinase (ErbB2) that promotes proliferation of trabeculation.
+By integrating LSFM, computation, and transgenic models, we further established that trabeculation dissipates
+intracardiac shear stress-generated kinetic energy; thus, mitigating ventricular remodeling. However, it remains
+unclear what would be the consequences of reduced myocardial contractility or altered intracardiac flow
+dynamics on valve morphogenesis. Thus, we seek to integrate light-sheet (Bessel-Gaussian beam arrays) with
+a new 2) light-field (microlens array). The former provides non-diffracting illumination, and the latter provides
+volumetric detection as a paradigm shift to image both myocardial contractility and intracardiac flow dynamics
+in the outflow tract (OFT). Our preliminary study reveals that shear-mediated Notch1b expression in the
+endocardium of OFT regulates endothelial-to-mesenchymal transition (EndoMT); however, the
+mechanotransduction causation whereby myocardial contractility and intracardiac shear stress reciprocally
+interact to form bicuspid valves and subsequent remodeling to multi-cuspid valves remains elusive. Thus, our
+hypothesis is that integration of the new light-field system with imaging computation enhances spatiotemporal
+resolution needed to decouple myocardial contraction from intracardiac flow dynamics that modulates
+Notch1b-EndoMT to mediate valve morphogenesis in the OFT. In Aim 1, we plan to integrate light-sheet with
+the new light-field system for 4-D volumetric imaging of valve formation in the OFT. Our goal is to capture
+myocardial contractility and intracardiac shear stress at one snapshot. In Aim 2, we will demonstrate the
+interaction between intracardiac shear stress and myocardial contractility underlying valve morphogenesis. Our
+goal is to decouple hemodynamic shear from contractile forces that mediate Notch1b-mediated EndoMT. In
+Aim 3, we will determine the relative role of shear stress and contractility underlying Notch1b-mediated
+EndoMT. Our goal is to elucidate the relative role of contractility and intracardiac stress to transmit Notch1b-
+EndoMT signaling underlying bicuspid-valve formation. Overall, our team aims to establish the micro-
+environment in which intracardiac flow dynamics and myocardial contractility interact to modulate OFT valve
+formation, with clinical significance to aortic valvular disease. 4D Imaging;Aortic Valve Stenosis;Arteries;Bicuspid;Biomechanics;Blood flow;Cardiac;Computer Models;Congenital Heart Defects;Coupled;Cuspid;Custom;Data Reporting;Defect;Detection;ERBB2 gene;Endocardium;Endothelium;Etiology;Fluorescence Microscopy;Funding;Gaussian model;Genes;Genetic Models;Genetic Recombination;Goals;Heart;Image;Kinetics;Lasers;Light;Lighting;Liquid substance;Machine Learning;Mediating;Mesenchymal;Microscopy;Mitral Valve;Morphogenesis;Mutation;Myocardial;Myocardial Contraction;Neuregulin 1;Operative Surgical Procedures;Optics;Receptor Protein-Tyrosine Kinases;Reporter;Resolution;Role;Signal Pathway;Signal Transduction;Stress;Structure;System;Testing;Time;Transgenic Model;Transgenic Organisms;Variant;Ventricular;Ventricular Remodeling;aortic valve;aortic valve disorder;automated segmentation;base;clinically significant;congenital heart disorder;erbB-2 Receptor;hemodynamics;imaging Segmentation;mechanotransduction;multidisciplinary;notch protein;optical imaging;response;shear stress;simulation;single-cell RNA sequencing;spatiotemporal;transcriptomics Shear stress and light-field to elucidate the initiation of cardiac outflow tract","Shear Stress and Light-Field to Elucidate the Initiation of Cardiac Outflow Tract
+Biomechanical forces modulate cardiac morphogenesis, and mutations in mechano-sensitive signaling
+pathways result in congenital heart defects. During the previous funding cycle, our team custom-built a Light-
+Sheet Fluorescence Microscopy (LSFM) with sub-voxel resolution to enhance axial resolution needed to
+provide a large field-of-view. This laser optical system allowed for imaging pulsatile vs. oscillatory shear stress-
+mediated Notch signaling to initiate endocardial trabeculation. We demonstrated that spatial (/x) and
+temporal (/t) variations in shear stress modulates Notch-EphrinB2-Neureguilin-1 signaling in the
+endocardium to activate erb-B2 receptor tyrosine kinase (ErbB2) that promotes proliferation of trabeculation.
+By integrating LSFM, computation, and transgenic models, we further established that trabeculation dissipates
+intracardiac shear stress-generated kinetic energy; thus, mitigating ventricular remodeling. However, it remains
+unclear what would be the consequences of reduced myocardial contractility or altered intracardiac flow
+dynamics on valve morphogenesis. Thus, we seek to integrate light-sheet (Bessel-Gaussian beam arrays) with
+a new 2) light-field (microlens array). The former provides non-diffracting illumination, and the latter provides
+volumetric detection as a paradigm shift to image both myocardial contractility and intracardiac flow dynamics
+in the outflow tract (OFT). Our preliminary study reveals that shear-mediated Notch1b expression in the
+endocardium of OFT regulates endothelial-to-mesenchymal transition (EndoMT); however, the
+mechanotransduction causation whereby myocardial contractility and intracardiac shear stress reciprocally
+interact to form bicuspid valves and subsequent remodeling to multi-cuspid valves remains elusive. Thus, our
+hypothesis is that integration of the new light-field system with imaging computation enhances spatiotemporal
+resolution needed to decouple myocardial contraction from intracardiac flow dynamics that modulates
+Notch1b-EndoMT to mediate valve morphogenesis in the OFT. In Aim 1, we plan to integrate light-sheet with
+the new light-field system for 4-D volumetric imaging of valve formation in the OFT. Our goal is to capture
+myocardial contractility and intracardiac shear stress at one snapshot. In Aim 2, we will demonstrate the
+interaction between intracardiac shear stress and myocardial contractility underlying valve morphogenesis. Our
+goal is to decouple hemodynamic shear from contractile forces that mediate Notch1b-mediated EndoMT. In
+Aim 3, we will determine the relative role of shear stress and contractility underlying Notch1b-mediated
+EndoMT. Our goal is to elucidate the relative role of contractility and intracardiac stress to transmit Notch1b-
+EndoMT signaling underlying bicuspid-valve formation. Overall, our team aims to establish the micro-
+environment in which intracardiac flow dynamics and myocardial contractility interact to modulate OFT valve
+formation, with clinical significance to aortic valvular disease.",10146767,R01HL129727,['R01HL129727'],HL,https://reporter.nih.gov/project-details/10146767,R01,2021,459651

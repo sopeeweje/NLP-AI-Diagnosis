@@ -1,0 +1,282 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"We propose to design efficient computer algorithms providing novel and/or
+ improved methods and software for a number of computational problems in
+ molecular biology.  the emphasis will b eon blending theoretical results
+ with practical concerns.  All software emerging from the project will be
+ made available free of charge.  The proposal and the principal
+ investigator's current research efforts are divided into three projects.
+ 
+ The first project centers on computational problems in the physical mapping
+ and sequencing of DNA.  We propose to continue refining a software system
+ for the fragment assembly problem, i.e., determine the most likely complete
+ DNA sequence consistent with electrophoresis data gathered from cloned
+ fragments.  The refinements consist of improved algorithms for a number of
+ the phases of the computation, expanding the functionality to support user-
+ interaction, and developing a complete environment to support megabase
+ sequencing projects.  The methods we developed for fragment assembly also
+ apply in large part to the problem of determining physical maps via various
+ fingerprinting techniques.  We have formulated a generalized assembly
+ problem and plan to build a system that is capable of solving such problems
+ for any combination of restriction map, digest, and hybridization
+ information about the clones.
+ 
+ The second project is to design algorithms for a number of computational
+ problems arising in molecular biology.  Progress in this arena tends to be
+ inspired rather than calculated.  We demonstrate our track record of
+ producing interesting results and then describe the following problems for
+ which we have a number of ideas and preliminary results:  sublinear
+ similarity searches, restriction map comparison, super pattern matching
+ (gene recognition), determining restriction maps from digest data,
+ designing oligonucleotide probes, and RNA secondary structure prediction.
+ 
+ The objective of the last project is to develop a pattern matching system
+ permitting the expression of complex patterns and their reduction to
+ efficient search strategies.  The pattern specification language is simple
+ yet powerful enough to succinctly express the most complex patterns of
+ biological interest.  An ""expert system"" compiler for the language will
+ examine a pattern and will choose a search strategy or combination of
+ strategies from a built-in library of basic search techniques.  The build-
+ in library will contain implementations of the best available search
+ algorithms for exact and approximate matches to keywords, repeats, and
+ regular expressions.  Using a dynamic-programming style calculation the
+ expert compiler chooses the optimal backtracking strategy over the basic
+ library searches.  We have proven the efficacy of this approach on a small
+ prototype for a subset of the language that is useful for specifying
+ protein motifs.  We now propose to embark upon the construction of a
+ complete system.
+ artificial intelligence; computer assisted sequence analysis; computer data analysis; computer program /software; information retrieval; nucleic acid sequence EFFICIENT SOFTWARE FOR THE ANALYSIS OF BIOSEQUENCES","We propose to design efficient computer algorithms providing novel and/or
+ improved methods and software for a number of computational problems in
+ molecular biology.  the emphasis will b eon blending theoretical results
+ with practical concerns.  All software emerging from the project will be
+ made available free of charge.  The proposal and the principal
+ investigator's current research efforts are divided into three projects.
+ 
+ The first project centers on computational problems in the physical mapping
+ and sequencing of DNA.  We propose to continue refining a software system
+ for the fragment assembly problem, i.e., determine the most likely complete
+ DNA sequence consistent with electrophoresis data gathered from cloned
+ fragments.  The refinements consist of improved algorithms for a number of
+ the phases of the computation, expanding the functionality to support user-
+ interaction, and developing a complete environment to support megabase
+ sequencing projects.  The methods we developed for fragment assembly also
+ apply in large part to the problem of determining physical maps via various
+ fingerprinting techniques.  We have formulated a generalized assembly
+ problem and plan to build a system that is capable of solving such problems
+ for any combination of restriction map, digest, and hybridization
+ information about the clones.
+ 
+ The second project is to design algorithms for a number of computational
+ problems arising in molecular biology.  Progress in this arena tends to be
+ inspired rather than calculated.  We demonstrate our track record of
+ producing interesting results and then describe the following problems for
+ which we have a number of ideas and preliminary results:  sublinear
+ similarity searches, restriction map comparison, super pattern matching
+ (gene recognition), determining restriction maps from digest data,
+ designing oligonucleotide probes, and RNA secondary structure prediction.
+ 
+ The objective of the last project is to develop a pattern matching system
+ permitting the expression of complex patterns and their reduction to
+ efficient search strategies.  The pattern specification language is simple
+ yet powerful enough to succinctly express the most complex patterns of
+ biological interest.  An ""expert system"" compiler for the language will
+ examine a pattern and will choose a search strategy or combination of
+ strategies from a built-in library of basic search techniques.  The build-
+ in library will contain implementations of the best available search
+ algorithms for exact and approximate matches to keywords, repeats, and
+ regular expressions.  Using a dynamic-programming style calculation the
+ expert compiler chooses the optimal backtracking strategy over the basic
+ library searches.  We have proven the efficacy of this approach on a small
+ prototype for a subset of the language that is useful for specifying
+ protein motifs.  We now propose to embark upon the construction of a
+ complete system.
+",2237672,R01LM004960,['R01LM004960'],LM,https://reporter.nih.gov/project-details/2237672,R01,1995,143074,0.845130331277133
+"Clinically significant delays in the acquisition of language are the most       
+prevalent developmental problem in preschool children.  Early                   
+intervention is crucial since children with language delays are at greatly      
+increased risk for learning disabilities and behavioral disorders, but          
+intervention resources are scarce and not sufficient to provide the             
+intensive individualized instruction that effective intervention requires.      
+The objective of this project is to develop a computer-based Intelligent        
+Early Language Intervention System that will supplement the efforts of          
+those who work with language impaired children.  The system will                
+combine traditional intervention methods with strategies derived from           
+contemporary linguistic theory, and will incorporate an intelligent             
+computer-aided training (ICAT) system that uses artificial intelligence         
+to generate customized language intervention strategies based on an             
+individual~s performance.  In Phase I we developed and field tested a           
+prototype system.  Our Phase II objectives are to (a) further develop           
+the prototype activities, (b) develop additional activities for children at     
+later stages of language development, ' field test and validate the             
+effectiveness of program components, and (d) integrate all components           
+into the ICAT framework.  We anticipate this system will be an asset            
+to clinical service providers, teachers, and parents who work with              
+children who have language impairments.                                         
+ artificial intelligence; behavioral /social science research tag; clinical research; computer assisted instruction; computer program /software; human subject; language development; language disorders; method development; preschool child (1-5) INTELLIGENT EARLY LANGUAGE INTERVENTION SYSTEM","Clinically significant delays in the acquisition of language are the most       
+prevalent developmental problem in preschool children.  Early                   
+intervention is crucial since children with language delays are at greatly      
+increased risk for learning disabilities and behavioral disorders, but          
+intervention resources are scarce and not sufficient to provide the             
+intensive individualized instruction that effective intervention requires.      
+The objective of this project is to develop a computer-based Intelligent        
+Early Language Intervention System that will supplement the efforts of          
+those who work with language impaired children.  The system will                
+combine traditional intervention methods with strategies derived from           
+contemporary linguistic theory, and will incorporate an intelligent             
+computer-aided training (ICAT) system that uses artificial intelligence         
+to generate customized language intervention strategies based on an             
+individual~s performance.  In Phase I we developed and field tested a           
+prototype system.  Our Phase II objectives are to (a) further develop           
+the prototype activities, (b) develop additional activities for children at     
+later stages of language development, ' field test and validate the             
+effectiveness of program components, and (d) integrate all components           
+into the ICAT framework.  We anticipate this system will be an asset            
+to clinical service providers, teachers, and parents who work with              
+children who have language impairments.                                         
+",2014568,R44DC002601,['R44DC002601'],DC,https://reporter.nih.gov/project-details/2014568,R44,1997,408989,0.845130331277133
+"The cornea is a principal refractive element in the eye; corneal                
+transparency and corneal shape determine its optical qualities.                 
+Corneal epithelial edema, stromal edema and corneal shape anomalies             
+can independently or collectively degrade visual performance inthe              
+form of increased internal ligh scatter andoptical aberrations due to           
+irregular astigmatism.  The central theme of this research proposalis           
+the refinement and application of a mathematical model that                     
+integrates the thermodynamic description of corneal epithelial, stromal         
+and endothelial transport properties into a model of corneal hydration          
+control.  This is combined with methods to classify shape anomalies             
+and means to assess the optical quality of the corneal surface through          
+the analysis of corneal topography.                                             
+ artificial intelligence; atrial natriuretic peptide; biological transport; body water dehydration; cornea edema; corneal endothelium; corneal epithelium; corneal stroma; electrophysiology; human subject; intraocular fluid; laboratory rabbit; mathematical model; membrane permeability; model design /development; morphology; nitric oxide; refractive keratoplasty; thermodynamics; visual perception INTEGRATED ASSESSMENT OF CORNEAL FORM AND FUNCTION","The cornea is a principal refractive element in the eye; corneal                
+transparency and corneal shape determine its optical qualities.                 
+Corneal epithelial edema, stromal edema and corneal shape anomalies             
+can independently or collectively degrade visual performance inthe              
+form of increased internal ligh scatter andoptical aberrations due to           
+irregular astigmatism.  The central theme of this research proposalis           
+the refinement and application of a mathematical model that                     
+integrates the thermodynamic description of corneal epithelial, stromal         
+and endothelial transport properties into a model of corneal hydration          
+control.  This is combined with methods to classify shape anomalies             
+and means to assess the optical quality of the corneal surface through          
+the analysis of corneal topography.                                             
+",2710832,R01EY003311,['R01EY003311'],EY,https://reporter.nih.gov/project-details/2710832,R01,1998,239717,0.845130331277133
+"DESCRIPTION (Adapted from the Investigator's Abstract): Bold steps must be      
+taken to advance our understanding of the genetic and associated co-            
+variates affecting the inheritance of complex diseases. To that end, this       
+proposal will develop improved quantitative methods to detect genetic           
+factors contributing to increased susceptibility to complex disorders and       
+implement these methods in software for distribution to the research            
+community.                                                                      
+                                                                                
+The methods will concentrate on the use of classification techniques            
+applied to allele sharing data and other risk factors which affect the          
+trait. Allele sharing methods for mapping genes will be extended to             
+include the classification methods known as latent class models, cluster        
+analysis, and artificial neural networks, as well as a novel use of             
+logistic regression Co-variates such as gender, parental diagnosis, or          
+other concomitant factors will be systematically studied through                
+applications to both stimulated and existing data sets. An additional goal      
+is to determine the optimal distribution of relative pairs (e.g. siblings,      
+first cousins) for these methods. Of great importance to this proposal is       
+the development of well-documented, user-friendly software and                  
+documentation which will be distributed to the scientific community via         
+the Internet. Existing software developed by the PI will be extensively         
+expanded for latent class models. Existing cluster analysis software will       
+be modified and combined for ease of use.                                       
+                                                                                
+This proposal consists of theoretical exploration, computer simulation,         
+data analysis, and software development. First, solutions of theoretical        
+questions relating to classification techniques will be pursued; second,        
+adaptation of computer programs to implement the analytic methods, and          
+investigation into alternative research strategies will be accomplished.        
+The new strategies will be applied to stimulated data, and finally, to          
+existing data sets of pedigrees in which a complex trait has been               
+diagnosed. Findings from this research may contribute to the ability to         
+locate susceptibility loci in complex traits and to the clarification of        
+those etiological mechanisms responsible for susceptibility.                    
+ alleles; analytical method; artificial intelligence; biomedical resource; computer program /software; computer simulation; data collection methodology /evaluation; disease /disorder classification; disease /disorder etiology; family genetics; gene environment interaction; gene expression; genetic disorder; genetic disorder diagnosis; genetic mapping; genetic markers; genetic susceptibility; human data; mathematical model; model design /development; quantitative trait loci; statistics /biometry CLASSIFICATION METHODS FOR DETECTING DISEASE LOCI","DESCRIPTION (Adapted from the Investigator's Abstract): Bold steps must be      
+taken to advance our understanding of the genetic and associated co-            
+variates affecting the inheritance of complex diseases. To that end, this       
+proposal will develop improved quantitative methods to detect genetic           
+factors contributing to increased susceptibility to complex disorders and       
+implement these methods in software for distribution to the research            
+community.                                                                      
+                                                                                
+The methods will concentrate on the use of classification techniques            
+applied to allele sharing data and other risk factors which affect the          
+trait. Allele sharing methods for mapping genes will be extended to             
+include the classification methods known as latent class models, cluster        
+analysis, and artificial neural networks, as well as a novel use of             
+logistic regression Co-variates such as gender, parental diagnosis, or          
+other concomitant factors will be systematically studied through                
+applications to both stimulated and existing data sets. An additional goal      
+is to determine the optimal distribution of relative pairs (e.g. siblings,      
+first cousins) for these methods. Of great importance to this proposal is       
+the development of well-documented, user-friendly software and                  
+documentation which will be distributed to the scientific community via         
+the Internet. Existing software developed by the PI will be extensively         
+expanded for latent class models. Existing cluster analysis software will       
+be modified and combined for ease of use.                                       
+                                                                                
+This proposal consists of theoretical exploration, computer simulation,         
+data analysis, and software development. First, solutions of theoretical        
+questions relating to classification techniques will be pursued; second,        
+adaptation of computer programs to implement the analytic methods, and          
+investigation into alternative research strategies will be accomplished.        
+The new strategies will be applied to stimulated data, and finally, to          
+existing data sets of pedigrees in which a complex trait has been               
+diagnosed. Findings from this research may contribute to the ability to         
+locate susceptibility loci in complex traits and to the clarification of        
+those etiological mechanisms responsible for susceptibility.                    
+",2865173,R01AA012239,['R01AA012239'],AA,https://reporter.nih.gov/project-details/2865173,R01,1998,162275,0.7698260298314263
+"DESCRIPTION (adapted from applicant's abstract):  A central issue in            
+behavioral neuroscience is how alterations in neural pathways mediate the       
+durable behavior changes involved in learning.  Taste aversion conditioning     
+is an excellent model for studying the neural changes involved in learning      
+because this conditioning can occur in a single trial, despite lengthy          
+delays between conditioned and unconditioned stimuli.  The proposed studies     
+are based on the identification of a cellular correlate of the behavioral       
+expression of a conditioned taste aversion, namely, cells in the nucleus of     
+the solitary tract.  C-fos induction occurs in cells in the nucleus of the      
+solitary tract in response to a taste made aversive by conditioning, but not    
+in response to the same taste prior to conditioning or to a taste (quinine)     
+which is innately aversive.  Proposed studies will combine this cellular        
+measure with behavioral assessment to further assess the cellular c-fos         
+response and its reliability as a marker of learning.  Studies will also        
+examine the functional importance of cells in the nucleus of the solitary       
+tract which display c-fos induction during expression of this learning,         
+using asymmetrical lesion techniques.  Additionally, studies will continue      
+to define the forebrain pathways critical to this learning, with a focus on     
+ipsilateral connections between the amygdala and the nucleus of the solitary    
+tract which appear necessary for cellular, as well as behavioral,               
+manifestations of this learning.  The role of insular cortex will also be       
+examined.  Finally, studies will identify the targets of activated modified     
+behavioral response to a taste after conditioning.  By defining the neural      
+pathways and cell types involved in CTA learning, this project provide the      
+groundwork for eventually characterizing the plastic changes within and         
+between cells which underlie this learning.                                     
+ amygdala; behavior test; behavioral /social science research tag; biomarker; brain subcortex; conditioning; experimental brain lesion; gene expression; histochemistry /cytochemistry; in situ hybridization; laboratory rat; learning; negative reinforcements; neuroanatomy; prosencephalon; protooncogene; solitary tract nucleus; taste NEURAL MEDIATION OF CONDITIONED TASTE AVERSIONS","DESCRIPTION (adapted from applicant's abstract):  A central issue in            
+behavioral neuroscience is how alterations in neural pathways mediate the       
+durable behavior changes involved in learning.  Taste aversion conditioning     
+is an excellent model for studying the neural changes involved in learning      
+because this conditioning can occur in a single trial, despite lengthy          
+delays between conditioned and unconditioned stimuli.  The proposed studies     
+are based on the identification of a cellular correlate of the behavioral       
+expression of a conditioned taste aversion, namely, cells in the nucleus of     
+the solitary tract.  C-fos induction occurs in cells in the nucleus of the      
+solitary tract in response to a taste made aversive by conditioning, but not    
+in response to the same taste prior to conditioning or to a taste (quinine)     
+which is innately aversive.  Proposed studies will combine this cellular        
+measure with behavioral assessment to further assess the cellular c-fos         
+response and its reliability as a marker of learning.  Studies will also        
+examine the functional importance of cells in the nucleus of the solitary       
+tract which display c-fos induction during expression of this learning,         
+using asymmetrical lesion techniques.  Additionally, studies will continue      
+to define the forebrain pathways critical to this learning, with a focus on     
+ipsilateral connections between the amygdala and the nucleus of the solitary    
+tract which appear necessary for cellular, as well as behavioral,               
+manifestations of this learning.  The role of insular cortex will also be       
+examined.  Finally, studies will identify the targets of activated modified     
+behavioral response to a taste after conditioning.  By defining the neural      
+pathways and cell types involved in CTA learning, this project provide the      
+groundwork for eventually characterizing the plastic changes within and         
+between cells which underlie this learning.                                     
+",2858219,R01NS037040,['R01NS037040'],NS,https://reporter.nih.gov/project-details/2858219,R01,1999,126411,0.7698260298314263

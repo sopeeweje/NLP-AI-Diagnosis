@@ -1,0 +1,340 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The long-term objective of our research group is to facilitate automatic        
+or semi-automatic classification and retrieval of natural language texts,       
+in support of reducing the cost and improving the quality of computerized       
+medical information. This proposal develops further and applies a novel         
+approach, the Linear Least Squares Fit (LLSF) mapping, to document              
+indexing and document retrieval of the MEDLINE database. LLSF mapping is        
+a statistical method developed by the PI for learning human knowledge           
+about matching queries, documents, and canonical concepts. The goal is to       
+improve the quality (recall and precision) of automatic document indexing       
+and retrieval, which cannot be achieved by surface-based matching without       
+using human knowledge or thesaurus-based matching dependent on manually         
+developed synonyms. This project applies LLSF to MEDLINE, the world's           
+largest and most frequently used on-line database, to evaluate the              
+effectiveness of this method and to explore the practical potential on          
+large scale databases. The specific aims and methods are:                       
+                                                                                
+l. To collect data needed for the training and evaluation of the LLSF           
+method. A collaboration with another research institute is planned for          
+utilizing and refining a large collection of MEDLINE retrieval data. A          
+sampling of MEDLINE searches at the Mayo Clinic will be employed for            
+obtaining additional tasks.                                                     
+                                                                                
+2. To develop automatic noise reduction techniques for improving both the       
+accuracy of the LLSF mapping and the efficiency of the computation. A           
+multi-step noise reduction in the training process of LLSF will be              
+investigated, including a statistical term weighting for the removal of         
+non-informative terms, a truncated singular value decomposition (SVD) for       
+reducing the noise at the semantic structure level, and the truncation of       
+insignificant elements in the LLSF solution matrix for noise-reduction at       
+the level of term-to-concept mapping.                                           
+                                                                                
+3. To scale-up the training capacity for enabling the LLSF to accommodate       
+the large size of MEDLINE data. A split-merge approach decomposes a large       
+training sample into tractable subsets, computes an LLSF mapping function       
+for each subset, and then merges the lcal mapping functions into a global       
+one.                                                                            
+                                                                                
+4. To improve the computational efficiency by employing algorithms              
+optimized for sparse matrices and for noise reduction. The potential            
+solutions include the Block Lanczos truncated SVD algorithm which can           
+reduce the cubic time complexity of standard SVD (on dense matrices) to a       
+quadratic complexity, a QR decomposition which solves the LLSF without          
+SVD, a sparse matrix algorithm which has shown a speed-up in matrix             
+multiplication and cosine computation by a factor of l to 4 magnitudes,         
+and parallel computing.                                                         
+                                                                                
+5. To evaluate the effectiveness of LLSF on large MEDLINE document sets         
+and compare with the performance of alternate indexing/retrieval systems.       
+ computer program /software; data collection methodology /evaluation; indexing; information retrieval; information systems; semantics; statistics /biometry; vocabulary development for information system LLSF MAPPING FOR INDEXING AND RETRIEVAL OF MEDLINE","The long-term objective of our research group is to facilitate automatic        
+or semi-automatic classification and retrieval of natural language texts,       
+in support of reducing the cost and improving the quality of computerized       
+medical information. This proposal develops further and applies a novel         
+approach, the Linear Least Squares Fit (LLSF) mapping, to document              
+indexing and document retrieval of the MEDLINE database. LLSF mapping is        
+a statistical method developed by the PI for learning human knowledge           
+about matching queries, documents, and canonical concepts. The goal is to       
+improve the quality (recall and precision) of automatic document indexing       
+and retrieval, which cannot be achieved by surface-based matching without       
+using human knowledge or thesaurus-based matching dependent on manually         
+developed synonyms. This project applies LLSF to MEDLINE, the world's           
+largest and most frequently used on-line database, to evaluate the              
+effectiveness of this method and to explore the practical potential on          
+large scale databases. The specific aims and methods are:                       
+                                                                                
+l. To collect data needed for the training and evaluation of the LLSF           
+method. A collaboration with another research institute is planned for          
+utilizing and refining a large collection of MEDLINE retrieval data. A          
+sampling of MEDLINE searches at the Mayo Clinic will be employed for            
+obtaining additional tasks.                                                     
+                                                                                
+2. To develop automatic noise reduction techniques for improving both the       
+accuracy of the LLSF mapping and the efficiency of the computation. A           
+multi-step noise reduction in the training process of LLSF will be              
+investigated, including a statistical term weighting for the removal of         
+non-informative terms, a truncated singular value decomposition (SVD) for       
+reducing the noise at the semantic structure level, and the truncation of       
+insignificant elements in the LLSF solution matrix for noise-reduction at       
+the level of term-to-concept mapping.                                           
+                                                                                
+3. To scale-up the training capacity for enabling the LLSF to accommodate       
+the large size of MEDLINE data. A split-merge approach decomposes a large       
+training sample into tractable subsets, computes an LLSF mapping function       
+for each subset, and then merges the lcal mapping functions into a global       
+one.                                                                            
+                                                                                
+4. To improve the computational efficiency by employing algorithms              
+optimized for sparse matrices and for noise reduction. The potential            
+solutions include the Block Lanczos truncated SVD algorithm which can           
+reduce the cubic time complexity of standard SVD (on dense matrices) to a       
+quadratic complexity, a QR decomposition which solves the LLSF without          
+SVD, a sparse matrix algorithm which has shown a speed-up in matrix             
+multiplication and cosine computation by a factor of l to 4 magnitudes,         
+and parallel computing.                                                         
+                                                                                
+5. To evaluate the effectiveness of LLSF on large MEDLINE document sets         
+and compare with the performance of alternate indexing/retrieval systems.       
+",2392815,R29LM005714,['R29LM005714'],LM,https://reporter.nih.gov/project-details/2392815,R29,1997,95259,0.7038038463781968
+"DESCRIPTION (Adapted from applicant's abstract):  The proposed EEG              
+MagicMarker software offers a new methodology for the display and               
+analysis of digitized EEG records.  Segments of similar EEG                     
+activity are clustered together, clearly differentiating                        
+background, paroxysmal activity, and patient state transitions,                 
+e.g., sleep stages.  The analysis only considers the content of                 
+the current EEG and requires no thresholds or classification                    
+functions derived from a training set.                                          
+                                                                                
+A novel user interface allows interactive partitioning of the                   
+hierarchical cluster dendrogram in a method already familiar to                 
+many users.  Each node can be expanded or collapsed revealing more              
+or less detail by clicking on the plus or minus sign to the left                
+of the node.  The user manipulates the tree to display the                      
+appropriate partition and prints the report for a summary of their              
+findings.  Each node contains a complete visual summary of the                  
+segments in that power spectrum or by contour plots of delta,                   
+theta, alpha, and beta activities.  Hyper-links from the cluster                
+nodes to the applicant's Insight EEG review software offers                     
+immediate access to pages of interest.                                          
+ artificial intelligence; brain disorder diagnosis; computer assisted diagnosis; computer human interaction; computer program /software; computer system design /evaluation; diagnosis design /evaluation; electroencephalography; epilepsy; gene complementation; human data; medical records; method development; sleep disorders CLUSTERING AND HYPER LINKING OF LONG TERM EEGS","DESCRIPTION (Adapted from applicant's abstract):  The proposed EEG              
+MagicMarker software offers a new methodology for the display and               
+analysis of digitized EEG records.  Segments of similar EEG                     
+activity are clustered together, clearly differentiating                        
+background, paroxysmal activity, and patient state transitions,                 
+e.g., sleep stages.  The analysis only considers the content of                 
+the current EEG and requires no thresholds or classification                    
+functions derived from a training set.                                          
+                                                                                
+A novel user interface allows interactive partitioning of the                   
+hierarchical cluster dendrogram in a method already familiar to                 
+many users.  Each node can be expanded or collapsed revealing more              
+or less detail by clicking on the plus or minus sign to the left                
+of the node.  The user manipulates the tree to display the                      
+appropriate partition and prints the report for a summary of their              
+findings.  Each node contains a complete visual summary of the                  
+segments in that power spectrum or by contour plots of delta,                   
+theta, alpha, and beta activities.  Hyper-links from the cluster                
+nodes to the applicant's Insight EEG review software offers                     
+immediate access to pages of interest.                                          
+",2034824,R43MH055895,['R43MH055895'],MH,https://reporter.nih.gov/project-details/2034824,R43,1997,75076,0.7038038463781968
+"DESCRIPTION (Adapted from the Investigator's Abstract):  To date no unitary     
+theory of cortical function has emerged despite a long history of cortical      
+research.  Single cell approaches in primary visual cortex, as exemplified      
+by Hubeland Wiesel's studies and by recent work on parallel visual pathways,    
+have produced functional circuit diagrams arguing for hierarchical,             
+feedforward processing.  Alternatively, artificial neural network research      
+argues that the cortex might represent a distributed feedback circuit in        
+which intrinsic dynamics converge in stable states that represent               
+computational solutions.  these two types of models predict very different      
+activation patterns of the circuit.  The goal of the research is to             
+elucidate the three-dimensional spatio-temporal activity patterns intrinsic     
+to the cortical microcircuit and to identify their underlying circuits.         
+Studies will be carried out with brain slices from mouse visual cortex using    
+calcium imaging with a cooled CCD camera, a photodiode array and two-photon     
+microscope.  These techniques allow the investigators to follow the activity    
+of neuronal ensembles across the entire slice with single-cell and              
+submillisecond resolution.  Specifically, the investigators will (i)            
+determine the three-dimensional activity patterns present in a brain slice      
+(ii) establish the anatomical and functional connectivity underlying these      
+dynamics and (iii) identify neurons playing key roles and study their effect    
+in altering circuit dynamics.  These studies may help determine whether         
+cortical neurons can activate in preferential labeled lines, as predicted by    
+feedforward models or in a widely distributed pattern, as predicted by          
+feedback models, shedding light on the functional units of cortical             
+microcircuitry and their co-ordination in cortical function as a whole.         
+Finally, they will help understand the central pathophysiological               
+consequences of amblyopia and strabismus, as well as help design therapeutic    
+strategies aimed at compensating for these defect.  A more complete             
+understanding of the circuitry will also improve the analysis of visual         
+evoked potentials (VEP) and thus the measurement of acuity, contrast            
+sensitivity and chromatic sensitivity of preverbal children and in early        
+diagnosis of visual pathologies.                                                
+ calcium indicator; confocal scanning microscopy; electrophysiology; evoked potentials; image processing; laboratory mouse; neural information processing; neuroanatomy; neurons; single cell analysis; synapses; vision disorders; visual cortex IMAGING FUNCTIONAL CONNECTIVITY IN VISUAL CORTEX","DESCRIPTION (Adapted from the Investigator's Abstract):  To date no unitary     
+theory of cortical function has emerged despite a long history of cortical      
+research.  Single cell approaches in primary visual cortex, as exemplified      
+by Hubeland Wiesel's studies and by recent work on parallel visual pathways,    
+have produced functional circuit diagrams arguing for hierarchical,             
+feedforward processing.  Alternatively, artificial neural network research      
+argues that the cortex might represent a distributed feedback circuit in        
+which intrinsic dynamics converge in stable states that represent               
+computational solutions.  these two types of models predict very different      
+activation patterns of the circuit.  The goal of the research is to             
+elucidate the three-dimensional spatio-temporal activity patterns intrinsic     
+to the cortical microcircuit and to identify their underlying circuits.         
+Studies will be carried out with brain slices from mouse visual cortex using    
+calcium imaging with a cooled CCD camera, a photodiode array and two-photon     
+microscope.  These techniques allow the investigators to follow the activity    
+of neuronal ensembles across the entire slice with single-cell and              
+submillisecond resolution.  Specifically, the investigators will (i)            
+determine the three-dimensional activity patterns present in a brain slice      
+(ii) establish the anatomical and functional connectivity underlying these      
+dynamics and (iii) identify neurons playing key roles and study their effect    
+in altering circuit dynamics.  These studies may help determine whether         
+cortical neurons can activate in preferential labeled lines, as predicted by    
+feedforward models or in a widely distributed pattern, as predicted by          
+feedback models, shedding light on the functional units of cortical             
+microcircuitry and their co-ordination in cortical function as a whole.         
+Finally, they will help understand the central pathophysiological               
+consequences of amblyopia and strabismus, as well as help design therapeutic    
+strategies aimed at compensating for these defect.  A more complete             
+understanding of the circuitry will also improve the analysis of visual         
+evoked potentials (VEP) and thus the measurement of acuity, contrast            
+sensitivity and chromatic sensitivity of preverbal children and in early        
+diagnosis of visual pathologies.                                                
+",2485367,R01EY011787,['R01EY011787'],EY,https://reporter.nih.gov/project-details/2485367,R01,1998,255314,0.7038038463781968
+"A prototype robotic instrument, ""Stericulture,"" has been developed to feed      
+and harvest cell cultures in an aseptic environment.  The instrument is         
+microprocessor controlled.  It was designed to protect the cultures from        
+contamination and the technologist from hazardous exposure, by                  
+dramatically reducing the handling of the petri dishes.  During operation       
+the repetitive exacting tasks of media dispensing and removal, and petri        
+dish manipulation are mechanically accomplished within a hood or P3             
+containment facility.  Culture dish lids are removed and replaced, media        
+is added and removed in timed sequences.  The concept can be expanded to        
+virtually any cell culture lab.  The specific aims of this application are      
+(1) Test the mechanical reliability, accuracy and durability of                 
+Stericulture and its peripheral pumping systems.  (2) Conduct beta site         
+tests at two cytogenetic laboratories and one molecular biology cell            
+culture laboratory to:  a) Evaluate existing computer programming and           
+written documentation.  b) Test the device for reliability in the feeding       
+and harvesting of cell cultures from amniocytes and biopsies                    
+(fibroblasts).  The long-term objective (Phase II) is to develop an             
+integrated liquid handling system (LHS) with Stericulture as its core.          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  Development of robotic instrument that        
+functions in an aseptic environment in a cell culture lab.                      
+ antiseptic sterilization; artificial intelligence; bioengineering /biomedical engineering; biomedical automation; biomedical equipment development; imaging /visualization /scanning; karyotype; laboratory accident /infection; robotics; tissue /cell culture ROBOTIC DEVICE FOR ASEPTIC PROCESSING OF CELL CULTURES","A prototype robotic instrument, ""Stericulture,"" has been developed to feed      
+and harvest cell cultures in an aseptic environment.  The instrument is         
+microprocessor controlled.  It was designed to protect the cultures from        
+contamination and the technologist from hazardous exposure, by                  
+dramatically reducing the handling of the petri dishes.  During operation       
+the repetitive exacting tasks of media dispensing and removal, and petri        
+dish manipulation are mechanically accomplished within a hood or P3             
+containment facility.  Culture dish lids are removed and replaced, media        
+is added and removed in timed sequences.  The concept can be expanded to        
+virtually any cell culture lab.  The specific aims of this application are      
+(1) Test the mechanical reliability, accuracy and durability of                 
+Stericulture and its peripheral pumping systems.  (2) Conduct beta site         
+tests at two cytogenetic laboratories and one molecular biology cell            
+culture laboratory to:  a) Evaluate existing computer programming and           
+written documentation.  b) Test the device for reliability in the feeding       
+and harvesting of cell cultures from amniocytes and biopsies                    
+(fibroblasts).  The long-term objective (Phase II) is to develop an             
+integrated liquid handling system (LHS) with Stericulture as its core.          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:  Development of robotic instrument that        
+functions in an aseptic environment in a cell culture lab.                      
+",2672772,R44AI039895,['R44AI039895'],AI,https://reporter.nih.gov/project-details/2672772,R44,1998,125226,0.5814124256359271
+"Colorectal carcinoma is the second leading cause of cancer deaths in the        
+United States today.  In an effort to reduce mortality, Congress                
+recently included a provision in the Balanced Budget Act of 1997 to             
+support screening colonoscopy as a means for early detection and removal        
+of colorectal polyps, the precursors to cancer.  In this country alone,         
+more than 68 million people are eligible for colorectal screening, but          
+the majority are unlikely to comply with screening recommendations              
+because of the costs, risks, discomfort, and inconvenience associated           
+with traditional endoscopy.  Furthermore, even if a small fraction of           
+eligible persons are examined, the number of available                          
+gastroenterologists would be insufficient to perform so many procedures.        
+                                                                                
+We have developed a new technique, called virtual colonoscopy (VC), as          
+an alternative to screening diagnostic colonoscopy (DC). The procedure          
+consists of cleansing a patient's colon, inflating the colon with air,          
+scanning the abdomen with helical computed tomography (CT), and                 
+generating a rapid sequence of three-dimensional (3D) images of the             
+colon by means of virtual reality computer technology.  Although VC             
+makes possible the visualization of 3D images of the colon in a manner          
+similar to that of DC, a correct diagnosis depends upon a physician's           
+ability to identify small and sometimes subtle polyps within hundreds           
+of 3D images.  The absence of visual cues that normally occur with DC           
+makes VC interpretation tedious and susceptible to error.                       
+                                                                                
+With support from a National Science Foundation (NSF) grant, we have            
+developed a computer-assisted polyp detection (CAPD) system that                
+calculates areas of abnormal colon wall thickness in helical CT image           
+data in order to highlight potential polyps in the 3D images.  A                
+physician ultimately determines if each detected lesion represents a            
+true abnormality.  Although we have found CAPD to be sensitive for              
+finding subtle abnormalities, poor specificity can be attributed to             
+several obstacles, including imprecise image segmentation, limited              
+feature analysis, and suboptimal bowel preparation prior to helical CT          
+scanning.  With these challenges in mind, we propose research to perfect        
+CAPD. Our specific aims are as follows: 1. To develop an image                  
+segmentation algorithm that accurately isolates the colon from helical          
+CT image data; 2. To improve our polyp detection algorithm with expanded        
+feature analysis and artificial intelligence methods; 3. To optimize            
+bowel preparation with digital subtraction of opacified feces and               
+controlled gas distention; and 4. To validate the accuracy of VC, with          
+the modifications achieved in the stated aims, by comparing the results         
+of VC and DC in 200 patients undergoing usual-care colonoscopy.                 
+                                                                                
+If VC with CAPD proves accurate and efficient in the diagnosis of               
+colorectal polyps, it could evolve into a simple laboratory test,               
+thereby meeting the demand for worldwide colorectal cancer screening.           
+ bioimaging /biomedical imaging; biomedical equipment development; clinical research; colon neoplasms; colon polyp; computed axial tomography; computer assisted diagnosis; computer simulation; diagnosis design /evaluation; endoscopy; gastrointestinal imaging /visualization; human subject; image enhancement; mathematical model; model design /development; neoplasm /cancer diagnosis IMPROVING VIRTUAL COLONOSCOPY WITH COMPUTER DETECTION","Colorectal carcinoma is the second leading cause of cancer deaths in the        
+United States today.  In an effort to reduce mortality, Congress                
+recently included a provision in the Balanced Budget Act of 1997 to             
+support screening colonoscopy as a means for early detection and removal        
+of colorectal polyps, the precursors to cancer.  In this country alone,         
+more than 68 million people are eligible for colorectal screening, but          
+the majority are unlikely to comply with screening recommendations              
+because of the costs, risks, discomfort, and inconvenience associated           
+with traditional endoscopy.  Furthermore, even if a small fraction of           
+eligible persons are examined, the number of available                          
+gastroenterologists would be insufficient to perform so many procedures.        
+                                                                                
+We have developed a new technique, called virtual colonoscopy (VC), as          
+an alternative to screening diagnostic colonoscopy (DC). The procedure          
+consists of cleansing a patient's colon, inflating the colon with air,          
+scanning the abdomen with helical computed tomography (CT), and                 
+generating a rapid sequence of three-dimensional (3D) images of the             
+colon by means of virtual reality computer technology.  Although VC             
+makes possible the visualization of 3D images of the colon in a manner          
+similar to that of DC, a correct diagnosis depends upon a physician's           
+ability to identify small and sometimes subtle polyps within hundreds           
+of 3D images.  The absence of visual cues that normally occur with DC           
+makes VC interpretation tedious and susceptible to error.                       
+                                                                                
+With support from a National Science Foundation (NSF) grant, we have            
+developed a computer-assisted polyp detection (CAPD) system that                
+calculates areas of abnormal colon wall thickness in helical CT image           
+data in order to highlight potential polyps in the 3D images.  A                
+physician ultimately determines if each detected lesion represents a            
+true abnormality.  Although we have found CAPD to be sensitive for              
+finding subtle abnormalities, poor specificity can be attributed to             
+several obstacles, including imprecise image segmentation, limited              
+feature analysis, and suboptimal bowel preparation prior to helical CT          
+scanning.  With these challenges in mind, we propose research to perfect        
+CAPD. Our specific aims are as follows: 1. To develop an image                  
+segmentation algorithm that accurately isolates the colon from helical          
+CT image data; 2. To improve our polyp detection algorithm with expanded        
+feature analysis and artificial intelligence methods; 3. To optimize            
+bowel preparation with digital subtraction of opacified feces and               
+controlled gas distention; and 4. To validate the accuracy of VC, with          
+the modifications achieved in the stated aims, by comparing the results         
+of VC and DC in 200 patients undergoing usual-care colonoscopy.                 
+                                                                                
+If VC with CAPD proves accurate and efficient in the diagnosis of               
+colorectal polyps, it could evolve into a simple laboratory test,               
+thereby meeting the demand for worldwide colorectal cancer screening.           
+",2849551,R01CA078485,['R01CA078485'],CA,https://reporter.nih.gov/project-details/2849551,R01,1999,470758,0.5814124256359271

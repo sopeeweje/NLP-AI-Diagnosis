@@ -1,0 +1,244 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The first project objective is directed to developing a comprehensive           
+computer interactive neuropsychologic test battery that is sensitive for        
+detecting subtle disturbances of cerebral integrity.  This task will be         
+accomplished accessing a panel of neuropsychologists, an expert systems         
+specialist and a software architect.  Next, standardization will be             
+conducted on 500 normal adolescents and adults.  This sample will be            
+stratified by age and gender and demographically representative of the          
+population.  Concurrent to these activities, an expert system will be           
+created.  This latter task will enable dissemination of the final               
+protocol to the widest possible user audience.  Finally, the interactive        
+test battery will be used to ascertain the prevalence, types and severity       
+of neuropsychologic deficit in samples of adolescent and adult drug             
+abusers.                                                                        
+                                                                                
+The ultimate goal of this research program is to devise a standardized,         
+quantitative and comprehensive method for characterizing the cognitive          
+and psychomotor capacities of drug abusers.  Computer interactive               
+testing, because of its precision in measurement, will enable the               
+detection of subtle or occult impairment residual to chronic drug abuse.        
+For this reason, the battery is to be created specifically for this             
+population.  The information obtained from such an assessment has               
+potentially important ramifications for determining the timing of               
+treatment, type of treatment and post-treatment vocational rehabilitation       
+of drug abusers.                                                                
+ adolescence (12-20); adult human (21+); artificial intelligence; attention; auditory threshold; cognition; cognition disorders; computer assisted diagnosis; computer human interaction; computer program /software; computer system design /evaluation; dementia; diagnosis quality /standard; drug abuse; human subject; memory disorders; neural information processing; neuropsychological tests; neuropsychology; psychometrics; psychomotor disorders; psychomotor function; sensory discrimination; stroke; visual threshold NEUROPSYCHOLOGIC ASSESSMENT--CHRONIC DRUG ABUSE EFFECTS","The first project objective is directed to developing a comprehensive           
+computer interactive neuropsychologic test battery that is sensitive for        
+detecting subtle disturbances of cerebral integrity.  This task will be         
+accomplished accessing a panel of neuropsychologists, an expert systems         
+specialist and a software architect.  Next, standardization will be             
+conducted on 500 normal adolescents and adults.  This sample will be            
+stratified by age and gender and demographically representative of the          
+population.  Concurrent to these activities, an expert system will be           
+created.  This latter task will enable dissemination of the final               
+protocol to the widest possible user audience.  Finally, the interactive        
+test battery will be used to ascertain the prevalence, types and severity       
+of neuropsychologic deficit in samples of adolescent and adult drug             
+abusers.                                                                        
+                                                                                
+The ultimate goal of this research program is to devise a standardized,         
+quantitative and comprehensive method for characterizing the cognitive          
+and psychomotor capacities of drug abusers.  Computer interactive               
+testing, because of its precision in measurement, will enable the               
+detection of subtle or occult impairment residual to chronic drug abuse.        
+For this reason, the battery is to be created specifically for this             
+population.  The information obtained from such an assessment has               
+potentially important ramifications for determining the timing of               
+treatment, type of treatment and post-treatment vocational rehabilitation       
+of drug abusers.                                                                
+",2119052,R01DA006752,['R01DA006752'],DA,https://reporter.nih.gov/project-details/2119052,R01,1994,518746,0.33617117509978467
+"Therapeutic management based on protocols, and clinical algorithms is
+ increasing in significance as medicine tackles more serious illnesses and
+ must do so in cost-efficient manner. Clinical algorithms are appealing as
+ they provide a good overview of the clinical state of a patient, identify
+ key decisions and the outcomes associated with those decisions. They
+ provide guidance and improve the quality of care without taking the
+ control away from the physicians. Despite these advantages clinical
+ algorithm design, specification, and delivery remain problematic. This
+ research proposal seeks to overcome these difficulties, while retaining
+ the advantages of clinical algorithms.
+ 
+ We propose to develop a general framework for the representation for
+ clinical algorithms and supporting medical knowledge, to communicate these
+ algorithms effectively by extracting and presenting protocols specific
+ individual patient's condition, and to provide decision aids for protocol-
+ based patient care. This framework will use knowledge about therapy in the
+ context of specific conditions to create patient-specific algorithms
+ refined from the general-purpose algorithms. Aspects not pertinent to the
+ case will be removed. The derivation of the specialized algorithms from
+ the general algorithm will be recorded and used to explain the logic of
+ the specialized algorithms. Because the algorithms will be tailored to the
+ patient context, they will be detailed, yet manageable. This will avoid
+ the over-simplifications of current ""one-size-fits-all"" algorithm. Mixed
+ graphic and textual presentation techniques will be used to develop a
+ user-friendly interface with explanation facilities integrated with
+ patient information systems. We will test the framework by developing
+ operational systems for hemodynamic resuscitation and management of
+ circulatory shock in critically ill postoperative patients.
+ 
+ We have chosen the domain of the management of circulatory failure in
+ critically ill postoperative patients because: (a) circulatory failure is
+ the significant medical problem affecting many postoperative patients
+ where proper management can mean the difference between life and death,
+ (b) we have a long track record of on-going activities in development of
+ objective treatment methodologies in this area, (c) we have developed and
+ tested a general clinical algorithm for management of high risk
+ postoperative surgical patients, (d) our recent attempts to extend and
+ refine the initial algorithm using traditional approaches have been
+ frustrated by the complexity of the task. The proposed framework will
+ support the creation of detailed therapeutic management algorithms and
+ decision support systems to implement these algorithms in daily practice.
+ artificial intelligence; computer assisted medical decision making; computer assisted patient care; computer graphics /printing; computer program /software; critical care; hemodynamics; hemorrhagic shock; human data; patient care management; postoperative complications CLINICAL MANAGEMENT OF CRITICAL ILLNESS USING AI","Therapeutic management based on protocols, and clinical algorithms is
+ increasing in significance as medicine tackles more serious illnesses and
+ must do so in cost-efficient manner. Clinical algorithms are appealing as
+ they provide a good overview of the clinical state of a patient, identify
+ key decisions and the outcomes associated with those decisions. They
+ provide guidance and improve the quality of care without taking the
+ control away from the physicians. Despite these advantages clinical
+ algorithm design, specification, and delivery remain problematic. This
+ research proposal seeks to overcome these difficulties, while retaining
+ the advantages of clinical algorithms.
+ 
+ We propose to develop a general framework for the representation for
+ clinical algorithms and supporting medical knowledge, to communicate these
+ algorithms effectively by extracting and presenting protocols specific
+ individual patient's condition, and to provide decision aids for protocol-
+ based patient care. This framework will use knowledge about therapy in the
+ context of specific conditions to create patient-specific algorithms
+ refined from the general-purpose algorithms. Aspects not pertinent to the
+ case will be removed. The derivation of the specialized algorithms from
+ the general algorithm will be recorded and used to explain the logic of
+ the specialized algorithms. Because the algorithms will be tailored to the
+ patient context, they will be detailed, yet manageable. This will avoid
+ the over-simplifications of current ""one-size-fits-all"" algorithm. Mixed
+ graphic and textual presentation techniques will be used to develop a
+ user-friendly interface with explanation facilities integrated with
+ patient information systems. We will test the framework by developing
+ operational systems for hemodynamic resuscitation and management of
+ circulatory shock in critically ill postoperative patients.
+ 
+ We have chosen the domain of the management of circulatory failure in
+ critically ill postoperative patients because: (a) circulatory failure is
+ the significant medical problem affecting many postoperative patients
+ where proper management can mean the difference between life and death,
+ (b) we have a long track record of on-going activities in development of
+ objective treatment methodologies in this area, (c) we have developed and
+ tested a general clinical algorithm for management of high risk
+ postoperative surgical patients, (d) our recent attempts to extend and
+ refine the initial algorithm using traditional approaches have been
+ frustrated by the complexity of the task. The proposed framework will
+ support the creation of detailed therapeutic management algorithms and
+ decision support systems to implement these algorithms in daily practice.
+",2237763,R01LM005324,['R01LM005324'],LM,https://reporter.nih.gov/project-details/2237763,R01,1995,252773,0.8344982769285445
+"Neural network optimization algorithms greatly enhance our ability to           
+construct large-scale, dynamical models of highly interconnected networks.      
+Until now, optimization has only been applied to networks of simplistic         
+processing units, ignoring the integrative and temporal response                
+properties of single neurons, thus limiting the predictive power of the         
+models.  The long-term goal of this project is to develop a hybrid              
+modeling strategy in which optimization methods are applied to networks of      
+realistic,multicompartmental model neurons. To accomplish this goal, we         
+will construct a hybrid model of an actual distributed processing network       
+composed of repeatably identifiable sensory, motor, and interneurons that       
+computes a well-defined behavioral input-output function. Optimization          
+will be used to predict the connectivity of as-yet-unidentified                 
+interneurons in the actual network and the predictions will be tested by        
+identifying the interneurons by physiological and morphological means.          
+Performance of the hybrid model will be assessed by comparing it to the         
+performance of an a priori model in which all connection strengths are          
+determined physiologically. The final model will be used to predict the         
+loci of synaptic plasticity underlying nonassociative conditioning of the       
+reflex by incorporating local learning rules and by optimization methods.       
+The predictions will be tested by determining the actual plastic sites          
+physiologically.  This project will have the combined effect of enhancing       
+the predictive power of optimized network models and illuminating the           
+relation between computations at the single-neuron and network levels.          
+ Hirudinea; artificial intelligence; computational neuroscience; computer program /software; interneurons; model design /development; neural information processing; neural plasticity OPTIMIZED NETWORKS OF MULTICOMPARTMENTAL NEURONS","Neural network optimization algorithms greatly enhance our ability to           
+construct large-scale, dynamical models of highly interconnected networks.      
+Until now, optimization has only been applied to networks of simplistic         
+processing units, ignoring the integrative and temporal response                
+properties of single neurons, thus limiting the predictive power of the         
+models.  The long-term goal of this project is to develop a hybrid              
+modeling strategy in which optimization methods are applied to networks of      
+realistic,multicompartmental model neurons. To accomplish this goal, we         
+will construct a hybrid model of an actual distributed processing network       
+composed of repeatably identifiable sensory, motor, and interneurons that       
+computes a well-defined behavioral input-output function. Optimization          
+will be used to predict the connectivity of as-yet-unidentified                 
+interneurons in the actual network and the predictions will be tested by        
+identifying the interneurons by physiological and morphological means.          
+Performance of the hybrid model will be assessed by comparing it to the         
+performance of an a priori model in which all connection strengths are          
+determined physiologically. The final model will be used to predict the         
+loci of synaptic plasticity underlying nonassociative conditioning of the       
+reflex by incorporating local learning rules and by optimization methods.       
+The predictions will be tested by determining the actual plastic sites          
+physiologically.  This project will have the combined effect of enhancing       
+the predictive power of optimized network models and illuminating the           
+relation between computations at the single-neuron and network levels.          
+",2416012,R29MH051383,['R29MH051383'],MH,https://reporter.nih.gov/project-details/2416012,R29,1997,85155,0.8344982769285445
+"DESCRIPTION:  Limitations of many disabled individuals' production efficiency, communication rate and vocabulary organization impact negatively on their ability to communicate competently using present-day Augmentative and Alternative Communication (AAC) devices.  This project proposes a re-conceptualization in the way language units are organized and retrieved in present-day AAC technologies, by operationalizing recent linguistic research in frame theory.  A frame-based organization for utterances is proposed by exploiting natural category systems found in the context, culture and conceptual structures of the individual.  A method and system for implementing these knowledge structures on a computer system will be developed. Specifically, the purpose of Phase l of this project is to provide a proof of concept for the Frametalker technology design.  During the course of the year we will a) develop a software prototype of the Frametalker, b) integrate it with a database of communication frame-structured utterances and c) submit Frametalker to laboratory and field-testing.  artificial intelligence; biomedical equipment development; clinical biomedical equipment; communication disorder aid; computer program /software; computer system design /evaluation; language; speech synthesizers; vocabulary FRAMETALKER--AN UTTERANCE BASED AUGMENTATIVE DEVICE","DESCRIPTION:  Limitations of many disabled individuals' production efficiency, communication rate and vocabulary organization impact negatively on their ability to communicate competently using present-day Augmentative and Alternative Communication (AAC) devices.  This project proposes a re-conceptualization in the way language units are organized and retrieved in present-day AAC technologies, by operationalizing recent linguistic research in frame theory.  A frame-based organization for utterances is proposed by exploiting natural category systems found in the context, culture and conceptual structures of the individual.  A method and system for implementing these knowledge structures on a computer system will be developed. Specifically, the purpose of Phase l of this project is to provide a proof of concept for the Frametalker technology design.  During the course of the year we will a) develop a software prototype of the Frametalker, b) integrate it with a database of communication frame-structured utterances and c) submit Frametalker to laboratory and field-testing. ",2850474,R43CA080715,['R43CA080715'],CA,https://reporter.nih.gov/project-details/2850474,R43,1998,93455,0.8344982769285445
+"The brain is at risk of serious cerebrovascular insult during the               
+400,000 cardiopulmonary bypass (CPB) surgeries performed annually in the        
+United States.  There is strong clinical evidence that over two-thirds          
+of patients exhibit neurologic or neuropsychologic (NP) Postoperative           
+deficits caused by emboli passing to the brain during surgery.  There           
+is a critical need for a device that can not only detect emboli, but            
+also classify them as to type.  Classification is critical for                  
+correlating neurological deficits with emboli type, determining the             
+source of the emboli, and subsequently changing surgical procedures             
+and/or administering neuroprotective agents to minimize brain injury.           
+Continuous-wave Doppler ultrasound equipment can detect emboli, but             
+cannot provide the information needed to classify emboli composition.           
+In Phase I, ORINCON and the Bowman Gray School of Medicine utilized             
+broadband pulse-echo ultrasound and an artificial neural network to             
+demonstrate significant classification capability on in-vitro data.  In         
+Phase II, we will refine and integrate components from Phase I into a           
+PC-based system capable of accurate, real-time emboli detection and             
+classification in both extracorporeal pump circuits and the carotid             
+artery.  Extensive in-vitro and in-vivo data will be collected to permit        
+refinement and thorough evaluation of classification capabilities.              
+Clinical studies will be performed to correlate neuropsychologic                
+deficits with embolus composition.                                              
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+There is immediate commercial potential for a low-cost (less than 25K),         
+real-time automated emboli detection and classification system.  The            
+market includes manufacturers of cardiopulmonary pump circuit devices           
+(Medtronics, Pall, Cobe, Sarns), hundreds of medical centers performing         
+cardiopulmonary bypass, and producers of neuroprotective drugs (Astra,          
+Bayer, Sterling).  A letter from Medtronics expressing this commercial          
+potential is enclosed.                                                          
+ artificial intelligence; bioimaging /biomedical imaging; brain injury; cardiovascular disorder diagnosis; computational neuroscience; computer system design /evaluation; diagnosis design /evaluation; dogs; embolism; extracorporeal circulation EMBOLI CLASSIFICATION SYSTEM TO REDUCE BRAIN INJURY","The brain is at risk of serious cerebrovascular insult during the               
+400,000 cardiopulmonary bypass (CPB) surgeries performed annually in the        
+United States.  There is strong clinical evidence that over two-thirds          
+of patients exhibit neurologic or neuropsychologic (NP) Postoperative           
+deficits caused by emboli passing to the brain during surgery.  There           
+is a critical need for a device that can not only detect emboli, but            
+also classify them as to type.  Classification is critical for                  
+correlating neurological deficits with emboli type, determining the             
+source of the emboli, and subsequently changing surgical procedures             
+and/or administering neuroprotective agents to minimize brain injury.           
+Continuous-wave Doppler ultrasound equipment can detect emboli, but             
+cannot provide the information needed to classify emboli composition.           
+In Phase I, ORINCON and the Bowman Gray School of Medicine utilized             
+broadband pulse-echo ultrasound and an artificial neural network to             
+demonstrate significant classification capability on in-vitro data.  In         
+Phase II, we will refine and integrate components from Phase I into a           
+PC-based system capable of accurate, real-time emboli detection and             
+classification in both extracorporeal pump circuits and the carotid             
+artery.  Extensive in-vitro and in-vivo data will be collected to permit        
+refinement and thorough evaluation of classification capabilities.              
+Clinical studies will be performed to correlate neuropsychologic                
+deficits with embolus composition.                                              
+                                                                                
+PROPOSED COMMERCIAL APPLICATION:                                                
+There is immediate commercial potential for a low-cost (less than 25K),         
+real-time automated emboli detection and classification system.  The            
+market includes manufacturers of cardiopulmonary pump circuit devices           
+(Medtronics, Pall, Cobe, Sarns), hundreds of medical centers performing         
+cardiopulmonary bypass, and producers of neuroprotective drugs (Astra,          
+Bayer, Sterling).  A letter from Medtronics expressing this commercial          
+potential is enclosed.                                                          
+",2891987,R44NS034208,['R44NS034208'],NS,https://reporter.nih.gov/project-details/2891987,R44,1999,316660,0.8344982769285445

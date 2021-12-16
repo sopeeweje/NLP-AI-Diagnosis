@@ -1,0 +1,340 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"DESCRIPTION (Adapted from the Investigator's Abstract):  Numerous
+ restriction mapping programs have been devised since 1978, but none of them
+ is as precise as manual map construction using digest gel photos, pencil,
+ and graph paper.  Given realistic data, programs usually find hundreds or
+ even thousands of solutions, only one of which can be correct.  Because of
+ this, slow and demanding manual techniques are still in common use.  The
+ researchers propose to develop public domain software implementing a
+ complete restriction mapping environment which will be far more powerful
+ and useful than current restriction mapping software.  This system will:
+ 1) find solutions more quickly than any existing software; 2) find far
+ fewer false maps than any existing software; 3) allow the user to ""steer""
+ the entire mapping process (if desired); and 4) guide the user with
+ detailed, expert advice on handling specific mapping problems as they
+ arise.  In addition, the system will have:  5) built-in extensibility, so
+ that simple modifications will also allow other genetic marker mapping
+ problems to be solved by the same program and 6) the ability to record all
+ user activity transparently, providing quantitative data on successful
+ mapping strategies.
+ 
+ The system will be based on extant restriction mapping programs, but it
+ will overcome their limitations by including the following additional
+ capabilities:  1) All known heuristics will be implemented.  (Heuristics
+ are logical rules of thumb which guide the search towards a true solution.)
+ Existing programs use only a small subset of the known heuristics.  Every
+ added heuristic will speed up the search and reduce the set of possible
+ solutions to a problem.  2) Hand mapping will be simulated on-screen via a
+ ""what you see is what you get"" graphical user interface, with users
+ choosing fully automatic mapping (the default), fully manual mapping (with
+ simulated pencils and log paper), or various in-between levels of
+ semi-automatic assisted mapping.  This will allow users to control or
+ adjust any part of the mapping process if they so desire.  3) An expert
+ system (a program which can answer queries and make decisions by consulting
+ a knowledge database) will guide users through the mapping process.  It
+ will assist the process of data acquisition, help the user solve
+ difficulties, and tutor inexperienced users.
+ 
+ Considerable preliminary design work has already taken place, so
+ implementation can begin almost at once.  Software will be developed and
+ tested iteratively (""rapid prototyping"") to assure end-user satisfaction.
+ To insure portability at the source code level, the two major modules of
+ the system (fragment length derivation and mapping) will be coded in C++
+ using Boochs' object-oriented design methodology, and the user interface
+ will be designed using a portable interface-building tool that works on a
+ variety of computing platforms (including DOS machines, and the Macintosh).
+ The expert system will be implemented using CLIPS, a portable C-based
+ public domain expert system shell.
+ artificial intelligence; automated data processing; computer program /software; computer simulation; computer system design /evaluation; genetic mapping; genetic markers; restriction fragment length polymorphism; restriction mapping INTELLIGENT AUTOMATED RESTRICTION MAPPING TOOL","DESCRIPTION (Adapted from the Investigator's Abstract):  Numerous
+ restriction mapping programs have been devised since 1978, but none of them
+ is as precise as manual map construction using digest gel photos, pencil,
+ and graph paper.  Given realistic data, programs usually find hundreds or
+ even thousands of solutions, only one of which can be correct.  Because of
+ this, slow and demanding manual techniques are still in common use.  The
+ researchers propose to develop public domain software implementing a
+ complete restriction mapping environment which will be far more powerful
+ and useful than current restriction mapping software.  This system will:
+ 1) find solutions more quickly than any existing software; 2) find far
+ fewer false maps than any existing software; 3) allow the user to ""steer""
+ the entire mapping process (if desired); and 4) guide the user with
+ detailed, expert advice on handling specific mapping problems as they
+ arise.  In addition, the system will have:  5) built-in extensibility, so
+ that simple modifications will also allow other genetic marker mapping
+ problems to be solved by the same program and 6) the ability to record all
+ user activity transparently, providing quantitative data on successful
+ mapping strategies.
+ 
+ The system will be based on extant restriction mapping programs, but it
+ will overcome their limitations by including the following additional
+ capabilities:  1) All known heuristics will be implemented.  (Heuristics
+ are logical rules of thumb which guide the search towards a true solution.)
+ Existing programs use only a small subset of the known heuristics.  Every
+ added heuristic will speed up the search and reduce the set of possible
+ solutions to a problem.  2) Hand mapping will be simulated on-screen via a
+ ""what you see is what you get"" graphical user interface, with users
+ choosing fully automatic mapping (the default), fully manual mapping (with
+ simulated pencils and log paper), or various in-between levels of
+ semi-automatic assisted mapping.  This will allow users to control or
+ adjust any part of the mapping process if they so desire.  3) An expert
+ system (a program which can answer queries and make decisions by consulting
+ a knowledge database) will guide users through the mapping process.  It
+ will assist the process of data acquisition, help the user solve
+ difficulties, and tutor inexperienced users.
+ 
+ Considerable preliminary design work has already taken place, so
+ implementation can begin almost at once.  Software will be developed and
+ tested iteratively (""rapid prototyping"") to assure end-user satisfaction.
+ To insure portability at the source code level, the two major modules of
+ the system (fragment length derivation and mapping) will be coded in C++
+ using Boochs' object-oriented design methodology, and the user interface
+ will be designed using a portable interface-building tool that works on a
+ variety of computing platforms (including DOS machines, and the Macintosh).
+ The expert system will be implemented using CLIPS, a portable C-based
+ public domain expert system shell.
+",2209202,R01HG000972,['R01HG000972'],HG,https://reporter.nih.gov/project-details/2209202,R01,1995,134128,1.0
+"This proposal presents a set of principles of human information processing
+ that have been developed by the investigator and describes a program of
+ collaborative research designed to assess the adequacy of these principles
+ for modeling cognitive processes in normal and disordered individuals.  In
+ brief, the principles state the human cognition occurs through a graded,
+ stochastic, adaptive, interactive and distributed process.  The ultimate
+ goal is the further development and understanding of the set of principles
+ and a further exploration of the implications of the principles for normal
+ and disordered cognition.  The principles serve as the focus of specific
+ research projects on the following topics:  general laws and regularities
+ of information processing; the role of context in visual information
+ processing; the mechanisms of attention and neuromodulatory deficits of
+ attention; and the mechanisms of attention and neuromodulatory deficits of
+ attention; and the mechanisms of accessing representations of the sounds
+ and meanings of printed words.  Each project involves the comparison of
+ the results of computer simulation models based on the principles to the
+ results of psychological experiments designed to produce evidence relevant
+ to the assessment of the adequacy of the principles.  The proposal also
+ describes plans for the further incorporation of principles emerging from
+ neuroscience and for the dissemination of concepts and simulation tools
+ that are crucial to facilitate exploration of the principles by other
+ researchers.
+ artificial intelligence; cognition; computational neuroscience; human subject; learning; neural information processing; psychological models; schizophrenia SIMULATION OF MENTAL PROCESSES IN LIGHT OF BRAIN","This proposal presents a set of principles of human information processing
+ that have been developed by the investigator and describes a program of
+ collaborative research designed to assess the adequacy of these principles
+ for modeling cognitive processes in normal and disordered individuals.  In
+ brief, the principles state the human cognition occurs through a graded,
+ stochastic, adaptive, interactive and distributed process.  The ultimate
+ goal is the further development and understanding of the set of principles
+ and a further exploration of the implications of the principles for normal
+ and disordered cognition.  The principles serve as the focus of specific
+ research projects on the following topics:  general laws and regularities
+ of information processing; the role of context in visual information
+ processing; the mechanisms of attention and neuromodulatory deficits of
+ attention; and the mechanisms of attention and neuromodulatory deficits of
+ attention; and the mechanisms of accessing representations of the sounds
+ and meanings of printed words.  Each project involves the comparison of
+ the results of computer simulation models based on the principles to the
+ results of psychological experiments designed to produce evidence relevant
+ to the assessment of the adequacy of the principles.  The proposal also
+ describes plans for the further incorporation of principles emerging from
+ neuroscience and for the dissemination of concepts and simulation tools
+ that are crucial to facilitate exploration of the principles by other
+ researchers.
+",2239797,K05MH000385,['K05MH000385'],MH,https://reporter.nih.gov/project-details/2239797,K05,1995,101370,1.0
+"DESCRIPTION (Adapted from applicant's abstract):  This K02 application          
+out-lines research and career development plans to investigate the role of      
+sleep regulation in the developmental psychobiology of affective disorders.     
+The first goal is to extend a well-established line of research based on        
+measures of EEG sleep and cortisol in child and adolescent depression by        
+investigating:  (1) abnormalities in sleep and cortisol regulation focusing     
+on the sleep-onset transition; (2) normal maturational changes in sleep and     
+cortisol regulation relevant to these abnormalities; and (3) the predictive     
+validity of sleep and cortisol abnormalities in longitudinal clinical           
+follow-up.                                                                      
+                                                                                
+The second goal is to further develop and investigate a larger developmental    
+model of sleep regulation.  The model emphasizes close links between sleep      
+regulation and neurobehavioral systems involved in the regulation of affect     
+and arousal which are modulated in regions of prefrontal cortex (PFC).          
+Matur-ational changes in PFC-subcortical circuits influencing sleep,            
+arousal, and affect are hypothesized to contribute to sleep changes             
+associated with depression, particularly near the transition from               
+wakefulness into sleep.  Based on this model, predictions are made regarding    
+sleep changes in the development of affective disorders and effects of sleep    
+deprivation of affective regulation.  The long-term goal of this work is to     
+understand mechanisms of dysregulation which may lead to more effective         
+treatment of early onset affective disorders.                                   
+                                                                                
+Career development activities to support these goals are described.  Further    
+advancing this line of investigation will require increased knowledge and       
+skills in four areas:  the development of affect regulation; the relevant       
+neurocircuitry and its development; more direct measures of the neural          
+systems of interest; and statistics.  The candidate will pursue these goals     
+through course work, focused readings, and supervised learning experiences      
+and collab-orations with scientists locally and nationally.                     
+ adolescence (12-20); arousal; clinical research; corticotropin releasing factor; cortisol; developmental neurobiology; electroencephalography; frontal lobe /cortex; human puberty; human subject; longitudinal human study; magnetic resonance imaging; major depression; middle childhood (6-11); model design /development; neuroendocrine system; psychobiology; sleep; sleep deprivation; wakefulness DEVELOPMENT PSYCHOBIOLOGY OF SLEEP AND DEPRESSION","DESCRIPTION (Adapted from applicant's abstract):  This K02 application          
+out-lines research and career development plans to investigate the role of      
+sleep regulation in the developmental psychobiology of affective disorders.     
+The first goal is to extend a well-established line of research based on        
+measures of EEG sleep and cortisol in child and adolescent depression by        
+investigating:  (1) abnormalities in sleep and cortisol regulation focusing     
+on the sleep-onset transition; (2) normal maturational changes in sleep and     
+cortisol regulation relevant to these abnormalities; and (3) the predictive     
+validity of sleep and cortisol abnormalities in longitudinal clinical           
+follow-up.                                                                      
+                                                                                
+The second goal is to further develop and investigate a larger developmental    
+model of sleep regulation.  The model emphasizes close links between sleep      
+regulation and neurobehavioral systems involved in the regulation of affect     
+and arousal which are modulated in regions of prefrontal cortex (PFC).          
+Matur-ational changes in PFC-subcortical circuits influencing sleep,            
+arousal, and affect are hypothesized to contribute to sleep changes             
+associated with depression, particularly near the transition from               
+wakefulness into sleep.  Based on this model, predictions are made regarding    
+sleep changes in the development of affective disorders and effects of sleep    
+deprivation of affective regulation.  The long-term goal of this work is to     
+understand mechanisms of dysregulation which may lead to more effective         
+treatment of early onset affective disorders.                                   
+                                                                                
+Career development activities to support these goals are described.  Further    
+advancing this line of investigation will require increased knowledge and       
+skills in four areas:  the development of affect regulation; the relevant       
+neurocircuitry and its development; more direct measures of the neural          
+systems of interest; and statistics.  The candidate will pursue these goals     
+through course work, focused readings, and supervised learning experiences      
+and collab-orations with scientists locally and nationally.                     
+",2415800,K02MH001362,['K02MH001362'],MH,https://reporter.nih.gov/project-details/2415800,K02,1997,92913,1.0
+"DESCRIPTION:  Numerous practical and theoretical problems could be addressed    
+if we had a better understanding of the auditory mechanisms underlying          
+phonetic recognition.  Among the practical applications of this knowledge       
+are:  (1) the improvement of speech synthesis devices, (2) the development      
+of robust speech recognition devices, (3) the development of acoustically       
+based training devices for hearing-impaired speakers, and (4) improvement in    
+Cochlear-implant signal processors.  The proposed experiments fall into         
+three major categories.  One set of experiments follows in a rather direct      
+way from vowel perception studies conducted during the previous grant           
+period.  These experiments address issues such as the role of dynamic           
+spectral cues and voice fundamental frequency in vowel perception.  A second    
+series of experiments address more fundamental issues regarding the spectral    
+representations that control phonetic quality.  A major goal of these           
+experiments is to test the validity of a method of representing speech that     
+was developed during the previous grant period.  The ""Masked Peak               
+Representation"" (MPR) was developed as an alternative to both formant           
+representations and whole spectrum models.  The MPR involves a series of        
+spectral manipulations that are designed to remove aspects of the spectrum      
+that do not appear to have a strong influence on phonetic quality, while        
+retaining those features that are most relevant to phonetic quality             
+judgments.  The MPR will be evaluated with:  (1) an experiment comparing        
+MPR-based predictions of perceived phonetic distance with those of a more       
+traditional auditory model, (2) speech recognition tests that use a Hidden      
+Markov Model to map sequences of MPR spectra onto words or phonetic             
+segments, and (3) listening tests with speech resynthesized from MPR            
+spectra.  A third set of studies is aimed at modeling the low-level auditory    
+mechanisms that are responsible for spectrum analysis.  The goal of this        
+work is to evaluate a model of spectrum analysis that is carried out by the     
+central auditory system rather than the auditory periphery.  A software         
+simulation of the model will be developed in an effort to determine the         
+extent to which the central-spectrum model can account for a broad range of     
+findings from the auditory psychophysics literature.  Experiments are also      
+proposed that address the implications of this model for vowel perception       
+and for the representation of pitch and periodicity.                            
+ behavioral /social science research tag; clinical research; hearing; human subject; mathematical model; neural information processing; perception; perceptual maskings; psychoacoustics; sound frequency; speech recognition ACOUSTIC CORRELATES OF PHONETIC PERCEPTION","DESCRIPTION:  Numerous practical and theoretical problems could be addressed    
+if we had a better understanding of the auditory mechanisms underlying          
+phonetic recognition.  Among the practical applications of this knowledge       
+are:  (1) the improvement of speech synthesis devices, (2) the development      
+of robust speech recognition devices, (3) the development of acoustically       
+based training devices for hearing-impaired speakers, and (4) improvement in    
+Cochlear-implant signal processors.  The proposed experiments fall into         
+three major categories.  One set of experiments follows in a rather direct      
+way from vowel perception studies conducted during the previous grant           
+period.  These experiments address issues such as the role of dynamic           
+spectral cues and voice fundamental frequency in vowel perception.  A second    
+series of experiments address more fundamental issues regarding the spectral    
+representations that control phonetic quality.  A major goal of these           
+experiments is to test the validity of a method of representing speech that     
+was developed during the previous grant period.  The ""Masked Peak               
+Representation"" (MPR) was developed as an alternative to both formant           
+representations and whole spectrum models.  The MPR involves a series of        
+spectral manipulations that are designed to remove aspects of the spectrum      
+that do not appear to have a strong influence on phonetic quality, while        
+retaining those features that are most relevant to phonetic quality             
+judgments.  The MPR will be evaluated with:  (1) an experiment comparing        
+MPR-based predictions of perceived phonetic distance with those of a more       
+traditional auditory model, (2) speech recognition tests that use a Hidden      
+Markov Model to map sequences of MPR spectra onto words or phonetic             
+segments, and (3) listening tests with speech resynthesized from MPR            
+spectra.  A third set of studies is aimed at modeling the low-level auditory    
+mechanisms that are responsible for spectrum analysis.  The goal of this        
+work is to evaluate a model of spectrum analysis that is carried out by the     
+central auditory system rather than the auditory periphery.  A software         
+simulation of the model will be developed in an effort to determine the         
+extent to which the central-spectrum model can account for a broad range of     
+findings from the auditory psychophysics literature.  Experiments are also      
+proposed that address the implications of this model for vowel perception       
+and for the representation of pitch and periodicity.                            
+",2608271,R01DC001661,['R01DC001661'],DC,https://reporter.nih.gov/project-details/2608271,R01,1998,291816,1.0
+"DESCRIPTION:  The proposed research will focus on the mechanisms of electron    
+transfer and proton pumping in respiration.  Special emphasis will be on        
+cytochrome oxidase, the primary site of coupling between the two processes.     
+Our goals include the following:  1) The mechanism of the reduction of          
+dixoygen to water by cytochrome oxidase will be studied under a variety of      
+conditions with the flow-flash method, which uses the photolability of the      
+CO complex to initiate the redox activity with O2.  Time-resolved               
+multichannel optical absorption spectroscopy will be used to follow the         
+kinetics of electron and proton transfer on time scales of nanoseconds to       
+milliseconds.  Singular value decomposition and global exponential fitting      
+methods will be applied to analyze the kinetics and determine the UV-Vis        
+spectra of the transient intermediates.  These studies should provide new       
+insight into the mechanism of the dioxygen reduction by cytochrome oxidase.     
+2) Alternatives to CO photodissociation will be used to investigate the         
+reaction of O2 with cytochrome oxidase.  The reaction of unliganded reduced     
+cytochrome oxidase with oxygen will be studied using a superfast direct         
+mixing method, pulsed-accelerated-flow (PAF).  The reaction of oxygen with      
+the unliganded enzyme will also be investigated using O2 which is produced      
+in situ on any relevant time scale by photodissociating synthetic dioxygen      
+carriers such as dicobalt u-peroxo polyaine complexes.  Both the PAF method     
+and the photodissociation of the dicobalt u-peroxo and u-superoxo polyamine     
+complexes represent new approaches to study the fast dioxygen reactions of      
+cytochrome oxidase and both avoid the mechanistic ambiguities associated        
+with the fate of photodissociated CO in transitional flow-flash experiments.    
+3) The mechanism of the redox-linked proton pump in cytochrome oxidase will     
+be investigated.  The kinetics of electron transfer and proton pumping upon     
+flash-induced oxidation of cytochrome oxidase reconstituted into                
+phospholipid vesicles will be monitored using time-resolved optical             
+absorption spectroscopy.  The proton pumping reactions will be probed by pH     
+indicators located int he extra-vesicular space, trapped inside the             
+vesicles, or covalently bound to the lipid or protein.  These studies will      
+allow us to correlate proton pumping events with individual steps in the        
+dioxygen/cytochrome oxidase redox cycle and will provide a foundation for a     
+structural model of the energy transduction mechanism in cytochrome oxidase.    
+ bioenergetics; carbon monoxide; cytochrome oxidase; electron transport; enzyme mechanism; enzyme reconstitution; flash photolysis; membrane model; membrane transport proteins; oxidation reduction reaction; oxygen; photochemistry; spectrometry; time resolved data ELECTRON TRANSFER/PROTON PUMPING IN CYTOCHROME OXIDATION","DESCRIPTION:  The proposed research will focus on the mechanisms of electron    
+transfer and proton pumping in respiration.  Special emphasis will be on        
+cytochrome oxidase, the primary site of coupling between the two processes.     
+Our goals include the following:  1) The mechanism of the reduction of          
+dixoygen to water by cytochrome oxidase will be studied under a variety of      
+conditions with the flow-flash method, which uses the photolability of the      
+CO complex to initiate the redox activity with O2.  Time-resolved               
+multichannel optical absorption spectroscopy will be used to follow the         
+kinetics of electron and proton transfer on time scales of nanoseconds to       
+milliseconds.  Singular value decomposition and global exponential fitting      
+methods will be applied to analyze the kinetics and determine the UV-Vis        
+spectra of the transient intermediates.  These studies should provide new       
+insight into the mechanism of the dioxygen reduction by cytochrome oxidase.     
+2) Alternatives to CO photodissociation will be used to investigate the         
+reaction of O2 with cytochrome oxidase.  The reaction of unliganded reduced     
+cytochrome oxidase with oxygen will be studied using a superfast direct         
+mixing method, pulsed-accelerated-flow (PAF).  The reaction of oxygen with      
+the unliganded enzyme will also be investigated using O2 which is produced      
+in situ on any relevant time scale by photodissociating synthetic dioxygen      
+carriers such as dicobalt u-peroxo polyaine complexes.  Both the PAF method     
+and the photodissociation of the dicobalt u-peroxo and u-superoxo polyamine     
+complexes represent new approaches to study the fast dioxygen reactions of      
+cytochrome oxidase and both avoid the mechanistic ambiguities associated        
+with the fate of photodissociated CO in transitional flow-flash experiments.    
+3) The mechanism of the redox-linked proton pump in cytochrome oxidase will     
+be investigated.  The kinetics of electron transfer and proton pumping upon     
+flash-induced oxidation of cytochrome oxidase reconstituted into                
+phospholipid vesicles will be monitored using time-resolved optical             
+absorption spectroscopy.  The proton pumping reactions will be probed by pH     
+indicators located int he extra-vesicular space, trapped inside the             
+vesicles, or covalently bound to the lipid or protein.  These studies will      
+allow us to correlate proton pumping events with individual steps in the        
+dioxygen/cytochrome oxidase redox cycle and will provide a foundation for a     
+structural model of the energy transduction mechanism in cytochrome oxidase.    
+",2655009,R01GM053788,['R01GM053788'],GM,https://reporter.nih.gov/project-details/2655009,R01,1998,143427,1.0

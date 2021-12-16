@@ -1,0 +1,121 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding
+"PROJECT SUMMARY
+NIEHS has established Predictive Toxicology as a strategic goal for advancing environmental health sciences.
+The overarching goal of this RIVER proposal is to predict animal toxicity of chemicals based on their structure.
+My team and I will expose millions of zebrafish embryos to a library of 10,000 synthetic chemicals across wide
+concentration ranges. If a chemical shows signs of bioactivity, we will systematically analyze whole animal gene
+expression changes before the phenotype appears. We will formulate hypotheses about which biomolecular
+targets the chemicals attacked initially and which pathways led to the observed endpoint. To test those
+hypotheses, we will edit the zebrafish genome via CRISPR/Cas9 to knock out or over-express critical genes, to
+discover the ones causally related to the chemical phenotypes.
+These studies will be highly relevant to human health. Zebrafish possess fully integrated vertebrate organ
+systems that perform the same functions as their human counterparts and demonstrate well-conserved
+physiology. Eighty-four percent of the genes that participate in human disease also exist in zebrafish. Zebrafish
+studies provide a fast, inexpensive way to screen a large volume of chemicals, generate rich hypotheses for drug
+development, and prioritize candidates for toxicity studies with mammals and human cell cultures. We will
+compare our results with those of human cell culture studies to clarify the strengths and weaknesses of each
+method and to reduce the uncertainty associated with applying zebrafish results to human biology.
+We will post our experimental results in a public database that explains which of the 10,000 Tox21 chemicals
+are bioactive, which initial targets they strike, and which pathways lead to which endpoints in embryonic and
+juvenile zebrafish. This information will enable green chemists to detoxify products by substituting a
+biologically inactive molecule. It will help toxicologists and risk assessors to prioritize chemicals for expensive
+experiments with rodents and human cell cultures. It will give pharmaceutical scientists thousands of new data
+points upon which to develop hypotheses about how to modulate a given gene target or activate a given
+pathway.
+We will use machine-learning-based chemoinformatic approaches to analyze our zebrafish data and infer the
+relationship between the structure of a chemical and its biological activity. Our rich data about chemical
+activity networks will advance the scientific community’s understanding of linkages between chemical exposure
+and phenotypes. Our work will enable scientists to predict whether a chemical will be biologically active, what
+target it will act upon, and what networks it will perturb, solely on the basis of its structure. It will enable
+scientists to reduce, refine, and replace experiments with animals, including zebrafish, and to predict chemical
+activity networks with computers. Adolescent;Animals;Biological;CRISPR/Cas technology;Cell Culture Techniques;Chemical Exposure;Chemical Warfare;Chemicals;Communities;Computers;Data;Databases;Embryo;Environmental Health;Gene Expression;Gene Targeting;Genes;Goals;Health;Human;Human Biology;Knock-out;Lead;Libraries;Machine Learning;Mammals;Methods;National Institute of Environmental Health Sciences;Pathway interactions;Pharmacologic Substance;Phenotype;Physiology;Research;Risk;Rodent;Scientific Advances and Accomplishments;Scientist;Structure;Testing;Toxic effect;Toxicology;Uncertainty;Work;Zebrafish;adverse outcome;base;body system;drug development;experimental study;human disease;overexpression;zebrafish genome Discovering Chemical Activity Networks-Predicting Bioactivity Based on Structure","PROJECT SUMMARY
+NIEHS has established Predictive Toxicology as a strategic goal for advancing environmental health sciences.
+The overarching goal of this RIVER proposal is to predict animal toxicity of chemicals based on their structure.
+My team and I will expose millions of zebrafish embryos to a library of 10,000 synthetic chemicals across wide
+concentration ranges. If a chemical shows signs of bioactivity, we will systematically analyze whole animal gene
+expression changes before the phenotype appears. We will formulate hypotheses about which biomolecular
+targets the chemicals attacked initially and which pathways led to the observed endpoint. To test those
+hypotheses, we will edit the zebrafish genome via CRISPR/Cas9 to knock out or over-express critical genes, to
+discover the ones causally related to the chemical phenotypes.
+These studies will be highly relevant to human health. Zebrafish possess fully integrated vertebrate organ
+systems that perform the same functions as their human counterparts and demonstrate well-conserved
+physiology. Eighty-four percent of the genes that participate in human disease also exist in zebrafish. Zebrafish
+studies provide a fast, inexpensive way to screen a large volume of chemicals, generate rich hypotheses for drug
+development, and prioritize candidates for toxicity studies with mammals and human cell cultures. We will
+compare our results with those of human cell culture studies to clarify the strengths and weaknesses of each
+method and to reduce the uncertainty associated with applying zebrafish results to human biology.
+We will post our experimental results in a public database that explains which of the 10,000 Tox21 chemicals
+are bioactive, which initial targets they strike, and which pathways lead to which endpoints in embryonic and
+juvenile zebrafish. This information will enable green chemists to detoxify products by substituting a
+biologically inactive molecule. It will help toxicologists and risk assessors to prioritize chemicals for expensive
+experiments with rodents and human cell cultures. It will give pharmaceutical scientists thousands of new data
+points upon which to develop hypotheses about how to modulate a given gene target or activate a given
+pathway.
+We will use machine-learning-based chemoinformatic approaches to analyze our zebrafish data and infer the
+relationship between the structure of a chemical and its biological activity. Our rich data about chemical
+activity networks will advance the scientific community’s understanding of linkages between chemical exposure
+and phenotypes. Our work will enable scientists to predict whether a chemical will be biologically active, what
+target it will act upon, and what networks it will perturb, solely on the basis of its structure. It will enable
+scientists to reduce, refine, and replace experiments with animals, including zebrafish, and to predict chemical
+activity networks with computers.",10198318,R35ES031709,['R35ES031709'],ES,https://reporter.nih.gov/project-details/10198318,R35,2021,779811
+"ABSTRACT
+Identification of high-quality chemical probes, molecules with high specificity and selectivity against
+macromolecules, is of critical interest to drug discovery. Although millions of compounds have been screened
+against thousands of protein targets, small-molecule probes are currently available for only 4% of the human
+proteome. Thus, more efficient approaches are required to accelerate the development of novel, target-specific
+probes. In 2019, a new bold initiative called “Target 2035” was launched with the goal of “creating […] chemical
+probes, and/or functional antibodies for the entire proteome” by 2035. In support of this ambitious initiative, we
+propose to develop and test a novel integrative AI-driven methodology for rapid chemical probe discovery against
+any target protein. Here, we will build an integrative workflow where the unique XChem database of experimental
+crystallographic information describing the pose and nature of chemical fragments binding to the target protein
+will be used in several innovative computational approaches to predict the structure of organic molecules with
+high affinity towards specific targets. The candidate molecules will be experimentally validated and then
+optimized, using computational algorithms, into lead molecules to seed chemical probe development. The
+proposed project is structured around three following interrelated keystones: (i) Develop a novel method for
+ligand-binding hot-spot identification and discovery of novel chemical probe candidates; (ii) Develop novel
+fragment-based integrative computational approach for accelerated de novo design of chemical probes; (iii)
+Consensus prediction of target-specific ligands, synthesis, and experimental validation of computational hits.
+ More specifically, we will develop a hybrid method to predict structures of high-affinity ligands for proteins for
+which XChem fragment screens have been completed. These approaches will be used for screening of ultra-
+large (>10 billion) chemical libraries to identify putative high affinity ligands within crystallographically determined
+pockets. Then, we will develop and employ an approach using graph convolutional neural networks for de novo
+design of a library of strong binders that will be evaluated to select the best candidates for chemical optimization.
+Finally, we will combine traditional structure-based and novel approaches, developed in this project to select
+consensus hit compounds against three target proteins: transcription factor brachyury, hydrolase NUDT5, and
+bromodomain BAZ2B. Iterative design guided by the computational algorithms, synthesis, and testing will
+progressively optimize molecules to micromolar leads to chemical probes for the target proteins.
+ Completion of the proposed aims will deliver a robust integrative workflow to identify leads for chemical
+probes against diverse target proteins. We expect that our AI-based computational approach to convert
+crystallographically-determined chemical fragments into lead compounds coupled with the experimental
+validation of computational algorithms will accelerate the discovery of new chemical probes, expand the
+druggable proteome, and support future drug discovery studies Affinity;Algorithms;Antibodies;Artificial Intelligence;Binding;Binding Sites;Biological Assay;Biophysics;Brachyury protein;Bromodomain;Chemicals;Computational algorithm;Computer software;Computing Methodologies;Consensus;Coupled;Databases;Development;Docking;Future;Goals;Graph;Hot Spot;Human;Hybrids;Hydrolase;Laboratories;Lead;Learning;Libraries;Ligand Binding;Ligands;Methodology;Methods;Mining;Modeling;Modernization;Nature;Phosphotransferases;Procedures;Proteins;Proteome;Psychological reinforcement;Resources;Roentgen Rays;Screening procedure;Seeds;Specificity;Structure;Synthesis Chemistry;Testing;Validation;X-Ray Crystallography;base;chemical synthesis;computational chemistry;convolutional neural network;cost;design;drug candidate;drug discovery;innovation;interest;iterative design;macromolecule;novel;novel strategies;protein structure prediction;scaffold;screening;small molecule;small molecule libraries;structural genomics;success;transcription factor Enabling the Accelerated Discovery of Novel Chemical Probes by Integration of Crystallographic, Computational, and Synthetic Chemistry Approaches","ABSTRACT
+Identification of high-quality chemical probes, molecules with high specificity and selectivity against
+macromolecules, is of critical interest to drug discovery. Although millions of compounds have been screened
+against thousands of protein targets, small-molecule probes are currently available for only 4% of the human
+proteome. Thus, more efficient approaches are required to accelerate the development of novel, target-specific
+probes. In 2019, a new bold initiative called “Target 2035” was launched with the goal of “creating […] chemical
+probes, and/or functional antibodies for the entire proteome” by 2035. In support of this ambitious initiative, we
+propose to develop and test a novel integrative AI-driven methodology for rapid chemical probe discovery against
+any target protein. Here, we will build an integrative workflow where the unique XChem database of experimental
+crystallographic information describing the pose and nature of chemical fragments binding to the target protein
+will be used in several innovative computational approaches to predict the structure of organic molecules with
+high affinity towards specific targets. The candidate molecules will be experimentally validated and then
+optimized, using computational algorithms, into lead molecules to seed chemical probe development. The
+proposed project is structured around three following interrelated keystones: (i) Develop a novel method for
+ligand-binding hot-spot identification and discovery of novel chemical probe candidates; (ii) Develop novel
+fragment-based integrative computational approach for accelerated de novo design of chemical probes; (iii)
+Consensus prediction of target-specific ligands, synthesis, and experimental validation of computational hits.
+ More specifically, we will develop a hybrid method to predict structures of high-affinity ligands for proteins for
+which XChem fragment screens have been completed. These approaches will be used for screening of ultra-
+large (>10 billion) chemical libraries to identify putative high affinity ligands within crystallographically determined
+pockets. Then, we will develop and employ an approach using graph convolutional neural networks for de novo
+design of a library of strong binders that will be evaluated to select the best candidates for chemical optimization.
+Finally, we will combine traditional structure-based and novel approaches, developed in this project to select
+consensus hit compounds against three target proteins: transcription factor brachyury, hydrolase NUDT5, and
+bromodomain BAZ2B. Iterative design guided by the computational algorithms, synthesis, and testing will
+progressively optimize molecules to micromolar leads to chemical probes for the target proteins.
+ Completion of the proposed aims will deliver a robust integrative workflow to identify leads for chemical
+probes against diverse target proteins. We expect that our AI-based computational approach to convert
+crystallographically-determined chemical fragments into lead compounds coupled with the experimental
+validation of computational algorithms will accelerate the discovery of new chemical probes, expand the
+druggable proteome, and support future drug discovery studies",10100996,R01GM140154,['R01GM140154'],GM,https://reporter.nih.gov/project-details/10100996,R01,2021,563072

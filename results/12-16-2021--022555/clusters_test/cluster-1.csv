@@ -1,0 +1,563 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding
+"Stroke is the major cause of an adult disability epidemic in the US, with a major contribution from post-stroke cognitive impairment and dementia (PSCID), the rates of which are disproportionally high among the health disparity populations. Despite the PSCID’s overwhelming impact on public health, a knowledge gap exists with regard to the complex interaction between the acute stroke event and highly prevalent pre-existing brain pathology related to cerebrovascular (VCID) and Alzheimer’s disease, or related dementia (AD/ADRD). Understanding the factors that modulate PSCID risk in relation to index stroke event is critically important for developing personalized prognostication of PSCID, targeted interventions to prevent PSCID, and informing future clinical trial design. In response to this critical challenge, we propose Determinants of Incident Stroke Cognitive Outcomes and Vascular Effects on RecoverY (DISCOVERY), a collaborative network of clinical sites with access to acute stroke populations and the expertise and capacity for systematic assessment of PSCID led by a team of recognized experts in VCID, AD, acute stroke, health disparities, and multi-center research. The overarching goal of this proposal is to determine which specific subsets of stroke events cause (or do not cause) PSCID and which additional demographic (sex, race, ethnicity), clinical factors and comorbidities that synergize with acute stroke to result in or prevent PSCID. The overall scientific objective of this study is to elucidate mechanisms of brain resilience/susceptibility to PSCID in diverse US populations based on complex interplay between life-course exposure to multiple vascular risk factors, pre-existing burden of microvascular and neurodegenerative pathology, the effect of strategic acute stroke lesions, and the mediating effect of genomic/epigenomic variation. We will achieve this goal by implementing the DISCOVERY Network of 30 clinical sites, which under the leadership of the Administrative Core and guided by the research strategy delineated by the Recruitment and Retention, Statistics, and Repository Cores, will conduct a prospective, multi- center, observational, nested-cohort study of 8,000 nondemented ischemic and hemorrhagic incident stroke patients within 72 hours of symptom onset, who will be followed for a minimum of 2 years, with serial cognitive evaluations and assessments of functional outcome, with subsets undergoing research MRI and PET and comprehensive genetic/genomic and fluid biomarker testing. In a series of systematic, hypothesis driven experiments we will: 1) identify the independent and combined effect of the acute stroke lesion, pre-existing burden of disease, and baseline markers of brain resilience on PSCID; 2) examine the role of acute stroke as a critical factor in accelerating AD/ADRD and VCID pathology leading to PSCID; and 3) develop two distinct generalizable personalized-medicine models for individual patient outcome prediction and patient selection for clinical trials. DISCOVERY will become a landmark study to unravel the mechanisms of post-stroke cognitive disability, early stroke recovery, and potential targets for personalized prevention, intervention, and rehabilitation. Acute;Address;Adult;Alzheimer&apos;s Disease;Amyloid beta-Protein;Aneurysmal Subarachnoid Hemorrhages;Biological;Biological Markers;Blood;Blood Vessels;Brain;Brain Injuries;Brain Pathology;Caring;Cerebral hemisphere hemorrhage;Characteristics;Classification Scheme;Clinical;Clinical Trials;Clinical Trials Design;Cognitive;Cohort Studies;Complex;Dementia;Environmental Risk Factor;Epidemic;Ethnic Origin;Evaluation;Event;Exposure to;Future;Genetic;Genetic Predisposition to Disease;Genomics;Goals;Hemorrhage;Hospitals;Hour;Impaired cognition;Incidence;Individual;Inflammation;Intervention;Intervention Trial;Ischemic Stroke;Knowledge;Leadership;Lesion;Life Cycle Stages;Liquid substance;Location;Magnetic Resonance Imaging;Measurable;Mediating;Methylation;Microvascular Dysfunction;Modeling;Nerve Degeneration;Outcome;Participant;Pathologic;Pathology;Patient Selection;Patients;Perfusion;Population;Population Heterogeneity;Positron-Emission Tomography;Predisposition;Prevention trial;Process;Prospective Studies;Public Health;Race;Recovery;Rehabilitation therapy;Research;Research Priority;Risk;Risk Factors;Role;Series;Serum;Stroke;Structure;Subgroup;Symptoms;Testing;Time;Translations;United States;Variant;acute stroke;base;burden of illness;cerebrovascular;clinical application;clinical research site;cognitive disability;cognitive load;cohort;comorbidity;deep learning;dementia risk;disability;epigenomics;exome sequencing;experience;experimental study;functional outcomes;genome wide association study;health care delivery;health disparity;health disparity populations;imaging biomarker;improved;indexing;individual patient;individualized prevention;morphometry;multiple omics;neuroimaging;non-demented;outcome prediction;patient stratification;personalized medicine;population based;post stroke;post stroke cognitive impairment;prevent;prognostic;prospective;recruit;repository;resilience;response;sex;statistics;stroke event;stroke patient;stroke recovery;tau Proteins;vascular injury;vascular risk factor DISCOVERY: Determinants of Incident Stroke Cognitive Outcomes and Vascular Effects on RecoverY","Stroke is the major cause of an adult disability epidemic in the US, with a major contribution from post-stroke cognitive impairment and dementia (PSCID), the rates of which are disproportionally high among the health disparity populations. Despite the PSCID’s overwhelming impact on public health, a knowledge gap exists with regard to the complex interaction between the acute stroke event and highly prevalent pre-existing brain pathology related to cerebrovascular (VCID) and Alzheimer’s disease, or related dementia (AD/ADRD). Understanding the factors that modulate PSCID risk in relation to index stroke event is critically important for developing personalized prognostication of PSCID, targeted interventions to prevent PSCID, and informing future clinical trial design. In response to this critical challenge, we propose Determinants of Incident Stroke Cognitive Outcomes and Vascular Effects on RecoverY (DISCOVERY), a collaborative network of clinical sites with access to acute stroke populations and the expertise and capacity for systematic assessment of PSCID led by a team of recognized experts in VCID, AD, acute stroke, health disparities, and multi-center research. The overarching goal of this proposal is to determine which specific subsets of stroke events cause (or do not cause) PSCID and which additional demographic (sex, race, ethnicity), clinical factors and comorbidities that synergize with acute stroke to result in or prevent PSCID. The overall scientific objective of this study is to elucidate mechanisms of brain resilience/susceptibility to PSCID in diverse US populations based on complex interplay between life-course exposure to multiple vascular risk factors, pre-existing burden of microvascular and neurodegenerative pathology, the effect of strategic acute stroke lesions, and the mediating effect of genomic/epigenomic variation. We will achieve this goal by implementing the DISCOVERY Network of 30 clinical sites, which under the leadership of the Administrative Core and guided by the research strategy delineated by the Recruitment and Retention, Statistics, and Repository Cores, will conduct a prospective, multi- center, observational, nested-cohort study of 8,000 nondemented ischemic and hemorrhagic incident stroke patients within 72 hours of symptom onset, who will be followed for a minimum of 2 years, with serial cognitive evaluations and assessments of functional outcome, with subsets undergoing research MRI and PET and comprehensive genetic/genomic and fluid biomarker testing. In a series of systematic, hypothesis driven experiments we will: 1) identify the independent and combined effect of the acute stroke lesion, pre-existing burden of disease, and baseline markers of brain resilience on PSCID; 2) examine the role of acute stroke as a critical factor in accelerating AD/ADRD and VCID pathology leading to PSCID; and 3) develop two distinct generalizable personalized-medicine models for individual patient outcome prediction and patient selection for clinical trials. DISCOVERY will become a landmark study to unravel the mechanisms of post-stroke cognitive disability, early stroke recovery, and potential targets for personalized prevention, intervention, and rehabilitation.",10241401,U19NS115388,['U19NS115388'],NS,https://reporter.nih.gov/project-details/10241401,U19,2021,14058964
+"PROJECT SUMMARY
+Stroke is the fifth most prevalent cause of death in the U.S. afflicting nearly 800,000 per year. About three
+quarters of strokes are first events, underscoring the importance of primary prevention. Designing optimal
+preventive strategies requires identification of risk factors and estimation of the risk of stroke. The most recent
+American Heart Association (AHA)/American Stroke Association Guidelines for the Primary Prevention of
+Stroke conclude that “an ideal stroke risk assessment tool that is simple, is widely applicable and accepted,
+and takes into account the effects of multiple risk factors does not exist.” One of the most commonly
+recommended predictive models is the Framingham Stroke Profile, developed and updated more than 25
+years ago. Newer models have been proposed (including the Self-Reported Stroke Risk Stratification tool from
+the REGARDS study) but have not been thoroughly validated. Consequently, the Primary Prevention of Stroke
+guidelines call for more research “to validate risk assessment tools across age, sex, and race/ethnic groups”
+and “to evaluate whether any of the more recently identified risk factors add to the predictive accuracy of
+existing scales”.
+We propose to address these gaps by aggregating and harmonizing existing patient-level data collected as
+part of longitudinal cohort studies supported by the NINDS and NHLBI. The data will be obtained through a
+partnership with the coordinating center for the REGARDS Study at the University of Alabama at Birmingham
+and by a request submitted to the NIH dbGap repository to obtain data from the Framingham Offspring, ARIC
+and MESA cohorts. At the same time, we will expand the advanced machine learning techniques developed
+as part of our currently funded NIH BD2K award to Duke. We will apply these models to the harmonized data
+to facilitate development and validation of prediction tool for primary strokes. These complex analyses will
+require advanced computational resources that will utilize the AHA's Precision Medicine Platform (PMP), built
+based on Amazon Web Services. Address;Age;Alabama;Algorithms;American Heart Association;American Stroke Association;Assessment tool;Award;Big Data to Knowledge;Categories;Cause of Death;Cohort Studies;Complex Analysis;Data;Development;Ethnic Origin;Ethnic group;Etiology;Event;Funding;Geography;Guidelines;Hemorrhage;Individual;Longitudinal cohort study;Machine Learning;Methods;Modeling;National Heart, Lung, and Blood Institute;National Institute of Neurological Disorders and Stroke;Outcome;Patient Self-Report;Patients;Performance;Prevention Guidelines;Prevention strategy;Primary Prevention;Race;Research;Risk Assessment;Risk Factors;Stroke;Stroke prevention;Techniques;Time;United States National Institutes of Health;Universities;Update;Validation;base;cohort;computing resources;data exchange;data harmonization;database of Genotypes and Phenotypes;deep learning;design;experience;genetic information;offspring;precision medicine;predictive modeling;repository;risk prediction model;risk stratification;sex;stroke model;stroke risk;tool;web services Data Harmonization","PROJECT SUMMARY
+Stroke is the fifth most prevalent cause of death in the U.S. afflicting nearly 800,000 per year. About three
+quarters of strokes are first events, underscoring the importance of primary prevention. Designing optimal
+preventive strategies requires identification of risk factors and estimation of the risk of stroke. The most recent
+American Heart Association (AHA)/American Stroke Association Guidelines for the Primary Prevention of
+Stroke conclude that “an ideal stroke risk assessment tool that is simple, is widely applicable and accepted,
+and takes into account the effects of multiple risk factors does not exist.” One of the most commonly
+recommended predictive models is the Framingham Stroke Profile, developed and updated more than 25
+years ago. Newer models have been proposed (including the Self-Reported Stroke Risk Stratification tool from
+the REGARDS study) but have not been thoroughly validated. Consequently, the Primary Prevention of Stroke
+guidelines call for more research “to validate risk assessment tools across age, sex, and race/ethnic groups”
+and “to evaluate whether any of the more recently identified risk factors add to the predictive accuracy of
+existing scales”.
+We propose to address these gaps by aggregating and harmonizing existing patient-level data collected as
+part of longitudinal cohort studies supported by the NINDS and NHLBI. The data will be obtained through a
+partnership with the coordinating center for the REGARDS Study at the University of Alabama at Birmingham
+and by a request submitted to the NIH dbGap repository to obtain data from the Framingham Offspring, ARIC
+and MESA cohorts. At the same time, we will expand the advanced machine learning techniques developed
+as part of our currently funded NIH BD2K award to Duke. We will apply these models to the harmonized data
+to facilitate development and validation of prediction tool for primary strokes. These complex analyses will
+require advanced computational resources that will utilize the AHA's Precision Medicine Platform (PMP), built
+based on Amazon Web Services.",10267752,R61NS120246,['R61NS120246'],NS,https://reporter.nih.gov/project-details/10267752,R61,2021,665632
+"Human neural stem cell (hNSC) therapy for stroke is showing promise as it moves from the
+bench into early clinical trials to treat the long term disabilities resulting from stroke. This
+provides hope for the millions of Americans living with the chronic, debilitating effects of stroke.
+Major questions remain, however, about how stem cells injected into the brain drive stroke
+recovery. A clue to stem cell mechanism of action is the recent discovery of the positive
+correlation between stroke recovery and a brain MRI signal – T2-FLAIR signal– in stroke
+patients treated with stem cells. We have successfully reproduced this stem cell-induced FLAIR
+signal in stroke-injured rats, and shown that its associated with inflammation. This led to our
+central hypothesis: stem cell transplantation drives recovery by inducing a regenerative
+inflammatory response. The objective of this grant is to use a rat model of subcortical stroke to
+investigate the immunomodulatory effects of hNSC transplanted at the chronic stage of stroke,
+at the regional, cellular and molecular levels using a multimodal approach. In Aim1 we use MRI
+and PET imaging to identify which brain regions show inflammatory changes after hNSC
+transplantation, and which inflammatory regions best correlate with recovery. This will also test
+the utility of these clinically relevant imaging modalities as biomarkers for stroke recovery. In
+Aim 2 we identify the immune changes induced by hNSC treatment using multiple tools to
+characterize the types and molecular signatures of the immune cells present, and their spatial
+interactions. In Aim 3 we determine which hNSC-secreted factors modulate the immune
+response by testing several candidates, in vitro and in vivo, using CRISPR tools to modulate
+expression of key candidate factors. We will study the impact of manipulating the levels of these
+proteins on stroke recovery and immunomodulation. Upon conclusion of the study, we will have
+made significant advancements in understanding how hNSC-induced immunomodulation affects
+brain repair. This contribution is significant because it will: a) identify potential biomarkers, both
+pre- and post-treatment, for hNSC-induced recovery; b) begin to delineate the molecular
+pathways involved in brain repair; and c) ultimately lead to identification of novel therapies for
+stroke. Address;Affect;Aftercare;American;Animal Model;Area;Astrocytes;Biological Markers;Biological Process;Brain;Brain Injuries;Brain region;Cell Therapy;Cell Transplantation;Cell model;Cells;Chronic;Clinical;Clinical Data;Clinical Trials;Clustered Regularly Interspaced Short Palindromic Repeats;Coculture Techniques;Control Groups;Coupled;Data;Distant;Encephalitis;Exhibits;Family;Female;Flow Cytometry;Genes;Goals;Grant;Human;Image;Immune;Immune response;Immunohistochemistry;In Vitro;Inflammation;Inflammatory;Inflammatory Response;Injections;Injury;Lead;Magnetic Resonance Imaging;Microglia;Modeling;Molecular;Molecular Profiling;Monitor;Myelogenous;Needles;Ontology;Pathway interactions;Patients;Peripheral;Positron-Emission Tomography;Proteins;Rattus;Recovery;Recovery of Function;Reporting;Rodent;Running;Signal Transduction;Site;Stem cell transplant;Stroke;System;Techniques;Testing;Therapeutic;Therapeutic Effect;Time;Tracer;Transplantation;brain repair;cell type;clinical imaging;clinically relevant;disability;early phase clinical trial;imaging modality;immune activation;immunoregulation;improved;in vivo;injured;interest;macrophage;male;multimodality;nerve stem cell;new therapeutic target;novel;novel therapeutics;patient population;post stroke;potential biomarker;regenerative;side effect;single-cell RNA sequencing;societal costs;stem cell therapy;stem cells;stroke model;stroke patient;stroke recovery;stroke therapy;tool;transcriptome Multimodal approach investigating the immunomodulatory effect ofneural stem cells in stroke recovery","Human neural stem cell (hNSC) therapy for stroke is showing promise as it moves from the
+bench into early clinical trials to treat the long term disabilities resulting from stroke. This
+provides hope for the millions of Americans living with the chronic, debilitating effects of stroke.
+Major questions remain, however, about how stem cells injected into the brain drive stroke
+recovery. A clue to stem cell mechanism of action is the recent discovery of the positive
+correlation between stroke recovery and a brain MRI signal – T2-FLAIR signal– in stroke
+patients treated with stem cells. We have successfully reproduced this stem cell-induced FLAIR
+signal in stroke-injured rats, and shown that its associated with inflammation. This led to our
+central hypothesis: stem cell transplantation drives recovery by inducing a regenerative
+inflammatory response. The objective of this grant is to use a rat model of subcortical stroke to
+investigate the immunomodulatory effects of hNSC transplanted at the chronic stage of stroke,
+at the regional, cellular and molecular levels using a multimodal approach. In Aim1 we use MRI
+and PET imaging to identify which brain regions show inflammatory changes after hNSC
+transplantation, and which inflammatory regions best correlate with recovery. This will also test
+the utility of these clinically relevant imaging modalities as biomarkers for stroke recovery. In
+Aim 2 we identify the immune changes induced by hNSC treatment using multiple tools to
+characterize the types and molecular signatures of the immune cells present, and their spatial
+interactions. In Aim 3 we determine which hNSC-secreted factors modulate the immune
+response by testing several candidates, in vitro and in vivo, using CRISPR tools to modulate
+expression of key candidate factors. We will study the impact of manipulating the levels of these
+proteins on stroke recovery and immunomodulation. Upon conclusion of the study, we will have
+made significant advancements in understanding how hNSC-induced immunomodulation affects
+brain repair. This contribution is significant because it will: a) identify potential biomarkers, both
+pre- and post-treatment, for hNSC-induced recovery; b) begin to delineate the molecular
+pathways involved in brain repair; and c) ultimately lead to identification of novel therapies for
+stroke.",10109152,R01NS058784,['R01NS058784'],NS,https://reporter.nih.gov/project-details/10109152,R01,2021,618648
+"Project Summary
+Every four minutes an American dies from stroke, equating to approximately 1 in every 19 US deaths annually. Strokes
+are classiﬁed as ischemic and hemorrhagic. Ischemic strokes make up 87% of all strokes and are caused by a blockage in
+a blood vessel (or artery) resulting in a lack of blood to the brain. A hemorrhagic stroke occurs when an artery in the
+brain leaks or ruptures releasing excess blood in or around the brain. Incorrect classiﬁcation can have dire consequences
+as treating a patient suffering from a hemorrhagic stroke (bleed) with anticoagulant drugs (used to dissolve blood clots
+for ischemic strokes) can prove fatal. Early action is of the utmost importance as each passing minute that brain cells lack
+the proper blood ﬂow additional cells die. Current classiﬁcation methods require tests performed at the hospital, e.g., CT
+or MRI scans of the patient's brain, leading to treatment delays. These delays are particularly lengthy for patients living
+in rural communities.
+ Electrical Impedance Tomography (EIT) is an emerging medical imaging modality that is inexpensive, has no ionizing
+radiation, and provides portable high-contrast images using harmless surface current and voltage measurements (e.g., on
+the head using a ﬂexible hat) to recover the internal point-wise electrical properties (e.g., inside the brain). EIT can recover
+conductivity, a measure of how easily current ﬂows through a material, as well as permittivity, a measure of the ability of a
+material to store a charge. A hemorrhagic stroke corresponds to an area of abnormally high conductivity due to the bleed,
+whereas an ischemic stroke presents as an area of lower conductivity than expected due cellular swelling from energy
+failure.
+ The proposed project addresses the important problem of early, fast, portable stroke classiﬁcation with EIT. A critical
+barrier for the use of EIT for stroke imaging has been the sensitivity of the image reconstruction algorithms to incorrect
+domain modeling and noise in the data. Due to these challenges, most research has focused on monitoring applications,
+not helpful for the classiﬁcation task. By contrast, the D-bar reconstruction method proposed here is the only proven
+noise and modeling error robust reconstruction method capable of recovering the true conductivity/permittivity using a
+low-pass ﬁltering in a nonlinear Fourier domain. D-bar methods have been successful in 2D but their development in
+3D is stunted. This proposal focuses on the development of fast, robust D-bar based reconstruction methods for the 3D
+partial boundary problem, critical to working with stroke EIT data. Numerical algorithms will be developed for the full
+and partial boundary problems in 3D and validated on simulated and experimental data. A priori information, from
+anatomical atlases, will be embedded into the methods for increased resolution and stability. As the low-pass ﬁltering
+in D-bar methods leads to blurred reconstructions, post-processing through Convolutional Neural Networks will provide
+improved image quality. This work will be the ﬁrst to develop robust computational algorithms for 3D EIT data, opening
+the door for stroke imaging. 3-Dimensional;Address;Adoption;Algorithms;Alteplase;Ambulances;American;Anatomy;Anticoagulants;Area;Arteries;Atlases;Benign;Blood;Blood Vessels;Blood flow;Brain;Brain hemorrhage;Brain imaging;Bypass;Cancerous;Cells;Cerebral hemisphere hemorrhage;Cessation of life;Charge;Chemicals;Classification;Computational algorithm;Data;Detection;Development;Devices;Drug usage;Electric Conductivity;Electrodes;Failure;Fourier Transform;Geometry;Goals;Gold;Head;Health;Hemorrhage;Hospitals;Hour;Image;Ionizing radiation;Ischemic Stroke;Lead;Location;MRI Scans;Mathematics;Measurement;Measures;Medical Imaging;Methodology;Methods;Modeling;Monitor;Noise;Outcome;Patient Monitoring;Patient-Focused Outcomes;Patients;Pharmaceutical Preparations;Research;Resolution;Risk;Rupture;Rural Community;Scanning;Stroke;Surface;Swelling;Techniques;Technology;Testing;Time;Tissues;Treatment Protocols;Validation;Work;X-Ray Computed Tomography;base;brain cell;cancer classification;contrast imaging;convolutional neural network;cranium;deep learning;electrical impedance tomography;electrical property;flexibility;follow-up;human subject;image reconstruction;imaging modality;improved;malignant breast neoplasm;mathematical methods;portability;reconstruction;stroke patient;theories;tumor;voltage Direct 3D Reconstruction Methods for Electrical Impedance Tomography for Stroke Imaging","Project Summary
+Every four minutes an American dies from stroke, equating to approximately 1 in every 19 US deaths annually. Strokes
+are classiﬁed as ischemic and hemorrhagic. Ischemic strokes make up 87% of all strokes and are caused by a blockage in
+a blood vessel (or artery) resulting in a lack of blood to the brain. A hemorrhagic stroke occurs when an artery in the
+brain leaks or ruptures releasing excess blood in or around the brain. Incorrect classiﬁcation can have dire consequences
+as treating a patient suffering from a hemorrhagic stroke (bleed) with anticoagulant drugs (used to dissolve blood clots
+for ischemic strokes) can prove fatal. Early action is of the utmost importance as each passing minute that brain cells lack
+the proper blood ﬂow additional cells die. Current classiﬁcation methods require tests performed at the hospital, e.g., CT
+or MRI scans of the patient's brain, leading to treatment delays. These delays are particularly lengthy for patients living
+in rural communities.
+ Electrical Impedance Tomography (EIT) is an emerging medical imaging modality that is inexpensive, has no ionizing
+radiation, and provides portable high-contrast images using harmless surface current and voltage measurements (e.g., on
+the head using a ﬂexible hat) to recover the internal point-wise electrical properties (e.g., inside the brain). EIT can recover
+conductivity, a measure of how easily current ﬂows through a material, as well as permittivity, a measure of the ability of a
+material to store a charge. A hemorrhagic stroke corresponds to an area of abnormally high conductivity due to the bleed,
+whereas an ischemic stroke presents as an area of lower conductivity than expected due cellular swelling from energy
+failure.
+ The proposed project addresses the important problem of early, fast, portable stroke classiﬁcation with EIT. A critical
+barrier for the use of EIT for stroke imaging has been the sensitivity of the image reconstruction algorithms to incorrect
+domain modeling and noise in the data. Due to these challenges, most research has focused on monitoring applications,
+not helpful for the classiﬁcation task. By contrast, the D-bar reconstruction method proposed here is the only proven
+noise and modeling error robust reconstruction method capable of recovering the true conductivity/permittivity using a
+low-pass ﬁltering in a nonlinear Fourier domain. D-bar methods have been successful in 2D but their development in
+3D is stunted. This proposal focuses on the development of fast, robust D-bar based reconstruction methods for the 3D
+partial boundary problem, critical to working with stroke EIT data. Numerical algorithms will be developed for the full
+and partial boundary problems in 3D and validated on simulated and experimental data. A priori information, from
+anatomical atlases, will be embedded into the methods for increased resolution and stability. As the low-pass ﬁltering
+in D-bar methods leads to blurred reconstructions, post-processing through Convolutional Neural Networks will provide
+improved image quality. This work will be the ﬁrst to develop robust computational algorithms for 3D EIT data, opening
+the door for stroke imaging.",10064622,R21EB028064,['R21EB028064'],EB,https://reporter.nih.gov/project-details/10064622,R21,2021,225052
+"PROJECT SUMMARY
+In the last four years, our group collected >1800 stroke emboli from centers across the US and Canada as part
+of the Stroke Thromboembolism Registry of Imaging and Pathology (STRIP). The STRIP registry was our
+current R01 award’s Aim 1 and is very fruitful. We have further elucidated the association between clot
+histology and revascularization outcomes, as well as clot histology and imaging characteristics. The STRIP
+registry has also allowed us to uncover novel mechanisms in stroke thrombosis, catalyzing thrombectomy
+device research and thrombolysis related research in our lab.
+We believe that the most impactful finding from our registry will be uncovering associations between
+histopathology of retrieved emboli and stroke etiology. Developing tools to predict stroke etiology is important
+because nearly 40% of strokes are of unknown etiology. Determine stroke etiology (i.e. cardiac source versus
+large artery atherosclerosis) is important as secondary stroke prevention strategies are highly dependent on
+determination of stroke etiology. However, when we performed superficial quantitative analyses examining the
+relationships between fibrin, platelet, WBC and RBC density, our results were unrevealing. Still, we
+hypothesize that it remains feasible to predict stroke etiology based of analysis of retrieved stroke emboli
+through deep learning and machine learning approaches. Machine learning and deep learning approaches can
+also aid in uncovering histological features associated with device and pharmacological failure related to stroke
+revascularization.
+Thus, this administrative supplement’s goal of is to 1) allow for complete digitization and online archiving of our
+database of over 1800 retrieved clot specimens as well as all available anonymized clinical data from Aim 1 of
+our current R01 to facilitate deep learning and machine learning and 2) to perform deep learning on the whole
+slide specimens from these patients to determine if various deep learning and machine learning algorithms can
+be used to predict stroke etiology based solely off of the histological appearance of retrieved stroke emboli. Acute;Address;Administrative Supplement;Affect;Algorithms;Anticoagulation;Appearance;Architecture;Arteries;Atherosclerosis;Atrial Fibrillation;Award;Biological;Biological Markers;Blood Platelets;Canada;Cardiac;Cause of Death;Characteristics;Clinical;Clinical Data;Coagulation Process;DNA;Data;Data Set;Databases;Deep Vein Thrombosis;Device or Instrument Development;Devices;Embolism;Etiology;Failure;Fibrin;Goals;Histologic;Histology;Histopathology;Image;Ischemic Stroke;Knowledge;Left atrial structure;Machine Learning;Mechanics;Outcome;Pathology;Patients;Pharmacology;Play;Prevention strategy;Procedures;Public Health;Registries;Research;Research Personnel;Research Project Grants;Resolution;Role;Sampling;Scanning;Scientist;Secondary to;Slide;Source;Specimen;Stains;Stroke;Stroke prevention;Structure;Techniques;Testing;Therapeutic Embolization;Thrombectomy;Thromboembolism;Thrombosis;Translations;United States;Variant;Work;acute care;aortic arch;atherosclerotic plaque rupture;base;biobank;clinical practice;clinically significant;deep learning;deep learning algorithm;density;extracellular;grasp;histological specimens;imaging biomarker;improved;insight;machine learning algorithm;neutrophil;novel;online repository;organizational structure;physical property;programs;shear stress;standard of care;stroke patient;thrombolysis;tool;von Willebrand Factor Impact of Clot Histological and Physical Properties on Revascularization Strategies in Acute Ischaemic Stroke - Administrative Supplement","PROJECT SUMMARY
+In the last four years, our group collected >1800 stroke emboli from centers across the US and Canada as part
+of the Stroke Thromboembolism Registry of Imaging and Pathology (STRIP). The STRIP registry was our
+current R01 award’s Aim 1 and is very fruitful. We have further elucidated the association between clot
+histology and revascularization outcomes, as well as clot histology and imaging characteristics. The STRIP
+registry has also allowed us to uncover novel mechanisms in stroke thrombosis, catalyzing thrombectomy
+device research and thrombolysis related research in our lab.
+We believe that the most impactful finding from our registry will be uncovering associations between
+histopathology of retrieved emboli and stroke etiology. Developing tools to predict stroke etiology is important
+because nearly 40% of strokes are of unknown etiology. Determine stroke etiology (i.e. cardiac source versus
+large artery atherosclerosis) is important as secondary stroke prevention strategies are highly dependent on
+determination of stroke etiology. However, when we performed superficial quantitative analyses examining the
+relationships between fibrin, platelet, WBC and RBC density, our results were unrevealing. Still, we
+hypothesize that it remains feasible to predict stroke etiology based of analysis of retrieved stroke emboli
+through deep learning and machine learning approaches. Machine learning and deep learning approaches can
+also aid in uncovering histological features associated with device and pharmacological failure related to stroke
+revascularization.
+Thus, this administrative supplement’s goal of is to 1) allow for complete digitization and online archiving of our
+database of over 1800 retrieved clot specimens as well as all available anonymized clinical data from Aim 1 of
+our current R01 to facilitate deep learning and machine learning and 2) to perform deep learning on the whole
+slide specimens from these patients to determine if various deep learning and machine learning algorithms can
+be used to predict stroke etiology based solely off of the histological appearance of retrieved stroke emboli.",10410193,R01NS105853,['R01NS105853'],NS,https://reporter.nih.gov/project-details/10410193,R01,2021,315871
+"The 2019 U.S. practice guidelines recommend direct oral anticoagulants (DOACs) such as dabigatran, rivarox-
+aban, and apixaban over warfarin for stroke prevention in high-risk patients with atrial fibrillation (AF). However,
+the selection of a DOAC can be challenging for older ischemic stroke patients. The risk-benefit ratios in second-
+ary stroke prevention differ substantially from those in primary prevention. Not only are older stroke survivors at
+increased risk for recurrent ischemic events, older age and history of ischemic stroke are also major risk factors
+for bleeding complications. While it is known that drug selection should be individualized, it remains unknown
+how to tailor anticoagulant therapy according to the effectiveness/safety of the agents and patient unique char-
+acteristics. The long-term goal is to use comparative effectiveness research to improve quality of care and out-
+comes in patients with cardiovascular disease and stroke. Leveraging the American Heart Association (AHA)
+Get With The Guidelines-Stroke Registry (GWTG-Stroke) and Medicare inpatient and Part D database, the over-
+all objective of this application is to develop evidence-based strategies to improve appropriate anticoagulant
+therapy for secondary prevention in older ischemic stroke patients with AF. The central hypothesis is that differ-
+ences exist between DOACs in terms of effectiveness and safety, which have direct implications for therapeutic
+selection. Once the relative effectiveness/safety is known, the selection of an anticoagulant can be made based
+on patient risk profiles, making treatment safer and more effective. Guided by strong preliminary data, this hy-
+pothesis will be tested by pursuing two specific aims: 1) Determine the long-term clinical effectiveness and safety
+of different DOACs for secondary prevention in older ischemic stroke patients with AF; 2) Investigate DOACs
+dosing patterns and evaluate the potential impact of underdosing or overdosing on long-term outcomes. The
+proposed research is innovative in four key ways: 1) A patient-centered approach is used to address a real-life
+decisional dilemma facing stroke survivors and clinicians; 2) It shifts focus from selected samples in clinical trials
+to a nationwide representative stroke population, including traditionally underrepresented subgroups in commu-
+nity practice; 3) A novel propensity score inverse probability weighting method using generalized boosted models
+(a machine learning technique) will be employed to mimic a trial-type multi-treatment design, uncover treatment
+heterogeneity, and minimize selection bias in observational data; 4) Beyond traditional mechanisms of scientific
+publications, the evidence generated from this study will be disseminated to stroke survivors, clinicians, and
+relevant stakeholders through the AHA GWTG-led national quality initiatives and patient-led efforts to ensure a
+rapid translation of seminal findings into clinical practice. The proposed research is significant because it is
+expected to help guide personalized anticoagulant therapy in older ischemic stroke survivors that could best
+meet their needs and lead to better outcomes most meaningful to patients. Ultimately, such knowledge has the
+potential to inform evidence-based treatment decisions in stroke that now afflicts more than 7.2 million Americans. Address;Adoption;Age;Aging;American;American Heart Association;Anticoagulant therapy;Anticoagulants;Anticoagulation;Atrial Fibrillation;Benefits and Risks;Cardiology;Cardiovascular Diseases;Characteristics;Chemicals;Clinical;Clinical Trials;Clinical effectiveness;Community Practice;Comparative Effectiveness Research;Complex;Creatinine;Data;Databases;Development;Dose;Drug Kinetics;Effectiveness;Embolism;Ensure;Equilibrium;Event;Evidence based treatment;Goals;Guidelines;Health;Hemorrhage;Heterogeneity;Hospitals;Individual;Inpatients;Ischemic Stroke;Knowledge;Lead;Level of Evidence;Life;Link;Machine Learning;Medicare;Methods;Mission;Modeling;Observational Study;Oral;Outcome;Overdose;Patient risk;Patients;Pattern;Pharmaceutical Preparations;Population;Practice Guidelines;Prevalence;Primary Prevention;Probability;Public Health;Publications;Quality of Care;Race;Recording of previous events;Recurrence;Registries;Renal clearance function;Renal function;Research;Risk;Risk Factors;Safety;Sampling;Schedule;Secondary Prevention;Selection Bias;Selection for Treatments;Seminal;Severities;Societies;Specific qualifier value;Stroke;Stroke prevention;Subgroup;Techniques;Testing;Therapeutic;Translations;United States;United States Centers for Medicare and Medicaid Services;United States National Institutes of Health;Warfarin;Weight;base;burden of illness;care outcomes;clinical practice;clinically relevant;college;comorbidity;comparative effectiveness analysis;disability;effectiveness outcome;ethnic minority population;evidence base;head-to-head comparison;high risk;improved;improved outcome;individual patient;individualized medicine;innovation;medication compliance;novel;patient oriented;personalized medicine;preference;prevent;relative effectiveness;risk benefit ratio;safety outcomes;sex;shared decision making;stroke outcome;stroke patient;stroke survivor;therapy design;tool;treatment effect Balancing Risks and Benefits of Direct Oral Anticoagulants in Older Ischemic Stroke Patients with Atrial Fibrillation","The 2019 U.S. practice guidelines recommend direct oral anticoagulants (DOACs) such as dabigatran, rivarox-
+aban, and apixaban over warfarin for stroke prevention in high-risk patients with atrial fibrillation (AF). However,
+the selection of a DOAC can be challenging for older ischemic stroke patients. The risk-benefit ratios in second-
+ary stroke prevention differ substantially from those in primary prevention. Not only are older stroke survivors at
+increased risk for recurrent ischemic events, older age and history of ischemic stroke are also major risk factors
+for bleeding complications. While it is known that drug selection should be individualized, it remains unknown
+how to tailor anticoagulant therapy according to the effectiveness/safety of the agents and patient unique char-
+acteristics. The long-term goal is to use comparative effectiveness research to improve quality of care and out-
+comes in patients with cardiovascular disease and stroke. Leveraging the American Heart Association (AHA)
+Get With The Guidelines-Stroke Registry (GWTG-Stroke) and Medicare inpatient and Part D database, the over-
+all objective of this application is to develop evidence-based strategies to improve appropriate anticoagulant
+therapy for secondary prevention in older ischemic stroke patients with AF. The central hypothesis is that differ-
+ences exist between DOACs in terms of effectiveness and safety, which have direct implications for therapeutic
+selection. Once the relative effectiveness/safety is known, the selection of an anticoagulant can be made based
+on patient risk profiles, making treatment safer and more effective. Guided by strong preliminary data, this hy-
+pothesis will be tested by pursuing two specific aims: 1) Determine the long-term clinical effectiveness and safety
+of different DOACs for secondary prevention in older ischemic stroke patients with AF; 2) Investigate DOACs
+dosing patterns and evaluate the potential impact of underdosing or overdosing on long-term outcomes. The
+proposed research is innovative in four key ways: 1) A patient-centered approach is used to address a real-life
+decisional dilemma facing stroke survivors and clinicians; 2) It shifts focus from selected samples in clinical trials
+to a nationwide representative stroke population, including traditionally underrepresented subgroups in commu-
+nity practice; 3) A novel propensity score inverse probability weighting method using generalized boosted models
+(a machine learning technique) will be employed to mimic a trial-type multi-treatment design, uncover treatment
+heterogeneity, and minimize selection bias in observational data; 4) Beyond traditional mechanisms of scientific
+publications, the evidence generated from this study will be disseminated to stroke survivors, clinicians, and
+relevant stakeholders through the AHA GWTG-led national quality initiatives and patient-led efforts to ensure a
+rapid translation of seminal findings into clinical practice. The proposed research is significant because it is
+expected to help guide personalized anticoagulant therapy in older ischemic stroke survivors that could best
+meet their needs and lead to better outcomes most meaningful to patients. Ultimately, such knowledge has the
+potential to inform evidence-based treatment decisions in stroke that now afflicts more than 7.2 million Americans.",10241532,R01AG066672,['R01AG066672'],AG,https://reporter.nih.gov/project-details/10241532,R01,2021,567718
+"PI Name(s): Moura, Lidia Maria Veras Rocha de  
+Project Title: Comparative Safety of Seizure Prophylaxis within the Medicare Program
+1R01AG073410-01
+Each year thousands of Medicare beneficiaries with Alzheimer’s disease and/or Alzheimer’s-related dementias (AD/ADRD) receive anticonvulsant drugs for seizure prophylaxis. These drugs are life-saving given the severity of seizure sequalae, but also life-threatening because of serious adverse events. Patients with AD/ADRD are particularly vulnerable given their high susceptibility to both stroke and adverse events. The decision to start and stop anticonvulsants also might change when the patient have AD/ADRD, in part because anticonvulsant therapy management becomes more complex when patients have difficulty with therapy having a narrow therapeutic range or difficulty recognizing early complication symptoms. There are no trial data to guide decisions about prophylaxis after an ischemic stroke among patients with or without AD/ADRD. The sparse and conflicted existing literature has been limited by the difficulty assessing relevant measures, e.g., stroke severity or AD/ADRD status, in claims. Medicare claims offer potential, but lack well-validated definitions for stroke severity, AD/ADRD status, seizures, or adverse effects. We will address these issues using a novel dataset with individual-level linked longitudinal information from registries, electronic health records, and Medicare claims, and will develop prediction models for key baseline and outcome variables. Then, using a random 20% sample of national traditional, fee-for-service Medicare claims over 18 years (2006-23), we will emulate clinical trials assessing two critical decisions in the setting of first mild to moderate ischemic stroke among patients with or without AD/ADRD: a) initiating outpatient prophylaxis versus not; and b) stopping prophylaxis at six months versus continuing. We will apply multiple analytical tools to address confounding and other challenges. We will stratify our population based on AD/ADRD status because the patterns of strokes, post-stroke seizures, and treatment complications differ among patients with compared to those without AD/ADRD, as could the clinical management patterns. We have three aims: 1) To validate claims-based prediction models for our study variables; 2) To emulate a clinical trial comparing outpatient prophylaxis initiation versus not; and 3) To emulate a clinical trial comparing stopping outpatient prophylaxis at six months versus continuing. This comparative safety study could inform future policy and clinical care and improve stroke and AD/ADRD care, e.g., through adjustments in Medicare quality incentives and clinical guidelines. Moreover, these data could help inform patients, families, clinicians, and policy makers about how we can improve care for patients who could require seizure prophylaxis. Academy;Acute;Address;Adverse effects;Adverse event;Advisory Committees;Alzheimer&apos;s Disease;Alzheimer&apos;s disease related dementia;American;American Heart Association;Anticonvulsants;Case Series;Centers for Disease Control and Prevention (U.S.);Clinical;Clinical Management;Clinical Trials;Communities;Complex;Complication;Cox Proportional Hazards Models;Data;Data Set;Detection;Diagnosis;Drug Labeling;Drug usage;Elderly;Electroencephalography;Electronic Health Record;Emergency department visit;Enrollment;Epilepsy;Etiology;Event;Family;Fee-for-Service Plans;Foundations;Future;Guidelines;Hospitalization;Incentives;Individual;Ischemic Stroke;Life;Link;Literature;Measures;Medicare;Medicare Part A;Medicare claim;Methods;Modeling;Names;National Committee for Quality Assurance;Neurology;Observational Study;Outcome;Outpatients;Patient Care;Patients;Pattern;Pharmaceutical Preparations;Physicians;Policies;Policy Maker;Positioning Attribute;Predisposition;Prophylactic treatment;Provider;Registries;Relative Risks;Risk;Safety;Sampling;Savings;Scoring Method;Seizures;Serious Adverse Event;Severities;Stroke;Symptoms;Therapeutic;Time;Validation;acute stroke;adjudicate;adverse event risk;aged;analytical tool;base;beneficiary;clinical care;comorbidity;comparative safety;cost;dementia care;electronic data;experience;fall injury;falls;follow-up;high risk;improved;individualized medicine;machine learning method;multidisciplinary;novel;population based;post stroke;predictive modeling;prevent;programs;randomized trial;recruit;safety study;stroke event;stroke risk;stroke survivor;treatment duration;trial comparing Comparative Safety of Seizure Prophylaxis within the Medicare Program","PI Name(s): Moura, Lidia Maria Veras Rocha de  
+Project Title: Comparative Safety of Seizure Prophylaxis within the Medicare Program
+1R01AG073410-01
+Each year thousands of Medicare beneficiaries with Alzheimer’s disease and/or Alzheimer’s-related dementias (AD/ADRD) receive anticonvulsant drugs for seizure prophylaxis. These drugs are life-saving given the severity of seizure sequalae, but also life-threatening because of serious adverse events. Patients with AD/ADRD are particularly vulnerable given their high susceptibility to both stroke and adverse events. The decision to start and stop anticonvulsants also might change when the patient have AD/ADRD, in part because anticonvulsant therapy management becomes more complex when patients have difficulty with therapy having a narrow therapeutic range or difficulty recognizing early complication symptoms. There are no trial data to guide decisions about prophylaxis after an ischemic stroke among patients with or without AD/ADRD. The sparse and conflicted existing literature has been limited by the difficulty assessing relevant measures, e.g., stroke severity or AD/ADRD status, in claims. Medicare claims offer potential, but lack well-validated definitions for stroke severity, AD/ADRD status, seizures, or adverse effects. We will address these issues using a novel dataset with individual-level linked longitudinal information from registries, electronic health records, and Medicare claims, and will develop prediction models for key baseline and outcome variables. Then, using a random 20% sample of national traditional, fee-for-service Medicare claims over 18 years (2006-23), we will emulate clinical trials assessing two critical decisions in the setting of first mild to moderate ischemic stroke among patients with or without AD/ADRD: a) initiating outpatient prophylaxis versus not; and b) stopping prophylaxis at six months versus continuing. We will apply multiple analytical tools to address confounding and other challenges. We will stratify our population based on AD/ADRD status because the patterns of strokes, post-stroke seizures, and treatment complications differ among patients with compared to those without AD/ADRD, as could the clinical management patterns. We have three aims: 1) To validate claims-based prediction models for our study variables; 2) To emulate a clinical trial comparing outpatient prophylaxis initiation versus not; and 3) To emulate a clinical trial comparing stopping outpatient prophylaxis at six months versus continuing. This comparative safety study could inform future policy and clinical care and improve stroke and AD/ADRD care, e.g., through adjustments in Medicare quality incentives and clinical guidelines. Moreover, these data could help inform patients, families, clinicians, and policy makers about how we can improve care for patients who could require seizure prophylaxis.",10277748,R01AG073410,['R01AG073410'],AG,https://reporter.nih.gov/project-details/10277748,R01,2021,841695
+"Project Summary / Abstract
+ Upper-limb paresis is the most common impairment following a stroke affecting 75% of stroke survivors,
+which can be more prominent in one of the two limbs. Most recovery of functional impairments occurs within
+the first few weeks after stroke and plateaus thereafter. Unfortunately, even after patients reach a stable phase
+of recovery, their functional level of the stroke-affected limb may decline. Therefore, it is clinically important to
+maintain the regained functional level beyond the first couple weeks of spontaneous recovery by continuing to
+practice the use of the affected limb during daily living.
+ Wearable technologies have emerged as a low-cost, objective tool to monitor the performance of the upper
+limbs during activities of daily living (ADLs). However, to date, there exists no study that has investigated the
+effectiveness of a mobile-health (mHealth) system aiming to enable high-dosage motor performance in chronic
+stroke survivors in the real-world setting. Specifically, the optimal configuration of the goal setting, feedback
+mechanism and ways to share data among the stakeholders (patients and clinicians) remains unknown.
+ This proposal aims to develop and validate an mHealth technology that aims to encourage affected limb
+use during the performance of ADLs in chronic stroke survivors. To accomplish this goal, we will employ the
+unique finger-worn ring sensor (accelerometer), developed by our academic-industry partnership, that can
+capture both gross-arm and fine-hand use of the limbs that are essential in the performance of ADLs. We will
+study important aspects of making positive behavior changes to encourage the affected limb use by fully
+leveraging the computational insights drawn from sensor data combined with clinical insights from providers.
+ To accomplish this research goal, Aim 1 will focus on the development of an mHealth platform, composed of
+body-networked sensors and cloud-based systems, to monitor the real-world use of the limbs in chronic stroke
+survivors. In Aim 2, we will develop machine-learning based algorithms to extract clinically meaningful
+information regarding real-world upper limb use from sensor data. Aim 3 will investigate the optimal design of
+our mHealth system – such as individual tailoring of the goal, design of the feedback, medium and timing to
+deliver feedback, and ways to share data among the stakeholders (patients and clinicians) – via human-centered
+design approaches. Finally, in Aim 4, we will validate the short-term (8 weeks) effectiveness of the mHealth
+system in improving the use of the affected limb through a field deployment study.
+ We believe that outcomes of this project will open a new door leading to previously unexplored datasets and
+understanding of patient-technology interactions to promote positive behavior changes to enable a high dosage
+of physical and occupational therapy, which can form the basis of a wide range of future investigations of
+hemiparesis rehabilitation and personalized disease management. Accelerometer;Activities of Daily Living;Affect;Algorithms;Behavior;Brachial Paresis;Cause of Death;Cellular Phone;Clinic;Clinical;Custom;Data;Data Set;Development;Effectiveness;Environment;Evaluation Studies;Feedback;Fingers;Future;Goals;Hand;Hand functions;Health Technology;Health system;Home;Human;Impairment;Individual;Intervention;Investigation;Limb structure;Machine Learning;Monitor;Motor;Motor Skills;Movement;Network-based;Occupational Therapy;Outcome;Patients;Performance;Phase;Physical therapy;Process;Provider;Recovery;Recovery of Function;Rehabilitation therapy;Research;Secure;Stroke;System;Technology;Upper Extremity;Upper limb movement;Withdrawal;arm;arm movement;base;behavior change;care providers;chronic stroke;cloud based;cloud platform;community setting;cost;data sharing;data visualization;design;disability;dosage;functional disability;hemiparesis;improved;industry partner;insight;mHealth;motor recovery;novel;personalized management;post stroke;recruit;sensor;stroke survivor;tool;upper limb hemiparesis;usability;wearable device;wearable sensor technology;web platform Achieving Optimal Motor Function in Stroke Survivors via a Human-Centered Approach to Design an mHealth Platform","Project Summary / Abstract
+ Upper-limb paresis is the most common impairment following a stroke affecting 75% of stroke survivors,
+which can be more prominent in one of the two limbs. Most recovery of functional impairments occurs within
+the first few weeks after stroke and plateaus thereafter. Unfortunately, even after patients reach a stable phase
+of recovery, their functional level of the stroke-affected limb may decline. Therefore, it is clinically important to
+maintain the regained functional level beyond the first couple weeks of spontaneous recovery by continuing to
+practice the use of the affected limb during daily living.
+ Wearable technologies have emerged as a low-cost, objective tool to monitor the performance of the upper
+limbs during activities of daily living (ADLs). However, to date, there exists no study that has investigated the
+effectiveness of a mobile-health (mHealth) system aiming to enable high-dosage motor performance in chronic
+stroke survivors in the real-world setting. Specifically, the optimal configuration of the goal setting, feedback
+mechanism and ways to share data among the stakeholders (patients and clinicians) remains unknown.
+ This proposal aims to develop and validate an mHealth technology that aims to encourage affected limb
+use during the performance of ADLs in chronic stroke survivors. To accomplish this goal, we will employ the
+unique finger-worn ring sensor (accelerometer), developed by our academic-industry partnership, that can
+capture both gross-arm and fine-hand use of the limbs that are essential in the performance of ADLs. We will
+study important aspects of making positive behavior changes to encourage the affected limb use by fully
+leveraging the computational insights drawn from sensor data combined with clinical insights from providers.
+ To accomplish this research goal, Aim 1 will focus on the development of an mHealth platform, composed of
+body-networked sensors and cloud-based systems, to monitor the real-world use of the limbs in chronic stroke
+survivors. In Aim 2, we will develop machine-learning based algorithms to extract clinically meaningful
+information regarding real-world upper limb use from sensor data. Aim 3 will investigate the optimal design of
+our mHealth system – such as individual tailoring of the goal, design of the feedback, medium and timing to
+deliver feedback, and ways to share data among the stakeholders (patients and clinicians) – via human-centered
+design approaches. Finally, in Aim 4, we will validate the short-term (8 weeks) effectiveness of the mHealth
+system in improving the use of the affected limb through a field deployment study.
+ We believe that outcomes of this project will open a new door leading to previously unexplored datasets and
+understanding of patient-technology interactions to promote positive behavior changes to enable a high dosage
+of physical and occupational therapy, which can form the basis of a wide range of future investigations of
+hemiparesis rehabilitation and personalized disease management.",10222670,R01EB027777,['R01EB027777'],EB,https://reporter.nih.gov/project-details/10222670,R01,2021,493221
+"Abstract
+ Lacunar strokes are small infarctions of deep penetrator end arteries that supply deep areas of brain
+including the basal ganglia, internal capsule, thalamus and pons. The “cause” of lacunar strokes has been
+controversial. C Miller Fisher was the first to suggest that hypertension was one cause, noting lipohyalinosis
+(inflammation, fibrinoid necrosis of vessel wall) in smaller penetrating arteries (<200um) occurred only in
+hypertensives. He also showed, however, that larger lacunar strokes were often associated with
+microatheroma associated narrowing of larger penetrating arteries. This pathology is now thought to be the
+most common and associated with lipid abnormalities and diabetes. Moreover, some lacunar strokes are now
+thought to be associated with intracranial atherosclerosis of the parent artery at the origin of the penetrators.
+Though lacunar strokes were not traditionally associated with large vessel extracranial atherosclerosis or
+cardioembolism, there are now a number of cases where lacunar strokes have been associated with large
+vessel atherosclerosis or cardiac causes. Indeed, in our own recent study we showed that as many as ~50% of
+small deep infarcts (>15mm in size) were predicted to be due to large vessel atherosclerosis or to
+cardioembolic disease. It is crucial to identify the correct causes of lacunar strokes because treatments differ:
+drugs for hypertension vs drugs for lipid abnormalities, surgery for large vessel carotid disease, anticoagulants
+for cardioembolic disease, and anti-platelet agents for lacunar strokes associated with hypertension or
+abnormal lipids or diabetes. The biology of lacunar strokes has been studied very little, and there are no
+accepted biomarkers for lacunar stroke or its causes. Our group, however, has begun to provide novel insights
+into how the immune and clotting profiles in peripheral blood differ in lacunar strokes compared to large vessel
+and cardioembolic strokes. We have shown that the immune response in large vessel and cardioembolic
+cortical strokes is mainly associated with neutrophil genes, whereas the immune response in lacunar stroke
+associated with hypertension /lipids/ diabetes is associated with inflammatory monocyte-related genes.
+However, since the preliminary studies were performed on whole blood, there is a great need to study
+individual immune cell types in these different causes of ischemic stroke. Therefore, in this study we will isolate
+neutrophils and monocytes in patients with lacunar stroke compared to large vessel and cardioembolic stroke.
+We will perform RNA sequencing on those cells in the following aims which allows us to measure expression
+levels of >250,000 alternatively spliced transcripts which are derived from the ~20,000 coding genes.
+ Specific Aim #1. Use RNAseq to demonstrate that alternatively spliced transcript level expression
+profiles in monocytes, neutrophils and whole blood differ for subcortical lacunar strokes associated with
+hypertension, abnormal lipids, diabetes, large vessel atherosclerosis, or cardioembolism compared to each
+other and compared to matched controls.
+ Specific Aim #2. Use RNAseq to demonstrate that alternatively spliced transcript level expression
+profiles for subcortical lacunar strokes with hypertension, lipids or diabetes are associated with monocytes, and
+differ from cortical large vessel and cardioembolic strokes which are associated mainly with neutrophils.
+ Specific Aim #3a. Use Support Vector Machine (SVM) to derive the minimum number of transcripts
+from Aim #1 that differentiate the different causes of lacunar strokes including hypertension, abnormal lipids,
+diabetes, large vessel atherosclerosis, or cardiac disease. Specific Aim #3b. Use the profiles derived in Aim
+#3a to predict the cause of lacunar stroke in a second cohort using qRT-PCR to measure expression and SVM
+to perform predictions with >85% sensitivity and specificity.
+ Significance: Identifying the causes of lacunar strokes based upon splice variant expression in
+individual blood cell types is important since it would affect therapy used for secondary stroke prevention. Affect;Alternative Splicing;Anticoagulants;Antiplatelet Drugs;Area;Arterial Fatty Streak;Arteries;Atherosclerosis;BCL6 gene;Basal Ganglia;Biological Markers;Biology;Blood;Blood Cells;Blood Platelets;Brain;CADASIL;CCL2 gene;CCL3 gene;CCL4 gene;Caliber;Cardiac;Carotid Atherosclerotic Disease;Cells;Characteristics;Coagulation Process;Code;Diabetes Mellitus;Disease;Endothelial Cells;FPR1 gene;Fibrinoid necrosis;Future;Gene Expression;Gene Expression Profile;Genes;Genetic;Heart Diseases;Hyperlipidemia;Hypertension;Immune;Immune response;Individual;Infarction;Inflammation;Inflammatory;Internal Capsule;Intracranial Atherosclerotic Disease;Ischemic Stroke;Lacunar Infarctions;Lipids;MMP9 gene;Measures;Mediating;Messenger RNA;Molecular;Operative Surgical Procedures;Parents;Pathology;Patients;Pharmaceutical Preparations;Pontine structure;Quantitative Reverse Transcriptase PCR;RNA Splicing;Recurrence;S100P gene;Sensitivity and Specificity;Stroke;Stroke prevention;Thalamic structure;Thrombosis;Transcript;Validation;Variant;Whole Blood;base;cell type;cohort;insight;middle cerebral artery;monocyte;neutrophil;notch protein;novel;peripheral blood;rare genetic disorder;support vector machine;transcriptome sequencing;vascular risk factor;white matter;whole genome Whole Genome RNA Sequencing (RNAseq) of Blood from Patients with Lacunar Stroke","Abstract
+ Lacunar strokes are small infarctions of deep penetrator end arteries that supply deep areas of brain
+including the basal ganglia, internal capsule, thalamus and pons. The “cause” of lacunar strokes has been
+controversial. C Miller Fisher was the first to suggest that hypertension was one cause, noting lipohyalinosis
+(inflammation, fibrinoid necrosis of vessel wall) in smaller penetrating arteries (<200um) occurred only in
+hypertensives. He also showed, however, that larger lacunar strokes were often associated with
+microatheroma associated narrowing of larger penetrating arteries. This pathology is now thought to be the
+most common and associated with lipid abnormalities and diabetes. Moreover, some lacunar strokes are now
+thought to be associated with intracranial atherosclerosis of the parent artery at the origin of the penetrators.
+Though lacunar strokes were not traditionally associated with large vessel extracranial atherosclerosis or
+cardioembolism, there are now a number of cases where lacunar strokes have been associated with large
+vessel atherosclerosis or cardiac causes. Indeed, in our own recent study we showed that as many as ~50% of
+small deep infarcts (>15mm in size) were predicted to be due to large vessel atherosclerosis or to
+cardioembolic disease. It is crucial to identify the correct causes of lacunar strokes because treatments differ:
+drugs for hypertension vs drugs for lipid abnormalities, surgery for large vessel carotid disease, anticoagulants
+for cardioembolic disease, and anti-platelet agents for lacunar strokes associated with hypertension or
+abnormal lipids or diabetes. The biology of lacunar strokes has been studied very little, and there are no
+accepted biomarkers for lacunar stroke or its causes. Our group, however, has begun to provide novel insights
+into how the immune and clotting profiles in peripheral blood differ in lacunar strokes compared to large vessel
+and cardioembolic strokes. We have shown that the immune response in large vessel and cardioembolic
+cortical strokes is mainly associated with neutrophil genes, whereas the immune response in lacunar stroke
+associated with hypertension /lipids/ diabetes is associated with inflammatory monocyte-related genes.
+However, since the preliminary studies were performed on whole blood, there is a great need to study
+individual immune cell types in these different causes of ischemic stroke. Therefore, in this study we will isolate
+neutrophils and monocytes in patients with lacunar stroke compared to large vessel and cardioembolic stroke.
+We will perform RNA sequencing on those cells in the following aims which allows us to measure expression
+levels of >250,000 alternatively spliced transcripts which are derived from the ~20,000 coding genes.
+ Specific Aim #1. Use RNAseq to demonstrate that alternatively spliced transcript level expression
+profiles in monocytes, neutrophils and whole blood differ for subcortical lacunar strokes associated with
+hypertension, abnormal lipids, diabetes, large vessel atherosclerosis, or cardioembolism compared to each
+other and compared to matched controls.
+ Specific Aim #2. Use RNAseq to demonstrate that alternatively spliced transcript level expression
+profiles for subcortical lacunar strokes with hypertension, lipids or diabetes are associated with monocytes, and
+differ from cortical large vessel and cardioembolic strokes which are associated mainly with neutrophils.
+ Specific Aim #3a. Use Support Vector Machine (SVM) to derive the minimum number of transcripts
+from Aim #1 that differentiate the different causes of lacunar strokes including hypertension, abnormal lipids,
+diabetes, large vessel atherosclerosis, or cardiac disease. Specific Aim #3b. Use the profiles derived in Aim
+#3a to predict the cause of lacunar stroke in a second cohort using qRT-PCR to measure expression and SVM
+to perform predictions with >85% sensitivity and specificity.
+ Significance: Identifying the causes of lacunar strokes based upon splice variant expression in
+individual blood cell types is important since it would affect therapy used for secondary stroke prevention.",10168660,R01NS101718,['R01NS101718'],NS,https://reporter.nih.gov/project-details/10168660,R01,2021,564925
+"The current U.S. and European guidelines recommend antiplatelet therapy such as aspirin, clopidogrel, or dual
+antiplatelet therapy to reduce the risk of recurrent ischemic events in patients with noncardioembolic ischemic
+stroke. However, selection of antiplatelet agents can be a difficult decision to make for older patients. Not only
+older individuals are at increased risk for recurrent strokes, they also face risk for bleeding complications. While
+it is known that drug selection should be individualized, it remains unknown how to tailor antiplatelet therapy
+according to patient unique characteristics, preferences, needs, and values. The long-term goal is to use com-
+parative effectiveness research to improve primary and secondary prevention in cardiovascular disease and
+stroke. Leveraging the American Heart Association (AHA) Get With The Guidelines Stroke (GWTG) registry and
+Medicare claims, the overall objective in this application is to develop patient-centered evidence-based strategies
+to improve antiplatelet treatment selection for older individuals presenting with noncardioembolic ischemic stroke.
+The central hypothesis is that individuals differ in many characteristics, such as age, sex, presence of comorbid-
+ities, or concurrent medications, which can influence the potential benefits and harms associated with the treat-
+ment. Once the variability in response to treatment is known, selection of an antiplatelet agent can be made
+based on patient risk profiles, preferences, and known efficacy/safety of the agents, making treatment both safer
+and more effective. Guided by strong preliminary data, this hypothesis will be tested by pursuing three specific
+aims: 1) determine the long-term clinical effectiveness of different antiplatelet regimens in patients with noncar-
+dioembolic ischemic stroke; 2) determine the long-term safety of different antiplatelet regimens; and 3) balance
+benefits and harms of each antiplatelet regimen while incorporating patient preferences into decision-making.
+The proposed research is innovative in four key ways: 1) a patient-centered approach is used to address a real-
+life decisional dilemma facing stroke survivors and clinicians; 2) it shifts focus from selected samples in clinical
+trials to nationwide representative stroke population, including traditionally underrepresented subgroups in com-
+munity practice; 3) novel propensity score inverse probability weighting method using generalized boosted mod-
+els (a machine learning technique) will be employed to mimic a trial-type multi-treatment design, uncover treat-
+ment heterogeneity, and minimize selection bias in observational data; 4) beyond traditional mechanisms of
+scientific publications, the evidence generated from this study will be disseminated to stroke survivors, clinicians,
+and relevant stakeholders through the AHA GWTG-led national quality initiatives and patient-led efforts to insure
+a rapid translation of seminal findings into clinical practice. The proposed research is significant, because it is
+expected to help guide personalized antiplatelet therapy in older ischemic stroke survivors that could best meet
+their needs and lead to better outcomes most meaningful to patients. Ultimately, such knowledge has the poten-
+tial to inform evidence-based treatment decisions in stroke that now afflicts more than 7.2 million Americans. Address;Adoption;Age;Aging;American;American Heart Association;Antiplatelet Drugs;Aspirin;Benefits and Risks;Cardiovascular Diseases;Cardiovascular system;Cause of Death;Characteristics;Clinical;Clinical Trials;Clinical effectiveness;Coagulation Process;Community Practice;Comparative Effectiveness Research;Complication;Data;Databases;Decision Making;Development;Dose;Effectiveness;Equilibrium;European;Event;Evidence based treatment;Face;Failure;Fright;Goals;Guidelines;Health;Heart;Hemorrhage;Heterogeneity;Hospitalization;Hospitals;Individual;Individual Differences;Ischemia;Ischemic Stroke;Knowledge;Lead;Level of Evidence;Life;Link;Machine Learning;Medicare claim;Methods;Mission;Modeling;Observational Study;Outcome;Patient Preferences;Patient risk;Patients;Pharmaceutical Preparations;Population;Predisposition;Primary Prevention;Probability;Public Health;Publications;Recurrence;Regimen;Registries;Research;Risk;Safety;Sampling;Secondary Prevention;Selection Bias;Selection for Treatments;Seminal;Societies;Specific qualifier value;Stroke;Stroke prevention;Subgroup;Techniques;Testing;Translations;Treatment Failure;United States;United States Centers for Medicare and Medicaid Services;United States National Institutes of Health;Weight;Woman;base;burden of illness;cardiovascular disorder prevention;clinical practice;clopidogrel;comorbidity;comparative effectiveness analysis;disability;effectiveness outcome;evidence base;improved;improved outcome;individual patient;individualized medicine;innovation;novel;older patient;patient oriented;personalized medicine;preference;prevent;safety outcomes;sex;stroke patient;stroke survivor;therapy design;treatment effect;treatment response Antiplatelet in Stroke:  Safety and Effectiveness in Seniors (ASSESS)","The current U.S. and European guidelines recommend antiplatelet therapy such as aspirin, clopidogrel, or dual
+antiplatelet therapy to reduce the risk of recurrent ischemic events in patients with noncardioembolic ischemic
+stroke. However, selection of antiplatelet agents can be a difficult decision to make for older patients. Not only
+older individuals are at increased risk for recurrent strokes, they also face risk for bleeding complications. While
+it is known that drug selection should be individualized, it remains unknown how to tailor antiplatelet therapy
+according to patient unique characteristics, preferences, needs, and values. The long-term goal is to use com-
+parative effectiveness research to improve primary and secondary prevention in cardiovascular disease and
+stroke. Leveraging the American Heart Association (AHA) Get With The Guidelines Stroke (GWTG) registry and
+Medicare claims, the overall objective in this application is to develop patient-centered evidence-based strategies
+to improve antiplatelet treatment selection for older individuals presenting with noncardioembolic ischemic stroke.
+The central hypothesis is that individuals differ in many characteristics, such as age, sex, presence of comorbid-
+ities, or concurrent medications, which can influence the potential benefits and harms associated with the treat-
+ment. Once the variability in response to treatment is known, selection of an antiplatelet agent can be made
+based on patient risk profiles, preferences, and known efficacy/safety of the agents, making treatment both safer
+and more effective. Guided by strong preliminary data, this hypothesis will be tested by pursuing three specific
+aims: 1) determine the long-term clinical effectiveness of different antiplatelet regimens in patients with noncar-
+dioembolic ischemic stroke; 2) determine the long-term safety of different antiplatelet regimens; and 3) balance
+benefits and harms of each antiplatelet regimen while incorporating patient preferences into decision-making.
+The proposed research is innovative in four key ways: 1) a patient-centered approach is used to address a real-
+life decisional dilemma facing stroke survivors and clinicians; 2) it shifts focus from selected samples in clinical
+trials to nationwide representative stroke population, including traditionally underrepresented subgroups in com-
+munity practice; 3) novel propensity score inverse probability weighting method using generalized boosted mod-
+els (a machine learning technique) will be employed to mimic a trial-type multi-treatment design, uncover treat-
+ment heterogeneity, and minimize selection bias in observational data; 4) beyond traditional mechanisms of
+scientific publications, the evidence generated from this study will be disseminated to stroke survivors, clinicians,
+and relevant stakeholders through the AHA GWTG-led national quality initiatives and patient-led efforts to insure
+a rapid translation of seminal findings into clinical practice. The proposed research is significant, because it is
+expected to help guide personalized antiplatelet therapy in older ischemic stroke survivors that could best meet
+their needs and lead to better outcomes most meaningful to patients. Ultimately, such knowledge has the poten-
+tial to inform evidence-based treatment decisions in stroke that now afflicts more than 7.2 million Americans.",10104421,R01AG062770,['R01AG062770'],AG,https://reporter.nih.gov/project-details/10104421,R01,2021,509566
+"Abstract
+The following K23 proposal is for Dr. Nils Petersen, a Neurocritical Care and Stroke Neurologist at Yale-New
+Haven Hospital, and Assistant Professor at Yale University School of Medicine. Dr. Petersen is a physician-
+scientist with specialized knowledge of human cerebral hemodynamics who is investigating personalized,
+autoregulation-guided blood pressure management after ischemic stroke. About 40% of patients with ischemic
+stroke due to intracranial large-vessel occlusion (LVO) are rendered non-ambulatory, bedridden or deceased
+despite treatment with endovascular thrombectomy. Abnormalities in cerebrovascular autoregulation in the acute
+phase of LVO stroke increase the risk of secondary brain injury from relative cerebral hypo- or hyperperfusion.
+Thus, autoregulation-guided, personalized blood pressure management presents a promising alternative to the
+current practice of targeting fixed thresholds. By providing a more favorable physiologic environment for the
+injured brain, the autoregulation-guided approach may reduce secondary brain injury and improve outcomes.
+Preliminary data obtained by Dr. Petersen have demonstrated the feasibility of a research plan that uses near-
+infrared spectroscopy and real-time data processing to identify a patient-specific blood pressure range that yields
+optimal brain blood flow. This research proposal will evaluate if blood pressure management outside
+personalized limits of autoregulation increases the risk for neurologic worsening from infarct progression or
+hemorrhagic transformation, leading to increased rates of unfavorable outcome (Aim 1). Next, Dr. Petersen will
+evaluate the effectiveness of therapeutic blood pressure interventions and explore the feasibility of an
+intervention protocol targeting a personalized blood pressure range (Aim 2). Under the expert mentorship of Dr.
+Kevin Sheth, Chief of Neurocritical Care, Dr. Randolph Marshall, Director of Stroke Division at Columbia
+University, and Dr. Cynthia Brandt, Director of Medical Informatics, this K23 award will allow Dr. Petersen 1) to
+acquire skills in informatics, advanced signal processing and machine learning in order to enhance current
+methods of quantifying cerebral autoregulation, 2) to develop expertise in clinical trial design, 3) to build a
+research group dedicated to discovery and clinical evaluation of physiology-based individualized treatment
+strategies after stroke, and 4) to foster inter-institutional collaboration and data-sharing. This proposal will
+leverage Yale’s cutting-edge neuro-monitoring technologies along with extensive informatics and research
+resources from the Yale Center for Clinical Investigation to generate new insights into cerebral hemodynamics
+and identify treatment opportunities. At the conclusion of this award period, Dr. Petersen will be well-positioned
+to become an independently-funded investigator conducting high-quality research in the area of cerebral
+hemodynamics. His long-term goal is to use neuro-monitoring to develop physiology-based, personalized, early
+interventions to reduce the disability and morbidity associated with stroke. Acute;Address;Algorithms;Area;Award;Blood Pressure;Blood Vessels;Brain Injuries;Caring;Cerebral Edema;Cerebrovascular Circulation;Cerebrum;Clinical;Clinical Management;Clinical Trials;Clinical Trials Design;Collaborations;Complex;Data;Data Analyses;Data Science;Diagnostic;Diagnostic radiologic examination;Disabled Persons;Early Intervention;Enrollment;Environment;Fostering;Frequencies;Funding;Goals;Guidelines;Hemorrhage;Homeostasis;Hospitals;Hour;Human;Infarction;Informatics;Intervention;Ischemic Stroke;K-Series Research Career Programs;Knowledge;Machine Learning;Measurement;Medical Informatics;Mentored Patient-Oriented Research Career Development Award;Mentorship;Methods;Mission;Monitor;Morbidity - disease rate;Near-Infrared Spectroscopy;Neurologic;Neurologist;Observational Study;Outcome;Patient Care;Patients;Pharmacology;Phase;Physician Executives;Physicians;Physiological;Physiology;Positioning Attribute;Protocols documentation;Quality of life;Recovery;Reperfusion Injury;Reperfusion Therapy;Research;Research Personnel;Research Proposals;Resources;Risk;Risk Factors;Scientist;Secondary to;Step Tests;Stroke;Technology;Testing;Time;Training;United States;United States National Institutes of Health;Universities;acute stroke;base;biomedical informatics;blood pressure intervention;blood pressure reduction;blood pressure regulation;career;cerebral hemodynamics;cerebrovascular;clinical center;clinical investigation;computerized data processing;disability;effectiveness evaluation;endovascular thrombectomy;feasibility testing;functional outcomes;hemodynamics;hypoperfusion;improved;improved outcome;individual patient;individualized medicine;insight;inter-institutional;medical schools;modifiable risk;nervous system disorder;personalized medicine;post stroke;preservation;pressure;prevent;professor;public health relevance;randomized trial;research clinical testing;signal processing;skills;standard of care;stroke therapy;therapeutic effectiveness;treatment strategy Precision blood pressure management after endovascular stroke therapy based on real-time autoregulation measurements","Abstract
+The following K23 proposal is for Dr. Nils Petersen, a Neurocritical Care and Stroke Neurologist at Yale-New
+Haven Hospital, and Assistant Professor at Yale University School of Medicine. Dr. Petersen is a physician-
+scientist with specialized knowledge of human cerebral hemodynamics who is investigating personalized,
+autoregulation-guided blood pressure management after ischemic stroke. About 40% of patients with ischemic
+stroke due to intracranial large-vessel occlusion (LVO) are rendered non-ambulatory, bedridden or deceased
+despite treatment with endovascular thrombectomy. Abnormalities in cerebrovascular autoregulation in the acute
+phase of LVO stroke increase the risk of secondary brain injury from relative cerebral hypo- or hyperperfusion.
+Thus, autoregulation-guided, personalized blood pressure management presents a promising alternative to the
+current practice of targeting fixed thresholds. By providing a more favorable physiologic environment for the
+injured brain, the autoregulation-guided approach may reduce secondary brain injury and improve outcomes.
+Preliminary data obtained by Dr. Petersen have demonstrated the feasibility of a research plan that uses near-
+infrared spectroscopy and real-time data processing to identify a patient-specific blood pressure range that yields
+optimal brain blood flow. This research proposal will evaluate if blood pressure management outside
+personalized limits of autoregulation increases the risk for neurologic worsening from infarct progression or
+hemorrhagic transformation, leading to increased rates of unfavorable outcome (Aim 1). Next, Dr. Petersen will
+evaluate the effectiveness of therapeutic blood pressure interventions and explore the feasibility of an
+intervention protocol targeting a personalized blood pressure range (Aim 2). Under the expert mentorship of Dr.
+Kevin Sheth, Chief of Neurocritical Care, Dr. Randolph Marshall, Director of Stroke Division at Columbia
+University, and Dr. Cynthia Brandt, Director of Medical Informatics, this K23 award will allow Dr. Petersen 1) to
+acquire skills in informatics, advanced signal processing and machine learning in order to enhance current
+methods of quantifying cerebral autoregulation, 2) to develop expertise in clinical trial design, 3) to build a
+research group dedicated to discovery and clinical evaluation of physiology-based individualized treatment
+strategies after stroke, and 4) to foster inter-institutional collaboration and data-sharing. This proposal will
+leverage Yale’s cutting-edge neuro-monitoring technologies along with extensive informatics and research
+resources from the Yale Center for Clinical Investigation to generate new insights into cerebral hemodynamics
+and identify treatment opportunities. At the conclusion of this award period, Dr. Petersen will be well-positioned
+to become an independently-funded investigator conducting high-quality research in the area of cerebral
+hemodynamics. His long-term goal is to use neuro-monitoring to develop physiology-based, personalized, early
+interventions to reduce the disability and morbidity associated with stroke.",10250412,K23NS110980,['K23NS110980'],NS,https://reporter.nih.gov/project-details/10250412,K23,2021,189276
+"PROJECT SUMMARY / ABSTRACT
+Stroke is one of the leading causes of disability worldwide and the most common stroke-related impairment is
+upper-limb hemiparesis, affecting 80% of stroke patients acutely and 40% chronically. Full recovery is unlikely
+with current rehabilitation approaches, and as a result, stroke reduces quality of life, increases healthcare costs,
+and burdens caregivers. The long-term goal of this project is to leverage assistive bionic devices to restore
+motor function and promote long-term neuro-regeneration, ultimately replacing more expensive and less
+effective rehabilitation approaches with a patient-centered rehabilitation strategy. The objective of this proposal
+is to control assistive bionic exoskeletons and quantify stroke recovery with electromyographic (EMG) recordings
+of residual muscle activity from the paretic arm. Our central hypothesis is that an EMG-controlled powered
+orthosis – that assists individuals in activities of daily living – can be used as a patient-specific rehabilitative tool
+that improves stroke recovery. Aim 1 will adapt dexterous EMG-control algorithms for upper-limb orthoses, and
+then demonstrate improved hand dexterity and functional mobility for stroke patients. Aim 2 will utilize large EMG
+datasets over time to precisely quantify changes in muscle strength and spasticity throughout recovery and to
+provide robust long-term control of assistive devices via deep learning. Aim 3 consists of a pilot study to
+determine the feasibility of patient-specific assistive-device-driven rehabilitation. The proposed research is
+innovative because it will address gaps in knowledge critical to merging assistive and rehabilitative devices.
+These findings are significant because they will enable devices that can immediately and simultaneously
+promote usage, strengthen muscles, and provide closed-loop visual feedback – thereby merging multiple
+effective rehabilitation strategies into a single holistic approach. This proposal will have a positive impact on
+society by increasing rehabilitation compliance, promoting independence and improving recovery outcomes for
+stroke patients, ultimately reducing healthcare costs and improving patients’ quality of life. Activities of Daily Living;Acute;Address;Affect;Agreement;Algorithms;Artificial Intelligence;Award;Bionics;Caregiver Burden;Caregivers;Chronic;Clinical;Collaborations;Data Set;Development;Development Plans;Devices;Doctor of Philosophy;Educational workshop;Electromyography;Event;Faculty;Funding;Goals;Grant;Growth;HRK gene;Hand;Health Care Costs;High Performance Computing;Hospitals;Human Subject Research;Impairment;Individual;Intuition;Knowledge;Leadership;Machine Learning;Manuscripts;Mentors;Mentorship;Mission;Motor;Muscle;Muscle Spasticity;Nerve Regeneration;Neuromuscular Diseases;Orthotic Devices;Paresis;Patients;Physical Medicine;Pilot Projects;Postdoctoral Fellow;Public Health;Publishing;Quality of life;Recovery;Rehabilitation Centers;Rehabilitation device;Rehabilitation therapy;Research;Research Personnel;Research Technics;Residual state;Running;Secure;Self-Help Devices;Services;Societies;Spinal cord injury;Stroke;Students;System;Time;Training;Translational Research;Traumatic Brain Injury;United States National Institutes of Health;Universities;Upper Extremity;Utah;Vision;arm paresis;career;career development;data visualization;deep learning;dexterity;disability;exoskeleton;faculty mentor;functional restoration;graduate student;handbook;hemiparetic stroke;holistic approach;improved;innovation;lecturer;muscle strength;neurological rehabilitation;patient oriented;post stroke;professor;rehabilitation strategy;social;strength training;stroke outcome;stroke patient;stroke recovery;symposium;tenure track;tool;undergraduate student;upper limb hemiparesis;visual feedback Patient-centered rehabilitation and dexterous assistive devices for stroke patients using bionic exoskeletons controlled by non-invasive electromyography","PROJECT SUMMARY / ABSTRACT
+Stroke is one of the leading causes of disability worldwide and the most common stroke-related impairment is
+upper-limb hemiparesis, affecting 80% of stroke patients acutely and 40% chronically. Full recovery is unlikely
+with current rehabilitation approaches, and as a result, stroke reduces quality of life, increases healthcare costs,
+and burdens caregivers. The long-term goal of this project is to leverage assistive bionic devices to restore
+motor function and promote long-term neuro-regeneration, ultimately replacing more expensive and less
+effective rehabilitation approaches with a patient-centered rehabilitation strategy. The objective of this proposal
+is to control assistive bionic exoskeletons and quantify stroke recovery with electromyographic (EMG) recordings
+of residual muscle activity from the paretic arm. Our central hypothesis is that an EMG-controlled powered
+orthosis – that assists individuals in activities of daily living – can be used as a patient-specific rehabilitative tool
+that improves stroke recovery. Aim 1 will adapt dexterous EMG-control algorithms for upper-limb orthoses, and
+then demonstrate improved hand dexterity and functional mobility for stroke patients. Aim 2 will utilize large EMG
+datasets over time to precisely quantify changes in muscle strength and spasticity throughout recovery and to
+provide robust long-term control of assistive devices via deep learning. Aim 3 consists of a pilot study to
+determine the feasibility of patient-specific assistive-device-driven rehabilitation. The proposed research is
+innovative because it will address gaps in knowledge critical to merging assistive and rehabilitative devices.
+These findings are significant because they will enable devices that can immediately and simultaneously
+promote usage, strengthen muscles, and provide closed-loop visual feedback – thereby merging multiple
+effective rehabilitation strategies into a single holistic approach. This proposal will have a positive impact on
+society by increasing rehabilitation compliance, promoting independence and improving recovery outcomes for
+stroke patients, ultimately reducing healthcare costs and improving patients’ quality of life.",10260456,DP5OD029571,['DP5OD029571'],OD,https://reporter.nih.gov/project-details/10260456,DP5,2021,327385

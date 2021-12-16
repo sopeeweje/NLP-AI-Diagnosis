@@ -1,0 +1,174 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+"The purpose of this contract is to provide research and development support
+for the Unified Medical Language System.  Specifically, the contractor will
+support (1) the definition of the functional components and algorithms
+needed: to relate the user's terms to information in the UMLS Knowledge
+Sources; to interact with the user to clarify the information needed; and
+to select and access the information sources relevant to the user's
+inquiry, and (2) the evaluation of the utility of the UMLS Knowledge
+Sources and proposed functional components in a variety of environments.
+ abstracting; artificial intelligence; evaluation /testing; information retrieval; information system analysis; information systems; language; medicine; vocabulary development for information system UNIFIED MEDICAL LANGUAGE SYSTEM R&D SUPPORT","The purpose of this contract is to provide research and development support
+for the Unified Medical Language System.  Specifically, the contractor will
+support (1) the definition of the functional components and algorithms
+needed: to relate the user's terms to information in the UMLS Knowledge
+Sources; to interact with the user to clarify the information needed; and
+to select and access the information sources relevant to the user's
+inquiry, and (2) the evaluation of the utility of the UMLS Knowledge
+Sources and proposed functional components in a variety of environments.
+",2319081,01LM013538,['N01LM013538'],LM,https://reporter.nih.gov/project-details/2319081,N01,1992,73400,1.0
+"The primary objective of this Data Analysis grant proposal is to employ         
+and evaluate the ability of Neural networks to serve as clinical tools for      
+predicting clinical coronary events.  Several methods will be employed to       
+adapt neural networks for survival analysis, and data from town ling-term       
+clinical studies will be used to develop neural networks which evaluate         
+coronary artery disease risk.  The Specific Aims for this proposal are:         
+                                                                                
+Specific Aim 1 (Relation between Angiographic Progression of Coronary           
+Artery Atherosclerosis using Quantitative Coronary Angiography and              
+Clinical Coronary Events in CLAS): Neural networks will be developed            
+utilizing quantitative coronary angiography (QCA) measures of coronary          
+change.                                                                         
+                                                                                
+Specific Aim 2 (Relation between Risk Factors and Serum Lipid Values and        
+Clinical Coronary Events in the LRCCPPT): Neural networks will also be          
+developed utilizing information of serum Lipid values available in the          
+Lipid Research Clinics Coronary Primary Prevention Trial results (LRCCPPT       
+Results, 1984a and Appendix B).                                                 
+                                                                                
+Specific Aim 3 (Evaluation of Methods which Adapt neural Networks to            
+Survival Analysis): Existing neural Network designs cannot readily              
+incorporate the censored observations which exist in long-term clinical         
+studies.  Methods developed by our research team (Lapuerta, Azen and            
+LaBree, 1995; and Buckley and James, 1979) provide approaches which can be      
+used to address this problem.                                                   
+ angiography; artificial intelligence; atherosclerosis; clinical research; computer system design /evaluation; coronary artery; coronary disorder; disease /disorder proneness /risk; human data; statistics /biometry NEURAL NETWORKS TO EVALUATE CORONARY ARTERY DISEASE RISK","The primary objective of this Data Analysis grant proposal is to employ         
+and evaluate the ability of Neural networks to serve as clinical tools for      
+predicting clinical coronary events.  Several methods will be employed to       
+adapt neural networks for survival analysis, and data from town ling-term       
+clinical studies will be used to develop neural networks which evaluate         
+coronary artery disease risk.  The Specific Aims for this proposal are:         
+                                                                                
+Specific Aim 1 (Relation between Angiographic Progression of Coronary           
+Artery Atherosclerosis using Quantitative Coronary Angiography and              
+Clinical Coronary Events in CLAS): Neural networks will be developed            
+utilizing quantitative coronary angiography (QCA) measures of coronary          
+change.                                                                         
+                                                                                
+Specific Aim 2 (Relation between Risk Factors and Serum Lipid Values and        
+Clinical Coronary Events in the LRCCPPT): Neural networks will also be          
+developed utilizing information of serum Lipid values available in the          
+Lipid Research Clinics Coronary Primary Prevention Trial results (LRCCPPT       
+Results, 1984a and Appendix B).                                                 
+                                                                                
+Specific Aim 3 (Evaluation of Methods which Adapt neural Networks to            
+Survival Analysis): Existing neural Network designs cannot readily              
+incorporate the censored observations which exist in long-term clinical         
+studies.  Methods developed by our research team (Lapuerta, Azen and            
+LaBree, 1995; and Buckley and James, 1979) provide approaches which can be      
+used to address this problem.                                                   
+",2029573,R03HL055150,['R03HL055150'],HL,https://reporter.nih.gov/project-details/2029573,R03,1996,40973,1.0
+"The overall objective of this Phase I SBIR effort is to design a                
+personally customized, interactive multimedia expert system for                 
+promotion of exercise programs among chronically ill elderly patients,          
+called the ""Personalized Interactive Exercise"" (""PIE""). This will be            
+built as a specialized module on top of a comprehensive,multimedia              
+distributed network computer system for ""Continuously Available Medical         
+Care"" (CAMC) focused on the needs of chronically ill patients. Using the        
+advanced CAMC Tool Kit scripting and expert system language. physicians         
+will input medical condition parameters and patients will provide               
+personal preferences and home/living factors, then the PIE software will        
+create a customized training and monitoring CD-R0M which accounts for           
+medical problem factors such as diabetes and peripheral vascular                
+disease. Multimedia video training, rules for progression of exercise           
+and live videoconferencing to physicians and exercise trainers will be          
+features of the PIE system. As part of this Phase I effort, a prototype         
+will he constructed and tested at congregate housing for the elderly in         
+conjunction with researchers from the Hebrew Rehabilitation Center for          
+the Aged in Boston.                                                             
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: The market for PIE modules and products        
+is substantial. The marginal value of PIE to the CAMC homecare system           
+is approximately $100 per year; for the 1 million high cost illness             
+patients this totals $100 million per year as a market. Even if LG&A            
+reaches only several percent, this is very attractive annual recurring          
+revenue base with high net income after the first few years. Sales of           
+PIE ""authoring"" software for physicians to create PIE CD-ROMs for their         
+patients, priced at $750 (as an example) per primary care physician to          
+a market with 300,000 potential buyers is also a several hundred million        
+dollar opportunity; again a small percent of this market is an                  
+attractive business for LG&A.                                                   
+ aging; computer system design /evaluation; exercise; home health care; human old age (65+); human subject; interactive multimedia; method development PERSONALIZED INTERACTIVE EXERCISE SYSTEM","The overall objective of this Phase I SBIR effort is to design a                
+personally customized, interactive multimedia expert system for                 
+promotion of exercise programs among chronically ill elderly patients,          
+called the ""Personalized Interactive Exercise"" (""PIE""). This will be            
+built as a specialized module on top of a comprehensive,multimedia              
+distributed network computer system for ""Continuously Available Medical         
+Care"" (CAMC) focused on the needs of chronically ill patients. Using the        
+advanced CAMC Tool Kit scripting and expert system language. physicians         
+will input medical condition parameters and patients will provide               
+personal preferences and home/living factors, then the PIE software will        
+create a customized training and monitoring CD-R0M which accounts for           
+medical problem factors such as diabetes and peripheral vascular                
+disease. Multimedia video training, rules for progression of exercise           
+and live videoconferencing to physicians and exercise trainers will be          
+features of the PIE system. As part of this Phase I effort, a prototype         
+will he constructed and tested at congregate housing for the elderly in         
+conjunction with researchers from the Hebrew Rehabilitation Center for          
+the Aged in Boston.                                                             
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: The market for PIE modules and products        
+is substantial. The marginal value of PIE to the CAMC homecare system           
+is approximately $100 per year; for the 1 million high cost illness             
+patients this totals $100 million per year as a market. Even if LG&A            
+reaches only several percent, this is very attractive annual recurring          
+revenue base with high net income after the first few years. Sales of           
+PIE ""authoring"" software for physicians to create PIE CD-ROMs for their         
+patients, priced at $750 (as an example) per primary care physician to          
+a market with 300,000 potential buyers is also a several hundred million        
+dollar opportunity; again a small percent of this market is an                  
+attractive business for LG&A.                                                   
+",2002237,R43AG014319,['R43AG014319'],AG,https://reporter.nih.gov/project-details/2002237,R43,1997,98172,1.0
+"DESCRIPTION (Adapted from applicant's abstract):  This is a relatively          
+old problem, that so far has been essentially intractable.  The                 
+applicants propose to use a ""threading technique"" augmented by further          
+use of some other methods together with neural networks or weighted             
+procedures.  All procedures proposed have previously been used, and the         
+applicants will try to use several of them with threading as the basic          
+technique, and a weighted voting scheme to help select what hopefully           
+will be the correct structure.                                                  
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: NOT AVAILABLE                                  
+ artificial intelligence; chemical information system; computer program /software; computer system design /evaluation; method development; protein folding; protein sequence FAST PDB SEARCHES FOR BIOCHEMICALLY SIMILAR SURFACES","DESCRIPTION (Adapted from applicant's abstract):  This is a relatively          
+old problem, that so far has been essentially intractable.  The                 
+applicants propose to use a ""threading technique"" augmented by further          
+use of some other methods together with neural networks or weighted             
+procedures.  All procedures proposed have previously been used, and the         
+applicants will try to use several of them with threading as the basic          
+technique, and a weighted voting scheme to help select what hopefully           
+will be the correct structure.                                                  
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: NOT AVAILABLE                                  
+",2332123,R43GM056084,['R43GM056084'],GM,https://reporter.nih.gov/project-details/2332123,R43,1998,95125,1.0
+"DESCRIPTION (adapted from investigator's abstract):  The aim of this Phase      
+II project is to test the Resident-Centered Information (RCI) system for        
+Assisted Living:  a service planning format using an expert decision            
+system, an integrated resident-services logging system, and a complete set      
+of management modules.  The system supports assisting living providers          
+serving the frail elders and other dependent groups and includes                
+approaches to meet the needs of those with cognitive impairment.  This          
+computerized system is easy to use so that it is supportive to staff and        
+creates reliable data for continuous improvement and outcome research.          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: NOT AVAILABLE                                  
+ artificial intelligence; clinical research; cognition disorders; computer assisted medical decision making; computer program /software; computer system design /evaluation; frail elderly; functional ability; geriatrics; health services research tag; home health care; human subject; information systems; method development; outcomes research; patient care management RESIDENT CENTERED INFORMATION SYSTEM FOR ASSISTED LIVING","DESCRIPTION (adapted from investigator's abstract):  The aim of this Phase      
+II project is to test the Resident-Centered Information (RCI) system for        
+Assisted Living:  a service planning format using an expert decision            
+system, an integrated resident-services logging system, and a complete set      
+of management modules.  The system supports assisting living providers          
+serving the frail elders and other dependent groups and includes                
+approaches to meet the needs of those with cognitive impairment.  This          
+computerized system is easy to use so that it is supportive to staff and        
+creates reliable data for continuous improvement and outcome research.          
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: NOT AVAILABLE                                  
+",6055449,R44AG014617,['R44AG014617'],AG,https://reporter.nih.gov/project-details/6055449,R44,1999,341378,1.0

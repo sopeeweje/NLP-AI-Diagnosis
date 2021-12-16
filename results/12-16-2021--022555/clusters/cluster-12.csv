@@ -1,0 +1,1187 @@
+text,title,id,project_number,terms,administration,organization,mechanism,year,funding,score
+  MULTIMEDIA EXPERT SYSTEM MODEL FOR SENIOR HOUSING,,2051963,R43AG010739,['R43AG010739'],AG,https://reporter.nih.gov/project-details/2051963,R43,1992,49985,0.022173215332192617
+"The ability to elucidate RNA structure has broad significance in the study
+ of RNA.  Comparative sequence analysis is one method, complementary to
+ experimental procedures, that has yielded important RNA structural
+ information.
+ 
+ The sequencing revolution is helping to create larger comparative sequence
+ databases, which in turn creates an opportunity to decipher more RNA
+ structural information.  Computationally intensive methods are required to
+ find this information.
+ 
+ The purpose of this project, is to develop and refine our correlation
+ analysis, and apply these analysis tools to the question of RNA structure
+ determination.  Initial studies are very encouraging, suggesting that
+ continued efforts will result in new structural findings.
+ 
+ The results of this analysis have widespread applications, including but no
+ limited to antisense research, overall structural considerations of
+ ribosomal RNAs, and other important RNA molecules, and general RNA structur
+ prediction.
+ RNA; artificial intelligence; biochemical evolution; computer data analysis; computer graphics /printing; computer human interaction; computer program /software; computer simulation; nucleic acid sequence; nucleic acid structure; ribosomal RNA; transfer RNA RNA STRUCTURE DETERMINATION WITH COMPARATIVE METHODS","The ability to elucidate RNA structure has broad significance in the study
+ of RNA.  Comparative sequence analysis is one method, complementary to
+ experimental procedures, that has yielded important RNA structural
+ information.
+ 
+ The sequencing revolution is helping to create larger comparative sequence
+ databases, which in turn creates an opportunity to decipher more RNA
+ structural information.  Computationally intensive methods are required to
+ find this information.
+ 
+ The purpose of this project, is to develop and refine our correlation
+ analysis, and apply these analysis tools to the question of RNA structure
+ determination.  Initial studies are very encouraging, suggesting that
+ continued efforts will result in new structural findings.
+ 
+ The results of this analysis have widespread applications, including but no
+ limited to antisense research, overall structural considerations of
+ ribosomal RNAs, and other important RNA molecules, and general RNA structur
+ prediction.
+",2185696,R01GM048207,['R01GM048207'],GM,https://reporter.nih.gov/project-details/2185696,R01,1995,136167,-0.011498068873063472
+"The present research program examines the developmental changes
+ which occur in the capacity for acquiring language. More
+ specifically, it examines what appears to be a sensitive period for
+ the acquisition of the grammar of a language. The first part of
+ this research program is descriptive. Four studied are proposed to
+ investigate the structural parameters and reliability of this
+ effect using a population of second language learners of varying
+ ages. An additional study will evaluate the uniqueness of this
+ effect for language by testing for age differences in music
+ learning. The second part of this program is experimental. It will
+ explore some of the changes that occur in the learning mechanism
+ over development which may underlie and explain the descriptive
+ phenomena. In particular it will explore possible child-adult
+ differences in the use of the operating principles used to convert
+ speech input into stored data. Seven studies are proposed. In each
+ study, two groups of children of the ages of 6-7 and 10-11 years
+ and one group of adults will be asked to learn a miniature
+ artificial language. The miniature language will be designed to
+ test the effects of morphological properties (including position,
+ frequency, stress and structure) on the success and patterning of
+ subjects' learning. In addition to documenting developmental
+ changes in the use of these operating principles, some studies will
+ test for the influence of first language typology on the use of
+ such principles.
+ 
+ Understanding age related changes in language learning capacity has
+ important implications for educating the deaf (who are often not
+ exposed to a native language at birth) and educating the many newly
+ arriving child and adult immigrants to the United States. Such
+ information will ultimately help us to develop educational
+ opportunities tailored to the particular qualities inherent in
+ different aged learners.
+ Asian Americans; Chinese American; Japanese American; adolescence (12-20); adult human (21+); age difference; artificial intelligence; human subject; immigrant; language development; learning; middle childhood (6-11); musics; nonEnglish language; short term memory; stimulus /response MATURATIONAL CHANGE IN LANGUAGE ACQUISITION CAPACITY","The present research program examines the developmental changes
+ which occur in the capacity for acquiring language. More
+ specifically, it examines what appears to be a sensitive period for
+ the acquisition of the grammar of a language. The first part of
+ this research program is descriptive. Four studied are proposed to
+ investigate the structural parameters and reliability of this
+ effect using a population of second language learners of varying
+ ages. An additional study will evaluate the uniqueness of this
+ effect for language by testing for age differences in music
+ learning. The second part of this program is experimental. It will
+ explore some of the changes that occur in the learning mechanism
+ over development which may underlie and explain the descriptive
+ phenomena. In particular it will explore possible child-adult
+ differences in the use of the operating principles used to convert
+ speech input into stored data. Seven studies are proposed. In each
+ study, two groups of children of the ages of 6-7 and 10-11 years
+ and one group of adults will be asked to learn a miniature
+ artificial language. The miniature language will be designed to
+ test the effects of morphological properties (including position,
+ frequency, stress and structure) on the success and patterning of
+ subjects' learning. In addition to documenting developmental
+ changes in the use of these operating principles, some studies will
+ test for the influence of first language typology on the use of
+ such principles.
+ 
+ Understanding age related changes in language learning capacity has
+ important implications for educating the deaf (who are often not
+ exposed to a native language at birth) and educating the many newly
+ arriving child and adult immigrants to the United States. Such
+ information will ultimately help us to develop educational
+ opportunities tailored to the particular qualities inherent in
+ different aged learners.
+",2203131,R01HD030785,['R01HD030785'],HD,https://reporter.nih.gov/project-details/2203131,R01,1995,110846,0.07740087300833128
+"Facial expression communicates information about emotions, regulates
+ interpersonal behavior and person perception, indexes brain functioning,
+ and is essential to evaluating preverbal infants.  Current human-observer
+ methods of facial expression analysis, however, are labor intensive and
+ difficult to standardize across laboratories and over time.  These factors
+ force investigators to use less specific systems whose convergent validity
+ is often unknown.  To make feasible more rigorous, quantitative measurement
+ of facial expression in diverse applications, our interdisciplinary
+ research group, with expertise in facial expression analysis and
+ computerized image processing, will develop automated methods of facial
+ expression analysis.
+ 
+ Facial expressions of emotion will be videorecorded in a directed facial
+ action task and emotion vignettes.  For each subject, a 3-D electronic
+ wireframe face model will be created by fitting a digitized image of the
+ subject's neutral face to a basic model.  Computerized feature detection
+ and tracking procedures will use this face model in analyzing input video
+ image sequences.  Neural pattern recognition algorithms will measure and
+ classify facial expression action units based on measurements from the
+ feature tracking algorithms.  A user interface will permit users to define
+ facial configurations (per EMFACS, MAX, or their own specifications) and
+ generate time series or summary data files for immediate analysis in SPSS
+ or other statistical software.
+ 
+ The automated method of facial expression analysis will eliminate the need
+ for human observers in coding facial expression (greatly reducing coding
+ time and personnel costs), promote standardized measurement, make possible
+ the collection and processing of larger, more representative data sets, and
+ open new areas of investigation and clinical application.  For example,
+ comparisons between automated and human-observer methods can inform how
+ people process emotion expressions.  Unlike methods requiring skilled
+ observation, the automated method will be readily transferable from the
+ laboratory tot he clinic for use in diagnostics and in analysis of patient
+ communications.
+ artificial intelligence; computer program /software; computer system design /evaluation; digital imaging; emotions; face expression; human subject; image processing; videotape /videodisc FACIAL EXPRESSION ANALYSIS BY COMPUTER IMAGE PROCESSING","Facial expression communicates information about emotions, regulates
+ interpersonal behavior and person perception, indexes brain functioning,
+ and is essential to evaluating preverbal infants.  Current human-observer
+ methods of facial expression analysis, however, are labor intensive and
+ difficult to standardize across laboratories and over time.  These factors
+ force investigators to use less specific systems whose convergent validity
+ is often unknown.  To make feasible more rigorous, quantitative measurement
+ of facial expression in diverse applications, our interdisciplinary
+ research group, with expertise in facial expression analysis and
+ computerized image processing, will develop automated methods of facial
+ expression analysis.
+ 
+ Facial expressions of emotion will be videorecorded in a directed facial
+ action task and emotion vignettes.  For each subject, a 3-D electronic
+ wireframe face model will be created by fitting a digitized image of the
+ subject's neutral face to a basic model.  Computerized feature detection
+ and tracking procedures will use this face model in analyzing input video
+ image sequences.  Neural pattern recognition algorithms will measure and
+ classify facial expression action units based on measurements from the
+ feature tracking algorithms.  A user interface will permit users to define
+ facial configurations (per EMFACS, MAX, or their own specifications) and
+ generate time series or summary data files for immediate analysis in SPSS
+ or other statistical software.
+ 
+ The automated method of facial expression analysis will eliminate the need
+ for human observers in coding facial expression (greatly reducing coding
+ time and personnel costs), promote standardized measurement, make possible
+ the collection and processing of larger, more representative data sets, and
+ open new areas of investigation and clinical application.  For example,
+ comparisons between automated and human-observer methods can inform how
+ people process emotion expressions.  Unlike methods requiring skilled
+ observation, the automated method will be readily transferable from the
+ laboratory tot he clinic for use in diagnostics and in analysis of patient
+ communications.
+",2250696,R01MH051435,['R01MH051435'],MH,https://reporter.nih.gov/project-details/2250696,R01,1995,193262,-0.04352271607707848
+"DESCRIPTION: The goal is to develop commercially viable, comprehensive,         
+and state-of-the-art computer software for performing meta-analyses of          
+health care evidence.  It will feature ""Analytic Wizards"" to guide less         
+experienced users through the analytic process and the interpretation           
+of results.  The software will also capitalize on innovations developed         
+by the P.I.  to provide a flexible and powerful platform for storing,           
+retrieving, visualizing, and maintaining clinical studies data for              
+meta-analyses.  The software will employ these techniques to seamlessly         
+integrate data management, analytical procedures and graphical                  
+functions.                                                                      
+                                                                                
+The goal in this STTR Phase I project is to investigate the feasibility         
+of implementing ""Analytic Wizards"" in the conduct of meta-analysis by           
+performing analyses on a large number of data sets to derive rules for          
+guiding the selection of appropriate analytic methods.  These rules will        
+then be integrated and tested in a prototype.                                   
+                                                                                
+Integrated meta-analysis software with guidance on the use of                   
+statistical procedures will simplify and standardize the production of          
+meta-analyses, making it more efficient and reliable, and allowing the          
+user to concentrate on the content rather than the mechanics of meta-           
+analysis.                                                                       
+ artificial intelligence; computer data analysis; computer graphics /printing; computer human interaction; computer program /software; computer system design /evaluation; data management; information systems; meta analysis; method development INTEGRATED HEURISTICS-GUIDED META-ANALYSIS SYSTEM","DESCRIPTION: The goal is to develop commercially viable, comprehensive,         
+and state-of-the-art computer software for performing meta-analyses of          
+health care evidence.  It will feature ""Analytic Wizards"" to guide less         
+experienced users through the analytic process and the interpretation           
+of results.  The software will also capitalize on innovations developed         
+by the P.I.  to provide a flexible and powerful platform for storing,           
+retrieving, visualizing, and maintaining clinical studies data for              
+meta-analyses.  The software will employ these techniques to seamlessly         
+integrate data management, analytical procedures and graphical                  
+functions.                                                                      
+                                                                                
+The goal in this STTR Phase I project is to investigate the feasibility         
+of implementing ""Analytic Wizards"" in the conduct of meta-analysis by           
+performing analyses on a large number of data sets to derive rules for          
+guiding the selection of appropriate analytic methods.  These rules will        
+then be integrated and tested in a prototype.                                   
+                                                                                
+Integrated meta-analysis software with guidance on the use of                   
+statistical procedures will simplify and standardize the production of          
+meta-analyses, making it more efficient and reliable, and allowing the          
+user to concentrate on the content rather than the mechanics of meta-           
+analysis.                                                                       
+",2418266,R41RR012416,['R41RR012416'],RR,https://reporter.nih.gov/project-details/2418266,R41,1997,100000,0.022173215332192617
+"DESCRIPTION:  This application proposes to develop, implement, and evaluate     
+a world wide web-based computerized decision support system (CDSS) to           
+facilitate information exchange and guide interactions between                  
+geographically distributed physicians and centrally-located experts in bone     
+marrow transplant (BMT) follow-up care.  The CDSS will include standard         
+practice guidelines and research findings specific for the long-term            
+follow-up (LTFU) of patients post-BMT but will be designed to be adaptable      
+to other disease and treatment situations.  Key elements required for the       
+conduct of the project are already in place, including an ontology of           
+long-term follow-up, diagnostic pathways, and practice guidelines; a            
+multidisciplinary team with broad experience; a high volume of follow-up and    
+consultation demand; and a network of over 2,000 primary specialists caring     
+for the patients in a wide variety of practice settings.  Each year the LTFU    
+unit receives over 5,000 pieces of patient-care mail, sends 4,000 letters,      
+returns 8,000 phone calls, and mails over 1,200 protocols, consent forms,       
+and medical recommendations.                                                    
+                                                                                
+The proposed project will complete and refine a networked CDSS, conduct a       
+phase II pilot study of clinical use of the CDSS within the bone marrow         
+transplant center, conduct a phase III randomized clinical trial of the         
+benefit of the CDSS with over 250 primary care physicians randomized to         
+either CDSS or the existing method of follow-up, and evaluate the impact of     
+CDSS on physician behavior and practice efficiency.  Endpoints for the phase    
+III portion of the project include patient outcomes and complications,          
+quality of life, cost of patient care, physician satisfaction, and frequency    
+of accessing the protocols/guidelines.  An attempt will also be made to         
+identify factors predicting the success of the CDSS.                            
+ Internet; bone marrow transplantation; clinical research; computer assisted medical decision making; computer assisted patient care; health care cost /financing; health care service evaluation; health care service utilization; human subject; longitudinal human study; quality of life; telemedicine COMPUTERIZED DECISION SUPPORT FOR POSTTRANSPLANT CARE","DESCRIPTION:  This application proposes to develop, implement, and evaluate     
+a world wide web-based computerized decision support system (CDSS) to           
+facilitate information exchange and guide interactions between                  
+geographically distributed physicians and centrally-located experts in bone     
+marrow transplant (BMT) follow-up care.  The CDSS will include standard         
+practice guidelines and research findings specific for the long-term            
+follow-up (LTFU) of patients post-BMT but will be designed to be adaptable      
+to other disease and treatment situations.  Key elements required for the       
+conduct of the project are already in place, including an ontology of           
+long-term follow-up, diagnostic pathways, and practice guidelines; a            
+multidisciplinary team with broad experience; a high volume of follow-up and    
+consultation demand; and a network of over 2,000 primary specialists caring     
+for the patients in a wide variety of practice settings.  Each year the LTFU    
+unit receives over 5,000 pieces of patient-care mail, sends 4,000 letters,      
+returns 8,000 phone calls, and mails over 1,200 protocols, consent forms,       
+and medical recommendations.                                                    
+                                                                                
+The proposed project will complete and refine a networked CDSS, conduct a       
+phase II pilot study of clinical use of the CDSS within the bone marrow         
+transplant center, conduct a phase III randomized clinical trial of the         
+benefit of the CDSS with over 250 primary care physicians randomized to         
+either CDSS or the existing method of follow-up, and evaluate the impact of     
+CDSS on physician behavior and practice efficiency.  Endpoints for the phase    
+III portion of the project include patient outcomes and complications,          
+quality of life, cost of patient care, physician satisfaction, and frequency    
+of accessing the protocols/guidelines.  An attempt will also be made to         
+identify factors predicting the success of the CDSS.                            
+",2546251,R01HS009407,['R01HS009407'],HS,https://reporter.nih.gov/project-details/2546251,R01,1997,545260,0.09253405541492436
+"Mandala Sciences (MSI) CODA project has 2 main objectives: (1) develop          
+analysis tools to test hypotheses regarding effectiveness of surgical           
+procedures and patient outcomes and (2) generate proprietary decision           
+support prediction models for hip and knee replacements.  MSI hybrid            
+Neural Network/Expert System methodology uses an Entropy NN TM structure        
+which has the innovative ability to generate a rule base.  The discovered       
+rules will be used to create ""portable"" Expert System predictive modules.       
+Phase II progress is built upon successful MSI collaboration with Henry         
+Ford Health System to show NN techniques can generate and evaluate              
+prognostic models using outcomes data.  Consultation with orthopedic            
+surgeons identified 13 patient-provided variables as potential predictors       
+of hip replacement surgery failure. An NN trained on these data predicted       
+the 1-year post-surgical change in the patient's self-assessed pain and         
+physical function scores.  Comparison with standard statistical analysis        
+techniques showed superior accuracy of NN-based predictions.  Phase II          
+research will generalize the product by adopting the ASTM-E-1238 interface      
+standard for data collection from multiple sources.  NN/Expert prediction       
+models will be improved by pooling data from geographically diverse sites       
+and field trial performance to evaluate physician-rated adoption,               
+usefulness, and influence on their actual decision making.                      
+                                                                                
+Proposed commercial applications:                                               
+MSI will build a user-friendly, stand-alone outcomes database analysis          
+tool. By using new proprietary neural network techniques, the system will       
+have the predictive power of NN combined with the explanatory capabilities      
+of an expert system. This computer system will be adopted by the widest         
+possible audience because it will be far easier to use than conventional        
+statistical packages, and by virtue of being designed for compatibility         
+with the ASTM-E-1238 standard for outcomes data transmission.                   
+ artificial intelligence; computer assisted medical decision making; computer human interaction; computer program /software; computer system design /evaluation; data collection methodology /evaluation; health care model; hip prosthesis; human data; human therapy evaluation; mathematical model; model design /development; outcomes research; postoperative state; prognosis COMPUTER TOOLS FOR OUTCOMES ANALYSIS OF HIP REPLACEMENT","Mandala Sciences (MSI) CODA project has 2 main objectives: (1) develop          
+analysis tools to test hypotheses regarding effectiveness of surgical           
+procedures and patient outcomes and (2) generate proprietary decision           
+support prediction models for hip and knee replacements.  MSI hybrid            
+Neural Network/Expert System methodology uses an Entropy NN TM structure        
+which has the innovative ability to generate a rule base.  The discovered       
+rules will be used to create ""portable"" Expert System predictive modules.       
+Phase II progress is built upon successful MSI collaboration with Henry         
+Ford Health System to show NN techniques can generate and evaluate              
+prognostic models using outcomes data.  Consultation with orthopedic            
+surgeons identified 13 patient-provided variables as potential predictors       
+of hip replacement surgery failure. An NN trained on these data predicted       
+the 1-year post-surgical change in the patient's self-assessed pain and         
+physical function scores.  Comparison with standard statistical analysis        
+techniques showed superior accuracy of NN-based predictions.  Phase II          
+research will generalize the product by adopting the ASTM-E-1238 interface      
+standard for data collection from multiple sources.  NN/Expert prediction       
+models will be improved by pooling data from geographically diverse sites       
+and field trial performance to evaluate physician-rated adoption,               
+usefulness, and influence on their actual decision making.                      
+                                                                                
+Proposed commercial applications:                                               
+MSI will build a user-friendly, stand-alone outcomes database analysis          
+tool. By using new proprietary neural network techniques, the system will       
+have the predictive power of NN combined with the explanatory capabilities      
+of an expert system. This computer system will be adopted by the widest         
+possible audience because it will be far easier to use than conventional        
+statistical packages, and by virtue of being designed for compatibility         
+with the ASTM-E-1238 standard for outcomes data transmission.                   
+",2539526,R44AG012308,['R44AG012308'],AG,https://reporter.nih.gov/project-details/2539526,R44,1997,358441,0.07740087300833128
+"The intent of this proposal is to make it practical to Optimize Magnetic        
+Fields in Magnetic Resonance imaging (MRI) Magnets, both old and new, by        
+providing products and services for characterizing and correcting the           
+inhomogeneities of the magnetic field. The technology proposed will make        
+it possible to enhance the imaging performance of magnets, with particular      
+importance for newer MR applications, like Fast MR, Functional MR, and          
+Interventional MR techniques. Use of the technology to enhance the              
+performance of older magnets offers newer techniques and higher levels of       
+performance as well as extended life of the system for low cost. An             
+additional benefit is the prospect of independent assurance measurement of      
+the quality of the magnetic field.                                              
+                                                                                
+The developments proposed are based on automated, accurate, and precise         
+measurement and analysis of the magnetic field. The analysis can then be        
+used to correct the homogeneity of the magnetic field optimally by              
+automated control of the electrical currents driving correction coil            
+systems. The analysis can also be used to control new approaches to             
+ferromagnetic correction designs proposed here. These new ferromagnetic         
+correction techniques offer control well beyond that currently obtainable       
+either ferromagnetically or electrically.                                       
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: Development of technology for automated        
+mapping and analysis of magnetic fields in MR magnets and use of this           
+technology to drive advanced designs for ferromagnetic shimming of such         
+magnets are proposed.                                                           
+ artificial intelligence; biomedical equipment development; biosensor device; clinical biomedical equipment; computer program /software; computer system design /evaluation; computer system hardware; image enhancement; magnetic field; magnetic resonance imaging OPTIMIZING MAGNETIC FIELDS FOR MRI MAGNETS","The intent of this proposal is to make it practical to Optimize Magnetic        
+Fields in Magnetic Resonance imaging (MRI) Magnets, both old and new, by        
+providing products and services for characterizing and correcting the           
+inhomogeneities of the magnetic field. The technology proposed will make        
+it possible to enhance the imaging performance of magnets, with particular      
+importance for newer MR applications, like Fast MR, Functional MR, and          
+Interventional MR techniques. Use of the technology to enhance the              
+performance of older magnets offers newer techniques and higher levels of       
+performance as well as extended life of the system for low cost. An             
+additional benefit is the prospect of independent assurance measurement of      
+the quality of the magnetic field.                                              
+                                                                                
+The developments proposed are based on automated, accurate, and precise         
+measurement and analysis of the magnetic field. The analysis can then be        
+used to correct the homogeneity of the magnetic field optimally by              
+automated control of the electrical currents driving correction coil            
+systems. The analysis can also be used to control new approaches to             
+ferromagnetic correction designs proposed here. These new ferromagnetic         
+correction techniques offer control well beyond that currently obtainable       
+either ferromagnetically or electrically.                                       
+                                                                                
+PROPOSED COMMERCIAL APPLICATION: Development of technology for automated        
+mapping and analysis of magnetic fields in MR magnets and use of this           
+technology to drive advanced designs for ferromagnetic shimming of such         
+magnets are proposed.                                                           
+",2414243,R44CA057050,['R44CA057050'],CA,https://reporter.nih.gov/project-details/2414243,R44,1997,182960,0.07740087300833128
+"The goal of the proposed research is to develop computerized radiographic       
+methods for measuring bone structure for use in quantitatively assessing        
+osteoporosis and risk of fracture. We will investigate the characteristics      
+of trabecular bone structure in digital radiographs in the spine, hip and       
+extremities using computerized texture analyses. We believe that our            
+methods have the potential to aid in the assessment of osteoporosis and         
+that the use of both BMD and bone structure information should improve the      
+predictive value for assessing fracture risk over that obtainable with BMD      
+alone.                                                                          
+                                                                                
+We will create a database in order to quantify the characteristic features      
+of the trabecular pattern in high-resolution radiographic bone images of        
+patients with varying degrees of osteoporosis, as well as in normal             
+subjects. Specifically, we plan to (l) develop computerized texture             
+analysis schemes for the automatic assessment of bone structure in              
+digitized bone radiographs, (2) investigate the effects of various              
+parameters of the image acquisition system, as well as of the analysis          
+schemes themselves, on performance and (3) evaluate the efficacies of the       
+computerized schemes in predicting risk of fracture as compared to a            
+current method of measurement [dual-energy x-ray absorptiometry (DXA)]          
+using a large clinical database.                                                
+                                                                                
+Methods that are capable of analyzing bone structure of trabeculae, along       
+with bone mass measures, are expected to give additional insight to the         
+evaluation of osteoporosis and risk of fracture. Our scheme is unique in        
+that it attempts to quantify automatically the risk of fracture from            
+texture analyses (Fourier analysis, multi-fractal analysis, gradient            
+analysis and artificial neural networks) of the bone trabecular pattern as      
+present in high-resolution radiographs of the spine, hip and extremities.       
+The potential significance of this research project lies in the fact that       
+if the detection of high-risk patients could be accomplished with a             
+reliable, low-dose, economical system, then screening for osteoporosis          
+could be implemented more broadly, thereby allowing earlier treatment and       
+a reduction in the risk of fracture.                                            
+ artificial intelligence; bone density; bone fracture; clinical research; computer assisted diagnosis; densitometry; diagnosis design /evaluation; disease /disorder proneness /risk; hip; human subject; information systems; limbs; mathematical model; noninvasive diagnosis; osteoporosis; photon absorptiometry; radiography; spine; women's health COMPUTERIZED RADIOGRAPHIC ANALYSIS OF BONE STRUCTURE","The goal of the proposed research is to develop computerized radiographic       
+methods for measuring bone structure for use in quantitatively assessing        
+osteoporosis and risk of fracture. We will investigate the characteristics      
+of trabecular bone structure in digital radiographs in the spine, hip and       
+extremities using computerized texture analyses. We believe that our            
+methods have the potential to aid in the assessment of osteoporosis and         
+that the use of both BMD and bone structure information should improve the      
+predictive value for assessing fracture risk over that obtainable with BMD      
+alone.                                                                          
+                                                                                
+We will create a database in order to quantify the characteristic features      
+of the trabecular pattern in high-resolution radiographic bone images of        
+patients with varying degrees of osteoporosis, as well as in normal             
+subjects. Specifically, we plan to (l) develop computerized texture             
+analysis schemes for the automatic assessment of bone structure in              
+digitized bone radiographs, (2) investigate the effects of various              
+parameters of the image acquisition system, as well as of the analysis          
+schemes themselves, on performance and (3) evaluate the efficacies of the       
+computerized schemes in predicting risk of fracture as compared to a            
+current method of measurement [dual-energy x-ray absorptiometry (DXA)]          
+using a large clinical database.                                                
+                                                                                
+Methods that are capable of analyzing bone structure of trabeculae, along       
+with bone mass measures, are expected to give additional insight to the         
+evaluation of osteoporosis and risk of fracture. Our scheme is unique in        
+that it attempts to quantify automatically the risk of fracture from            
+texture analyses (Fourier analysis, multi-fractal analysis, gradient            
+analysis and artificial neural networks) of the bone trabecular pattern as      
+present in high-resolution radiographs of the spine, hip and extremities.       
+The potential significance of this research project lies in the fact that       
+if the detection of high-risk patients could be accomplished with a             
+reliable, low-dose, economical system, then screening for osteoporosis          
+could be implemented more broadly, thereby allowing earlier treatment and       
+a reduction in the risk of fracture.                                            
+",2390534,R01AR042739,['R01AR042739'],AR,https://reporter.nih.gov/project-details/2390534,R01,1997,248683,0.09253405541492436
+"DESCRIPTION: Recently, computer based videokeratography (VK) has become         
+important for measuring corneal shape before and after refractive surgery       
+and in diagnosing keratoconus. Regrettably, present algorithms are              
+flawed because they assume light rays that form the VK image lie in the         
+meridional plane before and after reflection from the cornea.  For both         
+keratoconus and refractive surgery this assumption can produce                  
+substantial errors. The investigators have begun development of a new           
+algorithm that eliminates such errors. There are a number of topic on           
+which further research is needed before the algorithm is viable.  The           
+investigators will also develop software for splicing and averaging             
+multiple shots to extend coverage to the whole cornea and to reduce             
+noise. Also, they will develop two end-user applications: 1) Software           
+for fitting hard and soft toric contact lens (for correction of                 
+astigmatism) that will take into account corneal topography to  achieve         
+improved lens centration and orientation. They expect to develop the            
+first successful contact lens fitting software, enabling VK to become a         
+standard instrument for contact lens fitting.                                   
+                                                                                
+Presently several thousand videokeratoscope instruments are being used          
+for refractive surgery and for diagnosing keratoconus. The number of            
+instruments will expand rapidly if improved algorithms for measuring            
+corneal shape and improved applications software become available.  As          
+one example, the market for a clinically superior contact lens fitting          
+package in very large (especially true for the many countries with few          
+trained contact lens specialists). The investigators expect that                
+software will be the first to win clinical approval.                            
+ artificial intelligence; biomedical equipment development; clinical biomedical equipment; clinical research; computer program /software; computer system design /evaluation; contact lens; cornea; diagnosis design /evaluation; eye disorder diagnosis; eye refractometry; human subject; keratoconus; mathematical model; noninvasive diagnosis; surface property; video recording system; vision tests NEW CORNEAL TOPOGRAPHY ALGORITHM AND ITS APPLICATIONS","DESCRIPTION: Recently, computer based videokeratography (VK) has become         
+important for measuring corneal shape before and after refractive surgery       
+and in diagnosing keratoconus. Regrettably, present algorithms are              
+flawed because they assume light rays that form the VK image lie in the         
+meridional plane before and after reflection from the cornea.  For both         
+keratoconus and refractive surgery this assumption can produce                  
+substantial errors. The investigators have begun development of a new           
+algorithm that eliminates such errors. There are a number of topic on           
+which further research is needed before the algorithm is viable.  The           
+investigators will also develop software for splicing and averaging             
+multiple shots to extend coverage to the whole cornea and to reduce             
+noise. Also, they will develop two end-user applications: 1) Software           
+for fitting hard and soft toric contact lens (for correction of                 
+astigmatism) that will take into account corneal topography to  achieve         
+improved lens centration and orientation. They expect to develop the            
+first successful contact lens fitting software, enabling VK to become a         
+standard instrument for contact lens fitting.                                   
+                                                                                
+Presently several thousand videokeratoscope instruments are being used          
+for refractive surgery and for diagnosing keratoconus. The number of            
+instruments will expand rapidly if improved algorithms for measuring            
+corneal shape and improved applications software become available.  As          
+one example, the market for a clinically superior contact lens fitting          
+package in very large (especially true for the many countries with few          
+trained contact lens specialists). The investigators expect that                
+software will be the first to win clinical approval.                            
+",2422457,R44EY011211,['R44EY011211'],EY,https://reporter.nih.gov/project-details/2422457,R44,1997,351072,0.0695319091230329
+"The goal of this research is to develop an open and extensible software         
+environment for medical image segmentation.  This environment will              
+contribute to the public and scientific interest in at least three ways:        
+(1) improved and efficient segmentation of medical images for various           
+applications, (2) efficient creation of new image segmentation                  
+algorithms, and (3) improved evaluation for medical image segmentation          
+algorithms.                                                                     
+Image segmentation has many applications in medical imaging; however,           
+it's use in current clinical practice falls far short of its potential.         
+Commercially available tools are either designed for very specific              
+applications, or are general-purpose  image processing packages with            
+little support for image segmentation.  The proposed environment will be        
+devoted to medical image segmentation and will have an extensible and           
+open architecture.  The extensible architecture will allow easy                 
+customization for specific applications and will also allow users to add        
+their own algorithms.  The open architecture will make the software             
+platform-independent and will allow easy integration with existing              
+applications, such as databases, analysis packages, or visualization            
+tools.  This environment will also provide tools for evaluation of              
+medical image segmentation algorithms.  To design such a software               
+environment, we will use the latest innovations in design such a software       
+environment, we will use latest innovations in software technology, such        
+as object-oriented design and distributed objects.                              
+PROPOSED COMMERCIAL APPLICATION:                                                
+We envision two types of users for this software environment--(1) medical       
+imaging researchers or medical imaging solution providers, and (2)              
+clinicians or clinical researchers.  The first type of uses will be able        
+to customize the application completely.  The second type of users will         
+use the software for specific applications.  Our building-block approach        
+to the design of the environment will allow rapid customization for             
+different applications and for the different types of users.                    
+ artificial intelligence; computer human interaction; computer program /software; computer system design /evaluation; data collection methodology /evaluation; image enhancement; image processing; interactive multimedia SOFTWARE ENVIRONMENT FOR MEDICAL IMAGE SEGMENTATION","The goal of this research is to develop an open and extensible software         
+environment for medical image segmentation.  This environment will              
+contribute to the public and scientific interest in at least three ways:        
+(1) improved and efficient segmentation of medical images for various           
+applications, (2) efficient creation of new image segmentation                  
+algorithms, and (3) improved evaluation for medical image segmentation          
+algorithms.                                                                     
+Image segmentation has many applications in medical imaging; however,           
+it's use in current clinical practice falls far short of its potential.         
+Commercially available tools are either designed for very specific              
+applications, or are general-purpose  image processing packages with            
+little support for image segmentation.  The proposed environment will be        
+devoted to medical image segmentation and will have an extensible and           
+open architecture.  The extensible architecture will allow easy                 
+customization for specific applications and will also allow users to add        
+their own algorithms.  The open architecture will make the software             
+platform-independent and will allow easy integration with existing              
+applications, such as databases, analysis packages, or visualization            
+tools.  This environment will also provide tools for evaluation of              
+medical image segmentation algorithms.  To design such a software               
+environment, we will use the latest innovations in design such a software       
+environment, we will use latest innovations in software technology, such        
+as object-oriented design and distributed objects.                              
+PROPOSED COMMERCIAL APPLICATION:                                                
+We envision two types of users for this software environment--(1) medical       
+imaging researchers or medical imaging solution providers, and (2)              
+clinicians or clinical researchers.  The first type of uses will be able        
+to customize the application completely.  The second type of users will         
+use the software for specific applications.  Our building-block approach        
+to the design of the environment will allow rapid customization for             
+different applications and for the different types of users.                    
+",2012643,R43CA074670,['R43CA074670'],CA,https://reporter.nih.gov/project-details/2012643,R43,1997,93458,0.08479808121013332
+"This proposal is directed toward improving tomographic imaging in               
+diagnostic radiology and nuclear medicine. It is predicated on the claim        
+that significant advances will be achieved in the fidelity of the images        
+that are reconstructed from the raw detector measurements of the                
+tomographic scanner by changing the basic elements (called ""basis               
+functions"") with which the image is built in the computer. The                  
+conventional basic elements for computerized tomographic imaging are the        
+voxel basis functions, and the sinusoidal basis functions of Fourier            
+analysis. Two classes of promising new basis functions have been                
+developed: functions that are localized in space (as are the voxel basis        
+functions), and functions that are not localized (similar in many respects      
+to sinusoids). The new classes of basis functions are well-suited to            
+constructing faithful digital image representations of the biological           
+structures that have influenced the raw tomographic scanner data. The new       
+localized basis functions have a number of very desirable properties not        
+shared by voxels: they are rotationally symmetric, their Fourier                
+transforms are effectively localized, and they have continuous derivatives      
+of any desired order.  The new non-localized basis functions are designed       
+to perform a spatially-variant filtering operation that is required by a        
+non-iterative method of 3D image reconstruction developed by the Principal      
+Investigator.                                                                   
+                                                                                
+The specific aims are to develop mathematical theory, efficient computer        
+algorithms, application-specific implementations and evaluation criteria        
+for (1) methods of iterative reconstruction from projections, (2) methods       
+of estimating the fundamental limits on the performance of the                  
+reconstruction process, and (3) methods of non-iterative 3D reconstruction      
+from projections. For specified imaging tasks, the level of statistical         
+significance will be found for rejection of the null hypothesis that two        
+methods perform a task equally well, in favor of the alternative                
+hypothesis that one method performs the task better.                            
+                                                                                
+The basis functions of the image representation are the essential core of       
+all methods for computerized image reconstruction, irrespective of the          
+medical imaging modality (e.g., CT, PET, SPECT, MRI). The development of        
+new computer algorithms and their associated image representations will         
+enable the full potential of scanners for functional imaging in emission        
+tomography (PET and SPECT) to be realized by extracting as much                 
+information as possible from fully-3D low-statistics projection data.           
+ artificial intelligence; computer simulation; computer system design /evaluation; digital imaging; model design /development; phantom model; positron emission tomography DIGITAL IMAGE REPRESENTATIONS FOR TOMOGRAPHIC RADIOLOGY","This proposal is directed toward improving tomographic imaging in               
+diagnostic radiology and nuclear medicine. It is predicated on the claim        
+that significant advances will be achieved in the fidelity of the images        
+that are reconstructed from the raw detector measurements of the                
+tomographic scanner by changing the basic elements (called ""basis               
+functions"") with which the image is built in the computer. The                  
+conventional basic elements for computerized tomographic imaging are the        
+voxel basis functions, and the sinusoidal basis functions of Fourier            
+analysis. Two classes of promising new basis functions have been                
+developed: functions that are localized in space (as are the voxel basis        
+functions), and functions that are not localized (similar in many respects      
+to sinusoids). The new classes of basis functions are well-suited to            
+constructing faithful digital image representations of the biological           
+structures that have influenced the raw tomographic scanner data. The new       
+localized basis functions have a number of very desirable properties not        
+shared by voxels: they are rotationally symmetric, their Fourier                
+transforms are effectively localized, and they have continuous derivatives      
+of any desired order.  The new non-localized basis functions are designed       
+to perform a spatially-variant filtering operation that is required by a        
+non-iterative method of 3D image reconstruction developed by the Principal      
+Investigator.                                                                   
+                                                                                
+The specific aims are to develop mathematical theory, efficient computer        
+algorithms, application-specific implementations and evaluation criteria        
+for (1) methods of iterative reconstruction from projections, (2) methods       
+of estimating the fundamental limits on the performance of the                  
+reconstruction process, and (3) methods of non-iterative 3D reconstruction      
+from projections. For specified imaging tasks, the level of statistical         
+significance will be found for rejection of the null hypothesis that two        
+methods perform a task equally well, in favor of the alternative                
+hypothesis that one method performs the task better.                            
+                                                                                
+The basis functions of the image representation are the essential core of       
+all methods for computerized image reconstruction, irrespective of the          
+medical imaging modality (e.g., CT, PET, SPECT, MRI). The development of        
+new computer algorithms and their associated image representations will         
+enable the full potential of scanners for functional imaging in emission        
+tomography (PET and SPECT) to be realized by extracting as much                 
+information as possible from fully-3D low-statistics projection data.           
+",2414217,R01CA054356,['R01CA054356'],CA,https://reporter.nih.gov/project-details/2414217,R01,1997,229448,0.022173215332192617
+"The genes of the human leukocyte antigen (HLA) region control a variety         
+Of functions involved in the immune response, and influence                     
+susceptibility to over 40 diseases.  Our understanding of the structure         
+and function of the HLA genes, their disease associations, and the              
+evolutionary features of this multigene family has benefitted from recent       
+advances in molecular biology, immunology, disease modelling and                
+population genetics.  Theoretical studies in the development of models to       
+determine the modes of inheritance of the HLA associated diseases have          
+led to a better understanding of the inheritance patterns in insulin            
+dependent diabetes mellitus, rheumatoid arthritis, multiple sclerosis,          
+ankylosing spondylitis, hemochromatosis, celiac disease, and others.  It        
+is now clear that many of the HLA associated diseases involve                   
+heterogeneity in their HLA components, as well as non-HLA genetic               
+components.                                                                     
+                                                                                
+The specific aims of our research are to study the genetic components in        
+the etiology of the HLA associated diseases, and population genetic             
+features of the HLA system.  A variety of methods to test modes of              
+inheritance of diseases using marker allele information, will be                
+developed.  Methods appropriate for the analysis of marker systems which        
+are not highly polymorphic, to both detect linkage and determine modes of       
+inheritance, will be investigated.  The information content of particular       
+pedigree types for LOD score analysis will be investigated.  Two methods        
+using patterns of linkage disequilibrium will be investigated to                
+determine their usefulness in mapping disease predisposing genes.  A            
+number of large collaborative data sets of HLA associated diseases will         
+be analyzed.  A framework for genetic counselling of HLA associated, and        
+other complex diseases, will be developed.  The results of our studies          
+are generally applicable to the mapping and characterization of complex         
+human genetic traits.                                                           
+ European; Hodgkin's disease; MHC class I antigen; MHC class II antigen; T cell receptor; alleles; antiserum; artificial intelligence; biochemical evolution; celiac disease; computer assisted sequence analysis; computer data analysis; disease /disorder proneness /risk; gene frequency; genetic counseling; genetic disorder diagnosis; genetic markers; genetic models; genetic polymorphism; genotype; hereditary hemochromatosis; heterozygote; histocompatibility antigens; histocompatibility gene; homozygote; human genetic material tag; human population genetics; immunogenetics; insulin dependent diabetes mellitus; linkage disequilibriums; mathematical model; molecular genetics; multiple sclerosis; nucleic acid sequence; oligonucleotides; restriction fragment length polymorphism; rheumatoid arthritis; serotyping; statistics /biometry MODELS IN POPULATION GENETICS","The genes of the human leukocyte antigen (HLA) region control a variety         
+Of functions involved in the immune response, and influence                     
+susceptibility to over 40 diseases.  Our understanding of the structure         
+and function of the HLA genes, their disease associations, and the              
+evolutionary features of this multigene family has benefitted from recent       
+advances in molecular biology, immunology, disease modelling and                
+population genetics.  Theoretical studies in the development of models to       
+determine the modes of inheritance of the HLA associated diseases have          
+led to a better understanding of the inheritance patterns in insulin            
+dependent diabetes mellitus, rheumatoid arthritis, multiple sclerosis,          
+ankylosing spondylitis, hemochromatosis, celiac disease, and others.  It        
+is now clear that many of the HLA associated diseases involve                   
+heterogeneity in their HLA components, as well as non-HLA genetic               
+components.                                                                     
+                                                                                
+The specific aims of our research are to study the genetic components in        
+the etiology of the HLA associated diseases, and population genetic             
+features of the HLA system.  A variety of methods to test modes of              
+inheritance of diseases using marker allele information, will be                
+developed.  Methods appropriate for the analysis of marker systems which        
+are not highly polymorphic, to both detect linkage and determine modes of       
+inheritance, will be investigated.  The information content of particular       
+pedigree types for LOD score analysis will be investigated.  Two methods        
+using patterns of linkage disequilibrium will be investigated to                
+determine their usefulness in mapping disease predisposing genes.  A            
+number of large collaborative data sets of HLA associated diseases will         
+be analyzed.  A framework for genetic counselling of HLA associated, and        
+other complex diseases, will be developed.  The results of our studies          
+are generally applicable to the mapping and characterization of complex         
+human genetic traits.                                                           
+",2685132,R01GM056688,['R01GM056688'],GM,https://reporter.nih.gov/project-details/2685132,R01,1998,172242,0.08479808121013332
+"DESCRIPTION (Taken from application abstract):  We propose to develop           
+automated techniques to facilitate classification and pattern recognition in    
+biomedical data sets.  These techniques will involve development of novel       
+neural network architectures, as well as formulation of principles governing    
+their creation and explanation of results.  Specifically, as a solution to      
+the problem of recognizing infrequent categories, we will develop               
+hierarchical and sequential systems of feedforward neural networks that make    
+use of information such as (a) prior knowledge of the domain, and/or (b)        
+natural clusters defined by clustering or unsupervised learning methods to      
+develop intermediate classification goals and utilize a divide-and-conquer      
+approach to complex classification problems.  Additionally, we will develop     
+generic tools for pre-processing input data by making transformations of        
+original data, reducing dimensionality, and producing training and test sets    
+suitable for cross-validation and bootstrap.  We will build tools for           
+evaluating results that measure calibration, resolution, importance of          
+variables, and comparisons between different models.  Furthermore, we will      
+develop standardized interfaces for certain existing classification models.     
+We will use a component-based architecture to build our neural network and      
+write interfaces to existing classification models (e.g., regression trees,     
+logistic regression models) so that they can be interchanged in a               
+user-friendly manner.  We will use our preprocessing modules to prepare data    
+to be entered in a variety of classification models.  The results will be       
+evaluated in isolation, and later combined to test the hypothesis that the      
+combined system performs better in real biomedical data sets in terms of        
+calibration, resolution, and explanatory power.                                 
+                                                                                
+This research will (a) quantify improvement in performance when a               
+classification problem is broken down into subproblems in a systematic way,     
+(b) quantify the advantages of combining different types of classifiers,        
+create a library of reusable neural network classification models, data         
+pre-processing, and evaluation tools that use standardized interfaces, and      
+(d) foster dissemination of classification models and the use of                
+pre-processing and evaluation tools by making them available to other           
+researchers through the World-Wide-Web.  We will test four hypotheses:  (1)     
+Combinations of different modalities of classifiers perform significantly       
+better than isolated models.  (2) Hierarchical and sequential neural            
+networks perform better than standard neural networks.  (3) Unsupervised        
+models can decompose a problem for hierarchical or sequential neural            
+networks better than models that use prior knowledge.  (4) It is possible to    
+build a Classification Tool Kit composed of data pre-processing modules,        
+classification models, and evaluation modules in which components are           
+independent, reusable, and interchangeable.                                     
+ Internet; artificial intelligence; classification; computer assisted medical decision making; computer system design /evaluation; mathematical model; model design /development COMPONENT BASED TOOLS FOR CONNECTIONIST CLASSIFICATION","DESCRIPTION (Taken from application abstract):  We propose to develop           
+automated techniques to facilitate classification and pattern recognition in    
+biomedical data sets.  These techniques will involve development of novel       
+neural network architectures, as well as formulation of principles governing    
+their creation and explanation of results.  Specifically, as a solution to      
+the problem of recognizing infrequent categories, we will develop               
+hierarchical and sequential systems of feedforward neural networks that make    
+use of information such as (a) prior knowledge of the domain, and/or (b)        
+natural clusters defined by clustering or unsupervised learning methods to      
+develop intermediate classification goals and utilize a divide-and-conquer      
+approach to complex classification problems.  Additionally, we will develop     
+generic tools for pre-processing input data by making transformations of        
+original data, reducing dimensionality, and producing training and test sets    
+suitable for cross-validation and bootstrap.  We will build tools for           
+evaluating results that measure calibration, resolution, importance of          
+variables, and comparisons between different models.  Furthermore, we will      
+develop standardized interfaces for certain existing classification models.     
+We will use a component-based architecture to build our neural network and      
+write interfaces to existing classification models (e.g., regression trees,     
+logistic regression models) so that they can be interchanged in a               
+user-friendly manner.  We will use our preprocessing modules to prepare data    
+to be entered in a variety of classification models.  The results will be       
+evaluated in isolation, and later combined to test the hypothesis that the      
+combined system performs better in real biomedical data sets in terms of        
+calibration, resolution, and explanatory power.                                 
+                                                                                
+This research will (a) quantify improvement in performance when a               
+classification problem is broken down into subproblems in a systematic way,     
+(b) quantify the advantages of combining different types of classifiers,        
+create a library of reusable neural network classification models, data         
+pre-processing, and evaluation tools that use standardized interfaces, and      
+(d) foster dissemination of classification models and the use of                
+pre-processing and evaluation tools by making them available to other           
+researchers through the World-Wide-Web.  We will test four hypotheses:  (1)     
+Combinations of different modalities of classifiers perform significantly       
+better than isolated models.  (2) Hierarchical and sequential neural            
+networks perform better than standard neural networks.  (3) Unsupervised        
+models can decompose a problem for hierarchical or sequential neural            
+networks better than models that use prior knowledge.  (4) It is possible to    
+build a Classification Tool Kit composed of data pre-processing modules,        
+classification models, and evaluation modules in which components are           
+independent, reusable, and interchangeable.                                     
+",2385272,R01LM006538,['R01LM006538'],LM,https://reporter.nih.gov/project-details/2385272,R01,1998,248939,0.09253405541492436
+"DESCRIPTION (Taken from application abstract):  Over the last decade            
+computational modeling has become central to neurobiology.  While much of       
+this work has focused on cellular and sub-cellular processes, the last few      
+years have seen increasing interest in systems level models and in              
+integrative accounts that span data from the subcellular to behavioral          
+levels.  Our proposal, in summary, is to extend existing work in parallel       
+discrete event simulation (PDES) and integrate it with existing work on         
+compartmental modeling environments, to produce a software environment which    
+has comprehensive support for modeling large scale, highly structured           
+networks of biophysically realistic cells; and which can efficiently exploit    
+the full range of parallel platforms, including the largest parallel            
+supercomputers, for simulation of these network models, which integrate         
+information about the nervous system from sub-cellular to the whole-brain       
+level.  Because of the scale of the models needed at this level of              
+integration, advanced parallel computing is required.  The critical             
+technical insight upon which this work rests is that neuronal modeling at       
+the systems level can often be reduced to a form of discrete event              
+simulation in which single cells are node functions and voltage spikes are      
+events.                                                                         
+                                                                                
+Three neuroscience modeling projects, will mold, test, and utilize these new    
+capabilities in investigations of system-level models of the nervous system     
+which integrate behavioral, anatomical and physiological data on a scale        
+that exceeds current simulation capabilities.  In collaboration with            
+computer scientists at Pittsburgh Supercomputing Center and UCLA,               
+neuroscientists at University of Virginia, the Born-Bunge Foundation,           
+Antwerp, and the Salk Institute, and developers of the NEURON and GENESIS       
+packages, these tools will be developed and made available to the               
+neuroscience community.  The software development aims include 1)               
+investigation of a portable, PDES system capable of running efficiently on      
+diverse parallel platforms, 2) development of interfaces to the PDES for        
+NEURON and GENESIS allowing models developed in those packages to be scaled     
+up, 3) investigation of a network specification language for neuronal           
+models, and associated a visualization interface, to facilitate                 
+investigation of systems-level models, 4) sufficiently robust and               
+well-documented software for download and installation at other sites.  The     
+three neuroscience projects will guide development of the software tools and    
+use the tools for investigation of large-scale models of cerebellum,            
+hippocampus and thalamocortical circuits.                                       
+ artificial intelligence; biomedical automation; biotechnology; cerebellar cortex; computational neuroscience; computer network; computer program /software; computer simulation; computer system design /evaluation; hippocampus; mathematical model; neural information processing; neurotransmitters; parallel processing; supercomputer; thalamocortical tract; vocabulary development for information system PARALLEL SIMULATION OF LARGE SCALE NEURONAL MODELS","DESCRIPTION (Taken from application abstract):  Over the last decade            
+computational modeling has become central to neurobiology.  While much of       
+this work has focused on cellular and sub-cellular processes, the last few      
+years have seen increasing interest in systems level models and in              
+integrative accounts that span data from the subcellular to behavioral          
+levels.  Our proposal, in summary, is to extend existing work in parallel       
+discrete event simulation (PDES) and integrate it with existing work on         
+compartmental modeling environments, to produce a software environment which    
+has comprehensive support for modeling large scale, highly structured           
+networks of biophysically realistic cells; and which can efficiently exploit    
+the full range of parallel platforms, including the largest parallel            
+supercomputers, for simulation of these network models, which integrate         
+information about the nervous system from sub-cellular to the whole-brain       
+level.  Because of the scale of the models needed at this level of              
+integration, advanced parallel computing is required.  The critical             
+technical insight upon which this work rests is that neuronal modeling at       
+the systems level can often be reduced to a form of discrete event              
+simulation in which single cells are node functions and voltage spikes are      
+events.                                                                         
+                                                                                
+Three neuroscience modeling projects, will mold, test, and utilize these new    
+capabilities in investigations of system-level models of the nervous system     
+which integrate behavioral, anatomical and physiological data on a scale        
+that exceeds current simulation capabilities.  In collaboration with            
+computer scientists at Pittsburgh Supercomputing Center and UCLA,               
+neuroscientists at University of Virginia, the Born-Bunge Foundation,           
+Antwerp, and the Salk Institute, and developers of the NEURON and GENESIS       
+packages, these tools will be developed and made available to the               
+neuroscience community.  The software development aims include 1)               
+investigation of a portable, PDES system capable of running efficiently on      
+diverse parallel platforms, 2) development of interfaces to the PDES for        
+NEURON and GENESIS allowing models developed in those packages to be scaled     
+up, 3) investigation of a network specification language for neuronal           
+models, and associated a visualization interface, to facilitate                 
+investigation of systems-level models, 4) sufficiently robust and               
+well-documented software for download and installation at other sites.  The     
+three neuroscience projects will guide development of the software tools and    
+use the tools for investigation of large-scale models of cerebellum,            
+hippocampus and thalamocortical circuits.                                       
+",2675674,R01MH057358,['R01MH057358'],MH,https://reporter.nih.gov/project-details/2675674,R01,1998,224576,-0.042606274835989215
+"Multimodal functional brain imaging software will be developed to               
+estimate and visualize the estimated spatial extent and time course of          
+brain activity by combining information from magnetic resonance imaging         
+(MRI) with electroencephalography (EEG) and/or magnetoencephalography           
+(MEG).  Structural information from MRI will be combined with                   
+extracranial EEG and/or MEG measurements through algorithms developed           
+to segment the MR images and to represent scalp, skull, and brain               
+boundaries as computational objects.  This structural information may           
+then be used to improve the spatial accuracy and resolution of existing         
+EEG and MEG source estimation algorithms, while supporting millisecond          
+temporal resolution.  The software will comprise a PC/Windows-based             
+program suite for analysis and display.  The methods will be verified           
+both with simulated data and with physiological data.                           
+                                                                                
+The algorithms and software may be used to study both normal brain              
+function, such as measurements in cognitive neuroscience which may be           
+studied with evoked response/event related potentials or spontaneous            
+EEG, and in diseases of the brain, such as epilepsy, where precise              
+spatial and temporal resolution may be of value for diagnosis and               
+presurgical evaluation.                                                         
+                                                                                
+PROPOSED COMMERCIAL APPLICATION                                                 
+The techniques which we propose are a non-invasive, non-radiological and        
+relatively low cost addition to existing EEG, MEG and MRI systems, and          
+provides information which is not currently available from these systems        
+independently.  The resulting software will have direct application in          
+clinical and cognitive neuroscience research.  If clinical value is             
+demonstrated, systems based on this methodology may find applications           
+in the areas of psychiatry, neurology and psychology.                           
+ artificial intelligence; brain electrical activity; computer program /software; computer system design /evaluation; electroencephalography; functional magnetic resonance imaging; human data; image enhancement; image processing; magnetic resonance imaging; magnetoencephalography; positron emission tomography MULTIMODAL (MRI/EEG/MEG) IMAGING SOFTWARE","Multimodal functional brain imaging software will be developed to               
+estimate and visualize the estimated spatial extent and time course of          
+brain activity by combining information from magnetic resonance imaging         
+(MRI) with electroencephalography (EEG) and/or magnetoencephalography           
+(MEG).  Structural information from MRI will be combined with                   
+extracranial EEG and/or MEG measurements through algorithms developed           
+to segment the MR images and to represent scalp, skull, and brain               
+boundaries as computational objects.  This structural information may           
+then be used to improve the spatial accuracy and resolution of existing         
+EEG and MEG source estimation algorithms, while supporting millisecond          
+temporal resolution.  The software will comprise a PC/Windows-based             
+program suite for analysis and display.  The methods will be verified           
+both with simulated data and with physiological data.                           
+                                                                                
+The algorithms and software may be used to study both normal brain              
+function, such as measurements in cognitive neuroscience which may be           
+studied with evoked response/event related potentials or spontaneous            
+EEG, and in diseases of the brain, such as epilepsy, where precise              
+spatial and temporal resolution may be of value for diagnosis and               
+presurgical evaluation.                                                         
+                                                                                
+PROPOSED COMMERCIAL APPLICATION                                                 
+The techniques which we propose are a non-invasive, non-radiological and        
+relatively low cost addition to existing EEG, MEG and MRI systems, and          
+provides information which is not currently available from these systems        
+independently.  The resulting software will have direct application in          
+clinical and cognitive neuroscience research.  If clinical value is             
+demonstrated, systems based on this methodology may find applications           
+in the areas of psychiatry, neurology and psychology.                           
+",2536158,R44MH055915,['R44MH055915'],MH,https://reporter.nih.gov/project-details/2536158,R44,1998,355745,0.0695319091230329
+"DESCRIPTION (Adapted from applicant's abstract):  The physical abuse of         
+children by their parents continues to be a major social problem in our         
+country.  However, there has been relatively little attention given to          
+empirical approaches to the treatment of physically abusive families.  A        
+careful examination of the current literature suggests that abusive parents     
+are characterized by high rates of negative interaction, low rates of           
+positive interaction, and limited/ineffective parental disciplining             
+strategies.  Conversely, physically abused children have been reported to be    
+aggressive, defiant, non-compliant, and resistant to parental direction.        
+Utilizing a social learning framework, this proposal argues that abusive        
+parents and their children engage in a negative coercive cycle which            
+characterizes many of their interactions.  At times, this cycle may escalate    
+to the point of physical abuse.  This proposal describes the Parent Child       
+Interaction Training (PCIT) as an intervention which targets specific           
+deficits often found within physically abusive parent-child dyads.  PCIT is     
+uniquely appropriate with physically abusive parent-child dyads because it      
+has been shown to be highly effective with a similar population (i.e.,          
+oppositional, defiant children), it incorporates both the parent and the        
+child, it provides a means to alter the pattern of interactions within          
+abusive relationships, and it provides a means to directly decrease negative    
+affect and control-while promoting (i.e., teaching, coaching) greater           
+positive affect and discipline strategies.                                      
+                                                                                
+Therefore, this project proposes to use a sample of 48 parent-child dyads       
+(mothers and their children) who have been referred to Family Preservation      
+Services and therefore have been identified as having physically abusive        
+relationships.  Parent-child dyads will be administered a brief screen,         
+blocked by ethnicity, then randomly assigned to either a PCIT treatment         
+group (N=24) or to a comparison group (N =24) who will receive 'traditional'    
+family preservation services).  It is hypothesized that dyads in the PCIT       
+treatment group will have higher rates of parental verbal praise, parental      
+positive physical contact, greater child compliance, and decreasing rates of    
+child deviant behaviors; than dyads in the comparison treatment group.          
+Additionally, it is predicted that parents in the PCIT treatment group will     
+report less perceived parental stress than parents in the comparison group.     
+ behavioral /social science research tag; child abuse; child behavior; child rearing; clinical research; dyadic interaction; family; family therapy; human subject; human therapy evaluation; learning; middle childhood (6-11); mother child interaction; preschool child (1-5); psychological reinforcement; psychometrics; social behavior; videotape /videodisc; women's health PARENT/CHILD PHYSICAL ABUSE TREATMENT PROGRAM","DESCRIPTION (Adapted from applicant's abstract):  The physical abuse of         
+children by their parents continues to be a major social problem in our         
+country.  However, there has been relatively little attention given to          
+empirical approaches to the treatment of physically abusive families.  A        
+careful examination of the current literature suggests that abusive parents     
+are characterized by high rates of negative interaction, low rates of           
+positive interaction, and limited/ineffective parental disciplining             
+strategies.  Conversely, physically abused children have been reported to be    
+aggressive, defiant, non-compliant, and resistant to parental direction.        
+Utilizing a social learning framework, this proposal argues that abusive        
+parents and their children engage in a negative coercive cycle which            
+characterizes many of their interactions.  At times, this cycle may escalate    
+to the point of physical abuse.  This proposal describes the Parent Child       
+Interaction Training (PCIT) as an intervention which targets specific           
+deficits often found within physically abusive parent-child dyads.  PCIT is     
+uniquely appropriate with physically abusive parent-child dyads because it      
+has been shown to be highly effective with a similar population (i.e.,          
+oppositional, defiant children), it incorporates both the parent and the        
+child, it provides a means to alter the pattern of interactions within          
+abusive relationships, and it provides a means to directly decrease negative    
+affect and control-while promoting (i.e., teaching, coaching) greater           
+positive affect and discipline strategies.                                      
+                                                                                
+Therefore, this project proposes to use a sample of 48 parent-child dyads       
+(mothers and their children) who have been referred to Family Preservation      
+Services and therefore have been identified as having physically abusive        
+relationships.  Parent-child dyads will be administered a brief screen,         
+blocked by ethnicity, then randomly assigned to either a PCIT treatment         
+group (N=24) or to a comparison group (N =24) who will receive 'traditional'    
+family preservation services).  It is hypothesized that dyads in the PCIT       
+treatment group will have higher rates of parental verbal praise, parental      
+positive physical contact, greater child compliance, and decreasing rates of    
+child deviant behaviors; than dyads in the comparison treatment group.          
+Additionally, it is predicted that parents in the PCIT treatment group will     
+report less perceived parental stress than parents in the comparison group.     
+",2675342,R21MH054221,['R21MH054221'],MH,https://reporter.nih.gov/project-details/2675342,R21,1998,116717,0.0695319091230329
+"The long term goal of our research is to understand the flow of                 
+information from the genome to the phenotype of organisms. In this              
+proposal, we will attempt to use Bayesian networks and near-optimal             
+sequence alignments to represent protein secondary structures and motifs.       
+A Bayesian network describes the likelihood of amino acids at each              
+position in a motif as well as the dependence of amino acids in one             
+position on the amino acids at other position. Hence, Bayesian networks         
+can describe both the conservation of amino acids at single positions and       
+the conservation of correlations between two positions simultaneously.          
+                                                                                
+Conserved amino acids result from evolutionary selection for a specific         
+amino acid or type of amino acid at one position in a protein structure.        
+These positions often have important functional or structural                   
+requirements. Correlated changes between amino acids generally result from      
+side-chain side-chain interactions between pairs of amino acids in a            
+protein's structure. The types of correlations we have represented with         
+Bayesian networks include electrostatic charges, hydrophobicity, hydrogen-      
+bond donor and acceptor and inversely correlated packing volumes among          
+others. These Bayesian networks can be used to 1) discover side-chain           
+side--chain interactions within protei motifs and 2) to search sequence         
+databases for motifs showing both correlations and conserved amino acids.       
+                                                                                
+Near-optimal alignments between two sequences can display regions that          
+have been more highly conserved or less highly conserved using the              
+information contained in only two sequences. The most highly conserved          
+region correspond to the most highly structured regions and the most            
+highly variable regions correspond to loops and coils and other                 
+hypervariable regions. We propose to use near-optimal alignments to             
+display conserved secondary structures of proteins and hypervariable            
+regions. We will use secondary-structure specific amino acid substitution       
+matrices to provide specificity.                                                
+                                                                                
+The goals of this proposal are to 1) build a database of Bayesian networks      
+that represent protein motifs, 2) test these networks for their ability to      
+detect motifs using test sets and crossvalidation methods, 3) compare           
+these networks with other methods for searching protein databases , 4)          
+build an integrated set of Bayesian networks to predict protein secondary       
+structure, 5) compare the prediction of protein secondary structure with        
+existing method 6) build a near-optimal sequence alignment workbench, and       
+7) predict structured and unstructured regions in proteins from near-           
+optimal alignments.                                                             
+ artificial intelligence; biochemical evolution; computer assisted sequence analysis; hydrogen bond; hydropathy; ionic bond; model design /development; molecular biology information system; physical model; protein sequence; protein structure function; structural biology MULTIPLE REPRESENTATIONS OF BIOLOGICAL SEQUENCES","The long term goal of our research is to understand the flow of                 
+information from the genome to the phenotype of organisms. In this              
+proposal, we will attempt to use Bayesian networks and near-optimal             
+sequence alignments to represent protein secondary structures and motifs.       
+A Bayesian network describes the likelihood of amino acids at each              
+position in a motif as well as the dependence of amino acids in one             
+position on the amino acids at other position. Hence, Bayesian networks         
+can describe both the conservation of amino acids at single positions and       
+the conservation of correlations between two positions simultaneously.          
+                                                                                
+Conserved amino acids result from evolutionary selection for a specific         
+amino acid or type of amino acid at one position in a protein structure.        
+These positions often have important functional or structural                   
+requirements. Correlated changes between amino acids generally result from      
+side-chain side-chain interactions between pairs of amino acids in a            
+protein's structure. The types of correlations we have represented with         
+Bayesian networks include electrostatic charges, hydrophobicity, hydrogen-      
+bond donor and acceptor and inversely correlated packing volumes among          
+others. These Bayesian networks can be used to 1) discover side-chain           
+side--chain interactions within protei motifs and 2) to search sequence         
+databases for motifs showing both correlations and conserved amino acids.       
+                                                                                
+Near-optimal alignments between two sequences can display regions that          
+have been more highly conserved or less highly conserved using the              
+information contained in only two sequences. The most highly conserved          
+region correspond to the most highly structured regions and the most            
+highly variable regions correspond to loops and coils and other                 
+hypervariable regions. We propose to use near-optimal alignments to             
+display conserved secondary structures of proteins and hypervariable            
+regions. We will use secondary-structure specific amino acid substitution       
+matrices to provide specificity.                                                
+                                                                                
+The goals of this proposal are to 1) build a database of Bayesian networks      
+that represent protein motifs, 2) test these networks for their ability to      
+detect motifs using test sets and crossvalidation methods, 3) compare           
+these networks with other methods for searching protein databases , 4)          
+build an integrated set of Bayesian networks to predict protein secondary       
+structure, 5) compare the prediction of protein secondary structure with        
+existing method 6) build a near-optimal sequence alignment workbench, and       
+7) predict structured and unstructured regions in proteins from near-           
+optimal alignments.                                                             
+",6146063,R01LM005716,['R01LM005716'],LM,https://reporter.nih.gov/project-details/6146063,R01,1999,56010,0.09253405541492436
+"The goal of the proposed research is the analysis of biological sequence        
+data to address the molecular mechanisms of evolution and the origin(s)         
+of all viruses and related genetic elements. Phylogenetic trees will            
+provide a framework for the mapping of cell and tissue tropism,                 
+pathogenicity and virulence, modes of transmission and geographical             
+distributions, and many other higher order characteristics of viruses.          
+The specific aims of proposed analytical studies are: 1) determining            
+functionally equivalent networks and frequency of exchange among and            
+between retroid elements, and their potential cellular homologues,              
+including new studies on 300 retroviral env proteins; 2) inferring              
+functionally important regions of all proteins of paramyxo-, rhabdo- and        
+filoviruses, (with privileged access to new Ebola sequences), and Borna         
+Disease virus, (including potential BDV sequences from schizophrenic            
+patients); and 3) the analysis of the dUTPase gene, as a model system,          
+to address issues relevant to the structure, function and evolution of          
+duplicated sequences, and potential horizontal transfer among and between       
+host and viral genomes. The specific aims of the technical studies are:         
+1) evaluation of stochastic production model approaches for generation          
+of multiple alignments, detection of recombination, and calculation of          
+evolutionary distances; and 2) development and testing of new and               
+existing methods for historical reconstruction of functionally equivalent       
+networks.                                                                       
+                                                                                
+RNA viruses (e.g. HIV, or Ebola) are the major causative agents of human,       
+animal and plant viral diseases world wide. The heterogeneous nature of         
+RNA populations makes it difficult to develop effective, anti-viral             
+agents. The sequence database is now large enough to conduct comparative        
+studies on natural variants versus chemotheraputically induced mutants          
+for several retroviral proteins. This model study will provide new              
+information on the nature of selected mutations which will be useful in         
+future anti-viral drug development.                                             
+                                                                                
+Computational analysis of primary sequence data is an area of intense           
+interest in biology, mathematics, statistics and systems science. In the        
+last few years new approaches to problem solving and classification, such       
+as machine learning, neural networks, genetic algorithms, and stochastic        
+production models or, ""intelligent systems"" as they are referred to             
+collectively, have become available. Unfortunately most biologists are          
+unaware of these developments. Application of these methods to real data        
+remains unexplored. The proposed studies will go a long way in rectifying       
+this gap in technological utilization. These studies will continue to           
+define important evolutionary relationships and events, provide                 
+biologically informative sequence relationships for bench-marking new           
+software, and contribute new information relevant to the structure and          
+function of viral proteins suggesting new directions in laboratory              
+experimentation. Strategies and techniques developed for the analysis of        
+highly divergent genomes can also be applied to the study of the wealth         
+of sequence information generated under the auspices of the Human Genome        
+Project.                                                                        
+ DNA replication; Mononegavirales; RNA biosynthesis; biochemical evolution; computer assisted sequence analysis; computer program /software; nucleic acid sequence; virus genetics; virus protein COMPUTER BASED SEQUENCE ANALYSIS AND RNA VIRUS EVOLUTION","The goal of the proposed research is the analysis of biological sequence        
+data to address the molecular mechanisms of evolution and the origin(s)         
+of all viruses and related genetic elements. Phylogenetic trees will            
+provide a framework for the mapping of cell and tissue tropism,                 
+pathogenicity and virulence, modes of transmission and geographical             
+distributions, and many other higher order characteristics of viruses.          
+The specific aims of proposed analytical studies are: 1) determining            
+functionally equivalent networks and frequency of exchange among and            
+between retroid elements, and their potential cellular homologues,              
+including new studies on 300 retroviral env proteins; 2) inferring              
+functionally important regions of all proteins of paramyxo-, rhabdo- and        
+filoviruses, (with privileged access to new Ebola sequences), and Borna         
+Disease virus, (including potential BDV sequences from schizophrenic            
+patients); and 3) the analysis of the dUTPase gene, as a model system,          
+to address issues relevant to the structure, function and evolution of          
+duplicated sequences, and potential horizontal transfer among and between       
+host and viral genomes. The specific aims of the technical studies are:         
+1) evaluation of stochastic production model approaches for generation          
+of multiple alignments, detection of recombination, and calculation of          
+evolutionary distances; and 2) development and testing of new and               
+existing methods for historical reconstruction of functionally equivalent       
+networks.                                                                       
+                                                                                
+RNA viruses (e.g. HIV, or Ebola) are the major causative agents of human,       
+animal and plant viral diseases world wide. The heterogeneous nature of         
+RNA populations makes it difficult to develop effective, anti-viral             
+agents. The sequence database is now large enough to conduct comparative        
+studies on natural variants versus chemotheraputically induced mutants          
+for several retroviral proteins. This model study will provide new              
+information on the nature of selected mutations which will be useful in         
+future anti-viral drug development.                                             
+                                                                                
+Computational analysis of primary sequence data is an area of intense           
+interest in biology, mathematics, statistics and systems science. In the        
+last few years new approaches to problem solving and classification, such       
+as machine learning, neural networks, genetic algorithms, and stochastic        
+production models or, ""intelligent systems"" as they are referred to             
+collectively, have become available. Unfortunately most biologists are          
+unaware of these developments. Application of these methods to real data        
+remains unexplored. The proposed studies will go a long way in rectifying       
+this gap in technological utilization. These studies will continue to           
+define important evolutionary relationships and events, provide                 
+biologically informative sequence relationships for bench-marking new           
+software, and contribute new information relevant to the structure and          
+function of viral proteins suggesting new directions in laboratory              
+experimentation. Strategies and techniques developed for the analysis of        
+highly divergent genomes can also be applied to the study of the wealth         
+of sequence information generated under the auspices of the Human Genome        
+Project.                                                                        
+",6134233,R01AI028309,['R01AI028309'],AI,https://reporter.nih.gov/project-details/6134233,R01,1999,152194,0.08479808121013332
+"Quantitative Analysis of seizures has recently undergone rapid and considerable advances.  One of the driving forces behind this progress is the algorithm developed by FHS under the auspices of NIH.  This algorithm is the first capable of accurate real-time detection, quantitative analysis and short-term prediction of clinical onset of seizures.  Although the progress in this field has been substantial, further improvements in seizure analysis are both desirable and feasible.  We propose a large-scale validation and refinement (using an existing data base) of a new method, the 'Intrinsic Timescale Decomposition' (ITD) developed by FHS for advanced analysis of brain or other non-stationary signals.  ITD overcomes conceptual and practical limitations of existing linear and nonlinear methods for analysis of epileptic seizures, by providing in real time, highly precise time- frequency-energy-waveform localization.  The end result of these research efforts will be a software package enabling more advanced online prediction, more accurate detection, quantification and imaging of epileptic seizures for use in implantable or portable devices and in conventional diagnostic equipment.  These advances will form the basis for rational development of novel therapies for the automated blockage or abatement of seizures, aims which we will pursue upon successful completion of the research proposed in Phase I. PROPOSED COMMERCIAL APPLICATION Software package for automated real-time detection, prediction, and quantitative analysis of epileptic seizures for use in (a) conventional diagnostic equipment and (b) implantable or portable devices for the automated early warning and blockage of seizures.  artificial intelligence; bioimaging /biomedical imaging; biomedical automation; brain electrical activity; computer assisted patient care; computer program /software; computer system design /evaluation; electroencephalography; epilepsy; human data; image processing; patient monitoring device REAL TIME AUTOMATED SEIZURE PREDICTION AND DETECTION","Quantitative Analysis of seizures has recently undergone rapid and considerable advances.  One of the driving forces behind this progress is the algorithm developed by FHS under the auspices of NIH.  This algorithm is the first capable of accurate real-time detection, quantitative analysis and short-term prediction of clinical onset of seizures.  Although the progress in this field has been substantial, further improvements in seizure analysis are both desirable and feasible.  We propose a large-scale validation and refinement (using an existing data base) of a new method, the 'Intrinsic Timescale Decomposition' (ITD) developed by FHS for advanced analysis of brain or other non-stationary signals.  ITD overcomes conceptual and practical limitations of existing linear and nonlinear methods for analysis of epileptic seizures, by providing in real time, highly precise time- frequency-energy-waveform localization.  The end result of these research efforts will be a software package enabling more advanced online prediction, more accurate detection, quantification and imaging of epileptic seizures for use in implantable or portable devices and in conventional diagnostic equipment.  These advances will form the basis for rational development of novel therapies for the automated blockage or abatement of seizures, aims which we will pursue upon successful completion of the research proposed in Phase I. PROPOSED COMMERCIAL APPLICATION Software package for automated real-time detection, prediction, and quantitative analysis of epileptic seizures for use in (a) conventional diagnostic equipment and (b) implantable or portable devices for the automated early warning and blockage of seizures. ",6016691,R43NS039240,['R43NS039240'],NS,https://reporter.nih.gov/project-details/6016691,R43,1999,76270,-0.042606274835989215
