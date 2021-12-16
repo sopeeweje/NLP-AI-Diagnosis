@@ -64,7 +64,7 @@ def process_data(data_file):
                 "organization": raw_data[i][38],
                 "mechanism": raw_data[i][6],
                 "year": raw_data[i][2],
-                "funding": mk_int(raw_data[i][35]) + mk_int(raw_data[i][36]),
+                "funding": mk_int(raw_data[i][36]) + mk_int(raw_data[i][37]),
                 })
 
     new_data = []
