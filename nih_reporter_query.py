@@ -5,18 +5,24 @@ import csv
 import time
 from progress.bar import Bar
 from tqdm import tqdm
+import codecs
 
-def get_data(termsfile, start, end):
+def get_data(termsfile, start, end, operator):
+    
     # Get query
     lines = []
     search_text = ""
     with open(termsfile) as f:
         lines = f.readlines()
-        for line in lines:
-            line.strip
-            term = "\"" + line.strip() + "\", "
-            search_text += term
-        search_text = search_text[0:-2]
+        if operator != "advanced": # if "and" or "or" query (search_text.txt must be list of terms)
+            for line in lines:
+                line.strip()
+                term = "\"" + line + "\", "
+                search_text += term
+            search_text = search_text[0:-2]
+        else: # if "advanced query" (search_text.txt must be directly formated query)
+            line = lines[0].strip()
+            search_text = line
     print("Your query: {}".format(search_text))
             
     
@@ -32,7 +38,7 @@ def get_data(termsfile, start, end):
                   "fiscal_years": [year],
                   "advanced_text_search":
                   {
-                        "operator": "or", 
+                        "operator": operator, 
                         "search_field": "projecttitle,terms,abstracttext", 
                         "search_text": search_text
                   },
@@ -68,19 +74,22 @@ def get_data(termsfile, start, end):
     ############################################
     
     # Getting the papers
-    print("Getting papers...")
+    print("Getting papers (5 awards at a time)...")
     data_file = "data/raw_data.csv"
+    
     with open(data_file, newline='', encoding='utf8') as csvfile:
-        raw_data = list(csv.reader(csvfile))
+        reader = csv.reader(x.replace('\0', '') for x in csvfile)
+        raw_data = list(reader)
+        
     application_ids = []
     for i in range(1,len(raw_data)):
         application_ids.append(str(raw_data[i][0]))
     
     dfs = []
-    for o in tqdm(range(len(application_ids)), position=0, leave=True):
+    for o in tqdm(range(len(application_ids)//5), position=0, leave=True):
         params = {
             "criteria": {
-                "appl_ids": [application_ids[o]],
+                "appl_ids": application_ids[o*5:min(o*5+5, len(application_ids))],
             },
             "sort_field":"appl_ids",
             "sort_order":"desc"
@@ -144,6 +153,13 @@ if __name__ == "__main__":
         default="search_terms.txt",
         )
     parser.add_argument(
+        '--operator',
+        type=str,
+        required=True,
+        help='Operator for NIH RePORTER query (and, or, advanced)',
+        default="or",
+        )
+    parser.add_argument(
         '--start_year',
         type=int,
         required=True,
@@ -160,4 +176,4 @@ if __name__ == "__main__":
     FLAGS, unparsed = parser.parse_known_args()
     
     # Run
-    get_data(FLAGS.search_terms, FLAGS.start_year, FLAGS.end_year+1)
+    get_data(FLAGS.search_terms, FLAGS.start_year, FLAGS.end_year+1, FLAGS.operator)

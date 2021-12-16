@@ -151,8 +151,8 @@ def umap_visualization(X_transformed, cluster_labels, silhouette_scores, sizes, 
     #outlier_scores = sklearn.neighbors.LocalOutlierFactor(contamination=0.1).fit_predict(X_transformed)
     #X_transformed = X_transformed[outlier_scores != -1]
     #cluster_labels = cluster_labels[outlier_scores != -1]
+    # product = [silhouette_scores[i]*sizes[i] for i in range(len(sizes))]
     
-    product = [silhouette_scores[i]*sizes[i] for i in range(len(sizes))]
     top_clusters = sorted(range(len(silhouette_scores)), key=lambda i: silhouette_scores[i], reverse=True)[:9]
     n_subset = len(cluster_labels)
     selected_cells = np.random.choice(np.arange(X_transformed.shape[0]), size = n_subset, replace = False)

@@ -1,7 +1,0 @@
-,2008 and before,After 2008,Overall,p-value
-Number of Awards,1818,14811,16629,
-Total Funding,1090391998,6086688555,7177080553,
-Number of Papers,82263,231261,313524,
-Citations Per Year of Availability,444.4442363,275.4132938,301.0936503,
-Average APT score,0.3904732382723703 (0.3882349744902641 - 0.39271150205447647),0.43302502367454954 (0.43167290943420566 - 0.4343771379148934),0.4218602084688891 (0.4207009491974371 - 0.4230194677403411),3.45E-220
-Enriched features,"['base', 'prototype', 'artificial', 'lesion', 'physician', 'intelligence', 'mass', 'simulation', 'interpretation', 'procedure']","['ehr', 'big', 'deep', 'asd', 'youth', 'leverage', 'personalized', 'trajectory', 'autism', 'inform']",,

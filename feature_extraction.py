@@ -39,18 +39,19 @@ def process_data(data_file):
     """
     data = []
     with open(data_file, newline='', encoding='utf8') as csvfile:
-        raw_data = list(csv.reader(csvfile))
+        reader = csv.reader(x.replace('\0', '') for x in csvfile)
+        raw_data = list(reader)
         ids = []
         print("Raw data N: {}".format(str(len(raw_data))))
         c = {}
         for j in range(len(raw_data[0])):
             c[raw_data[0][j]] = j
         for i in range(1,len(raw_data)):
-            if (raw_data[i][c["appl_id"]] in ids) or (raw_data[i][c["activity_code"]][0] in ['Z','T']):
+            if len(raw_data[i][c["direct_cost_amt"]]) <= 1:
                 continue
-            elif "No abstract available" in raw_data[i][c["abstract_text"]]:
+            elif ("No abstract available" in raw_data[i][c["abstract_text"]]) or len(raw_data[i][c["abstract_text"]])==0:
                 continue
-            elif len(raw_data[i][c["direct_cost_amt"]]) <= 1:
+            elif (raw_data[i][c["appl_id"]] in ids) or (raw_data[i][c["activity_code"]][0] in ['Z','T']):
                 continue
             else:
                 ids.append(raw_data[i][c["appl_id"]])
