@@ -1,32 +1,30 @@
 # NLP-AI-Medicine
 <p>A natural language processing approach to determining frontiers in medical AI using NIH award data</p>
-<h3>Data collection</h3>
-<p>Begin by collecting data to analyze as follows:</p>
-<ol>
-  <li>Go to the <a target="_blank" href="https://reporter.nih.gov/advanced-search">NIH RePORTER search tool</a> and complete your query of interest. Download the returned awards as a csv (including all columns, max 15,000 per download) to the project directory, and remove the initial lines of the csv that describe the query so you are left with the data table. Title the file "raw_data.csv".</li>
-  <li>Export the papers associated with your RePORTER query as a csv. Download the file to the project directory and title the file "papers.csv".</li>
-  <li>Go to the <a target="_blank" href="https://icite.od.nih.gov/analysis">NIH iCite search tool</a>. Copy the PMIDs from papers.csv (max 10,000 at a time) to query iCite. Go to the "Citations" tab of the return and select "Export (all modules)". Save the file in the project directory as "citations.csv".</li>
-  <li>Export the 2020 NIH funding by institution data from <a target="_blank" href="https://report.nih.gov/award/index.cfm">NIH RePORT</a>. This data is not incorporated in the analysis but can be incorporated if desired.</li>
-</ol>
+
+<h2>Quick Start</h2>
 
 <h3>Environment</h3>
 <p>Install pipenv if not already installed: <code>pip install pipenv</code>. Pipenv is used to create a python virtual environment that includes the libraries necessary to conduct the analysis.</p>
-
-<h3>Determine parameters</h3>
-<p>Determine an appropriate number of <a target="_blank" href="https://monkeylearn.com/blog/what-is-tf-idf/">TF-IDF</a> features by running the feature identification script: <code>sh find_num_features.sh</code>.</p>
-<p>Once the size of the feature set is determined, find an appropriate number of clusters to divide the dataset: <code>sh find_k.sh</code>.</p>
-<p>Optimal parameter values can be selected by applying the "elbow method" to the resultant graphs.</p>
 
 <h3>Analysis</h3>
 <p>Perform the analysis by running the run.sh shell script from the project directory: <code>sh run.sh</code>.</p>
 <p>This performs the following:</p>
 <ul>
+  <li><code>pipenv lock --clear</code> - initializes python virtual environment</li>
   <li><code>pipenv install</code> - initializes python virtual environment</li>
-  <li><code>pipenv run python feature_extraction.py</code> - Performs feature extraction with document corpus</li>
-  <li><code>pipenv run python find_centroids.py --max_df ### --max_features ### --k ###</code> - initializes centroids with LDA. max_df = <a target="_blank" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">maximum document frequency</a>, max_features = <a target="_blank" href="https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html">maximum n-gram features</a>, k = number of clusters</li>
+  <li><code>pipenv run python setup.py</code> - Set up directory structure and install necessary NLTK libraries</li>
+  <li><code>pipenv run python setup.py</code> - pipenv run python nih_reporter_query.py --search_terms "search_terms.txt" --start_year 1985 --end_year 2021</li>
+  <li><code>pipenv run python feature_extraction.py --max_df 0.1 --max_features 500</code> - Performs feature extraction with document corpus</li>
+  <li><code>pipenv run python find_k.py --trials 5 --max_k 120 --num_features 500</code> - empiric search for K</li>
   <li><code>pipenv run python analyze_clusters.py --k ### --trials ### </code> - creates the clusters with K-Means Clustering and analyzes funding and citation data. k = number of clusters, trials = number of clustering trials to run</li>
 </ul>
 <p>Parameters can be edited in run.sh to meet what was empirically determined to be optimal or left as naive defaults.</p>
+
+<h2>Details</h2>
+<h3>Data collection</h3>
+<p>Awards and publications are collected from the <a target="_blank" href="https://reporter.nih.gov/advanced-search">NIH RePORTER database</a> while citation data are collected from the <a target="_blank" href="https://icite.od.nih.gov/analysis">NIH iCite search tool</a>. Enter the search terms related to your topic of interest in "search_terms.txt" with a new line for each term. The query is executed with "OR" logic and excludes subprojects (see "nih_reporter_query.py" to modify criteria per the <a target="_blank" href="https://api.reporter.nih.gov/">NIH RePORTER API</a>.
+
+<h3>Feature extraction</h3>  
 
 <h3>Results</h3>
 <p>Results from each run are returned in the "results" directory:</p>
@@ -54,3 +52,51 @@
     </ul>
   </li>
 </ul>
+
+<h2>Directory strucure</h2>
+
+```
+├── LICENSE
+├── Pipfile
+├── Pipfile.lock
+├── README.md
+├── analyze_clusters.py
+├── data
+│   ├── by_funder.csv
+│   ├── by_mechanism.csv
+│   ├── by_year.csv
+│   ├── citations.csv
+│   ├── data.pkl
+│   ├── features
+│   ├── nih_institutes.csv
+│   ├── processed-data.pkl
+│   ├── publications.csv
+│   ├── raw_data.csv
+│   ├── test-data.pkl
+│   └── vectorizer.pkl
+├── feature_extraction.py
+├── figures
+│   ├── ...
+├── find_k.py
+├── nih_reporter_query.py
+├── results
+│   ├── 12-15-2021--214341
+│   │   ├── centroids
+│   │   ├── clusters
+│   │   │   ├── cluster-0.csv
+│   │   │   ├── cluster-1.csv
+│   │   │   ├── ...
+│   │   │   ├── cluster-30.csv
+│   │   ├── clusters_test
+│   │   │   ├── cluster-0.csv
+│   │   │   ├── cluster-1.csv
+│   │   │   ├── ...
+│   │   │   ├── cluster-30.csv
+│   │   ├── final_data.csv
+│   │   ├── model_clustering.pkl
+│   │   ├── supp_info.docx
+│   │   └── umap.png
+├── run.sh
+├── search_terms.txt
+└── setup.py
+```
