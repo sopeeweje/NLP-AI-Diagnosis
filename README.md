@@ -13,7 +13,7 @@
   <li><code>pipenv lock --clear</code> - initializes python virtual environment</li>
   <li><code>pipenv install</code> - initializes python virtual environment</li>
   <li><code>pipenv run python setup.py</code> - Set up directory structure and install necessary NLTK libraries</li>
-  <li><code>pipenv run python setup.py</code> - pipenv run python nih_reporter_query.py --search_terms "search_terms.txt" --start_year 1985 --end_year 2021</li>
+  <li><code>pipenv run python nih_reporter_query.py --search_terms "search_terms.txt" --start_year 1985 --end_year 2021</code> - query</li>
   <li><code>pipenv run python feature_extraction.py --max_df 0.1 --max_features 500</code> - Performs feature extraction with document corpus</li>
   <li><code>pipenv run python find_k.py --trials 5 --max_k 120 --num_features 500</code> - empiric search for K</li>
   <li><code>pipenv run python analyze_clusters.py --k ### --trials ### </code> - creates the clusters with K-Means Clustering and analyzes funding and citation data. k = number of clusters, trials = number of clustering trials to run</li>
