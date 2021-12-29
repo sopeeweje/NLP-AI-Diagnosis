@@ -131,3 +131,6 @@ dmypy.json
 data/citations.csv
 data/raw_data.csv
 data/publications.csv
+
+# Pipfile.lock
+Pipfile.lock
