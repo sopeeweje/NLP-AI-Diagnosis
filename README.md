@@ -1,12 +1,12 @@
 # NLP-AI-Medicine
-<p>A natural language processing approach to determining frontiers in medical AI using NIH award data.</p>
+<p>A natural language processing approach to determining frontiers of AI in biomedical research using NIH award data. This analysis applies K-means clustering to data from awarded NIH grant applications to identify categories of grant topics in an unsupervised manner and highlight differences in estimated translational value between topics.</p>
 
 <p>If using this code base, please cite: [citation].</p>
 
 <h2>Quick Start</h2>
 
 <h3>Environment</h3>
-<p>Install pipenv if not already installed: <code>pip install pipenv</code>. Pipenv is used to create a python virtual environment that includes the libraries necessary to conduct the analysis.</p>
+<p>Install pipenv if not already installed: <code>pip install pipenv</code>.</p>
 
 <h3>Analysis</h3>
 <p>Perform the analysis by running the run.sh shell script from the project directory: <code>sh run.sh</code>.</p>
@@ -14,7 +14,7 @@
 <ul>
   <li><code>pipenv lock --clear</code> - initializes python virtual environment</li>
   <li><code>pipenv install</code> - initializes python virtual environment</li>
-  <li><code>pipenv run python setup.py</code> - Set up directory structure and install necessary NLTK libraries</li>
+  <li><code>pipenv run python setup.py</code> - Set up directory structure and install necessary NLTK modules</li>
   <li><code>pipenv run python nih_reporter_query.py --search_terms "search_terms.txt" --operator "advanced" --start_year 1985 --end_year 2021
 </code> - query</li>
   <li><code>pipenv run python feature_extraction.py --max_df 0.1 --max_features 500</code> - Performs feature extraction with document corpus</li>
@@ -38,7 +38,9 @@ term 3
 ```( \"dna\" or \"rna\" ) and ( \"machine learning\" or "\artificial intelligence\" )```
 
 <h3>Feature extraction</h3>  
-
+<p>The feature extraction script extracts the desired number of TF-IDF features from the dataset and also summarizes NIH funding in the data by funding institute, by year, and by funding mechanism.</p>
+<h3>Find <i>K</i></h3>  
+<p>The optimal number of clusters <i>K</i> (topics within the dataset) can be determined empirically using the find_k.py script, which allows monitoring of silhouette score and sum of squared errors with modulation of <i>K</i>.</p>
 <h3>Results</h3>
 <p>Results from each run are returned in the "results" directory:</p>
 <ul>
