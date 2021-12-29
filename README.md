@@ -1,5 +1,5 @@
 # NLP-AI-Medicine
-<p>A natural language processing approach to determining frontiers of AI in biomedical research using NIH award data. This analysis applies K-means clustering to data from awarded NIH grant applications to identify categories of grant topics in an unsupervised manner and highlight differences in estimated translational value between topics.</p>
+<p>A natural language processing approach to evaluating translational value of AI in biomedical research using NIH award data. This analysis applies K-means clustering to data from awarded NIH grant applications to identify categories of grant topics in an unsupervised manner and highlight differences in estimated translational value between topics.</p>
 
 <p>If using this code base, please cite: [citation].</p>
 
