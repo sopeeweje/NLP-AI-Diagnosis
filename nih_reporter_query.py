@@ -16,7 +16,7 @@ def get_data(termsfile, start, end, operator):
         lines = f.readlines()
         if operator != "advanced": # if "and" or "or" query (search_text.txt must be list of terms)
             for line in lines:
-                line.strip()
+                line = line.strip()
                 term = "\"" + line + "\", "
                 search_text += term
             search_text = search_text[0:-2]
