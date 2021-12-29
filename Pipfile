@@ -21,6 +21,4 @@ pandas = "*"
 python-docx = "*"
 requests = "*"
 tqdm = "*"
-
-[requires]
-python_version = "3.7"
+progress = "*"
