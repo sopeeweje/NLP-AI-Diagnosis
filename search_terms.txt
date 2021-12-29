@@ -1,2 +1,2 @@
-(\"gender\" or \"woman\" or \"women\" or \"man\" or \"men\" or \"transgender\" or \"race\" or \"ethnic\" or \"black\" or \"white\" or \"caucasian\" or \"asian\" or \"hispanic\" or \"Latino\" or \"African-American\" or \"sexuality\" or \"homosexual\" or \"gay\" or \"lesbian\" or \"bisexual\" or \"LGBT\" or \"socioeconomic\" or \"rural\" or \"urban\" or \"minority\") and (\"disparity\" or \"disparities\" or \"inequality\" or \"inequalities\" or \"inequity\" or \"inequities\")
-                 
+artificial intelligence
+machine learning
