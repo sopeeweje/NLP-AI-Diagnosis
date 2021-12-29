@@ -6,7 +6,7 @@ pipenv install
 pipenv run python setup.py
 
 # Get projects, publications, and citation data
-# pipenv run python nih_reporter_query.py --search_terms "search_terms.txt" --operator "advanced" --start_year 1985 --end_year 2021
+pipenv run python nih_reporter_query.py --search_terms "search_terms.txt" --operator "advanced" --start_year 1985 --end_year 2021
 
 # Extract features
 pipenv run python feature_extraction.py --max_df 0.1 --max_features 1000

@@ -68,12 +68,13 @@ def process_data(data_file):
                 "organization": raw_data[i][c["organization_org_name"]],
                 "mechanism": raw_data[i][c["activity_code"]],
                 "year": raw_data[i][c["fiscal_year"]],
-                "funding": mk_int(raw_data[i][c["direct_cost_amt"]]) + mk_int(raw_data[i][c["indirect_cost_amt"]]),
+                "award_amount": mk_int(raw_data[i][c["award_amount"]]),
+                "cong_dist": raw_data[i][c["cong_dist"]]
                 })
 
     new_data = []
     for item in data:
-        if item["funding"] != 0:
+        if item["award_amount"] != 0:
             new_data.append(item)
 
     data = []
@@ -188,7 +189,7 @@ if __name__ == "__main__":
     output = [["Funder", "Number of awards", "Value of awards"]]
     for funder in funders:
         count = len([item for item in data if item["administration"] == funder])
-        amount = sum([item["funding"] for item in data if item["administration"] == funder])
+        amount = sum([item["award_amount"] for item in data if item["administration"] == funder])
         funder = funder_map[funder] if (funder in funder_map) else funder
         output.append([funder, count, amount])
     with open('data/by_funder.csv', 'w', newline='', encoding='utf8') as csvfile:
@@ -200,7 +201,7 @@ if __name__ == "__main__":
     output = [["Year", "Number of awards", "Value of awards"]]
     for year in years:
         count = len([item for item in data if item["year"] == year])
-        amount = sum([item["funding"] for item in data if item["year"] == year])
+        amount = sum([item["award_amount"] for item in data if item["year"] == year])
         output.append([year, count, amount])
     with open('data/by_year.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
@@ -211,7 +212,7 @@ if __name__ == "__main__":
     output = [["Mechanism", "Number of awards", "Value of awards"]]
     for mech in mechanisms:
         count = len([item for item in data if item["mechanism"] == mech])
-        amount = sum([item["funding"] for item in data if item["mechanism"] == mech])
+        amount = sum([item["award_amount"] for item in data if item["mechanism"] == mech])
         output.append([mech, count, amount])
     with open('data/by_mechanism.csv', 'w', newline='', encoding='utf8') as csvfile:
         writer = csv.writer(csvfile)
