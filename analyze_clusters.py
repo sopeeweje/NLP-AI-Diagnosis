@@ -82,14 +82,14 @@ def get_clusters(selected_k, data_file, processed_file, centers, years, save_fol
 
         # calculate average cost and std
         try:
-            average_cost = sum([item["funding"] for item in cluster_data])/len(cluster_data)
+            average_cost = sum([item["award_amount"] for item in cluster_data])/len(cluster_data)
         except:
             average_cost = 0
         costs.append(average_cost)
 
         cost_trend = []
         for year in years:
-            year_data = [data[ind]["funding"] for ind in cluster if data[ind]["year"] == year]
+            year_data = [data[ind]["award_amount"] for ind in cluster if data[ind]["year"] == year]
             if len(year_data) == 0:
                 cost_trend.append(0)
             else:
@@ -270,14 +270,14 @@ def predict_clusters(test_data, selected_k, model):
 
         # calculate average cost and std
         try:
-            average_cost = sum([item["funding"] for item in cluster_data])/len(cluster_data)
+            average_cost = sum([item["award_amount"] for item in cluster_data])/len(cluster_data)
         except:
             average_cost = 0
         costs.append(average_cost)
 
         cost_trend = []
         for year in years:
-            year_data = [test_data[ind]["funding"] for ind in cluster if test_data[ind]["year"] == year]
+            year_data = [test_data[ind]["award_amount"] for ind in cluster if test_data[ind]["year"] == year]
             if len(year_data) == 0:
                 cost_trend.append(0)
             else:
@@ -303,7 +303,7 @@ def get_best_cluster(selected_k, num_trials, centers, years, save_folder="", sav
                 try:
                     results[item["id"]].append(centroids[j])
                 except:
-                    results[item["id"]] = [item["id"],item["title"],item["funding"],data["centroids"][j]]
+                    results[item["id"]] = [item["id"],item["title"],item["award_amount"],data["centroids"][j]]
             j+=1
         print("Trial {}: Score = {:.3f}".format(str(i+1), data["score"]))
         scores.append(data["score"])
@@ -415,7 +415,7 @@ def get_rep_clusters(result):
                 organization = raw_data[j][6]
                 mechanism = raw_data[j][7]
                 year = int(raw_data[j][8])
-                score = float(raw_data[j][10])
+                score = float(raw_data[j][11])
 
                 # If this is a new title
                 if title not in unique_awards:
@@ -553,7 +553,7 @@ if __name__ == "__main__":
     if size_test == 0:
         cluster_cost_2021 = [0 for i in range(0, selected_k)]
     else:
-        cluster_cost_2021 = [(sum([item["funding"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
+        cluster_cost_2021 = [(sum([item["award_amount"] for item in group]) if len(group) > 0 else 0) for group in clusters_test]
 
     # Save 2021 clusters
     num = 0
@@ -574,7 +574,7 @@ if __name__ == "__main__":
     citations, papers, apt_pct, apt, lower, upper, availability = get_citations(data["data_by_cluster"])
 
     # Total funding
-    total_cluster_funding = [sum([item["funding"] for item in group]) for group in data["data_by_cluster"]]
+    total_cluster_funding = [sum([item["award_amount"] for item in group]) for group in data["data_by_cluster"]]
 
     # Get representative clusters for supp info
     get_rep_clusters(save_folder)
