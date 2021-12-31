@@ -6,7 +6,7 @@
 <h2>Quick Start</h2>
 
 <h3>Environment</h3>
-<p>Install pipenv if not already installed: <code>pip install pipenv</code>. This project requires <a href="https://www.python.org/downloads/release/python-379/" target="_blank">python version 3.7+</a>.</p>
+<p>Install pipenv if not already installed: <code>pip install pipenv</code>. This project requires <a href="https://www.python.org/downloads/release/python-379/" target="_blank">python version 3.7</a>.</p>
 
 <h3>Analysis</h3>
 <p>Perform the analysis by running the run.sh shell script from the project directory: <code>sh run.sh</code>.</p>
