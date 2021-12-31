@@ -22,3 +22,6 @@ python-docx = "*"
 requests = "*"
 tqdm = "*"
 progress = "*"
+
+[requires]
+python-version = "3.7"
