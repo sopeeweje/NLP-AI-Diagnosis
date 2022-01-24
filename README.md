@@ -1,7 +1,10 @@
 # NLP-AI-Medicine
 <p>A natural language processing approach to evaluating translational value of AI in biomedical research using NIH award data. This analysis applies K-means clustering to data from awarded NIH grant applications to identify categories of grant topics in an unsupervised manner and highlight differences in estimated translational value between topics.</p>
 
-<p>If using this code base, please cite: [citation].</p>
+<p><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2788310" target="_blank">Paper</a></p>
+
+<p>If using this code base, please cite: <i>Eweje, F. R. et al. Translatability Analysis of National Institutes of Health–Funded Biomedical Research That Applies Artificial Intelligence. JAMA Netw. Open 5, e2144742 (2022)</i>.
+</p>
 
 <h2>Quick Start</h2>
 
